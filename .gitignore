@@ -1,0 +1,18 @@
+# Local working and verification artifacts
+tmp/
+work/
+
+# Operating-system and editor state
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
+
+# Local credentials and environment overrides
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
