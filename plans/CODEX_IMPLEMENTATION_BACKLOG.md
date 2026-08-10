@@ -41,6 +41,8 @@ entry has no task, evidence dossier, or explicit deferral.
 
 ### BASE-003 — Machine-verifiable Bible requirement ledger
 
+**Implementation status:** Completed on 2026-08-10. See [BASE-003 completion evidence](evidence/BASE-003.md).
+
 - **Objective/requirement/citations:** Convert every normative requirement, invariant, acceptance clause, appendix contract and declared non-goal in all ten volumes into a stable traceability record so planning omissions become test failures.
 - **Repository/files:** Bible requirement manifest/schema, extractor/validator, coverage report, CI workflow and implementation/evidence registers.
 - **Prerequisites/scope:** BASE-001/002; assign stable requirement IDs and human-review extracted semantics. **Non-goals:** treating keyword extraction as authoritative interpretation or claiming implementation from documentation alone.
@@ -301,7 +303,7 @@ ideas list. Before implementation, the selected package must be expanded here to
 same repository/scope/data/interfaces/tests/evidence/reviewer detail used by `RI-*`.
 The dependency order is:
 
-1. `BASE-003`; `RI-007`, `RI-008`, `RI-009`, `RI-010`, `RI-011`; `OPS-001`, `OPS-002`; `GOV-001`, `GOV-002`, `GOV-003`, `GOV-004`; `AGT-001`, `AGT-002`, `AGT-003`, `AGT-004`, `AGT-005`, `AGT-006`, `AGT-007`, `AGT-008`.
+1. `RI-007`, `RI-008`, `RI-009`, `RI-010`, `RI-011`; `OPS-001`, `OPS-002`; `GOV-001`, `GOV-002`, `GOV-003`, `GOV-004`; `AGT-001`, `AGT-002`, `AGT-003`, `AGT-004`, `AGT-005`, `AGT-006`, `AGT-007`, `AGT-008`.
 2. `DATA-001`, `DATA-002`, `DATA-003`; `BT-001`, `BT-002`, `BT-003`, `BT-004`, `BT-005`, `BT-006`, `BT-007`, `BT-008`; `UI-001`, `UI-002`, `UI-003`, `UI-004`; `CHAN-001`; `WS-001`, `WS-002`.
 3. `DISC-001`, `DISC-002`, `DISC-003`, `DISC-004`, `DISC-005`, `DISC-006`, `DISC-007`, `DISC-008`, `DISC-009`; `SHADOW-001`, `SHADOW-002`; `ML-001`, `ML-002`, `ML-003`, `ML-004`, `ML-005`, `ML-006`; `RL-001`, `RL-002`, `RL-003`.
 4. `PORT-001`, `PORT-002`, `PORT-003`, `PORT-004`; `RISK-001`, `RISK-002`, `RISK-003`, `RISK-004`, `RISK-005`; `EXEC-001`, `EXEC-002`, `EXEC-003`, `EXEC-004`, `EXEC-005`, `EXEC-006`, `EXEC-007`, `EXEC-008`, `EXEC-009`, `EXEC-010`; `DEMO-001`.

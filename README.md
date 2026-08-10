@@ -19,7 +19,7 @@ The narrative dependency is **why → operate → think → discover → experim
 
 ## Edition status
 
-The repository-native edition is complete as of 2026-08-09: ten volumes, 169 chapters, and 29 appendices. Series-wide link, anchor, metadata, source-note, terminology, citation-target, continuity, ownership, and diagram checks passed. Open implementation and operating choices remain explicit in the [unresolved questions register](registers/UNRESOLVED_QUESTIONS.md); they are not represented as settled facts.
+The repository-native edition is complete as of 2026-08-09: ten volumes, 169 chapters, and 31 appendices. Series-wide link, anchor, metadata, source-note, terminology, citation-target, continuity, ownership, and diagram checks passed. Open implementation and operating choices remain explicit in the [unresolved questions register](registers/UNRESOLVED_QUESTIONS.md); they are not represented as settled facts.
 
 The implemented institution is not complete. Current evidence and claim boundaries are recorded in the [Implementation Status Register](registers/IMPLEMENTATION_STATUS.md). The dependency-ordered build path is the [Company Engineering Roadmap](plans/COMPANY_ENGINEERING_ROADMAP.md), while the [Bible Capability Coverage and Complete Company Build Plan](plans/BIBLE_CAPABILITY_COVERAGE.md) maps all ten volumes to explicit engineering packages. Execution begins from the [Research Intelligence Foundation](plans/RESEARCH_INTELLIGENCE_FOUNDATION.md), the [governed walking skeleton](plans/WALKING_SKELETON.md), and the [Codex implementation backlog](plans/CODEX_IMPLEMENTATION_BACKLOG.md).
 

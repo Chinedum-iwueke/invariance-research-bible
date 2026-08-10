@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://invarianceresearch.xyz/schemas/bible-requirement-ledger-v1.0.0.json",
+  "title": "Invariance Bible requirement ledger",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "generated_from",
+    "claim_boundary",
+    "source_inventory",
+    "requirements"
+  ],
+  "properties": {
+    "schema_version": {"const": "bible-requirement-ledger-v1.0.0"},
+    "generated_from": {"type": "string", "minLength": 1},
+    "claim_boundary": {"type": "string", "minLength": 1},
+    "source_inventory": {
+      "type": "array",
+      "minItems": 200,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path", "book", "locator", "content_sha256"],
+        "properties": {
+          "path": {"type": "string", "pattern": "^books/book-"},
+          "book": {"type": "integer", "minimum": 1, "maximum": 10},
+          "locator": {"type": "string", "pattern": "^(CH[0-9]{2}|APP-[A-Z])$"},
+          "content_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+        }
+      }
+    },
+    "requirements": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/requirement"}
+    }
+  },
+  "$defs": {
+    "requirement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "requirement_id",
+        "source",
+        "statement",
+        "kind",
+        "normative_strength",
+        "accountable_owner",
+        "work_packages",
+        "verification_methods",
+        "disposition",
+        "evidence_refs",
+        "deferral",
+        "depends_on",
+        "review"
+      ],
+      "properties": {
+        "requirement_id": {
+          "type": "string",
+          "pattern": "^B(0[1-9]|10)-(CH[0-9]{2}|APP-[A-Z])-R-[A-F0-9]{12}$"
+        },
+        "source": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["path", "book", "locator", "heading", "line_hint", "statement_sha256"],
+          "properties": {
+            "path": {"type": "string"},
+            "book": {"type": "integer", "minimum": 1, "maximum": 10},
+            "locator": {"type": "string"},
+            "heading": {"type": "string"},
+            "line_hint": {"type": "integer", "minimum": 1},
+            "statement_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+          }
+        },
+        "statement": {"type": "string", "minLength": 1},
+        "kind": {
+          "enum": ["acceptance", "authority", "contract", "invariant", "non_goal", "recovery", "requirement", "rule", "security"]
+        },
+        "normative_strength": {
+          "enum": ["acceptance_gate", "constitutional", "mandatory", "prohibited", "scope_boundary", "target"]
+        },
+        "accountable_owner": {"type": "string", "minLength": 1},
+        "work_packages": {"type": "array", "minItems": 1, "items": {"type": "string"}, "uniqueItems": true},
+        "verification_methods": {"type": "array", "minItems": 1, "items": {"type": "string"}, "uniqueItems": true},
+        "disposition": {"enum": ["planned", "implemented", "deferred", "not_applicable"]},
+        "evidence_refs": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "deferral": {"type": ["object", "null"]},
+        "depends_on": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "review": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "reviewed_by", "reviewed_on", "basis"],
+          "properties": {
+            "status": {"const": "reviewed"},
+            "reviewed_by": {"type": "string", "minLength": 1},
+            "reviewed_on": {"type": "string", "format": "date"},
+            "basis": {"type": "string", "minLength": 1}
+          }
+        }
+      }
+    }
+  }
+}

@@ -5,6 +5,7 @@
 
 | Gate | Acceptance evidence | Failure meaning | Authority |
 |---|---|---|---|
+| Requirement coverage | Stable source-derived requirement ID, exact statement digest, owner, work package, verification, disposition and evidence rule | Capability is unplanned or its implementation claim is unsupported | Architecture owner and domain authority |
 | Evidence identity | Stable source, edition, artifact, object, dataset, run, and decision identifiers with digests | Material cannot enter canonical memory | Knowledge steward |
 | Retrieval fidelity | Versioned fixtures pass lexical, semantic, citation, contradiction, and protected-evidence cases | Research answers are non-authoritative | Knowledge steward and independent evaluator |
 | Trial registration | Approved hypothesis and exact experiment digest precede a numbered trial | Run is exploratory/unregistered, never confirmatory | Research governance |

@@ -21,10 +21,13 @@ No milestone may use “covered elsewhere” without naming the owning package. 
 is a substitute for a missing deterministic service. No projection, graph, embedding,
 cache or model output is canonical state.
 
-`BASE-003` will make this contract machine-verifiable. It must enumerate every
-normative statement and appendix contract with a stable requirement ID, owning package,
-test, evidence state and any explicit deferral. The chapter-level matrix in this document
-is the planning baseline; the requirement ledger is the eventual completeness proof.
+`BASE-003` makes this contract machine-verifiable through the canonical
+[requirement ledger](../requirements/README.md). It enumerates captured normative
+statements and appendix contracts with stable source-derived IDs, owners, packages,
+verification methods, dispositions and evidence rules. The chapter-level matrix in this
+document remains the planning baseline; the ledger and CI validator detect drift and
+orphaned coverage. Exact extraction is machine-assisted, so a domain review remains
+mandatory before any requirement disposition changes from `planned`.
 
 ## 2. Target architecture
 

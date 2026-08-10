@@ -188,8 +188,8 @@ flowchart LR
 
 ## First implementation wave
 
-Continue from completed `BASE-001`, `BASE-002`, and `RI-001..006` with `BASE-003`,
-`RI-007`, `OPS-001`, `GOV-001`, `AGT-001`, `DATA-001`, and `BT-001` from the
+Continue from completed `BASE-001..003` and `RI-001..006` with `RI-007`,
+`OPS-001`, `GOV-001`, `AGT-001`, `DATA-001`, and `BT-001` from the
 [Codex backlog](CODEX_IMPLEMENTATION_BACKLOG.md). The real-corpus inventory and
 approval-race reproduction may run in parallel; canonical schema, authority and
 producer-contract decisions remain serialized.
