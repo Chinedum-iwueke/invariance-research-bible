@@ -47,6 +47,10 @@ The machine-verifiable baseline contract was added at control-plane commit `92e0
 
 The canonical identity contract was added at control-plane commit `d26484f1da3f73697b4748326912c9879b05fef1` and Bulletproof commit `45790daaa62d8c8737317c0a869099b5747781c6`. [ADR-0005](../architecture/adrs/0005-canonical-identity-and-compatibility.md) is authoritative for ownership, alias, immutability, version-negotiation, deprecation, and rollback semantics. Acceptance results are recorded in [BASE-002 Completion Evidence](../plans/evidence/BASE-002.md).
 
+## BASE-003 implementation addendum
+
+The Bible requirement ledger inventories all 169 chapters and 31 appendices, retains 1,075 exact normative statements with stable source-derived identities, maps them to accountable owners and the complete engineering package catalog, and derives a digest-bound zero-orphan coverage report. A strict local validator and GitHub Actions workflow reject missing authority files, newly unmapped statements, stale digests, duplicate IDs, unknown packages, missing or false evidence, unsupported deferrals, unreviewed records, circular dependencies, orphan requirements/packages, and stale reports. Exact extraction is machine-assisted and all requirement dispositions remain `planned`; changing a disposition requires domain review and separate evidence. Acceptance results are recorded in [BASE-003 Completion Evidence](../plans/evidence/BASE-003.md).
+
 ## RI-001 implementation addendum
 
 The canonical evidence object kernel was added at control-plane commit `0322b7429616f0deb453dbcca08575d0359f1b13`. The implementation extends ADR-0005 with a distinct `object_schema_version`, covers all thirteen required object classes, and adds authenticated immutable APIs, lineage, audit, access, and object-store boundaries. Exact acceptance and migration-rehearsal results are recorded in [RI-001 Completion Evidence](../plans/evidence/RI-001.md).

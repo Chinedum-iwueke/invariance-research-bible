@@ -9,7 +9,7 @@ This register separates the completeness of the Bible from the maturity of the i
 
 | Capability | Status | Evidence boundary | Consequential gap | Roadmap destination |
 |---|---|---|---|---|
-| Bible-wide implementation planning coverage | current; documented | Company roadmap, executable backlog, chapter-level capability map and six-gate completion contract | Normative statement-level requirement ledger and CI coverage validator are not implemented | BASE-003 |
+| Bible-wide implementation planning coverage | current; tested | Company roadmap, executable backlog, chapter-level capability map, 1,075-record exact-text requirement ledger, strict schema/validator, zero-orphan report, adversarial fixtures and CI workflow | Extraction is machine-assisted and all dispositions remain conservatively planned until domain evidence review; planning coverage is not implementation completion | BASE-003 complete; domain packages own disposition changes |
 | Constitutional doctrine and authority model | current | Books I-II and controlled ADRs | Runtime policy coverage is incomplete | M0, M2 |
 | Machine-verifiable repository baseline | current; tested | Identical `implementation-baseline-v1` collectors, schemas, fixtures, and CI artifact workflows in Hermes and Bulletproof | Clean CI artifacts are commit-specific; declared project suites retain recorded upstream failures | BASE-001 complete; BT-001 and control-plane defect closure remain |
 | Canonical identity and compatibility | current; tested | ADR-0005, shared `canonical-identity-v1.0.0` schema/readers, compatibility fixtures, and additive Hermes alias-registry migration | Existing records are not backfilled into the new kernel | BASE-002 and RI-001 complete; RI-007 owns backfill |

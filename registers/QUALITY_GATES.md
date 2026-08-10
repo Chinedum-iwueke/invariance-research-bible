@@ -17,12 +17,13 @@
 | QG-011 Book V fidelity | Bulletproof BT | Pinned repository audit, tests, schemas, artifacts, classified claims, failures, and unavailable evidence | Pass with upstream failures recorded on 2026-08-08 |
 | QG-012 Diagram consistency | All diagrams | Prose, identifiers, links, Mermaid source, series order, and authority boundaries checked | Pass on 2026-08-09 |
 | QG-013 Implementation planning integrity | Book V audit and company roadmap | Current claims bind to inspected evidence; all Book V requirements map to gaps and milestones; all roadmap tasks include executable acceptance evidence | Pass on 2026-08-10 with implementation gaps explicitly open |
+| QG-014 Bible requirement coverage | All 169 chapters, 31 appendices, work packages and evidence dispositions | Strict source-derived ledger, schema, current coverage report, zero orphan requirements/packages, stale-source detection and adversarial CI fixtures | Pass on 2026-08-10 with all 1,075 implementation dispositions conservatively `planned` |
 
 Passing a gate proves only its stated scope. It cannot be used as evidence for an untested book, implementation, citation, or scientific claim.
 
 ## Final series gate evidence — 2026-08-09
 
-- The edition contains ten books, 169 chapters, and 29 appendices; chapter prose totals 76,608 words after the scheduled-literature-surveillance extension.
+- The edition contains ten books, 169 chapters, and 31 appendices; chapter prose totals 76,608 words after the scheduled-literature-surveillance extension. BASE-003 corrected the previous appendix count using the canonical authority inventory.
 - Each volume README contains purpose, completion status, canonical dependencies, notation, principal cross-references, and a table of contents. Every chapter appears exactly once in that table.
 - Every chapter contains a unique explicit anchor and a source note. The global Markdown path-and-fragment resolver reported zero missing targets, and the duplicate-anchor scan reported zero collisions.
 - Citation targets, source roles, implementation claims, controlled terminology, validation environments, authority boundaries, concept ownership, and cross-volume dependency language were reviewed across the complete corpus.

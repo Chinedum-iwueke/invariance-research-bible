@@ -1,0 +1,46 @@
+[
+  {
+    "name": "missing_source",
+    "expected_error": "source inventory is missing"
+  },
+  {
+    "name": "unmapped_requirement",
+    "expected_error": "unmapped normative requirements"
+  },
+  {
+    "name": "duplicate_id",
+    "expected_error": "duplicate requirement IDs"
+  },
+  {
+    "name": "unknown_package",
+    "expected_error": "unknown work packages"
+  },
+  {
+    "name": "stale_digest",
+    "expected_error": "stale statement digest"
+  },
+  {
+    "name": "stale_source_digest",
+    "expected_error": "source inventory digest or identity is stale"
+  },
+  {
+    "name": "false_completion",
+    "expected_error": "implemented disposition requires evidence"
+  },
+  {
+    "name": "missing_evidence",
+    "expected_error": "evidence does not exist"
+  },
+  {
+    "name": "circular_dependency",
+    "expected_error": "circular requirement dependency"
+  },
+  {
+    "name": "unknown_top_level_field",
+    "expected_error": "ledger has unknown fields"
+  },
+  {
+    "name": "unknown_nested_field",
+    "expected_error": "source has unknown fields"
+  }
+]

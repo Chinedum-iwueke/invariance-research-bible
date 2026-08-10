@@ -1,0 +1,26 @@
+name: Requirement ledger
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Compile tooling
+        run: python -m compileall -q tools tests
+      - name: Validate canonical ledger and report
+        run: python tools/requirements_ledger.py validate
+      - name: Run adversarial ledger tests
+        run: python -m unittest discover -s tests -p 'test_*.py'
