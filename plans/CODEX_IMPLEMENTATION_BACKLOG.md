@@ -72,6 +72,8 @@ All tasks inherit these constraints: preserve unrelated changes; never commit da
 
 ### RI-004 — Contradiction, negative-result, belief and dossier services
 
+**Implementation status:** Completed on 2026-08-10. See [RI-004 completion evidence](evidence/RI-004.md).
+
 - **Objective/requirement/citations:** Implement RI-F4/F5 and Book III memory forms.
 - **Repository/files:** RI schemas/services, Mission Control dossier view, worker client.
 - **Prerequisites/scope:** RI-001/003; supporting/opposing evidence, supersession, frozen dossiers, episodes. **Non-goals:** automatic approval.
