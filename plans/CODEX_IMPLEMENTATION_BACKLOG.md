@@ -22,6 +22,8 @@ All tasks inherit these constraints: preserve unrelated changes; never commit da
 
 ### BASE-002 — Canonical identity and compatibility ADR
 
+**Implementation status:** Completed on 2026-08-10. See [BASE-002 completion evidence](evidence/BASE-002.md) and [ADR-0005](../architecture/adrs/0005-canonical-identity-and-compatibility.md).
+
 - **Objective/requirement/citations:** Map existing Hermes and Bulletproof IDs to the canonical evidence model in [RI Foundation](RESEARCH_INTELLIGENCE_FOUNDATION.md).
 - **Repository/files:** Bible ADR plus control-plane schemas/migrations and Bulletproof producer contract.
 - **Prerequisites/scope:** BASE-001; specify aliases, version negotiation, immutability, and deprecation. **Non-goals:** data migration or retrieval.

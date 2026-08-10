@@ -43,6 +43,10 @@ For every implementation reference, record repository identity, commit, dependen
 
 The machine-verifiable baseline contract was added at control-plane commit `92e01fb70441e31b753e606636f13acb3d8d3351` and Bulletproof commit `5a70e9857b2ec617b794fc1661f91dbd8a148da9`. These commits add evidence tooling and do not supersede the behavioral audit pins above. Exact acceptance results and inherited failures are recorded in [BASE-001 Completion Evidence](../plans/evidence/BASE-001.md).
 
+## BASE-002 implementation addendum
+
+The canonical identity contract was added at control-plane commit `d26484f1da3f73697b4748326912c9879b05fef1` and Bulletproof commit `45790daaa62d8c8737317c0a869099b5747781c6`. [ADR-0005](../architecture/adrs/0005-canonical-identity-and-compatibility.md) is authoritative for ownership, alias, immutability, version-negotiation, deprecation, and rollback semantics. Acceptance results are recorded in [BASE-002 Completion Evidence](../plans/evidence/BASE-002.md).
+
 ### Verified implementation facts
 
 1. `BacktestEngine` implements a bar-driven loop connecting a historical feed, universe, strategy, risk engine, execution model, portfolio accounting, audit hooks, and artifact writers.
