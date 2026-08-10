@@ -60,6 +60,8 @@ All tasks inherit these constraints: preserve unrelated changes; never commit da
 
 ### RI-003 — Hybrid retrieval and citation replay
 
+**Implementation status:** Completed on 2026-08-10. See [RI-003 completion evidence](evidence/RI-003.md).
+
 - **Objective/requirement/citations:** Deliver RI-F3 exact, lexical, vector, and graph-assisted retrieval with citation replay and compatibility filtering.
 - **Repository/files:** RI query service, projection builders, evaluation fixtures, API client.
 - **Prerequisites/scope:** RI-001 and RI-002 fixture corpus. **Non-goals:** model-authored final decisions.
