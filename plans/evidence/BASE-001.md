@@ -2,7 +2,7 @@
 # BASE-001 Completion Evidence
 
 **Task:** Machine-verifiable implementation baseline
-**Status:** Completed locally; CI evidence collection configured
+**Status:** Completed; clean-checkout CI evidence collected
 **Validation date:** 2026-08-10
 
 ## Delivered contract
@@ -47,13 +47,15 @@ The pre-existing control-plane `.gitignore` modification and Bulletproof `src/bt
 | Default dirty guard | Exit 2 in both pre-existing dirty worktrees |
 | Output permissions | Mode 0600 |
 | Secret/raw-data scan | No credential, secret value, ignored data, or raw dataset entered evidence or commits |
+| Control-plane clean CI | Passed in 14 seconds; [PR 21](https://github.com/Chinedum-iwueke/swarm-control-plane/pull/21) |
+| Bulletproof clean CI | Passed in 9 seconds; [PR 261](https://github.com/Chinedum-iwueke/bulletproof_bt/pull/261) |
 
 Audit-mode evidence digests after the implementation commits were:
 
 - control plane: `47e834e5a1f097ea72b45035987218a9ac1470728c187869db2e8110cf5a9f54`;
 - Bulletproof: `88bf57e023f148ef2902880235e02bc7d56a3d64fba9ca6edc5417e71bc8c076`.
 
-These digests explicitly record the unrelated dirty paths and are not release-quality clean-tree attestations. CI creates the clean-checkout evidence for each pushed commit.
+These local digests explicitly record the unrelated dirty paths and are not release-quality clean-tree attestations. The passing GitHub workflows created and retained the corresponding clean-checkout evidence artifacts for each pushed commit.
 
 ## Inherited failures retained
 
