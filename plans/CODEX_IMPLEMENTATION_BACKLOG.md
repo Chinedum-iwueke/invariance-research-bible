@@ -10,6 +10,8 @@ All tasks inherit these constraints: preserve unrelated changes; never commit da
 
 ### BASE-001 — Machine-verifiable implementation baseline
 
+**Implementation status:** Completed on 2026-08-10. See [BASE-001 completion evidence](evidence/BASE-001.md).
+
 - **Objective/requirement/citations:** Encode repository pins, runtimes, schema inventory, dirty-state guard, and claim vocabulary required by [Book X Chapter 2](../books/book-10-builders-manual/chapters/02-baseline-audit-and-system-boundaries.md) and [Book V Appendix E](../books/book-05-bulletproof-bt-laboratory/appendices/e-requirement-traceability-and-gap-register.md).
 - **Repository/files:** Control plane and Bulletproof; new read-only inventory commands plus CI evidence schema.
 - **Prerequisites/scope:** None; record, validate, and diff safe metadata only. **Non-goals:** changing dependencies or tests.
@@ -19,6 +21,8 @@ All tasks inherit these constraints: preserve unrelated changes; never commit da
 - **Evidence/rollback/done:** `implementation-baseline.json` and digest; additive removal is rollback; done when repeat collection is stable. **Parallelism/conflicts:** parallel with OPS-001; owns baseline schema. **Reviewer:** architecture owner.
 
 ### BASE-002 — Canonical identity and compatibility ADR
+
+**Implementation status:** Completed on 2026-08-10. See [BASE-002 completion evidence](evidence/BASE-002.md) and [ADR-0005](../architecture/adrs/0005-canonical-identity-and-compatibility.md).
 
 - **Objective/requirement/citations:** Map existing Hermes and Bulletproof IDs to the canonical evidence model in [RI Foundation](RESEARCH_INTELLIGENCE_FOUNDATION.md).
 - **Repository/files:** Bible ADR plus control-plane schemas/migrations and Bulletproof producer contract.
@@ -32,6 +36,8 @@ All tasks inherit these constraints: preserve unrelated changes; never commit da
 
 ### RI-001 — Evidence object schema kernel
 
+**Implementation status:** Completed on 2026-08-10. See [RI-001 completion evidence](evidence/RI-001.md).
+
 - **Objective/requirement/citations:** Implement source, edition, artifact, scientific object, claim, method, assumption, dataset, run, review, decision, belief, and episode identities from Book III and RI-F1.
 - **Repository/files:** Control-plane models/schemas/migrations/services/tests; object-store adapter interface.
 - **Prerequisites/scope:** BASE-002; additive schemas and compatibility readers. **Non-goals:** embeddings or UI.
@@ -41,6 +47,8 @@ All tasks inherit these constraints: preserve unrelated changes; never commit da
 - **Evidence/rollback/done:** Migration and schema-coverage report; rollback only before canonical writes; complete at 100% object contract coverage. **Parallelism/conflicts:** owns canonical tables. **Reviewer:** Knowledge steward and DB reviewer.
 
 ### RI-002 — Quarantined scientific ingestion and recovery
+
+**Implementation status:** Completed on 2026-08-10. See [RI-002 completion evidence](evidence/RI-002.md).
 
 - **Objective/requirement/citations:** Implement RI-F2 document recovery with hierarchy, coordinates, tables, figures, equations, citations, confidence, and remediation.
 - **Repository/files:** Dedicated ingestion package/worker, object-store adapter, RI APIs.
@@ -52,6 +60,8 @@ All tasks inherit these constraints: preserve unrelated changes; never commit da
 
 ### RI-003 — Hybrid retrieval and citation replay
 
+**Implementation status:** Completed on 2026-08-10. See [RI-003 completion evidence](evidence/RI-003.md).
+
 - **Objective/requirement/citations:** Deliver RI-F3 exact, lexical, vector, and graph-assisted retrieval with citation replay and compatibility filtering.
 - **Repository/files:** RI query service, projection builders, evaluation fixtures, API client.
 - **Prerequisites/scope:** RI-001 and RI-002 fixture corpus. **Non-goals:** model-authored final decisions.
@@ -61,6 +71,8 @@ All tasks inherit these constraints: preserve unrelated changes; never commit da
 - **Evidence/rollback/done:** Versioned evaluation report meeting declared thresholds; drop/rebuild projections for rollback. **Parallelism/conflicts:** lexical/vector builders parallelize. **Reviewer:** Independent Knowledge Evaluator.
 
 ### RI-004 — Contradiction, negative-result, belief and dossier services
+
+**Implementation status:** Completed on 2026-08-10. See [RI-004 completion evidence](evidence/RI-004.md).
 
 - **Objective/requirement/citations:** Implement RI-F4/F5 and Book III memory forms.
 - **Repository/files:** RI schemas/services, Mission Control dossier view, worker client.
@@ -72,6 +84,8 @@ All tasks inherit these constraints: preserve unrelated changes; never commit da
 
 ### RI-005 — Corpus security, observability and recovery
 
+**Implementation status:** Completed on 2026-08-10. See [RI-005 completion evidence](evidence/RI-005.md).
+
 - **Objective/requirement/citations:** Implement RI-F6/F7 security controls, SLOs, projection rebuild and restore proof.
 - **Repository/files:** Ingestion/query services, telemetry, backups/runbooks, security fixtures.
 - **Prerequisites/scope:** RI-002/003. **Non-goals:** production source surveillance.
@@ -81,6 +95,8 @@ All tasks inherit these constraints: preserve unrelated changes; never commit da
 - **Evidence/rollback/done:** Security evaluation and recovery report with measured RPO/RTO. **Parallelism/conflicts:** observability and security fixtures parallelize. **Reviewer:** Security and SRE owners.
 
 ### RI-006 — Governed scientific surveillance
+
+**Implementation status:** Completed on 2026-08-10. See [RI-006 completion evidence](evidence/RI-006.md).
 
 - **Objective/requirement/citations:** Implement RI-F8 feeds, correction/retraction state, novelty, technique briefs, contradictions, and routing.
 - **Repository/files:** RI connectors, scheduler, research-program proposal APIs, Mission Control.
@@ -217,6 +233,18 @@ All tasks inherit these constraints: preserve unrelated changes; never commit da
 - **Steps/interfaces:** Parity rehearsal; restore canonical stores; rebuild projections; rotate secrets; replace one model/runtime; replay tasks.
 - **Tests/acceptance:** Measured RPO/RTO, integrity digests, stale lease handling, notification and rollback tests.
 - **Evidence/rollback/done:** Recovery dossier and runtime-replacement compatibility report. **Parallelism/conflicts:** rehearsals parallel by service, final integrated drill serialized. **Reviewer:** SRE, security and governance.
+
+## Deferred post-system architecture
+
+### LLM-001 — Hybrid frontier and open-weight model architecture
+
+- **Status/timing:** Explicitly deferred until the full system backlog and integrated operating path are complete. Codex remains the sole approved LLM reasoning runtime during the current implementation waves; this item must not introduce a provider migration or distract from system completion.
+- **Objective:** Design a provider-neutral model architecture that routes difficult, novel, or high-stakes reasoning to frontier models while assigning repetitive, high-volume, privacy-sensitive, and well-evaluated tasks to suitable open-weight models.
+- **Candidate open-weight scope:** Document classification, metadata extraction, embeddings, reranking, query expansion, bounded summarization, entity extraction, duplicate detection, operational-memory extraction, and other repetitive structured transformations.
+- **Frontier-model scope:** Complex engineering, architecture, difficult debugging, novel quantitative reasoning, adversarial scientific review, ambiguous founder requests, and synthesis requiring the strongest available reasoning.
+- **Required design controls:** Model gateway and registry; task-to-model policy; schema-constrained outputs; prompt/model/version provenance; privacy and data-egress policy; evaluation suites; shadow comparison; confidence and failure escalation to a frontier model; cost, latency, and quality telemetry; per-role budgets; rollback to Codex.
+- **Authority boundary:** No model may lease tasks, grant approval, expand permissions, execute privileged infrastructure changes, promote research, or allocate capital. Existing deterministic policy, approval, broker, evidence, and audit controls remain authoritative.
+- **Acceptance:** A reviewed architecture and benchmark report demonstrates which workloads can move from Codex without degrading correctness, evidence quality, security, or reliability. Migration occurs workload by workload only after shadow evaluation; Codex remains the fallback during transition.
 
 ## Shared-surface rules
 

@@ -39,6 +39,38 @@ For every implementation reference, record repository identity, commit, dependen
 - **Consequential boundaries:** document/chunk storage is not the complete scientific-object model; search is not a production hybrid retrieval/citation-replay system; graph and belief services are absent; comprehensive protected-evidence policy, corpus prompt-injection evaluation, projection rebuild/restore proof, and journal surveillance are targets. Daily questions currently rotate through the static approved program mandate; `awaiting_brief` means the cycle has not yet been linked to a registered hypothesis/task.
 - **Deployment boundary:** Historical VM1/VM2/Mac pilot documents were inspected as recorded evidence. Live services, credentials, backups, and production recovery were not exercised in this audit, so their present health is `unknown` here.
 
+## BASE-001 implementation addendum
+
+The machine-verifiable baseline contract was added at control-plane commit `92e01fb70441e31b753e606636f13acb3d8d3351` and Bulletproof commit `5a70e9857b2ec617b794fc1661f91dbd8a148da9`. These commits add evidence tooling and do not supersede the behavioral audit pins above. Exact acceptance results and inherited failures are recorded in [BASE-001 Completion Evidence](../plans/evidence/BASE-001.md).
+
+## BASE-002 implementation addendum
+
+The canonical identity contract was added at control-plane commit `d26484f1da3f73697b4748326912c9879b05fef1` and Bulletproof commit `45790daaa62d8c8737317c0a869099b5747781c6`. [ADR-0005](../architecture/adrs/0005-canonical-identity-and-compatibility.md) is authoritative for ownership, alias, immutability, version-negotiation, deprecation, and rollback semantics. Acceptance results are recorded in [BASE-002 Completion Evidence](../plans/evidence/BASE-002.md).
+
+## RI-001 implementation addendum
+
+The canonical evidence object kernel was added at control-plane commit `0322b7429616f0deb453dbcca08575d0359f1b13`. The implementation extends ADR-0005 with a distinct `object_schema_version`, covers all thirteen required object classes, and adds authenticated immutable APIs, lineage, audit, access, and object-store boundaries. Exact acceptance and migration-rehearsal results are recorded in [RI-001 Completion Evidence](../plans/evidence/RI-001.md).
+
+## RI-002 implementation addendum
+
+Quarantined scientific ingestion and structural recovery were added at control-plane commit `4cf32f54bbb3787fb17fc08eabcb0da3cd4ca596`. The implementation retains digest-addressed source artifacts, applies strict type, active-content, malware, expansion, injection, offline OCR, and confidence gates, and atomically publishes canonical source, edition, artifact, and scientific objects only after validation. Exact test, rejection, coordinate-replay, and PostgreSQL migration evidence is recorded in [RI-002 Completion Evidence](../plans/evidence/RI-002.md).
+
+## RI-003 implementation addendum
+
+Canonical hybrid retrieval and citation replay were added at control-plane commit `55d40357e82a2cbdd2181acf7097742589e6966f`. The implementation builds disposable projections for exact identity/text, lexical terms, deterministic local vectors, and canonical lineage neighbors, combines declared channels using deterministic reciprocal-rank fusion, and re-authorizes every result against its canonical object before returning text or coordinates. Exact relevance, access, staleness, client, replay, and PostgreSQL rehearsal evidence is recorded in [RI-003 Completion Evidence](../plans/evidence/RI-003.md).
+
+## RI-004 implementation addendum
+
+Institutional contradiction, negative-result, belief, episode, and frozen-dossier services were added at control-plane commit `d26f6a5f94e83291f2150c4785f45f203746c35a`. The implementation preserves opposition comparability and immutable review history, separates valid negative evidence from invalid attempts, versions belief revisions through canonical supersession, publishes shared episodes, freezes digest-bound dossiers with exact citation replay paths, and exposes a read-only Mission Control inspector. Exact contract, access, replay, and PostgreSQL rehearsal evidence is recorded in [RI-004 Completion Evidence](../plans/evidence/RI-004.md).
+
+## RI-005 implementation addendum
+
+Corpus security, observability, backup, and recovery services were added at control-plane commit `c7f9462a16c76de7fdcc7e60faf314c0dac7a56c`. The implementation treats content and metadata as non-authoritative data, emits bounded security findings without protected material, exports aggregate corpus metrics and explicit SLO state, creates digest-bound portable metadata backups, refuses restore over a populated project, reconstructs derived retrieval projections, repairs stale queue state, and records accountable digest-bound recovery evidence. Exact adversarial tests, migration results, citation replay, and measured PostgreSQL 17 RPO/RTO are recorded in [RI-005 Completion Evidence](../plans/evidence/RI-005.md).
+
+## RI-006 implementation addendum
+
+Governed scientific surveillance was added at control-plane commit `3cdeedbd48bace2e3309b171ed0f52897be68188`. The implementation registers rights-aware HTTPS feed allowlists, records digest-bound success and failure receipts, preserves corrections and retractions, rejects instruction-bearing abstracts, compares novelty against canonical RI memory, produces bounded technique briefs and questions, records append-only approval-required routing events, freezes weekly digests, and exposes read-only Mission Control provenance replay. Exact contract, migration and isolated rehearsal evidence is recorded in [RI-006 Completion Evidence](../plans/evidence/RI-006.md).
+
 ### Verified implementation facts
 
 1. `BacktestEngine` implements a bar-driven loop connecting a historical feed, universe, strategy, risk engine, execution model, portfolio accounting, audit hooks, and artifact writers.
