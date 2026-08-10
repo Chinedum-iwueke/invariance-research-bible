@@ -36,6 +36,8 @@ All tasks inherit these constraints: preserve unrelated changes; never commit da
 
 ### RI-001 — Evidence object schema kernel
 
+**Implementation status:** Completed on 2026-08-10. See [RI-001 completion evidence](evidence/RI-001.md).
+
 - **Objective/requirement/citations:** Implement source, edition, artifact, scientific object, claim, method, assumption, dataset, run, review, decision, belief, and episode identities from Book III and RI-F1.
 - **Repository/files:** Control-plane models/schemas/migrations/services/tests; object-store adapter interface.
 - **Prerequisites/scope:** BASE-002; additive schemas and compatibility readers. **Non-goals:** embeddings or UI.
