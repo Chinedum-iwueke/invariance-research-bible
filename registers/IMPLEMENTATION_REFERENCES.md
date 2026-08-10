@@ -39,6 +39,10 @@ For every implementation reference, record repository identity, commit, dependen
 - **Consequential boundaries:** document/chunk storage is not the complete scientific-object model; search is not a production hybrid retrieval/citation-replay system; graph and belief services are absent; comprehensive protected-evidence policy, corpus prompt-injection evaluation, projection rebuild/restore proof, and journal surveillance are targets. Daily questions currently rotate through the static approved program mandate; `awaiting_brief` means the cycle has not yet been linked to a registered hypothesis/task.
 - **Deployment boundary:** Historical VM1/VM2/Mac pilot documents were inspected as recorded evidence. Live services, credentials, backups, and production recovery were not exercised in this audit, so their present health is `unknown` here.
 
+## BASE-001 implementation addendum
+
+The machine-verifiable baseline contract was added at control-plane commit `92e01fb70441e31b753e606636f13acb3d8d3351` and Bulletproof commit `5a70e9857b2ec617b794fc1661f91dbd8a148da9`. These commits add evidence tooling and do not supersede the behavioral audit pins above. Exact acceptance results and inherited failures are recorded in [BASE-001 Completion Evidence](../plans/evidence/BASE-001.md).
+
 ### Verified implementation facts
 
 1. `BacktestEngine` implements a bar-driven loop connecting a historical feed, universe, strategy, risk engine, execution model, portfolio accounting, audit hooks, and artifact writers.

@@ -10,6 +10,7 @@ This register separates the completeness of the Bible from the maturity of the i
 | Capability | Status | Evidence boundary | Consequential gap | Roadmap destination |
 |---|---|---|---|---|
 | Constitutional doctrine and authority model | current | Books I-II and controlled ADRs | Runtime policy coverage is incomplete | M0, M2 |
+| Machine-verifiable repository baseline | current; tested | Identical `implementation-baseline-v1` collectors, schemas, fixtures, and CI artifact workflows in Hermes and Bulletproof | Clean CI artifacts are commit-specific; declared project suites retain recorded upstream failures | BASE-001 complete; BT-001 and control-plane defect closure remain |
 | Agent identity, bearer authentication, leases, lifecycle events | tested; observed | Control-plane routes, worker client/service tests, recorded M4-M15 pilots | No complete multi-service SLO or disaster exercise | M2, M8 |
 | Restricted named workflows and isolated Git worktrees | tested; observed | Worker policy, executor, workspace tests and engineering pilots | Broader role catalog remains package-specific | M2 |
 | Human approvals and mission supervision | tested; observed | Governance models, Telegram/Mission Control flows, M9 evidence | Approval fatigue and notification correctness need durable SLOs | M2, M8 |

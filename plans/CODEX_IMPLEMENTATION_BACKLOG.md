@@ -10,6 +10,8 @@ All tasks inherit these constraints: preserve unrelated changes; never commit da
 
 ### BASE-001 — Machine-verifiable implementation baseline
 
+**Implementation status:** Completed on 2026-08-10. See [BASE-001 completion evidence](evidence/BASE-001.md).
+
 - **Objective/requirement/citations:** Encode repository pins, runtimes, schema inventory, dirty-state guard, and claim vocabulary required by [Book X Chapter 2](../books/book-10-builders-manual/chapters/02-baseline-audit-and-system-boundaries.md) and [Book V Appendix E](../books/book-05-bulletproof-bt-laboratory/appendices/e-requirement-traceability-and-gap-register.md).
 - **Repository/files:** Control plane and Bulletproof; new read-only inventory commands plus CI evidence schema.
 - **Prerequisites/scope:** None; record, validate, and diff safe metadata only. **Non-goals:** changing dependencies or tests.
