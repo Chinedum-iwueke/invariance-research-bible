@@ -35,12 +35,17 @@ contracts. Neither reader guesses field meaning.
 | Alembic migration graph | Single BASE-002 head |
 | Hermes identity, research-registry, and data-contract slice | 23 passed |
 | Bulletproof identity and experiment-cleanup slice | 7 passed |
+| Control-plane clean CI collector | Passed in PR 22 (11 seconds) |
+| Bulletproof clean CI collector | Passed in PR 262 (9 seconds) |
 
 The Hermes slice used a mode-0600 audit-only placeholder password file to satisfy
 configuration import; it did not connect to a database or contain a credential.
 Bulletproof's broader research-spec module was not included because its current
 environment lacks the undeclared test dependency `jsonschema`; BASE-002 introduces
 no dependency change and its dedicated fixtures passed independently.
+
+The Bible repository reported no automated checks for PR 2; its Markdown diff passed
+`git diff --check` locally.
 
 The implementation pins are:
 
