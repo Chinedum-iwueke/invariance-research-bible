@@ -3,6 +3,8 @@
 
 The public repository is a substantial experimental substrate, not the final institutional laboratory. Migration should preserve verified behavior, close evidence gaps, and avoid a rewrite that destroys accumulated tests and artifact compatibility.
 
+The controlled [current/target/migration diagram](../../../architecture/diagrams/implementation-migration.md) and [company engineering roadmap](../../../plans/COMPANY_ENGINEERING_ROADMAP.md) place this laboratory migration after the Research Intelligence identity foundation and governed agent reliability, while allowing baseline defect repair to proceed in parallel.
+
 ## 17.1 Preserve
 
 The target retains the explicit classic-engine boundaries; typed market and trading events; deterministic configuration practices; instrument-aware risk; visible costs; audit layers; run bundles; hypothesis and grid machinery; truth validation; research-data extraction; and extensive regression tests.

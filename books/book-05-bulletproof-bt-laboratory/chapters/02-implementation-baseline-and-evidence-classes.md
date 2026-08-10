@@ -22,16 +22,22 @@ The implementation hierarchy is:
 
 Higher evidence can narrow a lower claim. It cannot establish production reliability without production evidence. A unit test can show that a safety branch rejects an input; it cannot show that a venue, network, credential store, supervisor, and human response process behave correctly together.
 
-## 2.3 Four claim labels
+## 2.3 Controlled claim labels
 
-Every implementation passage uses one of four meanings:
+Every implementation passage uses the following meanings when status could be confused:
 
-- **Current:** present at the pin and supported by code plus relevant evidence.
-- **Extension:** a bounded next increment grounded in current seams but not yet verified at the pin.
-- **Target:** the desired institutional contract, possibly spanning repositories and services.
-- **Deferred:** excluded until prerequisites or a separate volume’s controls exist.
+- **Current:** directly present in inspected implementation evidence.
+- **Partial:** part of the required contract exists, but one or more necessary behaviors or proofs do not.
+- **Documented:** documentation makes the claim, but implementation evidence is absent or contradictory.
+- **Tested:** an identified passing test exercises the bounded claim.
+- **Observed:** a recorded controlled run demonstrates the bounded behavior.
+- **Target:** required by the Bible but not currently implemented.
+- **Extension:** a planned evolution grounded in a verified current seam.
+- **Deferred:** intentionally postponed with its prerequisite or reason stated.
+- **Unknown:** available evidence cannot resolve the claim.
+- **Blocked:** validation requires unavailable authority, credentials, services, or infrastructure.
 
-These labels are semantic even when not repeated before every sentence. The chapter heading and explicit boundary paragraphs control the reading.
+Labels compose. A surface may be `current; tested` while its end-to-end institutional contract remains `partial`. The chapter heading and explicit boundary paragraphs control the reading when labels are not repeated before every sentence.
 
 ## 2.4 Contradictions are evidence
 
