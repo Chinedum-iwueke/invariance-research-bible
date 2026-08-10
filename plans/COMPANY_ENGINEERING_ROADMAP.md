@@ -4,6 +4,13 @@
 **Status:** Dependency-ordered target plan
 **Planning unit:** Evidence-gated capability, not calendar promise
 
+**Coverage authority:** This roadmap defines the program-level sequence. The
+[Bible Capability Coverage and Complete Company Build Plan](BIBLE_CAPABILITY_COVERAGE.md)
+is the feature-level coverage map, and the
+[Codex Implementation Backlog](CODEX_IMPLEMENTATION_BACKLOG.md) is the executable
+queue. A program milestone is not complete while any required package in the coverage
+map lacks its acceptance dossier or an explicit, reviewed deferral.
+
 ## Milestone contract
 
 Every milestone below inherits these mandatory fields: canonical objects are versioned and digest-bound; APIs/events/artifacts are typed; secrets remain outside prompts/logs/commits; agents are replaceable and permission-bounded; external mutation requires separate authority; projections are rebuildable; tests include positive, negative, authorization, idempotency, recovery, and migration cases; observability covers latency, error, queue, staleness, and evidence publication; rollback preserves canonical history; completion requires a signed/digest-bound evidence dossier. “Unavailable after” is an explicit non-claim, not postponed documentation.
@@ -29,7 +36,8 @@ Every milestone below inherits these mandatory fields: canonical objects are ver
 flowchart LR
     M0[M0 Baseline and contracts] --> M1[M1 Research Intelligence foundation]
     M0 --> M2[M2 Governed agent operations]
-    M1 --> M3[M3 Bulletproof contract closure]
+    M1 --> M1B[M1B Corpus, graph and domain brain qualification]
+    M1B --> M3[M3 Bulletproof contract closure]
     M2 --> M3
     M1 --> M4[M4 Discovery and surveillance]
     M3 --> M4
@@ -69,6 +77,18 @@ flowchart LR
 - **Dependencies/parallelism:** M0; schema kernel precedes ingestion/projections, which then parallelize.
 - **Exit evidence:** Minimum vertical-slice dossier specified in RI-F1 through RI-F9.
 - **Unavailable after:** Corpus breadth and model quality continue growing; no capital path.
+
+### M1B — Integrate and qualify the real institutional corpus
+
+- **Objective/capability:** Reconcile the Mac research inbox, legacy Hermes records, imported prior results and the bounded Bulletproof memory projection into the canonical evidence core; add graph/cognitive projections and measurable domain grounding.
+- **Requirements/reuse/gaps:** Book III Chapters 6-18; reuse RI-001..006 without treating fixture success as corpus migration evidence; close the broad-backfill, graph, deletion, domain-quality and production-scale retrieval gaps.
+- **Affected surfaces:** Mac inbox, control plane, object storage, VM1 memory steward, Mission Control, retrieval and graph projections.
+- **Objects/interfaces/data:** Corpus inventory, migration receipt, edition/duplicate decision, typed edge, projection manifest, curriculum, coverage/evaluation report.
+- **Roles/boundaries/security:** Librarian publishes; Canon Curator resolves identity; evaluator qualifies retrieval; sources and models cannot grant authority.
+- **Verification/recovery:** Idempotent sync, corruption/quarantine, exact replay, access inference, deletion propagation, projection rebuild, full restore and held-out domain evaluation.
+- **Dependencies/parallelism:** RI-001..006; RI-007 precedes graph/domain qualification. Bulletproof source export may proceed read-only in parallel.
+- **Exit evidence:** All eligible existing corpus items have explicit disposition and the domain brain passes declared citation, opposition, calibration and abstention thresholds.
+- **Unavailable after:** Uploading more documents never by itself proves expertise or truth.
 
 ### M2 — Governed agent operations
 
@@ -168,4 +188,8 @@ flowchart LR
 
 ## First implementation wave
 
-Execute `BASE-001`, `RI-001`, `RI-002`, `RI-003`, `OPS-001`, and `BT-001` from the [Codex backlog](CODEX_IMPLEMENTATION_BACKLOG.md). Schema/identity decisions are serialized; inventories, fixtures, and operational reliability work can run in parallel.
+Continue from completed `BASE-001`, `BASE-002`, and `RI-001..006` with `BASE-003`,
+`RI-007`, `OPS-001`, `GOV-001`, `AGT-001`, `DATA-001`, and `BT-001` from the
+[Codex backlog](CODEX_IMPLEMENTATION_BACKLOG.md). The real-corpus inventory and
+approval-race reproduction may run in parallel; canonical schema, authority and
+producer-contract decisions remain serialized.

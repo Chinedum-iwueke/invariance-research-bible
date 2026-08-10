@@ -6,6 +6,13 @@
 
 All tasks inherit these constraints: preserve unrelated changes; never commit data/secrets; use migrations, compatibility readers, and typed schemas; do not grant an agent promotion or capital authority; retain negative/failed evidence; run repository-native formatting/tests plus the named acceptance commands; publish a redacted evidence report; and obtain the named reviewer before merge.
 
+This backlog is the execution queue, not the sole coverage authority. Every task must
+also appear in the [Bible capability coverage plan](BIBLE_CAPABILITY_COVERAGE.md),
+which maps all ten volumes and appendices to build packages, dependencies, operating
+owners, and acceptance evidence. A capability mentioned only in prose is a planning
+defect. CI should eventually reject an implementation-status claim when its coverage
+entry has no task, evidence dossier, or explicit deferral.
+
 ## Wave 0 — Baseline and identity
 
 ### BASE-001 — Machine-verifiable implementation baseline
@@ -31,6 +38,16 @@ All tasks inherit these constraints: preserve unrelated changes; never commit da
 - **Steps/interfaces:** Inventory IDs; choose canonical owners; define JSON Schemas/OpenAPI; add compatibility fixtures.
 - **Tests/acceptance:** Round-trip old/new records; reject digest mutation and unknown major versions.
 - **Evidence/rollback/done:** ADR and compatibility report; rollback retains readers; complete when both repos consume fixtures. **Parallelism/conflicts:** serialized before RI/BT schema work. **Reviewer:** architecture and knowledge authorities.
+
+### BASE-003 — Machine-verifiable Bible requirement ledger
+
+- **Objective/requirement/citations:** Convert every normative requirement, invariant, acceptance clause, appendix contract and declared non-goal in all ten volumes into a stable traceability record so planning omissions become test failures.
+- **Repository/files:** Bible requirement manifest/schema, extractor/validator, coverage report, CI workflow and implementation/evidence registers.
+- **Prerequisites/scope:** BASE-001/002; assign stable requirement IDs and human-review extracted semantics. **Non-goals:** treating keyword extraction as authoritative interpretation or claiming implementation from documentation alone.
+- **Data/access:** Repository text and metadata only; no secrets or corpus payloads.
+- **Steps/interfaces:** Enumerate chapters/appendices; identify normative statements; record owner, package, dependency, verification, evidence, status and deferral rationale; validate links and uniqueness; calculate coverage by volume and capability.
+- **Tests/acceptance:** Missing chapter, unmapped requirement, duplicate ID, nonexistent task/evidence, circular dependency, false completion and stale digest fixtures must fail CI.
+- **Evidence/rollback/done:** Signed/digest-bound coverage report with 100% disposition and zero orphan work packages; completion never means all requirements are implemented, only that none are unplanned. **Reviewer:** architecture owner, domain authorities and independent audit reviewer.
 
 ## Wave 1 — Research Intelligence foundation
 
@@ -105,6 +122,35 @@ All tasks inherit these constraints: preserve unrelated changes; never commit da
 - **Steps/interfaces:** Source registry, fetch receipt, novelty report, alert, proposed question, approval route.
 - **Tests/acceptance:** Duplicate, retraction, poisoned abstract, outage, retry/idempotency and provenance-replay fixtures.
 - **Evidence/rollback/done:** One weekly digest with citation-replayable candidates and approval events. **Parallelism/conflicts:** connector work parallel. **Reviewer:** Canon Curator and research authority.
+
+### RI-007 — Existing-corpus migration and continuous synchronization
+
+- **Objective/requirement/citations:** Move the founder inbox, legacy Hermes documents/chunks, imported prior results, and the bounded Bulletproof memory projection into the canonical RI object model without copying the raw Bulletproof lake.
+- **Repository/files:** Mac Mission Control inbox, control-plane ingestion/reconciliation services, VM1 memory bridge, corpus inventory and migration tools.
+- **Prerequisites/scope:** RI-002/003/005; content-addressed backfill and incremental sync. **Non-goals:** silent deletion, unrestricted filesystem crawling, or treating derived summaries as primary evidence.
+- **Data/access:** Preserve source artifact, edition, coordinates, extraction provenance, classification, access class and quarantine state; never commit corpus payloads.
+- **Steps/interfaces:** Inventory; digest reconcile; edition/duplicate resolution; canonical publish; projection build; incremental watch/refresh; failure remediation; supersession/deletion propagation; Bulletproof projection registration.
+- **Tests/acceptance:** Mixed PDF/book fixtures, duplicate editions, renamed files, corrupt scans, interrupted migration, replay after restore, idempotent refresh and access denial.
+- **Evidence/rollback/done:** Corpus coverage manifest with every eligible source classified as canonical, quarantined, duplicate, superseded or excluded; exact citation replay; restore/rebuild proof. **Reviewer:** Librarian, Knowledge Evaluator and security reviewer.
+
+### RI-008 — Knowledge graph, projection graph and cognitive tool services
+
+- **Objective/requirement/citations:** Complete Book III Chapters 14 and 16: typed scientific edges, temporal/provenance/access-aware projections, graph traversal, deterministic calculators, context assembly and tool receipts.
+- **Repository/files:** Canonical edge registry, graph projection builder/query API, deterministic scientific-tool service, Mission Control graph explorer.
+- **Prerequisites/scope:** RI-003/004/007. **Non-goals:** graph database as a second source of truth or model-authored canonical facts.
+- **Data/access:** Canonical IDs remain authoritative; protected nodes and inference paths are filtered before traversal.
+- **Steps/interfaces:** Edge vocabulary and validity intervals; projection manifests; neighborhood/path/subgraph queries; claim-method-dataset-result lineage; contradiction and trial-family overlays; calculator registry; citation-bearing context packs.
+- **Tests/acceptance:** Direction/temporal/access semantics, stale projection, cyclic graph, contradictory path, provenance replay, deterministic tool parity and rebuild tests.
+- **Evidence/rollback/done:** Rebuildable graph whose sampled paths replay to canonical objects and whose answers include evidence/tool receipts. **Reviewer:** Canon Curator, architecture owner and independent evaluator.
+
+### RI-009 — Domain curriculum, corpus quality and institutional brain evaluation
+
+- **Objective/requirement/citations:** Make the senior quantitative researcher demonstrably grounded in approved domains through curriculum dossiers, coverage maps, retrieval benchmarks and belief calibration rather than persona prompting.
+- **Repository/files:** Domain profiles, curriculum registry, evaluation sets, corpus-quality dashboards, agent context policy.
+- **Prerequisites/scope:** RI-007/008. **Non-goals:** claiming expertise from upload volume or allowing sources to grant authority.
+- **Steps/interfaces:** Domain ontology; prerequisite map; source-quality rubric; coverage/gap analysis; adversarial question sets; citation and contradiction scoring; curriculum versioning; decay/review cadence.
+- **Tests/acceptance:** Held-out domain questions, opposing-evidence recall, abstention, stale/retracted source, cross-domain leakage and source-poisoning tests.
+- **Evidence/rollback/done:** Versioned domain-readiness dossier meeting declared retrieval, citation, opposition, calibration and abstention thresholds. **Reviewer:** Senior research authority and Independent Knowledge Evaluator.
 
 ## Wave 1 — Agent reliability in parallel
 
@@ -245,6 +291,27 @@ All tasks inherit these constraints: preserve unrelated changes; never commit da
 - **Required design controls:** Model gateway and registry; task-to-model policy; schema-constrained outputs; prompt/model/version provenance; privacy and data-egress policy; evaluation suites; shadow comparison; confidence and failure escalation to a frontier model; cost, latency, and quality telemetry; per-role budgets; rollback to Codex.
 - **Authority boundary:** No model may lease tasks, grant approval, expand permissions, execute privileged infrastructure changes, promote research, or allocate capital. Existing deterministic policy, approval, broker, evidence, and audit controls remain authoritative.
 - **Acceptance:** A reviewed architecture and benchmark report demonstrates which workloads can move from Codex without degrading correctness, evidence quality, security, or reliability. Migration occurs workload by workload only after shadow evaluation; Codex remains the fallback during transition.
+
+## Complete remaining executable queue
+
+The compact work-package contracts in
+[Bible Capability Coverage](BIBLE_CAPABILITY_COVERAGE.md#4-engineering-work-packages)
+are incorporated into this backlog by reference. They are active planned work, not an
+ideas list. Before implementation, the selected package must be expanded here to the
+same repository/scope/data/interfaces/tests/evidence/reviewer detail used by `RI-*`.
+The dependency order is:
+
+1. `BASE-003`; `RI-007`, `RI-008`, `RI-009`, `RI-010`, `RI-011`; `OPS-001`, `OPS-002`; `GOV-001`, `GOV-002`, `GOV-003`, `GOV-004`; `AGT-001`, `AGT-002`, `AGT-003`, `AGT-004`, `AGT-005`, `AGT-006`, `AGT-007`, `AGT-008`.
+2. `DATA-001`, `DATA-002`, `DATA-003`; `BT-001`, `BT-002`, `BT-003`, `BT-004`, `BT-005`, `BT-006`, `BT-007`, `BT-008`; `UI-001`, `UI-002`, `UI-003`, `UI-004`; `CHAN-001`; `WS-001`, `WS-002`.
+3. `DISC-001`, `DISC-002`, `DISC-003`, `DISC-004`, `DISC-005`, `DISC-006`, `DISC-007`, `DISC-008`, `DISC-009`; `SHADOW-001`, `SHADOW-002`; `ML-001`, `ML-002`, `ML-003`, `ML-004`, `ML-005`, `ML-006`; `RL-001`, `RL-002`, `RL-003`.
+4. `PORT-001`, `PORT-002`, `PORT-003`, `PORT-004`; `RISK-001`, `RISK-002`, `RISK-003`, `RISK-004`, `RISK-005`; `EXEC-001`, `EXEC-002`, `EXEC-003`, `EXEC-004`, `EXEC-005`, `EXEC-006`, `EXEC-007`, `EXEC-008`, `EXEC-009`, `EXEC-010`; `DEMO-001`.
+5. `PLAT-001`, `PLAT-002`, `PLAT-003`, `PLAT-004`, `PLAT-005`, `PLAT-006`, `PLAT-007`, `PLAT-008`, `PLAT-009`; `SEC-001`, `SEC-002`; `UI-005`, `UI-006`; `CAD-001`, `CAD-002`; `OPS-003`.
+6. Separately governed `LIVE-001`, `LIVE-002`, then `EVOLVE-001`, `EVOLVE-002` and deferred `LLM-001`.
+
+Parallel work is allowed only where the coverage dependency graph and the ownership
+rules below do not conflict. Capital work cannot become executable merely because its
+software prerequisites exist; its independent evidence and human approval gates remain
+mandatory.
 
 ## Shared-surface rules
 
