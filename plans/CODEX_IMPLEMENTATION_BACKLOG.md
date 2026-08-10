@@ -48,6 +48,8 @@ All tasks inherit these constraints: preserve unrelated changes; never commit da
 
 ### RI-002 — Quarantined scientific ingestion and recovery
 
+**Implementation status:** Completed on 2026-08-10. See [RI-002 completion evidence](evidence/RI-002.md).
+
 - **Objective/requirement/citations:** Implement RI-F2 document recovery with hierarchy, coordinates, tables, figures, equations, citations, confidence, and remediation.
 - **Repository/files:** Dedicated ingestion package/worker, object-store adapter, RI APIs.
 - **Prerequisites/scope:** RI-001; born-digital plus one scanned fixture. **Non-goals:** broad corpus import.
