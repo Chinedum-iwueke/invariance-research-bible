@@ -63,6 +63,10 @@ Canonical hybrid retrieval and citation replay were added at control-plane commi
 
 Institutional contradiction, negative-result, belief, episode, and frozen-dossier services were added at control-plane commit `d26f6a5f94e83291f2150c4785f45f203746c35a`. The implementation preserves opposition comparability and immutable review history, separates valid negative evidence from invalid attempts, versions belief revisions through canonical supersession, publishes shared episodes, freezes digest-bound dossiers with exact citation replay paths, and exposes a read-only Mission Control inspector. Exact contract, access, replay, and PostgreSQL rehearsal evidence is recorded in [RI-004 Completion Evidence](../plans/evidence/RI-004.md).
 
+## RI-005 implementation addendum
+
+Corpus security, observability, backup, and recovery services were added at control-plane commit `c7f9462a16c76de7fdcc7e60faf314c0dac7a56c`. The implementation treats content and metadata as non-authoritative data, emits bounded security findings without protected material, exports aggregate corpus metrics and explicit SLO state, creates digest-bound portable metadata backups, refuses restore over a populated project, reconstructs derived retrieval projections, repairs stale queue state, and records accountable digest-bound recovery evidence. Exact adversarial tests, migration results, citation replay, and measured PostgreSQL 17 RPO/RTO are recorded in [RI-005 Completion Evidence](../plans/evidence/RI-005.md).
+
 ### Verified implementation facts
 
 1. `BacktestEngine` implements a bar-driven loop connecting a historical feed, universe, strategy, risk engine, execution model, portfolio accounting, audit hooks, and artifact writers.
