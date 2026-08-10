@@ -84,6 +84,8 @@ All tasks inherit these constraints: preserve unrelated changes; never commit da
 
 ### RI-005 — Corpus security, observability and recovery
 
+**Implementation status:** Completed on 2026-08-10. See [RI-005 completion evidence](evidence/RI-005.md).
+
 - **Objective/requirement/citations:** Implement RI-F6/F7 security controls, SLOs, projection rebuild and restore proof.
 - **Repository/files:** Ingestion/query services, telemetry, backups/runbooks, security fixtures.
 - **Prerequisites/scope:** RI-002/003. **Non-goals:** production source surveillance.
