@@ -96,6 +96,8 @@ All tasks inherit these constraints: preserve unrelated changes; never commit da
 
 ### RI-006 — Governed scientific surveillance
 
+**Implementation status:** Completed on 2026-08-10. See [RI-006 completion evidence](evidence/RI-006.md).
+
 - **Objective/requirement/citations:** Implement RI-F8 feeds, correction/retraction state, novelty, technique briefs, contradictions, and routing.
 - **Repository/files:** RI connectors, scheduler, research-program proposal APIs, Mission Control.
 - **Prerequisites/scope:** RI-003/004/005; begin with two approved primary feeds. **Non-goals:** auto-adoption or auto-trial.

@@ -67,6 +67,10 @@ Institutional contradiction, negative-result, belief, episode, and frozen-dossie
 
 Corpus security, observability, backup, and recovery services were added at control-plane commit `c7f9462a16c76de7fdcc7e60faf314c0dac7a56c`. The implementation treats content and metadata as non-authoritative data, emits bounded security findings without protected material, exports aggregate corpus metrics and explicit SLO state, creates digest-bound portable metadata backups, refuses restore over a populated project, reconstructs derived retrieval projections, repairs stale queue state, and records accountable digest-bound recovery evidence. Exact adversarial tests, migration results, citation replay, and measured PostgreSQL 17 RPO/RTO are recorded in [RI-005 Completion Evidence](../plans/evidence/RI-005.md).
 
+## RI-006 implementation addendum
+
+Governed scientific surveillance was added at control-plane commit `3cdeedbd48bace2e3309b171ed0f52897be68188`. The implementation registers rights-aware HTTPS feed allowlists, records digest-bound success and failure receipts, preserves corrections and retractions, rejects instruction-bearing abstracts, compares novelty against canonical RI memory, produces bounded technique briefs and questions, records append-only approval-required routing events, freezes weekly digests, and exposes read-only Mission Control provenance replay. Exact contract, migration and isolated rehearsal evidence is recorded in [RI-006 Completion Evidence](../plans/evidence/RI-006.md).
+
 ### Verified implementation facts
 
 1. `BacktestEngine` implements a bar-driven loop connecting a historical feed, universe, strategy, risk engine, execution model, portfolio accounting, audit hooks, and artifact writers.
