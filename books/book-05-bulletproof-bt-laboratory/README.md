@@ -1,7 +1,7 @@
 # Book V — Bulletproof BT Laboratory
 
 **Purpose:** The deterministic experimental laboratory, its present implementation, research contracts, run artifacts, and institutional integration.  
-**Status:** Repository-native edition complete; pinned implementation audit, volume QA, and final series QA passed with recorded upstream failures  
+**Status:** Repository-native specification complete; implementation remains partial and evidence-gated
 **Canonical dependencies:** Books I–IV and a pinned Bulletproof BT implementation  
 **Notation:** [Series standard](../../standards/NOTATION.md)  
 **Principal cross-references:** Book VIII for execution mechanics; Book X for deployment.
@@ -31,5 +31,7 @@
 - [Appendix A — Run Bundle Contract](appendices/a-run-bundle-contract.md)
 - [Appendix B — Reproducibility and Truth Checklist](appendices/b-reproducibility-and-truth-checklist.md)
 - [Appendix C — Implementation Claim Matrix](appendices/c-implementation-claim-matrix.md)
+- [Appendix D — Research Data Lake Audit](appendices/d-research-data-lake-audit.md)
+- [Appendix E — Requirement Traceability and Gap Register](appendices/e-requirement-traceability-and-gap-register.md)
 
-Every implementation passage must be marked as current behavior, near-term extension, target architecture, or deferred capability.
+Every implementation passage must be marked as `current`, `partial`, `documented`, `tested`, `observed`, `target`, `extension`, `deferred`, `unknown`, or `blocked` when its status could be confused. The [traceability and gap register](appendices/e-requirement-traceability-and-gap-register.md) is the controlling index from Book V requirements to code evidence, validation, data dependencies, gaps, and milestones.

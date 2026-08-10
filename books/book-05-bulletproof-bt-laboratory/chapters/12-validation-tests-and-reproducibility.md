@@ -47,6 +47,8 @@ The result is not “the suite passes.” It is a bounded behavioral audit with 
 
 Failures discovered by audit become evidence. They are not edited out of prose after a narrow fix unless the new commit is pinned and rerun.
 
+A 2026-08-10 addendum used the repository virtual environment (Python 3.11.15, pytest 9.0.2). Byte-compilation passed; 50 focused tests spanning the engine, execution, accounting, resampling, deterministic artifacts, run contracts, truth validation, and portfolio engine passed in 2.85 seconds. A new full collection attempt exceeded a 120-second bound without a completed report. It therefore neither supersedes the earlier completed inventory nor supports a full-suite-pass claim.
+
 ## 12.5 Reproduction packet
 
 A target reproduction packet contains exact commands, interpreter and dependency identity, platform class, code pin, dataset manifest, configuration, seeds, environment variables by name but not secret value, resource limits, expected artifact digests or semantic checks, and known variable fields.

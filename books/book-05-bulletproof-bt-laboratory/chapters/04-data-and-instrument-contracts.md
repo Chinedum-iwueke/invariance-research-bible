@@ -9,6 +9,8 @@ The pinned repository supports single-file input and dataset directories describ
 
 Core bar validation requires the expected timestamp, symbol, OHLC, and volume structure; checks UTC-aware time, ordering, duplicates, finite values, and coherent price geometry; and can validate expected gaps separately. “No interpolation” means missing observations are not silently synthesized into tradable evidence. It does not mean the source vendor itself is complete or correct.
 
+The read-only local-lake audit found operational `raw`, `canonical`, `manifests`, and `reports` layers and cataloged perpetual-market data across Binance, Bybit, and OKX. It also found material declared gaps in Bybit funding and open-interest coverage. [Appendix D](../appendices/d-research-data-lake-audit.md) records safe aggregate evidence and its proof limits. This observed inventory does not certify every partition or permit raw data to enter the Bible repository.
+
 ## 4.2 Dataset identity
 
 A reproducible dataset identity includes:

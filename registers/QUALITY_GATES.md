@@ -16,6 +16,7 @@
 | QG-010 Series continuity | Books I–X | Cross-volume architectural, scientific, ownership, and editorial review | Pass on 2026-08-09 |
 | QG-011 Book V fidelity | Bulletproof BT | Pinned repository audit, tests, schemas, artifacts, classified claims, failures, and unavailable evidence | Pass with upstream failures recorded on 2026-08-08 |
 | QG-012 Diagram consistency | All diagrams | Prose, identifiers, links, Mermaid source, series order, and authority boundaries checked | Pass on 2026-08-09 |
+| QG-013 Implementation planning integrity | Book V audit and company roadmap | Current claims bind to inspected evidence; all Book V requirements map to gaps and milestones; all roadmap tasks include executable acceptance evidence | Pass on 2026-08-10 with implementation gaps explicitly open |
 
 Passing a gate proves only its stated scope. It cannot be used as evidence for an untested book, implementation, citation, or scientific claim.
 
