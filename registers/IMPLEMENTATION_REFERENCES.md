@@ -55,6 +55,10 @@ The canonical evidence object kernel was added at control-plane commit `0322b742
 
 Quarantined scientific ingestion and structural recovery were added at control-plane commit `4cf32f54bbb3787fb17fc08eabcb0da3cd4ca596`. The implementation retains digest-addressed source artifacts, applies strict type, active-content, malware, expansion, injection, offline OCR, and confidence gates, and atomically publishes canonical source, edition, artifact, and scientific objects only after validation. Exact test, rejection, coordinate-replay, and PostgreSQL migration evidence is recorded in [RI-002 Completion Evidence](../plans/evidence/RI-002.md).
 
+## RI-003 implementation addendum
+
+Canonical hybrid retrieval and citation replay were added at control-plane commit `55d40357e82a2cbdd2181acf7097742589e6966f`. The implementation builds disposable projections for exact identity/text, lexical terms, deterministic local vectors, and canonical lineage neighbors, combines declared channels using deterministic reciprocal-rank fusion, and re-authorizes every result against its canonical object before returning text or coordinates. Exact relevance, access, staleness, client, replay, and PostgreSQL rehearsal evidence is recorded in [RI-003 Completion Evidence](../plans/evidence/RI-003.md).
+
 ### Verified implementation facts
 
 1. `BacktestEngine` implements a bar-driven loop connecting a historical feed, universe, strategy, risk engine, execution model, portfolio accounting, audit hooks, and artifact writers.
