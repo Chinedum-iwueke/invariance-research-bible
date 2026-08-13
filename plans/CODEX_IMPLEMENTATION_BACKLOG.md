@@ -127,6 +127,8 @@ entry has no task, evidence dossier, or explicit deferral.
 
 ### RI-007 — Existing-corpus migration and continuous synchronization
 
+**Implementation status:** Source implementation completed on 2026-08-10 in control-plane PR 29, with recovery fixes through PR 33. Live founder-inbox reconciliation is in progress as of 2026-08-13; RI-007 must not be described as production-complete until the coverage manifest has zero unexplained failures and the retained refresh, projection and replay evidence is reviewed. See the control-plane `docs/ri-007-validation.md` record.
+
 - **Objective/requirement/citations:** Move the founder inbox, legacy Hermes documents/chunks, imported prior results, and the bounded Bulletproof memory projection into the canonical RI object model without copying the raw Bulletproof lake.
 - **Repository/files:** Mac Mission Control inbox, control-plane ingestion/reconciliation services, VM1 memory bridge, corpus inventory and migration tools.
 - **Prerequisites/scope:** RI-002/003/005; content-addressed backfill and incremental sync. **Non-goals:** silent deletion, unrestricted filesystem crawling, or treating derived summaries as primary evidence.
@@ -136,6 +138,8 @@ entry has no task, evidence dossier, or explicit deferral.
 - **Evidence/rollback/done:** Corpus coverage manifest with every eligible source classified as canonical, quarantined, duplicate, superseded or excluded; exact citation replay; restore/rebuild proof. **Reviewer:** Librarian, Knowledge Evaluator and security reviewer.
 
 ### RI-008 — Knowledge graph, projection graph and cognitive tool services
+
+**Implementation status:** Source implementation completed on 2026-08-12 at control-plane commit `d90f472` and PR 34. Merge, VM2 migration, live graph rebuild and digest-bound pilot evidence remain deployment gates; this is implemented and tested, not yet confirmed live.
 
 - **Objective/requirement/citations:** Complete Book III Chapters 14 and 16: typed scientific edges, temporal/provenance/access-aware projections, graph traversal, deterministic calculators, context assembly and tool receipts.
 - **Repository/files:** Canonical edge registry, graph projection builder/query API, deterministic scientific-tool service, Mission Control graph explorer.

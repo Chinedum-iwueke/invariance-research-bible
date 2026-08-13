@@ -14,12 +14,19 @@ The Invariance Research Bible is the constitutional and technical corpus of Inva
 8. [Market Microstructure & Execution Science](books/book-08-market-microstructure-execution-science/README.md) — how it executes.
 9. [Hermes Agent Architecture](books/book-09-hermes-agent-architecture/README.md) — who performs the work.
 10. [The Builder's Manual](books/book-10-builders-manual/README.md) — how to build the institution.
-
 The narrative dependency is **why → operate → think → discover → experiment → learn → allocate → execute → staff → build**.
+
+## Living engineering companion
+
+[Book XI — The Engineered Company System](books/book-11-engineered-company-system/README.md)
+records what has actually been engineered, where it runs, and how it is verified.
+It is the living as-built companion to the ten-volume constitutional series. It
+must be updated with every merged capability or deployment change and never treats a
+plan, manifest, passing unit test, or historical pilot as interchangeable evidence.
 
 ## Edition status
 
-The repository-native edition is complete as of 2026-08-09: ten volumes, 169 chapters, and 31 appendices. Series-wide link, anchor, metadata, source-note, terminology, citation-target, continuity, ownership, and diagram checks passed. Open implementation and operating choices remain explicit in the [unresolved questions register](registers/UNRESOLVED_QUESTIONS.md); they are not represented as settled facts.
+The constitutional repository-native edition is complete as of 2026-08-09: ten volumes, 169 chapters, and 31 appendices. Book XI is non-normative implementation evidence and is maintained separately from those counts and the requirement ledger. Series-wide link, anchor, metadata, source-note, terminology, citation-target, continuity, ownership, and diagram checks passed. Open implementation and operating choices remain explicit in the [unresolved questions register](registers/UNRESOLVED_QUESTIONS.md); they are not represented as settled facts.
 
 The implemented institution is not complete. Current evidence and claim boundaries are recorded in the [Implementation Status Register](registers/IMPLEMENTATION_STATUS.md). The dependency-ordered build path is the [Company Engineering Roadmap](plans/COMPANY_ENGINEERING_ROADMAP.md), while the [Bible Capability Coverage and Complete Company Build Plan](plans/BIBLE_CAPABILITY_COVERAGE.md) maps all ten volumes to explicit engineering packages. Execution begins from the [Research Intelligence Foundation](plans/RESEARCH_INTELLIGENCE_FOUNDATION.md), the [governed walking skeleton](plans/WALKING_SKELETON.md), and the [Codex implementation backlog](plans/CODEX_IMPLEMENTATION_BACKLOG.md).
 
