@@ -9,6 +9,8 @@
 
 For every implementation reference, record repository identity, commit, dependency lock where available, inspection date, inspected surfaces, tests run, unavailable/private material, and discrepancies between documentation and behavior.
 
+The living cross-system synthesis is [Book XI — The Engineered Company System](../books/book-11-engineered-company-system/README.md). That book may summarize only evidence recorded here or in a linked completion/validation record; it is descriptive and does not create authority.
+
 ## Bulletproof BT audit record
 
 - **Repository:** [Chinedum-iwueke/bulletproof_bt](https://github.com/Chinedum-iwueke/bulletproof_bt)
@@ -74,6 +76,14 @@ Corpus security, observability, backup, and recovery services were added at cont
 ## RI-006 implementation addendum
 
 Governed scientific surveillance was added at control-plane commit `3cdeedbd48bace2e3309b171ed0f52897be68188`. The implementation registers rights-aware HTTPS feed allowlists, records digest-bound success and failure receipts, preserves corrections and retractions, rejects instruction-bearing abstracts, compares novelty against canonical RI memory, produces bounded technique briefs and questions, records append-only approval-required routing events, freezes weekly digests, and exposes read-only Mission Control provenance replay. Exact contract, migration and isolated rehearsal evidence is recorded in [RI-006 Completion Evidence](../plans/evidence/RI-006.md).
+
+## RI-007 implementation addendum
+
+Existing-corpus migration and continuous synchronization were introduced in control-plane PR 29, with operational recovery and duplicate/remediation fixes through PRs 31-33. The source supplies a coverage ledger, digest-idempotent legacy Hermes and Mac inbox reconciliation, bounded Bulletproof-memory synchronization, projection rebuilding, and replay validation without importing the raw Bulletproof lake. As of 2026-08-13 the founder-inbox reconciliation is still running; source completion is recorded, but production completion remains gated on a retained coverage manifest with zero unexplained failures. Detailed evidence belongs to the control-plane `docs/ri-007-validation.md` record.
+
+## RI-008 implementation addendum
+
+Typed knowledge-graph, projection-graph, context-pack and cognitive-tool services were implemented at control-plane commit `d90f472` in PR 34. The source defines typed scientific predicates, temporal validity, canonical provenance and access filtering, deterministic graph rebuilds and queries, contradiction/trial-family overlays, citation-bearing context packs, deterministic calculator/tool receipts, and a read-only Mission Control graph inspector. Validation recorded 224 backend and 44 Mission Control tests. Merge, VM2 migration, live-corpus graph rebuild and digest-bound pilot evidence were not re-observed for this snapshot, so no live-deployment claim is made.
 
 ### Verified implementation facts
 

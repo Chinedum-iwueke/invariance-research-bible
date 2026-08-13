@@ -176,13 +176,23 @@ def normalize_markdown(value: str) -> str:
 
 
 def authority_sources(root: Path) -> list[SourceInfo]:
+    """Return only the ten constitutional books that define authority.
+
+    Book XI is a living, descriptive implementation record. Excluding it prevents an
+    observed implementation detail from silently becoming institutional authority.
+    """
+
     sources: list[SourceInfo] = []
     for path in sorted((root / "books").glob("book-*/chapters/*.md")):
         book = int(re.search(r"book-(\d+)", str(path)).group(1))  # type: ignore[union-attr]
+        if book not in BOOK_PACKAGE_RULES:
+            continue
         chapter = int(path.name.split("-", 1)[0])
         sources.append(SourceInfo(path, path.relative_to(root).as_posix(), book, f"CH{chapter:02d}", chapter))
     for path in sorted((root / "books").glob("book-*/appendices/*.md")):
         book = int(re.search(r"book-(\d+)", str(path)).group(1))  # type: ignore[union-attr]
+        if book not in BOOK_PACKAGE_RULES:
+            continue
         letter = path.name.split("-", 1)[0].upper()
         sources.append(SourceInfo(path, path.relative_to(root).as_posix(), book, f"APP-{letter}", None))
     return sources
