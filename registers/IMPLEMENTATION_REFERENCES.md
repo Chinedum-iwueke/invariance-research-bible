@@ -85,6 +85,12 @@ Existing-corpus migration and continuous synchronization were introduced in cont
 
 Typed knowledge-graph, projection-graph, context-pack and cognitive-tool services were implemented at control-plane commit `d90f472` in PR 34. The source defines typed scientific predicates, temporal validity, canonical provenance and access filtering, deterministic graph rebuilds and queries, contradiction/trial-family overlays, citation-bearing context packs, deterministic calculator/tool receipts, and a read-only Mission Control graph inspector. Validation recorded 224 backend and 44 Mission Control tests. Merge, VM2 migration, live-corpus graph rebuild and digest-bound pilot evidence were not re-observed for this snapshot, so no live-deployment claim is made.
 
+On 2026-08-14 VM2 was observed at migration head `9b3e6f8a2c10` with a live graph of 623,729 nodes and 1,097,688 edges under manifest digest `e44e13f0c955cddcd09f1cb5054914ace1e79f4514116b6f15ac0654028cfeb9`. The deterministic mean tool produced receipt digest `e52d51227a71bef3ece9e429d8444f3f761db9616e7fab2c839cbba4629b1511`. The citation/context pilot then reproduced a production-scale parameter-limit defect before creating its context receipt. Control-plane commit `e9b3db4` bounds traversal by frontier and adds regression coverage; deployment and replay of that fix remain the final RI-008 gate.
+
+## RI-009 implementation addendum
+
+Domain curriculum and institutional-brain evaluation source was added at control-plane commit `e9b3db4`. It binds curricula to canonical source/evidence identities and exact corpus/graph digests, validates acyclic prerequisite maps and quality rubrics, executes held-out retrieval cases, and retains measured citation, opposition, abstention, leakage and coverage evidence. The full backend suite passed 234 tests and Mission Control passed 44 tests. The migration head is `c4a8e2d71f30`. Production migration and a passing live systematic-research curriculum dossier remain separate evidence gates.
+
 ### Verified implementation facts
 
 1. `BacktestEngine` implements a bar-driven loop connecting a historical feed, universe, strategy, risk engine, execution model, portfolio accounting, audit hooks, and artifact writers.
