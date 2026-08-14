@@ -139,7 +139,7 @@ entry has no task, evidence dossier, or explicit deferral.
 
 ### RI-008 — Knowledge graph, projection graph and cognitive tool services
 
-**Implementation status:** Source and migration are deployed on VM2. On 2026-08-14 the canonical graph was rebuilt from the settled corpus with 623,729 nodes and 1,097,688 edges under manifest digest `e44e13f0c955cddcd09f1cb5054914ace1e79f4514116b6f15ac0654028cfeb9`. A retained citation/context replay and cognitive-tool receipt remain the final RI-008 acceptance gate; Mission Control deployment must also be re-observed before claiming the complete operator experience live.
+**Implementation status:** Completed and production-validated on 2026-08-14. The VM2 graph contains 623,729 nodes and 1,097,688 edges under manifest digest `e44e13f0c955cddcd09f1cb5054914ace1e79f4514116b6f15ac0654028cfeb9`. Canonical citation replay returned the exact object digest, a five-item context pack was retained under digest `d0b97135f0846c6222ac14dc5230aa0cef4a879bca4899249fafeaa3b9eac2cb`, and deterministic tool receipt `e8852557-5258-43e8-ba0c-bfdb47eef148` was retained under digest `e52d51227a71bef3ece9e429d8444f3f761db9616e7fab2c839cbba4629b1511`. The replay-path defect was corrected and deployed at control-plane merge commit `722ab7f05817be8ebfdeac9a20c84a6fd015fca4`. The RI-008 pilot now reuses a current projection and allows a bounded 30-minute rebuild instead of unconditionally rebuilding with a ten-minute client deadline.
 
 - **Objective/requirement/citations:** Complete Book III Chapters 14 and 16: typed scientific edges, temporal/provenance/access-aware projections, graph traversal, deterministic calculators, context assembly and tool receipts.
 - **Repository/files:** Canonical edge registry, graph projection builder/query API, deterministic scientific-tool service, Mission Control graph explorer.
@@ -151,7 +151,7 @@ entry has no task, evidence dossier, or explicit deferral.
 
 ### RI-009 — Domain curriculum, corpus quality and institutional brain evaluation
 
-**Implementation status:** Source implementation completed and validated on 2026-08-14 at control-plane commit `e9b3db4`. The implementation adds immutable curricula, canonical source/evidence anchors, acyclic prerequisites, source-quality and quarantine rubrics, mandatory held-out abstention, measured retrieval/citation/opposition/leakage/coverage thresholds, fail-closed staleness, and Mission Control readiness visibility. Production migration, registration of the first systematic-research curriculum, and its live held-out evaluation remain deployment gates. See the control-plane `docs/ri-009-validation.md` record.
+**Implementation status:** Completed and production-qualified on 2026-08-14. Curriculum `6470d401-da23-440c-8c48-42d3820b7614` version `1.0.0` is bound to the live systematic-research corpus and graph. Evaluation `1.0.0` was retained as a negative result after exposing missed supporting evidence and false answers to an unknown identifier. Evidence-confidence calibration was then implemented and deployed at control-plane merge commit `eb196744a08e3726e2426b4c66c286274388936b`: vector similarity cannot establish confidence alone, explicit identifiers must match, candidate calibration is bounded, and retrieval reports confidence and abstention explicitly. Immutable evaluation `1.0.1` (`b039949e-9973-4556-8296-a1daa1a8613b`) passed retrieval recall, citation fidelity, opposition recall, abstention accuracy and topic coverage at 100%, with zero cross-domain leakage. Its record digest is `61391fdbb3f5f9fcf5867baedaf0ac42785b573bd9bfa6531ecd86c9ef57f605`; curriculum readiness is `true`. See the control-plane `docs/ri-009-validation.md` record.
 
 - **Objective/requirement/citations:** Make the senior quantitative researcher demonstrably grounded in approved domains through curriculum dossiers, coverage maps, retrieval benchmarks and belief calibration rather than persona prompting.
 - **Repository/files:** Domain profiles, curriculum registry, evaluation sets, corpus-quality dashboards, agent context policy.
@@ -159,6 +159,38 @@ entry has no task, evidence dossier, or explicit deferral.
 - **Steps/interfaces:** Domain ontology; prerequisite map; source-quality rubric; coverage/gap analysis; adversarial question sets; citation and contradiction scoring; curriculum versioning; decay/review cadence.
 - **Tests/acceptance:** Held-out domain questions, opposing-evidence recall, abstention, stale/retracted source, cross-domain leakage and source-poisoning tests.
 - **Evidence/rollback/done:** Versioned domain-readiness dossier meeting declared retrieval, citation, opposition, calibration and abstention thresholds. **Reviewer:** Senior research authority and Independent Knowledge Evaluator.
+
+### RI-010 — Memory consolidation, decay, lawful deletion and supersession
+
+- **Objective/requirement/citations:** Make institutional memory lifecycle-aware without erasing audit history: superseded, retracted, corrected, expired and lawfully deleted material must stop influencing active retrieval while retained lineage proves what changed and why.
+- **Repository/files:** Canonical evidence lifecycle schemas/services, corpus synchronization, retrieval and graph projection builders, dossiers, Mission Control memory operations.
+- **Prerequisites/scope:** RI-004/005/007/008. **Non-goals:** silent deletion, mutable historical dossiers, or model-decided retention policy.
+- **Data/access:** Retention authority and legal basis are explicit; protected payload deletion preserves non-sensitive tombstone, digest, event and dependency evidence.
+- **Steps/interfaces:** Lifecycle state machine; consolidation receipts; supersession/retraction propagation; retention holds; lawful deletion workflow; projection invalidation; dossier and belief impact reports.
+- **Tests/acceptance:** Duplicate consolidation, corrected edition, retraction, protected deletion, active hold, stale projection, restore and replay fixtures.
+- **Evidence/rollback/done:** A digest-bound lifecycle dossier proves active retrieval excludes invalid evidence while immutable decisions and authorized audit lineage remain replayable. **Reviewer:** Knowledge steward, security/privacy authority and independent evaluator.
+
+### RI-009B — Full Research Bible domain curriculum expansion
+
+- **Objective/requirement/citations:** Extend the qualified systematic-research curriculum from its first live slice across every Research Bible competency required for institutional quantitative work: statistical inference, causal reasoning, time-series methods, backtesting validity, selection bias, portfolio construction, risk, market microstructure, regime analysis, execution, data quality, reproducibility and governance.
+- **Repository/files:** Versioned curriculum specifications, evidence anchors, prerequisite graph, held-out evaluation sets, coverage/readiness service and Mission Control curriculum dossier.
+- **Prerequisites/scope:** RI-009 qualified baseline; RI-011 performance work may proceed in parallel. **Non-goals:** declaring expertise from source counts, using training-set questions as evaluation, or granting execution authority from curriculum readiness.
+- **Data/access:** Each domain binds only canonical authorized evidence; protected sources remain access-filtered before retrieval and evaluation.
+- **Steps/interfaces:** Publish the domain taxonomy and prerequisites; register source/evidence coverage; write supporting, opposing, unknown-identifier and cross-domain-leakage cases; evaluate each domain independently; compute an aggregate readiness matrix without allowing strong domains to hide weak ones.
+- **Tests/acceptance:** Held-out cases for every domain, minimum evidence diversity, citation replay, opposition recall, calibrated no-answer behavior, stale/retracted sources and adversarial cross-domain leakage. Each domain must meet declared thresholds independently.
+- **Evidence/rollback/done:** Immutable per-domain evaluations and one digest-bound aggregate dossier show the senior quantitative researcher is grounded across the Bible while unqualified domains remain explicitly unavailable. **Reviewer:** Senior quantitative research authority, Independent Knowledge Evaluator and domain specialists.
+
+### RI-011 — Production-scale retrieval and model-independent reranking evaluation
+
+**Implementation status:** In progress. RI-009 evaluation `1.0.1` proves relevance, citation, opposition, leakage and abstention correctness on the 623,729-object projection. Production observation also exposed multi-minute query/evaluation latency because each request recomputes the full canonical corpus digest and materializes the authorized projection before ranking. Correctness is qualified; interactive serving performance is not.
+
+- **Objective/requirement/citations:** Preserve the qualified RI-009 behavior while making retrieval, readiness and evaluation usable at representative production scale under declared latency and resource SLOs.
+- **Repository/files:** Corpus freshness state, retrieval query service, database indexes/candidate generation, reranker benchmarks, readiness service, telemetry and load fixtures.
+- **Prerequisites/scope:** RI-003/005/007/009. **Non-goals:** weakening confidence/abstention thresholds, rebuilding the canonical corpus, introducing an LLM judge, or changing evidence authority.
+- **Data/access:** Authorization filters execute before candidate content leaves storage; benchmarks contain no protected payloads or credentials.
+- **Steps/interfaces:** Replace per-request full-corpus hashing with transactionally maintained freshness epochs/digests; perform indexed database-side candidate generation; retain bounded model-independent calibration; cache only digest-bound safe metadata; expose stage latency and candidate counts; add cancellation and concurrency limits.
+- **Tests/acceptance:** Re-run immutable RI-009 cases plus broad inference, backtesting-validity, selection-bias, portfolio, microstructure and regime fixtures; benchmark cold/warm p50/p95, concurrent requests, stale writes, cancellation and fail-closed authorization. Declare SLOs before optimization and do not pass by shrinking the corpus.
+- **Evidence/rollback/done:** A production-scale benchmark shows the declared latency/resource SLOs pass without regression from evaluation `1.0.1`; rollback restores the calibrated implementation and preserves all evaluation records. **Reviewer:** Independent Knowledge Evaluator, database/performance reviewer and security owner.
 
 ## Wave 1 — Agent reliability in parallel
 
@@ -329,4 +361,4 @@ mandatory.
 - DISC-001 owns question selection; the Trial Registry owns search accounting.
 - PORT-001 owns candidate/risk policy schemas; LIVE-001 may not bypass them.
 
-The precise recommended next task is **BASE-001**, followed by the serialized **BASE-002** identity decision. RI fixture design and OPS-001 failure reproduction may begin in parallel without schema ownership.
+The precise recommended next task is **OPS-001**. Approval/readiness races currently create missed execution windows, duplicate Telegram gates and manual reruns, so expanding autonomous work before closing them would multiply founder babysitting. Follow OPS-001 with **RI-011**, then expand the qualified curriculum into statistical inference, backtesting validity, selection bias, portfolio construction, market microstructure, regime analysis and the remaining Research Bible domains using measured held-out sets. RI-010 lifecycle design may proceed independently where it does not conflict with retrieval freshness ownership.
