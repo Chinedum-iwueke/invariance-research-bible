@@ -70,7 +70,23 @@ The `canonical-scientific` projection supports:
 - exact source-coordinate replay.
 
 The vector channel is a reproducible baseline, not a learned domain embedding model.
-Production relevance at full-corpus scale remains an evaluation obligation.
+RI-011 adds a transactional `canonical-scientific` freshness row. Statement-level
+database triggers advance its epoch and rolling digest after canonical object, edge or
+alias changes; online status and query requests compare this snapshot with the
+projection source epoch in constant time. Content digest, authorization scope, alias
+and PostgreSQL full-text indexes support candidate selection. Every query first applies
+project, access, schema and scientific-type policy, then hydrates at most 100 ranked
+conjunctive candidates, 500 bounded partial-match candidates and 100 graph neighbors.
+An eight-request admission semaphore rejects overload rather than allowing unbounded
+concurrent work. Responses expose stage timings and candidate counts without exposing
+protected content.
+
+The production `hybrid-retrieval-v1.1.0` projection contains 623,375 scientific
+objects. Its live benchmark measured 564.253 ms warm p95 and 1,228.084 ms concurrent
+p95, below declared 2,000 ms and 5,000 ms SLOs. Evaluation `1.0.2` preserved complete
+recall, citation, opposition, abstention and topic-coverage measures with zero measured
+cross-domain leakage. Full projection rebuild remains an offline deployment operation;
+it is not part of request latency.
 
 ## 4.5 Institutional memory
 
@@ -149,11 +165,11 @@ evidence at this point in the snapshot.
 
 ## 4.9 Readiness boundary
 
-The inbox reconciliation and graph freeze gates for RI-009 are now satisfied. RI-009
-must measure domain curricula, coverage, held-out retrieval, citation fidelity,
-contradiction recall, calibration and abstention against versioned evaluation sets.
-Upload count is not domain expertise, and the three retained quarantines are visible
-coverage facts rather than silent omissions.
+The inbox reconciliation, graph freeze and first systematic-research curriculum gates
+are satisfied. Upload count is not domain expertise, and the three retained quarantines
+remain visible coverage facts rather than silent omissions. RI-009B must qualify each
+remaining Research Bible domain independently; strong initial retrieval performance
+cannot make an untested domain available to an agent.
 
 ## 4.10 Domain curriculum and institutional-brain evaluation
 
@@ -175,8 +191,8 @@ cross-domain leakage and topic coverage. Every threshold must pass. A changed co
 graph digest makes the qualification stale; source uploads do not silently preserve an
 expertise claim.
 
-The live RI-008 acceptance attempt also exposed a production-scale query defect: the
-original traversal materialized all 623,729 node IDs into one PostgreSQL statement and
-exceeded PostgreSQL's parameter ceiling. Commit `e9b3db4` replaces that path with
-access-filtered bounded frontier traversal and caps graph overview queries. This fix is
-tested but must be deployed and replayed before RI-008 or RI-009 is called fully live.
+RI-008 and RI-009 are production-qualified. RI-011 retained two failed benchmark
+observations before qualification: corpus-wide hydration produced a 10.29-second warm
+p95, and bounding hydration alone still produced 8.90 seconds because PostgreSQL ranked
+the broad match set before limiting it. The final indexed two-tier candidate plan
+closed that measured defect without weakening confidence or abstention thresholds.
