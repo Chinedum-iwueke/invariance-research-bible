@@ -196,6 +196,8 @@ entry has no task, evidence dossier, or explicit deferral.
 
 ### OPS-001 — Approval and readiness race closure
 
+**Implementation status:** Completed and production-activated on 2026-08-14 at control-plane merge commit `05ae2a9b4ab05113297437f1357808314595124f`. VM2 migration `d8b4f1a72c90` provides the durable founder-notification outbox. Approval gates are digest- and generation-bound, dependency-blocked gates remain waiting, successful Telegram delivery is acknowledged, failed delivery remains retryable, and stale gates/readiness messages are superseded. Approval emits `task_ready` and wakes supervised reconciliation in the same transaction. After the gateway restart, the fresh process remained active without new errors and reconciled 16 historical approval records to `waiting` with zero actionable notifications, preventing the former notification flood.
+
 - **Objective/requirement/citations:** Eliminate missed readiness windows, duplicate approval floods, and manual reruns described by M2.
 - **Repository/files:** Supervisor, Telegram gateway, proposal/approval services, worker daemon tests.
 - **Prerequisites/scope:** BASE-001; durable outbox, deduplication key, readiness signal, bounded reconciliation. **Non-goals:** new task types.
