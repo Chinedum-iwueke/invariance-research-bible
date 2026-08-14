@@ -3,13 +3,13 @@
 
 ## 9.1 Current milestone ledger
 
-| Package | Source state | Runtime/evidence state at 2026-08-13 |
+| Package | Source state | Runtime/evidence state at 2026-08-14 |
 |---|---|---|
 | BASE-001..003 | Implemented/tested | Completion evidence retained |
 | RI-001..006 | Implemented/tested | Isolated/database rehearsals retained; live health must be queried |
-| RI-007 | Implemented/tested with PR 31-33 recovery fixes | Live 122-file inbox reconciliation running; not production-complete |
-| RI-008 | Implemented/tested in PR 34 | Awaiting merge, VM2 migration, graph rebuild and live pilot |
-| RI-009 | Planned | Blocked at final evaluation by unstable corpus and undeployed RI-008 |
+| RI-007 | Implemented/tested with PR 31-33 recovery fixes | Live corpus reconciliation and recovery evidence retained; lifecycle work remains RI-010 |
+| RI-008 | Implemented/tested/observed | Live 623,729-node graph, replay and tool receipts retained |
+| RI-009/009B/011 | Implemented/tested/observed | Twelve-domain portfolio production-qualified; retrieval SLO and graph freshness gates pass |
 | OPS/BT/WS and later packages | Planned or partial as individually recorded | Do not infer completion from historical Hermes M-number pilots |
 
 ## 9.2 Backlog maintenance rule
@@ -62,8 +62,6 @@ must never be stored in this repository.
 
 ## 9.5 Immediate next gates
 
-1. Finish and review the current RI-007 inbox reconciliation.
-2. Merge PR 34, migrate VM2 and run the RI-008 graph pilot.
-3. Freeze the resulting corpus and graph digests.
-4. Execute RI-009 domain curriculum and institutional-brain evaluation.
-5. Continue the company backlog while maintaining Book XI at each engineering gate.
+1. Execute RI-010 memory lifecycle, lawful deletion and supersession.
+2. Expand later curriculum versions beyond the minimum two-source breadth kernel.
+3. Continue the company backlog while maintaining Book XI at each engineering gate.

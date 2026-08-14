@@ -97,6 +97,10 @@ On 2026-08-14 systematic-research curriculum `6470d401-da23-440c-8c48-42d3820b76
 
 Production-scale retrieval optimization was deployed at control-plane merge `2801e4b7aefccda286487f8ae77641c6857e4f7e` and Alembic head `f1a6c8d42e70`. It replaces request-time corpus hashing with trigger-maintained freshness epochs/digests, applies authorization before indexed candidate generation, bounds hydration and graph expansion, exposes stage telemetry, limits concurrent searches, and preserves model-independent RI-009 calibration. The live 623,375-object benchmark passed at 564.253 ms warm p95 and 1,228.084 ms concurrent p95; evaluation `1.0.2` remained qualified. Exact failed-run, SLO, evaluation, rollback and test evidence is recorded in [RI-011 Completion Evidence](../plans/evidence/RI-011.md).
 
+## RI-009B implementation addendum
+
+Control-plane PRs 48-51 introduced twelve pinned Research Bible curricula, separate support/opposition evaluation queries, immutable aggregate portfolios and constant-time graph freshness epochs. Production portfolio `e9b393e0-4eee-4768-ada2-d3db2be5ffa0` version `1.0.1` qualified all twelve domains under digest `ec1393d67ea1259cec6288023f30ea4a9acf47547566ce73a7c74665a0224f49`. The initial `1.0.0` gap portfolio is retained. Exact scope, metrics, digests, test totals and limitations are recorded in [RI-009B Completion Evidence](../plans/evidence/RI-009B.md).
+
 ### Verified implementation facts
 
 1. `BacktestEngine` implements a bar-driven loop connecting a historical feed, universe, strategy, risk engine, execution model, portfolio accounting, audit hooks, and artifact writers.
