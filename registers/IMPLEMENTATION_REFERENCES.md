@@ -91,6 +91,12 @@ On 2026-08-14 VM2 was observed at migration head `9b3e6f8a2c10` with a live grap
 
 Domain curriculum and institutional-brain evaluation source was added at control-plane commit `e9b3db4`. It binds curricula to canonical source/evidence identities and exact corpus/graph digests, validates acyclic prerequisite maps and quality rubrics, executes held-out retrieval cases, and retains measured citation, opposition, abstention, leakage and coverage evidence. The full backend suite passed 234 tests and Mission Control passed 44 tests. The migration head is `c4a8e2d71f30`. Production migration and a passing live systematic-research curriculum dossier remain separate evidence gates.
 
+On 2026-08-14 systematic-research curriculum `6470d401-da23-440c-8c48-42d3820b7614` was production-qualified. Evaluation `1.0.1` retained complete measured retrieval, citation, opposition, abstention and topic coverage with zero cross-domain leakage after the failed `1.0.0` result drove explicit confidence/no-answer calibration. RI-011 evaluation `1.0.2` later reproduced those measures after the latency architecture changed.
+
+## RI-011 implementation addendum
+
+Production-scale retrieval optimization was deployed at control-plane merge `2801e4b7aefccda286487f8ae77641c6857e4f7e` and Alembic head `f1a6c8d42e70`. It replaces request-time corpus hashing with trigger-maintained freshness epochs/digests, applies authorization before indexed candidate generation, bounds hydration and graph expansion, exposes stage telemetry, limits concurrent searches, and preserves model-independent RI-009 calibration. The live 623,375-object benchmark passed at 564.253 ms warm p95 and 1,228.084 ms concurrent p95; evaluation `1.0.2` remained qualified. Exact failed-run, SLO, evaluation, rollback and test evidence is recorded in [RI-011 Completion Evidence](../plans/evidence/RI-011.md).
+
 ### Verified implementation facts
 
 1. `BacktestEngine` implements a bar-driven loop connecting a historical feed, universe, strategy, risk engine, execution model, portfolio accounting, audit hooks, and artifact writers.
