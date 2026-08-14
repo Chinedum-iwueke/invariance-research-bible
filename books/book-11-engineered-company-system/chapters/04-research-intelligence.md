@@ -166,10 +166,10 @@ evidence at this point in the snapshot.
 ## 4.9 Readiness boundary
 
 The inbox reconciliation, graph freeze and first systematic-research curriculum gates
-are satisfied. Upload count is not domain expertise, and the three retained quarantines
-remain visible coverage facts rather than silent omissions. RI-009B must qualify each
-remaining Research Bible domain independently; strong initial retrieval performance
-cannot make an untested domain available to an agent.
+are satisfied. Upload count is not domain expertise, and retained quarantines remain
+visible coverage facts rather than silent omissions. RI-009B now qualifies twelve
+Research Bible domains independently. Strong performance in one domain cannot make a
+failing domain available because portfolio readiness is an all-domain conjunction.
 
 ## 4.10 Domain curriculum and institutional-brain evaluation
 
@@ -196,3 +196,16 @@ observations before qualification: corpus-wide hydration produced a 10.29-second
 p95, and bounding hydration alone still produced 8.90 seconds because PostgreSQL ranked
 the broad match set before limiting it. The final indexed two-tier candidate plan
 closed that measured defect without weakening confidence or abstention thresholds.
+
+RI-009B adds `research_curriculum_portfolios` as the immutable breadth dossier. The
+qualified `1.0.1` portfolio contains exactly one curriculum and latest evaluation for
+each of twelve required domains under one corpus and graph manifest. Each domain has
+two distinct source anchors, supporting and opposing evidence, separate held-out
+queries and an unknown-case abstention fixture. The retained `1.0.0` gap record proves
+that aggregate qualification failed when regime and risk retrieval missed their
+anchors. Recalibration changed query wording, not evidence identities.
+
+Graph readiness no longer streams the full canonical graph for each gate. Canonical
+object/edge mutations increment the existing database freshness epoch. Graph state
+stores its build epoch and compares it in constant time; pre-epoch states perform one
+exact digest comparison and adopt the current epoch only when the digest matches.

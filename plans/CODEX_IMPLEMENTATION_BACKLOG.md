@@ -172,6 +172,8 @@ entry has no task, evidence dossier, or explicit deferral.
 
 ### RI-009B — Full Research Bible domain curriculum expansion
 
+**Implementation status:** Completed and production-qualified on 2026-08-14. Twelve independently evaluated domains are frozen in portfolio `e9b393e0-4eee-4768-ada2-d3db2be5ffa0` version `1.0.1`, bound to corpus digest `7c5b7b86763eb993f88c69ea026929aeb4930b21f3d9a1fcbf23c71ef7b1696c` and graph manifest `e44e13f0c955cddcd09f1cb5054914ace1e79f4514116b6f15ac0654028cfeb9`. Every domain passed retrieval, citation, opposition, abstention and coverage at `1.0` with zero leakage; aggregate readiness is an all-domain conjunction. Immutable portfolio `1.0.0` retains the initial regime/risk misses, and `1.0.1` records their calibrated held-out re-evaluation. Graph readiness was changed from repeated whole-corpus hashing to a trigger-maintained epoch with a fail-closed one-time digest bootstrap. See [RI-009B Completion Evidence](evidence/RI-009B.md).
+
 - **Objective/requirement/citations:** Extend the qualified systematic-research curriculum from its first live slice across every Research Bible competency required for institutional quantitative work: statistical inference, causal reasoning, time-series methods, backtesting validity, selection bias, portfolio construction, risk, market microstructure, regime analysis, execution, data quality, reproducibility and governance.
 - **Repository/files:** Versioned curriculum specifications, evidence anchors, prerequisite graph, held-out evaluation sets, coverage/readiness service and Mission Control curriculum dossier.
 - **Prerequisites/scope:** RI-009 qualified baseline; RI-011 performance work may proceed in parallel. **Non-goals:** declaring expertise from source counts, using training-set questions as evaluation, or granting execution authority from curriculum readiness.
@@ -343,7 +345,7 @@ ideas list. Before implementation, the selected package must be expanded here to
 same repository/scope/data/interfaces/tests/evidence/reviewer detail used by `RI-*`.
 The dependency order is:
 
-1. `RI-007`, `RI-008`, `RI-009`, `RI-010`, `RI-011`; `OPS-001`, `OPS-002`; `GOV-001`, `GOV-002`, `GOV-003`, `GOV-004`; `AGT-001`, `AGT-002`, `AGT-003`, `AGT-004`, `AGT-005`, `AGT-006`, `AGT-007`, `AGT-008`.
+1. `RI-007`, `RI-008`, `RI-009`, `RI-009B`, `RI-010`, `RI-011`; `OPS-001`, `OPS-002`; `GOV-001`, `GOV-002`, `GOV-003`, `GOV-004`; `AGT-001`, `AGT-002`, `AGT-003`, `AGT-004`, `AGT-005`, `AGT-006`, `AGT-007`, `AGT-008`.
 2. `DATA-001`, `DATA-002`, `DATA-003`; `BT-001`, `BT-002`, `BT-003`, `BT-004`, `BT-005`, `BT-006`, `BT-007`, `BT-008`; `UI-001`, `UI-002`, `UI-003`, `UI-004`; `CHAN-001`; `WS-001`, `WS-002`.
 3. `DISC-001`, `DISC-002`, `DISC-003`, `DISC-004`, `DISC-005`, `DISC-006`, `DISC-007`, `DISC-008`, `DISC-009`; `SHADOW-001`, `SHADOW-002`; `ML-001`, `ML-002`, `ML-003`, `ML-004`, `ML-005`, `ML-006`; `RL-001`, `RL-002`, `RL-003`.
 4. `PORT-001`, `PORT-002`, `PORT-003`, `PORT-004`; `RISK-001`, `RISK-002`, `RISK-003`, `RISK-004`, `RISK-005`; `EXEC-001`, `EXEC-002`, `EXEC-003`, `EXEC-004`, `EXEC-005`, `EXEC-006`, `EXEC-007`, `EXEC-008`, `EXEC-009`, `EXEC-010`; `DEMO-001`.
@@ -363,4 +365,4 @@ mandatory.
 - DISC-001 owns question selection; the Trial Registry owns search accounting.
 - PORT-001 owns candidate/risk policy schemas; LIVE-001 may not bypass them.
 
-The precise recommended next task is **RI-009B**, expanding the qualified curriculum into statistical inference, backtesting validity, selection bias, portfolio construction, market microstructure, regime analysis and the remaining Research Bible domains using independently measured held-out sets. **RI-010** lifecycle work may proceed in parallel where it does not conflict with curriculum evidence anchoring or projection freshness ownership. OPS-001 and RI-011 are complete production foundations, not remaining gates.
+The precise recommended next task is **RI-010**, implementing consolidation, supersession, retraction, decay, retention holds and lawful deletion without erasing audit history. RI-009B, OPS-001 and RI-011 are complete production foundations, not remaining gates.
