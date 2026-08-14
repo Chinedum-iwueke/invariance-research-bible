@@ -32,7 +32,19 @@ Files are never executed. Archives, active PDF content, instruction-like text,
 oversized payloads, malformed structures and low-confidence extraction are bounded or
 rejected. Original artifacts are retained for exact coordinate replay. PR 33 adds
 offline Tesseract/PDFium recovery and raises the bounded scientific-ingestion limit to
-100 MiB; the live 122-file inbox reconciliation is still running at this snapshot.
+100 MiB. The settled 2026-08-14 founder-inbox ledger covers 120 files: 117 are usable
+canonical or duplicate-backed evidence and three remain explicitly quarantined. Of the
+last twelve exceptions, governed recovery safely resolved nine. One PDF is structurally
+unreadable by both parsers; two extract successfully but contain instruction-like text
+that cannot cross the current evidence trust boundary without explicit quoted-evidence
+semantics. No scanner rule was weakened to improve the count.
+
+The Research Ingestion Recovery Steward is a deterministic fixed-command service. It
+claims bounded recovery work, preserves original evidence, creates inert recovered
+editions, enforces attempt ceilings, reconciles the inbox, and rebuilds retrieval and
+graph projections after a settled batch. Its source and tests exist; activation on VM2
+is a separate privileged systemd installation and must be observed before it is called
+active.
 
 ## 4.3 Canonical object kernel
 
@@ -95,7 +107,7 @@ freezing. It does not auto-adopt a paper or auto-create a live research trial.
 
 ## 4.8 Typed knowledge graph and cognitive services
 
-RI-008, implemented in PR 34 and awaiting deployment at this snapshot, adds:
+RI-008, implemented in PR 34 and deployed on VM2 at this snapshot, adds:
 
 - allowlisted predicates: `derived_from`, `supersedes`, `supports`, `contradicts`,
   `uses_method`, `uses_dataset`, `produced_result`, `reviews`, `decides_on`,
@@ -128,10 +140,43 @@ flowchart LR
 The graph is not a graph database source of truth. Canonical IDs and edges remain in
 the evidence kernel; the graph projection can be dropped and deterministically rebuilt.
 
+The live projection observed on 2026-08-14 contains 623,729 nodes and 1,097,688 edges
+under manifest digest
+`e44e13f0c955cddcd09f1cb5054914ace1e79f4514116b6f15ac0654028cfeb9`.
+That observation proves migration and rebuild, not domain expertise. A retained live
+citation/context replay and cognitive-tool receipt remain the final RI-008 acceptance
+evidence at this point in the snapshot.
+
 ## 4.9 Readiness boundary
 
-RI-009 cannot be completed until the current inbox reconciliation finishes, unexplained
-failures are resolved, RI-008 is deployed, and a stable corpus/graph snapshot is frozen.
-RI-009 will then measure domain curricula, coverage, held-out retrieval, citation
-fidelity, contradiction recall, calibration and abstention. Upload count is not domain
-expertise.
+The inbox reconciliation and graph freeze gates for RI-009 are now satisfied. RI-009
+must measure domain curricula, coverage, held-out retrieval, citation fidelity,
+contradiction recall, calibration and abstention against versioned evaluation sets.
+Upload count is not domain expertise, and the three retained quarantines are visible
+coverage facts rather than silent omissions.
+
+## 4.10 Domain curriculum and institutional-brain evaluation
+
+RI-009 source at control-plane commit `e9b3db4` introduces a qualification layer above
+the legacy domain profile. Each curriculum version binds to exact retrieval-corpus and
+graph-manifest digests and declares:
+
+- an acyclic ontology of topics and prerequisites;
+- canonical evidence anchors and separate canonical source anchors, preventing many
+  paragraphs from one book from masquerading as source diversity;
+- required opposing evidence;
+- allowed authority classes and a maximum quarantine fraction;
+- qualified roles and a bounded review cadence.
+
+Evaluation sets contain answerable, adversarial, cross-domain and mandatory abstention
+cases. The service runs those cases through canonical hybrid retrieval and measures
+retrieval recall, citation fidelity, opposing-evidence recall, abstention accuracy,
+cross-domain leakage and topic coverage. Every threshold must pass. A changed corpus or
+graph digest makes the qualification stale; source uploads do not silently preserve an
+expertise claim.
+
+The live RI-008 acceptance attempt also exposed a production-scale query defect: the
+original traversal materialized all 623,729 node IDs into one PostgreSQL statement and
+exceeded PostgreSQL's parameter ceiling. Commit `e9b3db4` replaces that path with
+access-filtered bounded frontier traversal and caps graph overview queries. This fix is
+tested but must be deployed and replayed before RI-008 or RI-009 is called fully live.

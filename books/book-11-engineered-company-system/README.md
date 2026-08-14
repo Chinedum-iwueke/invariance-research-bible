@@ -2,7 +2,7 @@
 # Book XI — The Engineered Company System
 
 **Edition:** Living as-built engineering specification
-**Snapshot date:** 2026-08-13
+**Snapshot date:** 2026-08-14
 **Scope:** Hermes Swarm, Research Intelligence, Bulletproof BT, Mission Control,
 founder channels, VM2 operations, and the public Invariance application
 

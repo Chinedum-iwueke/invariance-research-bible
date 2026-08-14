@@ -127,7 +127,7 @@ entry has no task, evidence dossier, or explicit deferral.
 
 ### RI-007 — Existing-corpus migration and continuous synchronization
 
-**Implementation status:** Source implementation completed on 2026-08-10 in control-plane PR 29, with recovery fixes through PR 33. Live founder-inbox reconciliation is in progress as of 2026-08-13; RI-007 must not be described as production-complete until the coverage manifest has zero unexplained failures and the retained refresh, projection and replay evidence is reviewed. See the control-plane `docs/ri-007-validation.md` record.
+**Implementation status:** Production corpus reconciliation completed on 2026-08-14. The retained founder-inbox ledger classifies all 120 files: 117 are canonical or duplicate-backed usable evidence and 3 remain explicitly quarantined. Governed recovery resolved 9 of the final 12 exceptions without weakening content-security policy; one structurally unreadable PDF and two instruction-bearing documents remain quarantined. The continuous Research Ingestion Recovery Steward is implemented and tested, with VM2 service activation still requiring an observed privileged installation. See the control-plane `docs/ri-007-validation.md` and `docs/runbooks/ri-007-pdf-recovery.md` records.
 
 - **Objective/requirement/citations:** Move the founder inbox, legacy Hermes documents/chunks, imported prior results, and the bounded Bulletproof memory projection into the canonical RI object model without copying the raw Bulletproof lake.
 - **Repository/files:** Mac Mission Control inbox, control-plane ingestion/reconciliation services, VM1 memory bridge, corpus inventory and migration tools.
@@ -139,7 +139,7 @@ entry has no task, evidence dossier, or explicit deferral.
 
 ### RI-008 — Knowledge graph, projection graph and cognitive tool services
 
-**Implementation status:** Source implementation completed on 2026-08-12 at control-plane commit `d90f472` and PR 34. Merge, VM2 migration, live graph rebuild and digest-bound pilot evidence remain deployment gates; this is implemented and tested, not yet confirmed live.
+**Implementation status:** Source and migration are deployed on VM2. On 2026-08-14 the canonical graph was rebuilt from the settled corpus with 623,729 nodes and 1,097,688 edges under manifest digest `e44e13f0c955cddcd09f1cb5054914ace1e79f4514116b6f15ac0654028cfeb9`. A retained citation/context replay and cognitive-tool receipt remain the final RI-008 acceptance gate; Mission Control deployment must also be re-observed before claiming the complete operator experience live.
 
 - **Objective/requirement/citations:** Complete Book III Chapters 14 and 16: typed scientific edges, temporal/provenance/access-aware projections, graph traversal, deterministic calculators, context assembly and tool receipts.
 - **Repository/files:** Canonical edge registry, graph projection builder/query API, deterministic scientific-tool service, Mission Control graph explorer.
@@ -150,6 +150,8 @@ entry has no task, evidence dossier, or explicit deferral.
 - **Evidence/rollback/done:** Rebuildable graph whose sampled paths replay to canonical objects and whose answers include evidence/tool receipts. **Reviewer:** Canon Curator, architecture owner and independent evaluator.
 
 ### RI-009 — Domain curriculum, corpus quality and institutional brain evaluation
+
+**Implementation status:** Source implementation completed and validated on 2026-08-14 at control-plane commit `e9b3db4`. The implementation adds immutable curricula, canonical source/evidence anchors, acyclic prerequisites, source-quality and quarantine rubrics, mandatory held-out abstention, measured retrieval/citation/opposition/leakage/coverage thresholds, fail-closed staleness, and Mission Control readiness visibility. Production migration, registration of the first systematic-research curriculum, and its live held-out evaluation remain deployment gates. See the control-plane `docs/ri-009-validation.md` record.
 
 - **Objective/requirement/citations:** Make the senior quantitative researcher demonstrably grounded in approved domains through curriculum dossiers, coverage maps, retrieval benchmarks and belief calibration rather than persona prompting.
 - **Repository/files:** Domain profiles, curriculum registry, evaluation sets, corpus-quality dashboards, agent context policy.
