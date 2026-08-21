@@ -177,6 +177,7 @@ provable increments. Each must be copied into the executable backlog before work
 | BT-006 | Experiment grid/orchestration, search ledger and resource budgets | Every evaluation is registered and charged to a search family |
 | BT-007 | Representation, labels, features and fit-boundary contracts | Leakage and train/evaluation boundary tests pass |
 | BT-008 | Laboratory API and RI publication integration | Registered trial to canonical run bundle replays end to end |
+| BT-009 | Hermes-to-Bulletproof governed research bridge | Evidence-grounded hypothesis specification, generated strategy package, native truth-gated execution and dual-memory publication replay without manual command translation |
 
 ### E. Autonomous discovery laboratory
 
@@ -256,6 +257,7 @@ provable increments. Each must be copied into the executable backlog before work
 | OPS-001 | Durable approval outbox and readiness reconciliation | No missed lease window, duplicate flood or manual `once` requirement |
 | OPS-002 | Four-domain plain-English intake pilots | Engineering, infrastructure, research and knowledge transcripts pass |
 | OPS-004 | Fleet observability and founder alerting | VM1/VM2 resource and outage incidents are sustained-signal, deduplicated, independently observable and replayable |
+| OPS-005 | Automated control-plane backups and freshness enforcement | Persistent VM2 scheduling produces digest-bound verified generations, stale/corrupt backups fail closed, and a disposable restore proves measured recovery |
 | PLAT-001 | Service catalog, ownership, API/event compatibility and dependency inventory | Every runtime has owner, SLO, data class and recovery plan |
 | PLAT-002 | Workload identity, RBAC/ABAC, secret issuance/rotation and break-glass | Least privilege, revocation, audit and rotation drills pass |
 | PLAT-003 | Artifact/package supply chain, signing, SBOM and promotion | Only verified rehearsed artifacts can deploy |
