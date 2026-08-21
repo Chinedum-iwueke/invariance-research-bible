@@ -162,6 +162,18 @@ entry has no task, evidence dossier, or explicit deferral.
 
 ### RI-010 — Memory consolidation, decay, lawful deletion and supersession
 
+**Implementation status:** Implementation-complete and clean-room-qualified on
+2026-08-21 at control-plane merges `63855851677b8b0ec0cd9a20159bf45e70bcfaa8`
+and `ada05ecf86123c7aed9a820e96e586e8279079a1`, migration
+`a4e7c9d21f60`. The PostgreSQL 17 rehearsal and authenticated HTTP pilot passed
+consolidation, automatic supersession, retraction/restore, explicit decay,
+retention-hold enforcement, independent lawful deletion, tombstone/audit
+retention, dossier impact reporting, stale-projection rejection, rebuild, and
+backup/restore preservation. Mission Control is deployed on Mac. VM2 production
+activation remains blocked because `vm2-deployment` was offline, last seen three
+days before the gate; no production-qualified claim is made until the exact
+pilot is replayed there. See `plans/evidence/RI-010.md`.
+
 - **Objective/requirement/citations:** Make institutional memory lifecycle-aware without erasing audit history: superseded, retracted, corrected, expired and lawfully deleted material must stop influencing active retrieval while retained lineage proves what changed and why.
 - **Repository/files:** Canonical evidence lifecycle schemas/services, corpus synchronization, retrieval and graph projection builders, dossiers, Mission Control memory operations.
 - **Prerequisites/scope:** RI-004/005/007/008. **Non-goals:** silent deletion, mutable historical dossiers, or model-decided retention policy.
@@ -365,4 +377,8 @@ mandatory.
 - DISC-001 owns question selection; the Trial Registry owns search accounting.
 - PORT-001 owns candidate/risk policy schemas; LIVE-001 may not bypass them.
 
-The precise recommended next task is **RI-010**, implementing consolidation, supersession, retraction, decay, retention holds and lawful deletion without erasing audit history. RI-009B, OPS-001 and RI-011 are complete production foundations, not remaining gates.
+The precise recommended next task is **OPS-002**, proving four bounded
+plain-English proposal paths now that approval/readiness, qualified retrieval,
+curriculum breadth, and lifecycle-aware memory exist. RI-010 production
+activation must be replayed as soon as VM2 returns online; that operational gate
+does not justify weakening or duplicating its completed implementation.

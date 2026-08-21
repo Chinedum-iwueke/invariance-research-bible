@@ -99,6 +99,30 @@ access reason without disclosing content.
 Operational memory is separate. It records system observations and lifecycle actions
 such as assign, defer, resolve and reopen. It does not execute the noted work.
 
+RI-010 adds an orthogonal evidence-memory lifecycle. The canonical object remains
+the historical identity; `evidence_lifecycle_states` is the current materialized
+view, and immutable event, consolidation, deletion and impact tables prove how it
+changed. Its states are `active`, `consolidated`, `superseded`, `retracted`,
+`expired` and terminal `deleted`. Explicit decay is an expiry transition, not a
+score silently chosen by a model.
+
+Consolidation requires equal content digests. A corrected object must identify a
+compatible predecessor, and registration supersedes that predecessor in the same
+transaction. Retraction and expiry are reversible by an authorized restore;
+consolidation, supersession and lawful deletion are not. A deletion request names
+its legal basis and requester, a different authority must decide it, and an active
+retention hold blocks approval. Approved deletion scrubs the protected JSON payload
+to a non-sensitive tombstone while retaining canonical and payload digests,
+identity, edges, audit events and dependency impact evidence.
+
+Active retrieval and graph builders exclude every non-active state. Lifecycle
+changes advance the canonical freshness epoch, so stale projections fail closed
+until rebuilt. Frozen dossiers never mutate; replay reports the later lifecycle
+state and successor. Corpus backup schema `corpus-backup-v1.1.0` preserves states,
+events, consolidation receipts, deletion decisions and impact reports so disaster
+restore cannot silently reactivate invalid evidence. Mission Control lists
+non-active objects and opens their digest-bound lifecycle dossiers.
+
 ## 4.6 Corpus operations and synchronization
 
 RI-005 provides content-free security findings, aggregate metrics/SLO state,
