@@ -109,7 +109,7 @@ BOOK_PACKAGE_RULES: dict[int, list[tuple[range, tuple[str, ...]]]] = {
     ],
     3: [
         (range(1, 6), ("RI-001", "RI-004", "RI-007", "RI-010", "BASE-002")),
-        (range(6, 9), ("RI-002", "RI-007", "RI-009")),
+        (range(6, 9), ("RI-002", "RI-007", "RI-009", "RI-012")),
         (range(9, 12), ("RI-003", "RI-004", "RI-011", "UI-003")),
         (range(12, 17), ("RI-008", "RI-010", "AGT-002", "BT-008")),
         (range(17, 19), ("RI-005", "RI-006", "RI-009", "RI-011", "SEC-001", "PLAT-005", "PLAT-007")),
@@ -121,7 +121,7 @@ BOOK_PACKAGE_RULES: dict[int, list[tuple[range, tuple[str, ...]]]] = {
     ],
     5: [
         (range(1, 9), ("BT-001", "BT-002", "BT-004", "BT-005", "DATA-001", "DATA-002", "DATA-003")),
-        (range(9, 16), ("BT-003", "BT-006", "BT-007", "BT-008", "RI-001", "RI-004")),
+        (range(9, 16), ("BT-003", "BT-006", "BT-007", "BT-008", "BT-009", "RI-001", "RI-004")),
         (range(16, 18), ("SHADOW-001", "SHADOW-002", "BT-001", "BT-002", "DATA-003")),
     ],
     6: [
@@ -146,8 +146,8 @@ BOOK_PACKAGE_RULES: dict[int, list[tuple[range, tuple[str, ...]]]] = {
     ],
     10: [
         (range(1, 8), ("BASE-001", "BASE-002", "BASE-003", "PLAT-001", "PLAT-003", "DATA-001", "DATA-002", "DATA-003", "RI-007")),
-        (range(8, 14), ("RI-001", "RI-002", "RI-003", "RI-004", "RI-005", "RI-006", "RI-007", "RI-008", "RI-009", "RI-010", "RI-011", "BT-001", "BT-002", "BT-003", "BT-004", "BT-005", "BT-006", "BT-007", "BT-008", "SHADOW-001", "PORT-001", "RISK-001", "EXEC-001", "LIVE-001")),
-        (range(14, 21), ("BASE-003", "OPS-003", "OPS-004", "PLAT-002", "PLAT-003", "PLAT-004", "PLAT-005", "PLAT-006", "PLAT-007", "PLAT-008", "PLAT-009", "SEC-001", "SEC-002", "UI-005", "UI-006", "WS-001", "WS-002", "EVOLVE-001", "EVOLVE-002")),
+        (range(8, 14), ("RI-001", "RI-002", "RI-003", "RI-004", "RI-005", "RI-006", "RI-007", "RI-008", "RI-009", "RI-010", "RI-011", "RI-012", "BT-001", "BT-002", "BT-003", "BT-004", "BT-005", "BT-006", "BT-007", "BT-008", "BT-009", "SHADOW-001", "PORT-001", "RISK-001", "EXEC-001", "LIVE-001")),
+        (range(14, 21), ("BASE-003", "OPS-003", "OPS-004", "OPS-005", "PLAT-002", "PLAT-003", "PLAT-004", "PLAT-005", "PLAT-006", "PLAT-007", "PLAT-008", "PLAT-009", "SEC-001", "SEC-002", "UI-005", "UI-006", "WS-001", "WS-002", "EVOLVE-001", "EVOLVE-002")),
     ],
 }
 
