@@ -207,6 +207,24 @@ and graph projections rebuilt current and their live digests are retained in
 - **Tests/acceptance:** Re-run immutable RI-009 cases plus broad inference, backtesting-validity, selection-bias, portfolio, microstructure and regime fixtures; benchmark cold/warm p50/p95, concurrent requests, stale writes, cancellation and fail-closed authorization. Declare SLOs before optimization and do not pass by shrinking the corpus.
 - **Evidence/rollback/done:** A production-scale benchmark shows the declared latency/resource SLOs pass without regression from evaluation `1.0.1`; rollback restores the calibrated implementation and preserves all evaluation records. **Reviewer:** Independent Knowledge Evaluator, database/performance reviewer and security owner.
 
+### RI-012 — Incremental founder-inbox synchronization and resumability
+
+**Implementation status:** Implemented and locally tested on 2026-08-21; merge,
+Mac deployment, first-index bootstrap and measured warm no-change refresh remain
+required before production qualification. Mission Control now has a versioned private
+index, stat-first unchanged-file fast path, content-digest rename deduplication,
+atomic per-file checkpoints, exclusive refresh locking, retryable non-canonical
+entries, live `sync-status`, complete cached reconciliation inventory and
+change-gated projection rebuilds.
+
+- **Objective/requirement/citations:** Make founder-inbox synchronization proportional to the changed batch rather than total historical corpus size, while preserving RI-002 quarantine, RI-005 recovery, RI-007 reconciliation and RI-010 lifecycle authority.
+- **Repository/files:** Mission Control inbox synchronizer/configuration/CLI/tests, RI-007 runbook, Book XI Research Intelligence chapter.
+- **Prerequisites/scope:** RI-007 and RI-010. **Non-goals:** moving or deleting founder files, weakening scanning/recovery, parallel OCR without capacity admission, or treating the local index as canonical evidence.
+- **Data/access:** The private `0600` index stores file metadata, digests and API evidence identifiers but no source payloads or credentials. The API and canonical PostgreSQL evidence kernel remain authoritative.
+- **Steps/interfaces:** Stat `(path,size,mtime_ns,ctime_ns)`; skip unchanged canonical entries; hash changed/new paths; reuse canonical receipts by digest after rename; upload only a true delta; checkpoint atomically after each file; persist projection invalidation across interruption; resume safely; retry quarantined/failed entries; reconcile the complete current inventory; rebuild retrieval/graph projections once only when canonical content changed; expose scanned/remaining/count status. Removed inbox paths remain visible as superseded inventory while canonical evidence is retained, so removal alone does not rebuild projections.
+- **Tests/acceptance:** Unchanged refresh causes zero ingestion calls and zero projection rebuilds; renamed duplicate causes zero upload; interrupted run retains completed receipts; overlapping refresh is rejected; changed/new and quarantined files remain processable; removed files disappear from the current inventory; index permissions are `0600`; warm no-change benchmark over the live Mac inbox completes within 10 seconds excluding control-plane reconciliation latency.
+- **Evidence/rollback/done:** Retain first bootstrap and second warm-refresh reports, API request counts, projection decision, index mode, interruption/resume transcript and full Mission Control test result. Rollback removes only the local derived index and restores full digest-idempotent scanning; canonical evidence and sync ledgers remain unchanged. **Reviewer:** Research Intelligence owner, performance reviewer and security owner.
+
 ## Wave 1 — Agent reliability in parallel
 
 ### OPS-001 — Approval and readiness race closure

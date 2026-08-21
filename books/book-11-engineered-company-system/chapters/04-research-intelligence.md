@@ -138,6 +138,34 @@ Each eligible item must end as canonical, quarantined, duplicate, superseded, ex
 or failed with a reason. Raw Bulletproof memory and its multi-gigabyte lake are not
 copied into Hermes; only a bounded digest-bound projection is registered.
 
+RI-012 removes a client-side scaling defect in founder-inbox synchronization. Earlier
+Mission Control releases reread, rehashed, base64-encoded and submitted every eligible
+historical file on every refresh, even though the API correctly prevented duplicate
+publication. The incremental client instead maintains a derived private
+`research-inbox-sync-v1.json` index under the Mission Control data root. Its fast path
+compares relative path, byte size and nanosecond modification/change times; unchanged
+canonical files require no content read, hash or ingestion request. A changed or new path is
+hashed, and a renamed canonical file reuses its digest-bound ingestion receipt without
+uploading the payload again.
+
+The index is not evidence authority. It contains metadata, content digests, ingestion
+identifiers, dispositions and projection evidence, is written atomically with mode
+`0600`, and is checkpointed after every file. Projection invalidation is also durable,
+so an interruption after publication cannot reuse an older projection. An exclusive lock prevents overlapping
+refreshes. Canonical entries are terminal in the local fast path; quarantined, failed
+and remediation-required content remains retryable through the governed recovery
+pipeline. Reconciliation still receives the complete current inbox inventory from
+cached and new receipts. Retrieval and graph projections rebuild once after a settled
+batch only when the batch publishes new canonical content; a no-change refresh reuses
+the last projection evidence. The `sync-status` command exposes scanned, remaining and
+outcome counts while work is active.
+
+This implementation is locally tested but is not production-qualified in this
+snapshot. Mac deployment, first-index bootstrap, interruption/resume evidence and a
+measured warm no-change refresh remain RI-012 acceptance gates. The synchronizer stays
+serial across expensive extraction work until explicit API capacity admission exists;
+unbounded parallel OCR is not an accepted latency shortcut.
+
 ## 4.7 Surveillance
 
 RI-006 has allowlisted HTTPS feeds, rights/access metadata, fetch success/failure
