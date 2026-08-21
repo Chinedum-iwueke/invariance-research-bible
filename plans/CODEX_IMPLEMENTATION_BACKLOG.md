@@ -162,7 +162,7 @@ entry has no task, evidence dossier, or explicit deferral.
 
 ### RI-010 — Memory consolidation, decay, lawful deletion and supersession
 
-**Implementation status:** Implementation-complete and clean-room-qualified on
+**Implementation status:** Completed and production-qualified on
 2026-08-21 at control-plane merges `63855851677b8b0ec0cd9a20159bf45e70bcfaa8`
 and `ada05ecf86123c7aed9a820e96e586e8279079a1`, migration
 `a4e7c9d21f60`. The PostgreSQL 17 rehearsal and authenticated HTTP pilot passed
@@ -170,9 +170,10 @@ consolidation, automatic supersession, retraction/restore, explicit decay,
 retention-hold enforcement, independent lawful deletion, tombstone/audit
 retention, dossier impact reporting, stale-projection rejection, rebuild, and
 backup/restore preservation. Mission Control is deployed on Mac. On 2026-08-21
-VM2 migrated to `a4e7c9d21f60` and the rebuilt API was observed healthy; the
-root-protected operator pilot remains the final production-qualification gate.
-See `plans/evidence/RI-010.md`.
+VM2 migrated to `a4e7c9d21f60`, the rebuilt API was observed healthy, and the
+root-protected authenticated pilot passed all eight lifecycle checks. Retrieval
+and graph projections rebuilt current and their live digests are retained in
+`plans/evidence/RI-010.md`.
 
 - **Objective/requirement/citations:** Make institutional memory lifecycle-aware without erasing audit history: superseded, retracted, corrected, expired and lawfully deleted material must stop influencing active retrieval while retained lineage proves what changed and why.
 - **Repository/files:** Canonical evidence lifecycle schemas/services, corpus synchronization, retrieval and graph projection builders, dossiers, Mission Control memory operations.
@@ -389,6 +390,4 @@ mandatory.
 
 The precise recommended next task is **OPS-002**, proving four bounded
 plain-English proposal paths now that approval/readiness, qualified retrieval,
-curriculum breadth, and lifecycle-aware memory exist. RI-010 production
-qualification requires the authenticated lifecycle pilot against the now-migrated VM2 API; that operational gate
-does not justify weakening or duplicating its completed implementation.
+curriculum breadth, and production-qualified lifecycle-aware memory exist.
