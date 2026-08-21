@@ -169,10 +169,10 @@ and `ada05ecf86123c7aed9a820e96e586e8279079a1`, migration
 consolidation, automatic supersession, retraction/restore, explicit decay,
 retention-hold enforcement, independent lawful deletion, tombstone/audit
 retention, dossier impact reporting, stale-projection rejection, rebuild, and
-backup/restore preservation. Mission Control is deployed on Mac. VM2 production
-activation remains blocked because `vm2-deployment` was offline, last seen three
-days before the gate; no production-qualified claim is made until the exact
-pilot is replayed there. See `plans/evidence/RI-010.md`.
+backup/restore preservation. Mission Control is deployed on Mac. On 2026-08-21
+VM2 migrated to `a4e7c9d21f60` and the rebuilt API was observed healthy; the
+root-protected operator pilot remains the final production-qualification gate.
+See `plans/evidence/RI-010.md`.
 
 - **Objective/requirement/citations:** Make institutional memory lifecycle-aware without erasing audit history: superseded, retracted, corrected, expired and lawfully deleted material must stop influencing active retrieval while retained lineage proves what changed and why.
 - **Repository/files:** Canonical evidence lifecycle schemas/services, corpus synchronization, retrieval and graph projection builders, dossiers, Mission Control memory operations.
@@ -380,5 +380,5 @@ mandatory.
 The precise recommended next task is **OPS-002**, proving four bounded
 plain-English proposal paths now that approval/readiness, qualified retrieval,
 curriculum breadth, and lifecycle-aware memory exist. RI-010 production
-activation must be replayed as soon as VM2 returns online; that operational gate
+qualification requires the authenticated lifecycle pilot against the now-migrated VM2 API; that operational gate
 does not justify weakening or duplicating its completed implementation.
