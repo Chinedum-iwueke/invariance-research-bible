@@ -255,6 +255,7 @@ provable increments. Each must be copied into the executable backlog before work
 |---|---|---|
 | OPS-001 | Durable approval outbox and readiness reconciliation | No missed lease window, duplicate flood or manual `once` requirement |
 | OPS-002 | Four-domain plain-English intake pilots | Engineering, infrastructure, research and knowledge transcripts pass |
+| OPS-004 | Fleet observability and founder alerting | VM1/VM2 resource and outage incidents are sustained-signal, deduplicated, independently observable and replayable |
 | PLAT-001 | Service catalog, ownership, API/event compatibility and dependency inventory | Every runtime has owner, SLO, data class and recovery plan |
 | PLAT-002 | Workload identity, RBAC/ABAC, secret issuance/rotation and break-glass | Least privilege, revocation, audit and rotation drills pass |
 | PLAT-003 | Artifact/package supply chain, signing, SBOM and promotion | Only verified rehearsed artifacts can deploy |

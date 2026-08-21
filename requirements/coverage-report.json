@@ -89,6 +89,7 @@
     "OPS-001": 74,
     "OPS-002": 74,
     "OPS-003": 25,
+    "OPS-004": 25,
     "PLAT-001": 17,
     "PLAT-002": 135,
     "PLAT-003": 39,
@@ -135,7 +136,7 @@
     "WS-002": 99
   },
   "claim_boundary": "Complete disposition proves planning coverage, not implementation, operational qualification, scientific truth, or profitability.",
-  "ledger_sha256": "7c0cae1b34ebe4a01c54389acbe699c9871909cb84975f9e679c657e5fb71976",
+  "ledger_sha256": "2e389b192ed742995f3411fd25af68bd7a240c5e77232c5316e71694b6d49918",
   "orphan_requirement_count": 0,
   "orphan_work_package_count": 0,
   "requirement_count": 1075,
