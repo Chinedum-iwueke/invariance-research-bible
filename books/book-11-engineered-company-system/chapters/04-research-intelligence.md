@@ -50,6 +50,17 @@ corrupt unrecoverable or manual review required. Security-blocked material may p
 a provenance-preserving redacted-edition proposal, but cannot execute it without
 founder approval.
 
+Mission Control exposes a read-only blocked-artifact register derived from canonical
+ingestion jobs and their immutable recovery receipts. It records the artifact digest,
+terminal classification, exact founder action, retry eligibility, attempted methods and
+redacted-edition proposal state. It is not a second mutable recovery ledger. Rejected
+derived editions remain subordinate evidence of their original recovery and are
+excluded from both the founder-action register and new recovery queue, preventing
+recovery loops and duplicate decisions. At the 2026-08-22 observation the register had
+exactly two terminal originals: the Cartea edition was `replacement_required` after
+structural repair, independent parsing and OCR failed; `2505.22954v3.pdf` was
+`security_blocked` with a non-executable redaction proposal.
+
 ## 4.3 Canonical object kernel
 
 Implemented object types are source, edition, artifact, scientific object, claim,
@@ -85,12 +96,43 @@ An eight-request admission semaphore rejects overload rather than allowing unbou
 concurrent work. Responses expose stage timings and candidate counts without exposing
 protected content.
 
-The production `hybrid-retrieval-v1.1.0` projection contains 623,375 scientific
-objects. Its live benchmark measured 564.253 ms warm p95 and 1,228.084 ms concurrent
+The 2026-08-22 post-recovery `hybrid-retrieval-v1.1.0` projection contains 761,444
+scientific objects under corpus digest
+`e97aef87ad687e670087dd44c99e4e9366287ec0ee860b06e3d4fa48507d0db0`.
+Its retained RI-011 benchmark at the earlier 623,375-object corpus measured
+564.253 ms warm p95 and 1,228.084 ms concurrent
 p95, below declared 2,000 ms and 5,000 ms SLOs. Evaluation `1.0.2` preserved complete
 recall, citation, opposition, abstention and topic-coverage measures with zero measured
 cross-domain leakage. Full projection rebuild remains an offline deployment operation;
 it is not part of request latency.
+
+### 4.4.1 Governed RAG and model boundary
+
+Hermes implements governed, citation-bound, graph-assisted retrieval-augmented
+generation rather than a general document chatbot. The control plane performs
+authorization, hybrid retrieval, graph-neighbor expansion, ranking, bounded context
+assembly and citation replay. An authorized research role or model may reason only over
+the returned context pack and must identify uncited synthesis as agent inference or
+abstain when evidence is insufficient.
+
+```mermaid
+flowchart LR
+    Q[Question or research mandate] --> A[Access and schema policy]
+    A --> H[Hybrid retrieval]
+    H --> G[Typed graph expansion]
+    G --> C[Bounded citation context pack]
+    C --> L[Authorized LLM or research role]
+    L --> O[Cited answer, brief or proposal]
+    O --> V[Citation replay and confidence gate]
+    V -->|insufficient evidence| X[Explicit abstention]
+```
+
+The LLM does not receive unrestricted source files, database credentials, scanner
+controls or publication authority. It cannot mutate canonical evidence, approve a
+hypothesis, start an experiment, promote a result or allocate capital. The retrieval
+vector channel is deterministic, network-free hashed-vector similarity; it is not an
+OpenAI embedding service or an external vector database. Model generation is therefore
+replaceable above the canonical retrieval/context boundary.
 
 ## 4.5 Institutional memory
 
@@ -212,12 +254,12 @@ flowchart LR
 The graph is not a graph database source of truth. Canonical IDs and edges remain in
 the evidence kernel; the graph projection can be dropped and deterministically rebuilt.
 
-The live projection observed on 2026-08-14 contains 623,729 nodes and 1,097,688 edges
-under manifest digest
-`e44e13f0c955cddcd09f1cb5054914ace1e79f4514116b6f15ac0654028cfeb9`.
-That observation proves migration and rebuild, not domain expertise. A retained live
-citation/context replay and cognitive-tool receipt remain the final RI-008 acceptance
-evidence at this point in the snapshot.
+The post-recovery projection observed on 2026-08-22 contains 762,232 nodes and
+1,331,231 edges under manifest digest
+`bc83c19679c84782cc315d40e37bd00be51d18f54a06776988e979a1c5541569`.
+That observation proves migration and rebuild, not domain expertise. Citation/context
+replay, curriculum evaluation and cognitive-tool receipts remain separate acceptance
+evidence.
 
 ## 4.9 Readiness boundary
 

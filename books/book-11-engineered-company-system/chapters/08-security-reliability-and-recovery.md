@@ -51,8 +51,12 @@ exercise, not only a successful backup command.
 - Full off-host backup and disaster recovery are not yet proven company-wide.
 - Alerting, tracing and production SLO evidence remain incomplete.
 - Scientific ingestion uses bounded local scanners, structural repair, independent
-  parsing and OCR; stronger antivirus/parser process isolation remains future hardening.
+  parsing and OCR. A dedicated Codex identity may advise which remaining allowlisted
+  method to attempt or recommend a terminal classification, but receives no artifact
+  bytes and cannot suppress scanner findings or publish evidence. Stronger
+  antivirus/parser process isolation remains future hardening.
 - Two founder-inbox artifacts remain terminally quarantined: one needs a replacement
-  edition and one requires an approved provenance-preserving redaction decision.
+  edition and one requires an approved provenance-preserving redaction decision. Their
+  action and attempt history is visible in the blocked-artifact register.
 - Role manifests and historical pilots do not guarantee current agent presence.
 - No research result has authority to mutate capital.

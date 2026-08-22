@@ -109,7 +109,7 @@ BOOK_PACKAGE_RULES: dict[int, list[tuple[range, tuple[str, ...]]]] = {
     ],
     3: [
         (range(1, 6), ("RI-001", "RI-004", "RI-007", "RI-010", "BASE-002")),
-        (range(6, 9), ("RI-002", "RI-007", "RI-009", "RI-012")),
+        (range(6, 9), ("RI-002", "RI-007", "RI-009", "RI-012", "RI-013")),
         (range(9, 12), ("RI-003", "RI-004", "RI-011", "UI-003")),
         (range(12, 17), ("RI-008", "RI-010", "AGT-002", "BT-008")),
         (range(17, 19), ("RI-005", "RI-006", "RI-009", "RI-011", "SEC-001", "PLAT-005", "PLAT-007")),

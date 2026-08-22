@@ -3,13 +3,14 @@
 
 ## 9.1 Current milestone ledger
 
-| Package | Source state | Runtime/evidence state at 2026-08-14 |
+| Package | Source state | Runtime/evidence state at 2026-08-22 |
 |---|---|---|
 | BASE-001..003 | Implemented/tested | Completion evidence retained |
 | RI-001..006 | Implemented/tested | Isolated/database rehearsals retained; live health must be queried |
-| RI-007 | Implemented/tested with PR 31-33 recovery fixes | Live corpus reconciliation and recovery evidence retained; lifecycle work remains RI-010 |
-| RI-008 | Implemented/tested/observed | Live 623,729-node graph, replay and tool receipts retained |
+| RI-007/012/013 | Implemented/tested/deployed | Incremental inbox, bounded Codex-advised recovery and two-item terminal action register observed |
+| RI-008 | Implemented/tested/observed | Live 762,232-node, 1,331,231-edge graph plus replay and tool receipts retained |
 | RI-009/009B/011 | Implemented/tested/observed | Twelve-domain portfolio production-qualified; retrieval SLO and graph freshness gates pass |
+| RI-010 | Implemented/tested/deployed/observed | Lifecycle, consolidation, supersession, retraction, lawful deletion and projection invalidation pilot passed |
 | OPS/BT/WS and later packages | Planned or partial as individually recorded | Do not infer completion from historical Hermes M-number pilots |
 
 ## 9.2 Backlog maintenance rule
@@ -62,6 +63,7 @@ must never be stored in this repository.
 
 ## 9.5 Immediate next gates
 
-1. Execute RI-010 memory lifecycle, lawful deletion and supersession.
-2. Expand later curriculum versions beyond the minimum two-source breadth kernel.
-3. Continue the company backlog while maintaining Book XI at each engineering gate.
+1. Expand later curriculum versions beyond the minimum two-source breadth kernel.
+2. Complete fleet observability, scheduled backup and founder-alerting gates.
+3. Implement the governed Hermes-to-Bulletproof specification and native-execution bridge.
+4. Continue the company backlog while maintaining Book XI at each engineering gate.

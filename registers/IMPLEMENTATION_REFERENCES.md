@@ -105,6 +105,25 @@ Production-scale retrieval optimization was deployed at control-plane merge `280
 
 Control-plane PRs 48-51 introduced twelve pinned Research Bible curricula, separate support/opposition evaluation queries, immutable aggregate portfolios and constant-time graph freshness epochs. Production portfolio `e9b393e0-4eee-4768-ada2-d3db2be5ffa0` version `1.0.1` qualified all twelve domains under digest `ec1393d67ea1259cec6288023f30ea4a9acf47547566ce73a7c74665a0224f49`. The initial `1.0.0` gap portfolio is retained. Exact scope, metrics, digests, test totals and limitations are recorded in [RI-009B Completion Evidence](../plans/evidence/RI-009B.md).
 
+## RI-012 and RI-013 implementation addendum
+
+Incremental founder-inbox reconciliation, checkpoint/resume and finalize-only behavior
+were deployed before this snapshot. The settled 2026-08-22 run recorded 267 usable
+canonical or duplicate-backed files and two terminal quarantines, then rebuilt retrieval
+and graph projections once. Control-plane PR 75, merged as `8268bd4`, added the bounded
+iterative recovery controller, independent parser/OCR sequence and advisory-only Codex
+identity. Its deterministic scanner and normal publication path retain authority.
+
+Control-plane PRs 76-78, represented on `main` at
+`603b074c1b191c5228ca6676fe739f4eb6afbbfd`, added the read-only blocked-artifact
+register, excluded subordinate rejected editions from independent recovery, corrected
+the Mission Control lifecycle response envelope and deployed the register to VM2 and
+the Mac. The live register returned exactly one `replacement_required` and one
+`security_blocked` original. The post-recovery projection recorded 761,444 retrieval
+objects and a 762,232-node, 1,331,231-edge graph. Control-plane automated validation at
+the register gate passed 283 backend tests and 56 Mission Control tests; changed-file
+Ruff and JavaScript syntax checks passed.
+
 ### Verified implementation facts
 
 1. `BacktestEngine` implements a bar-driven loop connecting a historical feed, universe, strategy, risk engine, execution model, portfolio accounting, audit hooks, and artifact writers.

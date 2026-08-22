@@ -30,6 +30,13 @@ or quarantine outcomes, records an RI-007 inventory and rebuilds projections. Lo
 recovery refreshes run Mac-locally under `caffeinate` with protected logs so SSH loss
 does not interrupt them.
 
+The Research view also presents the canonical blocked-artifact register. Founder-facing
+rows show classification, required action, attempt count and digest; the inspector
+shows the bounded method ledger and whether a redacted-edition proposal exists. The UI
+cannot reset terminal classifications or authorize publication. Recovered derived
+artifacts are deliberately absent so one underlying source cannot appear as several
+independent decisions.
+
 ## 6.3 Telegram gateway
 
 The restricted Telegram gateway accepts messages only from the configured founder user
