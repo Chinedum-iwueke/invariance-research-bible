@@ -91,6 +91,26 @@ entry, notional/risk consistency and artifact completeness. Selected JSON output
 deterministic serialization; timestamps and absolute run paths mean byte-for-byte
 identity is not claimed for every file.
 
+BT-003 adds the immutable publication boundary without replacing those artifacts. A
+finalizer copies canonical textual artifacts into a same-filesystem staging directory,
+assigns source-byte, publishable-byte and semantic SHA-256 digests, records media type
+and structural schema identity, binds repository/code, BT-002 dataset, specification,
+environment and attempt lineage, validates the bundle, and atomically renames it to a
+content-addressed final directory. A failure or interruption leaves no partial bundle
+and retains a redacted failed-attempt record.
+
+Supported volatile run IDs, generated timestamps and output paths are excluded from
+semantic identity while exact published bytes remain independently digest-bound. The
+legacy run manifest is copied with stable runtime/data aliases and retains its original
+source digest. Other absolute protected paths, likely secrets, symlinks, corrupt files,
+unsupported binaries and unknown schemas fail closed. Repeated semantic publication is
+idempotent and returns the existing receipt.
+
+Hermes' canonical run payload now optionally carries the bundle digest, manifest
+digest and `bundle://sha256/...` URI as an all-or-none reference. Bulletproof publishes
+that record through the existing idempotent canonical-evidence endpoint; it does not
+create another registry or store authorization material in artifacts.
+
 ## 5.6 Research memory and Hermes bridge
 
 The SQLite research memory stores completed trades, state buckets, verdicts,
@@ -107,7 +127,8 @@ and registers canonical evidence plus an RI-007 synchronization receipt.
 - BT-001 closes the recorded collection/dependency/fixture drift for the locked Python
   3.11 matrix using deterministic shards and restored canonical contracts. The engine
   and strategy catalog remain the existing Bulletproof implementation.
-- Atomic run bundles and canonical RI publication remain BT-003/BT-008 work.
+- Atomic run bundles and canonical run-record publication are complete under BT-003;
+  broader result/artifact RI publication remains BT-008 work.
 - BT-002 point-in-time and correction proofs apply to selected snapshots; universal
   lake population remains DATA-001 through DATA-003 work.
 - Shadow, demo and live-looking surfaces do not constitute venue-certified execution.

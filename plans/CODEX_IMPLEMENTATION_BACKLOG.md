@@ -364,6 +364,7 @@ PLAT-007 rather than OPS-005.
 
 ### BT-003 — Atomic digest-finalized run bundle
 
+- **Status:** Complete in source on 2026-08-22; acceptance evidence: [BT-003 completion evidence](evidence/BT-003.md).
 - **Objective/requirement/citations:** Give every canonical artifact a schema, content digest, lineage, atomic finalization and failure state.
 - **Repository/files:** Bulletproof artifact writers/schemas/validation; Hermes producer endpoint.
 - **Prerequisites/scope:** BASE-002, RI-001, BT-001/002. **Non-goals:** live orders.
