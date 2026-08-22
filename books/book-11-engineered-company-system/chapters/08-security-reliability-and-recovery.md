@@ -50,6 +50,9 @@ exercise, not only a successful backup command.
 
 - Full off-host backup and disaster recovery are not yet proven company-wide.
 - Alerting, tracing and production SLO evidence remain incomplete.
+- VM1 and VM2 fleet probes are active, but simultaneous loss of both hosts cannot be
+  detected independently until the external watchdog is placed on an always-on VPS
+  outside their shared failure domain and its outage/recovery behavior is rehearsed.
 - Scientific ingestion uses bounded local scanners, structural repair, independent
   parsing and OCR. A dedicated Codex identity may advise which remaining allowlisted
   method to attempt or recommend a terminal classification, but receives no artifact
@@ -97,7 +100,16 @@ because it may sleep.
 
 The schemas, migration, services, probes, watchdog, systemd sandboxes, Telegram
 rendering, Mission Control view and focused fault tests are `implemented` and locally
-`tested`. They are not yet `deployed`, `active` or production-qualified. Those claims
-require VM2 migration, live VM1/VM2 sample comparison with kernel references, observed
-Telegram warning/recovery delivery and an independently witnessed simultaneous-outage
-rehearsal. Rollback disables probes and watchdogs without deleting incident evidence.
+`tested`. Migration `b6f2a9c41d80` is deployed, and the hardened VM1 and VM2 probes are
+enabled, active and publishing authenticated observations every 20 seconds as
+`vm1-developer` and `vm2-deployment`. This establishes operational individual-host
+telemetry; it does not yet production-qualify correlated-outage alerting.
+
+The independent watchdog is explicitly deferred until a minimal hardened, always-on
+VPS is provisioned outside the VM1/VM2 failure domain. That host must use a dedicated
+restricted observer credential and alert-only Telegram fallback, expose no execution
+authority, and restrict outbound access to the declared health targets and Telegram.
+Production qualification still requires live value comparison with kernel references,
+observed Telegram warning/recovery delivery, and digest-bound rehearsals of VM1 loss,
+VM2 loss, simultaneous loss, recovery, duplicate suppression and credential rotation.
+Rollback disables probes and watchdogs without deleting incident evidence.

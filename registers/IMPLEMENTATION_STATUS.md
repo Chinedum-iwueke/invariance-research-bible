@@ -2,7 +2,7 @@
 # Implementation Status Register
 
 **Status:** Controlled implementation baseline
-**As of:** 2026-08-21
+**As of:** 2026-08-22
 **Claim vocabulary:** `current`, `partial`, `documented`, `tested`, `observed`, `target`, `extension`, `deferred`, `unknown`, `blocked`
 
 This register separates the completeness of the Bible from the maturity of the institution it specifies. A written chapter is not implementation evidence. A source file is not operational evidence. A passing unit test is not production qualification.
@@ -37,7 +37,7 @@ This register separates the completeness of the Bible from the maturity of the i
 | Shadow, replay, demo, micro-live | partial | Execution surfaces and unit tests exist | No audited prospective sequence establishing environment promotion | M5-M7 |
 | Portfolio admission and capital allocation | target | Books VII-VIII | Must remain separate from research success | M6-M7 |
 | Production operations | partial; observed | VM2 deployment/runbook foundations | Company-wide backup, restore, telemetry, incident, and recovery evidence incomplete | M8 |
-| Fleet observability and founder alerting | implemented; tested locally; activation pending | Strict VM1/VM2 aggregate probes, digest-bound observation and incident ledger, sustained-signal hysteresis, durable founder outbox integration, Mission Control Fleet Health, Prometheus metrics, hardened units and independent TCP watchdog | Migration and services are not yet activated on VM1/VM2; live value parity, Telegram transition delivery and third-observer simultaneous-outage rehearsal are not yet evidence-backed | OPS-004 source complete; production acceptance pending |
+| Fleet observability and founder alerting | partial; deployed; observed | Migration `b6f2a9c41d80`; enabled hardened VM1/VM2 aggregate probes publishing authenticated 20-second observations; digest-bound observation and incident ledger; sustained-signal hysteresis; durable founder outbox integration; Mission Control Fleet Health; Prometheus metrics; independently deployable TCP watchdog | External watchdog placement is deferred until an always-on VPS exists outside the VM1/VM2 failure domain; live kernel-value parity, Telegram transition delivery and simultaneous-outage rehearsal are not yet evidence-backed | OPS-004 individual-host telemetry active; correlated-outage production acceptance deferred |
 
 ## Current operating conclusion
 

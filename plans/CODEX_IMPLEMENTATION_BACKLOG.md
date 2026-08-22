@@ -263,7 +263,8 @@ change-gated projection rebuilds.
 
 ### OPS-004 — Fleet observability and founder alerting
 
-- **Status (2026-08-22):** Source complete in `swarm-control-plane`; production activation and the independent simultaneous-outage rehearsal remain required before this package may be described as deployed or production-qualified.
+- **Status (2026-08-22):** VM1 and VM2 probes are deployed, enabled and publishing bounded observations. Independent simultaneous-outage detection is deferred until an external always-on host is available; OPS-004 is therefore operational for individual-host telemetry but not yet production-qualified for correlated VM1/VM2 loss.
+- **Deferred external-watchdog work:** Provision a minimal hardened always-on VPS outside the VM1/VM2 failure domain; install the existing `invariance-swarm-fleet-watchdog` unit with a dedicated restricted credential and direct Telegram fallback; constrain network access to the two declared health targets and Telegram; define ownership, patching, backup and cost controls; then rehearse VM1 loss, VM2 loss, simultaneous loss, recovery, duplicate suppression and credential rotation. Do not place this authority on the intermittently available Mac, and do not close OPS-004 until digest-bound rehearsal evidence demonstrates simultaneous-outage detection within the declared SLO without false duplicate alerts.
 
 - **Objective/requirement/citations:** Continuously and accurately observe VM1 and VM2 resource health and availability, surface actionable incidents in Mission Control, and notify the founder through Telegram without transient-spike noise or duplicate floods.
 - **Repository/files:** Control-plane machine-observation, incident and notification schemas/services; bounded local probe; VM1/VM2 systemd units; peer and independent availability watcher; Telegram notification outbox consumer; Mission Control Fleet Health view; operator runbooks and retention policy.
