@@ -37,6 +37,16 @@ Every task heading in `plans/CODEX_IMPLEMENTATION_BACKLOG.md` must acquire an
 corpus evidence is part of that condition, merged code alone is `implemented`, not
 `completed`.
 
+The capability map and executable backlog are now structurally synchronized. All 107
+canonical capability IDs in `plans/BIBLE_CAPABILITY_COVERAGE.md` have dedicated backlog
+headings. The 80 packages that previously appeared only in compact coverage tables now
+have explicit scope, reuse, missing-gap, contract, dependency, test, evidence, rollback
+and done boundaries; this includes the full `BT-004` through `BT-008` laboratory chain.
+Ledger validation fails if a future capability is added without an executable backlog
+heading. This establishes complete planning coverage only: each new packet remains
+`planned` until its individual implementation and operating evidence satisfy its done
+condition.
+
 ## 9.3 Book XI update rule
 
 Every merged feature that changes architecture, data, agents, permissions, workflows,

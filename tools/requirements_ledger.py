@@ -402,8 +402,36 @@ def known_packages(root: Path) -> set[str]:
     return set(PACKAGE_ID_RE.findall("\n".join(texts)))
 
 
+def capability_packages(root: Path) -> set[str]:
+    coverage = (root / "plans" / "BIBLE_CAPABILITY_COVERAGE.md").read_text(
+        encoding="utf-8"
+    )
+    return {
+        match.group(0)
+        for line in coverage.splitlines()
+        if line.startswith("| ")
+        for match in [PACKAGE_ID_RE.search(line)]
+        if match is not None
+    }
+
+
+def backlog_package_headings(root: Path) -> set[str]:
+    backlog = (root / "plans" / "CODEX_IMPLEMENTATION_BACKLOG.md").read_text(
+        encoding="utf-8"
+    )
+    return set(re.findall(r"^###\s+([A-Z]+-\d{3})\b", backlog, re.MULTILINE))
+
+
 def validate_ledger(ledger: dict[str, Any], root: Path) -> list[str]:
     errors: list[str] = []
+    missing_backlog_packets = sorted(
+        capability_packages(root) - backlog_package_headings(root)
+    )
+    if missing_backlog_packets:
+        errors.append(
+            "capability packages are missing executable backlog headings: "
+            f"{missing_backlog_packets}"
+        )
     unknown_top_level = sorted(set(ledger) - TOP_LEVEL_KEYS)
     missing_top_level = sorted(TOP_LEVEL_KEYS - set(ledger))
     if unknown_top_level:
