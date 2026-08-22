@@ -70,6 +70,12 @@ projections, alter lifecycle state, approve hypotheses, run tasks or allocate ca
 Every displayed projection/query digest is evidence about a derived view, not authority
 to change the evidence kernel.
 
+Production acceptance on 2026-08-22 expanded a current-projection neighborhood to 50
+nodes and 50 edges and replayed a canonical object exactly. The replay required 91.95
+seconds at the current corpus scale, so Mission Control gives only that read-only call
+a bounded 120-second timeout; the latency remains visible operational debt rather than
+being hidden by an unbounded request.
+
 ## 6.2 Folder ingestion
 
 The protected research inbox accepts PDF, Markdown and text. Refresh is digest

@@ -274,7 +274,7 @@ change-gated projection rebuilds.
 
 ### UI-003B — Canonical Knowledge Graph Explorer
 
-- **Status (2026-08-22):** Implemented and locally validated in `swarm-control-plane`; Mac reinstall and live neighborhood-query/replay acceptance remain the production observation gate.
+- **Status (2026-08-22):** Completed and production-observed on the Mac. A bounded live expansion returned 50 nodes and 50 edges from the current `knowledge-graph-v1.0.0` projection, and exact canonical replay returned HTTP 200. The read-only replay call has a 120-second bound because the observed corpus-scale replay required 91.95 seconds.
 - **Objective/requirement/citations:** Let the founder inspect how canonical sources, claims, methods, datasets, runs, results, reviews, decisions and beliefs connect without treating visualization state as institutional truth.
 - **Repository/files:** Mission Control typed graph-query adapter and local route; SVG graph workspace; adjacency fallback; evidence replay inspector; UI/service tests; `docs/ui-003b-validation.md`; Book XI.
 - **Prerequisites/scope:** RI-008 and UI-003A. Render a bounded current projection, drill into one selected node through authorized neighborhood queries, filter by direction/depth/predicate, and reuse exact canonical replay. **Non-goals:** browser-side graph authority, edge creation, projection rebuild, free-form graph query languages, model-generated edges, evidence mutation or workflow execution.
