@@ -55,7 +55,8 @@ The Bible requirement ledger inventories all 169 chapters and 31 appendices, ret
 
 ## BT-001 implementation addendum
 
-Bulletproof commit `51e60a270bfb71351465f4b87f08ea0eca63876d` closes the
+Bulletproof commits `51e60a270bfb71351465f4b87f08ea0eca63876d` and
+`8bdb68869870e9ad78f57fadb54d1881f4008bad` close the
 recorded Python 3.11 collection and contract drift without introducing strategy logic
 or a second engine. The commit adds a bounded dependency lock, scoped collection,
 deterministic CI shards, restored historical contracts for still-implemented
