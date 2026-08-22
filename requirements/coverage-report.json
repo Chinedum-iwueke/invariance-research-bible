@@ -140,7 +140,7 @@
     "WS-002": 99
   },
   "claim_boundary": "Complete disposition proves planning coverage, not implementation, operational qualification, scientific truth, or profitability.",
-  "ledger_sha256": "1efa3515bd83a5ebf410d14cc96d6b91cd9259bf536720fd1557ec719a160566",
+  "ledger_sha256": "a1cfaeb12c1923bc22bd38fa2ee9abf067528106cf0577be913f2864af8bab97",
   "orphan_requirement_count": 0,
   "orphan_work_package_count": 0,
   "requirement_count": 1075,
