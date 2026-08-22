@@ -50,8 +50,9 @@ exercise, not only a successful backup command.
 
 - Full off-host backup and disaster recovery are not yet proven company-wide.
 - Alerting, tracing and production SLO evidence remain incomplete.
-- Scientific ingestion currently uses bounded local scanners/OCR; stronger approved
-  antivirus/parser isolation remains future hardening.
-- The founder inbox recovery must finish before full corpus quality is known.
+- Scientific ingestion uses bounded local scanners, structural repair, independent
+  parsing and OCR; stronger antivirus/parser process isolation remains future hardening.
+- Two founder-inbox artifacts remain terminally quarantined: one needs a replacement
+  edition and one requires an approved provenance-preserving redaction decision.
 - Role manifests and historical pilots do not guarantee current agent presence.
 - No research result has authority to mutate capital.
