@@ -27800,56 +27800,6 @@
       "depends_on": [],
       "disposition": "planned",
       "evidence_refs": [],
-      "kind": "security",
-      "normative_strength": "target",
-      "requirement_id": "B05-APP-E-R-3CD5BA6F08AB",
-      "review": {
-        "basis": "Machine-assisted exact-text classification and chapter-level ownership mapping; domain review is required before an implementation disposition changes.",
-        "reviewed_by": "codex-base-003-implementation-audit",
-        "reviewed_on": "2026-08-10",
-        "status": "reviewed"
-      },
-      "source": {
-        "book": 5,
-        "heading": "Highest-priority defects and unknowns",
-        "line_hint": 34,
-        "locator": "APP-E",
-        "path": "books/book-05-bulletproof-bt-laboratory/appendices/e-requirement-traceability-and-gap-register.md",
-        "statement_sha256": "c443990a243fff0c896c081284e88902b790d22b3260656ffc86a532a0ff2cdd"
-      },
-      "statement": "1. **Full-suite closure is absent.** The earlier pin audit collected 1,077 tests but recorded dependency collection errors and seven reproduced failures. On 2026-08-10, a new `pytest --collect-only -q` run exceeded its 120-second bound without a completion summary. The focused 50-test slice passed in 2.85 seconds. 2. **The environment is not locked.** The package declares ranges without a committed lock; the audit virtual environment used Python 3.11.15 and pytest 9.0.2. 3. **Dataset identity is incomplete.** Operational manifests exist, but universal content-addressed snapshots, correction lineage, and availability-time evidence do not. 4. **Artifact identity is incomplete.** Several schemas and deterministic serializers exist, but not every canonical artifact is schema-bound and atomic bundle finalization is not universal. 5. **Portfolio semantics are split.** Sleeve aggregation is real and useful, but it is not evidence of a unified event clock or complete live order routing. 6. **Institutional publication is split across systems.** Hermes has immutable research lineage and bounded memory export, while Bulletproof artifacts are not yet universally registered through one producer contract. 7. **Operational qualification is blocked.** Venue credentials, private branches/services, live accounts, and production operating evidence were unavailable and were not requested during this audit.",
-      "verification_methods": [
-        "adversarial_test",
-        "authorization_test",
-        "contract_test",
-        "evidence_dossier",
-        "integration_test"
-      ],
-      "work_packages": [
-        "BT-001",
-        "BT-002",
-        "BT-003",
-        "BT-004",
-        "BT-005",
-        "BT-006",
-        "BT-007",
-        "BT-008",
-        "BT-009",
-        "DATA-001",
-        "DATA-002",
-        "DATA-003",
-        "RI-001",
-        "RI-004",
-        "SHADOW-001",
-        "SHADOW-002"
-      ]
-    },
-    {
-      "accountable_owner": "bulletproof-laboratory",
-      "deferral": null,
-      "depends_on": [],
-      "disposition": "planned",
-      "evidence_refs": [],
       "kind": "contract",
       "normative_strength": "target",
       "requirement_id": "B05-APP-E-R-4E1B3A632C8D",
@@ -28090,6 +28040,56 @@
       "depends_on": [],
       "disposition": "planned",
       "evidence_refs": [],
+      "kind": "security",
+      "normative_strength": "target",
+      "requirement_id": "B05-APP-E-R-715E92922ECB",
+      "review": {
+        "basis": "Machine-assisted exact-text classification and chapter-level ownership mapping; domain review is required before an implementation disposition changes.",
+        "reviewed_by": "codex-base-003-implementation-audit",
+        "reviewed_on": "2026-08-10",
+        "status": "reviewed"
+      },
+      "source": {
+        "book": 5,
+        "heading": "Highest-priority defects and unknowns",
+        "line_hint": 34,
+        "locator": "APP-E",
+        "path": "books/book-05-bulletproof-bt-laboratory/appendices/e-requirement-traceability-and-gap-register.md",
+        "statement_sha256": "63e48e321f1e9ceb34612dce60b863f11c5a5edc3663c9d984d1559123521805"
+      },
+      "statement": "1. **Cross-runtime qualification remains bounded.** BT-001 closes the declared Python 3.11 matrix; Python 3.12 and later dependency lines require their own qualification before becoming supported. 2. **Repository-wide lint debt remains visible.** BT-001 records 114 inherited Ruff findings and keeps its changed-surface check clean rather than mixing a broad style rewrite into behavioral closure. 3. **Dataset identity is incomplete.** Operational manifests exist, but universal content-addressed snapshots, correction lineage, and availability-time evidence do not. 4. **Artifact identity is incomplete.** Several schemas and deterministic serializers exist, but not every canonical artifact is schema-bound and atomic bundle finalization is not universal. 5. **Portfolio semantics are split.** Sleeve aggregation is real and useful, but it is not evidence of a unified event clock or complete live order routing. 6. **Institutional publication is split across systems.** Hermes has immutable research lineage and bounded memory export, while Bulletproof artifacts are not yet universally registered through one producer contract. 7. **Operational qualification is blocked.** Venue credentials, private branches/services, live accounts, and production operating evidence were unavailable and were not requested during this audit.",
+      "verification_methods": [
+        "adversarial_test",
+        "authorization_test",
+        "contract_test",
+        "evidence_dossier",
+        "integration_test"
+      ],
+      "work_packages": [
+        "BT-001",
+        "BT-002",
+        "BT-003",
+        "BT-004",
+        "BT-005",
+        "BT-006",
+        "BT-007",
+        "BT-008",
+        "BT-009",
+        "DATA-001",
+        "DATA-002",
+        "DATA-003",
+        "RI-001",
+        "RI-004",
+        "SHADOW-001",
+        "SHADOW-002"
+      ]
+    },
+    {
+      "accountable_owner": "bulletproof-laboratory",
+      "deferral": null,
+      "depends_on": [],
+      "disposition": "planned",
+      "evidence_refs": [],
       "kind": "authority",
       "normative_strength": "prohibited",
       "requirement_id": "B05-APP-E-R-8AA060EC3981",
@@ -28111,6 +28111,54 @@
       "verification_methods": [
         "adversarial_test",
         "authorization_test",
+        "contract_test",
+        "evidence_dossier",
+        "integration_test"
+      ],
+      "work_packages": [
+        "BT-001",
+        "BT-002",
+        "BT-003",
+        "BT-004",
+        "BT-005",
+        "BT-006",
+        "BT-007",
+        "BT-008",
+        "BT-009",
+        "DATA-001",
+        "DATA-002",
+        "DATA-003",
+        "RI-001",
+        "RI-004",
+        "SHADOW-001",
+        "SHADOW-002"
+      ]
+    },
+    {
+      "accountable_owner": "bulletproof-laboratory",
+      "deferral": null,
+      "depends_on": [],
+      "disposition": "planned",
+      "evidence_refs": [],
+      "kind": "contract",
+      "normative_strength": "target",
+      "requirement_id": "B05-APP-E-R-90B8BED6B03D",
+      "review": {
+        "basis": "Machine-assisted exact-text classification and chapter-level ownership mapping; domain review is required before an implementation disposition changes.",
+        "reviewed_by": "codex-base-003-implementation-audit",
+        "reviewed_on": "2026-08-10",
+        "status": "reviewed"
+      },
+      "source": {
+        "book": 5,
+        "heading": "Appendix E \u2014 Requirement Traceability and Gap Register",
+        "line_hint": 25,
+        "locator": "APP-E",
+        "path": "books/book-05-bulletproof-bt-laboratory/appendices/e-requirement-traceability-and-gap-register.md",
+        "statement_sha256": "0e230161676e9cdc9c8fe1fe1843871bbc2a246a156e918f73050402ef7701fe"
+      },
+      "statement": "| B5-17 | Failures and drift | BT-001 reproduction and closure record, scoped collection, deterministic shards and CI | current; tested | Keep the matrix green as BT-002 onward changes contracts | M3 |",
+      "verification_methods": [
         "contract_test",
         "evidence_dossier",
         "integration_test"
@@ -28206,102 +28254,6 @@
         "statement_sha256": "8eab5cf2df2e6a2860217d41add3f50f10df8cc0489bedf270577039ee3f5057"
       },
       "statement": "| B5-13 | Research Intelligence publication | Dataset extraction, memory bridge, Hermes research routes | partial; tested | Typed run-bundle ingestion, citation and decision lineage | M1, M3 |",
-      "verification_methods": [
-        "contract_test",
-        "evidence_dossier",
-        "integration_test"
-      ],
-      "work_packages": [
-        "BT-001",
-        "BT-002",
-        "BT-003",
-        "BT-004",
-        "BT-005",
-        "BT-006",
-        "BT-007",
-        "BT-008",
-        "BT-009",
-        "DATA-001",
-        "DATA-002",
-        "DATA-003",
-        "RI-001",
-        "RI-004",
-        "SHADOW-001",
-        "SHADOW-002"
-      ]
-    },
-    {
-      "accountable_owner": "bulletproof-laboratory",
-      "deferral": null,
-      "depends_on": [],
-      "disposition": "planned",
-      "evidence_refs": [],
-      "kind": "contract",
-      "normative_strength": "target",
-      "requirement_id": "B05-APP-E-R-A32B4800E224",
-      "review": {
-        "basis": "Machine-assisted exact-text classification and chapter-level ownership mapping; domain review is required before an implementation disposition changes.",
-        "reviewed_by": "codex-base-003-implementation-audit",
-        "reviewed_on": "2026-08-10",
-        "status": "reviewed"
-      },
-      "source": {
-        "book": 5,
-        "heading": "Appendix E \u2014 Requirement Traceability and Gap Register",
-        "line_hint": 25,
-        "locator": "APP-E",
-        "path": "books/book-05-bulletproof-bt-laboratory/appendices/e-requirement-traceability-and-gap-register.md",
-        "statement_sha256": "c6ba1501b7bfc379b459dcf0bcb248fdb77cd3e4c730c4e2192978421410df71"
-      },
-      "statement": "| B5-17 | Failures and drift | Implementation register records seven reproduced failures and collection errors | current; observed | Repair contracts/tests/docs without weakening assertions | M3 |",
-      "verification_methods": [
-        "contract_test",
-        "evidence_dossier",
-        "integration_test"
-      ],
-      "work_packages": [
-        "BT-001",
-        "BT-002",
-        "BT-003",
-        "BT-004",
-        "BT-005",
-        "BT-006",
-        "BT-007",
-        "BT-008",
-        "BT-009",
-        "DATA-001",
-        "DATA-002",
-        "DATA-003",
-        "RI-001",
-        "RI-004",
-        "SHADOW-001",
-        "SHADOW-002"
-      ]
-    },
-    {
-      "accountable_owner": "bulletproof-laboratory",
-      "deferral": null,
-      "depends_on": [],
-      "disposition": "planned",
-      "evidence_refs": [],
-      "kind": "contract",
-      "normative_strength": "target",
-      "requirement_id": "B05-APP-E-R-A596425CB82C",
-      "review": {
-        "basis": "Machine-assisted exact-text classification and chapter-level ownership mapping; domain review is required before an implementation disposition changes.",
-        "reviewed_by": "codex-base-003-implementation-audit",
-        "reviewed_on": "2026-08-10",
-        "status": "reviewed"
-      },
-      "source": {
-        "book": 5,
-        "heading": "Appendix E \u2014 Requirement Traceability and Gap Register",
-        "line_hint": 20,
-        "locator": "APP-E",
-        "path": "books/book-05-bulletproof-bt-laboratory/appendices/e-requirement-traceability-and-gap-register.md",
-        "statement_sha256": "34f5d10f778cae1ee715bf4cb2658c3284994d1895ad03c4fab610089a79666a"
-      },
-      "statement": "| B5-12 | Reproducibility/truth | Repeated output and truth validation tests | partial; tested | Full regression closure, differential oracle, environment lock | M3 |",
       "verification_methods": [
         "contract_test",
         "evidence_dossier",
@@ -28448,54 +28400,6 @@
         "statement_sha256": "fe448d085e908c3c0226a6c953cc1bbf321b05a2d5e06ad29bbf586b080bc6de"
       },
       "statement": "| B5-02 | System boundaries and variants | `BacktestEngine`, `portfolio_engine`, execution runtimes | current; tested in focused slices | Publish stable interface/status catalog | M3 |",
-      "verification_methods": [
-        "contract_test",
-        "evidence_dossier",
-        "integration_test"
-      ],
-      "work_packages": [
-        "BT-001",
-        "BT-002",
-        "BT-003",
-        "BT-004",
-        "BT-005",
-        "BT-006",
-        "BT-007",
-        "BT-008",
-        "BT-009",
-        "DATA-001",
-        "DATA-002",
-        "DATA-003",
-        "RI-001",
-        "RI-004",
-        "SHADOW-001",
-        "SHADOW-002"
-      ]
-    },
-    {
-      "accountable_owner": "bulletproof-laboratory",
-      "deferral": null,
-      "depends_on": [],
-      "disposition": "planned",
-      "evidence_refs": [],
-      "kind": "contract",
-      "normative_strength": "target",
-      "requirement_id": "B05-APP-E-R-BABA18B5DE77",
-      "review": {
-        "basis": "Machine-assisted exact-text classification and chapter-level ownership mapping; domain review is required before an implementation disposition changes.",
-        "reviewed_by": "codex-base-003-implementation-audit",
-        "reviewed_on": "2026-08-10",
-        "status": "reviewed"
-      },
-      "source": {
-        "book": 5,
-        "heading": "Appendix E \u2014 Requirement Traceability and Gap Register",
-        "line_hint": 9,
-        "locator": "APP-E",
-        "path": "books/book-05-bulletproof-bt-laboratory/appendices/e-requirement-traceability-and-gap-register.md",
-        "statement_sha256": "9e326d66dabb23807f7f2e37ba8a7c9fca93d5cbcc7559f5852efe0e828428a0"
-      },
-      "statement": "| B5-01 | Baseline identity | Git pin, package metadata, implementation register | current | Dependency lock and supported-runtime matrix | M3 |",
       "verification_methods": [
         "contract_test",
         "evidence_dossier",
@@ -28784,6 +28688,102 @@
         "statement_sha256": "2161d7a1f49f2bdc9d19be4a741e1ea38b29a9ddf47e476fb72b4604afea071a"
       },
       "statement": "| B5-16 | Shadow/execution replay | Shadow/demo scripts and execution modules | partial | Prospective, immutable replay journal and parity gates | M5 |",
+      "verification_methods": [
+        "contract_test",
+        "evidence_dossier",
+        "integration_test"
+      ],
+      "work_packages": [
+        "BT-001",
+        "BT-002",
+        "BT-003",
+        "BT-004",
+        "BT-005",
+        "BT-006",
+        "BT-007",
+        "BT-008",
+        "BT-009",
+        "DATA-001",
+        "DATA-002",
+        "DATA-003",
+        "RI-001",
+        "RI-004",
+        "SHADOW-001",
+        "SHADOW-002"
+      ]
+    },
+    {
+      "accountable_owner": "bulletproof-laboratory",
+      "deferral": null,
+      "depends_on": [],
+      "disposition": "planned",
+      "evidence_refs": [],
+      "kind": "contract",
+      "normative_strength": "target",
+      "requirement_id": "B05-APP-E-R-DD6887D8E2A2",
+      "review": {
+        "basis": "Machine-assisted exact-text classification and chapter-level ownership mapping; domain review is required before an implementation disposition changes.",
+        "reviewed_by": "codex-base-003-implementation-audit",
+        "reviewed_on": "2026-08-10",
+        "status": "reviewed"
+      },
+      "source": {
+        "book": 5,
+        "heading": "Appendix E \u2014 Requirement Traceability and Gap Register",
+        "line_hint": 20,
+        "locator": "APP-E",
+        "path": "books/book-05-bulletproof-bt-laboratory/appendices/e-requirement-traceability-and-gap-register.md",
+        "statement_sha256": "48a2eecc403b9c0e751ed322f46a3018d219e70208b5810141c81a8ca3b4fb61"
+      },
+      "statement": "| B5-12 | Reproducibility/truth | Repeated output, truth validation, deterministic shards and locked Python 3.11 environment | current; tested for declared matrix | Differential oracle and later cross-runtime qualification | M3 |",
+      "verification_methods": [
+        "contract_test",
+        "evidence_dossier",
+        "integration_test"
+      ],
+      "work_packages": [
+        "BT-001",
+        "BT-002",
+        "BT-003",
+        "BT-004",
+        "BT-005",
+        "BT-006",
+        "BT-007",
+        "BT-008",
+        "BT-009",
+        "DATA-001",
+        "DATA-002",
+        "DATA-003",
+        "RI-001",
+        "RI-004",
+        "SHADOW-001",
+        "SHADOW-002"
+      ]
+    },
+    {
+      "accountable_owner": "bulletproof-laboratory",
+      "deferral": null,
+      "depends_on": [],
+      "disposition": "planned",
+      "evidence_refs": [],
+      "kind": "contract",
+      "normative_strength": "target",
+      "requirement_id": "B05-APP-E-R-E03BB3448066",
+      "review": {
+        "basis": "Machine-assisted exact-text classification and chapter-level ownership mapping; domain review is required before an implementation disposition changes.",
+        "reviewed_by": "codex-base-003-implementation-audit",
+        "reviewed_on": "2026-08-10",
+        "status": "reviewed"
+      },
+      "source": {
+        "book": 5,
+        "heading": "Appendix E \u2014 Requirement Traceability and Gap Register",
+        "line_hint": 9,
+        "locator": "APP-E",
+        "path": "books/book-05-bulletproof-bt-laboratory/appendices/e-requirement-traceability-and-gap-register.md",
+        "statement_sha256": "096786aa6a50967d8f908d2030b47c3dfa6750700d2ea596c7794d579a247e36"
+      },
+      "statement": "| B5-01 | Baseline identity | Git pin, package metadata, implementation register, Python 3.11 lock and supported environment | current; tested | Cross-runtime qualification beyond the declared Python 3.11 line | M3 |",
       "verification_methods": [
         "contract_test",
         "evidence_dossier",
@@ -32130,7 +32130,7 @@
       "source": {
         "book": 5,
         "heading": "12.5 Reproduction packet",
-        "line_hint": 56,
+        "line_hint": 66,
         "locator": "CH12",
         "path": "books/book-05-bulletproof-bt-laboratory/chapters/12-validation-tests-and-reproducibility.md",
         "statement_sha256": "ef138a2178dbc1879a101fd1f906a6d54f9d15aa2cca139f776ef1d30789624f"
@@ -45600,7 +45600,7 @@
     },
     {
       "book": 5,
-      "content_sha256": "0036c71cf955dd08e1f4240afb4d418894b918e43b8a55eae9a61035441804db",
+      "content_sha256": "1a8b9c3e620fb485658ef034173dca26e785b824416bac294f85cabd79d01ab5",
       "locator": "CH12",
       "path": "books/book-05-bulletproof-bt-laboratory/chapters/12-validation-tests-and-reproducibility.md"
     },
@@ -46230,7 +46230,7 @@
     },
     {
       "book": 5,
-      "content_sha256": "b1714c2f5732a34c7aeb60377851c7ef8b2c23bc8d07f10bb84e1697810d13ac",
+      "content_sha256": "99e8116455a78ca5156f596739cb872473399c895c46de87fc934ca0a9f4323c",
       "locator": "APP-E",
       "path": "books/book-05-bulletproof-bt-laboratory/appendices/e-requirement-traceability-and-gap-register.md"
     },

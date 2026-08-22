@@ -6,7 +6,7 @@
 
 | ID | Book V requirement | Current component and evidence | Status | Gap / target component | Milestone |
 |---|---|---|---|---|---|
-| B5-01 | Baseline identity | Git pin, package metadata, implementation register | current | Dependency lock and supported-runtime matrix | M3 |
+| B5-01 | Baseline identity | Git pin, package metadata, implementation register, Python 3.11 lock and supported environment | current; tested | Cross-runtime qualification beyond the declared Python 3.11 line | M3 |
 | B5-02 | System boundaries and variants | `BacktestEngine`, `portfolio_engine`, execution runtimes | current; tested in focused slices | Publish stable interface/status catalog | M3 |
 | B5-03 | Lake relationship | Research-data loaders, manifests, Appendix D profile | partial; observed | Immutable catalog and universal lineage | M3 |
 | B5-04 | Instruments, clocks, sessions, point-in-time data | Instrument contracts, UTC events, validators, resampling tests | partial; tested | Availability-time and venue-session proof across all feeds | M3 |
@@ -17,12 +17,12 @@
 | B5-09 | Hypothesis/trial/experiment/representation/label contracts | Hypothesis/grid schemas and Hermes immutable registry | partial; tested across repositories | One canonical compatibility contract and fitted-artifact lineage | M1, M3 |
 | B5-10 | Search/orchestration/retries/concurrency/identity | Grid expansion, parallel scheduling, status and cleanup | partial | Search accounting, idempotent attempts, durable queue integration | M3-M4 |
 | B5-11 | Run bundles/schemas/manifests/lineage | Required artifacts and schema metadata | partial; tested | Atomic digest-finalized bundle with schema for every canonical artifact | M3 |
-| B5-12 | Reproducibility/truth | Repeated output and truth validation tests | partial; tested | Full regression closure, differential oracle, environment lock | M3 |
+| B5-12 | Reproducibility/truth | Repeated output, truth validation, deterministic shards and locked Python 3.11 environment | current; tested for declared matrix | Differential oracle and later cross-runtime qualification | M3 |
 | B5-13 | Research Intelligence publication | Dataset extraction, memory bridge, Hermes research routes | partial; tested | Typed run-bundle ingestion, citation and decision lineage | M1, M3 |
 | B5-14 | APIs/institutional boundaries | Python/CLI and public schemas; Hermes authenticated APIs | partial | Versioned, idempotent laboratory service boundary | M3 |
 | B5-15 | Portfolio/live-readiness | Sleeve aggregation, adapters, runtime and safety tests | partial | Credentialed certification; separate admission authorities | M5-M7 |
 | B5-16 | Shadow/execution replay | Shadow/demo scripts and execution modules | partial | Prospective, immutable replay journal and parity gates | M5 |
-| B5-17 | Failures and drift | Implementation register records seven reproduced failures and collection errors | current; observed | Repair contracts/tests/docs without weakening assertions | M3 |
+| B5-17 | Failures and drift | BT-001 reproduction and closure record, scoped collection, deterministic shards and CI | current; tested | Keep the matrix green as BT-002 onward changes contracts | M3 |
 | B5-18 | Target architecture | Chapter 17 and migration diagram | target | Implement through compatibility-preserving slices | M3-M7 |
 | B5-19 | Gap register | This appendix and implementation status register | current | Keep synchronized at every release pin | M0 |
 | B5-20 | Ordered migration | Company roadmap | target | Execute evidence-gated milestones | M0-M9 |
@@ -31,8 +31,8 @@
 
 ## Highest-priority defects and unknowns
 
-1. **Full-suite closure is absent.** The earlier pin audit collected 1,077 tests but recorded dependency collection errors and seven reproduced failures. On 2026-08-10, a new `pytest --collect-only -q` run exceeded its 120-second bound without a completion summary. The focused 50-test slice passed in 2.85 seconds.
-2. **The environment is not locked.** The package declares ranges without a committed lock; the audit virtual environment used Python 3.11.15 and pytest 9.0.2.
+1. **Cross-runtime qualification remains bounded.** BT-001 closes the declared Python 3.11 matrix; Python 3.12 and later dependency lines require their own qualification before becoming supported.
+2. **Repository-wide lint debt remains visible.** BT-001 records 114 inherited Ruff findings and keeps its changed-surface check clean rather than mixing a broad style rewrite into behavioral closure.
 3. **Dataset identity is incomplete.** Operational manifests exist, but universal content-addressed snapshots, correction lineage, and availability-time evidence do not.
 4. **Artifact identity is incomplete.** Several schemas and deterministic serializers exist, but not every canonical artifact is schema-bound and atomic bundle finalization is not universal.
 5. **Portfolio semantics are split.** Sleeve aggregation is real and useful, but it is not evidence of a unified event clock or complete live order routing.

@@ -93,8 +93,9 @@ and registers canonical evidence plus an RI-007 synchronization receipt.
 
 ## 5.7 Known engineering gaps
 
-- The broad regression suite has recorded collection/dependency/fixture drift; BT-001
-  owns closure rather than weakening tests.
+- BT-001 closes the recorded collection/dependency/fixture drift for the locked Python
+  3.11 matrix using deterministic shards and restored canonical contracts. The engine
+  and strategy catalog remain the existing Bulletproof implementation.
 - Universal content-addressed atomic run bundles and canonical RI publication remain
   BT-002/003 work.
 - Point-in-time membership/correction proofs are incomplete.
