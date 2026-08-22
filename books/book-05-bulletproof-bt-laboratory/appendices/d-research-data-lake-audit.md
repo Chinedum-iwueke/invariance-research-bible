@@ -32,10 +32,10 @@ This is a useful operational catalog, but it does not yet establish all target i
 | Directory and partition convention | Read-only path inventory | current; observed |
 | Instrument and coverage manifests | Parquet schemas and aggregate queries | current; observed |
 | Duplicate and gap accounting | Gap fields exist; no exhaustive partition scan was completed | partial |
-| Point-in-time membership | Timestamped volatile membership exists | partial |
-| Point-in-time feature availability | Engine tests cover selected resampling; lake-wide availability timestamps were not established | unknown |
-| Vendor corrections and restatements | No complete correction ledger observed | target |
-| Immutable dataset digest | Some downstream snapshots are digest-bound; universal lake manifests are absent | partial |
+| Point-in-time membership | Timestamped membership plus BT-002 `known_at`/validity validation for bounded snapshots | bounded contract complete; lake-wide backfill pending |
+| Point-in-time feature availability | BT-002 recorded-or-derived `available_at`, clock and cutoff validation | bounded contract complete; lake-wide certification pending |
+| Vendor corrections and restatements | BT-002 append-only successor ledger rejects late/identity-preserving mutation | bounded contract complete; vendor history population pending |
+| Immutable dataset digest | BT-002 binds canonical identity, partition SHA-256, schema, range, quality and manifest digest | bounded contract complete; universal catalog pending |
 | Retention and access policy | Filesystem layout exists; no complete policy evidence was inspected | unknown |
 | Recovery | Fetch state and temporary files show resumable operations; restore drill evidence was not established | partial |
 
@@ -45,7 +45,12 @@ No experiment may infer point-in-time correctness from the existence of a canoni
 
 ## D.5 Required closure
 
-Milestone M3 in the [company engineering roadmap](../../../plans/COMPANY_ENGINEERING_ROADMAP.md) introduces immutable dataset manifests, partition digests, correction lineage, availability-time tests, access classes, and lake recovery evidence. Until then, the lake supports bounded research under explicitly validated snapshots, not a blanket certification of every dataset.
+BT-002 now provides immutable dataset manifests, partition digests, correction lineage,
+availability-time tests, access classes and point-in-time membership for explicitly
+selected partitions. It deliberately does not rewrite the raw lake. DATA-001 through
+DATA-003 still own lake-wide identity, vendor-history population, entitlements,
+quality SLOs and recovery evidence. The lake therefore supports digest-bound bounded
+research, not a blanket certification of every dataset.
 
 ## Source note
 

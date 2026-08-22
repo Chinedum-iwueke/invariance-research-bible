@@ -26788,7 +26788,7 @@
       "evidence_refs": [],
       "kind": "contract",
       "normative_strength": "target",
-      "requirement_id": "B05-APP-D-R-1E5B8DB28549",
+      "requirement_id": "B05-APP-D-R-1ED5B2F186A7",
       "review": {
         "basis": "Machine-assisted exact-text classification and chapter-level ownership mapping; domain review is required before an implementation disposition changes.",
         "reviewed_by": "codex-base-003-implementation-audit",
@@ -26798,12 +26798,12 @@
       "source": {
         "book": 5,
         "heading": "D.3 Proof limits",
-        "line_hint": 35,
+        "line_hint": 38,
         "locator": "APP-D",
         "path": "books/book-05-bulletproof-bt-laboratory/appendices/d-research-data-lake-audit.md",
-        "statement_sha256": "b11e695a7f5d0fd9422ab11bf429d4134ab69cfe1112f1d4cc38e16cfd7383ef"
+        "statement_sha256": "7713dfab2c151b3ea55f9695cb0138627ce623c323d9a1974b769f36857d96c3"
       },
-      "statement": "| Point-in-time membership | Timestamped volatile membership exists | partial |",
+      "statement": "| Immutable dataset digest | BT-002 binds canonical identity, partition SHA-256, schema, range, quality and manifest digest | bounded contract complete; universal catalog pending |",
       "verification_methods": [
         "contract_test",
         "evidence_dossier",
@@ -26982,6 +26982,56 @@
       "depends_on": [],
       "disposition": "planned",
       "evidence_refs": [],
+      "kind": "security",
+      "normative_strength": "target",
+      "requirement_id": "B05-APP-D-R-24C8A6D704E3",
+      "review": {
+        "basis": "Machine-assisted exact-text classification and chapter-level ownership mapping; domain review is required before an implementation disposition changes.",
+        "reviewed_by": "codex-base-003-implementation-audit",
+        "reviewed_on": "2026-08-10",
+        "status": "reviewed"
+      },
+      "source": {
+        "book": 5,
+        "heading": "D.5 Required closure",
+        "line_hint": 48,
+        "locator": "APP-D",
+        "path": "books/book-05-bulletproof-bt-laboratory/appendices/d-research-data-lake-audit.md",
+        "statement_sha256": "bea4e898e00086829665e2026567ecf796590e7cbf7ab07202030fba1aa19d94"
+      },
+      "statement": "BT-002 now provides immutable dataset manifests, partition digests, correction lineage, availability-time tests, access classes and point-in-time membership for explicitly selected partitions. It deliberately does not rewrite the raw lake. DATA-001 through DATA-003 still own lake-wide identity, vendor-history population, entitlements, quality SLOs and recovery evidence. The lake therefore supports digest-bound bounded research, not a blanket certification of every dataset.",
+      "verification_methods": [
+        "adversarial_test",
+        "authorization_test",
+        "contract_test",
+        "evidence_dossier",
+        "integration_test"
+      ],
+      "work_packages": [
+        "BT-001",
+        "BT-002",
+        "BT-003",
+        "BT-004",
+        "BT-005",
+        "BT-006",
+        "BT-007",
+        "BT-008",
+        "BT-009",
+        "DATA-001",
+        "DATA-002",
+        "DATA-003",
+        "RI-001",
+        "RI-004",
+        "SHADOW-001",
+        "SHADOW-002"
+      ]
+    },
+    {
+      "accountable_owner": "bulletproof-laboratory",
+      "deferral": null,
+      "depends_on": [],
+      "disposition": "planned",
+      "evidence_refs": [],
       "kind": "contract",
       "normative_strength": "target",
       "requirement_id": "B05-APP-D-R-278EF2F69A2F",
@@ -27080,6 +27130,54 @@
       "evidence_refs": [],
       "kind": "contract",
       "normative_strength": "target",
+      "requirement_id": "B05-APP-D-R-407C82DB19A2",
+      "review": {
+        "basis": "Machine-assisted exact-text classification and chapter-level ownership mapping; domain review is required before an implementation disposition changes.",
+        "reviewed_by": "codex-base-003-implementation-audit",
+        "reviewed_on": "2026-08-10",
+        "status": "reviewed"
+      },
+      "source": {
+        "book": 5,
+        "heading": "D.3 Proof limits",
+        "line_hint": 35,
+        "locator": "APP-D",
+        "path": "books/book-05-bulletproof-bt-laboratory/appendices/d-research-data-lake-audit.md",
+        "statement_sha256": "f64fc80a401a7f08209c412f6cbe665cfea907d02aef01c77e033f465734bb6b"
+      },
+      "statement": "| Point-in-time membership | Timestamped membership plus BT-002 `known_at`/validity validation for bounded snapshots | bounded contract complete; lake-wide backfill pending |",
+      "verification_methods": [
+        "contract_test",
+        "evidence_dossier",
+        "integration_test"
+      ],
+      "work_packages": [
+        "BT-001",
+        "BT-002",
+        "BT-003",
+        "BT-004",
+        "BT-005",
+        "BT-006",
+        "BT-007",
+        "BT-008",
+        "BT-009",
+        "DATA-001",
+        "DATA-002",
+        "DATA-003",
+        "RI-001",
+        "RI-004",
+        "SHADOW-001",
+        "SHADOW-002"
+      ]
+    },
+    {
+      "accountable_owner": "bulletproof-laboratory",
+      "deferral": null,
+      "depends_on": [],
+      "disposition": "planned",
+      "evidence_refs": [],
+      "kind": "contract",
+      "normative_strength": "target",
       "requirement_id": "B05-APP-D-R-429B1E61209C",
       "review": {
         "basis": "Machine-assisted exact-text classification and chapter-level ownership mapping; domain review is required before an implementation disposition changes.",
@@ -27128,7 +27226,7 @@
       "evidence_refs": [],
       "kind": "contract",
       "normative_strength": "target",
-      "requirement_id": "B05-APP-D-R-5351621B2E37",
+      "requirement_id": "B05-APP-D-R-44740EF4D9C0",
       "review": {
         "basis": "Machine-assisted exact-text classification and chapter-level ownership mapping; domain review is required before an implementation disposition changes.",
         "reviewed_by": "codex-base-003-implementation-audit",
@@ -27138,12 +27236,12 @@
       "source": {
         "book": 5,
         "heading": "D.3 Proof limits",
-        "line_hint": 38,
+        "line_hint": 36,
         "locator": "APP-D",
         "path": "books/book-05-bulletproof-bt-laboratory/appendices/d-research-data-lake-audit.md",
-        "statement_sha256": "1c20633f0e5001a2c2fe00aac556d569d097e94f77ccbed06790ebbe98c74e63"
+        "statement_sha256": "e649995ed92cf829b19f4427c8d8add8a1f47b7a98d2475f5d317c9dbcd79097"
       },
-      "statement": "| Immutable dataset digest | Some downstream snapshots are digest-bound; universal lake manifests are absent | partial |",
+      "statement": "| Point-in-time feature availability | BT-002 recorded-or-derived `available_at`, clock and cutoff validation | bounded contract complete; lake-wide certification pending |",
       "verification_methods": [
         "contract_test",
         "evidence_dossier",
@@ -27414,56 +27512,6 @@
       "depends_on": [],
       "disposition": "planned",
       "evidence_refs": [],
-      "kind": "security",
-      "normative_strength": "target",
-      "requirement_id": "B05-APP-D-R-B72A79EF72F6",
-      "review": {
-        "basis": "Machine-assisted exact-text classification and chapter-level ownership mapping; domain review is required before an implementation disposition changes.",
-        "reviewed_by": "codex-base-003-implementation-audit",
-        "reviewed_on": "2026-08-10",
-        "status": "reviewed"
-      },
-      "source": {
-        "book": 5,
-        "heading": "D.5 Required closure",
-        "line_hint": 48,
-        "locator": "APP-D",
-        "path": "books/book-05-bulletproof-bt-laboratory/appendices/d-research-data-lake-audit.md",
-        "statement_sha256": "9939e67224ab5d5edf22e5aed7ccbb22160fe61de3cbd74f3d4310583fefc2b2"
-      },
-      "statement": "Milestone M3 in the [company engineering roadmap](../../../plans/COMPANY_ENGINEERING_ROADMAP.md) introduces immutable dataset manifests, partition digests, correction lineage, availability-time tests, access classes, and lake recovery evidence. Until then, the lake supports bounded research under explicitly validated snapshots, not a blanket certification of every dataset.",
-      "verification_methods": [
-        "adversarial_test",
-        "authorization_test",
-        "contract_test",
-        "evidence_dossier",
-        "integration_test"
-      ],
-      "work_packages": [
-        "BT-001",
-        "BT-002",
-        "BT-003",
-        "BT-004",
-        "BT-005",
-        "BT-006",
-        "BT-007",
-        "BT-008",
-        "BT-009",
-        "DATA-001",
-        "DATA-002",
-        "DATA-003",
-        "RI-001",
-        "RI-004",
-        "SHADOW-001",
-        "SHADOW-002"
-      ]
-    },
-    {
-      "accountable_owner": "bulletproof-laboratory",
-      "deferral": null,
-      "depends_on": [],
-      "disposition": "planned",
-      "evidence_refs": [],
       "kind": "contract",
       "normative_strength": "target",
       "requirement_id": "B05-APP-D-R-CA74851E7533",
@@ -27562,6 +27610,54 @@
       "evidence_refs": [],
       "kind": "contract",
       "normative_strength": "target",
+      "requirement_id": "B05-APP-D-R-DD934B2313BF",
+      "review": {
+        "basis": "Machine-assisted exact-text classification and chapter-level ownership mapping; domain review is required before an implementation disposition changes.",
+        "reviewed_by": "codex-base-003-implementation-audit",
+        "reviewed_on": "2026-08-10",
+        "status": "reviewed"
+      },
+      "source": {
+        "book": 5,
+        "heading": "D.3 Proof limits",
+        "line_hint": 37,
+        "locator": "APP-D",
+        "path": "books/book-05-bulletproof-bt-laboratory/appendices/d-research-data-lake-audit.md",
+        "statement_sha256": "af4cb7974db7f9428d82a88322360780ca72e3119984c4df5506088d8bb20959"
+      },
+      "statement": "| Vendor corrections and restatements | BT-002 append-only successor ledger rejects late/identity-preserving mutation | bounded contract complete; vendor history population pending |",
+      "verification_methods": [
+        "contract_test",
+        "evidence_dossier",
+        "integration_test"
+      ],
+      "work_packages": [
+        "BT-001",
+        "BT-002",
+        "BT-003",
+        "BT-004",
+        "BT-005",
+        "BT-006",
+        "BT-007",
+        "BT-008",
+        "BT-009",
+        "DATA-001",
+        "DATA-002",
+        "DATA-003",
+        "RI-001",
+        "RI-004",
+        "SHADOW-001",
+        "SHADOW-002"
+      ]
+    },
+    {
+      "accountable_owner": "bulletproof-laboratory",
+      "deferral": null,
+      "depends_on": [],
+      "disposition": "planned",
+      "evidence_refs": [],
+      "kind": "contract",
+      "normative_strength": "target",
       "requirement_id": "B05-APP-D-R-E2299F3476C7",
       "review": {
         "basis": "Machine-assisted exact-text classification and chapter-level ownership mapping; domain review is required before an implementation disposition changes.",
@@ -27578,102 +27674,6 @@
         "statement_sha256": "06741139f537a88995d21f4708b36243a63ce29c196eb1188625e5f172e6ebfe"
       },
       "statement": "| Fetch state | 6,727 records: 6,721 `success`, 5 `failed`, 1 `running`; five non-empty error fields |",
-      "verification_methods": [
-        "contract_test",
-        "evidence_dossier",
-        "integration_test"
-      ],
-      "work_packages": [
-        "BT-001",
-        "BT-002",
-        "BT-003",
-        "BT-004",
-        "BT-005",
-        "BT-006",
-        "BT-007",
-        "BT-008",
-        "BT-009",
-        "DATA-001",
-        "DATA-002",
-        "DATA-003",
-        "RI-001",
-        "RI-004",
-        "SHADOW-001",
-        "SHADOW-002"
-      ]
-    },
-    {
-      "accountable_owner": "bulletproof-laboratory",
-      "deferral": null,
-      "depends_on": [],
-      "disposition": "planned",
-      "evidence_refs": [],
-      "kind": "contract",
-      "normative_strength": "target",
-      "requirement_id": "B05-APP-D-R-E6658CE76465",
-      "review": {
-        "basis": "Machine-assisted exact-text classification and chapter-level ownership mapping; domain review is required before an implementation disposition changes.",
-        "reviewed_by": "codex-base-003-implementation-audit",
-        "reviewed_on": "2026-08-10",
-        "status": "reviewed"
-      },
-      "source": {
-        "book": 5,
-        "heading": "D.3 Proof limits",
-        "line_hint": 36,
-        "locator": "APP-D",
-        "path": "books/book-05-bulletproof-bt-laboratory/appendices/d-research-data-lake-audit.md",
-        "statement_sha256": "54c7a4f705baf52e783ff76cdab752f6ed5a0eb816f08cb64ea91d9a3f94fb75"
-      },
-      "statement": "| Point-in-time feature availability | Engine tests cover selected resampling; lake-wide availability timestamps were not established | unknown |",
-      "verification_methods": [
-        "contract_test",
-        "evidence_dossier",
-        "integration_test"
-      ],
-      "work_packages": [
-        "BT-001",
-        "BT-002",
-        "BT-003",
-        "BT-004",
-        "BT-005",
-        "BT-006",
-        "BT-007",
-        "BT-008",
-        "BT-009",
-        "DATA-001",
-        "DATA-002",
-        "DATA-003",
-        "RI-001",
-        "RI-004",
-        "SHADOW-001",
-        "SHADOW-002"
-      ]
-    },
-    {
-      "accountable_owner": "bulletproof-laboratory",
-      "deferral": null,
-      "depends_on": [],
-      "disposition": "planned",
-      "evidence_refs": [],
-      "kind": "contract",
-      "normative_strength": "target",
-      "requirement_id": "B05-APP-D-R-F76C09ED01B6",
-      "review": {
-        "basis": "Machine-assisted exact-text classification and chapter-level ownership mapping; domain review is required before an implementation disposition changes.",
-        "reviewed_by": "codex-base-003-implementation-audit",
-        "reviewed_on": "2026-08-10",
-        "status": "reviewed"
-      },
-      "source": {
-        "book": 5,
-        "heading": "D.3 Proof limits",
-        "line_hint": 37,
-        "locator": "APP-D",
-        "path": "books/book-05-bulletproof-bt-laboratory/appendices/d-research-data-lake-audit.md",
-        "statement_sha256": "32a879a1b489c624579082ac691108a06fdc85848b8ea63c4288be3adeb1fd41"
-      },
-      "statement": "| Vendor corrections and restatements | No complete correction ledger observed | target |",
       "verification_methods": [
         "contract_test",
         "evidence_dossier",
@@ -46224,7 +46224,7 @@
     },
     {
       "book": 5,
-      "content_sha256": "3085bb6e095f28fd7abdb77b463c9515e7ac4aa3c01473a91fb869e6ddec0d5b",
+      "content_sha256": "c9b62591a2eeecc4ec712e9173e3af0b63dfb25fb03182e13117baae3e65ae11",
       "locator": "APP-D",
       "path": "books/book-05-bulletproof-bt-laboratory/appendices/d-research-data-lake-audit.md"
     },
