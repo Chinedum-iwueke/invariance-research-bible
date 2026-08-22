@@ -16,7 +16,7 @@ Its control-plane client uses the protected orchestrator token. The application 
 - document upload and folder-based research inbox refresh;
 - Bulletproof memory-sync proposal creation;
 - UI-003A citation-grounded Research Copilot;
-- RI-008 canonical graph exploration after deployment.
+- UI-003B canonical knowledge graph exploration.
 
 Mutating local API calls require `X-Hermes-Intent: founder-action`. Demo mode disables
 mutations. The launch agent runs as user `ice`; environment and token files are mode
@@ -46,6 +46,29 @@ boundary submits each turn independently; displayed prior answers never become
 retrieval evidence. Raw source files, database credentials, protected tokens and
 chain-of-thought remain outside the model boundary. The model adapter is replaceable
 under LLM-001 without altering canonical retrieval or citation contracts.
+
+### 6.1.2 Canonical Knowledge Graph Explorer
+
+UI-003B turns the RI-008 read model into a bounded founder workbench. Mission Control
+loads an access-filtered overview and may submit typed neighborhood, path or subgraph
+queries to `/v1/research/graph/query`. Roots and optional targets are canonical UUIDs;
+predicates come from the RI-008 vocabulary; direction is incoming, outgoing or both;
+depth is at most five; and the browser renders no more than 100 nodes. Projection
+freshness remains a control-plane gate and stale graphs fail closed.
+
+The desktop visual is a deterministic SVG projection with categorical node shapes,
+predicate-specific line styles, selection, zoom and fit controls. It is deliberately
+not a browser-side force simulation or a second graph database. The accessible source
+of truth is a native-button adjacency list with explicit source, predicate and target;
+this list is the default on narrow screens. Selection exposes canonical type, project,
+access class, digest and visible degree. Exact replay uses the same read-only coordinate
+boundary as the Research Copilot.
+
+A Copilot citation can become the root of a graph neighborhood without making the
+answer or conversation canonical. The graph explorer cannot register edges, rebuild
+projections, alter lifecycle state, approve hypotheses, run tasks or allocate capital.
+Every displayed projection/query digest is evidence about a derived view, not authority
+to change the evidence kernel.
 
 ## 6.2 Folder ingestion
 
