@@ -63,9 +63,20 @@ explicit warmup and bar-by-bar update path.
 
 `bt.research_data` contains adapters and workflows for Binance, Bybit and OKX perpetual
 futures, backfills, instrument refresh, stable/volatile universe manifests, causal
-research panels, validation reports and forward-collected liquidation events. The lake
-is not yet universally proven point-in-time complete; BASE/BT backlog work owns snapshot
-identity, corrections, membership and availability guarantees.
+research panels, validation reports and forward-collected liquidation events.
+
+BT-002 adds an immutable derived contract around explicit bounded Parquet partitions.
+It records each partition's SHA-256, size, schema, row count, event and availability
+ranges, duplicate count and gap count; binds those records to the BASE-002 canonical
+identity; declares UTC/bar-clock semantics and a knowledge cutoff; validates
+point-in-time membership; and retains append-only correction lineage. Missing bars
+remain missing. Replaying the manifest against the source root detects changed bytes.
+The builder writes only a JSON manifest outside source partitions and never repairs or
+rewrites the lake.
+
+This is a snapshot qualification boundary, not lake-wide certification. DATA-001
+through DATA-003 still own complete venue identity, historical membership population,
+vendor correction ingestion, entitlement policy, quality SLOs and recovery.
 
 ## 5.5 Experimentation and artifacts
 
@@ -96,9 +107,9 @@ and registers canonical evidence plus an RI-007 synchronization receipt.
 - BT-001 closes the recorded collection/dependency/fixture drift for the locked Python
   3.11 matrix using deterministic shards and restored canonical contracts. The engine
   and strategy catalog remain the existing Bulletproof implementation.
-- Universal content-addressed atomic run bundles and canonical RI publication remain
-  BT-002/003 work.
-- Point-in-time membership/correction proofs are incomplete.
+- Atomic run bundles and canonical RI publication remain BT-003/BT-008 work.
+- BT-002 point-in-time and correction proofs apply to selected snapshots; universal
+  lake population remains DATA-001 through DATA-003 work.
 - Shadow, demo and live-looking surfaces do not constitute venue-certified execution.
 - Portfolio admission, allocation and capital mutation remain separately governed and
   cannot be inferred from a successful backtest.

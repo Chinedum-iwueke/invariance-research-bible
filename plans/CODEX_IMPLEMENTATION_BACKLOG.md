@@ -353,6 +353,7 @@ PLAT-007 rather than OPS-005.
 
 ### BT-002 — Immutable dataset and availability contract
 
+- **Status:** Complete in source on 2026-08-22; acceptance evidence: [BT-002 completion evidence](evidence/BT-002.md).
 - **Objective/requirement/citations:** Close Appendix D identity, correction, membership, clock and point-in-time gaps.
 - **Repository/files:** `bt.research_data`, manifests/schemas/validators/tests/docs.
 - **Prerequisites/scope:** BASE-002 and BT-001; content manifests for a bounded dataset family first. **Non-goals:** rewriting raw lake.
