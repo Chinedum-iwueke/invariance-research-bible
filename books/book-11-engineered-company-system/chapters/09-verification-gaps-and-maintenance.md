@@ -18,6 +18,7 @@
 | BT-001 | Implemented/tested/merged | Canonical Python 3.11 contract matrix closes recorded collection and drift defects |
 | BT-002 | Implemented/tested/merged | Immutable bounded dataset, availability and correction-lineage contract merged |
 | BT-003 | Implemented/tested/merged | Atomic digest-finalized bundle and compatible Hermes producer contract merged; production run not yet claimed |
+| Fast-path deprecation | Implemented/tested/merged | Classic event-driven execution is authoritative; legacy accelerated modes fall back explicitly |
 | OPS-002, BT-004..009, WS-001 and later packages | Planned or partial as individually recorded | Do not infer completion from historical Hermes M-number pilots or prerequisite completion |
 
 ## 9.2 Backlog maintenance rule

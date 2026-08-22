@@ -111,6 +111,30 @@ digest and `bundle://sha256/...` URI as an all-or-none reference. Bulletproof pu
 that record through the existing idempotent canonical-evidence endpoint; it does not
 create another registry or store authorization material in artifacts.
 
+### 5.5.1 Classic execution authority and fast-path deprecation
+
+The experimental backtest fast path is deprecated at Bulletproof merge
+`e47f9f210c862a311f2e8b691f8148c393fb5ed0`. The default is `classic`. Legacy
+configuration values `auto` and `fast_path` remain readable for compatibility, but
+both deterministically select the classic event-driven engine and write
+`fast_path_status.json` with the requested value, actual engine, deprecation state and
+reason. New hypothesis/strategy generation is forbidden from adding compiled family
+kernels or sparse candidate-event execution shortcuts.
+
+This decision is an epistemic control, not merely a performance trade-off. The prior
+work did not establish a universal, materially faster path that preserved exact
+strategy visibility, volatile-universe membership, stop handling, fills, fees,
+slippage, risk sizing, accounting and rich artifacts without excessive family-specific
+complexity. Backtest accuracy therefore wins unconditionally. Reference modules remain
+available for audit and historical compatibility, but they are not production
+execution authority.
+
+Semantics-neutral optimization remains allowed. Bounded-memory Parquet materialization,
+streaming artifact writes, download concurrency and post-run analysis batching may
+improve throughput when they preserve input bytes, ordering, causal timestamps and
+canonical outputs. A filename containing `fast` does not grant backtest execution
+authority.
+
 ## 5.6 Research memory and Hermes bridge
 
 The SQLite research memory stores completed trades, state buckets, verdicts,
@@ -131,6 +155,9 @@ and registers canonical evidence plus an RI-007 synchronization receipt.
   broader result/artifact RI publication remains BT-008 work.
 - BT-002 point-in-time and correction proofs apply to selected snapshots; universal
   lake population remains DATA-001 through DATA-003 work.
+- The deprecated fast path cannot satisfy or bypass BT-004 through BT-009 acceptance;
+  all governed research execution uses the classic native engine unless a future,
+  separately approved architecture proves exact semantic equivalence.
 - Shadow, demo and live-looking surfaces do not constitute venue-certified execution.
 - Portfolio admission, allocation and capital mutation remain separately governed and
   cannot be inferred from a successful backtest.
