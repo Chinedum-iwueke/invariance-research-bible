@@ -37,6 +37,7 @@ This register separates the completeness of the Bible from the maturity of the i
 | Shadow, replay, demo, micro-live | partial | Execution surfaces and unit tests exist | No audited prospective sequence establishing environment promotion | M5-M7 |
 | Portfolio admission and capital allocation | target | Books VII-VIII | Must remain separate from research success | M6-M7 |
 | Production operations | partial; observed | VM2 deployment/runbook foundations | Company-wide backup, restore, telemetry, incident, and recovery evidence incomplete | M8 |
+| Fleet observability and founder alerting | implemented; tested locally; activation pending | Strict VM1/VM2 aggregate probes, digest-bound observation and incident ledger, sustained-signal hysteresis, durable founder outbox integration, Mission Control Fleet Health, Prometheus metrics, hardened units and independent TCP watchdog | Migration and services are not yet activated on VM1/VM2; live value parity, Telegram transition delivery and third-observer simultaneous-outage rehearsal are not yet evidence-backed | OPS-004 source complete; production acceptance pending |
 
 ## Current operating conclusion
 

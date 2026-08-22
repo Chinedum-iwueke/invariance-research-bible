@@ -263,6 +263,8 @@ change-gated projection rebuilds.
 
 ### OPS-004 — Fleet observability and founder alerting
 
+- **Status (2026-08-22):** Source complete in `swarm-control-plane`; production activation and the independent simultaneous-outage rehearsal remain required before this package may be described as deployed or production-qualified.
+
 - **Objective/requirement/citations:** Continuously and accurately observe VM1 and VM2 resource health and availability, surface actionable incidents in Mission Control, and notify the founder through Telegram without transient-spike noise or duplicate floods.
 - **Repository/files:** Control-plane machine-observation, incident and notification schemas/services; bounded local probe; VM1/VM2 systemd units; peer and independent availability watcher; Telegram notification outbox consumer; Mission Control Fleet Health view; operator runbooks and retention policy.
 - **Prerequisites/scope:** OPS-001 for durable deduplicated notifications; PLAT-001 service ownership; PLAT-005 owns common telemetry/SLO conventions. Deliver VM1-to-VM2 and VM2-to-VM1 observation first, followed by an independent always-on third observer so simultaneous VM failure remains detectable. **Non-goals:** LLM-decided alert thresholds, automatic privileged remediation, process-environment collection, or treating the sleeping Mac as an availability authority.
@@ -270,6 +272,15 @@ change-gated projection rebuilds.
 - **Steps/interfaces:** Collect `MemAvailable`, swap activity, Linux PSI, CPU utilization/load per core, disk/inode capacity, I/O pressure, uptime, OOM events and approved service health every 15–30 seconds; ingest observations idempotently; evaluate sustained multi-signal thresholds; transition incidents through pending, warning, critical, acknowledged, silenced and recovered states; apply hysteresis, cooldowns and maintenance windows; deduplicate Telegram delivery; provide a VM1 fallback notifier when VM2 hosts the primary gateway; expose current state, history and evidence in Mission Control.
 - **Tests/acceptance:** Simulated CPU saturation, low available memory, swap thrashing, disk/inode exhaustion, OOM, critical-service failure, packet loss, one missed probe, sustained single-host outage, both-host outage, recovery, restart, clock skew, duplicate delivery, acknowledgement, silence expiry and maintenance-window fixtures. A single spike or isolated missed heartbeat emits no alert; sustained threshold crossings emit exactly one state-change notification; escalation and recovery each emit once; secrets never appear in samples, logs or messages.
 - **Evidence/rollback/done:** A retained pilot dossier proves accurate VM1 and VM2 resource readings against operating-system references, single-host outage detection within the declared SLO, independent simultaneous-outage detection, bounded false-positive rate under injected transient faults, durable incident history, Telegram warning/escalation/recovery delivery and Mission Control replay. Rollback disables probes/notifiers without deleting incident evidence. **Parallelism/conflicts:** share telemetry contracts with PLAT-005 and notification semantics with OPS-001; do not create a second alert outbox. **Reviewer:** SRE/operations owner, security owner and founder/operator.
+
+**Implemented source boundary:** Migration `b6f2a9c41d80` adds digest-bound raw
+observations, incident generations and replayable transitions. Strict agent-authenticated
+probes collect aggregate `/proc`, PSI, capacity and explicit service status only. A
+three-sample detector with recovery hysteresis drives the existing founder notification
+outbox; Mission Control shows current fleet health; Prometheus exports sample age and
+incident state. A separately deployable TCP watchdog provides the only direct Telegram
+fallback and must run outside VM1/VM2. The activation dossier must still demonstrate
+live value parity, Telegram delivery and simultaneous-host outage detection.
 
 ### OPS-005 — Automated control-plane backups and freshness enforcement
 

@@ -60,3 +60,44 @@ exercise, not only a successful backup command.
   action and attempt history is visible in the blocked-artifact register.
 - Role manifests and historical pilots do not guarantee current agent presence.
 - No research result has authority to mutate capital.
+## 8.7 Fleet observability and founder alerting
+
+### 8.7.1 OPS-004 source architecture
+
+At the 2026-08-22 source boundary, Hermes contains a dedicated fleet-observation
+subsystem. Unprivileged VM1 and VM2 probes publish strict, authenticated,
+low-cardinality samples to the control plane. Samples contain CPU utilization and load
+per core, `MemAvailable`, swap counters, disk and inode capacity, Linux PSI, uptime,
+OOM deltas and health for an explicit systemd service allowlist. They never enumerate
+process arguments or environments and never carry credentials in their payload.
+
+Migration `b6f2a9c41d80` stores idempotent, digest-bound observations with
+`telemetry_raw_30d` retention and introduces incident and incident-event ledgers. The
+detector requires three consecutive breaches before warning or critical state and
+three consecutive healthy samples before recovery. This hysteresis prevents a single
+load spike or one missed sample from notifying the founder. Warning, escalation and
+recovery transitions use the OPS-001 founder-notification outbox and therefore inherit
+durable deduplication and acknowledgement.
+
+Mission Control reads `/v1/fleet/health` to display current per-machine resource values,
+service status and active incidents. Prometheus exposes sample age and incident counts.
+Acknowledgement and bounded silence change incident state but grant no remediation
+authority.
+
+### 8.7.2 Independent availability boundary
+
+Peer observations allow a surviving VM to detect that the other stopped reporting.
+They cannot detect simultaneous VM1/VM2 loss when VM2 also hosts the control plane and
+primary Telegram gateway. Hermes therefore includes a separate TCP-only watchdog for
+an always-on third host. It persists breach/recovery counters locally and uses a
+separate alert-only Telegram credential. The Mac is not accepted as that authority
+because it may sleep.
+
+### 8.7.3 Exact claim status
+
+The schemas, migration, services, probes, watchdog, systemd sandboxes, Telegram
+rendering, Mission Control view and focused fault tests are `implemented` and locally
+`tested`. They are not yet `deployed`, `active` or production-qualified. Those claims
+require VM2 migration, live VM1/VM2 sample comparison with kernel references, observed
+Telegram warning/recovery delivery and an independently witnessed simultaneous-outage
+rehearsal. Rollback disables probes and watchdogs without deleting incident evidence.
