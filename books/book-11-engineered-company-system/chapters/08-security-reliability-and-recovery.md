@@ -113,3 +113,35 @@ Production qualification still requires live value comparison with kernel refere
 observed Telegram warning/recovery delivery, and digest-bound rehearsals of VM1 loss,
 VM2 loss, simultaneous loss, recovery, duplicate suppression and credential rotation.
 Rollback disables probes and watchdogs without deleting incident evidence.
+
+## 8.8 Verified control-plane backup lifecycle
+
+OPS-005 replaces an operator-dependent control-plane dump with a deterministic VM2
+lifecycle. A persistent daily systemd timer invokes a versioned backup utility under a
+non-blocking lock. The utility first checks free capacity, writes a PostgreSQL
+custom-format dump to a unique partial path, rejects an empty dump, runs
+`pg_restore --list`, reads the canonical Alembic migration marker, computes SHA-256,
+then atomically publishes both the mode-restricted dump and strict
+`control-plane-backup-v1.0.0` manifest. Failed and interrupted attempts cannot become
+verified generations and leave a bounded failure record without secret material.
+
+Retention keeps the latest generation and at least seven daily, four weekly, and six
+monthly verified buckets. A separate persistent weekly timer restores the latest
+digest-verified generation into a disposable PostgreSQL 17 container with no network
+and no published ports. It checks the migration marker and restored public-table
+surface, records measured RPO/RTO and cleanup status in a restore dossier, and never
+contacts the production database.
+
+The VM2 unprivileged fleet probe receives read-only access to backup metadata and emits
+only age, integrity, and latest-run-failure signals. The existing OPS-004 detector
+warns after six days, becomes critical after seven days or a failed/unverified latest
+state, and requires three consecutive samples for both alert and recovery. Telegram
+delivery reuses the durable founder outbox, while Mission Control displays the current
+verification state and age. No new notification channel or privileged remediation
+authority is introduced.
+
+The source, tests, units, installer, UI surface and runbook are `implemented`. The
+production claim remains pending until VM2 retains two consecutive manifests, one
+successful restore dossier, stale/failure and recovery notification evidence, and a
+no-secret scan. Encrypted off-host replication is not supplied by OPS-005 and remains
+part of PLAT-007 disaster-recovery work.
