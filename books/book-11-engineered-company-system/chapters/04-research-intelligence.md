@@ -32,19 +32,23 @@ Files are never executed. Archives, active PDF content, instruction-like text,
 oversized payloads, malformed structures and low-confidence extraction are bounded or
 rejected. Original artifacts are retained for exact coordinate replay. PR 33 adds
 offline Tesseract/PDFium recovery and raises the bounded scientific-ingestion limit to
-100 MiB. The settled 2026-08-14 founder-inbox ledger covers 120 files: 117 are usable
-canonical or duplicate-backed evidence and three remain explicitly quarantined. Of the
-last twelve exceptions, governed recovery safely resolved nine. One PDF is structurally
-unreadable by both parsers; two extract successfully but contain instruction-like text
-that cannot cross the current evidence trust boundary without explicit quoted-evidence
-semantics. No scanner rule was weakened to improve the count.
+100 MiB. The reconciled 2026-08-22 founder-inbox ledger covers 269 files: 267 are usable
+canonical or duplicate-backed evidence and two remain explicitly quarantined. One
+Cartea edition is structurally unreadable and requires replacement. Paper
+`2505.22954v3.pdf` contains a genuine Bash-tool instruction and remains security-blocked.
+No scanner rule was weakened to improve the count.
 
-The Research Ingestion Recovery Steward is a deterministic fixed-command service. It
-claims bounded recovery work, preserves original evidence, creates inert recovered
-editions, enforces attempt ceilings, reconciles the inbox, and rebuilds retrieval and
-graph projections after a settled batch. Its source and tests exist; activation on VM2
-is a separate privileged systemd installation and must be observed before it is called
-active.
+The Research Ingestion Recovery Steward is a fixed-authority service. Its bounded
+controller attempts structural inert repair, independent PDFium extraction and offline
+OCR at most once each, preserves original evidence, records an attempt-and-digest
+ledger, reconciles the inbox, and rebuilds projections after a settled batch. Optional
+Codex advice is schema-constrained to choosing an untried method or recommending a
+terminal classification. Codex receives no artifact bytes or publication authority;
+deterministic scanner, validation and publication gates remain binding. Terminal
+outcomes are recovered, replacement required, security blocked, unsupported format,
+corrupt unrecoverable or manual review required. Security-blocked material may produce
+a provenance-preserving redacted-edition proposal, but cannot execute it without
+founder approval.
 
 ## 4.3 Canonical object kernel
 
