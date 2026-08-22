@@ -93,6 +93,12 @@ query, become a saved collection, enter an LLM prompt, register graph edges, alt
 evidence lifecycle or write institutional memory. An entry is a navigation handle back
 to canonical replay or a bounded graph query, never a new evidence object.
 
+Production acceptance used canonical citation
+`011a2e4b-25ff-572f-81f8-855433a2e961` as the same bounded graph root, returning
+three nodes and two edges, then replayed the object exactly. This demonstrates that the
+workspace handoff preserves canonical identity rather than passing labels, excerpts or
+model prose between tools.
+
 ## 6.2 Folder ingestion
 
 The protected research inbox accepts PDF, Markdown and text. Refresh is digest

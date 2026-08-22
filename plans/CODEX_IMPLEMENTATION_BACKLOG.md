@@ -285,7 +285,7 @@ change-gated projection rebuilds.
 
 ### UI-003C — Integrated Research Workspace
 
-- **Status (2026-08-22):** Implemented and locally validated in `swarm-control-plane`; Mac reinstall and live citation-to-context-to-graph replay remain the production observation gate.
+- **Status (2026-08-22):** Completed, deployed and production-observed on the Mac. Canonical citation `011a2e4b-25ff-572f-81f8-855433a2e961` expanded as the same graph root to three nodes and two edges in 0.3 seconds and replayed exactly in 22.38 seconds.
 - **Objective/requirement/citations:** Give the founder one coherent research surface for grounded synthesis, canonical relationship inspection and governed corpus management while preserving every UI-003A/B evidence and authority boundary.
 - **Repository/files:** Mission Control Research Workspace shell, semantic mode navigation, shared context strip, responsive styles and regression tests; `docs/ui-003c-validation.md`; Book XI.
 - **Prerequisites/scope:** UI-003A and UI-003B. Integrate existing capabilities as `Ask`, `Explore` and `Library`, preserve local mode state, expose current projection/curriculum/ingestion status and carry at most eight selected canonical identities between modes. **Non-goals:** saved model memory, browser-authored collections, context-pack overrides, evidence mutation, graph writes, autonomous research execution or capital authority.
