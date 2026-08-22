@@ -6,6 +6,24 @@
 
 All tasks inherit these constraints: preserve unrelated changes; never commit data/secrets; use migrations, compatibility readers, and typed schemas; do not grant an agent promotion or capital authority; retain negative/failed evidence; run repository-native formatting/tests plus the named acceptance commands; publish a redacted evidence report; and obtain the named reviewer before merge.
 
+## Current execution snapshot — 2026-08-22
+
+The recently completed tranche is now reconciled across source, evidence and Book XI:
+
+- `UI-003A`, `UI-003B` and `UI-003C` are deployed and production-observed on the Mac;
+- `OPS-004` VM1/VM2 probes are active, while correlated-outage detection remains
+  explicitly deferred until an independent always-on host is provisioned;
+- `OPS-005` is deployed and production-observed on VM2 with two verified generations,
+  an isolated restore drill and active persistent timers;
+- `BT-001`, `BT-002` and `BT-003` are merged to the canonical Bulletproof branch;
+  BT-003's compatible Hermes producer extension is also merged. These BT packages are
+  source-complete and tested, but no production research run is inferred until the
+  governed bridge and walking-skeleton packages exercise them end to end.
+
+The next laboratory package is `BT-004`. `BT-009` and `WS-001` remain downstream of
+the declared BT contracts and must compose them rather than introduce duplicate
+engines, registries or artifact stores.
+
 This backlog is the execution queue, not the sole coverage authority. Every task must
 also appear in the [Bible capability coverage plan](BIBLE_CAPABILITY_COVERAGE.md),
 which maps all ten volumes and appendices to build packages, dependencies, operating
@@ -342,7 +360,7 @@ PLAT-007 rather than OPS-005.
 
 ### BT-001 — Bulletproof full-suite and contract-drift closure
 
-- **Status:** Complete in source on 2026-08-22; acceptance evidence: [BT-001 completion evidence](evidence/BT-001.md).
+- **Status:** Completed, tested and merged on 2026-08-22 in Bulletproof commit `6a1cbbfbc69bd84281d466316e42e04698c1b3c5` (PR #263); acceptance evidence: [BT-001 completion evidence](evidence/BT-001.md).
 - **Objective/requirement/citations:** Resolve every recorded collection/failure discrepancy in Book V Appendix E without weakening tests.
 - **Repository/files:** Bulletproof dependencies, fixtures, hypotheses/contracts, alert writer, tests/docs.
 - **Prerequisites/scope:** BASE-001; diagnose each defect as code/test/config/docs/environment. **Non-goals:** new strategy logic.
@@ -353,7 +371,7 @@ PLAT-007 rather than OPS-005.
 
 ### BT-002 — Immutable dataset and availability contract
 
-- **Status:** Complete in source on 2026-08-22; acceptance evidence: [BT-002 completion evidence](evidence/BT-002.md).
+- **Status:** Completed, tested and merged on 2026-08-22 in Bulletproof commit `54220e21ad1b4b2110c00d243bd4326b7d67c76d` (PR #264); acceptance evidence: [BT-002 completion evidence](evidence/BT-002.md).
 - **Objective/requirement/citations:** Close Appendix D identity, correction, membership, clock and point-in-time gaps.
 - **Repository/files:** `bt.research_data`, manifests/schemas/validators/tests/docs.
 - **Prerequisites/scope:** BASE-002 and BT-001; content manifests for a bounded dataset family first. **Non-goals:** rewriting raw lake.
@@ -364,7 +382,7 @@ PLAT-007 rather than OPS-005.
 
 ### BT-003 — Atomic digest-finalized run bundle
 
-- **Status:** Complete in source on 2026-08-22; acceptance evidence: [BT-003 completion evidence](evidence/BT-003.md).
+- **Status:** Completed, tested and merged on 2026-08-22 in Bulletproof commit `8f1418415cad4e2327f7e9a6dbb78257609f65e7` (PR #265). The compatible Hermes run producer was merged in control-plane commit `4b7f7d1685c0af5a4cb81b621f49dfeabea5eff8` (PR #79). Acceptance evidence: [BT-003 completion evidence](evidence/BT-003.md). This is a source and contract claim; production exercise belongs to BT-009/WS-001.
 - **Objective/requirement/citations:** Give every canonical artifact a schema, content digest, lineage, atomic finalization and failure state.
 - **Repository/files:** Bulletproof artifact writers/schemas/validation; Hermes producer endpoint.
 - **Prerequisites/scope:** BASE-002, RI-001, BT-001/002. **Non-goals:** live orders.
