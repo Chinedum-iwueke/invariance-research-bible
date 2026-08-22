@@ -76,6 +76,23 @@ seconds at the current corpus scale, so Mission Control gives only that read-onl
 a bounded 120-second timeout; the latency remains visible operational debt rather than
 being hidden by an unbounded request.
 
+### 6.1.3 Integrated Research Workspace
+
+UI-003C presents Research Intelligence as one work surface rather than a stack of
+unrelated tools. `Ask` contains the citation-grounded Copilot, `Explore` contains the
+canonical graph and adjacency views, and `Library` contains Mac-local search, direct
+source upload and digest-idempotent inbox refresh. Each mode is URL-restorable and
+retains local state while hidden. Semantic tabs use roving keyboard focus, and the
+mobile layout exposes the same content and actions rather than a reduced duplicate UI.
+
+The shared working-context strip carries at most eight canonical identities between
+modes. Citation inspection or explicit graph-node selection adds an ID, object type,
+label and digest; duplicates collapse by ID. These entries exist only in browser memory
+and can be individually removed or cleared. They do not silently constrain a Copilot
+query, become a saved collection, enter an LLM prompt, register graph edges, alter
+evidence lifecycle or write institutional memory. An entry is a navigation handle back
+to canonical replay or a bounded graph query, never a new evidence object.
+
 ## 6.2 Folder ingestion
 
 The protected research inbox accepts PDF, Markdown and text. Refresh is digest

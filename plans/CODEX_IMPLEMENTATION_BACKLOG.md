@@ -283,6 +283,17 @@ change-gated projection rebuilds.
 - **Tests/acceptance:** Typed query forwarding, executable/extra-field rejection, max-node/depth bounds, empty graph, cycles, truncation, node selection, predicate filtering, exact replay, keyboard operation, visible focus, mobile/desktop layout, reduced motion and no console errors. Live acceptance requires current overview, one neighborhood expansion and one replayed selected object.
 - **Evidence/rollback/done:** Retain 65-test result, lint/compile/JS checks, responsive screenshots and live corpus/query/object identities. Rollback removes the local query route and enhanced workspace while RI-008 canonical graph APIs and UI-003A remain intact. **Reviewer:** Research Intelligence owner, accessibility reviewer and founder/operator.
 
+### UI-003C — Integrated Research Workspace
+
+- **Status (2026-08-22):** Implemented and locally validated in `swarm-control-plane`; Mac reinstall and live citation-to-context-to-graph replay remain the production observation gate.
+- **Objective/requirement/citations:** Give the founder one coherent research surface for grounded synthesis, canonical relationship inspection and governed corpus management while preserving every UI-003A/B evidence and authority boundary.
+- **Repository/files:** Mission Control Research Workspace shell, semantic mode navigation, shared context strip, responsive styles and regression tests; `docs/ui-003c-validation.md`; Book XI.
+- **Prerequisites/scope:** UI-003A and UI-003B. Integrate existing capabilities as `Ask`, `Explore` and `Library`, preserve local mode state, expose current projection/curriculum/ingestion status and carry at most eight selected canonical identities between modes. **Non-goals:** saved model memory, browser-authored collections, context-pack overrides, evidence mutation, graph writes, autonomous research execution or capital authority.
+- **Data/access:** Working context contains only IDs, types, labels and digests already authorized for the browser session. It is ephemeral navigation state and never enters canonical storage or model input implicitly. Existing upload and inbox mutations retain their founder-intent gate.
+- **Steps/interfaces:** Deep-linkable semantic tabs; keyboard roving focus; compact readiness strip; bounded context items with remove/clear; citation-to-context; context-to-neighborhood; hidden-panel graph restoration; responsive single-column library; explicit empty, loading and error states.
+- **Tests/acceptance:** Static contract, mode restoration, arrow/Home/End keyboard behavior, context deduplication and eight-item cap, remove/clear, graph preservation, no implicit model scope, mobile/desktop layout, focus visibility, reduced motion and no console errors. Live acceptance requires one cited object to persist across Ask and Explore and replay exactly.
+- **Evidence/rollback/done:** Retain automated results, screenshots, live projection/corpus/query/object identities and replay result. Rollback restores the previous sequential Knowledge page without changing UI-003A/B services or canonical state. **Reviewer:** Research Intelligence owner, accessibility reviewer and founder/operator.
+
 ### OPS-004 — Fleet observability and founder alerting
 
 - **Status (2026-08-22):** VM1 and VM2 probes are deployed, enabled and publishing bounded observations. Independent simultaneous-outage detection is deferred until an external always-on host is available; OPS-004 is therefore operational for individual-host telemetry but not yet production-qualified for correlated VM1/VM2 loss.
