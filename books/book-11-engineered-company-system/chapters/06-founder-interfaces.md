@@ -15,12 +15,37 @@ Its control-plane client uses the protected orchestrator token. The application 
 - founder intake and proposal/approval decisions;
 - document upload and folder-based research inbox refresh;
 - Bulletproof memory-sync proposal creation;
+- UI-003A citation-grounded Research Copilot;
 - RI-008 canonical graph exploration after deployment.
 
 Mutating local API calls require `X-Hermes-Intent: founder-action`. Demo mode disables
 mutations. The launch agent runs as user `ice`; environment and token files are mode
 `0600`. Local text graph/search remains useful for founder notes but is not canonical
 Research Intelligence. RI-008 replaces it as the primary scientific graph explorer.
+
+### 6.1.1 Citation-grounded Research Copilot
+
+UI-003A adds a conversational research surface without creating a general document
+chatbot. Mission Control submits the founder question and optional project scope to the
+canonical `hybrid-retrieval-v1.1.0` service. The control plane applies access and
+lifecycle policy, calibrated hybrid ranking and graph-neighbor expansion, then creates
+a bounded `citation-context-pack-v1.0.0`. Only that context pack is passed to the
+configured protected Codex identity in a read-only ephemeral sandbox.
+
+The model must return a strict answer document. Each claim is either `source_evidence`
+with one or more exact context object IDs or `agent_inference` with no citation. Any
+unknown citation rejects the complete answer. Retrieval abstention bypasses the model
+and returns `insufficient_evidence`. Mission Control exposes retrieval confidence,
+limitations, corpus/context/graph digests and an evidence rail whose citations replay
+canonical coordinates through the control plane.
+
+The founder experience is a dense three-pane workspace: conversation, bounded corpus
+selection and answer evidence. Model output is not canonical evidence, a belief
+revision, an approved hypothesis or permission to execute work. The initial source
+boundary submits each turn independently; displayed prior answers never become
+retrieval evidence. Raw source files, database credentials, protected tokens and
+chain-of-thought remain outside the model boundary. The model adapter is replaceable
+under LLM-001 without altering canonical retrieval or citation contracts.
 
 ## 6.2 Folder ingestion
 
