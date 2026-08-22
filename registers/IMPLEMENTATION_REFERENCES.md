@@ -53,6 +53,17 @@ The canonical identity contract was added at control-plane commit `d26484f1da3f7
 
 The Bible requirement ledger inventories all 169 chapters and 31 appendices, retains 1,075 exact normative statements with stable source-derived identities, maps them to accountable owners and the complete engineering package catalog, and derives a digest-bound zero-orphan coverage report. A strict local validator and GitHub Actions workflow reject missing authority files, newly unmapped statements, stale digests, duplicate IDs, unknown packages, missing or false evidence, unsupported deferrals, unreviewed records, circular dependencies, orphan requirements/packages, and stale reports. Exact extraction is machine-assisted and all requirement dispositions remain `planned`; changing a disposition requires domain review and separate evidence. Acceptance results are recorded in [BASE-003 Completion Evidence](../plans/evidence/BASE-003.md).
 
+## BT-001 implementation addendum
+
+Bulletproof commit `51e60a270bfb71351465f4b87f08ea0eca63876d` closes the
+recorded Python 3.11 collection and contract drift without introducing strategy logic
+or a second engine. The commit adds a bounded dependency lock, scoped collection,
+deterministic CI shards, restored historical contracts for still-implemented
+strategies, durable alert output, compatibility for legacy and namespaced data paths,
+and semantic determinism normalization. The declared matrix collected 1,234 tests and
+completed with 1,207 passed and 27 explicitly skipped. Exact root causes, commands,
+counts and claim boundaries are recorded in [BT-001 Completion Evidence](../plans/evidence/BT-001.md).
+
 ## RI-001 implementation addendum
 
 The canonical evidence object kernel was added at control-plane commit `0322b7429616f0deb453dbcca08575d0359f1b13`. The implementation extends ADR-0005 with a distinct `object_schema_version`, covers all thirteen required object classes, and adds authenticated immutable APIs, lineage, audit, access, and object-store boundaries. Exact acceptance and migration-rehearsal results are recorded in [RI-001 Completion Evidence](../plans/evidence/RI-001.md).

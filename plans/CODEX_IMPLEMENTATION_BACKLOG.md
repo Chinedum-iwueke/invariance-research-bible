@@ -342,6 +342,7 @@ PLAT-007 rather than OPS-005.
 
 ### BT-001 — Bulletproof full-suite and contract-drift closure
 
+- **Status:** Complete in source on 2026-08-22; acceptance evidence: [BT-001 completion evidence](evidence/BT-001.md).
 - **Objective/requirement/citations:** Resolve every recorded collection/failure discrepancy in Book V Appendix E without weakening tests.
 - **Repository/files:** Bulletproof dependencies, fixtures, hypotheses/contracts, alert writer, tests/docs.
 - **Prerequisites/scope:** BASE-001; diagnose each defect as code/test/config/docs/environment. **Non-goals:** new strategy logic.

@@ -49,6 +49,16 @@ Failures discovered by audit become evidence. They are not edited out of prose a
 
 A 2026-08-10 addendum used the repository virtual environment (Python 3.11.15, pytest 9.0.2). Byte-compilation passed; 50 focused tests spanning the engine, execution, accounting, resampling, deterministic artifacts, run contracts, truth validation, and portfolio engine passed in 2.85 seconds. A new full collection attempt exceeded a 120-second bound without a completed report. It therefore neither supersedes the earlier completed inventory nor supports a full-suite-pass claim.
 
+BT-001 supersedes that specific collection/failure limitation for the declared Python
+3.11 environment. Collection is constrained to `tests/`, research outputs are excluded,
+the exact environment is committed, and stable shards cover execution, hypotheses,
+the Invariance auxiliary slice and every root test module. The closure restored deleted
+historical contracts for still-implemented strategies, aligned assertions with later
+preregistered grid changes, preserved legacy and namespaced data layouts, and excluded
+operational run identifiers from semantic determinism comparisons. It did not add a
+strategy or replace the classic engine. Exact results and inherited lint debt are in
+[BT-001 completion evidence](../../../plans/evidence/BT-001.md).
+
 ## 12.5 Reproduction packet
 
 A target reproduction packet contains exact commands, interpreter and dependency identity, platform class, code pin, dataset manifest, configuration, seeds, environment variables by name but not secret value, resource limits, expected artifact digests or semantic checks, and known variable fields.
