@@ -140,8 +140,12 @@ delivery reuses the durable founder outbox, while Mission Control displays the c
 verification state and age. No new notification channel or privileged remediation
 authority is introduced.
 
-The source, tests, units, installer, UI surface and runbook are `implemented`. The
-production claim remains pending until VM2 retains two consecutive manifests, one
-successful restore dossier, stale/failure and recovery notification evidence, and a
-no-secret scan. Encrypted off-host replication is not supplied by OPS-005 and remains
-part of PLAT-007 disaster-recovery work.
+The source, tests, units, installer, UI surface and runbook are `implemented`,
+`deployed` and production `observed`. VM2 retains verified generations
+`827e705d9ee1` and `2fa39d5941ac`, both at migration `b6f2a9c41d80`. A disposable
+restore of the latter recovered 77 public tables with RPO 4.584 seconds and RTO
+326.545 seconds while network isolated and without production database contact. Real
+failed attempts opened one critical incident and founder notification; three healthy
+samples produced one recovery transition and notification. Both persistent timers are
+enabled and the VM2 probe is active. Encrypted off-host replication is not supplied by
+OPS-005 and remains part of PLAT-007 disaster-recovery work.

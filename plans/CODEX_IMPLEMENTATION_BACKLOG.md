@@ -318,15 +318,17 @@ live value parity, Telegram delivery and simultaneous-host outage detection.
 
 ### OPS-005 — Automated control-plane backups and freshness enforcement
 
-**Implementation status (2026-08-22):** Source-complete in Hermes pending VM2
-production evidence. The implementation provides atomic verified custom-format dumps,
+**Implementation status (2026-08-22):** Complete, deployed and production-observed on
+VM2. The implementation provides atomic verified custom-format dumps,
 versioned manifests, overlap/free-space gates, 7-daily/4-weekly/6-monthly retention,
 persistent daily scheduling, a network-isolated weekly restore drill, fleet freshness
 signals, OPS-004 hysteresis/deduplicated founder notifications, Mission Control age
-visibility, focused failure tests, and an operator runbook. Do not mark production
-complete until two consecutive live manifests, a restore dossier, stale-alert/recovery
-transcript, timer evidence, and no-secret scan are retained. Encrypted off-host
-replication remains owned by PLAT-007.
+visibility, focused failure tests, and an operator runbook. Two consecutive live
+manifests are retained; a network-isolated 77-table restore recorded RPO 4.584 seconds
+and RTO 326.545 seconds; the real failure/recovery lifecycle emitted one deduplicated
+notification per transition; both persistent timers and the VM2 probe are active; and
+the scoped no-secret scan passed. Encrypted off-host replication remains owned by
+PLAT-007 rather than OPS-005.
 
 - **Objective/requirement/citations:** Close the production gap discovered by the 2026-08-21 OPS-002 infrastructure observation, when the newest integrity-valid control-plane backup was 22 days old and correctly failed the seven-day freshness policy. Automate verified control-plane PostgreSQL backups without weakening the observation gate, and provide the near-term operating implementation required by PLAT-007.
 - **Repository/files:** Versioned control-plane backup script; hardened systemd service and timer on VM2; infrastructure installer; backup inventory/retention utility; broker observation evidence; founder notification and Mission Control backup-health surfaces; recovery runbook.
