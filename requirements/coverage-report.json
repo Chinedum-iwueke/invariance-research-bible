@@ -117,6 +117,7 @@
     "RI-010": 258,
     "RI-011": 156,
     "RI-012": 69,
+    "RI-013": 49,
     "RISK-001": 112,
     "RISK-002": 71,
     "RISK-003": 71,
@@ -139,7 +140,7 @@
     "WS-002": 99
   },
   "claim_boundary": "Complete disposition proves planning coverage, not implementation, operational qualification, scientific truth, or profitability.",
-  "ledger_sha256": "39468d4de4125a433865e7a93b91b40592f70ea547f7cc5d406bf58431ce552a",
+  "ledger_sha256": "230f173d4cc46cbc0b9d2218f67eff4843b947ab109ec506a2a631814e803144",
   "orphan_requirement_count": 0,
   "orphan_work_package_count": 0,
   "requirement_count": 1075,
