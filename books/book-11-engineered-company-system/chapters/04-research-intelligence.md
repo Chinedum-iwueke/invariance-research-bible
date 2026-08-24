@@ -219,6 +219,38 @@ receipts, duplicate/correction/retraction history, abstract poisoning rejection,
 corpus-grounded novelty, technique briefs, proposal-only routing and weekly digest
 freezing. It does not auto-adopt a paper or auto-create a live research trial.
 
+## 4.7.1 Evidence-grounded daily direction
+
+DISC-001 extends the existing deterministic daily research scheduler instead of
+creating another orchestration path. It considers only current, non-retracted Research
+Intelligence candidates with an attributable `propose_question` disposition. Each
+candidate is ranked from declared priority, corpus-grounded novelty, evidence quality,
+freshness and similarity to prior hypothesis questions. Previously selected
+publications, stale evidence and near-duplicate search families are excluded. Ties are
+resolved deterministically from the normalized question digest, and the existing weekly
+program budget remains authoritative. If nothing qualifies, the scheduler records why
+and selects the next approved static mandate.
+
+```mermaid
+flowchart LR
+    RI[Approved RI candidate] --> Rank[Freshness, novelty, quality and duplicate ranking]
+    Prior[Prior hypotheses and cycles] --> Rank
+    Budget[Program schedule and weekly budget] --> Rank
+    Rank --> Proposal[Digest-bound daily question proposal]
+    Proposal --> Review{Founder review}
+    Review -->|reject| Stop[Attention required]
+    Review -->|approve exact digest| Ready[Task-ready event]
+    Ready --> Brief[Separate hypothesis-brief compilation]
+```
+
+The cycle retains publication and routing-event identities and digests, citation
+provenance, score components, fallback reason and question digest. Its append-only event
+stream records proposal creation, founder approval or rejection and task readiness.
+Mission Control displays this evidence and exposes explicit decisions. Approval has no
+execution authority: it cannot create a trial, lease a worker, promote research or
+touch capital. Deployment migration, Mission Control installation and a live replay
+remain the operational acceptance boundary for the source-complete implementation.
+
 ## 4.8 Typed knowledge graph and cognitive services
 
 RI-008, implemented in PR 34 and deployed on VM2 at this snapshot, adds:

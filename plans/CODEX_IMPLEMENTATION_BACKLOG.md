@@ -462,13 +462,14 @@ PLAT-007 rather than OPS-005.
 
 ### DISC-001 — Evidence-grounded daily research director
 
+- **Status/scope/reuse/gap (2026-08-24):** Source-complete at control-plane commit `4bf9982`; reuses the existing daily scheduler, RI-006 surveillance records, program budgets and Mission Control research surface. It adds ranked evidence-grounded selection, explicit founder decisions and an append-only task-readiness trail without creating a second scheduler or granting execution authority. Production completion requires merge, migration `a8c4e1d72b90`, VM2 API deployment, Mac Mission Control reinstall and one live provenance replay.
 - **Objective/requirement/citations:** Replace static mandate rotation as the sole question source with approved RI candidates while retaining deterministic scheduling.
 - **Repository/files:** Daily research service, RI Director, trial registry, UI.
 - **Prerequisites/scope:** RI-006 and WS-001. **Non-goals:** autonomous approval/execution.
 - **Data/access:** Approved surveillance and internal evidence only.
 - **Steps/interfaces:** Candidate ranking, duplicate/search-family check, budget gate, proposal, approval, task-ready event.
 - **Tests/acceptance:** Static fallback, novelty tie, duplicate, stale corpus, budget exhaustion and race tests.
-- **Evidence/rollback/done:** A daily cycle whose question provenance replays to sources and institutional gaps. **Parallelism/conflicts:** owns scheduler selection. **Reviewer:** Senior quantitative research authority.
+- **Evidence/rollback/done:** Source validation is retained in control-plane `docs/disc-001-validation.md` and the live runner is `worker/scripts/disc001_pilot.py`. A daily cycle must replay its publication, routing decision, citation, ranking, budget, question digest, founder decision and `task_ready` event. Rollback restores mandate-only selection while retaining immutable cycle events. **Parallelism/conflicts:** owns scheduler selection. **Reviewer:** Senior quantitative research authority.
 
 ### SHADOW-001 — Prospective journal and execution replay
 
