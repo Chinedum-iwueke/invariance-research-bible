@@ -78,6 +78,30 @@ This is a snapshot qualification boundary, not lake-wide certification. DATA-001
 through DATA-003 still own complete venue identity, historical membership population,
 vendor correction ingestion, entitlement policy, quality SLOs and recovery.
 
+### 5.4.1 BT-004 classic-engine certification
+
+BT-004 preserves the existing classic event-driven engine and certifies its causal,
+accounting and replay boundary rather than creating another simulator. Canonical events
+carry UTC `event_time` and `available_at` clocks for market, session, funding, borrow,
+valuation, decision, order, fill and liquidation paths. They sort deterministically by
+availability, occurrence, kind, source, source sequence and identity. A decision may
+bind only evidence available at its timestamp; the retained negative fixture rejects a
+future funding observation.
+
+Portfolio snapshots enforce `equity = cash + realized_pnl + unrealized_pnl` and
+`free_margin = equity - used_margin`, with finite values and non-negative used margin.
+Negative free margin remains a valid liquidation condition. State transitions bind the
+prior digest, canonical event and resulting state. Checkpoints bind the contract
+version, immutable dataset and configuration digests, last event key and state digest;
+changed pins or state fail closed. Equal-timestamp historical bars now emit in stable
+symbol order, and a quantile boundary uses a narrowly bounded equality tolerance so
+platform floating-point noise cannot change a logically equal gate decision.
+
+The retained pinned Python 3.11 validation reports 1,231 passing tests and 27 explicit
+skips across the full repository. BT-005 still owns calibrated market and cost models;
+BT-006 through BT-008 retain their orchestration, feature-lineage and publication
+boundaries.
+
 ## 5.5 Experimentation and artifacts
 
 Experiment support includes configuration layering, hypothesis contracts, grid
