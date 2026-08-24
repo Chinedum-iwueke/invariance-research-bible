@@ -118,6 +118,27 @@ digest, and matches it to lineage. Pessimistic stress cannot reduce modeled cost
 retained pinned suite reports 1,237 passing tests and 27 explicit skips. BT-006 through
 BT-008 retain their search, feature-lineage and publication boundaries.
 
+### 5.4.3 BT-006 prospective search accounting
+
+BT-006 preserves the existing hypothesis contract, constraint filtering, grid runner,
+parallel execution, strict resume and worker resource controls. A prospective search
+plan now binds the hypothesis, dataset snapshot, repository and code, BT-005 market
+models, declared parameter values, exact included variants, tiers, seeds, resources,
+budget, stopping rule and search family before evaluation. It records the raw
+Cartesian size and exclusions rather than losing filtered combinations.
+
+Each trial has a deterministic identity derived from the immutable plan, parameters,
+tier and seed. Grid expansion creates a new plan and new trial identities. A SQLite
+execution ledger registers trials exactly once, preserves identity across bounded
+attempts, refuses terminal replay and cancels only unleased work. Registered manifests
+carry plan, family, trial, seed and attempt fields; the runner validates and snapshots
+the plan before launch. BT-003 run bundles now retain the same lineage.
+
+Hermes remains the institutional Trial Registry and approval authority; the local
+ledger is Bulletproof's execution projection. The pinned Python 3.11 suite reports
+1,245 passes and 27 explicit skips. BT-007 owns feature and fit-boundary lineage, and
+BT-008 owns canonical dual-memory publication.
+
 ## 5.5 Experimentation and artifacts
 
 Experiment support includes configuration layering, hypothesis contracts, grid

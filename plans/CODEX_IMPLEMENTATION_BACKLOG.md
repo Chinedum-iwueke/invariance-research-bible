@@ -25,7 +25,7 @@ The recently completed tranche is now reconciled across source, evidence and Boo
   Semantics-neutral data IO and post-run batching may remain; no shortcut may alter
   causal visibility, orders, stops, fills, risk, accounting or truth artifacts.
 
-The next laboratory package is `BT-006`. `BT-009` and `WS-001` remain downstream of
+The next laboratory package is `BT-007`. `BT-009` and `WS-001` remain downstream of
 the declared BT contracts and must compose them rather than introduce duplicate
 engines, registries or artifact stores.
 
@@ -581,10 +581,10 @@ package is not complete until its own tests, evidence and rollback boundary pass
 
 ### BT-006 — Registered experiment grids, search accounting and budgets
 
-- **Status/scope/reuse/gap:** Planned. Reuse Bulletproof hypothesis contracts, grid runner, parallel execution and resume support plus Hermes Trial Registry. Add prospective finite-grid compilation, search-family accounting, deterministic budgets/stops and retry identity across every evaluation.
+- **Status/scope/reuse/gap (2026-08-24):** Completed in Bulletproof PR #269, merged as `83b08dbca0a8ca357337987b9972767f80769ddd`. Existing hypothesis contracts, constraint filtering, parallel execution, strict resume and resource controls remain authoritative. BT-006 adds an immutable prospective search-plan compiler, registered-manifest admission, deterministic family/trial/seed identities and a SQLite execution ledger without replacing Hermes' institutional Trial Registry. Retained evidence is [BT-006 completion evidence](evidence/BT-006.md) and Bulletproof `docs/bt-006-validation.md`.
 - **Contracts/dependencies:** Requires BT-002/003/004 and RI-004. A search plan binds hypothesis, dataset, code, parameter schema/values, Cartesian count, seeds, tiers, resources, stopping rule and family ID before execution. Retries retain trial identity; expansions create a new approved plan.
 - **Tests/acceptance:** Test invalid/unbounded grids, hidden optimization, duplicate trials, partial completion, resume, worker loss, budget exhaustion, deterministic ordering, family expansion and multiple-testing ledger completeness. No unregistered exploratory result may enter promotion evidence.
-- **Evidence/rollback/done:** Retain approved plan digest, complete trial ledger including failed/invalid runs, resource telemetry and stopping receipt. Rollback cancels unleased work and preserves consumed budget/history. Done when every evaluated variant is prospectively attributable and charged exactly once to its search family.
+- **Evidence/rollback/done:** Search plans retain raw Cartesian size, exact constraint-filtered variants, excluded count, tiers, seeds, resources, budgets and stopping rules. Empty, duplicate, non-finite, over-budget and outcome-stopped plans fail closed. Retries retain trial identity and consume bounded attempts; expansions create new plan and trial identities; cancellation touches only unleased trials. Registered manifests and atomic run bundles bind plan, family, trial, seed and attempt. Rollback cancels unleased work and preserves consumed budget/history. The pinned suite passes 1,245 tests with 27 explicit skips.
 
 ### BT-007 — Representation, label, feature and fit-boundary contracts
 
