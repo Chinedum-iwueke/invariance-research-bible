@@ -333,3 +333,11 @@ classified `invalid_attempt`, never a valid negative. An injected partial-public
 failure must recover to `publication_completed` before the compensation proof passes.
 The verifier emits a digest-bound report and has no order, allocation or
 production-promotion authority.
+
+The production replay completed on 2026-08-24. Its report digest is
+`7e91e1219a6f764a2cb0c6b07b39fdd2cd27e770117a4f1c7452ea543eb807ce`;
+the valid-negative bundle is
+`293424d8e8923568bb2150dfaea2cdfaf1153ba3d5b87925aa99fd3999688720`.
+The forward-join fixture was retained as invalid outcome
+`f54be6e2-24ce-4dbf-a4b0-7c64cf19ed0f`, and the injected memory-publication
+failure recovered without granting capital or order authority.

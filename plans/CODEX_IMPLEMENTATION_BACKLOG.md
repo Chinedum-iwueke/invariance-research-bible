@@ -449,7 +449,7 @@ PLAT-007 rather than OPS-005.
 
 ### WS-001 — No-capital walking-skeleton demonstration
 
-- **Status (2026-08-24):** Source-complete and locally validated in the control-plane WS-001 branch. It composes the production-observed BT-009 valid-negative publication with strict fresh-client receipt/event replay, a separately classified invalid-causality fixture and an injected partial-publication compensation proof. The post-merge operator command remains the deployment confirmation; no capital or order authority is introduced.
+- **Status (2026-08-24):** Completed, merged and operationally replayed against the VM2 control plane. Report `7e91e1219a6f764a2cb0c6b07b39fdd2cd27e770117a4f1c7452ea543eb807ce` composes the production-observed BT-009 valid-negative publication, six distinct canonical lifecycle objects, two independent reviews, a separately retained invalid-causality outcome and successful partial-publication compensation. No capital or order authority was introduced.
 - **Objective/requirement/citations:** Execute the complete [walking skeleton](WALKING_SKELETON.md).
 - **Repository/files:** Control plane, RI, Bulletproof, worker role packages, Mission Control.
 - **Prerequisites/scope:** RI-001 through RI-005, OPS-001, BT-002/003/009. **Non-goals:** shadow/live mutation.
