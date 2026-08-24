@@ -98,9 +98,25 @@ symbol order, and a quantile boundary uses a narrowly bounded equality tolerance
 platform floating-point noise cannot change a logically equal gate decision.
 
 The retained pinned Python 3.11 validation reports 1,231 passing tests and 27 explicit
-skips across the full repository. BT-005 still owns calibrated market and cost models;
-BT-006 through BT-008 retain their orchestration, feature-lineage and publication
-boundaries.
+skips across the full repository.
+
+### 5.4.2 BT-005 market-model qualification
+
+BT-005 keeps the classic fee, spread, slippage/impact, bar-delay, market-fill,
+reconciliation and diagnostic implementations as the sole authority. A versioned
+market-model bundle describes each model's implementation, applicability, timestamp
+semantics, parameters, uncertainty, stress range, calibration provenance, fallback
+and incompatibilities. Declared Tier profiles are policy assumptions, not mislabeled
+empirical estimates. An empirical replacement must bind an immutable calibration
+dataset and preserve fit and holdout diagnostics.
+
+Rebates, funding observations as cashflows, borrow availability/cost and
+capacity-constrained fills are explicitly unsupported in the classic engine. A run
+requiring them is rejected rather than treating an absent cost as zero. Atomic run
+finalization requires `market_model_bundle.json`, verifies every card and bundle
+digest, and matches it to lineage. Pessimistic stress cannot reduce modeled cost. The
+retained pinned suite reports 1,237 passing tests and 27 explicit skips. BT-006 through
+BT-008 retain their search, feature-lineage and publication boundaries.
 
 ## 5.5 Experimentation and artifacts
 
