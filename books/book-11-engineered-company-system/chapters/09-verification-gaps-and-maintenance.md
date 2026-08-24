@@ -15,6 +15,8 @@
 | OPS-001 | Implemented/tested/deployed/observed | Durable approval outbox and readiness-race closure production-activated |
 | OPS-004 | Implemented/tested/deployed/partial | VM1/VM2 probes active; independent correlated-outage watchdog awaits an external always-on host |
 | OPS-005 | Implemented/tested/deployed/observed | Two verified generations, isolated 77-table restore drill and persistent VM2 timers retained |
+| OPS-006/CHAN-002 | Implemented/tested/deployed/observed | Canonical conversations and durable threaded Telegram transport passed a two-thread restart replay |
+| UI-007 | Implemented/tested | Integrated conversation-to-proposal/task/approval/evidence workspace passes source and responsive checks; Mac reinstall and live execution replay remain |
 | BT-001 | Implemented/tested/merged | Canonical Python 3.11 contract matrix closes recorded collection and drift defects |
 | BT-002 | Implemented/tested/merged | Immutable bounded dataset, availability and correction-lineage contract merged |
 | BT-003 | Implemented/tested/merged | Atomic digest-finalized bundle and compatible Hermes producer contract merged; production run not yet claimed |
@@ -83,9 +85,10 @@ must never be stored in this repository.
 
 1. `CHAN-002` passed its live VM2 two-thread restart replay on 2026-08-24: reciprocal
    replies selected the correct canonical threads, revisions advanced exactly once per
-   accepted reply and the gateway remained active with zero restarts. Complete the
-   remaining OPS-006/UI-007 cross-channel replay, execution timeline, evidence inspector
-   and responsive production acceptance.
+   accepted reply and the gateway remained active with zero restarts. UI-007's joined
+   execution timeline and evidence inspector are source-complete; reinstall Mission
+   Control and retain one live proposal-to-task-to-artifact replay before upgrading it
+   to production-observed.
 2. Implement `BT-004` using the existing Bulletproof engine and tests, adding only the
    causal market-model contracts and evidence still missing from the Bible backlog.
 3. Continue `BT-005` through `BT-008` in dependency order so `BT-009` can compose
