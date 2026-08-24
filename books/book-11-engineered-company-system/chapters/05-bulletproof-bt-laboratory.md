@@ -257,8 +257,13 @@ runs the approved tier and finite grid, retains full decisions/state/trades/equi
 negative results, finalizes a digest-bound run bundle, and publishes receipts into both
 Bulletproof memory and Hermes. Full lake availability is scientific read access, never
 permission to expose raw data or credentials to an LLM or bypass coverage and provenance
-checks. This composed path remains a BT-009 target until BT-004 through BT-008 and its
-own walking-skeleton evidence are complete.
+checks. BT-004 through BT-008 qualified the component contracts, and BT-009 then
+replayed this composition on VM2 with a bounded deterministic BTC perpetual fixture.
+That replay registered and natively executed all 16 approved Tier2B variants, retained
+the negative selected result, completed separate statistical and adversarial reviews,
+published canonical run/result/review/decision/episode evidence, refreshed graph and
+retrieval projections, and confirmed one idempotent Bulletproof-memory row. It proves
+the governed lifecycle, not market performance or production eligibility.
 
 The SQLite research memory stores completed trades, state buckets, verdicts,
 recommendations and alpha candidates. Enriched derivative state includes funding, open
@@ -275,8 +280,9 @@ and registers canonical evidence plus an RI-007 synchronization receipt.
   3.11 matrix using deterministic shards and restored canonical contracts. The engine
   and strategy catalog remain the existing Bulletproof implementation.
 - Atomic run bundles, canonical result/review/decision/dossier publication and
-  dual-memory receipts are complete under BT-003 and BT-008. BT-009 still owns the
-  composed founder-intake-to-native-execution walking skeleton.
+  dual-memory receipts are complete under BT-003 and BT-008. BT-009 completed the
+  composed founder-intake-to-native-execution VM2 replay; WS-001 owns the broader
+  company walking skeleton.
 - BT-002 point-in-time and correction proofs apply to selected snapshots; universal
   lake population remains DATA-001 through DATA-003 work.
 - The deprecated fast path cannot satisfy or bypass BT-004 through BT-009 acceptance;

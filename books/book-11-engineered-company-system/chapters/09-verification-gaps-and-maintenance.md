@@ -89,14 +89,10 @@ must never be stored in this repository.
    execution timeline and evidence inspector are source-complete; reinstall Mission
    Control and retain one live proposal-to-task-to-artifact replay before upgrading it
    to production-observed.
-2. Implement `BT-004` using the existing Bulletproof engine and tests, adding only the
-   causal market-model contracts and evidence still missing from the Bible backlog.
-3. Continue `BT-005` through `BT-008` in dependency order so `BT-009` can compose
-   qualified engine, orchestration, feature and publication contracts without
-   duplicating existing Bulletproof capability.
-4. Execute `BT-009` and `WS-001` to prove a founder-approved hypothesis can traverse
-   specification, prospective registration, native execution, truth gates, atomic
-   bundling, Hermes publication and independent review without capital authority.
+2. Preserve BT-001 through BT-009 contract closure while extending real dataset and
+   market-model coverage; do not reintroduce the deprecated fast path.
+3. Execute `WS-001` to extend BT-009's bounded synthetic VM2 replay into the broader
+   company walking skeleton without capital authority.
 5. Provision the deferred external watchdog and rehearse correlated VM1/VM2 outage
    detection before upgrading OPS-004 from partial to production-qualified.
 6. Add encrypted off-host control-plane backup replication under PLAT-007; OPS-005's
@@ -115,7 +111,9 @@ The 2026-08-22 laboratory source boundary is:
 | `bulletproof_bt` | BT-002 immutable dataset contract | `54220e21ad1b4b2110c00d243bd4326b7d67c76d` |
 | `bulletproof_bt` | BT-003 atomic run bundle | `8f1418415cad4e2327f7e9a6dbb78257609f65e7` |
 | `swarm-control-plane` | BT-003 canonical bundle reference producer | `4b7f7d1685c0af5a4cb81b621f49dfeabea5eff8` |
+| `bulletproof_bt` | BT-009 governed proposal compiler and native qualification | `3cc4a49ee5189894f132a315d8adcc8f9edaa3dc` |
+| `swarm-control-plane` | BT-009 registry-to-dual-memory bridge and VM2 completion evidence | `35001f5492f33b3ac976bf2c18e7827081faf05a` |
 
-These pins prove merged source, not deployment or a successful production research
-cycle. The corresponding runtime claim may be upgraded only after BT-009/WS-001 retain
-an end-to-end digest-bound dossier.
+The BT-009 pins additionally have a bounded VM2 operational replay with a completed
+digest-bound dossier. They do not prove a profitable market claim, capital readiness,
+or the broader WS-001 company walking skeleton.
