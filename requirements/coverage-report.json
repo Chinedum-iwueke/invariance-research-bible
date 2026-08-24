@@ -75,6 +75,7 @@
     "EXEC-008": 21,
     "EXEC-009": 12,
     "EXEC-010": 12,
+    "EXEC-011": 67,
     "GOV-001": 217,
     "GOV-002": 110,
     "GOV-003": 92,
@@ -143,7 +144,7 @@
     "WS-002": 99
   },
   "claim_boundary": "Complete disposition proves planning coverage, not implementation, operational qualification, scientific truth, or profitability.",
-  "ledger_sha256": "ed0d2015c3184ace75f4f3df3cc0ba096d1a82753d1899ba2a3091358e6805e9",
+  "ledger_sha256": "3145875450488f1999a7904ac976170feb279482f86d830d7a634eefd3ecd221",
   "orphan_requirement_count": 0,
   "orphan_work_package_count": 0,
   "requirement_count": 1075,

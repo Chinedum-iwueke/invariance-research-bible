@@ -135,9 +135,9 @@ BOOK_PACKAGE_RULES: dict[int, list[tuple[range, tuple[str, ...]]]] = {
         (range(13, 16), ("RISK-004", "RISK-005", "LIVE-001", "LIVE-002")),
     ],
     8: [
-        (range(1, 7), ("EXEC-001", "EXEC-002", "EXEC-003", "DATA-001", "DATA-002")),
-        (range(7, 13), ("EXEC-004", "EXEC-005", "EXEC-006", "EXEC-008", "SHADOW-001", "DEMO-001")),
-        (range(13, 17), ("EXEC-007", "EXEC-009", "EXEC-010", "LIVE-001", "LIVE-002")),
+        (range(1, 7), ("EXEC-001", "EXEC-002", "EXEC-003", "EXEC-011", "DATA-001", "DATA-002")),
+        (range(7, 13), ("EXEC-004", "EXEC-005", "EXEC-006", "EXEC-008", "EXEC-011", "SHADOW-001", "DEMO-001")),
+        (range(13, 17), ("EXEC-007", "EXEC-009", "EXEC-010", "EXEC-011", "LIVE-001", "LIVE-002")),
     ],
     9: [
         (range(1, 10), ("AGT-001", "AGT-006", "AGT-007", "PLAT-002", "GOV-001")),
@@ -146,7 +146,7 @@ BOOK_PACKAGE_RULES: dict[int, list[tuple[range, tuple[str, ...]]]] = {
     ],
     10: [
         (range(1, 8), ("BASE-001", "BASE-002", "BASE-003", "PLAT-001", "PLAT-003", "DATA-001", "DATA-002", "DATA-003", "RI-007")),
-        (range(8, 14), ("RI-001", "RI-002", "RI-003", "RI-004", "RI-005", "RI-006", "RI-007", "RI-008", "RI-009", "RI-010", "RI-011", "RI-012", "BT-001", "BT-002", "BT-003", "BT-004", "BT-005", "BT-006", "BT-007", "BT-008", "BT-009", "SHADOW-001", "PORT-001", "RISK-001", "EXEC-001", "LIVE-001")),
+        (range(8, 14), ("RI-001", "RI-002", "RI-003", "RI-004", "RI-005", "RI-006", "RI-007", "RI-008", "RI-009", "RI-010", "RI-011", "RI-012", "BT-001", "BT-002", "BT-003", "BT-004", "BT-005", "BT-006", "BT-007", "BT-008", "BT-009", "SHADOW-001", "PORT-001", "RISK-001", "EXEC-001", "EXEC-011", "LIVE-001")),
         (range(14, 21), ("BASE-003", "OPS-003", "OPS-004", "OPS-005", "OPS-006", "CHAN-002", "PLAT-002", "PLAT-003", "PLAT-004", "PLAT-005", "PLAT-006", "PLAT-007", "PLAT-008", "PLAT-009", "SEC-001", "SEC-002", "UI-005", "UI-006", "UI-007", "WS-001", "WS-002", "EVOLVE-001", "EVOLVE-002")),
     ],
 }
