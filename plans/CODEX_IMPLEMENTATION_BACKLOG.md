@@ -26,7 +26,8 @@ The recently completed tranche is now reconciled across source, evidence and Boo
   Semantics-neutral data IO and post-run batching may remain; no shortcut may alter
   causal visibility, orders, stops, fills, risk, accounting or truth artifacts.
 
-The next laboratory package is `BT-009`. `WS-001` remains downstream of
+The next laboratory package is `WS-001`. `BT-009` completed its bounded VM2
+operational replay on 2026-08-24; `WS-001` remains downstream of
 the completed BT-001 through BT-008 contracts and must compose them rather than introduce duplicate
 engines, registries or artifact stores.
 
@@ -426,7 +427,7 @@ PLAT-007 rather than OPS-005.
 
 ### BT-009 — Hermes-to-Bulletproof governed research bridge
 
-- **Status (2026-08-22):** Dependency audit started. BT-009 is not implementation-complete and must not be represented as executable: BT-004, BT-005, BT-006, BT-007 and BT-008 still own unqualified market-model, engine-truth, orchestration, feature-lineage and dual-memory publication contracts required by this bridge. Complete those packages first, then implement BT-009 as composition. The deprecated fast path is excluded from its execution architecture; classic native Bulletproof execution is authoritative.
+- **Status (2026-08-24):** Completed, tested, merged and operationally replayed on VM2. Bulletproof PR #272 (merge `3cc4a49ee5189894f132a315d8adcc8f9edaa3dc`) implements the governed proposal compiler and native 16-variant qualification. Control-plane PRs #91-#98 implement and harden the registry, publication, projection, memory and interruption-resume path through merge `35001f5492f33b3ac976bf2c18e7827081faf05a`. The replay retained one negative selected result, two independent reviews, a founder `retain` decision, current graph/retrieval receipts and one Bulletproof-memory publication without production or capital authority. Exact runtime evidence: [BT-009 completion evidence](evidence/BT-009.md).
 
 - **Objective/requirement/citations:** Replace the fixed worker-local research pilot and its hard-coded hypothesis/dataset enums with an end-to-end governed bridge from any Hermes evidence-grounded research question to a prospectively registered, natively executed and fully logged Bulletproof experiment. The bridge must enforce `bulletproof_bt/docs/hypothesis_strategy_generation_prompt_instructions.md`, the hypothesis/strategy schemas, the Research Bible scientific method, and the existing no-capital authority boundary.
 - **Repository/files:** Hermes Research Intelligence Director and trial registry; a dedicated hypothesis-specification role; restricted engineering mission/package generator; Bulletproof hypothesis YAML, strategy module, adapter/feature registration, tests and documentation surfaces; native hypothesis/grid runner adapter; truth-gate adapter; atomic run-bundle publisher; Bulletproof research-memory and Hermes evidence/graph publication adapters; Mission Control proposal, progress, review and dossier views.

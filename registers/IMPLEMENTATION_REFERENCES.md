@@ -128,6 +128,19 @@ machine. Bulletproof validates the BT-003 bundle before submission and records o
 idempotent derived memory row. Exact tests, authority limits and rollback behavior are
 recorded in [BT-008 Completion Evidence](../plans/evidence/BT-008.md).
 
+## BT-009 implementation addendum
+
+Bulletproof PR #272 (`3cc4a49ee5189894f132a315d8adcc8f9edaa3dc`) and
+control-plane PRs #91-#98 (`35001f5492f33b3ac976bf2c18e7827081faf05a`) compose
+the founder-approved proposal, prospective registry, native classic execution, truth
+gate, atomic bundle, independent review, canonical publication, current projections and
+Bulletproof-memory receipt. The 2026-08-24 VM2 replay completed bridge
+`649158a6-10a4-5ae6-9872-00e0ff1e4aa4` and publication
+`5cbafb3e-f3e7-5f1a-9678-278368d971fe` across 16 registered variants. The selected
+result was negative and retained; production and capital authority remained prohibited.
+Exact operational receipts are recorded in
+[BT-009 Completion Evidence](../plans/evidence/BT-009.md).
+
 ## RI-012 and RI-013 implementation addendum
 
 Incremental founder-inbox reconciliation, checkpoint/resume and finalize-only behavior
