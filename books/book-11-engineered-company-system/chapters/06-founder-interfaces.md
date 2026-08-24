@@ -141,6 +141,17 @@ cannot rewrite canonical turns and receive one instruction to submit a new corre
 Telegram does not provide a dependable ordinary-message deletion event, so chat
 deletion never deletes institutional history.
 
+Slash commands govern thread placement rather than limiting what the founder may ask.
+Engineering, infrastructure, research, knowledge and previously unseen job descriptions
+are accepted as plain English and passed to the specification compiler. Replies continue
+their bound thread, and a bounded recent Telegram session supports natural follow-up
+messages without repeated commands. If a bare message arrives after that session while
+an older thread remains selected, the gateway holds the message as a private routing
+draft and asks the founder to use `/continue`, `/new [thread name]` or `/cancel`. The
+original message is then routed without being typed again. `/threads`, `/switch`,
+`/finish`, `/stop`, `/resume` and `/context` remain deterministic controls. This prevents
+silent cross-job contamination while keeping ordinary dialogue fluid.
+
 Long outbound text is split without content loss and review controls appear only on the
 last chunk. Clarification renders exact unresolved field names and accepted formats.
 Proposal review selects its canonical thread, while approval refuses a mismatched
