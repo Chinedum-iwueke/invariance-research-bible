@@ -2,7 +2,7 @@
 # Implementation Status Register
 
 **Status:** Controlled implementation baseline
-**As of:** 2026-08-22
+**As of:** 2026-08-24
 **Claim vocabulary:** `current`, `partial`, `documented`, `tested`, `observed`, `target`, `extension`, `deferred`, `unknown`, `blocked`
 
 This register separates the completeness of the Bible from the maturity of the institution it specifies. A written chapter is not implementation evidence. A source file is not operational evidence. A passing unit test is not production qualification.
@@ -31,10 +31,10 @@ This register separates the completeness of the Bible from the maturity of the i
 | Research Intelligence Director | partial; tested; observed | Domain profiles, intelligence runs, role-gated routes, inbox ingestion, RI-006 surveillance, RI-007 corpus synchronization, live RI-008 graph/tools, calibrated retrieval SLOs, a qualified twelve-domain Research Bible portfolio, and production-qualified RI-010 lifecycle governance | Deeper curricula, production surveillance/recovery SLOs and autonomous discovery integration remain incomplete | OPS-002 and DISC-001 |
 | Bulletproof research-memory bridge | partial; tested; observed | Read-only bounded SQLite export and digest registration | Export is a projection; full trade memory remains outside canonical Hermes lineage | M1, M3 |
 | Daily research scheduling | partial; tested | Program/cycle service and tests | Questions currently rotate through a static approved mandate; `awaiting_brief` is not automatic experiment execution | M4 |
-| Bulletproof classic engine | current; tested | Existing classic engine plus BT-001 dependency/CI closure, BT-002 immutable dataset contract, BT-003 atomic bundles, BT-004 causal/accounting certification, BT-005 market-model cards, BT-006 prospective search accounting and BT-007 representation/fit-boundary certification | Funding cashflows, borrow, rebates, capacity-constrained fills, Python 3.12+ and publication contracts remain separate work | BT-001 through BT-007 complete |
+| Bulletproof classic engine | current; tested | Existing classic engine plus BT-001 dependency/CI closure, BT-002 immutable dataset contract, BT-003 atomic bundles, BT-004 causal/accounting certification, BT-005 market-model cards, BT-006 prospective search accounting, BT-007 representation certification and BT-008 governed publication | Funding cashflows, borrow, rebates, capacity-constrained fills and the composed BT-009 founder bridge remain separate work | BT-001 through BT-008 complete |
 | Bulletproof portfolio engine | partial; tested | Sleeve-based aggregation and focused tests | Not a unified same-clock matching engine; live routing is not certified | M3, M6 |
 | Bulletproof data lake | partial; observed | Read-only manifest profile in Book V Appendix D | Coverage gaps, incomplete point-in-time proofs, and catalog/security controls | M3 |
-| Bulletproof run bundles and truth validation | current; tested | Artifact schemas, deterministic serialization, truth tests, atomic content-addressed BT-003 finalization, canonical lineage, BT-005 market-model binding and BT-007 certified representation evidence | Live governed BT-009 publication replay remains outstanding | BT-003, BT-005 and BT-007 complete; BT-009 planned |
+| Bulletproof run bundles and truth validation | current; tested | Artifact schemas, deterministic serialization, truth tests, atomic content-addressed BT-003 finalization, canonical lineage, BT-005 market-model binding, BT-007 certified representation evidence and BT-008 canonical/dual-memory publication saga | A live registered BT-009 walking-skeleton replay remains outstanding | BT-003, BT-005, BT-007 and BT-008 complete; BT-009 planned |
 | Shadow, replay, demo, micro-live | partial | Execution surfaces and unit tests exist | No audited prospective sequence establishing environment promotion | M5-M7 |
 | Portfolio admission and capital allocation | target | Books VII-VIII | Must remain separate from research success | M6-M7 |
 | Production operations | partial; observed | VM2 deployment/runbook foundations | Company-wide backup, restore, telemetry, incident, and recovery evidence incomplete | M8 |

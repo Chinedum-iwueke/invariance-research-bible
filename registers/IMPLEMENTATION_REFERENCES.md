@@ -117,6 +117,17 @@ Production-scale retrieval optimization was deployed at control-plane merge `280
 
 Control-plane PRs 48-51 introduced twelve pinned Research Bible curricula, separate support/opposition evaluation queries, immutable aggregate portfolios and constant-time graph freshness epochs. Production portfolio `e9b393e0-4eee-4768-ada2-d3db2be5ffa0` version `1.0.1` qualified all twelve domains under digest `ec1393d67ea1259cec6288023f30ea4a9acf47547566ce73a7c74665a0224f49`. The initial `1.0.0` gap portfolio is retained. Exact scope, metrics, digests, test totals and limitations are recorded in [RI-009B Completion Evidence](../plans/evidence/RI-009B.md).
 
+## BT-008 implementation addendum
+
+Control-plane PR #90 (`0447493ce334768798aa43a630ff87f8d2961d40`) and Bulletproof
+PR #271 (`4b2b0a2d3af17264a9e88c38bec85afb22de2d1c`) implement the governed laboratory
+publication boundary. Hermes atomically binds registered trials and reviewed results
+to canonical run, result, review, decision and dossier evidence, then records current
+graph/retrieval and Bulletproof-memory consumer receipts through a replayable state
+machine. Bulletproof validates the BT-003 bundle before submission and records only an
+idempotent derived memory row. Exact tests, authority limits and rollback behavior are
+recorded in [BT-008 Completion Evidence](../plans/evidence/BT-008.md).
+
 ## RI-012 and RI-013 implementation addendum
 
 Incremental founder-inbox reconciliation, checkpoint/resume and finalize-only behavior

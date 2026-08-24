@@ -200,6 +200,22 @@ digest and `bundle://sha256/...` URI as an all-or-none reference. Bulletproof pu
 that record through the existing idempotent canonical-evidence endpoint; it does not
 create another registry or store authorization material in artifacts.
 
+BT-008 completes the next publication boundary. A finalized run now also carries its
+market-model, representation and prospective search-plan digests. Hermes joins that
+run to the existing registered trial, result, two independent reviews and institutional
+decision, then atomically writes canonical result, review, decision and replay-dossier
+objects plus an ordered publication event. It does not create another laboratory
+registry. Negative, null, invalid and inconclusive outcomes are published by the same
+path as positive outcomes.
+
+Derived consumers advance in an explicit order. Current graph and retrieval projection
+digests and epochs must be confirmed before Bulletproof writes the local
+`research_memory_publications` row. That row is an idempotent consumer projection, not
+institutional truth. A projection or memory outage records a retryable stage failure;
+repeating the original request resumes the same publication identity and cannot delete
+or replace its canonical evidence. The replay endpoint returns the canonical object
+identities, both consumer receipts and the exact event transcript.
+
 ### 5.5.1 Classic execution authority and fast-path deprecation
 
 The experimental backtest fast path is deprecated at Bulletproof merge
@@ -258,8 +274,9 @@ and registers canonical evidence plus an RI-007 synchronization receipt.
 - BT-001 closes the recorded collection/dependency/fixture drift for the locked Python
   3.11 matrix using deterministic shards and restored canonical contracts. The engine
   and strategy catalog remain the existing Bulletproof implementation.
-- Atomic run bundles and canonical run-record publication are complete under BT-003;
-  broader result/artifact RI publication remains BT-008 work.
+- Atomic run bundles, canonical result/review/decision/dossier publication and
+  dual-memory receipts are complete under BT-003 and BT-008. BT-009 still owns the
+  composed founder-intake-to-native-execution walking skeleton.
 - BT-002 point-in-time and correction proofs apply to selected snapshots; universal
   lake population remains DATA-001 through DATA-003 work.
 - The deprecated fast path cannot satisfy or bypass BT-004 through BT-009 acceptance;
