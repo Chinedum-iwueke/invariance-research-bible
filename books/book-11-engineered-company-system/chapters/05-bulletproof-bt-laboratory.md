@@ -137,6 +137,24 @@ authority.
 
 ## 5.6 Research memory and Hermes bridge
 
+The intended BT-009 founder path begins with an unrestricted plain-English scientific
+question, not a fixed hypothesis enum. A dedicated hypothesis-creation role uses
+read-only catalog and coverage interfaces over the locally available Binance and Bybit
+perpetual lakes, plus Research Intelligence context and prior negative results, to draft
+a causal, falsifiable hypothesis card. The founder approves that card before any code is
+generated. Approval then permits a bounded engineering worktree to apply Bulletproof's
+hypothesis/strategy-generation instructions and create or reuse the typed hypothesis
+YAML, native `strategy.py`, feature adapters, logging declarations, tests and docs.
+
+Independent schema, point-in-time, lookahead, timestamp, code-review and truth gates
+must pass before a second immutable execution approval. Native classic Bulletproof then
+runs the approved tier and finite grid, retains full decisions/state/trades/equity and
+negative results, finalizes a digest-bound run bundle, and publishes receipts into both
+Bulletproof memory and Hermes. Full lake availability is scientific read access, never
+permission to expose raw data or credentials to an LLM or bypass coverage and provenance
+checks. This composed path remains a BT-009 target until BT-004 through BT-008 and its
+own walking-skeleton evidence are complete.
+
 The SQLite research memory stores completed trades, state buckets, verdicts,
 recommendations and alpha candidates. Enriched derivative state includes funding, open
 interest, basis, premium, crowding and constraint-stress fields. Similar-state queries
