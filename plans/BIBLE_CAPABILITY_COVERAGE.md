@@ -248,7 +248,9 @@ provable increments. Each must be copied into the executable backlog before work
 | UI-004 | Approval center with digest diff, risk, expiry and safe deep links | One active notification per gate; stale approval cannot execute |
 | UI-005 | Deployment, service, SLO, backup, incident and recovery console | Read-only by default; mutations use typed approvals and brokered runbooks |
 | UI-006 | Accessible responsive desktop/Mac experience and operator usability | Critical workflows pass keyboard, accessibility and founder task testing |
+| UI-007 | Mission Control conversational work and task workspace | Multi-turn specification, approval, execution and evidence remain one cross-channel thread |
 | CHAN-001 | Restricted Telegram intake, approval and status channel | Plain English becomes proposals; secrets/sudo never enter chat |
+| CHAN-002 | Threaded Telegram conversation client | Replies refine the active governed thread; explicit thread controls and restart replay pass |
 
 ### J. Platform, security and production operations
 
@@ -258,6 +260,7 @@ provable increments. Each must be copied into the executable backlog before work
 | OPS-002 | Four-domain plain-English intake pilots | Engineering, infrastructure, research and knowledge transcripts pass |
 | OPS-004 | Fleet observability and founder alerting | VM1/VM2 resource and outage incidents are sustained-signal, deduplicated, independently observable and replayable |
 | OPS-005 | Automated control-plane backups and freshness enforcement | Persistent VM2 scheduling produces digest-bound verified generations, stale/corrupt backups fail closed, and a disposable restore proves measured recovery |
+| OPS-006 | Stateful conversational founder intake and specification compiler | Natural follow-ups, schema guidance and governed defaults compile one revisioned approval-ready job |
 | PLAT-001 | Service catalog, ownership, API/event compatibility and dependency inventory | Every runtime has owner, SLO, data class and recovery plan |
 | PLAT-002 | Workload identity, RBAC/ABAC, secret issuance/rotation and break-glass | Least privilege, revocation, audit and rotation drills pass |
 | PLAT-003 | Artifact/package supply chain, signing, SBOM and promotion | Only verified rehearsed artifacts can deploy |
@@ -293,7 +296,7 @@ provable increments. Each must be copied into the executable backlog before work
 | Book I Ch. 13-16 and appendices | RI-010, CAD-002, EVOLVE-001/002, BASE-001/002/003 |
 | Book II Ch. 1-5 and Appendix A | GOV-001/002/004, AGT-001/006, PLAT-002 |
 | Book II Ch. 6-10 and Appendix B | DISC-001/008/009, BT-006, GOV-002/003, RISK-004 |
-| Book II Ch. 11-17 | AGT-002..008, RI-011, WS-001/002, CAD-001/002 |
+| Book II Ch. 11-17 | AGT-002..008, RI-011, OPS-006, CHAN-002, UI-007, WS-001/002, CAD-001/002 |
 | Book III Ch. 1-5 and Appendix A | RI-001/004/007/010, BASE-002 |
 | Book III Ch. 6-8 | RI-002/007/009 |
 | Book III Ch. 9-11 and Appendix C | RI-003/004/011 |
@@ -325,7 +328,7 @@ provable increments. Each must be copied into the executable backlog before work
 
 1. **Institutional brain:** RI-007..011 plus UI-003. It ends with the real corpus,
    Bulletproof projection, graph and domain evaluation, not fixture-only success.
-2. **Reliable digital workforce:** OPS-001/002, GOV-001..004 and AGT-001..008.
+2. **Reliable digital workforce:** OPS-001/002/006, CHAN-001/002, UI-007, GOV-001..004 and AGT-001..008.
    It ends with unattended bounded work, independent review and no approval races.
 3. **Research factory:** DATA-001..003, BT-001..008, DISC-001..009 and WS-001.
    It ends with a complete no-capital loop and honest search accounting.
@@ -333,7 +336,7 @@ provable increments. Each must be copied into the executable backlog before work
    It ends with reproducible prospective evidence and shadow-only learned policies.
 5. **Portfolio and execution:** PORT-001..004, RISK-001..005 and EXEC-001..010.
    It ends with certified demo behavior and deterministic risk dominance.
-6. **Resilient company:** UI-001..006, PLAT-001..009, SEC-001/002 and CAD-001/002.
+6. **Resilient company:** UI-001..007, PLAT-001..009, SEC-001/002 and CAD-001/002.
    It ends with observable intended-machine operation and tested recovery.
 7. **Controlled capital:** DEMO-001 then separately approved LIVE-001/002. Capital
    remains unavailable until every prerequisite dossier is current.
