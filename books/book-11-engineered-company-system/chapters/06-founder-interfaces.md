@@ -126,6 +126,27 @@ expiring handoffs bound to the control-plane proposal/approval identity.
 Telegram is an intent and approval channel, not a privileged terminal. Root operations
 still require typed, approved broker actions; a password must never be sent in chat.
 
+### 6.3.1 CHAN-002 durable threaded transport
+
+CHAN-002 makes Telegram restart-safe without making it authoritative. The protected
+SQLite store retains a monotonic update offset, selected thread, message-to-conversation
+bindings, notification state and digest-only handoffs. Updates are sorted by numeric ID
+and the offset advances only after successful handling. A failed update is retried;
+duplicates at or below the committed offset are ignored.
+
+Reply metadata binds a founder message to the conversation associated with the replied
+founder turn or Hermes clarification, even when another job is selected. Unknown and
+closed reply targets fail closed with explicit switch/resume guidance. Edited messages
+cannot rewrite canonical turns and receive one instruction to submit a new correction.
+Telegram does not provide a dependable ordinary-message deletion event, so chat
+deletion never deletes institutional history.
+
+Long outbound text is split without content loss and review controls appear only on the
+last chunk. Clarification renders exact unresolved field names and accepted formats.
+Proposal review selects its canonical thread, while approval refuses a mismatched
+thread and rechecks digest/state. These conveniences do not alter the founder-channel
+credential scope or any downstream approval, role, scientific or capital boundary.
+
 ## 6.4 Plain-English request path
 
 The founder planner converts natural language into a strict proposal containing
