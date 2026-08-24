@@ -13,6 +13,7 @@ Its control-plane client uses the protected orchestrator token. The application 
 - research programs/cycles, domains, intelligence runs and memory exports;
 - dataset manifests/builds, dossiers and surveillance records;
 - founder intake and proposal/approval decisions;
+- OPS-006 canonical Chat & Work threads with cross-channel transcript and live specification;
 - document upload and folder-based research inbox refresh;
 - Bulletproof memory-sync proposal creation;
 - UI-003A citation-grounded Research Copilot;
@@ -132,3 +133,35 @@ interpretation, assumptions, clarification questions, target role/reason, constr
 task contract, expected outputs, acceptance criteria, risk, machine and capabilities.
 The founder reviews that structure before materialization. Unsupported or ambiguous
 requests stay proposals; the planner cannot invent role permissions.
+
+### 6.4.1 OPS-006 conversation and specification compiler
+
+The source-complete OPS-006 path replaces isolated intake messages with canonical
+`FounderConversation`, `FounderConversationMessage` and
+`FounderConversationEvent` records. Tasks and proposals carry conversation identity
+and revision. Every founder turn produces a bounded planner task containing the
+ordered transcript, deterministic administrative identifier suggestions and the
+domain specification guide. A newer turn cancels queued older planning work; the API
+rejects a proposal or materialization whose revision or specification digest is no
+longer current.
+
+Telegram and Mission Control share the stable `founder:primary` identity. Telegram
+persists the selected thread locally and exposes deterministic new, list, switch,
+context, finish, stop and resume controls. Mission Control's Chat & Work view reads the
+same canonical transcript, displays unresolved fields and governed defaults and writes
+follow-up turns through the existing founder-intent mutation boundary.
+
+The planner may resolve only documented non-safety-critical defaults. Each selected
+default records field, value, basis, policy version, confidence and alternatives. It
+cannot describe a choice as best without evidence, ask the founder to invent internal
+program/hypothesis/task identifiers, or silently default scientific meaning,
+unavailable data, permissions, credentials, live trading or production promotion.
+Clarification is valid only when every unresolved field has an exact accepted format
+and a targeted question. Conversation fluency still creates no execution authority:
+proposal materialization, task approval, role attestation, worker permissions and
+downstream scientific truth gates remain independent controls.
+
+Migration `c2f8a6d41e90`, refreshed planner package `1.1.0`, VM1 Telegram restart and
+Mac Mission Control reinstall are the remaining production activation gates. The
+source validation replays the August 23 five-message exchange as one research thread
+at revision five rather than five unrelated tasks.

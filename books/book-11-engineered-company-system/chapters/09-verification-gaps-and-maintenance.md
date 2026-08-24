@@ -81,9 +81,10 @@ must never be stored in this repository.
 
 ## 9.5 Immediate next gates
 
-1. Implement `OPS-006`, `CHAN-002` and `UI-007` from the retained 2026-08-23 founder
-   transcript so Telegram and Mission Control provide stateful, schema-aware,
-   cross-channel conversation with governed defaults and explicit thread control.
+1. Deploy source-complete `OPS-006`, `CHAN-002` and the initial `UI-007` surface:
+   migrate VM2, refresh planner attestation, restart Telegram, reinstall Mission
+   Control and retain a live cross-channel transcript. Then complete UI-007's execution
+   timeline, evidence inspector and responsive production acceptance.
 2. Implement `BT-004` using the existing Bulletproof engine and tests, adding only the
    causal market-model contracts and evidence still missing from the Bible backlog.
 3. Continue `BT-005` through `BT-008` in dependency order so `BT-009` can compose
