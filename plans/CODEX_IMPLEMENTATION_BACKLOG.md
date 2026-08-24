@@ -25,7 +25,7 @@ The recently completed tranche is now reconciled across source, evidence and Boo
   Semantics-neutral data IO and post-run batching may remain; no shortcut may alter
   causal visibility, orders, stops, fills, risk, accounting or truth artifacts.
 
-The next laboratory package is `BT-007`. `BT-009` and `WS-001` remain downstream of
+The next laboratory package is `BT-008`. `BT-009` and `WS-001` remain downstream of
 the declared BT contracts and must compose them rather than introduce duplicate
 engines, registries or artifact stores.
 
@@ -588,10 +588,10 @@ package is not complete until its own tests, evidence and rollback boundary pass
 
 ### BT-007 — Representation, label, feature and fit-boundary contracts
 
-- **Status/scope/reuse/gap:** Planned. Reuse Bulletproof research panels, state features, strategy schemas and feature implementations. Add a first-class registry for representations, labels, features, availability rules, fit state and train/validation/test boundaries.
+- **Status/scope/reuse/gap (2026-08-24):** Completed in Bulletproof PR #270, merged as `476c50147eb6032425087f87049743aef9dd3977`. Existing immutable dataset snapshots, canonical research panels, state-feature builders, hypothesis schemas and classic strategy implementations remain authoritative. BT-007 adds a digest-bound representation contract, causal frame auditor, fresh-process certification CLI, BT-006 search-plan binding and mandatory BT-003 run-bundle evidence. Retained evidence is [BT-007 completion evidence](evidence/BT-007.md) and Bulletproof `docs/bt-007-validation.md`.
 - **Contracts/dependencies:** Requires DATA-001/002 and BT-004; ML-002/003 and BT-009 consume versioned feature/label manifests. Each field declares source, transformation, observation/availability clock, warm-up, missingness, fit window, embargo and artifact digest.
 - **Tests/acceptance:** Include future joins, revised data, incomplete higher-timeframe bars, overlap, purge/embargo, universe leakage, global normalization, missing values, fit-on-evaluation and deterministic transform fixtures.
-- **Evidence/rollback/done:** Retain feature/label manifests, leakage reports and boundary replay. Rollback pins an earlier transform while marking descendants stale. Done when a fresh client reconstructs every model/strategy input using only information available at its decision time.
+- **Evidence/rollback/done:** Representation manifests bind dataset/code, decision and universe clocks, source fields, transformation/version/implementation digest, observation and availability clocks, warm-up, missingness, completeness, fit policy/state, label horizon and split/purge/embargo boundaries. Leakage reports reject future/revised inputs, premature labels, incomplete bars, warm-up output, undeclared missingness, duplicate identities, universe leakage, overlap and evaluation fitting. Search plans bind the representation digest; atomic bundles require the matching contract and certified report. Rollback pins an earlier transform while marking descendants stale. Done when a fresh client reconstructs and certifies every declared model/strategy input using only information available at its decision time.
 
 ### BT-008 — Laboratory API and Research Intelligence publication
 

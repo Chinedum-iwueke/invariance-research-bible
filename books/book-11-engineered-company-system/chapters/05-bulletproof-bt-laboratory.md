@@ -139,6 +139,34 @@ ledger is Bulletproof's execution projection. The pinned Python 3.11 suite repor
 1,245 passes and 27 explicit skips. BT-007 owns feature and fit-boundary lineage, and
 BT-008 owns canonical dual-memory publication.
 
+### 5.4.4 BT-007 representation and fit-boundary certification
+
+BT-007 preserves the immutable dataset snapshot, canonical research panel, classic
+state-feature builders, hypothesis schemas and strategy implementations as the only
+calculation authorities. A representation contract now binds the dataset and code,
+decision and entity clocks, point-in-time universe membership and every representation,
+feature and label's sources, transformation identity, implementation digest,
+observation/availability clocks, warm-up, missingness, completeness, fitted state and
+label horizon. It also fixes the train, validation, test, fit, purge and embargo
+boundaries before evaluation.
+
+The causal auditor replays a materialized frame and rejects future observations or
+joins, revised information unavailable at decision time, premature labels, incomplete
+higher-timeframe values, output during warm-up, undeclared missing values, duplicate
+decision identities, point-in-time universe leakage, expired membership, rows outside
+the registered evaluation range, overlapping splits, insufficient purge/embargo and
+fit state learned outside training. Its certified report is deterministic and
+digest-bound. A standalone CLI proves that a fresh process can rebuild the manifest
+and audit from JSON plus Parquet rather than relying on hidden in-memory state.
+
+BT-006 search plans now bind the representation digest. BT-003 finalization requires
+both `representation_contract.json` and `representation_leakage_report.json`, verifies
+their digests and refuses an uncertified report. Rollback stops new certification and
+pins a previous transform while immutable failed audits remain available and dependent
+descendants become stale. BT-008 still owns canonical Research Intelligence and
+Bulletproof memory publication. The pinned Python 3.11 suite passes 1,258 tests with
+27 explicit skips.
+
 ## 5.5 Experimentation and artifacts
 
 Experiment support includes configuration layering, hypothesis contracts, grid
