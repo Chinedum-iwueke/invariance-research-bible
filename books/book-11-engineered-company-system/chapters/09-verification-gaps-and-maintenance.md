@@ -37,6 +37,16 @@ Every task heading in `plans/CODEX_IMPLEMENTATION_BACKLOG.md` must acquire an
 corpus evidence is part of that condition, merged code alone is `implemented`, not
 `completed`.
 
+The capability map and executable backlog are now structurally synchronized. All 110
+canonical capability IDs in `plans/BIBLE_CAPABILITY_COVERAGE.md` have dedicated backlog
+headings. The 80 packages that previously appeared only in compact coverage tables now
+have explicit scope, reuse, missing-gap, contract, dependency, test, evidence, rollback
+and done boundaries; this includes the full `BT-004` through `BT-008` laboratory chain.
+Ledger validation fails if a future capability is added without an executable backlog
+heading. This establishes complete planning coverage only: each new packet remains
+`planned` until its individual implementation and operating evidence satisfy its done
+condition.
+
 ## 9.3 Book XI update rule
 
 Every merged feature that changes architecture, data, agents, permissions, workflows,
@@ -71,20 +81,24 @@ must never be stored in this repository.
 
 ## 9.5 Immediate next gates
 
-1. Implement `BT-004` using the existing Bulletproof engine and tests, adding only the
+1. Deploy source-complete `OPS-006`, `CHAN-002` and the initial `UI-007` surface:
+   migrate VM2, refresh planner attestation, restart Telegram, reinstall Mission
+   Control and retain a live cross-channel transcript. Then complete UI-007's execution
+   timeline, evidence inspector and responsive production acceptance.
+2. Implement `BT-004` using the existing Bulletproof engine and tests, adding only the
    causal market-model contracts and evidence still missing from the Bible backlog.
-2. Continue `BT-005` through `BT-008` in dependency order so `BT-009` can compose
+3. Continue `BT-005` through `BT-008` in dependency order so `BT-009` can compose
    qualified engine, orchestration, feature and publication contracts without
    duplicating existing Bulletproof capability.
-3. Execute `BT-009` and `WS-001` to prove a founder-approved hypothesis can traverse
+4. Execute `BT-009` and `WS-001` to prove a founder-approved hypothesis can traverse
    specification, prospective registration, native execution, truth gates, atomic
    bundling, Hermes publication and independent review without capital authority.
-4. Provision the deferred external watchdog and rehearse correlated VM1/VM2 outage
+5. Provision the deferred external watchdog and rehearse correlated VM1/VM2 outage
    detection before upgrading OPS-004 from partial to production-qualified.
-5. Add encrypted off-host control-plane backup replication under PLAT-007; OPS-005's
+6. Add encrypted off-host control-plane backup replication under PLAT-007; OPS-005's
    local verified lifecycle remains active but is not a substitute for disaster-domain
    separation.
-6. Continue the company backlog while maintaining Book XI at every merge, deployment
+7. Continue the company backlog while maintaining Book XI at every merge, deployment
    and production-evidence gate.
 
 ## 9.6 Reconciled merge boundary

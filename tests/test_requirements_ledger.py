@@ -72,6 +72,12 @@ class RequirementLedgerTests(unittest.TestCase):
         self.assertEqual(0, self.report["orphan_work_package_count"])
         self.assertEqual(0, self.report["unreviewed_count"])
 
+    def test_every_capability_has_an_executable_backlog_heading(self) -> None:
+        self.assertEqual(
+            set(),
+            MODULE.capability_packages(ROOT) - MODULE.backlog_package_headings(ROOT),
+        )
+
     def test_adversarial_mutation_fixtures_fail_closed(self) -> None:
         for fixture in self.mutations:
             with self.subTest(fixture=fixture["name"]):
