@@ -31,6 +31,16 @@ operational replay on 2026-08-24; `WS-001` remains downstream of
 the completed BT-001 through BT-008 contracts and must compose them rather than introduce duplicate
 engines, registries or artifact stores.
 
+Bulletproof currently contains Bybit and Binance REST adapters, public/private
+stream clients, reconciliation, durable execution artifacts, a simulated shadow
+mode, demo configurations and bounded live-canary controls. This is not an
+operational claim that adding API keys alone enables safe trading. Bybit demo is
+the nearest qualified path; both venues still require current connector evidence,
+least-privilege credentials, clock/instrument checks, continuous services,
+reconciliation and kill drills. Binance private-stream and continuously running
+compiled-strategy parity remain explicit gates. `SHADOW-001`, `EXEC-001..011`,
+`DEMO-001` and `LIVE-001/002` own that promotion path.
+
 This backlog is the execution queue, not the sole coverage authority. Every task must
 also appear in the [Bible capability coverage plan](BIBLE_CAPABILITY_COVERAGE.md),
 which maps all ten volumes and appendices to build packages, dependencies, operating
@@ -439,6 +449,7 @@ PLAT-007 rather than OPS-005.
 
 ### WS-001 — No-capital walking-skeleton demonstration
 
+- **Status (2026-08-24):** Source-complete and locally validated in the control-plane WS-001 branch. It composes the production-observed BT-009 valid-negative publication with strict fresh-client receipt/event replay, a separately classified invalid-causality fixture and an injected partial-publication compensation proof. The post-merge operator command remains the deployment confirmation; no capital or order authority is introduced.
 - **Objective/requirement/citations:** Execute the complete [walking skeleton](WALKING_SKELETON.md).
 - **Repository/files:** Control plane, RI, Bulletproof, worker role packages, Mission Control.
 - **Prerequisites/scope:** RI-001 through RI-005, OPS-001, BT-002/003/009. **Non-goals:** shadow/live mutation.
@@ -888,6 +899,13 @@ package is not complete until its own tests, evidence and rollback boundary pass
 
 - **Status/scope/reuse/gap:** Planned; reuse EXEC-005 telemetry and SHADOW-002 lifecycle, adding venue/strategy degradation incidents and bounded demotion proposals.
 - **Contracts/dependencies:** EXEC-005/008 and CAD-001; alerts cannot self-modify execution or restore eligibility.
+
+### EXEC-011 — Canonical venue telemetry, trade replay and Mission Control observability
+
+- **Status/scope/reuse/gap:** Planned. Reuse Bulletproof's Binance/Bybit REST and private-stream adapters, SQLite execution state, JSONL order/fill/incident artifacts, reconciliation engine and session summaries. Add the missing governed bridge that continuously captures demo/live venue events and converts them into the same canonical decision, intent, order, fill, position, cash, fee, funding, margin and trade-episode semantics used by the classic backtest engine. Do not claim that an API-key environment file alone constitutes readiness.
+- **Contracts/dependencies:** EXEC-001..009, SHADOW-001, BT-003/005/008, PLAT-005/007, UI-001 and UI-007. Every event binds venue/environment/account pseudonym, instrument identity, exchange/source/receive clocks, sequence or cursor, raw protected reference, normalization version and correction/reconciliation lineage. Secrets remain root-owned and never enter events, logs, prompts, artifacts or Mission Control.
+- **Steps/interfaces:** Add versioned venue capability matrices and credential templates; doctor/certification gates; durable per-venue demo/live collectors; append-only raw event journal; deterministic canonical projections; periodic REST-to-stream reconciliation; trade-episode compiler compatible with backtest reporting; immutable export/replay bundles; Hermes publication receipts; and Mission Control execution views for shadow/demo/live environment, health, lag, positions, orders, fills, fees/funding, PnL, incidents, reconciliation and replay provenance. Shadow runs on VM1 against public/read-only market feeds until an explicitly approved deployment profile moves it; demo/live collectors and order services run on hardened VM2.
+- **Tests/evidence/rollback/done:** Test duplicate/out-of-order/missing events, reconnect cursor loss, timestamp drift, partial fills, cancel races, funding/fee corrections, contract changes, process restart, API outage, private-stream staleness, REST disagreement, redaction, backtest-versus-venue episode replay and UI freshness. Retain certification and replay dossiers for Binance demo, Bybit demo, then separate micro-live canaries. Rollback revokes the venue profile, freezes submissions, preserves the journal and rebuilds projections. Done only when a fresh client can reproduce balances, positions and completed trade episodes to declared tolerances and Mission Control visibly distinguishes simulated shadow, venue demo and capital-bearing live state. **Reviewer:** Execution, risk, security, data and founder authorities.
 - **Tests/evidence/rollback/done:** Test noisy metrics, outage, recovery and alert dedupe. Retain incident/review chain. Rollback keeps conservative execution settings. Done when degradation triggers accountable review before continued use.
 
 ### EXEC-010 — Asset-class expansion qualification

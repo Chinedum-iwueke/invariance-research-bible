@@ -237,6 +237,7 @@ provable increments. Each must be copied into the executable backlog before work
 | EXEC-008 | Venue adapter certification and demo parity dossier | No adapter reaches micro-live without environment-specific certification |
 | EXEC-009 | Venue/strategy degradation and execution feedback loop | Alerts cause bounded demotion/review, not self-modifying execution |
 | EXEC-010 | Asset-class expansion qualification | Each new market gets a separate mechanics/data/adapter/risk dossier |
+| EXEC-011 | Canonical Binance/Bybit telemetry, trade replay and Mission Control execution observability | Shadow, demo and live venue state is environment-labelled, reconciled and reproducible to declared backtest-compatible tolerances without exposing credentials |
 
 ### I. Product, Mission Control and founder operations
 
@@ -334,7 +335,7 @@ provable increments. Each must be copied into the executable backlog before work
    It ends with a complete no-capital loop and honest search accounting.
 4. **Prospective intelligence:** SHADOW-001/002, ML-001..006 and RL-001..003.
    It ends with reproducible prospective evidence and shadow-only learned policies.
-5. **Portfolio and execution:** PORT-001..004, RISK-001..005 and EXEC-001..010.
+5. **Portfolio and execution:** PORT-001..004, RISK-001..005 and EXEC-001..011.
    It ends with certified demo behavior and deterministic risk dominance.
 6. **Resilient company:** UI-001..007, PLAT-001..009, SEC-001/002 and CAD-001/002.
    It ends with observable intended-machine operation and tested recovery.
