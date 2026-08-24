@@ -6,7 +6,7 @@
 
 All tasks inherit these constraints: preserve unrelated changes; never commit data/secrets; use migrations, compatibility readers, and typed schemas; do not grant an agent promotion or capital authority; retain negative/failed evidence; run repository-native formatting/tests plus the named acceptance commands; publish a redacted evidence report; and obtain the named reviewer before merge.
 
-## Current execution snapshot — 2026-08-22
+## Current execution snapshot — 2026-08-24
 
 The recently completed tranche is now reconciled across source, evidence and Book XI:
 
@@ -15,7 +15,8 @@ The recently completed tranche is now reconciled across source, evidence and Boo
   explicitly deferred until an independent always-on host is provisioned;
 - `OPS-005` is deployed and production-observed on VM2 with two verified generations,
   an isolated restore drill and active persistent timers;
-- `BT-001` through `BT-005` are merged to the canonical Bulletproof branch;
+- `BT-001` through `BT-008` are implemented and validated across Bulletproof and
+  Hermes; BT-008 adds the canonical publication saga and dual-memory receipt boundary.
   BT-003's compatible Hermes producer extension is also merged. These BT packages are
   source-complete and tested, but no production research run is inferred until the
   governed bridge and walking-skeleton packages exercise them end to end.
@@ -25,8 +26,8 @@ The recently completed tranche is now reconciled across source, evidence and Boo
   Semantics-neutral data IO and post-run batching may remain; no shortcut may alter
   causal visibility, orders, stops, fills, risk, accounting or truth artifacts.
 
-The next laboratory package is `BT-008`. `BT-009` and `WS-001` remain downstream of
-the declared BT contracts and must compose them rather than introduce duplicate
+The next laboratory package is `BT-009`. `WS-001` remains downstream of
+the completed BT-001 through BT-008 contracts and must compose them rather than introduce duplicate
 engines, registries or artifact stores.
 
 This backlog is the execution queue, not the sole coverage authority. Every task must
@@ -595,10 +596,10 @@ package is not complete until its own tests, evidence and rollback boundary pass
 
 ### BT-008 — Laboratory API and Research Intelligence publication
 
-- **Status/scope/reuse/gap:** Planned. Reuse BT-003 atomic bundles, Hermes evidence objects, graph/retrieval projections and Bulletproof research memory. Add the idempotent certified bridge from registered trial through canonical result, negative-result and dossier publication.
+- **Status/scope/reuse/gap (2026-08-24):** Completed in control-plane PR #90, merged as `0447493ce334768798aa43a630ff87f8d2961d40`, and Bulletproof PR #271, merged as `4b2b0a2d3af17264a9e88c38bec85afb22de2d1c`. BT-008 reuses the existing trial registry, BT-003 bundles, canonical evidence, RI graph/retrieval projections and Bulletproof SQLite research memory. It adds one idempotent publication saga rather than a parallel experiment or artifact registry. Retained evidence is [BT-008 completion evidence](evidence/BT-008.md), control-plane `docs/bt-008-validation.md` and Bulletproof `docs/hermes_laboratory_publication.md`.
 - **Contracts/dependencies:** Requires RI-001/004/008/010 and BT-003/006/007. The API validates trial, repository, dataset, model and bundle digests; records publication/compensation state; writes canonical evidence before rebuilding derived projections; and returns dual-memory receipts.
 - **Tests/acceptance:** Test duplicate and concurrent publish, corrupt/incomplete bundle, unknown trial, digest mismatch, negative/invalid outcomes, partial Hermes or Bulletproof failure, retry, supersession, deletion hold and projection rebuild failure. Citation replay must reach source data, code, configuration and reviews.
-- **Evidence/rollback/done:** Retain producer/consumer receipts, canonical object IDs, graph/retrieval epochs, compensation transcript and exact replay dossier. Rollback disables intake and restores projections from canonical state without deleting bundles. Done when a registered trial replays end to end with no orphan or split-brain publication.
+- **Evidence/rollback/done:** The API atomically retains canonical result, two independent reviews, decision, replay dossier and ordered event transcript, then accepts only current graph/retrieval receipts before a digest-bound Bulletproof memory receipt. Negative, null, invalid and inconclusive outcomes use the same path. Projection or memory failures remain resumable without deleting canonical evidence. Rollback disables new intake and rebuilds derived state from canonical records. The Hermes suite passes 301 tests; Bulletproof's deterministic CI matrix passes 1,262 tests with 27 explicit skips at the completion pins.
 
 ### GOV-001 — Decision rights, delegation and exception policy
 
