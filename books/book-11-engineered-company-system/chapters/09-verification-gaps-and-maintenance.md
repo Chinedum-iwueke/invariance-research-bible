@@ -81,11 +81,11 @@ must never be stored in this repository.
 
 ## 9.5 Immediate next gates
 
-1. Deploy source-complete `OPS-006` and `CHAN-002`, plus the initial `UI-007` surface:
-   migrate VM2, refresh planner attestation, reinstall/restart Telegram, reinstall
-   Mission Control and retain a live two-thread restart/cross-channel transcript. Then
-   complete UI-007's execution timeline, evidence inspector and responsive production
-   acceptance.
+1. `CHAN-002` passed its live VM2 two-thread restart replay on 2026-08-24: reciprocal
+   replies selected the correct canonical threads, revisions advanced exactly once per
+   accepted reply and the gateway remained active with zero restarts. Complete the
+   remaining OPS-006/UI-007 cross-channel replay, execution timeline, evidence inspector
+   and responsive production acceptance.
 2. Implement `BT-004` using the existing Bulletproof engine and tests, adding only the
    causal market-model contracts and evidence still missing from the Bible backlog.
 3. Continue `BT-005` through `BT-008` in dependency order so `BT-009` can compose
