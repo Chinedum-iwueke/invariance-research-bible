@@ -291,3 +291,45 @@ and registers canonical evidence plus an RI-007 synchronization receipt.
 - Shadow, demo and live-looking surfaces do not constitute venue-certified execution.
 - Portfolio admission, allocation and capital mutation remain separately governed and
   cannot be inferred from a successful backtest.
+
+### 5.8 Exchange execution readiness and telemetry boundary
+
+Bulletproof includes meaningful execution foundations for Binance and Bybit: signed
+REST adapters, public and private stream clients, instrument mapping, order and fill
+lifecycle models, reconciliation, SQLite checkpoints, JSONL execution artifacts,
+session summaries, kill controls, demo profiles, bounded live-canary profiles and a
+simulated shadow runtime. The public Binance and Bybit perpetual research lakes are
+separate from authenticated account execution telemetry.
+
+These components do **not** make live or demo operation a keys-only setup. A venue
+profile is usable only after least-privilege secret installation, environment and
+account verification, clock and instrument-filter checks, public/private stream
+readiness, restart recovery, REST-to-stream reconciliation, kill-switch rehearsal
+and a current certification dossier. Bybit demo is currently the nearest complete
+bounded path. Binance private-stream parity and continuous compiled-strategy market
+data execution remain release gates; live profiles are canaries, not general capital
+authority.
+
+Shadow execution belongs on VM1 initially. It consumes public/read-only venue feeds,
+records prospective decisions and simulated fills, and cannot submit orders. Demo and
+capital-bearing collectors/order services belong on hardened VM2 after certification.
+The planned `EXEC-011` bridge will preserve raw protected venue references while
+projecting normalized decision, intent, order, fill, position, cash, fee, funding,
+margin, incident and reconciliation events into immutable trade episodes compatible
+with classic-backtest reporting. Mission Control will expose environment-labelled
+shadow/demo/live health, lag, positions, orders, fills, costs, PnL, incidents and
+exact replay lineage. Until that package and its dependencies pass, venue state is
+inspectable through Bulletproof artifacts and CLI diagnostics, not a complete Mission
+Control execution console.
+
+### 5.9 No-capital company walking skeleton
+
+WS-001 composes the governed laboratory path instead of creating parallel research
+machinery. Its valid-negative leg replays the completed BT-009 publication from a
+fresh API client and requires one run object, one result, two distinct review objects,
+one attributable decision, one episode, contiguous publication events and current
+projection and Bulletproof-memory receipts. A separate forward-join fixture must be
+classified `invalid_attempt`, never a valid negative. An injected partial-publication
+failure must recover to `publication_completed` before the compensation proof passes.
+The verifier emits a digest-bound report and has no order, allocation or
+production-promotion authority.
