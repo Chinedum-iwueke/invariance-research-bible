@@ -15,7 +15,7 @@ The recently completed tranche is now reconciled across source, evidence and Boo
   explicitly deferred until an independent always-on host is provisioned;
 - `OPS-005` is deployed and production-observed on VM2 with two verified generations,
   an isolated restore drill and active persistent timers;
-- `BT-001`, `BT-002` and `BT-003` are merged to the canonical Bulletproof branch;
+- `BT-001` through `BT-005` are merged to the canonical Bulletproof branch;
   BT-003's compatible Hermes producer extension is also merged. These BT packages are
   source-complete and tested, but no production research run is inferred until the
   governed bridge and walking-skeleton packages exercise them end to end.
@@ -25,7 +25,7 @@ The recently completed tranche is now reconciled across source, evidence and Boo
   Semantics-neutral data IO and post-run batching may remain; no shortcut may alter
   causal visibility, orders, stops, fills, risk, accounting or truth artifacts.
 
-The next laboratory package is `BT-004`. `BT-009` and `WS-001` remain downstream of
+The next laboratory package is `BT-006`. `BT-009` and `WS-001` remain downstream of
 the declared BT contracts and must compose them rather than introduce duplicate
 engines, registries or artifact stores.
 
@@ -574,10 +574,10 @@ package is not complete until its own tests, evidence and rollback boundary pass
 
 ### BT-005 — Calibrated market, execution-cost and diagnostic models
 
-- **Status/scope/reuse/gap:** Planned. Reuse Bulletproof fill, fee, slippage, reconciliation, benchmark and diagnostic code. Add a versioned model registry covering fills, queue/latency where supported, fees, rebates, funding, borrow, impact and capacity, with provenance and stress ranges instead of implicit constants.
+- **Status/scope/reuse/gap (2026-08-24):** Completed and merged in Bulletproof PR #268 at commit `d633c22207b16a9dbc3b6b809b0c16808ed9ae08`. The classic fee, spread, slippage/impact, bar-delay, fill, reconciliation and diagnostic implementations remain authoritative. BT-005 adds immutable versioned model cards and bundles with explicit capability boundaries; it does not create a parallel execution-cost engine or invent empirical calibration. Rebates, funding cashflows, borrow and capacity-constrained fills are recorded as unsupported and fail closed. Retained evidence is [BT-005 completion evidence](evidence/BT-005.md) and Bulletproof `docs/bt-005-validation.md`.
 - **Contracts/dependencies:** Requires BT-004 and DATA-001/002. Every model declares applicability, calibration sample, timestamp semantics, parameters, uncertainty, fallback and incompatibilities; each run bundle binds model versions. EXEC-005 and ML-005 may extend calibration but cannot mutate past assumptions.
 - **Tests/acceptance:** Cover no-fill/partial-fill, gaps, spread crossings, fee tiers, funding timestamps, unavailable borrow, extreme impact, benchmark comparison and pessimistic stress. Compare modeled outcomes with retained observed fixtures and prove worse assumptions cannot improve net results through an accounting defect.
-- **Evidence/rollback/done:** Retain calibration datasets/digests, fit and holdout diagnostics, sensitivity surfaces and model cards. Rollback pins the prior model and marks dependent results superseded if necessary. Done when all net-performance claims replay with explicit, stressable market assumptions and declared uncertainty.
+- **Evidence/rollback/done:** Atomic finalization requires `market_model_bundle.json`, validates every card and bundle digest, and matches it to `market_model_bundle_digest` lineage. Empirical cards cannot omit their calibration digest; declared policy profiles cannot masquerade as observations. Pessimistic cost stress is monotone. Rollback pins the prior model and marks dependent results superseded if necessary. The pinned suite passes 1,237 tests with 27 explicit skips; completion does not claim that the currently unsupported funding, borrow, rebate or capacity mechanics have been implemented.
 
 ### BT-006 — Registered experiment grids, search accounting and budgets
 
