@@ -186,3 +186,34 @@ Migration `c2f8a6d41e90`, refreshed planner package `1.1.0`, VM1 Telegram restar
 Mac Mission Control reinstall are the remaining production activation gates. The
 source validation replays the August 23 five-message exchange as one research thread
 at revision five rather than five unrelated tasks.
+
+### 6.4.2 UI-007 integrated conversation workspace
+
+UI-007 makes the canonical founder conversation the navigation spine for its governed
+work without making the browser a workflow authority. A read-only control-plane
+workspace projection joins one conversation ID to immutable conversation events,
+conversation-bound planner proposals, materialized task details and task events,
+task approvals and registered artifacts. The join follows stored foreign identities;
+Mission Control does not infer task ownership from titles, timestamps or model prose.
+
+The Mac surface contains a bounded thread list, cross-channel transcript, current
+revision and specification, governed defaults, message composer, execution timeline
+and evidence rail. New, switch, finish, stop and resume are explicit controls. Terminal
+threads disable composition until resumed. Proposed work opens the existing protected
+proposal-review surface; approvals retain their independent digest-bound gate. Task
+inspection distinguishes lifecycle events from structured result/failure state, while
+artifact inspection exposes verification state, SHA-256, workflow version, source
+commit and registered location.
+
+Conversation turns and specifications remain intent. They cannot approve a proposal,
+lease a task, expand a role package, register evidence or alter scientific truth. The
+workspace endpoint is GET-only, demo mode disables mutation and all existing Mission
+Control mutations retain the founder-intent header. Responsive layouts preserve the
+same transcript, specification, timeline and evidence on narrow screens; long cards,
+digests and message provenance wrap without widening the viewport.
+
+Source acceptance passed 295 backend tests and 68 Mission Control tests plus Ruff,
+JavaScript syntax, diff and responsive browser checks. Production qualification still
+requires a Mac reinstall and one canonical thread that begins on Telegram, continues
+in Mission Control, reaches governed proposal review and exposes its eventual task
+evidence in the same workspace.
