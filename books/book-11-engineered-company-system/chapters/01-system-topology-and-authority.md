@@ -129,9 +129,12 @@ independence. Mission Control's approval surface displays the active policy vers
 digest, decision-right count and active delegation/exception counts.
 
 The merged source passed 333 backend and 71 Mission Control tests plus focused policy,
-OpenAPI, lint, JavaScript and CI checks. Production activation is not yet claimed:
-VM2 must apply migration `e6b1a4d82f90`, rebuild the API and run the idempotent
-`worker/scripts/gov001_bootstrap.py` in the same maintenance operation, because the
-approval surfaces intentionally fail closed while no active policy exists. A prior
-retired snapshot is the rollback unit, and reactivation itself requires an authorized
-digest-bound `policy-activation` decision under the current policy.
+OpenAPI, lint, JavaScript and CI checks. On 2026-08-25 VM2 applied migration
+`e6b1a4d82f90`, started the rebuilt healthy API and activated policy version `1.0.0`
+with digest `4c3d868fc93d6f33b8d1197cd7b89d303a622a14770c2243ff2f02cb417bfacf`.
+Mission Control was reinstalled and independently read that active policy. A live
+replay committed authorized decision `83d483cc-d6f6-44ee-b330-4a4bf2eff5ba` and denied
+decision `467f5f4a-6534-4c54-9ff1-ba0a6b00aa37`; the latter retained
+`action-not-authorized` rather than mutating state. A prior retired snapshot is the
+rollback unit, and reactivation itself requires an authorized digest-bound
+`policy-activation` decision under the current policy.
