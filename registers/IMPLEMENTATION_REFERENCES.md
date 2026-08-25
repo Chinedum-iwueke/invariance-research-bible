@@ -209,6 +209,19 @@ replay. The 229-test worker suite passes. Deterministic dossier digest
 `941a484ee954fe25a8c63bd256e7bd48699ca6cbba1c3486f5d7df8f081f7f71`
 records no production resource touched and no production-restore authority.
 
+## PLAT-001 service catalog addendum
+
+Control-plane commits `2d3927355d2cddd8a94c3adb76a5ae9adcfa4c55` and
+`74adcf0` add the immutable service-catalog snapshot, activation-history and
+reconciliation contracts. Catalog `1.0.0` records 12 services across VM1, VM2 and the
+founder Mac and binds ownership, recovery ownership, runtime placement, interfaces,
+dependencies, data classes, SLOs and runbooks. Its digest is
+`793b67cf1c447887b374df53efe87bfd58bc7281ba839e9cd63402576ff9ef96`.
+The deterministic report digest is
+`381e1aafd02e20820aaf3b53015f44679b7ba6bf300562db410f1eef5321698a`;
+318 non-health backend tests passed. This evidence proves source behavior, not VM2
+activation or perfect discovery of an unobserved runtime.
+
 ## RI-012 and RI-013 implementation addendum
 
 Incremental founder-inbox reconciliation, checkpoint/resume and finalize-only behavior
