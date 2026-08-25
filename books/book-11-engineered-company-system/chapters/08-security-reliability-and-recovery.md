@@ -170,3 +170,41 @@ The complete worker suite passes 229 tests. The deterministic rehearsal dossier 
 is `941a484ee954fe25a8c63bd256e7bd48699ca6cbba1c3486f5d7df8f081f7f71`.
 It records no production resources touched and grants no production-restore authority.
 Encrypted off-host retention remains PLAT-007.
+
+## 8.9 System threat model and adversarial assurance
+
+SEC-001 turns the security posture from scattered defensive tests into one maintained,
+machine-verifiable system model. Control-plane merge
+`b881defaf83f5cf03c2a5884ac0b9a2543aa2537` adds the strict
+`system-threat-model-v1.0.0` contract. It binds to the canonical PLAT-001 service
+catalog and refuses a passing report when any of the 12 catalog services has no threat
+coverage or when the review date has expired.
+
+The model describes six trust boundaries: founder channels to the API; the API to
+restricted agents; the deployment architect to the privileged infrastructure broker;
+untrusted scientific material to canonical evidence; research evidence to portfolio
+and capital authority; and runtime services to secret stores and external networks.
+Ten owned threats cover injection, credential disclosure, agent privilege escalation,
+approval replay, package tampering, broker-ticket replay, scientific poisoning,
+research self-promotion, incompatible service deployment and resource exhaustion.
+Every threat records its abuse case, affected services, controls, detection,
+containment, rollback and residual risk.
+
+The adversarial suite uses synthetic hostile fixtures rather than production secrets
+or capital. It verifies instruction injection is quarantined, a synthetic credential is
+redacted, an agent requesting the wrong machine and privileged operations is blocked,
+a tampered package digest is blocked and a research proposal retains no capital,
+live-order, self-approval or production-promotion authority. Negative tests prove that
+matching a tampered digest or enabling live-order authority makes the suite fail. CI
+runs the suite on every pull request and main-branch push and retains its report for 90
+days. Forty-two focused tests pass across SEC-001, role-package verification,
+single-use broker enforcement and the no-capital walking skeleton.
+
+The canonical model digest is
+`951e49ff0764001c94b6effda37013f45ea81314db342b60494e78387f4ba6b8`; the report
+digest is `db7e75b91110f3a64a27ef28c3b5330a3c7ba0c602bf4883bf84dc0fac816e7a`.
+These digests prove the declared model and deterministic outcomes, not universal
+security. Uniform workflow-egress allowlisting, complete signed provenance for
+third-party dependencies, a third-host dual-VM outage watchdog and containment after
+host-root compromise remain explicit residual risks. Those risks cannot be removed
+from the report merely to obtain a green result.

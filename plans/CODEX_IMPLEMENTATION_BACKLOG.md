@@ -620,9 +620,9 @@ package is not complete until its own tests, evidence and rollback boundary pass
 
 ### SEC-001 — System threat models and adversarial security suites
 
-- **Status/scope/reuse/gap:** Planned; reuse corpus scanners, sandboxing and approval boundaries, adding maintained threat models for services, agents, research and capital.
+- **Status/scope/reuse/gap:** Complete in source and CI at control-plane merge `b881defaf83f5cf03c2a5884ac0b9a2543aa2537`. The strict `system-threat-model-v1.0.0` model reuses corpus scanners, package attestation, broker tickets, approval boundaries, service reconciliation and no-capital contracts. It covers every PLAT-001 catalog service across service, agent, research and capital abuse cases. The retained assurance report binds model digest `951e49ff0764001c94b6effda37013f45ea81314db342b60494e78387f4ba6b8` and report digest `db7e75b91110f3a64a27ef28c3b5330a3c7ba0c602bf4883bf84dc0fac816e7a`. This is control evidence, not a penetration-test certificate.
 - **Contracts/dependencies:** BASE-002/003 and PLAT-001; every high-risk interface owns abuse cases, controls, detection and containment.
-- **Tests/evidence/rollback/done:** Exercise injection, exfiltration, privilege escalation, supply-chain and capital mutations. Retain redacted findings and closure. Rollback disables unsafe surface. Done when high-risk paths have current adversarial evidence.
+- **Tests/evidence/rollback/done:** Injection, exfiltration, privilege escalation, supply-chain tampering and capital-authority mutation fixtures fail closed; tampered fixtures make the suite fail; every threat declares owner, detection, containment, rollback and residual risk. Forty-two focused SEC-001, role-package, broker and no-capital tests pass; both GitHub baseline and security-assurance jobs pass and retain the digest-bound report for 90 days. Four residual risks remain explicit: uniform workflow-egress allowlisting, complete signed dependency provenance, independent dual-VM outage alerting and host-root compromise. Rollback disables the affected surface or deployment without deleting redacted evidence. Done is satisfied for the declared SEC-001 boundary; the named residual risks remain owned by later platform/security work.
 
 ### PLAT-005 — Unified observability, SLO and alert routing
 
