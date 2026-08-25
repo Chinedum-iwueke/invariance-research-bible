@@ -222,6 +222,18 @@ The deterministic report digest is
 318 non-health backend tests passed. This evidence proves source behavior, not VM2
 activation or perfect discovery of an unobserved runtime.
 
+## SEC-001 security assurance addendum
+
+Control-plane merge `b881defaf83f5cf03c2a5884ac0b9a2543aa2537` adds a strict,
+versioned threat model covering all 12 PLAT-001 services and deterministic adversarial
+fixtures for injection, exfiltration, privilege escalation, supply-chain tampering and
+capital-authority mutation. Model digest
+`951e49ff0764001c94b6effda37013f45ea81314db342b60494e78387f4ba6b8` and report
+digest `db7e75b91110f3a64a27ef28c3b5330a3c7ba0c602bf4883bf84dc0fac816e7a` bind the
+retained evidence. Forty-two focused tests and both required GitHub checks pass. The
+evidence does not claim external penetration testing or closure of the four recorded
+residual risks.
+
 ## RI-012 and RI-013 implementation addendum
 
 Incremental founder-inbox reconciliation, checkpoint/resume and finalize-only behavior
