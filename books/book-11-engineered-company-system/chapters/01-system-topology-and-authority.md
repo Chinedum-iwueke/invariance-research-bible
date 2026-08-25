@@ -209,3 +209,32 @@ evidence `admissible`, operations `candidate` and capital `no-authority`. Dossie
 `ed1208a8afd4aa0e69ef00923f35d946846af8165491a08aeed02f35774ae827`
 proves the complete replay boundary. These decisions govern lifecycle consequences
 only; they do not allocate capital, route orders or certify market performance.
+
+## 1.7 Portable governance audit evidence
+
+GOV-004, merged in control-plane PR #123 at
+`dbed5adfb598d2ea74c6617b9e424a0e5a17370e`, makes the institutional audit
+chain independently exportable. It collects canonical founder proposals, tasks,
+approval events, operational-control events, operation-ledger events, GOV-001 policy,
+delegation, exception and decision records, and GOV-002/003 lifecycle transitions and
+consequences. The export is a projection over those authorities, not a replacement for
+their PostgreSQL source histories.
+
+Schema `governance-audit-export-v1.0.0` gives every normalized event a stable sequence,
+source identity and time, actor, action, object identity and digest, policy identity and
+digest, evidence references, redacted payload and redaction receipts. Every record
+hashes its predecessor. The terminal digest binds the complete ordered chain, and an
+Ed25519 signature binds the unsigned bundle digest. Its public key and SHA-256 key
+identity travel with the bundle, so a fresh verifier needs neither a database nor a
+shared signing secret. Referential closure checks connect proposals, tasks, approvals,
+operations, authority decisions, policies, lifecycle events and reversal records.
+
+Migration `c1f4a7d92e60` retains each export as a new append-only record. The live
+2026-08-25 export contained 2,204 events and reconstructed six lifecycle projections.
+Bundle digest `0131f5db507c0f86f7b1399ad13069efc8ae0850929d91fb36da576b3d3fd6f9`
+verified against key identity
+`5f25132b5c88f6f76b3b453331526765f1418e1b8c9f481b654cd5bf8664852a`,
+matched the persisted copy and rejected an actor mutation. No matching sensitive field
+was present in the live corpus; unit tests separately prove path-bound digest receipts
+replace secret-bearing values. The export is compliance evidence only and grants no
+execution, deployment, capital or order authority.

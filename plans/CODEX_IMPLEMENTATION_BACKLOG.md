@@ -644,9 +644,9 @@ package is not complete until its own tests, evidence and rollback boundary pass
 
 ### GOV-004 — Immutable audit and policy evidence export
 
-- **Status/scope/reuse/gap:** Planned; reuse task events, approvals and immutable histories, closing cross-service policy-version and compliance-export gaps.
-- **Contracts/dependencies:** GOV-001/002; append-only actor/action/object/policy/evidence events with stable export schema and integrity chain.
-- **Tests/evidence/rollback/done:** Test tamper, missing event, clock disorder, redaction and fresh-client reconstruction. Retain signed exports. Rollback changes projectors only. Done when the complete decision/action chain reconstructs without privileged database interpretation.
+- **Status/scope/reuse/gap (2026-08-25):** Completed, merged, deployed and production-observed through control-plane PR #123 at `dbed5adfb598d2ea74c6617b9e424a0e5a17370e`. GOV-004 reuses founder proposals, tasks, approval events, operational controls, the operation ledger, GOV-001 policies/decisions and GOV-002/003 lifecycle histories rather than creating a competing authority log. Migration `c1f4a7d92e60` adds append-only retained export bundles; VM2 runs healthy API image `sha256:55cbe0aa1ff2922a60e620f5c6244547fd104ff498074c33169190ff5665da24`.
+- **Contracts/dependencies:** GOV-001/002/003; `governance-audit-export-v1.0.0` binds stable actor/action/object/policy/evidence fields, explicit redaction receipts, contiguous sequence, per-record predecessor hashes, terminal digest and an Ed25519 signature with embedded public key identity. Cross-stream references must close inside the bundle. Create/read/verify routes require orchestrator authentication, while the bundle itself verifies and reconstructs without database access.
+- **Tests/evidence/rollback/done:** 370 backend tests and all six GitHub checks passed, including tamper, missing event, reorder, forged signature, clock disorder, redaction and fresh-client reconstruction. The live VM2 export retained 2,204 events at digest `0131f5db507c0f86f7b1399ad13069efc8ae0850929d91fb36da576b3d3fd6f9`, verified key `5f25132b5c88f6f76b3b453331526765f1418e1b8c9f481b654cd5bf8664852a`, reconstructed six lifecycle projections, matched its persisted copy and rejected a modified actor. Rollback restores the prior reader/API and retains the additive table and signed bundles. The definition of done is met; this export grants no execution, deployment, capital or order authority.
 
 ### AGT-001 — Agent charter, capability and grant registry
 
