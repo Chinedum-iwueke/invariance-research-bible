@@ -177,3 +177,31 @@ command moved only operations to `candidate`. The replayed dossier digest is
 `c8d305c59298b2fb2ef00a502e704a27335a1070f3460c27b434aff1a9a6829c`.
 This kernel governs newly registered subjects; it does not silently backfill legacy
 status columns, promote an artifact, allocate capital or place an order.
+
+## 1.6 Consequence-specific governance
+
+GOV-003, merged through control-plane PRs #120 and #121 at
+`9c4a0b5fd6c6340fa29e542f12eb9801a09b2d35`, makes promotion, demotion,
+quarantine, retirement and reinstatement explicit institutional decisions. Migration
+`a8d3f1c52b90` stores the source lifecycle event, command identity, action, effective
+status, prior/resulting/rollback states, approvers, affected descendants, evidence
+epoch, expiry, reason and canonical digest. Bidirectional `reversed_by` and
+`reversal_of` links preserve exact rollback lineage. Migration `b9e4c2d63a10` adds
+`superseded` as a first-class effective status and reconciles already retained rows.
+
+The service accepts only declared action/state pairs. Evidence must be a current
+SHA-256 reference and cannot be older than seven days. Consequences expire within 30
+days. Promotion and reinstatement require an accountable actor plus distinct originator
+and evaluator participation under the active GOV-001 policy. Each write locks and
+version-checks one GOV-002 projection. Cross-dimension prerequisites remain checks, not
+side effects. A later consequence that replaces the currently effective consequence
+marks its predecessor `superseded` and links both records; explicit reversal or expiry
+restores the recorded rollback state through another authority-bound event.
+
+The 2026-08-25 production pilot retained six consequence records. It promoted and
+reversed operations, quarantined and reinstated evidence, then retired and reinstated
+operations. The final states were research `succeeded`, evidence `admissible`,
+operations `candidate` and capital `no-authority`. Dossier digest
+`404dcd1bea4a183a6a60d064db72d442d16aadbf56702fd956a06cd21fd675c3`
+proves the replay boundary. These decisions govern lifecycle consequences only; they
+do not allocate capital, route orders or certify market performance.
