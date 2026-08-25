@@ -362,6 +362,51 @@ It does not prove a continuously running public-feed shadow, exchange connectivi
 execution-model calibration against venue observations, Hermes publication or Mission
 Control session visibility. Those require separately retained operational evidence.
 
+### 5.8.2 ML-001 reproducible model and calibration registry
+
+ML-001 introduces an additive `bt.ml` boundary for predictive artifacts. It does not
+replace BT-007 feature and fit-boundary authority or create a second research registry.
+Every model bundle binds the scientific problem, immutable dataset snapshot, BT-007
+representation, temporal split and source revision by SHA-256. Training, calibration
+and protected evaluation windows are explicit timezone-aware intervals and must be
+strictly ordered and disjoint; their canonical contract must reproduce the registered
+split digest before fitting begins.
+
+The first certified estimator is intentionally modest: a deterministic logistic
+baseline implemented with NumPy, frozen training-set means and scales, fixed seed and
+optimizer settings, and environment provenance. A separate held-out partition fits a
+Platt calibrator. Evaluation retains raw and calibrated log loss and Brier score rather
+than calling an in-sample score calibrated. The artifact also records feature order,
+training support, coefficients, calibration parameters, uncertainty semantics,
+abstention threshold and distribution-shift policy.
+
+Model JSON is written atomically beneath its content digest. An SQLite registry stores
+immutable family versions and append-only registration and activation events. Exactly
+one model per family can be active. An independently attributed activation supersedes
+the prior active version without deleting it; rollback is another attributed
+activation of a retained digest. A deterministic, secret-free snapshot makes version
+and event history independently reviewable.
+
+Each inference receipt binds the model and input digests, observation timestamp,
+calibration method, probability, uncertainty, applicability, abstention decision and
+reason. Missing or extra features, naive timestamps, non-finite values, corrupt model
+bytes and lineage drift fail closed. Inputs outside the registered normalized support
+threshold abstain. Bundle and receipt JSON schemas are public repository contracts.
+
+The retained 2026-08-25 fixture reproduced model digest
+`5e3b8c80a494aaedb33dd61c8484fb59ed1f89254dec52724ebae82193e175a3`
+from source commit `8dbfc4eaf9c2243ed5e035df68a4ae1dff05413d`. Registry snapshot digest
+`1d738ee40118551ccfbeb3edabfea609b09a4319958fa55a3ee5772d78c3d605`
+records two versions, challenger activation and rollback. Report digest
+`7e3f250ffb54d5d6e194ad07cee4a065b2bb614ac8ce52f708b99f398bb5cd69`
+retains held-out calibration, supported inference and shifted-input abstention.
+
+This is contract and lifecycle evidence only. The fixture does not establish predictive
+value, market transport, production latency, RI publication, strategy admission,
+position sizing or capital authority. ML-002 through ML-005 own causal pipeline
+construction, baselines, uncertainty/interpretability and monitoring before any later
+consumer may seek separate authorization.
+
 ### 5.9 No-capital company walking skeleton
 
 WS-001 composes the governed laboratory path instead of creating parallel research
