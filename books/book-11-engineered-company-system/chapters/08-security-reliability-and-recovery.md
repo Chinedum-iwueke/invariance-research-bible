@@ -149,3 +149,24 @@ failed attempts opened one critical incident and founder notification; three hea
 samples produced one recovery transition and notification. Both persistent timers are
 enabled and the VM2 probe is active. Encrypted off-host replication is not supplied by
 OPS-005 and remains part of PLAT-007 disaster-recovery work.
+
+## 8.7 Integrated recovery and runtime replacement
+
+OPS-003, implemented at control-plane commit
+`30e6843f42b9e3bc1bd3d01a75a7c913e45b0686`, composes the already engineered
+recovery surfaces instead of creating a second backup or task system. Its single
+content-addressed dossier requires an OPS-005 integrity-verified control-plane backup
+and isolated restore; an RI-005 canonical corpus restore with retrieval/graph rebuild
+and citation replay; stale-lease reclamation with no duplicate terminal execution; one
+deduplicated founder recovery notification; redacted credential activation/revocation;
+and a compatible replacement runtime that reproduces the canonical task output and can
+fall back to the prior runtime.
+
+Every section has its own digest. Backup identity, migration marker, restored table
+count, corpus digest and projection source epoch must agree, while measured RPO and RTO
+must remain within declared policy. Credential-shaped evidence, stale derived state,
+output drift, failed fallback, missed leases and duplicate notifications fail closed.
+The complete worker suite passes 229 tests. The deterministic rehearsal dossier digest
+is `941a484ee954fe25a8c63bd256e7bd48699ca6cbba1c3486f5d7df8f081f7f71`.
+It records no production resources touched and grants no production-restore authority.
+Encrypted off-host retention remains PLAT-007.
