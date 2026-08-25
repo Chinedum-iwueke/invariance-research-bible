@@ -467,3 +467,33 @@ the valid-negative bundle is
 The forward-join fixture was retained as invalid outcome
 `f54be6e2-24ce-4dbf-a4b0-7c64cf19ed0f`, and the injected memory-publication
 failure recovered without granting capital or order authority.
+
+### 5.10 LIVE-001 pre-capital canary boundary
+
+Bulletproof commit `e6ce17ed9b8e14e23ea54f121f1f448387ae2ecf` closes a
+dangerous gap in the existing live runtime without declaring it production-ready.
+`live_broker` now refuses to construct a venue adapter or resolve exchange credentials
+until a root-owned mode-`0600` authorization bundle passes content-digest, scope,
+evidence, approval and expiry checks. The signed plan names one venue and symbol set,
+an exact execution window, hard order and position limits, gross exposure, daily and
+session loss, maximum duration, market-data freshness and the canonical
+cancel/flatten/reconcile rollback. It also binds a PORT-001 non-allocated candidate,
+demo qualification, live-connector certification, operational readiness and a tested
+kill path. Runtime configuration may tighten those limits but cannot widen them.
+
+The canary guard now compares every prospective order with wall-clock market-data
+freshness, session duration, current loss and gross exposure as well as the earlier
+quantity, notional, order-count and position controls. This prevents a historical CSV
+whose internal timestamps appear self-consistent from silently becoming live order
+input. Binance and Bybit live configurations both require a ready private stream.
+Authorization receipts retain only identities, digests, scope and expiry; credentials
+are forbidden from the bundle and evidence.
+
+The focused adversarial suite and full Python 3.11 matrix passed, with 1,304 tests and
+27 declared skips. The retained validation explicitly records `blocked_before_capital`.
+No demo or live order was placed. Before LIVE-001 can become operationally complete,
+DEMO-001 must certify the chosen venue, outage/partial-fill/stale-stream/key-rotation/
+restart/kill drills must pass, M8 readiness and least-privilege no-withdrawal
+credentials must exist, and founder/risk authorities must separately approve the exact
+short-lived plan. The resulting micro-live session must then flatten and reconcile and
+publish its signed dossier. It grants no scaling authority.

@@ -546,13 +546,14 @@ PLAT-007 rather than OPS-005.
 
 ### LIVE-001 — Demo and micro-live gated canary
 
+- **Status/scope/reuse/gap (2026-08-25):** Pre-capital source gate complete and locally validated at Bulletproof commit `e6ce17ed9b8e14e23ea54f121f1f448387ae2ecf`; operational milestone remains `blocked_before_capital`. The runtime now validates a root-owned mode-`0600`, digest-bound, expiring authorization bundle before constructing an exchange adapter or resolving credentials. It binds PORT-001 non-allocation evidence, demo qualification, connector certification, M8 readiness, kill/rollback rehearsal, exact venue/symbol/time/loss/order limits and a separately signed approval. Runtime controls reject widened limits, stale/future bars, duration, loss and gross-notional breaches, and Binance now requires its private stream. No demo or live order was placed, no credentials were requested, and no scaling authority exists. Missing work is genuine DEMO-001 venue evidence, production connector certification, real M8/kill evidence, dedicated no-withdrawal credentials, a separate founder/risk approval and the serialized micro-live/flatten/reconciliation dossier.
 - **Objective/requirement/citations:** Execute M7 demo qualification and separately approved micro-live canary.
 - **Repository/files:** Execution adapters, risk/kill/reconciliation, secrets and incident systems.
 - **Prerequisites/scope:** SHADOW-001, PORT-001, M8 operational gates, explicit human approval. **Non-goals:** scaling.
 - **Data/access:** Dedicated least-privilege venue credentials; never in prompts/artifacts.
 - **Steps/interfaces:** Certification, demo, approval, hard loss/order limits, canary, kill, reconciliation, review.
 - **Tests/acceptance:** Venue sandbox plus forced outage/partial fill/stale data/key rotation/kill drills.
-- **Evidence/rollback/done:** Demo dossier and separately signed micro-live dossier; rollback closes orders and revokes allocation. **Parallelism/conflicts:** serialized external mutation. **Reviewer:** Production, risk and founder authority.
+- **Evidence/rollback/done:** Bulletproof `docs/live-001-validation.md` and 1,304 passing tests with 27 declared skips prove the source boundary only. Operational completion still requires a genuine demo dossier and separately signed micro-live dossier; rollback cancels open orders, flattens, reconciles and revokes allocation. **Parallelism/conflicts:** serialized external mutation. **Reviewer:** Production, risk and founder authority.
 
 ### OPS-003 — Disaster recovery and vendor/runtime replacement
 
