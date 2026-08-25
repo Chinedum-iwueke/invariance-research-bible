@@ -180,8 +180,8 @@ status columns, promote an artifact, allocate capital or place an order.
 
 ## 1.6 Consequence-specific governance
 
-GOV-003, merged through control-plane PRs #120 and #121 at
-`9c4a0b5fd6c6340fa29e542f12eb9801a09b2d35`, makes promotion, demotion,
+GOV-003, merged through control-plane PRs #120 through #122 at
+`f63ea4f07f3b8e50595256fffdd577bff29af9ab`, makes promotion, demotion,
 quarantine, retirement and reinstatement explicit institutional decisions. Migration
 `a8d3f1c52b90` stores the source lifecycle event, command identity, action, effective
 status, prior/resulting/rollback states, approvers, affected descendants, evidence
@@ -197,11 +197,15 @@ version-checks one GOV-002 projection. Cross-dimension prerequisites remain chec
 side effects. A later consequence that replaces the currently effective consequence
 marks its predecessor `superseded` and links both records; explicit reversal or expiry
 restores the recorded rollback state through another authority-bound event.
+Successor records are flushed before predecessor links are written, so the database
+foreign-key boundary is satisfied atomically; a failed linkage attempt rolls back the
+entire transaction and cannot leave a partially applied projection or consequence.
 
-The 2026-08-25 production pilot retained six consequence records. It promoted and
-reversed operations, quarantined and reinstated evidence, then retired and reinstated
-operations. The final states were research `succeeded`, evidence `admissible`,
-operations `candidate` and capital `no-authority`. Dossier digest
-`404dcd1bea4a183a6a60d064db72d442d16aadbf56702fd956a06cd21fd675c3`
-proves the replay boundary. These decisions govern lifecycle consequences only; they
-do not allocate capital, route orders or certify market performance.
+The 2026-08-25 production pilot retained eight consequence records. It promoted and
+reversed operations, quarantined and reinstated evidence, retired and reinstated
+operations, then proved bounded expiry by promoting operations and restoring its exact
+prior state through a linked reversal. The final states were research `succeeded`,
+evidence `admissible`, operations `candidate` and capital `no-authority`. Dossier digest
+`ed1208a8afd4aa0e69ef00923f35d946846af8165491a08aeed02f35774ae827`
+proves the complete replay boundary. These decisions govern lifecycle consequences
+only; they do not allocate capital, route orders or certify market performance.
