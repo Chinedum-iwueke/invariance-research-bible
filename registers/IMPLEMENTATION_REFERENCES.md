@@ -154,6 +154,21 @@ The pinned Python 3.11 suite passed 1,279 tests with 27 expected skips. This evi
 proves bounded no-capital journal/replay behavior, not continuous feed deployment,
 venue certification, Hermes publication or capital authority.
 
+## ML-001 implementation addendum
+
+Bulletproof commits `844306998573046bddc13d8f102eaad828592277`,
+`eee98f7` and `8dbfc4eaf9c2243ed5e035df68a4ae1dff05413d` implement the
+model bundle, strict temporal split contract, deterministic logistic baseline,
+held-out Platt calibration, calibrated inference receipts, content-addressed artifact
+store, append-only version lifecycle, activation, snapshot and rollback. Evidence
+commit `0c945af` retains both model versions, the registry snapshot and pilot report.
+The reproduced model digest is
+`5e3b8c80a494aaedb33dd61c8484fb59ed1f89254dec52724ebae82193e175a3`;
+snapshot digest is `1d738ee40118551ccfbeb3edabfea609b09a4319958fa55a3ee5772d78c3d605`;
+report digest is `7e3f250ffb54d5d6e194ad07cee4a065b2bb614ac8ce52f708b99f398bb5cd69`.
+The evidence grants no alpha, order, sizing, promotion or capital authority and does not
+claim production inference or useful market prediction.
+
 ## RI-012 and RI-013 implementation addendum
 
 Incremental founder-inbox reconciliation, checkpoint/resume and finalize-only behavior

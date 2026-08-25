@@ -522,13 +522,14 @@ PLAT-007 rather than OPS-005.
 
 ### ML-001 — Reproducible model and calibration registry
 
+- **Status/scope/reuse/gap (2026-08-25):** Source-complete and locally rehearsed at Bulletproof source commits `8443069`, `eee98f7`, `8dbfc4e` and evidence commit `0c945af`. The implementation reuses BT-002 dataset identity and BT-007 representation/split digests, NumPy, the existing deterministic artifact conventions and SQLite. It adds an ML-specific content-addressed bundle, append-only version lifecycle, held-out calibration, inference receipts, applicability/abstention behavior and independently attributed rollback. The pilot is a transparent deterministic fixture, not evidence of alpha or a deployed model service. RI canonical publication and production inference serving remain follow-on work.
 - **Objective/requirement/citations:** Implement M6 model/feature/fit/calibration lineage without direct alpha or capital authority.
 - **Repository/files:** Bulletproof/ML package, RI records, model artifact store.
 - **Prerequisites/scope:** BT-002/003 and RI-001. **Non-goals:** live sizing.
 - **Data/access:** Point-in-time registered snapshots only.
 - **Steps/interfaces:** Feature/fit/model schemas, training run, calibration, uncertainty, inference receipt.
 - **Tests/acceptance:** Seed/environment reproduction, leakage, shift, calibration, corrupt model and rollback.
-- **Evidence/rollback/done:** Rebuilt model digest and independent evaluation. **Parallelism/conflicts:** feature and evaluation fixtures parallel. **Reviewer:** ML and statistical reviewers.
+- **Evidence/rollback/done:** Source commit `8dbfc4eaf9c2243ed5e035df68a4ae1dff05413d` reproduced model digest `5e3b8c80a494aaedb33dd61c8484fb59ed1f89254dec52724ebae82193e175a3`; registry snapshot digest `1d738ee40118551ccfbeb3edabfea609b09a4319958fa55a3ee5772d78c3d605` and report digest `7e3f250ffb54d5d6e194ad07cee4a065b2bb614ac8ce52f708b99f398bb5cd69` retain calibration, supported and shifted inference, challenger activation and rollback. Rollback retains every artifact and event while reactivating an independently approved prior digest. **Parallelism/conflicts:** feature and evaluation fixtures parallel. **Reviewer:** ML and statistical reviewers.
 
 ## Wave 4 — Capital path and resilient operations
 
