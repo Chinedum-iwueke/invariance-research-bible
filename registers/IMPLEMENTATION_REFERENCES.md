@@ -183,6 +183,20 @@ report digest is `98964cfa2fd0afd65208330bf50f6b25c3eff99d9e0faa9723efca0a6843e5
 The evidence is deterministic and no-capital. It grants no candidate admission,
 allocation, sizing, order, execution or self-promotion authority.
 
+## LIVE-001 pre-capital gate addendum
+
+Bulletproof source commit `e6ce17ed9b8e14e23ea54f121f1f448387ae2ecf` adds a
+fail-closed live authorization boundary before exchange-adapter construction and
+credential resolution. A root-owned mode-`0600` bundle must bind the exact venue,
+symbols, execution window, order/loss/gross/duration/freshness limits, canonical
+rollback, PORT-001 non-allocation evidence, demo and connector qualification, M8
+readiness, kill rehearsal and a separate current approval. Runtime controls reject
+stale or future market data and breached envelopes. The full Python 3.11 suite passed
+1,304 tests with 27 declared skips. This is source and rehearsal evidence only: no
+venue credential was installed, no demo or live order was sent and no signed
+micro-live dossier exists. LIVE-001 therefore remains `blocked_before_capital` until
+its external prerequisites and serialized capital-bearing acceptance run are real.
+
 ## RI-012 and RI-013 implementation addendum
 
 Incremental founder-inbox reconciliation, checkpoint/resume and finalize-only behavior
