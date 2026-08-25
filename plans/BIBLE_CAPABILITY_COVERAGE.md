@@ -262,6 +262,7 @@ provable increments. Each must be copied into the executable backlog before work
 | OPS-004 | Fleet observability and founder alerting | VM1/VM2 resource and outage incidents are sustained-signal, deduplicated, independently observable and replayable |
 | OPS-005 | Automated control-plane backups and freshness enforcement | Persistent VM2 scheduling produces digest-bound verified generations, stale/corrupt backups fail closed, and a disposable restore proves measured recovery |
 | OPS-006 | Stateful conversational founder intake and specification compiler | Natural follow-ups, schema guidance and governed defaults compile one revisioned approval-ready job |
+| OPS-007 | Fleet-wide governed operation ledger and background-work visibility | Every governed task and instrumented long-running operation has durable identity, phase, honest progress, heartbeat, failure and terminal replay in Mission Control |
 | PLAT-001 | Service catalog, ownership, API/event compatibility and dependency inventory | Every runtime has owner, SLO, data class and recovery plan |
 | PLAT-002 | Workload identity, RBAC/ABAC, secret issuance/rotation and break-glass | Least privilege, revocation, audit and rotation drills pass |
 | PLAT-003 | Artifact/package supply chain, signing, SBOM and promotion | Only verified rehearsed artifacts can deploy |

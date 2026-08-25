@@ -117,3 +117,44 @@ The 2026-08-22 laboratory source boundary is:
 The BT-009 pins additionally have a bounded VM2 operational replay with a completed
 digest-bound dossier. They do not prove a profitable market claim, capital readiness,
 or the broader WS-001 company walking skeleton.
+
+## 9.7 Visibility and intelligence truth gaps observed on 2026-08-24
+
+A live corpus projection recovery exposed an operational visibility defect. The API and
+PostgreSQL continued substantial background work after the initiating client was
+interrupted, but Mission Control had no durable operation identity, phase, measurable
+progress, heartbeat or cancellation/rollback state. Its graph view reduced the real
+stale-projection conflict to `Knowledge graph unavailable`. `OPS-007` now provides a
+fleet-wide operation ledger and global activity center. Migration `b7c3e8a91d40`, task
+reconciliation and independent retrieval/graph progress reporters close the original
+invisible-work path. The VM2 deployment, Mac installation and production graph replay
+are recorded in the OPS-007 evidence section below.
+
+The same audit established a necessary epistemic boundary. Published scientific
+objects retain type, extracted text, page/line coordinates, extraction method and a
+confidence score, and coordinate replay detects later extraction drift. The current
+pipeline recognizes equations with a bounded text heuristic, while retrieval combines
+exact and lexical matching, a deterministic hashed-vector baseline and explicit graph
+neighbors. These are useful and evidence-grounded capabilities, but they do **not**
+prove lossless mathematical representation, semantic understanding of every accepted
+artifact or discovery of every latent relationship. Born-digital font mappings and OCR
+can still substitute or lose symbols; tables and equations do not yet have canonical
+cell/expression trees, scoped symbol definitions or units; graph edges represent
+registered lineage and relationships rather than universal conceptual understanding.
+
+`RI-014` therefore owns equation, table, figure, symbol and unit fidelity with
+multi-parser disagreement evidence. `RI-015` owns held-out tests of citation, formula,
+table, contradiction, abstention and multi-hop reasoning. Until those packages pass,
+`published` means safe, bounded and replayable extraction, and `curriculum qualified`
+means the declared curriculum checks passed at named corpus/projection digests. Neither
+label means complete comprehension. Mission Control must expose that distinction.
+
+Corpus-derived state is not yet a closed automatic pipeline. A changed inbox batch
+coalesces files and performs one full retrieval rebuild; an unchanged refresh skips the
+rebuild; a direct UI upload rebuilds retrieval immediately. The current rebuild deletes
+and recreates the retrieval projection, while graph projection and curriculum
+evaluation are separate operations. Consequently a successful upload can leave the
+graph and all digest-bound curriculum evaluations stale. `RI-016` now owns the durable
+dependency DAG, correctness-proven incremental projection path, affected-domain
+evaluation and one terminal freshness receipt. Until it ships, corpus publication is
+canonical and safe but derived readiness may require explicit recovery and evaluation.

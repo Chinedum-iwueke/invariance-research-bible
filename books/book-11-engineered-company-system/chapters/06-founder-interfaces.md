@@ -18,6 +18,7 @@ Its control-plane client uses the protected orchestrator token. The application 
 - Bulletproof memory-sync proposal creation;
 - UI-003A citation-grounded Research Copilot;
 - UI-003B canonical knowledge graph exploration.
+- OPS-007 global activity visibility across tasks, agents, services and machines.
 
 Mutating local API calls require `X-Hermes-Intent: founder-action`. Demo mode disables
 mutations. The launch agent runs as user `ice`; environment and token files are mode
@@ -99,6 +100,31 @@ Production acceptance used canonical citation
 three nodes and two edges, then replayed the object exactly. This demonstrates that the
 workspace handoff preserves canonical identity rather than passing labels, excerpts or
 model prose between tools.
+
+### 6.1.4 Fleet-wide Activity center
+
+OPS-007 adds a persistent Activity destination and a top-bar active-work signal. It
+separates running, waiting for approval, blocked, stalled, failed and recently completed
+work; shows machine, owner, phase, heartbeat age and exact safe failure text; and uses
+numeric units when total work is measurable. Indeterminate work is labelled as such.
+The view refreshes every 15 seconds while work exists or Activity is open, announces
+contextual count changes, does not rely on color alone and reflows to one column on
+narrow screens.
+
+The Mac production installation is registered as LaunchAgent
+`com.invariance.hermes-mission-control` on loopback port `8790`. The OPS-007 acceptance
+replay showed the graph operation running on VM2, advancing through exact node and edge
+units, and then moving into Recently Completed with the same terminal receipt returned
+by the control plane. A stale pre-install process on port `8790` was identified by PID,
+terminated and replaced with the registered LaunchAgent so the UI could not silently
+continue serving old code.
+
+The UI is a read model, not a second scheduler. Cancellation and retry are displayed
+only when the owning operation contract grants them. A stale heartbeat is a visible
+state rather than an inferred success or an endlessly animated spinner. The initial
+source gate instruments every task plus retrieval and graph projection rebuilds;
+additional services adopt the same operation contract instead of creating local
+progress formats.
 
 ## 6.2 Folder ingestion
 

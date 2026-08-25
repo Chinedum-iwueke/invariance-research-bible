@@ -35,11 +35,38 @@ task inputs, event payloads or worker subprocess environment entries.
 | Research Intelligence | Canonical evidence, ingestion, retrieval, memory, surveillance, corpus operations/synchronization and RI-008 graph services |
 | Operations memory | Non-executing notes, assignment/defer/resolve/reopen transitions and proposal requests |
 | Metrics/health | Service readiness, aggregate corpus metrics and bounded health state without protected payloads |
+| Operation ledger | Cross-machine operation identity, owner, phase, honest progress, heartbeat freshness, task reconciliation, exact failure and append-only event replay |
+
+### 2.2.1 OPS-007 operation identity
+
+Migration `b7c3e8a91d40` introduces a canonical operation record that joins work which was
+previously visible only through separate task, mission, worker, API and host surfaces.
+An operation records its immutable key, kind, project, machine, owner type/identity,
+state, phase, progress mode and units, heartbeat, start/completion, retry/cancel
+capability, safe error summary, links and input digest. Append-only sequenced events
+retain every material transition.
+
+Task reconciliation maps approval waits, queued work, fresh execution, stale execution
+and terminal results into this common ledger without replacing the task event source of
+truth. Projection reporters commit operation heartbeats through an independent database
+session, so disconnecting the initiating browser or terminal cannot erase the running
+record. Retrieval reports scientific objects indexed; graph rebuilding reports digest
+records processed, active nodes projected and edges projected. Work without a
+defensible denominator remains explicitly indeterminate rather than receiving a
+fabricated percentage.
+
+The production replay used operation
+`c7055a10-0c15-48a5-9faf-367f091a0b54`. It retained `1,080` events before reaching
+`succeeded`, projected `784,223` nodes and `1,368,760` edges, and produced fresh graph
+manifest `f931765a099aeda5ee3fe8c4dc8225d9843201f8916e64f702a0e5b524f2b277`.
+Mission Control replayed the same terminal state and exact units. Final hardening also
+timestamps a projection at completion rather than at rebuild start.
 
 ## 2.3 Data model evolution
 
-The single Alembic chain currently spans 27 revisions from the initial agent/task
-tables through RI-008. Major layers are:
+The single Alembic chain includes OPS-007 revision `b7c3e8a91d40` and merge revision
+`c9d4f2a71e30`, which reconciles the parallel DISC-001 daily-research revision without
+replaying either branch. Major layers are:
 
 1. agent credentials, heartbeat and task execution lifecycle;
 2. operational controls, role packages, approvals, artifacts and missions;
@@ -50,7 +77,8 @@ tables through RI-008. Major layers are:
 7. quarantined scientific ingestion and hybrid retrieval;
 8. institutional memory, corpus operations and governed surveillance;
 9. continuous corpus synchronization;
-10. typed knowledge graph projections and cognitive tool receipts.
+10. typed knowledge graph projections and cognitive tool receipts;
+11. fleet-wide operations and append-only progress events.
 
 Canonical tables are append-only or mutation-constrained where identity and evidence
 history require it. Search, vector, graph and analytical tables are projections and can
