@@ -19,6 +19,7 @@
 | UI-007 | Implemented/tested | Integrated conversation-to-proposal/task/approval/evidence workspace passes source and responsive checks; Mac reinstall and live execution replay remain |
 | GOV-001 | Implemented/tested/deployed/observed | VM2 migration and policy active; Mission Control current; immutable live allow/deny replay retained |
 | GOV-002 | Implemented/tested/deployed/observed | Four independent lifecycle projections active on VM2; five-event live replay proved research/evidence do not imply operations or capital authority |
+| GOV-003 | Implemented/tested/deployed/observed | Typed consequence dossiers active on VM2; six-record live promotion/reversal, quarantine/reinstatement and retirement/reinstatement replay retained |
 | BT-001 | Implemented/tested/merged | Canonical Python 3.11 contract matrix closes recorded collection and drift defects |
 | BT-002 | Implemented/tested/merged | Immutable bounded dataset, availability and correction-lineage contract merged |
 | BT-003 | Implemented/tested/merged | Atomic digest-finalized bundle and compatible Hermes producer contract merged; production run not yet claimed |
