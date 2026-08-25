@@ -93,3 +93,45 @@ sequenceDiagram
 Lease ownership is checked at lifecycle calls. Conflict or lease loss terminates local
 execution and forbids stale completion. Policy rejection occurs before start and
 releases the lease where the API state machine permits it.
+
+## 1.4 Institutional authority graph
+
+Control-plane PR #117 (`12afe1afa46dda81bfbc35ed14428cb8ee9bed64`) adds the
+first machine-enforced institutional authority graph. A policy snapshot binds a
+semantic version and canonical SHA-256 manifest digest to:
+
+- canonical principals, role bindings and identity aliases;
+- named decision types, allowed actions, environments and maximum risk;
+- accountable roles, veto roles and separation-of-duty rules;
+- whether a right is delegable or constitutional; and
+- constitutional boundaries that no operating exception may waive.
+
+The runtime stores four additive PostgreSQL object families introduced by migration
+`e6b1a4d82f90`: policy snapshots, delegations, exceptions and immutable decision
+records. A partial unique database index permits only one active policy. Each
+resolution binds actor, effective roles, action, object identity and digest, scope,
+risk, policy digest, delegation/exception references, outcome, reason and timestamp.
+Denied decisions are committed before the API returns `403`, so denial evidence is
+not lost with the rejected mutation.
+
+Delegation is a bounded grant rather than a role mutation. It cannot exceed the
+grantor's accountable right, decision types, risk or environment and expires within
+30 days. More than one applicable grant is ambiguous and therefore fails closed.
+Exceptions expire within 24 hours, declare reason, scope, risk and compensating
+controls, and require a governance approver distinct from requester and independent
+reviewer. Constitutional rules remain unwaivable. Emergency authority admits only
+containment verbs: halt, isolate, revoke, quarantine and reduce.
+
+Both `/v1/approvals` and `/v1/founder-channel/approvals` resolve the current authority
+policy before approve, reject or revoke changes task state. The Telegram alias maps to
+the founder's canonical principal, preventing channel changes from manufacturing
+independence. Mission Control's approval surface displays the active policy version,
+digest, decision-right count and active delegation/exception counts.
+
+The merged source passed 333 backend and 71 Mission Control tests plus focused policy,
+OpenAPI, lint, JavaScript and CI checks. Production activation is not yet claimed:
+VM2 must apply migration `e6b1a4d82f90`, rebuild the API and run the idempotent
+`worker/scripts/gov001_bootstrap.py` in the same maintenance operation, because the
+approval surfaces intentionally fail closed while no active policy exists. A prior
+retired snapshot is the rollback unit, and reactivation itself requires an authorized
+digest-bound `policy-activation` decision under the current policy.
