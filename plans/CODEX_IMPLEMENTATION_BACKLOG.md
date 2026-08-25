@@ -535,13 +535,14 @@ PLAT-007 rather than OPS-005.
 
 ### PORT-001 — Portfolio-candidate and deterministic risk service
 
+- **Status/scope/reuse/gap (2026-08-25):** Source-complete and locally rehearsed at Bulletproof source commit `4eaf836d2b0f9a1de4730b2141847cc7d073e40a` and evidence commit `7e0ab6c`. The additive service reuses registered research/shadow digests, NumPy, deterministic artifact conventions and the existing portfolio-engine boundary. It adds canonical candidate normalization, exact-overlap covariance, conservative statistical/shared dependency, uncertainty-aware capacity-capped inverse-volatility construction, hard candidate/family/concentration/dependency/stress constraints and explainable rejection. It does not replace the existing portfolio runner or risk coordinator and grants no admission, allocation, capital or order authority. Live RI dossier publication and actual allocation review remain later governed work.
 - **Objective/requirement/citations:** Implement Book VII candidate aggregation, dependency, capacity, constraints and stress without allocation authority.
 - **Repository/files:** Portfolio/risk services, Bulletproof integration, RI dossiers.
 - **Prerequisites/scope:** SHADOW-001 and optionally ML-001. **Non-goals:** live allocation.
 - **Data/access:** Registered candidate/shadow evidence.
 - **Steps/interfaces:** Candidate set, covariance/dependency, constraints, stress, explainable rejection.
 - **Tests/acceptance:** Concentration, missing data, regime/cost/capacity stress, deterministic repeat and infeasible portfolio.
-- **Evidence/rollback/done:** Portfolio-candidate dossier explicitly marked non-allocated. **Parallelism/conflicts:** owns portfolio policy schemas. **Reviewer:** Portfolio and risk authorities.
+- **Evidence/rollback/done:** Report digest `98964cfa2fd0afd65208330bf50f6b25c3eff99d9e0faa9723efca0a6843e555` binds candidate-set digest `43a0bd21e8c1286b13e1c4de9010c19580e543cd9b2402cdfc0bb31b2e43b325` and non-allocated dossier digest `3ab51287d89cfdc02a04b4ba1014a85a6716b1a55a086da43d74d4867a3378bd`. The full 1,294-test suite passed with 27 expected skips; retained rejection dossiers cover missing overlap, stressed-capacity infeasibility and stress loss. Rollback removes the additive candidate service while retaining every dossier; existing portfolio execution behavior is unchanged. **Parallelism/conflicts:** owns portfolio policy schemas. **Reviewer:** Portfolio and risk authorities.
 
 ### LIVE-001 — Demo and micro-live gated canary
 

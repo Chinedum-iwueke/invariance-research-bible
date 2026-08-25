@@ -50,6 +50,10 @@ objects; they do not mutate portfolio or execution internals.
 The separate portfolio engine is not yet evidence of a unified, certified same-clock
 multi-strategy matching engine or production order router.
 
+PORT-001 adds an evidence-only service beside this engine. It evaluates registered
+research and prospective-shadow candidates jointly, but cannot admit a candidate,
+allocate capital, mutate positions or submit orders.
+
 ## 5.3 Market and indicator capability
 
 The documented V1 surface supports crypto, FX and equities with basic futures
@@ -406,6 +410,43 @@ value, market transport, production latency, RI publication, strategy admission,
 position sizing or capital authority. ML-002 through ML-005 own causal pipeline
 construction, baselines, uncertainty/interpretability and monitoring before any later
 consumer may seek separate authorization.
+
+### 5.8.3 PORT-001 portfolio-candidate risk service
+
+PORT-001 adds `bt.portfolio_engine.candidate_service` without replacing the classic
+engine, the sleeve runner, `PortfolioRiskCoordinator`, or execution adapters. Its input
+contract requires a portfolio-eligible candidate identity; registered research and
+prospective-shadow evidence digests; one forecast horizon; expected net return and
+uncertainty; turnover and cost; stressed capacity; named market scenarios; common
+instrument, venue, data, model and infrastructure dependencies; and timezone-aware net
+returns on an identical observation set. Missing overlap is unknown dependence and
+fails closed rather than receiving diversification credit.
+
+The service estimates exact-overlap sample covariance and correlation, then forms a
+conservative joint-dependency matrix by taking the larger of absolute statistical
+dependence and shared operational/economic dependence for each pair. The transparent
+benchmark scales inverse volatility after adding declared forecast uncertainty. A
+deterministic water-filling step respects stressed-capacity, candidate and family caps.
+It does not relax an infeasible problem.
+
+Hard checks cover unit weight, candidate and family concentration, Herfindahl
+concentration, weighted joint dependency and the worst of cost expansion and named
+regime scenarios. Every check and binding rejection is retained. Equal canonical
+inputs, including evaluation time and registry snapshot, reproduce the same dossier
+digest. The public JSON schema requires `allocated: false` and prohibits portfolio
+allocation, capital, orders and self-promotion.
+
+The retained fixture at source commit
+`4eaf836d2b0f9a1de4730b2141847cc7d073e40a` reproduced candidate-set digest
+`43a0bd21e8c1286b13e1c4de9010c19580e543cd9b2402cdfc0bb31b2e43b325` and dossier
+digest `3ab51287d89cfdc02a04b4ba1014a85a6716b1a55a086da43d74d4867a3378bd`.
+Its report digest is
+`98964cfa2fd0afd65208330bf50f6b25c3eff99d9e0faa9723efca0a6843e555`.
+The full Python 3.11 suite passed 1,294 tests with 27 declared skips. Separate dossiers
+prove rejection of missing overlap, infeasible stressed capacity and excessive scenario
+loss. These are deterministic fixtures, not market-performance or production-allocation
+evidence. PORT-002 through PORT-004 and RISK-001 onward own richer dependence models,
+optimization, allocation registry, path stress and governed admission.
 
 ### 5.9 No-capital company walking skeleton
 
