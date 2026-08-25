@@ -288,7 +288,9 @@ and registers canonical evidence plus an RI-007 synchronization receipt.
 - The deprecated fast path cannot satisfy or bypass BT-004 through BT-009 acceptance;
   all governed research execution uses the classic native engine unless a future,
   separately approved architecture proves exact semantic equivalence.
-- Shadow, demo and live-looking surfaces do not constitute venue-certified execution.
+- SHADOW-001 establishes immutable no-capital prospective/replay evidence, but its
+  bounded fixture rehearsal is not continuous public-feed operation and does not
+  constitute venue-certified demo or live execution.
 - Portfolio admission, allocation and capital mutation remain separately governed and
   cannot be inferred from a successful backtest.
 
@@ -321,6 +323,44 @@ shadow/demo/live health, lag, positions, orders, fills, costs, PnL, incidents an
 exact replay lineage. Until that package and its dependencies pass, venue state is
 inspectable through Bulletproof artifacts and CLI diagnostics, not a complete Mission
 Control execution console.
+
+### 5.8.1 SHADOW-001 prospective journal and replay
+
+SHADOW-001 extends the existing execution artifact boundary rather than adding another
+strategy, fill, risk or accounting engine. An admitted shadow configuration must pin
+SHA-256 identities for the candidate, immutable dataset snapshot, strategy
+implementation and cost model, plus the exact repository commit, before the first
+observation. Missing or malformed pins prevent the journal from opening. Its genesis
+record permanently prohibits capital, live orders and venue mutation.
+
+Every accepted decision, order intent, simulated fill, heartbeat, reconciliation and
+incident is canonicalized into `prospective_journal.jsonl`. Each record carries a
+monotonic sequence, stable event identity, timezone-aware observation time, payload
+digest, prior-record digest and its own record digest. The append is flushed and
+fsynced. Duplicate event identities are idempotently ignored. An unsealed chain can
+resume after interruption by replaying and validating its prefix; a terminally sealed
+chain rejects later appends.
+
+The replay verifier independently checks schema, authority, bindings, sequences,
+duplicate identities, payload hashes and the complete digest chain, and reproduces
+event counts plus fee, slippage and spread totals. It fails closed on naive timestamps,
+tampering, sequence gaps, changed bindings or post-seal records. Normal JSONL artifacts,
+SQLite recovery state, reconciliation and incident outputs remain available and are
+included with the journal and replay report in execution exports.
+
+The retained 2026-08-25 pilot pins source commit
+`58cbc5ac974080f572d58c1990558ca47043d984`, uses the explicitly non-alpha pipeline
+smoke candidate and a deterministic market fixture, forces a disconnect/restart,
+suppresses a redelivered decision, reconciles, seals, replays and rejects a modified
+copy. Report digest
+`745862c57511dacc02278fd6ec8a7243e28dea36c3389df653ab4c7b937d991f` binds sealed
+journal digest `3a4dc409783061fae9e6aeb735dea96be4bb408fe084f916541e4514a66a4c46`.
+The full pinned Python 3.11 suite passed 1,279 tests with 27 expected skips.
+
+This proves the journal and replay contract, restart behavior and no-capital authority.
+It does not prove a continuously running public-feed shadow, exchange connectivity,
+execution-model calibration against venue observations, Hermes publication or Mission
+Control session visibility. Those require separately retained operational evidence.
 
 ### 5.9 No-capital company walking skeleton
 

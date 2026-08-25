@@ -141,6 +141,19 @@ result was negative and retained; production and capital authority remained proh
 Exact operational receipts are recorded in
 [BT-009 Completion Evidence](../plans/evidence/BT-009.md).
 
+## SHADOW-001 implementation addendum
+
+Bulletproof commits `b2b84bc904cfda65b5237dd61051b1a6fa4bf5d4` and
+`58cbc5ac974080f572d58c1990558ca47043d984` add the digest-pinned, hash-chained
+prospective shadow journal, deterministic replay verifier, execution-artifact wiring,
+failure fixtures and bounded pilot. Evidence commit `a6a399a` retains the sealed
+journal and report. The report digest is
+`745862c57511dacc02278fd6ec8a7243e28dea36c3389df653ab4c7b937d991f`; the journal
+digest is `3a4dc409783061fae9e6aeb735dea96be4bb408fe084f916541e4514a66a4c46`.
+The pinned Python 3.11 suite passed 1,279 tests with 27 expected skips. This evidence
+proves bounded no-capital journal/replay behavior, not continuous feed deployment,
+venue certification, Hermes publication or capital authority.
+
 ## RI-012 and RI-013 implementation addendum
 
 Incremental founder-inbox reconciliation, checkpoint/resume and finalize-only behavior
