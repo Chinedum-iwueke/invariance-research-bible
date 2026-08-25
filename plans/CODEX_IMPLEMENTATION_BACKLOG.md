@@ -557,13 +557,14 @@ PLAT-007 rather than OPS-005.
 
 ### OPS-003 — Disaster recovery and vendor/runtime replacement
 
+- **Status/scope/reuse/gap (2026-08-25):** Source-complete and deterministically rehearsed at control-plane commit `30e6843f42b9e3bc1bd3d01a75a7c913e45b0686`. OPS-003 composes the existing OPS-005 control-plane backup/isolated restore, RI-005 canonical corpus restore and projection rebuild, worker stale-lease semantics and founder notification behavior. It adds one strict integrated dossier rather than new canonical stores. The dossier enforces measured RPO/RTO, backup/restore identity, migration and table checks, corpus/projection lineage, citation replay, exactly-once task recovery, notification dedupe, redacted secret rotation, schema-compatible runtime replacement, canonical-output parity and fallback. The rehearsal touched no production resource and grants no production-restore authority. Encrypted off-host retention remains PLAT-007 rather than being overclaimed here.
 - **Objective/requirement/citations:** Prove M8/M9 recovery and replaceability across canonical services, projections, workers, and model runtime.
 - **Repository/files:** Infrastructure automation, backups, RI, control plane, deployment docs.
 - **Prerequisites/scope:** RI-005 and deployed walking skeleton. **Non-goals:** destructive production test without rehearsal/approval.
 - **Data/access:** Encrypted backups and redacted evidence.
 - **Steps/interfaces:** Parity rehearsal; restore canonical stores; rebuild projections; rotate secrets; replace one model/runtime; replay tasks.
 - **Tests/acceptance:** Measured RPO/RTO, integrity digests, stale lease handling, notification and rollback tests.
-- **Evidence/rollback/done:** Recovery dossier and runtime-replacement compatibility report. **Parallelism/conflicts:** rehearsals parallel by service, final integrated drill serialized. **Reviewer:** SRE, security and governance.
+- **Evidence/rollback/done:** Dossier digest `941a484ee954fe25a8c63bd256e7bd48699ca6cbba1c3486f5d7df8f081f7f71` binds all five recovery sections and the runtime compatibility/fallback proof. The focused 12-test suite and complete 229-test worker suite pass; secret-shaped evidence, drift, duplicate execution/notification and threshold overruns fail closed. Rollback retains prior backup/runtime generations and rebuilds only derived projections. **Parallelism/conflicts:** rehearsals parallel by service, final integrated drill serialized. **Reviewer:** SRE, security and governance.
 
 ## Deferred post-system architecture
 
@@ -583,14 +584,20 @@ The work-package contracts in
 [Bible Capability Coverage](BIBLE_CAPABILITY_COVERAGE.md#4-engineering-work-packages)
 all have dedicated executable packets below. They are active planned work, not an
 ideas list, and their stated done boundaries must be met before completion is claimed.
-The dependency order is:
+The completed packets above retain their historical order. The remaining packets below
+are now physically arranged in executable dependency order, not grouped merely by
+domain. Their phase headings are authoritative. Within a phase, read top to bottom;
+work may run concurrently only when its explicit dependencies are already complete.
+The resulting path is foundation and authority, point-in-time data and laboratory,
+discovery and predictive evidence, portfolio/risk/execution and demo certification,
+resilient organization/platform surfaces, and finally separately governed capital
+scaling. `LIVE-001` remains after `DEMO-001`; `LIVE-002` remains after `LIVE-001`.
 
-1. `RI-007`, `RI-008`, `RI-009`, `RI-009B`, `RI-010`, `RI-011`; `OPS-001`, `OPS-002`, `OPS-004`, `OPS-005`, `OPS-006`; `CHAN-002`; `UI-007`; `GOV-001`, `GOV-002`, `GOV-003`, `GOV-004`; `AGT-001`, `AGT-002`, `AGT-003`, `AGT-004`, `AGT-005`, `AGT-006`, `AGT-007`, `AGT-008`.
-2. `DATA-001`, `DATA-002`, `DATA-003`; `BT-001`, `BT-002`, `BT-003`, `BT-004`, `BT-005`, `BT-006`, `BT-007`, `BT-008`, `BT-009`; `UI-001`, `UI-002`, `UI-003`, `UI-004`; `CHAN-001`; `WS-001`, `WS-002`.
-3. `DISC-001`, `DISC-002`, `DISC-003`, `DISC-004`, `DISC-005`, `DISC-006`, `DISC-007`, `DISC-008`, `DISC-009`; `SHADOW-001`, `SHADOW-002`; `ML-001`, `ML-002`, `ML-003`, `ML-004`, `ML-005`, `ML-006`; `RL-001`, `RL-002`, `RL-003`.
-4. `PORT-001`, `PORT-002`, `PORT-003`, `PORT-004`; `RISK-001`, `RISK-002`, `RISK-003`, `RISK-004`, `RISK-005`; `EXEC-001`, `EXEC-002`, `EXEC-003`, `EXEC-004`, `EXEC-005`, `EXEC-006`, `EXEC-007`, `EXEC-008`, `EXEC-009`, `EXEC-010`; `DEMO-001`.
-5. `PLAT-001`, `PLAT-002`, `PLAT-003`, `PLAT-004`, `PLAT-005`, `PLAT-006`, `PLAT-007`, `PLAT-008`, `PLAT-009`; `SEC-001`, `SEC-002`; `UI-005`, `UI-006`; `CAD-001`, `CAD-002`; `OPS-003`.
-6. Separately governed `LIVE-001`, `LIVE-002`, then `EVOLVE-001`, `EVOLVE-002` and deferred `LLM-001`.
+The ordering audit also removed four impossible dependency cycles: AGT-001 now defines
+the registry consumed by PLAT-002; CAD-002 produces scorecards consumed by EVOLVE-002;
+SHADOW-002 produces monitoring evidence consumed by RISK-004; and EXEC-004 owns order
+state consumed by the composed RISK-005 service. SEC-002 defines the baseline consumed
+by PLAT-008 rather than depending on that downstream deployment package.
 
 Parallel work is allowed only where the coverage dependency graph and the ownership
 rules below do not conflict. Capital work cannot become executable merely because its
@@ -602,6 +609,94 @@ mandatory.
 These packets close the planning gap between the capability map and the executable
 backlog. `Status: planned` means that an existing component may be reused, but the
 package is not complete until its own tests, evidence and rollback boundary pass.
+
+#### Execution phase — Foundation, authority and safe interfaces
+
+### PLAT-001 — Service catalog and dependency inventory
+
+- **Status/scope/reuse/gap:** Planned; reuse role/deployment and systemd/container inventories, adding owners, SLOs, APIs/events, data classes and recovery plans.
+- **Contracts/dependencies:** BASE-002/003; catalog records are versioned and runtime observations reconcile against them.
+- **Tests/evidence/rollback/done:** Test orphan service, incompatible API, missing owner and stale dependency. Retain catalog/reconciliation report. Rollback pins prior catalog. Done when every runtime dependency and recovery owner is discoverable.
+
+### SEC-001 — System threat models and adversarial security suites
+
+- **Status/scope/reuse/gap:** Planned; reuse corpus scanners, sandboxing and approval boundaries, adding maintained threat models for services, agents, research and capital.
+- **Contracts/dependencies:** BASE-002/003 and PLAT-001; every high-risk interface owns abuse cases, controls, detection and containment.
+- **Tests/evidence/rollback/done:** Exercise injection, exfiltration, privilege escalation, supply-chain and capital mutations. Retain redacted findings and closure. Rollback disables unsafe surface. Done when high-risk paths have current adversarial evidence.
+
+### PLAT-005 — Unified observability, SLO and alert routing
+
+- **Status/scope/reuse/gap:** Planned; reuse OPS-004 fleet signals and service logs, adding metrics, traces, SLOs, capacity and accountable routing.
+- **Contracts/dependencies:** PLAT-001 and SEC-001; telemetry has bounded cardinality, redaction and stable service identity.
+- **Tests/evidence/rollback/done:** Test alert precision, silence, overload, secret leakage and missing telemetry. Retain SLO/incident replay. Rollback disables a noisy rule. Done when alerts are actionable, deduplicated and attributable.
+
+### GOV-001 — Decision rights, delegation and exception policy
+
+- **Status/scope/reuse/gap:** Planned; reuse approvals, role packages and broker gates, adding one versioned authority graph for decisions, vetoes, delegation, exceptions and emergencies.
+- **Contracts/dependencies:** BASE-002/003; policy decisions bind actor, role, scope, risk, digest, expiry and separation-of-duty constraints.
+- **Tests/evidence/rollback/done:** Test self-approval, conflicting grants, expired delegation, emergency use and revocation. Retain policy/decision replay and exception closure. Roll back by activating a prior signed policy. Done when every consequential action resolves to current accountable authority.
+
+### GOV-002 — Orthogonal lifecycle state machines
+
+- **Status/scope/reuse/gap:** Planned; reuse existing task, mission, evidence and trial states, adding explicit separate machines for research, evidence, operations and capital.
+- **Contracts/dependencies:** GOV-001 and BASE-002; typed commands/events define legal transitions and forbid one lifecycle from implying another.
+- **Tests/evidence/rollback/done:** Exhaust invalid transitions, races, replay and migration. Retain event histories and state projections. Rollback replays through a compatible projector. Done when no research result can silently become operational or capital authority.
+
+### GOV-004 — Immutable audit and policy evidence export
+
+- **Status/scope/reuse/gap:** Planned; reuse task events, approvals and immutable histories, closing cross-service policy-version and compliance-export gaps.
+- **Contracts/dependencies:** GOV-001/002; append-only actor/action/object/policy/evidence events with stable export schema and integrity chain.
+- **Tests/evidence/rollback/done:** Test tamper, missing event, clock disorder, redaction and fresh-client reconstruction. Retain signed exports. Rollback changes projectors only. Done when the complete decision/action chain reconstructs without privileged database interpretation.
+
+### AGT-001 — Agent charter, capability and grant registry
+
+- **Status/scope/reuse/gap:** Planned; reuse registrations, role packages and deployments, adding canonical charters, responsibilities, conflicts, grants and revocations.
+- **Contracts/dependencies:** GOV-001/002 and PLAT-001; every lease resolves machine, role, package, capability, permission and accountable owner. PLAT-002 consumes this registry to issue workload identities; AGT-001 does not depend on that downstream enforcement layer.
+- **Tests/evidence/rollback/done:** Test excess capability, stale deployment, conflicts, revocation and replacement. Retain effective-permission snapshots. Rollback revokes the package. Done when no task executes outside an active least-privilege grant.
+
+### PLAT-002 — Workload identity, authorization and secrets lifecycle
+
+- **Status/scope/reuse/gap:** Planned; reuse agent tokens, root-owned environments and package permissions, adding workload identity, RBAC/ABAC, rotation and break-glass lifecycle.
+- **Contracts/dependencies:** GOV-001 and AGT-001; credentials bind workload, scope, machine, expiry and audit without entering prompts/logs.
+- **Tests/evidence/rollback/done:** Test revocation, rotation, confused deputy, secret leak and emergency access. Retain redacted drills. Rollback revokes new identity and restores scoped prior credential. Done when least privilege and rotation are proven.
+
+### AGT-002 — Provenance-bearing agent context and working memory
+
+- **Status/scope/reuse/gap:** Planned; reuse RI context packs, task manifests and dossiers, adding minimum-sufficient context assembly and ephemeral working-memory policy.
+- **Contracts/dependencies:** RI-003/008/010 and AGT-001; context items bind source, selection reason, sensitivity, expiry and prompt position.
+- **Tests/evidence/rollback/done:** Test contamination, stale/contradictory context, protected data and oversized packs. Retain context manifests and citations. Rollback discards working memory, preserving canonical evidence. Done when outputs replay to exactly what the agent was allowed to see.
+
+### AGT-003 — Typed task graphs and bounded deliberation
+
+- **Status/scope/reuse/gap:** Planned; reuse mission steps, dependencies, budgets and leases, adding typed messages, cancellation, termination and deadlock handling.
+- **Contracts/dependencies:** AGT-001/002 and OPS-001; graph nodes declare role, inputs, outputs, budgets, stop conditions and compensation.
+- **Tests/evidence/rollback/done:** Test dependency failure, cancellation, cycles, runaway loops, correlated failure and lease loss. Retain graph/event replay. Rollback cancels pending nodes and compensates partial publication. Done when every multi-agent run terminates within approved bounds.
+
+### AGT-004 — Prompt, policy and model-output security registry
+
+- **Status/scope/reuse/gap:** Planned; reuse package manifests, input validation and corpus scanning, adding versioned prompts/policies, trust labels and structured-output gates.
+- **Contracts/dependencies:** AGT-001/002 and SEC-001; prompts bind model/runtime/version and outputs validate against schemas before becoming data or actions.
+- **Tests/evidence/rollback/done:** Adversarially test injection, exfiltration, instruction collision and malformed/confident outputs. Retain evaluation corpus and release report. Rollback restores the prior prompt/policy bundle. Done when no model text bypasses deterministic validation.
+
+### AGT-006 — Independent evaluator routing and anti-collusion
+
+- **Status/scope/reuse/gap:** Planned; reuse M13 independent roles and reviews, adding enforced producer/evaluator separation and runtime-correlation visibility.
+- **Contracts/dependencies:** GOV-001 and AGT-001/003; routing forbids producer selection or impersonation and records provider/model/host correlation.
+- **Tests/evidence/rollback/done:** Test same-identity, shared-context leakage, unavailable evaluator and disagreement escalation. Retain routing/review lineage. Rollback blocks promotion pending human review. Done when claimed independence is machine-verifiable.
+
+### UI-004 — Digest-safe approval center
+
+- **Status/scope/reuse/gap:** Planned; reuse approvals and durable outbox, adding digest diffs, risk, expiry, prerequisites, clarification and safe links across all domains.
+- **Contracts/dependencies:** OPS-001 and GOV-001/002; only executable, current proposals expose approval actions.
+- **Tests/evidence/rollback/done:** Test stale/deep-link replay, duplicate notification, changed plan, clarification and rejection. Retain decision receipts. Rollback revokes outstanding links. Done when one current gate yields at most one actionable notification.
+
+### CHAN-001 — Restricted Telegram founder channel
+
+- **Status/scope/reuse/gap:** Planned toward production qualification; reuse gateway, planner, outbox and safe approvals, closing clarification, dedupe, status and outage behavior.
+- **Contracts/dependencies:** OPS-001/002, UI-004 and AGT-004; plain English creates proposals, non-executable requests ask questions, and secrets/sudo are prohibited.
+- **Tests/evidence/rollback/done:** Test spoofed user, replay, flood, stale link, outage, clarification and secret input. Retain redacted transcripts. Rollback disables commands while status remains. Done when mobile intake is safe and never bypasses Mission Control authority.
+
+#### Execution phase — Point-in-time data and deterministic laboratory
 
 ### DATA-001 — Point-in-time instrument and reference-data service
 
@@ -656,95 +751,25 @@ package is not complete until its own tests, evidence and rollback boundary pass
 - **Tests/acceptance:** Test duplicate and concurrent publish, corrupt/incomplete bundle, unknown trial, digest mismatch, negative/invalid outcomes, partial Hermes or Bulletproof failure, retry, supersession, deletion hold and projection rebuild failure. Citation replay must reach source data, code, configuration and reviews.
 - **Evidence/rollback/done:** The API atomically retains canonical result, two independent reviews, decision, replay dossier and ordered event transcript, then accepts only current graph/retrieval receipts before a digest-bound Bulletproof memory receipt. Negative, null, invalid and inconclusive outcomes use the same path. Projection or memory failures remain resumable without deleting canonical evidence. Rollback disables new intake and rebuilds derived state from canonical records. The Hermes suite passes 301 tests; Bulletproof's deterministic CI matrix passes 1,262 tests with 27 explicit skips at the completion pins.
 
-### GOV-001 — Decision rights, delegation and exception policy
-
-- **Status/scope/reuse/gap:** Planned; reuse approvals, role packages and broker gates, adding one versioned authority graph for decisions, vetoes, delegation, exceptions and emergencies.
-- **Contracts/dependencies:** BASE-002/003; policy decisions bind actor, role, scope, risk, digest, expiry and separation-of-duty constraints.
-- **Tests/evidence/rollback/done:** Test self-approval, conflicting grants, expired delegation, emergency use and revocation. Retain policy/decision replay and exception closure. Roll back by activating a prior signed policy. Done when every consequential action resolves to current accountable authority.
-
-### GOV-002 — Orthogonal lifecycle state machines
-
-- **Status/scope/reuse/gap:** Planned; reuse existing task, mission, evidence and trial states, adding explicit separate machines for research, evidence, operations and capital.
-- **Contracts/dependencies:** GOV-001 and BASE-002; typed commands/events define legal transitions and forbid one lifecycle from implying another.
-- **Tests/evidence/rollback/done:** Exhaust invalid transitions, races, replay and migration. Retain event histories and state projections. Rollback replays through a compatible projector. Done when no research result can silently become operational or capital authority.
-
-### GOV-003 — Promotion, demotion, quarantine and retirement
-
-- **Status/scope/reuse/gap:** Planned; reuse research decisions, quarantine and approval records, adding consequence-specific promotion, demotion, retirement and reinstatement workflows.
-- **Contracts/dependencies:** GOV-001/002 and RI-010; every transition binds evidence, approvers, expiry, rollback and affected descendants.
-- **Tests/evidence/rollback/done:** Test stale evidence, revocation, emergency demotion and reinstatement. Retain decision dossiers. Rollback restores the prior bounded state, never deleted history. Done when all lifecycle consequences are explicit and reversible where lawful.
-
-### GOV-004 — Immutable audit and policy evidence export
-
-- **Status/scope/reuse/gap:** Planned; reuse task events, approvals and immutable histories, closing cross-service policy-version and compliance-export gaps.
-- **Contracts/dependencies:** GOV-001/002; append-only actor/action/object/policy/evidence events with stable export schema and integrity chain.
-- **Tests/evidence/rollback/done:** Test tamper, missing event, clock disorder, redaction and fresh-client reconstruction. Retain signed exports. Rollback changes projectors only. Done when the complete decision/action chain reconstructs without privileged database interpretation.
-
-### CAD-001 — Event-driven institutional operating cadence
-
-- **Status/scope/reuse/gap:** Planned; reuse schedulers, outbox and Mission Supervisor, adding governed daily, weekly, monthly and quarterly review definitions.
-- **Contracts/dependencies:** OPS-001 and GOV-002; cadence instances have due windows, dedupe keys, prerequisites, owners and missed-run reconciliation.
-- **Tests/evidence/rollback/done:** Test reboot, delay, duplicate ticks, backlog and clock shift. Retain schedule/reconciliation receipts. Rollback pauses future instances. Done when missed reviews catch up once without duplicate action.
-
-### CAD-002 — Scorecards, retrospectives and policy learning
-
-- **Status/scope/reuse/gap:** Planned; reuse operational notes, dossiers and metrics, adding governed scorecards and postmortem-to-proposal lineage.
-- **Contracts/dependencies:** CAD-001, GOV-001/004 and EVOLVE-002; metrics produce evidence and proposals, never authority.
-- **Tests/evidence/rollback/done:** Test gaming, missing denominators, stale metrics and self-authorization. Retain scorecard and accepted/rejected learning lineage. Rollback retires a metric version. Done when institutional learning is attributable without automating policy consent.
-
-### AGT-001 — Agent charter, capability and grant registry
-
-- **Status/scope/reuse/gap:** Planned; reuse registrations, role packages and deployments, adding canonical charters, responsibilities, conflicts, grants and revocations.
-- **Contracts/dependencies:** GOV-001/002 and PLAT-002; every lease resolves machine, role, package, capability, permission and accountable owner.
-- **Tests/evidence/rollback/done:** Test excess capability, stale deployment, conflicts, revocation and replacement. Retain effective-permission snapshots. Rollback revokes the package. Done when no task executes outside an active least-privilege grant.
-
-### AGT-002 — Provenance-bearing agent context and working memory
-
-- **Status/scope/reuse/gap:** Planned; reuse RI context packs, task manifests and dossiers, adding minimum-sufficient context assembly and ephemeral working-memory policy.
-- **Contracts/dependencies:** RI-003/008/010 and AGT-001; context items bind source, selection reason, sensitivity, expiry and prompt position.
-- **Tests/evidence/rollback/done:** Test contamination, stale/contradictory context, protected data and oversized packs. Retain context manifests and citations. Rollback discards working memory, preserving canonical evidence. Done when outputs replay to exactly what the agent was allowed to see.
-
-### AGT-003 — Typed task graphs and bounded deliberation
-
-- **Status/scope/reuse/gap:** Planned; reuse mission steps, dependencies, budgets and leases, adding typed messages, cancellation, termination and deadlock handling.
-- **Contracts/dependencies:** AGT-001/002 and OPS-001; graph nodes declare role, inputs, outputs, budgets, stop conditions and compensation.
-- **Tests/evidence/rollback/done:** Test dependency failure, cancellation, cycles, runaway loops, correlated failure and lease loss. Retain graph/event replay. Rollback cancels pending nodes and compensates partial publication. Done when every multi-agent run terminates within approved bounds.
-
-### AGT-004 — Prompt, policy and model-output security registry
-
-- **Status/scope/reuse/gap:** Planned; reuse package manifests, input validation and corpus scanning, adding versioned prompts/policies, trust labels and structured-output gates.
-- **Contracts/dependencies:** AGT-001/002 and SEC-001; prompts bind model/runtime/version and outputs validate against schemas before becoming data or actions.
-- **Tests/evidence/rollback/done:** Adversarially test injection, exfiltration, instruction collision and malformed/confident outputs. Retain evaluation corpus and release report. Rollback restores the prior prompt/policy bundle. Done when no model text bypasses deterministic validation.
-
-### AGT-005 — Agent benchmark, calibration and release scorecard
-
-- **Status/scope/reuse/gap:** Planned; reuse role-package versions and pilot evidence, adding role-specific golden tasks, confidence calibration and shadow release comparison.
-- **Contracts/dependencies:** AGT-001/004 and EVOLVE-002; releases bind benchmark set, thresholds, failures, cost/latency and rollback version.
-- **Tests/evidence/rollback/done:** Test regressions, distribution shift, abstention and benchmark leakage. Retain comparative scorecards. Rollback reactivates the qualified prior package. Done when each active role meets declared reliability rather than a generic pass rate.
-
-### AGT-006 — Independent evaluator routing and anti-collusion
-
-- **Status/scope/reuse/gap:** Planned; reuse M13 independent roles and reviews, adding enforced producer/evaluator separation and runtime-correlation visibility.
-- **Contracts/dependencies:** GOV-001 and AGT-001/003; routing forbids producer selection or impersonation and records provider/model/host correlation.
-- **Tests/evidence/rollback/done:** Test same-identity, shared-context leakage, unavailable evaluator and disagreement escalation. Retain routing/review lineage. Rollback blocks promotion pending human review. Done when claimed independence is machine-verifiable.
-
-### AGT-007 — Bounded company role catalog
-
-- **Status/scope/reuse/gap:** Planned; reuse deployed engineering, infrastructure, knowledge, research and stewardship packages, filling production roles only from documented demand.
-- **Contracts/dependencies:** AGT-001/005/006; every role declares charter, tasks, workflows, grants, machine, SLO, replacement and prohibited actions.
-- **Tests/evidence/rollback/done:** Run per-role golden, denial, outage and replacement drills. Retain catalog/deployment scorecards. Rollback revokes a role package. Done when every deployed agent is inspectable and replaceable without architectural redesign.
-
-### AGT-008 — Evidence-governed agent improvement
-
-- **Status/scope/reuse/gap:** Planned; reuse package registry promotion states and engineering missions, adding bounded improvement proposals derived from failures and evaluations.
-- **Contracts/dependencies:** AGT-004/005/006 and GOV-003; agents may propose patches/packages but cannot approve or deploy themselves.
-- **Tests/evidence/rollback/done:** Test reward gaming, scope growth, self-promotion and regression. Retain proposal, rehearsal, independent review and promotion evidence. Rollback activates the prior package. Done when improvement is measurable, governed and non-self-authorizing.
+#### Execution phase — Discovery and predictive evidence
 
 ### DISC-002 — Observation, anomaly and opportunity mapping
 
 - **Status/scope/reuse/gap:** Planned; reuse RI evidence/search and trial families, adding typed separation of observation, anomaly, mechanism and investable opportunity.
 - **Contracts/dependencies:** DISC-001 and RI-004; maps bind population, baseline, effect, uncertainty, costs and null controls.
 - **Tests/evidence/rollback/done:** Test noise, duplicated signals, regime confounding and cost-erased effects. Retain maps and null results. Rollback supersedes a map. Done when an anomaly cannot be presented as opportunity without incremental evidence.
+
+### DISC-006 — Mechanism and falsification service
+
+- **Status/scope/reuse/gap:** Planned; reuse dossiers, contradictions and hypothesis registry, adding explicit mechanisms, alternatives and decisive tests before promotion.
+- **Contracts/dependencies:** RI-004/008 and DISC-002; each hypothesis declares causal story, competing explanations and falsification outcomes.
+- **Tests/evidence/rollback/done:** Test tautologies, unfalsifiable claims, confounders and post-hoc changes. Retain alternative/rejection dossiers. Rollback returns the claim to unresolved. Done when supporting evidence cannot hide failed decisive tests.
+
+### DISC-007 — Selection-bias and research-overfitting auditor
+
+- **Status/scope/reuse/gap:** Planned; reuse trial families and M13 statistical review, adding full-history family-wise/FDR, deflated evidence and researcher-degrees-of-freedom audits.
+- **Contracts/dependencies:** BT-006 and DISC-006; audit consumes immutable complete search ledgers only.
+- **Tests/evidence/rollback/done:** Test omitted trials, family splitting, metric shopping and optional stopping. Retain adjusted reports and raw lineage. Rollback blocks promotion. Done when evidence strength reflects the complete search process.
 
 ### DISC-003 — Representation and factor experiment language
 
@@ -764,18 +789,6 @@ package is not complete until its own tests, evidence and rollback boundary pass
 - **Contracts/dependencies:** DISC-003/004 and AGT-004; generated programs have typed inputs, bounded operations and isolated execution.
 - **Tests/evidence/rollback/done:** Test path/network escape, nondeterminism, invalid syntax, excessive complexity and duplicate semantics. Retain programs and search lineage. Rollback quarantines the generator. Done when every candidate is safe, reproducible and search-accounted.
 
-### DISC-006 — Mechanism and falsification service
-
-- **Status/scope/reuse/gap:** Planned; reuse dossiers, contradictions and hypothesis registry, adding explicit mechanisms, alternatives and decisive tests before promotion.
-- **Contracts/dependencies:** RI-004/008 and DISC-002; each hypothesis declares causal story, competing explanations and falsification outcomes.
-- **Tests/evidence/rollback/done:** Test tautologies, unfalsifiable claims, confounders and post-hoc changes. Retain alternative/rejection dossiers. Rollback returns the claim to unresolved. Done when supporting evidence cannot hide failed decisive tests.
-
-### DISC-007 — Selection-bias and research-overfitting auditor
-
-- **Status/scope/reuse/gap:** Planned; reuse trial families and M13 statistical review, adding full-history family-wise/FDR, deflated evidence and researcher-degrees-of-freedom audits.
-- **Contracts/dependencies:** BT-006 and DISC-006; audit consumes immutable complete search ledgers only.
-- **Tests/evidence/rollback/done:** Test omitted trials, family splitting, metric shopping and optional stopping. Retain adjusted reports and raw lineage. Rollback blocks promotion. Done when evidence strength reflects the complete search process.
-
 ### DISC-008 — Bounded autonomous research sessions
 
 - **Status/scope/reuse/gap:** Planned; reuse Mission Supervisor and research roles, adding agenda, budget, termination and escalation for unattended no-capital sessions.
@@ -787,12 +800,6 @@ package is not complete until its own tests, evidence and rollback boundary pass
 - **Status/scope/reuse/gap:** Planned; reuse RI gaps, curricula and trial registry, adding diversified inquiry allocation based on expected information value.
 - **Contracts/dependencies:** DISC-001/002/007/008; budgets apply to research attention only, never capital.
 - **Tests/evidence/rollback/done:** Test duplication, monoculture, stale estimates and gaming. Retain ranked agenda and counterfactual choices. Rollback uses deterministic baseline scheduling. Done when inquiry diversity and allocation rationale are visible.
-
-### SHADOW-002 — Prospective candidate monitoring and re-evaluation
-
-- **Status/scope/reuse/gap:** Planned; reuse SHADOW-001 journal and GOV-003 lifecycle, adding degradation, incident and scheduled re-evaluation rules.
-- **Contracts/dependencies:** SHADOW-001, RISK-004 and CAD-001; candidates bind health metrics, thresholds, expiry and demotion action.
-- **Tests/evidence/rollback/done:** Test data gaps, drift, outage, false recovery and stale evidence. Retain monitoring/review dossier. Rollback freezes candidate use. Done when deterioration cannot silently continue or promote a candidate.
 
 ### ML-002 — Causal feature, label and split pipelines
 
@@ -812,18 +819,6 @@ package is not complete until its own tests, evidence and rollback boundary pass
 - **Contracts/dependencies:** ML-003 and RI-004; inference receipts include calibration version, uncertainty, applicability and abstention reason.
 - **Tests/evidence/rollback/done:** Test miscalibration, shift, low support and misleading explanations. Retain reliability diagrams and abstention evidence. Rollback selects a prior calibrated model or baseline. Done when uncertainty reliably reduces authority.
 
-### ML-005 — Conditional cost, slippage and capacity models
-
-- **Status/scope/reuse/gap:** Planned; reuse BT-005 and execution telemetry, adding condition-aware prospective models and uncertainty bands.
-- **Contracts/dependencies:** BT-005, SHADOW-001 and EXEC-005; models remain advisory inputs to deterministic constraints.
-- **Tests/evidence/rollback/done:** Test regime/size extrapolation, sparse data and adverse-selection shifts. Retain baseline comparisons and calibration lineage. Rollback uses conservative static costs. Done when prospective net estimates outperform declared baselines within uncertainty.
-
-### ML-006 — Model drift, retraining and retirement
-
-- **Status/scope/reuse/gap:** Planned; reuse SHADOW-002 and GOV-003, adding drift diagnosis and governed retraining proposals.
-- **Contracts/dependencies:** ML-003/004 and CAD-001; retraining is a new registered trial with new artifacts, never mutation in place.
-- **Tests/evidence/rollback/done:** Test drift false positives, concept shift, failed retraining and rollback. Retain comparison and retirement dossiers. Done when degraded models abstain/demote and replacements requalify independently.
-
 ### RL-001 — Offline-RL dataset and evaluation contract
 
 - **Status/scope/reuse/gap:** Planned; reuse immutable snapshots and execution journals, adding behavior-policy, action/support, reward and confounding metadata.
@@ -836,29 +831,7 @@ package is not complete until its own tests, evidence and rollback boundary pass
 - **Contracts/dependencies:** RL-001, DISC-007 and ML-004; output remains shadow-only and carries support/uncertainty bounds.
 - **Tests/evidence/rollback/done:** Test estimator bias, weak overlap, extrapolation and adversarial rewards. Retain estimator comparison. Rollback rejects the proposal. Done when policies cannot pass on unsupported optimistic estimates.
 
-### RL-003 — Learned sizing/allocation/execution sandbox
-
-- **Status/scope/reuse/gap:** Planned; reuse RL-002, portfolio and execution simulators, adding a sandbox beneath immutable deterministic risk controls.
-- **Contracts/dependencies:** RL-002, RISK-005 and EXEC-006/007; hard envelopes override every learned action.
-- **Tests/evidence/rollback/done:** Test extreme actions, outage, drift and constraint conflicts. Retain override and shadow dossiers. Rollback disables learned policy. Done when the policy is reproducible, shadow-only and incapable of bypassing risk.
-
-### PORT-002 — Dependency, diversification and concentration service
-
-- **Status/scope/reuse/gap:** Planned; reuse PORT-001 candidate schema and Bulletproof portfolio analytics, adding state-dependent dependence, clustering and concentration stress.
-- **Contracts/dependencies:** PORT-001 and SHADOW-001; outputs bind data window, regime, uncertainty and stale-input behavior.
-- **Tests/evidence/rollback/done:** Test correlation breaks, shared exposures, sparse histories and concentration limits. Retain dependency/stress dossier. Rollback uses conservative concentration bounds. Done when diversification claims survive state and tail dependence tests.
-
-### PORT-003 — Construction benchmark and robust optimizer registry
-
-- **Status/scope/reuse/gap:** Planned; reuse existing allocators where present, adding equal-weight/risk-budget baselines, versioned solvers, feasibility and deterministic fallback.
-- **Contracts/dependencies:** PORT-001/002 and RISK-001; optimizer inputs/constraints/objective/rounding bind to a registry record.
-- **Tests/evidence/rollback/done:** Test infeasibility, singular matrices, rounding, sensitivity and solver nondeterminism. Retain benchmark ladder. Rollback selects deterministic baseline. Done when optimization adds robust value and never emits an invalid portfolio.
-
-### PORT-004 — Turnover, cost, capacity and liquidity service
-
-- **Status/scope/reuse/gap:** Planned; reuse BT-005, ML-005 and portfolio candidate outputs, adding capacity/turnover constraints with uncertainty.
-- **Contracts/dependencies:** PORT-003 and EXEC-005; every capacity claim binds market, horizon, size, cost model and liquidity source.
-- **Tests/evidence/rollback/done:** Test illiquidity, shocks, stale volume and scaling. Retain cost/capacity curves. Rollback caps size at conservative prior limits. Done when portfolio feasibility includes executable net capacity.
+#### Execution phase — Portfolio, risk, execution and demo certification
 
 ### RISK-001 — Drawdown, tail and reverse-stress engine
 
@@ -872,23 +845,17 @@ package is not complete until its own tests, evidence and rollback boundary pass
 - **Contracts/dependencies:** DATA-001 and RISK-001; hard rules precede sizing and fail closed when state is unknown.
 - **Tests/evidence/rollback/done:** Property-test leverage, margin tiers, liquidation, funding and rule transitions. Retain rule-source and boundary evidence. Rollback disables affected venue/instrument. Done when no order can violate a known hard constraint.
 
-### RISK-003 — Dynamic risk budgets and regime scaling
+### PORT-002 — Dependency, diversification and concentration service
 
-- **Status/scope/reuse/gap:** Planned; reuse deterministic sizing and regime estimates, adding bounded budgets that decrease under uncertainty and resist procyclicality.
-- **Contracts/dependencies:** RISK-001/002 and ML-004; policies declare floors, caps, hysteresis and expiry.
-- **Tests/evidence/rollback/done:** Test volatility spikes, regime flip, uncertainty, feedback and stale inputs. Retain budget trajectories. Rollback uses static conservative limits. Done when uncertainty never increases authorized risk.
+- **Status/scope/reuse/gap:** Planned; reuse PORT-001 candidate schema and Bulletproof portfolio analytics, adding state-dependent dependence, clustering and concentration stress.
+- **Contracts/dependencies:** PORT-001 and SHADOW-001; outputs bind data window, regime, uncertainty and stale-input behavior.
+- **Tests/evidence/rollback/done:** Test correlation breaks, shared exposures, sparse histories and concentration limits. Retain dependency/stress dossier. Rollback uses conservative concentration bounds. Done when diversification claims survive state and tail dependence tests.
 
-### RISK-004 — Candidate admission and lifecycle authority
+### PORT-003 — Construction benchmark and robust optimizer registry
 
-- **Status/scope/reuse/gap:** Planned; reuse GOV-003 and portfolio dossiers, adding separate admission, allocation, scaling, demotion and retirement decisions.
-- **Contracts/dependencies:** PORT-001..004, RISK-001..003 and SHADOW-002; approvals bind limits, expiry, kill and evidence epochs.
-- **Tests/evidence/rollback/done:** Test stale dossiers, conflicting authority, expiry and emergency demotion. Retain decision chain. Rollback removes allocation and preserves evidence. Done when research success alone cannot allocate capital.
-
-### RISK-005 — Real-time deterministic risk service
-
-- **Status/scope/reuse/gap:** Planned; reuse Bulletproof risk controls, adding a production pre-trade/portfolio service with consistent snapshots and degraded mode.
-- **Contracts/dependencies:** RISK-002..004 and EXEC-001/004; deterministic allow/deny responses have latency SLO, state version and independent kill path.
-- **Tests/evidence/rollback/done:** Test stale state, partition, overload, restart and limit races. Retain decision/reconciliation logs. Rollback fails closed and cancels authorization. Done when all external orders pass current hard risk checks.
+- **Status/scope/reuse/gap:** Planned; reuse existing allocators where present, adding equal-weight/risk-budget baselines, versioned solvers, feasibility and deterministic fallback.
+- **Contracts/dependencies:** PORT-001/002 and RISK-001; optimizer inputs/constraints/objective/rounding bind to a registry record.
+- **Tests/evidence/rollback/done:** Test infeasibility, singular matrices, rounding, sensitivity and solver nondeterminism. Retain benchmark ladder. Rollback selects deterministic baseline. Done when optimization adds robust value and never emits an invalid portfolio.
 
 ### EXEC-001 — Canonical market/order event and clock service
 
@@ -911,7 +878,7 @@ package is not complete until its own tests, evidence and rollback boundary pass
 ### EXEC-004 — Idempotent order management and reconciliation
 
 - **Status/scope/reuse/gap:** Planned; reuse any existing adapters/order states, adding canonical intent/order/fill lifecycle, idempotency and authoritative reconciliation.
-- **Contracts/dependencies:** EXEC-001/003 and RISK-005; commands bind client IDs, approvals and current risk state.
+- **Contracts/dependencies:** EXEC-001/003 and RISK-002; commands bind client IDs, approvals and a versioned risk-decision interface. RISK-005 composes this order-state authority with the complete admission and dynamic-risk stack; EXEC-004 does not depend on its downstream composition.
 - **Tests/evidence/rollback/done:** Test disconnect, duplicate, partial fill, unknown order, cancel race and restart. Retain command/event reconciliation. Rollback freezes submissions and reconciles before recovery. Done when no ambiguous state permits a second order.
 
 ### EXEC-005 — Execution-quality calibration
@@ -919,6 +886,36 @@ package is not complete until its own tests, evidence and rollback boundary pass
 - **Status/scope/reuse/gap:** Planned; reuse BT-005 and shadow fills, adding queue, latency, impact, slippage and adverse-selection calibration against observations.
 - **Contracts/dependencies:** EXEC-001/002/004 and SHADOW-001; calibrations bind venue, order type, size, regime and uncertainty.
 - **Tests/evidence/rollback/done:** Test sparse samples, outages, censoring and regime shift. Retain replay-to-observed scorecards. Rollback uses pessimistic bounds. Done when modeled execution meets declared prospective tolerances.
+
+### PORT-004 — Turnover, cost, capacity and liquidity service
+
+- **Status/scope/reuse/gap:** Planned; reuse BT-005, ML-005 and portfolio candidate outputs, adding capacity/turnover constraints with uncertainty.
+- **Contracts/dependencies:** PORT-003 and EXEC-005; every capacity claim binds market, horizon, size, cost model and liquidity source.
+- **Tests/evidence/rollback/done:** Test illiquidity, shocks, stale volume and scaling. Retain cost/capacity curves. Rollback caps size at conservative prior limits. Done when portfolio feasibility includes executable net capacity.
+
+### RISK-003 — Dynamic risk budgets and regime scaling
+
+- **Status/scope/reuse/gap:** Planned; reuse deterministic sizing and regime estimates, adding bounded budgets that decrease under uncertainty and resist procyclicality.
+- **Contracts/dependencies:** RISK-001/002 and ML-004; policies declare floors, caps, hysteresis and expiry.
+- **Tests/evidence/rollback/done:** Test volatility spikes, regime flip, uncertainty, feedback and stale inputs. Retain budget trajectories. Rollback uses static conservative limits. Done when uncertainty never increases authorized risk.
+
+### SHADOW-002 — Prospective candidate monitoring and re-evaluation
+
+- **Status/scope/reuse/gap:** Planned; reuse SHADOW-001 journal and GOV-003 lifecycle, adding degradation, incident and scheduled re-evaluation rules.
+- **Contracts/dependencies:** SHADOW-001, PORT-001 and CAD-001; candidates bind health metrics, thresholds, expiry and demotion proposal. RISK-004 consumes this evidence to decide admission; monitoring does not depend on the admission decision it informs.
+- **Tests/evidence/rollback/done:** Test data gaps, drift, outage, false recovery and stale evidence. Retain monitoring/review dossier. Rollback freezes candidate use. Done when deterioration cannot silently continue or promote a candidate.
+
+### RISK-004 — Candidate admission and lifecycle authority
+
+- **Status/scope/reuse/gap:** Planned; reuse GOV-003 and portfolio dossiers, adding separate admission, allocation, scaling, demotion and retirement decisions.
+- **Contracts/dependencies:** PORT-001..004, RISK-001..003 and SHADOW-002; approvals bind limits, expiry, kill and evidence epochs.
+- **Tests/evidence/rollback/done:** Test stale dossiers, conflicting authority, expiry and emergency demotion. Retain decision chain. Rollback removes allocation and preserves evidence. Done when research success alone cannot allocate capital.
+
+### RISK-005 — Real-time deterministic risk service
+
+- **Status/scope/reuse/gap:** Planned; reuse Bulletproof risk controls, adding a production pre-trade/portfolio service with consistent snapshots and degraded mode.
+- **Contracts/dependencies:** RISK-002..004 and EXEC-001/004; deterministic allow/deny responses have latency SLO, state version and independent kill path.
+- **Tests/evidence/rollback/done:** Test stale state, partition, overload, restart and limit races. Retain decision/reconciliation logs. Rollback fails closed and cancels authorization. Done when all external orders pass current hard risk checks.
 
 ### EXEC-006 — Baseline execution algorithms and scheduler
 
@@ -938,24 +935,114 @@ package is not complete until its own tests, evidence and rollback boundary pass
 - **Contracts/dependencies:** EXEC-003/004/007; adapters declare supported orders, precision, clocks, errors and reconciliation.
 - **Tests/evidence/rollback/done:** Run sandbox conformance, reconnect, partial fill, rejection and kill drills. Retain venue-specific dossier. Rollback revokes certification. Done when no adapter reaches micro-live without current environment evidence.
 
+### DEMO-001 — Production-like venue demo certification
+
+- **Status/scope/reuse/gap:** Planned; reuse EXEC-008 and shadow infrastructure, adding a governed demo environment and certification gate.
+- **Contracts/dependencies:** EXEC-004..008, RISK-005 and PLAT-005; demo uses production-like controls without capital.
+- **Tests/evidence/rollback/done:** Rehearse order lifecycle, reconciliation, kill, restart, limits and incidents. Retain certification dossier. Rollback revokes adapter/candidate qualification. Done when operational behavior, not simulated PnL alone, passes.
+
 ### EXEC-009 — Execution degradation feedback
 
 - **Status/scope/reuse/gap:** Planned; reuse EXEC-005 telemetry and SHADOW-002 lifecycle, adding venue/strategy degradation incidents and bounded demotion proposals.
 - **Contracts/dependencies:** EXEC-005/008 and CAD-001; alerts cannot self-modify execution or restore eligibility.
 
-### EXEC-011 — Canonical venue telemetry, trade replay and Mission Control observability
+### ML-005 — Conditional cost, slippage and capacity models
 
-- **Status/scope/reuse/gap:** Planned. Reuse Bulletproof's Binance/Bybit REST and private-stream adapters, SQLite execution state, JSONL order/fill/incident artifacts, reconciliation engine and session summaries. Add the missing governed bridge that continuously captures demo/live venue events and converts them into the same canonical decision, intent, order, fill, position, cash, fee, funding, margin and trade-episode semantics used by the classic backtest engine. Do not claim that an API-key environment file alone constitutes readiness.
-- **Contracts/dependencies:** EXEC-001..009, SHADOW-001, BT-003/005/008, PLAT-005/007, UI-001 and UI-007. Every event binds venue/environment/account pseudonym, instrument identity, exchange/source/receive clocks, sequence or cursor, raw protected reference, normalization version and correction/reconciliation lineage. Secrets remain root-owned and never enter events, logs, prompts, artifacts or Mission Control.
-- **Steps/interfaces:** Add versioned venue capability matrices and credential templates; doctor/certification gates; durable per-venue demo/live collectors; append-only raw event journal; deterministic canonical projections; periodic REST-to-stream reconciliation; trade-episode compiler compatible with backtest reporting; immutable export/replay bundles; Hermes publication receipts; and Mission Control execution views for shadow/demo/live environment, health, lag, positions, orders, fills, fees/funding, PnL, incidents, reconciliation and replay provenance. Shadow runs on VM1 against public/read-only market feeds until an explicitly approved deployment profile moves it; demo/live collectors and order services run on hardened VM2.
-- **Tests/evidence/rollback/done:** Test duplicate/out-of-order/missing events, reconnect cursor loss, timestamp drift, partial fills, cancel races, funding/fee corrections, contract changes, process restart, API outage, private-stream staleness, REST disagreement, redaction, backtest-versus-venue episode replay and UI freshness. Retain certification and replay dossiers for Binance demo, Bybit demo, then separate micro-live canaries. Rollback revokes the venue profile, freezes submissions, preserves the journal and rebuilds projections. Done only when a fresh client can reproduce balances, positions and completed trade episodes to declared tolerances and Mission Control visibly distinguishes simulated shadow, venue demo and capital-bearing live state. **Reviewer:** Execution, risk, security, data and founder authorities.
-- **Tests/evidence/rollback/done:** Test noisy metrics, outage, recovery and alert dedupe. Retain incident/review chain. Rollback keeps conservative execution settings. Done when degradation triggers accountable review before continued use.
+- **Status/scope/reuse/gap:** Planned; reuse BT-005 and execution telemetry, adding condition-aware prospective models and uncertainty bands.
+- **Contracts/dependencies:** BT-005, SHADOW-001 and EXEC-005; models remain advisory inputs to deterministic constraints.
+- **Tests/evidence/rollback/done:** Test regime/size extrapolation, sparse data and adverse-selection shifts. Retain baseline comparisons and calibration lineage. Rollback uses conservative static costs. Done when prospective net estimates outperform declared baselines within uncertainty.
 
-### EXEC-010 — Asset-class expansion qualification
+### ML-006 — Model drift, retraining and retirement
 
-- **Status/scope/reuse/gap:** Planned; reuse DATA, BT, risk and execution contracts, adding a mandatory dossier for each new market's mechanics.
-- **Contracts/dependencies:** DATA-001..003, BT-004/005 and EXEC-001..009; qualification is asset/venue specific.
-- **Tests/evidence/rollback/done:** Cover sessions, settlement, corporate actions, margin, liquidity and adapter behavior. Retain full qualification dossier. Rollback disables the new market. Done when expansion cannot inherit unsupported assumptions from crypto or another asset class.
+- **Status/scope/reuse/gap:** Planned; reuse SHADOW-002 and GOV-003, adding drift diagnosis and governed retraining proposals.
+- **Contracts/dependencies:** ML-003/004 and CAD-001; retraining is a new registered trial with new artifacts, never mutation in place.
+- **Tests/evidence/rollback/done:** Test drift false positives, concept shift, failed retraining and rollback. Retain comparison and retirement dossiers. Done when degraded models abstain/demote and replacements requalify independently.
+
+### RL-003 — Learned sizing/allocation/execution sandbox
+
+- **Status/scope/reuse/gap:** Planned; reuse RL-002, portfolio and execution simulators, adding a sandbox beneath immutable deterministic risk controls.
+- **Contracts/dependencies:** RL-002, RISK-005 and EXEC-006/007; hard envelopes override every learned action.
+- **Tests/evidence/rollback/done:** Test extreme actions, outage, drift and constraint conflicts. Retain override and shadow dossiers. Rollback disables learned policy. Done when the policy is reproducible, shadow-only and incapable of bypassing risk.
+
+#### Execution phase — Organization, resilient platform and founder surfaces
+
+### AGT-005 — Agent benchmark, calibration and release scorecard
+
+- **Status/scope/reuse/gap:** Planned; reuse role-package versions and pilot evidence, adding role-specific golden tasks, confidence calibration and shadow release comparison.
+- **Contracts/dependencies:** AGT-001/004 and GOV-004; releases bind benchmark set, thresholds, failures, cost/latency and rollback version. EVOLVE-002 later aggregates these scorecards and is not a prerequisite for producing them.
+- **Tests/evidence/rollback/done:** Test regressions, distribution shift, abstention and benchmark leakage. Retain comparative scorecards. Rollback reactivates the qualified prior package. Done when each active role meets declared reliability rather than a generic pass rate.
+
+### AGT-007 — Bounded company role catalog
+
+- **Status/scope/reuse/gap:** Planned; reuse deployed engineering, infrastructure, knowledge, research and stewardship packages, filling production roles only from documented demand.
+- **Contracts/dependencies:** AGT-001/005/006; every role declares charter, tasks, workflows, grants, machine, SLO, replacement and prohibited actions.
+- **Tests/evidence/rollback/done:** Run per-role golden, denial, outage and replacement drills. Retain catalog/deployment scorecards. Rollback revokes a role package. Done when every deployed agent is inspectable and replaceable without architectural redesign.
+
+### AGT-008 — Evidence-governed agent improvement
+
+- **Status/scope/reuse/gap:** Planned; reuse package registry promotion states and engineering missions, adding bounded improvement proposals derived from failures and evaluations.
+- **Contracts/dependencies:** AGT-004/005/006 and GOV-003; agents may propose patches/packages but cannot approve or deploy themselves.
+- **Tests/evidence/rollback/done:** Test reward gaming, scope growth, self-promotion and regression. Retain proposal, rehearsal, independent review and promotion evidence. Rollback activates the prior package. Done when improvement is measurable, governed and non-self-authorizing.
+
+### PLAT-003 — Signed artifact and package supply chain
+
+- **Status/scope/reuse/gap:** Planned; reuse role-package signing and promotion states, adding SBOM, provenance, vulnerability/policy gates and artifact verification.
+- **Contracts/dependencies:** PLAT-001/002 and AGT-005; build outputs bind source, builder, dependencies, digest and promotion evidence.
+- **Tests/evidence/rollback/done:** Test tamper, unsigned artifact, vulnerable dependency and stale attestation. Retain SBOM/signature/rehearsal. Rollback revokes artifact. Done when only verified rehearsed artifacts can deploy.
+
+### GOV-003 — Promotion, demotion, quarantine and retirement
+
+- **Status/scope/reuse/gap:** Planned; reuse research decisions, quarantine and approval records, adding consequence-specific promotion, demotion, retirement and reinstatement workflows.
+- **Contracts/dependencies:** GOV-001/002 and RI-010; every transition binds evidence, approvers, expiry, rollback and affected descendants.
+- **Tests/evidence/rollback/done:** Test stale evidence, revocation, emergency demotion and reinstatement. Retain decision dossiers. Rollback restores the prior bounded state, never deleted history. Done when all lifecycle consequences are explicit and reversible where lawful.
+
+### PLAT-004 — Deployment controller, canary and rollback
+
+- **Status/scope/reuse/gap:** Planned; reuse deployment architect, runbook packages and manifests, adding a general source-to-environment controller.
+- **Contracts/dependencies:** PLAT-001..003 and GOV-003; deployments bind approved artifact, target, preflight, canary, health and rollback.
+- **Tests/evidence/rollback/done:** Test interruption, health failure, incompatible migration and stale approval. Retain provenance/canary/rollback dossier. Done when VM1-to-GitHub-to-VM2/Mac deployment and recovery are reproducible.
+
+### CAD-001 — Event-driven institutional operating cadence
+
+- **Status/scope/reuse/gap:** Planned; reuse schedulers, outbox and Mission Supervisor, adding governed daily, weekly, monthly and quarterly review definitions.
+- **Contracts/dependencies:** OPS-001 and GOV-002; cadence instances have due windows, dedupe keys, prerequisites, owners and missed-run reconciliation.
+- **Tests/evidence/rollback/done:** Test reboot, delay, duplicate ticks, backlog and clock shift. Retain schedule/reconciliation receipts. Rollback pauses future instances. Done when missed reviews catch up once without duplicate action.
+
+### CAD-002 — Scorecards, retrospectives and policy learning
+
+- **Status/scope/reuse/gap:** Planned; reuse operational notes, dossiers and metrics, adding governed scorecards and postmortem-to-proposal lineage.
+- **Contracts/dependencies:** CAD-001 and GOV-001/004; metrics produce evidence and proposals, never authority. EVOLVE-002 consumes these scorecards; CAD-002 does not depend on its own downstream consumer.
+- **Tests/evidence/rollback/done:** Test gaming, missing denominators, stale metrics and self-authorization. Retain scorecard and accepted/rejected learning lineage. Rollback retires a metric version. Done when institutional learning is attributable without automating policy consent.
+
+### PLAT-006 — Incident command and postmortem system
+
+- **Status/scope/reuse/gap:** Planned; reuse operational notes, alerts and approvals, adding severity, command roles, timeline, evidence capture and recovery actions.
+- **Contracts/dependencies:** PLAT-005, GOV-004 and CAD-002; incident actions bind authority and never rewrite history.
+- **Tests/evidence/rollback/done:** Simulate service, data, security and agent incidents. Retain timeline/postmortem/action closure. Rollback pauses unsafe automation. Done when incidents close with accountable recovery and governed learning.
+
+### PLAT-007 — Company-wide backup and disaster recovery
+
+- **Status/scope/reuse/gap:** Planned; reuse OPS-005 verified local backups and RI recovery, adding encrypted off-host retention and integrated recovery for every canonical store.
+- **Contracts/dependencies:** PLAT-001/002/005 and OPS-005; policies bind RPO/RTO, retention, encryption, owner and restore procedure.
+- **Tests/evidence/rollback/done:** Rehearse loss/corruption and restore on intended machines. Retain off-host manifests and measured drills. Rollback never deletes last verified generation. Done when control plane, RI and application recover across a disaster boundary.
+
+### SEC-002 — Host, container and network hardening
+
+- **Status/scope/reuse/gap:** Planned; reuse systemd sandboxes, private networks, firewall and secret files, adding intended-machine baselines and vulnerability lifecycle.
+- **Contracts/dependencies:** PLAT-001/002/003/005; baselines declare ports, users, capabilities, mounts, patches and exceptions. PLAT-008 must satisfy this baseline; SEC-002 does not depend on the deployment package it constrains.
+- **Tests/evidence/rollback/done:** Test drift, exposed port, vulnerable image, permission and recovery. Retain scans and patch drill. Rollback restores known-good configuration. Done when VM1, VM2 and Mac meet versioned least-exposure baselines.
+
+### PLAT-008 — VM2 application and infrastructure operations
+
+- **Status/scope/reuse/gap:** Planned; reuse deployment architect, Postgres/app runbooks, TLS, Caddy and backups, generalizing typed Docker, database, Redis, storage, certificate and DNS packages.
+- **Contracts/dependencies:** PLAT-003/004/007 and SEC-002; packages declare target profiles, rehearsal, approvals, rollback and ownership.
+- **Tests/evidence/rollback/done:** Run VM2-parity rehearsal, cutover, rotation and restore drills. Retain package/promotion dossiers. Rollback restores prior release/network/certificate state. Done when end-to-end operations no longer require ad hoc commands.
+
+### PLAT-009 — Storage, retention and cleanup lifecycle
+
+- **Status/scope/reuse/gap:** Planned; reuse RI lawful deletion, workspace cleanup and backup retention, adding quotas and lifecycle policy across artifacts, logs and caches.
+- **Contracts/dependencies:** RI-010, DATA-003 and PLAT-007; canonical evidence, holds and last verified backups are protected.
+- **Tests/evidence/rollback/done:** Test disk pressure, interrupted cleanup, retention hold and accidental canonical target. Retain deletion manifests. Rollback restores reversible tiers. Done when storage growth is forecast, bounded and auditable.
 
 ### UI-001 — Mission Control operating model and global state
 
@@ -975,12 +1062,6 @@ package is not complete until its own tests, evidence and rollback boundary pass
 - **Contracts/dependencies:** RI-003/004/008/009/010 and BT-008; views use canonical IDs/digests and never imply graph proximity is evidence.
 - **Tests/evidence/rollback/done:** Test citation replay, stale projections, no-answer, contradictions, trial family and lifecycle changes. Retain Mac task tests. Rollback disables write actions while preserving exploration. Done when a fresh founder session replays question through sources, trials, reviews and decision.
 
-### UI-004 — Digest-safe approval center
-
-- **Status/scope/reuse/gap:** Planned; reuse approvals and durable outbox, adding digest diffs, risk, expiry, prerequisites, clarification and safe links across all domains.
-- **Contracts/dependencies:** OPS-001 and GOV-001/002; only executable, current proposals expose approval actions.
-- **Tests/evidence/rollback/done:** Test stale/deep-link replay, duplicate notification, changed plan, clarification and rejection. Retain decision receipts. Rollback revokes outstanding links. Done when one current gate yields at most one actionable notification.
-
 ### UI-005 — Operations, incident and recovery console
 
 - **Status/scope/reuse/gap:** Planned; reuse fleet, backup and service health surfaces, adding SLOs, deployments, incidents, runbooks and recovery evidence.
@@ -993,95 +1074,25 @@ package is not complete until its own tests, evidence and rollback boundary pass
 - **Contracts/dependencies:** UI-001..005; shared components preserve status/risk semantics and stable layout.
 - **Tests/evidence/rollback/done:** Run accessibility automation, keyboard paths, zoom/mobile widths and founder usability tasks. Retain screenshots/results. Rollback retains prior accessible component. Done when critical workflows remain understandable and operable across supported viewports.
 
-### CHAN-001 — Restricted Telegram founder channel
-
-- **Status/scope/reuse/gap:** Planned toward production qualification; reuse gateway, planner, outbox and safe approvals, closing clarification, dedupe, status and outage behavior.
-- **Contracts/dependencies:** OPS-001/002, UI-004 and AGT-004; plain English creates proposals, non-executable requests ask questions, and secrets/sudo are prohibited.
-- **Tests/evidence/rollback/done:** Test spoofed user, replay, flood, stale link, outage, clarification and secret input. Retain redacted transcripts. Rollback disables commands while status remains. Done when mobile intake is safe and never bypasses Mission Control authority.
-
-### PLAT-001 — Service catalog and dependency inventory
-
-- **Status/scope/reuse/gap:** Planned; reuse role/deployment and systemd/container inventories, adding owners, SLOs, APIs/events, data classes and recovery plans.
-- **Contracts/dependencies:** BASE-002/003; catalog records are versioned and runtime observations reconcile against them.
-- **Tests/evidence/rollback/done:** Test orphan service, incompatible API, missing owner and stale dependency. Retain catalog/reconciliation report. Rollback pins prior catalog. Done when every runtime dependency and recovery owner is discoverable.
-
-### PLAT-002 — Workload identity, authorization and secrets lifecycle
-
-- **Status/scope/reuse/gap:** Planned; reuse agent tokens, root-owned environments and package permissions, adding workload identity, RBAC/ABAC, rotation and break-glass lifecycle.
-- **Contracts/dependencies:** GOV-001 and AGT-001; credentials bind workload, scope, machine, expiry and audit without entering prompts/logs.
-- **Tests/evidence/rollback/done:** Test revocation, rotation, confused deputy, secret leak and emergency access. Retain redacted drills. Rollback revokes new identity and restores scoped prior credential. Done when least privilege and rotation are proven.
-
-### PLAT-003 — Signed artifact and package supply chain
-
-- **Status/scope/reuse/gap:** Planned; reuse role-package signing and promotion states, adding SBOM, provenance, vulnerability/policy gates and artifact verification.
-- **Contracts/dependencies:** PLAT-001/002 and AGT-005; build outputs bind source, builder, dependencies, digest and promotion evidence.
-- **Tests/evidence/rollback/done:** Test tamper, unsigned artifact, vulnerable dependency and stale attestation. Retain SBOM/signature/rehearsal. Rollback revokes artifact. Done when only verified rehearsed artifacts can deploy.
-
-### PLAT-004 — Deployment controller, canary and rollback
-
-- **Status/scope/reuse/gap:** Planned; reuse deployment architect, runbook packages and manifests, adding a general source-to-environment controller.
-- **Contracts/dependencies:** PLAT-001..003 and GOV-003; deployments bind approved artifact, target, preflight, canary, health and rollback.
-- **Tests/evidence/rollback/done:** Test interruption, health failure, incompatible migration and stale approval. Retain provenance/canary/rollback dossier. Done when VM1-to-GitHub-to-VM2/Mac deployment and recovery are reproducible.
-
-### PLAT-005 — Unified observability, SLO and alert routing
-
-- **Status/scope/reuse/gap:** Planned; reuse OPS-004 fleet signals and service logs, adding metrics, traces, SLOs, capacity and accountable routing.
-- **Contracts/dependencies:** PLAT-001 and SEC-001; telemetry has bounded cardinality, redaction and stable service identity.
-- **Tests/evidence/rollback/done:** Test alert precision, silence, overload, secret leakage and missing telemetry. Retain SLO/incident replay. Rollback disables a noisy rule. Done when alerts are actionable, deduplicated and attributable.
-
-### PLAT-006 — Incident command and postmortem system
-
-- **Status/scope/reuse/gap:** Planned; reuse operational notes, alerts and approvals, adding severity, command roles, timeline, evidence capture and recovery actions.
-- **Contracts/dependencies:** PLAT-005, GOV-004 and CAD-002; incident actions bind authority and never rewrite history.
-- **Tests/evidence/rollback/done:** Simulate service, data, security and agent incidents. Retain timeline/postmortem/action closure. Rollback pauses unsafe automation. Done when incidents close with accountable recovery and governed learning.
-
-### PLAT-007 — Company-wide backup and disaster recovery
-
-- **Status/scope/reuse/gap:** Planned; reuse OPS-005 verified local backups and RI recovery, adding encrypted off-host retention and integrated recovery for every canonical store.
-- **Contracts/dependencies:** PLAT-001/002/005 and OPS-005; policies bind RPO/RTO, retention, encryption, owner and restore procedure.
-- **Tests/evidence/rollback/done:** Rehearse loss/corruption and restore on intended machines. Retain off-host manifests and measured drills. Rollback never deletes last verified generation. Done when control plane, RI and application recover across a disaster boundary.
-
-### PLAT-008 — VM2 application and infrastructure operations
-
-- **Status/scope/reuse/gap:** Planned; reuse deployment architect, Postgres/app runbooks, TLS, Caddy and backups, generalizing typed Docker, database, Redis, storage, certificate and DNS packages.
-- **Contracts/dependencies:** PLAT-003/004/007 and SEC-002; packages declare target profiles, rehearsal, approvals, rollback and ownership.
-- **Tests/evidence/rollback/done:** Run VM2-parity rehearsal, cutover, rotation and restore drills. Retain package/promotion dossiers. Rollback restores prior release/network/certificate state. Done when end-to-end operations no longer require ad hoc commands.
-
-### PLAT-009 — Storage, retention and cleanup lifecycle
-
-- **Status/scope/reuse/gap:** Planned; reuse RI lawful deletion, workspace cleanup and backup retention, adding quotas and lifecycle policy across artifacts, logs and caches.
-- **Contracts/dependencies:** RI-010, DATA-003 and PLAT-007; canonical evidence, holds and last verified backups are protected.
-- **Tests/evidence/rollback/done:** Test disk pressure, interrupted cleanup, retention hold and accidental canonical target. Retain deletion manifests. Rollback restores reversible tiers. Done when storage growth is forecast, bounded and auditable.
-
-### SEC-001 — System threat models and adversarial security suites
-
-- **Status/scope/reuse/gap:** Planned; reuse corpus scanners, sandboxing and approval boundaries, adding maintained threat models for services, agents, research and capital.
-- **Contracts/dependencies:** BASE-002/003 and PLAT-001; every high-risk interface owns abuse cases, controls, detection and containment.
-- **Tests/evidence/rollback/done:** Exercise injection, exfiltration, privilege escalation, supply-chain and capital mutations. Retain redacted findings and closure. Rollback disables unsafe surface. Done when high-risk paths have current adversarial evidence.
-
-### SEC-002 — Host, container and network hardening
-
-- **Status/scope/reuse/gap:** Planned; reuse systemd sandboxes, private networks, firewall and secret files, adding intended-machine baselines and vulnerability lifecycle.
-- **Contracts/dependencies:** PLAT-002/003/005/008; baselines declare ports, users, capabilities, mounts, patches and exceptions.
-- **Tests/evidence/rollback/done:** Test drift, exposed port, vulnerable image, permission and recovery. Retain scans and patch drill. Rollback restores known-good configuration. Done when VM1, VM2 and Mac meet versioned least-exposure baselines.
-
 ### WS-002 — Degraded-mode and partial-publication compensation
 
 - **Status/scope/reuse/gap:** Planned; reuse WS-001, outbox and BT-008 compensation, adding whole-company behavior under dependency loss.
 - **Contracts/dependencies:** WS-001, GOV-002 and PLAT-005/007; each workflow declares authoritative state, retry and compensation.
 - **Tests/evidence/rollback/done:** Inject partitions during approval, execution and publication. Retain fault/recovery replay. Rollback reconstructs from canonical events. Done when no outage creates split-brain authority or orphan canonical state.
 
-### DEMO-001 — Production-like venue demo certification
+### EXEC-011 — Canonical venue telemetry, trade replay and Mission Control observability
 
-- **Status/scope/reuse/gap:** Planned; reuse EXEC-008 and shadow infrastructure, adding a governed demo environment and certification gate.
-- **Contracts/dependencies:** EXEC-004..008, RISK-005 and PLAT-005; demo uses production-like controls without capital.
-- **Tests/evidence/rollback/done:** Rehearse order lifecycle, reconciliation, kill, restart, limits and incidents. Retain certification dossier. Rollback revokes adapter/candidate qualification. Done when operational behavior, not simulated PnL alone, passes.
+- **Status/scope/reuse/gap:** Planned. Reuse Bulletproof's Binance/Bybit REST and private-stream adapters, SQLite execution state, JSONL order/fill/incident artifacts, reconciliation engine and session summaries. Add the missing governed bridge that continuously captures demo/live venue events and converts them into the same canonical decision, intent, order, fill, position, cash, fee, funding, margin and trade-episode semantics used by the classic backtest engine. Do not claim that an API-key environment file alone constitutes readiness.
+- **Contracts/dependencies:** EXEC-001..009, SHADOW-001, BT-003/005/008, PLAT-005/007, UI-001 and UI-007. Every event binds venue/environment/account pseudonym, instrument identity, exchange/source/receive clocks, sequence or cursor, raw protected reference, normalization version and correction/reconciliation lineage. Secrets remain root-owned and never enter events, logs, prompts, artifacts or Mission Control.
+- **Steps/interfaces:** Add versioned venue capability matrices and credential templates; doctor/certification gates; durable per-venue demo/live collectors; append-only raw event journal; deterministic canonical projections; periodic REST-to-stream reconciliation; trade-episode compiler compatible with backtest reporting; immutable export/replay bundles; Hermes publication receipts; and Mission Control execution views for shadow/demo/live environment, health, lag, positions, orders, fills, fees/funding, PnL, incidents, reconciliation and replay provenance. Shadow runs on VM1 against public/read-only market feeds until an explicitly approved deployment profile moves it; demo/live collectors and order services run on hardened VM2.
+- **Tests/evidence/rollback/done:** Test duplicate/out-of-order/missing events, reconnect cursor loss, timestamp drift, partial fills, cancel races, funding/fee corrections, contract changes, process restart, API outage, private-stream staleness, REST disagreement, redaction, backtest-versus-venue episode replay and UI freshness. Retain certification and replay dossiers for Binance demo, Bybit demo, then separate micro-live canaries. Rollback revokes the venue profile, freezes submissions, preserves the journal and rebuilds projections. Done only when a fresh client can reproduce balances, positions and completed trade episodes to declared tolerances and Mission Control visibly distinguishes simulated shadow, venue demo and capital-bearing live state. **Reviewer:** Execution, risk, security, data and founder authorities.
+- **Tests/evidence/rollback/done:** Test noisy metrics, outage, recovery and alert dedupe. Retain incident/review chain. Rollback keeps conservative execution settings. Done when degradation triggers accountable review before continued use.
 
-### LIVE-002 — Evidence-gated scaling and multi-candidate production
+### EXEC-010 — Asset-class expansion qualification
 
-- **Status/scope/reuse/gap:** Planned and separately governed; reuse LIVE-001 canary, adding expiring scale decisions and multi-candidate limits.
-- **Contracts/dependencies:** LIVE-001, PORT-004, RISK-004/005, EXEC-008/009 and PLAT-005/007; no automatic scaling.
-- **Tests/evidence/rollback/done:** Test concentration, degradation, outage, loss limit and emergency kill. Retain founder/risk approvals and production dossier. Rollback reduces allocation or exits under deterministic controls. Done when scaling has current independent evidence and bounded loss.
+- **Status/scope/reuse/gap:** Planned; reuse DATA, BT, risk and execution contracts, adding a mandatory dossier for each new market's mechanics.
+- **Contracts/dependencies:** DATA-001..003, BT-004/005 and EXEC-001..009; qualification is asset/venue specific.
+- **Tests/evidence/rollback/done:** Cover sessions, settlement, corporate actions, margin, liquidity and adapter behavior. Retain full qualification dossier. Rollback disables the new market. Done when expansion cannot inherit unsupported assumptions from crypto or another asset class.
 
 ### EVOLVE-001 — Schema, role and model migration/retirement
 
@@ -1094,6 +1105,14 @@ package is not complete until its own tests, evidence and rollback boundary pass
 - **Status/scope/reuse/gap:** Planned; reuse fleet, trial, incident and calibration evidence, adding balanced reliability, safety and scientific-quality measures.
 - **Contracts/dependencies:** CAD-002, AGT-005 and PLAT-005; metrics cannot reward volume, confidence theater or concealed negatives.
 - **Tests/evidence/rollback/done:** Test gaming, missing data and perverse incentives. Retain scorecard lineage and governance decisions. Rollback retires the metric. Done when improvement claims are calibrated to reliability and evidence quality.
+
+#### Execution phase — Separately governed capital scaling
+
+### LIVE-002 — Evidence-gated scaling and multi-candidate production
+
+- **Status/scope/reuse/gap:** Planned and separately governed; reuse LIVE-001 canary, adding expiring scale decisions and multi-candidate limits.
+- **Contracts/dependencies:** LIVE-001, PORT-004, RISK-004/005, EXEC-008/009 and PLAT-005/007; no automatic scaling.
+- **Tests/evidence/rollback/done:** Test concentration, degradation, outage, loss limit and emergency kill. Retain founder/risk approvals and production dossier. Rollback reduces allocation or exits under deterministic controls. Done when scaling has current independent evidence and bounded loss.
 
 ## Shared-surface rules
 

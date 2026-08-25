@@ -197,6 +197,18 @@ venue credential was installed, no demo or live order was sent and no signed
 micro-live dossier exists. LIVE-001 therefore remains `blocked_before_capital` until
 its external prerequisites and serialized capital-bearing acceptance run are real.
 
+## OPS-003 integrated recovery addendum
+
+Control-plane commit `30e6843f42b9e3bc1bd3d01a75a7c913e45b0686` adds a
+strict recovery dossier over existing OPS-005, RI-005, projection, lease and
+notification mechanisms. It verifies backup/restore identity and isolation, measured
+RPO/RTO, restored corpus and derived-state lineage, citation replay, exactly-once stale
+lease recovery, deduplicated notification, redacted secret rotation and a
+schema-compatible runtime replacement whose canonical task output and fallback both
+replay. The 229-test worker suite passes. Deterministic dossier digest
+`941a484ee954fe25a8c63bd256e7bd48699ca6cbba1c3486f5d7df8f081f7f71`
+records no production resource touched and no production-restore authority.
+
 ## RI-012 and RI-013 implementation addendum
 
 Incremental founder-inbox reconciliation, checkpoint/resume and finalize-only behavior
