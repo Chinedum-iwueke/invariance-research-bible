@@ -80,3 +80,20 @@ research execution, memory synchronization, infrastructure observation/restarts,
 deployment runbook phases, mission supervision and a five-role research loop. Present
 online state is not inferred from those pilots; it must be checked from current
 heartbeats and active deployment attestations.
+
+## 3.7 Effective agent authority
+
+AGT-001 makes the catalog executable rather than descriptive. An agent charter is an
+immutable, versioned statement of role, responsibilities, machine and repository
+scope, task types, risk ceiling, accountable owner, conflicts and forbidden actions.
+A capability grant is separately time bounded and revocable, and is bound to the
+exact signed role package it authorizes. Grant and revocation events are digest
+chained.
+
+Task leasing now intersects four records: enabled agent registration, active charter,
+newest active package deployment and unexpired capability grant. The resolver returns
+the charter, package and grant digests plus accountable owner in a permission snapshot
+whose digest is retained in the lease event. Missing scope, package replacement,
+conflict, expiry or revocation denies the lease before approval consumption. In the
+production bootstrap, 14 deployed agents received 41 per-capability grants; a second
+run created no records. No record in this registry supplies capital or order authority.
