@@ -632,9 +632,9 @@ package is not complete until its own tests, evidence and rollback boundary pass
 
 ### GOV-001 — Decision rights, delegation and exception policy
 
-- **Status/scope/reuse/gap:** Planned; reuse approvals, role packages and broker gates, adding one versioned authority graph for decisions, vetoes, delegation, exceptions and emergencies.
+- **Status/scope/reuse/gap (2026-08-25):** Source-complete and merged in control-plane PR #117 at `12afe1afa46dda81bfbc35ed14428cb8ee9bed64`. Existing approvals, role packages and broker gates remain authoritative execution controls; GOV-001 adds the versioned `authority-policy-v1.0.0` graph, immutable resolution records, bounded delegation and exceptions, veto and separation-of-duty evaluation, risk-reduction-only emergency actions, policy activation/rollback governance and Mission Control visibility. REST and Telegram task-approval surfaces now resolve authority before changing approval state. Production completion still requires VM2 migration `e6b1a4d82f90`, rebuilt API, baseline-policy bootstrap, Mac Mission Control reinstall and one allowed/denied live replay.
 - **Contracts/dependencies:** BASE-002/003; policy decisions bind actor, role, scope, risk, digest, expiry and separation-of-duty constraints.
-- **Tests/evidence/rollback/done:** Test self-approval, conflicting grants, expired delegation, emergency use and revocation. Retain policy/decision replay and exception closure. Roll back by activating a prior signed policy. Done when every consequential action resolves to current accountable authority.
+- **Tests/evidence/rollback/done:** The merged source passed 333 backend and 71 Mission Control tests, eight-route OpenAPI verification, changed-file Ruff, JavaScript syntax and four GitHub checks. Identity aliases cannot evade separation, ambiguous grants fail closed, exceptions cannot waive constitutional rules and emergency actions cannot expand risk. Policy replacement and rollback resolve under the active policy and retain a decision record. Exact source evidence and the remaining runtime gate are recorded in [GOV-001 completion evidence](../evidence/GOV-001.md).
 
 ### GOV-002 — Orthogonal lifecycle state machines
 
