@@ -169,6 +169,20 @@ report digest is `7e3f250ffb54d5d6e194ad07cee4a065b2bb614ac8ce52f708b99f398bb5cd
 The evidence grants no alpha, order, sizing, promotion or capital authority and does not
 claim production inference or useful market prediction.
 
+## PORT-001 implementation addendum
+
+Bulletproof source commit `4eaf836d2b0f9a1de4730b2141847cc7d073e40a` adds the
+canonical candidate contract, explicit evidence-registry boundary, exact-overlap
+covariance, shared-dependency analysis, uncertainty-aware capacity-capped deterministic
+baseline, hard portfolio constraints, named stress evaluation, explainable rejection
+and public non-allocation dossier schema. Evidence commit `7e0ab6c` retains the accepted
+dossier and missing-overlap, infeasible-capacity and stress-rejection paths. Candidate
+set digest is `43a0bd21e8c1286b13e1c4de9010c19580e543cd9b2402cdfc0bb31b2e43b325`;
+dossier digest is `3ab51287d89cfdc02a04b4ba1014a85a6716b1a55a086da43d74d4867a3378bd`;
+report digest is `98964cfa2fd0afd65208330bf50f6b25c3eff99d9e0faa9723efca0a6843e555`.
+The evidence is deterministic and no-capital. It grants no candidate admission,
+allocation, sizing, order, execution or self-promotion authority.
+
 ## RI-012 and RI-013 implementation addendum
 
 Incremental founder-inbox reconciliation, checkpoint/resume and finalize-only behavior
