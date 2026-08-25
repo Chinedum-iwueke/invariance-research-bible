@@ -638,9 +638,9 @@ package is not complete until its own tests, evidence and rollback boundary pass
 
 ### GOV-002 — Orthogonal lifecycle state machines
 
-- **Status/scope/reuse/gap:** Planned; reuse existing task, mission, evidence and trial states, adding explicit separate machines for research, evidence, operations and capital.
-- **Contracts/dependencies:** GOV-001 and BASE-002; typed commands/events define legal transitions and forbid one lifecycle from implying another.
-- **Tests/evidence/rollback/done:** Exhaust invalid transitions, races, replay and migration. Retain event histories and state projections. Rollback replays through a compatible projector. Done when no research result can silently become operational or capital authority.
+- **Status/scope/reuse/gap (2026-08-25):** Completed, merged and production-observed through control-plane PRs #118 and #119 at `caa9163af9033df903521858ca534f827c06dc39`. Migration `f7c2a9d41e80` adds separate `research`, `evidence`, `operations` and `capital` projections plus append-only transition events. Existing task, mission, evidence and trial states remain compatible source records; legacy objects are not silently backfilled or reclassified.
+- **Contracts/dependencies:** GOV-001 and BASE-002; every explicit command binds the immutable subject digest, one projection, expected version, authority decision, actor, reason, evidence digests and effective time. Closed transition graphs, cross-dimension prerequisites and row locking forbid inferred promotion, stale writes and command-identity reuse with changed content. Per-dimension digest chains replay into the current projections.
+- **Tests/evidence/rollback/done:** 347 backend and 71 Mission Control tests passed, including invalid transitions, orthogonality, prerequisite guards, stale versions, replay drift and timezone enforcement; five GitHub checks passed. VM2 migrated to `f7c2a9d41e80`, served the lifecycle API healthy, and the live five-event pilot produced dossier `c8d305c59298b2fb2ef00a502e704a27335a1070f3460c27b434aff1a9a6829c`: research `succeeded` and evidence `admissible` left operations `not-considered` and capital `no-authority`; only a separate command moved operations to `candidate`. Rollback restores the prior API while retaining additive events for a compatible projector. The declared definition of done is met; GOV-003 owns consequences such as promotion, demotion, quarantine and reinstatement.
 
 ### GOV-004 — Immutable audit and policy evidence export
 

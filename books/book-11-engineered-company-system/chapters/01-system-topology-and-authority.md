@@ -138,3 +138,42 @@ decision `467f5f4a-6534-4c54-9ff1-ba0a6b00aa37`; the latter retained
 `action-not-authorized` rather than mutating state. A prior retired snapshot is the
 rollback unit, and reactivation itself requires an authorized digest-bound
 `policy-activation` decision under the current policy.
+
+## 1.5 Orthogonal institutional lifecycles
+
+Control-plane PRs #118 and #119, ending at
+`caa9163af9033df903521858ca534f827c06dc39`, add the GOV-002 lifecycle kernel.
+Migration `f7c2a9d41e80` stores four independent projections for every explicitly
+registered governed subject:
+
+| Dimension | Initial state | Meaning |
+|---|---|---|
+| Research | `proposed` | Scientific work and its execution outcome |
+| Evidence | `unassessed` | Admissibility, dispute, invalidity, retraction or retirement |
+| Operations | `not-considered` | Candidate, approval, shadow, demo or live operating maturity |
+| Capital | `no-authority` | Eligibility and bounded allocation authority |
+
+Each transition is an explicit typed command against exactly one projection. It binds
+the immutable subject digest, expected projection version, actor, reason, evidence
+digests, effective time and a GOV-001 authority-decision record. PostgreSQL row locking
+and optimistic versions reject stale concurrent writers. Command IDs are idempotent
+only for identical command identity; reuse with changed content fails closed. Events
+chain the prior event digest per dimension, and every dossier read replays all four
+histories before returning their projections.
+
+Cross-dimension facts are prerequisites, never triggers. Operations progression checks
+for succeeded research and admissible evidence but cannot cause either state. Capital
+progression checks for live operations and admissible evidence but cannot cause those
+states. A research success therefore cannot become deployment or capital authority by
+implication. Mission Control displays the four state/version pairs without collapsing
+them into a single maturity badge.
+
+The production pilot on 2026-08-25 registered subject
+`research-candidate:gov002-orthogonality-pilot-v1` with digest
+`2c29d45820e4da3c7b43dc6ec0384eca1c49178adefcd9e257a276fec3f14f51`.
+After research reached `succeeded` and evidence `admissible`, operations remained
+`not-considered` and capital `no-authority`. A fifth, separately authorized `nominate`
+command moved only operations to `candidate`. The replayed dossier digest is
+`c8d305c59298b2fb2ef00a502e704a27335a1070f3460c27b434aff1a9a6829c`.
+This kernel governs newly registered subjects; it does not silently backfill legacy
+status columns, promote an artifact, allocate capital or place an order.
