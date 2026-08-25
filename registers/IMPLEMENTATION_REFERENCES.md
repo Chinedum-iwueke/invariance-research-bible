@@ -234,6 +234,17 @@ retained evidence. Forty-two focused tests and both required GitHub checks pass.
 evidence does not claim external penetration testing or closure of the four recorded
 residual risks.
 
+## PLAT-005 unified observability addendum
+
+Control-plane merge `8f552ba0e43144fe4888adc20a7a1f258bc480d7` and migration
+`c5e8a2f41d70` add catalog-attributed SLO state, bounded metrics, capacity evidence,
+generation-aware alert routing, immutable acknowledgement/silence/recovery events,
+Telegram founder delivery and Mission Control status/actions. The source suite passed
+323 backend, 37 gateway and 71 Mission Control tests. Retained report digest
+`0f525ce1334705c8731b59b6fc909622fa7c7989541fe73262f6bf24c6479ded` records that
+production deployment and the intended-environment replay were not part of source
+qualification.
+
 ## RI-012 and RI-013 implementation addendum
 
 Incremental founder-inbox reconciliation, checkpoint/resume and finalize-only behavior

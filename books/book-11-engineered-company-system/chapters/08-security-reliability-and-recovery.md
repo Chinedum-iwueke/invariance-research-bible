@@ -208,3 +208,39 @@ security. Uniform workflow-egress allowlisting, complete signed provenance for
 third-party dependencies, a third-host dual-VM outage watchdog and containment after
 host-root compromise remain explicit residual risks. Those risks cannot be removed
 from the report merely to obtain a green result.
+
+## 8.10 Unified observability and accountable alert routing
+
+PLAT-005, merged at control-plane commit
+`8f552ba0e43144fe4888adc20a7a1f258bc480d7`, makes PLAT-001 service identity the
+join key for health, capacity, recovery and routing. It does not add another probe or
+notification queue. Authenticated OPS-004 fleet samples remain the resource clock;
+OPS-005 remains backup truth; service-catalog reconciliation remains runtime/interface
+truth; OPS-007 remains background-work truth; and the durable founder outbox remains
+the Telegram delivery boundary.
+
+Migration `c5e8a2f41d70` adds current service-SLO state, generation-aware routed alerts
+and immutable routing events. Availability, telemetry freshness, recovery point,
+recovery time and capacity indicators are derived only where the catalog declares an
+objective and evidence exists. A single healthy observation is labeled
+`current_evidence`, never presented as 30-day uptime. An RTO without a measured restore
+is `unknown`; missing telemetry is `missing`; neither is silently green.
+
+The evaluator requires three consecutive breached or missing observations before it
+opens one alert generation and three healthy observations before recovery. A later
+recurrence increments the generation, giving founder delivery a new deduplication key.
+Acknowledgement, bounded silence and unsilence append routing events but cannot rewrite
+the underlying SLO measurement. Secret-shaped keys and values are redacted, nested
+evidence is depth/size bounded and Prometheus cardinality is limited to catalog
+service, indicator, status and severity. Mission Control shows current status,
+freshness, owner and route and offers acknowledgement/silence controls; Telegram uses
+the existing outbox and acknowledges only after successful delivery.
+
+Source validation passed 323 backend tests, 37 Telegram tests and 71 Mission Control
+tests, with changed-file Ruff and JavaScript syntax clean. CI retains report digest
+`0f525ce1334705c8731b59b6fc909622fa7c7989541fe73262f6bf24c6479ded` for 90 days.
+That report truthfully records `production_deployed: false`: VM2 migration/API and
+gateway refresh, Mac reinstall and a live breach/silence/recovery replay remain the
+intended-environment qualification step. PLAT-005 supplies current accountable
+observability, not fabricated long-window history, automated remediation or capital
+authority.
