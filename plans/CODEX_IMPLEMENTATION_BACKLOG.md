@@ -511,13 +511,14 @@ PLAT-007 rather than OPS-005.
 
 ### SHADOW-001 — Prospective journal and execution replay
 
+- **Status/scope/reuse/gap (2026-08-25):** Source-complete and locally rehearsed at Bulletproof commits `b2b84bc`, `58cbc5a` and evidence commit `a6a399a`. The implementation reuses the existing shadow runtime, simulated adapter, SQLite checkpoints, reconciliation, incident recording and execution artifacts. It adds only the missing immutable prospective boundary and deterministic replay verifier. The retained no-capital pilot passed disconnect recovery, duplicate suppression, reconciliation, tamper rejection and sealed replay; all 1,279 repository tests passed with 27 expected skips. Continuous public-feed deployment, Hermes/RI publication and Mission Control shadow-session visibility remain follow-on operational work and are not implied by this completion.
 - **Objective/requirement/citations:** Implement M5 immutable shadow observations and no-capital replay.
 - **Repository/files:** Bulletproof execution runtime, market journal, Hermes/RI publication.
 - **Prerequisites/scope:** BT-003 and admitted research candidate. **Non-goals:** venue order submission.
 - **Data/access:** Public/read-only feeds; credential isolation.
 - **Steps/interfaces:** Candidate pin, event journal, intents, replay fills, reconciliation, incidents.
 - **Tests/acceptance:** Disconnect, duplicate/out-of-order event, clock drift, restart, replay parity and cost calibration.
-- **Evidence/rollback/done:** Prospective/replay dossier and restored journal. **Parallelism/conflicts:** feed and replay adapters parallel after journal schema. **Reviewer:** Execution and risk reviewers.
+- **Evidence/rollback/done:** Retained report digest `745862c57511dacc02278fd6ec8a7243e28dea36c3389df653ab4c7b937d991f` binds source commit `58cbc5ac974080f572d58c1990558ca47043d984`, and sealed journal digest `3a4dc409783061fae9e6aeb735dea96be4bb408fe084f916541e4514a66a4c46`. Rollback disables `shadow_journal.enabled`; prior shadow behavior and immutable evidence remain intact. **Parallelism/conflicts:** feed and replay adapters parallel after journal schema. **Reviewer:** Execution and risk reviewers.
 
 ### ML-001 — Reproducible model and calibration registry
 
