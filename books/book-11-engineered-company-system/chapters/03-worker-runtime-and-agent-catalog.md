@@ -244,6 +244,13 @@ required assignment completes, Hermes issues an immutable assertion over the pro
 policy, assignments, review digests and disclosed correlations. Before that point, the
 assertion endpoint blocks promotion. The receipt itself provides no execution,
 deployment, capital or order authority. Source validation passes all 403 backend tests
-with migration `d5a9c3e72f10` as the sole head. Production completion still requires the
-migrated VM2 API and the live two-role pilot receipt; this chapter must be updated with
-those identities rather than treating source tests as production evidence.
+with migration `d5a9c3e72f10` as the sole head. VM2 now runs that migration and healthy
+image `sha256:c1bd88e3a5f927da5e7e0565bac095f7d7368e3ef60476bcf0bb862ff4c7a07e`.
+Live route `68fd264d-f956-477a-8d8c-90946d5a7716` used two distinct agents and package
+digests and issued receipt
+`9ed893dd2c37fd7cc51605416966ccbd5cd2e41a6e5b53d0a4e333f69b221d86`.
+Its strict zero-correlation control blocked because current reviewers share runtime
+dimensions. That is the intended honest result, not a failed production qualification.
+The retained report digest is
+`9f5462ac1c665c1b878086d6662c309f58ab8e92247e70e4ff25f80f4eb5169a`,
+and action authority remained false.
