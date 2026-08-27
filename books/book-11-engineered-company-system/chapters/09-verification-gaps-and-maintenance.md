@@ -22,6 +22,7 @@
 | GOV-003 | Implemented/tested/deployed/observed | Typed consequence dossiers active on VM2; eight-record live promotion/reversal/expiry, quarantine/reinstatement and retirement/reinstatement replay retained |
 | GOV-004 | Implemented/tested/deployed/observed | Signed 2,204-event portable audit export retained; fresh-client reconstruction and tamper rejection passed |
 | AGT-001 | Implemented/tested/deployed/observed | Exact-package charters/grants enforced at lease time; 14-agent/41-grant bootstrap and live allow/revoke/deny replay retained; Mac UI live with 14 active charters and 41 active grants |
+| PLAT-002 | Implemented/tested/deployed/observed | Fourteen identities and zero uncovered active-package credentials; central scope enforcement, secret-policy and emergency-access lifecycles, credential rollback and Mac identity inventory passed live replay |
 | BT-001 | Implemented/tested/merged | Canonical Python 3.11 contract matrix closes recorded collection and drift defects |
 | BT-002 | Implemented/tested/merged | Immutable bounded dataset, availability and correction-lineage contract merged |
 | BT-003 | Implemented/tested/merged | Atomic digest-finalized bundle and compatible Hermes producer contract merged; production run not yet claimed |
