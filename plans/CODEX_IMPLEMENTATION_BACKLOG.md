@@ -706,9 +706,9 @@ package is not complete until its own tests, evidence and rollback boundary pass
 
 ### DATA-002 — Immutable market-data catalog and availability ledger
 
-- **Status/scope/reuse/gap:** Planned on top of BT-002. Reuse its immutable snapshot and correction lineage; extend coverage to raw/curated partitions, membership and source availability across supported datasets.
+- **Status/scope/reuse/gap (2026-08-27):** Completed, merged, deployed and production-observed through control-plane PRs #147 and #148, ending at `7169d616e80b04f44badff88d647f9e6f9e390b0`. DATA-002 reuses BT-002 content digests, partition integrity counts and correction lineage, then extends them into one canonical raw/curated catalog with effective universe membership and source-availability history. VM2 runs migration `f3e8b2c61d90`; the rebuilt API exposes immutable catalog snapshot register/list/get and point-in-time resolution.
 - **Contracts/dependencies:** DATA-001 identities plus content-addressed partitions, observation/availability timestamps, correction ancestry and read-only source access; BT-006/007 and ML-002 consume only registered snapshots.
-- **Tests/evidence/rollback/done:** Exercise gaps, duplicates, late corrections, membership drift, timezone boundaries and lookahead attempts. Retain manifests and replay receipts. Rollback selects a prior immutable snapshot, never rewrites one. Done when every laboratory input is digest-bound and point-in-time valid.
+- **Tests/evidence/rollback/done:** Catalog registration verifies every venue, stable instrument and listing against the exact DATA-001 digest. Resolution proves event coverage, knowledge-time availability, effective membership, read-only access, zero duplicate/gap admission counts and latest known correction ancestry; missing, delayed, ambiguous, conflicting or future data fails closed. The full backend suite passed 429 tests and the live eight-gate pilot replayed original and corrected generations. Current catalog digest: `3c5352526ef607d02502144cf8623dc53098322c4bf84f8395e0650384aa2e07`; prior rollback digest: `981c671b9959461804701c9b9661398b2b68b873f837f5762549f16a5ab233e4`. Evidence is [DATA-002 completion evidence](evidence/DATA-002.md). No data-write, execution, order or capital authority was added.
 
 ### DATA-003 — Data quality, lineage, entitlement and lake operations
 

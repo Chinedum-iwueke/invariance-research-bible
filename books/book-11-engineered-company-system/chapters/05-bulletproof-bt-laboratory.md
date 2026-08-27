@@ -110,7 +110,37 @@ replayed only the corporate action known by the cutoff, closed an explicit holid
 rejected an unknown venue. The service is reference evidence only and has no order or
 capital authority.
 
-### 5.4.2 BT-004 classic-engine certification
+### 5.4.2 Immutable market-data catalog
+
+DATA-002 promotes BT-002's bounded manifest primitives into the canonical catalog for
+raw and curated laboratory inputs. Each immutable catalog snapshot binds an exact
+DATA-001 reference digest and contains content-addressed partitions, universe
+membership and source-availability records. It stores metadata and read-only URIs; it
+does not copy, repair or mutate lake objects.
+
+A partition binds dataset and layer, source, venue, stable instrument, listing,
+timeframe, event interval, row count, schema and content digests, duplicate and gap
+counts, observation and availability timestamps, revision ancestry and an explicit
+read-only access mode. Registration proves the identity edges against DATA-001 and
+rejects correction ancestry that changes the logical partition. Membership and source
+availability carry their own effective and knowledge clocks.
+
+Point-in-time resolution begins with DATA-001 symbol resolution, then requires a unique
+covering partition, effective optional universe membership and an available source at
+the requested knowledge cutoff. It selects only the latest correction known inside the
+pinned catalog. A partition with duplicates or coverage gaps remains retainable as
+evidence but cannot become a laboratory input. Unknown coverage, delayed/unavailable
+sources, ambiguity, identity conflicts and lookahead all fail closed.
+
+Production runs migration `f3e8b2c61d90`. The live proof bound catalog
+`3c5352526ef607d02502144cf8623dc53098322c4bf84f8395e0650384aa2e07`
+to DATA-001, replayed its corrected partition, and replayed the original revision by
+pinning prior digest
+`981c671b9959461804701c9b9661398b2b68b873f837f5762549f16a5ab233e4`.
+The catalog grants no source-write, execution, order or capital authority. DATA-003
+still owns continuous quality SLOs, entitlements, retention, storage and recovery.
+
+### 5.4.3 BT-004 classic-engine certification
 
 BT-004 preserves the existing classic event-driven engine and certifies its causal,
 accounting and replay boundary rather than creating another simulator. Canonical events
@@ -132,7 +162,7 @@ platform floating-point noise cannot change a logically equal gate decision.
 The retained pinned Python 3.11 validation reports 1,231 passing tests and 27 explicit
 skips across the full repository.
 
-### 5.4.3 BT-005 market-model qualification
+### 5.4.4 BT-005 market-model qualification
 
 BT-005 keeps the classic fee, spread, slippage/impact, bar-delay, market-fill,
 reconciliation and diagnostic implementations as the sole authority. A versioned
@@ -150,7 +180,7 @@ digest, and matches it to lineage. Pessimistic stress cannot reduce modeled cost
 retained pinned suite reports 1,237 passing tests and 27 explicit skips. BT-006 through
 BT-008 retain their search, feature-lineage and publication boundaries.
 
-### 5.4.4 BT-006 prospective search accounting
+### 5.4.5 BT-006 prospective search accounting
 
 BT-006 preserves the existing hypothesis contract, constraint filtering, grid runner,
 parallel execution, strict resume and worker resource controls. A prospective search
@@ -171,7 +201,7 @@ ledger is Bulletproof's execution projection. The pinned Python 3.11 suite repor
 1,245 passes and 27 explicit skips. BT-007 owns feature and fit-boundary lineage, and
 BT-008 owns canonical dual-memory publication.
 
-### 5.4.5 BT-007 representation and fit-boundary certification
+### 5.4.6 BT-007 representation and fit-boundary certification
 
 BT-007 preserves the immutable dataset snapshot, canonical research panel, classic
 state-feature builders, hypothesis schemas and strategy implementations as the only
