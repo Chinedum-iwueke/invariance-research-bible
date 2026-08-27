@@ -787,9 +787,9 @@ package is not complete until its own tests, evidence and rollback boundary pass
 
 ### DISC-009 — Discovery portfolio and information-gain scheduler
 
-- **Status/scope/reuse/gap:** Planned; reuse RI gaps, curricula and trial registry, adding diversified inquiry allocation based on expected information value.
+- **Status/scope/reuse/gap:** Completed and production-qualified on 2026-08-27; reuses current curricula, active discovery maps, active mechanism evaluations, selection-bias audits and completed bounded sessions to create immutable diversified research-attention portfolios ranked by expected information gain per attention unit.
 - **Contracts/dependencies:** DISC-001/002/007/008; budgets apply to research attention only, never capital.
-- **Tests/evidence/rollback/done:** Test duplication, monoculture, stale estimates and gaming. Retain ranked agenda and counterfactual choices. Rollback uses deterministic baseline scheduling. Done when inquiry diversity and allocation rationale are visible.
+- **Tests/evidence/rollback/done:** 542 backend tests and all CI suites passed. VM2 migrations `c2e6f9a31b50` and `d3f7a2b41c60` are deployed. Live portfolio `18fe8f06-ff9a-45f5-8d1c-6d8a5b41419e` selected two domains from three canonical candidates, retained the excluded map with reason `attention_budget`, and replayed allocation digest `a86537d6ea9c4dede83f5054789298b9c41fa7002d4e758fb8209f337b42a309`. Rollback stops new portfolio registration and leaves immutable records readable; no task, execution, promotion or capital state depends on the scheduler. Evidence: `plans/evidence/DISC-009.md`.
 
 ### SHADOW-002 — Prospective candidate monitoring and re-evaluation
 

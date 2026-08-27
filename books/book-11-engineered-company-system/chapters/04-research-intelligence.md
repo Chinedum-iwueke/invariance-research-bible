@@ -251,6 +251,74 @@ execution authority: it cannot create a trial, lease a worker, promote research 
 touch capital. Deployment migration, Mission Control installation and a live replay
 remain the operational acceptance boundary for the source-complete implementation.
 
+## 4.7.2 Discovery evidence ladder and adversarial audit
+
+DISC-002 records observation, anomaly, mechanism and opportunity maps against exact
+daily-cycle, market-catalog, lake-admission and evidence-object digests. DISC-006 binds
+mechanism plans to those maps and retains rival explanations, decisive tests and
+supported, falsified or unresolved conclusions. DISC-007 audits complete search-family
+ledgers for omitted trials, optional stopping, multiple testing, probability of
+backtest overfitting and deflated evidence. Superseded maps, evaluations and audits
+remain replayable but cannot be treated as current inputs.
+
+## 4.7.3 Bounded representation and search
+
+DISC-003 compiles typed factor and representation programs into deterministic bounded
+trial universes. DISC-004 schedules exhaustive, structured, seeded random, Bayesian
+and evolutionary searches under fixed evaluation and batch budgets while retaining
+every observation. DISC-005 constrains symbolic/program candidates by typed inputs,
+operation allowlists, complexity, determinism and semantic identity. These services
+propose and evaluate research structures; they do not bypass Bulletproof execution
+truth or create trading authority.
+
+## 4.7.4 Bounded autonomous research sessions
+
+DISC-008 binds an immutable task graph, agenda, attempt/duration/reconciliation
+budgets, stop conditions and escalation conditions into a no-capital session. The
+session cannot approve itself, expand scope or promote results. Worker loss, repeated
+no-progress and evidence conflict fail closed. Independent evaluator routing and a
+selection-bias audit are mandatory at closeout, and positive, negative, invalid,
+failed and cancelled outcomes remain in the replayable dossier.
+
+## 4.7.5 Discovery portfolio and information-gain scheduler
+
+DISC-009 converts canonical uncertainty into a bounded inquiry agenda. Eligible
+sources are current curricula, active discovery maps, active mechanism evaluations,
+active selection-bias audits with current upstream lineage, and completed DISC-008
+sessions. Daily research programs now carry a typed `project` field; the deployed
+`d3f7a2b41c60` migration binds the existing M14 program to `bulletproof-bt` instead of
+inferring identity from its question mandate.
+
+The server derives uncertainty from each canonical source. Callers may declare
+decision relevance, feasibility and attention cost but cannot declare uncertainty.
+Novelty is measured against competing questions and prior completed sessions. A
+deterministic allocator first satisfies a minimum distinct-domain floor, then fills
+remaining capacity under per-domain, per-cluster, selection-count and attention caps.
+Every candidate retains score components, source and candidate digests, rank and a
+selected or counterfactual reason.
+
+```mermaid
+flowchart LR
+    C[Current curriculum] --> S[Source and epoch verification]
+    D[Active discovery map] --> S
+    M[Active mechanism evaluation] --> S
+    A[Current selection audit] --> S
+    R[Completed bounded session] --> S
+    S --> G[Information gain per attention unit]
+    G --> V[Domain and cluster diversity gates]
+    V --> P[Immutable attention portfolio]
+    P --> X[Selected inquiry agenda]
+    P --> K[Retained counterfactual choices]
+```
+
+Production portfolio `18fe8f06-ff9a-45f5-8d1c-6d8a5b41419e` considered three
+canonical candidates, selected `autonomous-research` and `causal-reasoning`, and
+retained the active opportunity map as excluded by `attention_budget`. Its allocation
+digest is `a86537d6ea9c4dede83f5054789298b9c41fa7002d4e758fb8209f337b42a309`
+and exact API replay passed. The scheduler exposes registration and read-only replay
+only: it cannot create tasks or sessions, execute research, approve or promote a
+result, place an order or allocate capital.
+
 ## 4.8 Typed knowledge graph and cognitive services
 
 RI-008, implemented in PR 34 and deployed on VM2 at this snapshot, adds:
