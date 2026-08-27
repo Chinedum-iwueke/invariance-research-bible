@@ -126,6 +126,41 @@ source gate instruments every task plus retrieval and graph projection rebuilds;
 additional services adopt the same operation contract instead of creating local
 progress formats.
 
+### 6.1.5 Digest-safe Approval center
+
+UI-004 turns the Approvals view from a short task reference into a canonical decision
+surface. The control plane assembles the approval record, full current task contract,
+scope, risk, plan digest, objective, acceptance criteria, machines, capabilities,
+expected outputs, task prerequisites, mission readiness, active authority-policy
+digest and current notification generation. It computes one `review_digest` over this
+meaning-bearing envelope. The browser does not invent readiness or derive a second
+approval model.
+
+Ready, blocked and decided gates are visually distinct. A blocked gate lists the exact
+dependency, mission, digest or notification-generation blocker and has no enabled
+approve command. Approval requires a written reason and an explicit acknowledgement
+that the founder reviewed the displayed digest, scope, prerequisites and bounded
+effect. The resulting request includes the exact `review_digest`; under a database row
+lock the API recomputes the envelope and returns HTTP 409 if anything changed between
+review and decision. Approval also fails closed if the task is no longer current and
+executable or if more than one actionable notification generation exists.
+
+Every successful approve or reject operation appends an
+`approval_center_decision_receipt`. Its canonical digest binds the approval and task,
+action, actor, plan and review digests, decision-reason digest and approval expiry.
+Approval authorizes one bounded lease for at most 15 minutes and confers no wider
+execution, deployment, capital or order authority. A review link contains only the
+approval identifier; opening it fetches fresh read-only state and never transports an
+action, credential or stale review digest.
+
+The overview keeps every pending gate visible and hydrates the 25 most recent decided
+envelopes. Complete historical status counts and exact older receipts remain retained,
+so dashboard work is bounded without deleting audit history. Production acceptance
+returned 31 pending/recent envelopes in 0.858 seconds. Mission Control found 16 legacy
+pending records and correctly rendered all 16 blocked with zero actionable approvals.
+The no-authority pilot proved stale-review rejection, rejected its current fixture and
+retained receipt `af6e654a27f3cb22aa0bb6913fb857965ac70317a8081ae4b52b36429e42cdcd`.
+
 ## 6.2 Folder ingestion
 
 The protected research inbox accepts PDF, Markdown and text. Refresh is digest
