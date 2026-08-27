@@ -809,9 +809,9 @@ package is not complete until its own tests, evidence and rollback boundary pass
 
 ### ML-003 — Model-family and regime evaluation
 
-- **Status/scope/reuse/gap:** Planned; reuse ML-001/002 and Bulletproof metrics, adding supervised, unsupervised, regime and meta-label baseline ladders.
-- **Contracts/dependencies:** ML-002 and DISC-007; evaluations declare baseline, stability slices and incremental conditional value.
-- **Tests/evidence/rollback/done:** Test weak baselines, unstable regimes, label permutation and class imbalance. Retain comparative scorecards. Rollback rejects the model version. Done when claimed value is stable and incremental, not merely in-sample fit.
+- **Status/scope/reuse/gap (2026-08-27):** Completed, merged, migrated and production-replayed through control-plane PR #184 at `f9f6e6f0c1454f5cda39da0615e9c7ff57c32b44`. ML-003 reuses ML-001 model-bundle identities, ML-002 causal materializations, Bulletproof metrics and DISC-007 selection audits. It adds one immutable comparative scorecard rather than another trainer, model registry or promotion mechanism.
+- **Contracts/dependencies:** ML-002 and DISC-007; every evaluation binds the exact materialization and current non-blocked audit, requires unconditional and linear baselines plus supervised, unsupervised, regime and meta-label families, and retains identical ordered folds, exact regime slices, class counts, primary metric, log loss, Brier score and label-permutation controls. Qualification requires incremental value over the strongest baseline, sufficient class support, a minimum score in every regime and bounded regime dispersion.
+- **Tests/evidence/rollback/done:** 559 backend tests passed with two pre-existing warnings and all seven CI suites passed. Tests reject missing or weak baseline ladders, incomplete fold/regime coverage, unstable regimes, permutation leakage, class imbalance and blocked audits. VM2 runs migration `e5b9d3f72a10`; live evaluation `25e3afbc-d0dd-4008-bdc0-9777fd8bb6b8` retained six candidates, strongest baseline `0.54`, qualified three stable incremental families and replayed scorecard digest `2718faf445876f79d21443c5fa06ffd7203a5e487b53117bc66ee312426a9835` exactly. Rollback makes the affected model version ineligible while retaining the comparison. Completion evidence is [ML-003 completion evidence](evidence/ML-003.md). No training, activation, promotion, order or capital authority was added.
 
 ### ML-004 — Calibration, uncertainty and abstention
 
