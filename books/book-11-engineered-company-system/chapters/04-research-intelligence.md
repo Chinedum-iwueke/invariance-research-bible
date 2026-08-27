@@ -368,6 +368,41 @@ digest `bad4c9db76f3aceec9a06cc8652519707c517e5e223e3434f56a9867b71ed8a0`
 retain that decision. The service has no promotion, strategy-execution, order or
 capital authority.
 
+## 4.7.5 Representation and factor experiment language
+
+DISC-003 makes representation search explicit before a trial reaches Bulletproof. A
+factor program is an immutable typed source document bound to a registered hypothesis,
+a DATA point-in-time manifest and a BT-007 representation contract. Fields declare
+units, domains, observation clocks and availability lags. Feature formulas are closed
+expression trees, not Python: the language has no imports, file paths, network calls or
+dynamic evaluation.
+
+```mermaid
+flowchart LR
+    H[Registered hypothesis] --> P[Factor program source]
+    D[Point-in-time dataset manifest] --> P
+    R[BT-007 representation contract] --> P
+    P --> C[Causal and unit compiler]
+    C -->|invalid clock, unit or operator| Reject[Fail closed]
+    C --> Grid[Bounded parameter expansion]
+    Grid --> T[Digest-finalized trial specifications]
+    T --> B[BT-006 search-family registration]
+```
+
+Every feature read must be available at least one decision interval before use. Forward
+observation is represented only by the evaluation label. The compiler checks unit
+compatibility, allowlisted operators, expression depth, finite distinct parameter values
+and maximum Cartesian trial count. It produces canonical source, semantic, compiled and
+per-trial digests; changing only a display key cannot disguise a semantic duplicate.
+
+Production runs migration `e8a2b5c74d10`. Live program
+`096bdcf9-4325-48e7-a699-5b1f86ba494a` bound a registered WS-001 dataset and retained
+BT-007 representation contract, rejected an unsafe current-bar control and compiled four
+deterministic variants under digest
+`09c91fd6710454f1a10acca4d9fc63cc91290495d7bbdac0619c40fb5b3de95e`.
+The compiler creates specifications only and has no trial-execution, selection,
+promotion, order or capital authority.
+
 ## 4.8 Typed knowledge graph and cognitive services
 
 RI-008, implemented in PR 34 and deployed on VM2 at this snapshot, adds:
