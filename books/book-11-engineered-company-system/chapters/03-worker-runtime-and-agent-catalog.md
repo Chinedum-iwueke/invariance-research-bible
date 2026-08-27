@@ -149,3 +149,37 @@ completion, failure or release marks every active scratch receipt discarded whil
 preserving canonical evidence and the immutable context manifest. The live no-execution
 pilot bound real authority and corpus evidence, replayed exactly, discarded its one
 scratch receipt and ended cancelled without execution or capital authority.
+
+## 3.10 Typed graphs and bounded multi-agent deliberation
+
+AGT-003 does not introduce a second scheduler. Graph activation materializes normal
+Hermes tasks plus existing `task_dependencies`, so every node passes the same approval,
+charter, active package, capability grant, machine, risk and lease checks. Its immutable
+envelope adds a node ceiling, total-attempt budget, duration/deadline and parallelism
+ceiling. Each node declares one role, task contract, typed input/output, stop conditions,
+dependencies and an optional compensation task.
+
+Validation rejects cycles, unknown dependencies, duplicate keys and excess attempts.
+The lease selector will not cross graph parallelism even when more workers are online.
+Task outcomes create typed digest-bound messages; graph events have monotonic sequences
+and a predecessor-digest chain, making decisions replayable without hidden chain of
+thought. Cancellation reaches running workers in heartbeat responses. Workers terminate
+and release; unleased nodes cancel immediately; a late completion is rejected. Failure
+or exhausted budget cancels unfinished work and materializes declared compensation for
+successful side-effect nodes in reverse graph order. The Mission Supervisor reconciles
+deadlines and deadlocks even if no worker emits another event.
+
+PR #133 merged at `283fc415432fa6a124befa2eaad5c9843ed5fd8e`. Its 393 backend
+tests and 18 worker service tests passed, and PostgreSQL 16 migrated cleanly through
+`b3e7a1c52d90`. Production status remains pending until VM2 applies that migration and
+the no-execution cancellation replay is retained. The graph grants no authority itself.
+
+## 3.11 Learning and self-improvement boundary
+
+Hermes improves institutional inputs and future decisions through retained evidence,
+negative results, contradictions, retrieval/graph projections, curriculum evaluation,
+operational notes, exact context, audit replay and versioned package replacement. That
+is a learning company process, not unconstrained recursive self-modification. An agent
+cannot rewrite or promote its own charter, prompt, policy, model, package, tools or
+authority. Later AGT-004/005 and EVOLVE work must convert failure into a tested proposal,
+independent evaluation and authorized release before production behavior changes.

@@ -56,6 +56,7 @@ task inputs, event payloads or worker subprocess environment entries.
 |---|---|
 | Agents | Registration, credential issuance/revocation, identity, enabled state, capabilities, risk ceiling, machine and heartbeat presence |
 | Tasks | Creation, priority, approval state, capability/machine matching, leasing, lease expiry, start, heartbeat, complete, fail, release and immutable events |
+| Typed task graphs | Immutable DAG manifests, typed nodes/messages, dependency materialization, graph budgets, cooperative cancellation, deadline/deadlock reconciliation, compensation and hash-chained replay |
 | Governance | Approval requests/events, plan digests, risk policy, artifact registration, pause/resume control scopes |
 | Missions | Immutable approved mission manifests, work-item dependencies, supervision policy, bounded recovery and reconciliation |
 | Packages | Signed versioned role manifests, compatibility ranges, deployment inventory and active attestation |
@@ -110,6 +111,7 @@ replaying either branch. Major layers are:
 9. continuous corpus synchronization;
 10. typed knowledge graph projections and cognitive tool receipts;
 11. fleet-wide operations and append-only progress events.
+12. provenance-bearing agent context and bounded typed task graphs.
 
 Canonical tables are append-only or mutation-constrained where identity and evidence
 history require it. Search, vector, graph and analytical tables are projections and can
@@ -126,6 +128,10 @@ be rebuilt from canonical records.
   execution are accepted.
 - Artifact and evidence identities are content-digest bound.
 - No model response can directly change task, approval, package or capital authority.
+- An active task graph is immutable; its nodes remain ordinary governed tasks.
+- No graph may exceed its declared node, attempt, duration or parallelism budget.
+- Cancellation is cooperative for active leases and immediate for unleased nodes;
+  completion is rejected after cancellation has been requested.
 
 ## 2.6 Current verification boundary
 
