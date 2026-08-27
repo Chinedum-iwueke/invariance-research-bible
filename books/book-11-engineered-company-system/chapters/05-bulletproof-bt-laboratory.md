@@ -579,7 +579,40 @@ incremental-value gate. Scorecard digest
 replayed exactly. ML-003 has no training, activation, promotion, order or capital
 authority.
 
-### 5.8.5 PORT-001 portfolio-candidate risk service
+### 5.8.5 ML-004 calibration, uncertainty and abstention
+
+ML-004 is the institutional uncertainty gate above ML-001 model bundles and ML-003
+comparative qualification. It deliberately reuses ML-001's held-out Platt calibration,
+applicability and inference-receipt concepts rather than fitting or registering models a
+second time. An immutable assessment binds one qualified ML-003 candidate and scorecard
+digest to one RI-004 evidence dossier and digest.
+
+The submitted contract contains ordered reliability bins spanning zero through one, a
+held-out calibration method and version, split-conformal or block-bootstrap coverage,
+regime applicability slices, a fidelity-scored interpretability receipt that prohibits
+causal claims, and explicit abstention thresholds. The service independently recomputes
+expected calibration error and checks that slice support labels agree with observation,
+calibration and distribution-shift limits.
+
+Four scenario receipts are mandatory: supported input, miscalibration, distribution
+shift and low support. The latter three must abstain with the exact policy-derived reason;
+excess uncertainty is also an abstention condition. Miscalibration, undercoverage,
+misleading explanation fidelity, incorrect applicability or an incorrect abstention
+receipt changes the result to `demotion_required`. Uncertainty therefore removes
+authority instead of becoming decorative metadata.
+
+Control-plane PR #185 merged at `dd367ac64c1f6dc4b7882a9265fa864f38334cfa` after
+569 backend tests and all seven CI suites passed. VM2 runs migration `e6c1a4f83b20`.
+Live assessment `5560e515-7ad5-4a92-80c2-e3b1482a502b` bound evaluation
+`25e3afbc-d0dd-4008-bdc0-9777fd8bb6b8` and dossier
+`af32b7a6-74c9-48c4-bb87-bc7433bdc07f`, recomputed expected calibration error
+`0.01`, retained empirical coverage `0.91`, verified all mandatory abstention scenarios
+and exactly replayed assessment digest
+`0b79ef0dee22b7d26f0f79baf209a3d0733274a9310621d6cdd8c79d3e58b928`.
+This deterministic live fixture proves the control path, not predictive skill. ML-004
+has no training, activation, promotion, order or capital authority.
+
+### 5.8.6 PORT-001 portfolio-candidate risk service
 
 PORT-001 adds `bt.portfolio_engine.candidate_service` without replacing the classic
 engine, the sleeve runner, `PortfolioRiskCoordinator`, or execution adapters. Its input
