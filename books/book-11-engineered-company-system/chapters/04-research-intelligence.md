@@ -436,6 +436,42 @@ then completed exactly at its three-evaluation boundary. Its replay verified eve
 The service has no trial-execution, result-mutation, selection, promotion, order or
 capital authority.
 
+## 4.7.7 Constrained symbolic and program search
+
+DISC-005 proposes new factor expressions only inside the closed DISC-003 language. A
+search run binds the exact base factor-program digest, active AGT-004 prompt-policy
+bundle and a canonical constraints digest. Candidate, node, depth and constant budgets,
+plus operator, field and parameter allowlists, are frozen before generation begins.
+
+```mermaid
+flowchart LR
+    Base[Active DISC-003 program] --> Run[Bounded symbolic-search run]
+    Policy[Active AGT-004 data-only policy] --> Run
+    Run --> Proposal[Data-only expression AST]
+    Proposal --> Bounds[Grammar and complexity checks]
+    Bounds --> Compile[DISC-003 unit and causality compile]
+    Compile --> Identity[Generator and semantic digests]
+    Identity --> Outcome{Accepted, duplicate or rejected}
+    Outcome --> Ledger[Immutable candidate lineage]
+    Ledger -->|operator action| Quarantine[Terminal quarantine]
+```
+
+Generated output is never imported, evaluated or executed. The only permitted tool is
+read-only `research.retrieve`; paths, network calls and action-bearing tools fail closed.
+Provider, model, version, seed and candidate index form a deterministic generator
+identity. Reusing that identity with different output is rejected as nondeterministic.
+Commutative expression normalization detects reordered duplicates, and the service also
+rejects candidates semantically identical to the base program. Accepted, duplicate and
+rejected attempts all consume budget and remain replayable.
+
+Production runs migration `a0c4d7e96f30`. Live run
+`f5270d24-15de-4f19-abe0-30f2a38fc7de` retained four candidates: one accepted, one
+duplicate and two rejected. It proved forbidden-code, missing-field, duplicate-semantic
+and nondeterministic-output paths under constraints digest
+`469e41074848fe9b81a0b2b5db6636574228e51f5b3b4ab7197f554d243fc70f`.
+The service has no execution, result-mutation, selection, promotion, order or capital
+authority.
+
 ## 4.8 Typed knowledge graph and cognitive services
 
 RI-008, implemented in PR 34 and deployed on VM2 at this snapshot, adds:
