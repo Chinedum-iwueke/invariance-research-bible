@@ -80,3 +80,27 @@ research execution, memory synchronization, infrastructure observation/restarts,
 deployment runbook phases, mission supervision and a five-role research loop. Present
 online state is not inferred from those pilots; it must be checked from current
 heartbeats and active deployment attestations.
+
+## 3.7 Prompt, policy and reusable-workflow governance
+
+AGT-004 introduces a canonical prompt/policy registry rather than leaving model
+instructions embedded anonymously in worker code. An immutable bundle identifies its
+semantic version, canonical digest, exact provider/model/runtime/version, prompt
+template, instruction-precedence policy, trust labels, allowed tools and data classes,
+and fail-closed input/output schemas. Output is explicitly `data_only`: passing the
+schema gate does not approve a task, lease a worker, grant a tool, deploy software or
+authorize capital.
+
+Every evaluation records a fixture digest, category, violations, evaluator identity
+and receipt digest. Valid output and the required prompt-injection, secret-exfiltration,
+instruction-collision and malformed-output fixtures must pass before approval or
+activation. The producer cannot serve as the only reviewer. Activating a new version
+retires the prior active digest while preserving its event chain, so rollback and
+historical replay remain possible.
+
+AGT-009 is the planned reusable-workflow layer. It will distill repeated provenance-
+bearing task traces into sanitized typed skill candidates, rehearse them against
+historical success and failure cases, and promote only the independently reviewed
+digest through the existing package lifecycle. Agents may propose these skills but
+cannot approve, deploy or use them to expand their grants. Hidden reasoning, secrets,
+one-off task state and unreviewed model text are never reusable institutional skills.
