@@ -105,7 +105,7 @@ BOOK_PACKAGE_RULES: dict[int, list[tuple[range, tuple[str, ...]]]] = {
     2: [
         (range(1, 6), ("GOV-001", "GOV-002", "GOV-004", "AGT-001", "AGT-006", "PLAT-002")),
         (range(6, 11), ("DISC-001", "DISC-008", "DISC-009", "BT-006", "GOV-002", "GOV-003", "RISK-004")),
-        (range(11, 18), ("AGT-002", "AGT-003", "AGT-004", "AGT-005", "AGT-006", "AGT-007", "AGT-008", "RI-011", "OPS-001", "OPS-002", "OPS-006", "OPS-007", "CHAN-001", "CHAN-002", "UI-001", "UI-002", "UI-004", "UI-007", "WS-001", "WS-002", "CAD-001", "CAD-002")),
+        (range(11, 18), ("AGT-002", "AGT-003", "AGT-004", "AGT-005", "AGT-006", "AGT-007", "AGT-008", "AGT-009", "RI-011", "OPS-001", "OPS-002", "OPS-006", "OPS-007", "CHAN-001", "CHAN-002", "UI-001", "UI-002", "UI-004", "UI-007", "WS-001", "WS-002", "CAD-001", "CAD-002")),
     ],
     3: [
         (range(1, 6), ("RI-001", "RI-004", "RI-007", "RI-010", "BASE-002")),
@@ -142,7 +142,7 @@ BOOK_PACKAGE_RULES: dict[int, list[tuple[range, tuple[str, ...]]]] = {
     9: [
         (range(1, 10), ("AGT-001", "AGT-006", "AGT-007", "PLAT-002", "GOV-001")),
         (range(10, 15), ("AGT-002", "AGT-003", "AGT-004", "AGT-005", "RI-008", "SEC-001")),
-        (range(15, 18), ("AGT-007", "AGT-008", "OPS-006", "CHAN-002", "PLAT-004", "PLAT-005", "UI-001", "UI-002", "UI-006", "UI-007", "EVOLVE-001", "EVOLVE-002")),
+        (range(15, 18), ("AGT-007", "AGT-008", "AGT-009", "OPS-006", "CHAN-002", "PLAT-004", "PLAT-005", "UI-001", "UI-002", "UI-006", "UI-007", "EVOLVE-001", "EVOLVE-002")),
     ],
     10: [
         (range(1, 8), ("BASE-001", "BASE-002", "BASE-003", "PLAT-001", "PLAT-003", "DATA-001", "DATA-002", "DATA-003", "RI-007")),

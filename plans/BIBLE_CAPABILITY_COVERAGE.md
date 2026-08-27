@@ -160,6 +160,7 @@ provable increments. Each must be copied into the executable backlog before work
 | AGT-006 | Independent evaluator routing and anti-collusion controls | Producer cannot select/impersonate evaluator; correlated-runtime risk visible |
 | AGT-007 | Engineering, infrastructure, knowledge, research and production role catalog | Each deployed role has bounded workflows, permissions, SLO and replacement proof |
 | AGT-008 | Evidence-governed improvement proposals and package promotion | Agents propose only; rehearsed evaluation and human policy govern promotion |
+| AGT-009 | Workflow distillation and governed reusable-skill registry | Repeated traces compile into tested, sanitized, versioned skills without self-approval or grant expansion |
 | LLM-001 | Provider-neutral frontier/open-weight runtime gateway after core completion | Shadow benchmarks prove workload-by-workload quality, security and fallback |
 
 ### D. Data and deterministic Bulletproof laboratory
@@ -298,7 +299,7 @@ provable increments. Each must be copied into the executable backlog before work
 | Book I Ch. 13-16 and appendices | RI-010, CAD-002, EVOLVE-001/002, BASE-001/002/003 |
 | Book II Ch. 1-5 and Appendix A | GOV-001/002/004, AGT-001/006, PLAT-002 |
 | Book II Ch. 6-10 and Appendix B | DISC-001/008/009, BT-006, GOV-002/003, RISK-004 |
-| Book II Ch. 11-17 | AGT-002..008, RI-011, OPS-006, CHAN-002, UI-007, WS-001/002, CAD-001/002 |
+| Book II Ch. 11-17 | AGT-002..009, RI-011, OPS-006, CHAN-002, UI-007, WS-001/002, CAD-001/002 |
 | Book III Ch. 1-5 and Appendix A | RI-001/004/007/010, BASE-002 |
 | Book III Ch. 6-8 | RI-002/007/009 |
 | Book III Ch. 9-11 and Appendix C | RI-003/004/011 |
@@ -330,7 +331,7 @@ provable increments. Each must be copied into the executable backlog before work
 
 1. **Institutional brain:** RI-007..011 plus UI-003. It ends with the real corpus,
    Bulletproof projection, graph and domain evaluation, not fixture-only success.
-2. **Reliable digital workforce:** OPS-001/002/006, CHAN-001/002, UI-007, GOV-001..004 and AGT-001..008.
+2. **Reliable digital workforce:** OPS-001/002/006, CHAN-001/002, UI-007, GOV-001..004 and AGT-001..009.
    It ends with unattended bounded work, independent review and no approval races.
 3. **Research factory:** DATA-001..003, BT-001..008, DISC-001..009 and WS-001.
    It ends with a complete no-capital loop and honest search accounting.
