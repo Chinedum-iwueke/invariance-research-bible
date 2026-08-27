@@ -612,7 +612,38 @@ and exactly replayed assessment digest
 This deterministic live fixture proves the control path, not predictive skill. ML-004
 has no training, activation, promotion, order or capital authority.
 
-### 5.8.6 PORT-001 portfolio-candidate risk service
+### 5.8.6 RL-001 offline-RL dataset and evaluation contract
+
+RL-001 establishes whether historical behavior data is admissible for later conservative
+off-policy evaluation. It does not estimate a learned policy. The control plane retains
+an immutable contract and audit while canonical transitions remain in the DATA-002 data
+layer and prospective execution evidence remains in Bulletproof's sealed, hash-chained
+SHADOW-001 journal.
+
+Each contract binds the DATA-002 build and record digest, sealed shadow-journal and exact
+replay digests, behavior-policy identity, version and propensity source, causally
+available state features, the complete bounded action space, per-action observations and
+overlap, a reward formula with horizon and independent rebuild, episode definition and
+termination counts, known confounders, and the permitted later evaluation estimators.
+Unsupported actions must abstain and model selection data must remain separate from the
+final evaluation sample.
+
+The server independently checks source-build reproducibility and quality, transition
+counts, timestamp ordering, duplicate transitions, state and reward availability,
+propensity completeness, action support, propensity floors and importance-weight caps.
+Any hard failure yields `quarantined`. Proxy and unobserved confounders are not erased by
+qualification; they remain named limitations and prevent causal identification claims.
+
+Control-plane PR #186 merged at `8a9c3ca65cf592fca0f4ef593ce95e4a2918c5cf`
+after 580 backend tests and all seven CI suites passed. VM2 runs migration
+`e7d2b5a94c30`. Live contract `807c244c-7574-43c2-a80a-4c6c6ea11d25` bound
+DATA-002 build `72fba926-a6c3-49d5-8120-f301ba6ce9ea`, 1,000 transitions, 40
+episodes and the retained SHADOW-001 evidence. Audit digest
+`cc8f51b2df32316019f14592cac2d5b034987b155f6e88bcb6200ffee32f6989`
+replayed exactly. Market impact remains a proxy and latent liquidity remains unobserved.
+RL-001 has no policy-improvement, deployment, order or capital authority.
+
+### 5.8.7 PORT-001 portfolio-candidate risk service
 
 PORT-001 adds `bt.portfolio_engine.candidate_service` without replacing the classic
 engine, the sleeve runner, `PortfolioRiskCoordinator`, or execution adapters. Its input
