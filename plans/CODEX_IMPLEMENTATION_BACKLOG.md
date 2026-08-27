@@ -803,9 +803,9 @@ package is not complete until its own tests, evidence and rollback boundary pass
 
 ### ML-002 — Causal feature, label and split pipelines
 
-- **Status/scope/reuse/gap:** Planned; reuse BT-007 contracts and ML-001 registry, adding canonical purge, embargo, overlap and point-in-time dataset construction.
-- **Contracts/dependencies:** DATA-002, BT-007 and ML-001; pipeline manifests bind features, labels, universe, splits and fit boundaries.
-- **Tests/evidence/rollback/done:** Test leakage, overlapping labels, revised inputs, normalization and missingness. Retain split/lineage reports. Rollback pins prior manifests. Done when training/evaluation data reconstruct without future information.
+- **Status/scope/reuse/gap (2026-08-27):** Completed, merged, migrated and production-replayed through control-plane PRs #182-#183, ending at `e53321aac27d034e284de7e151e418396803eba4`. ML-002 reuses DATA-002 immutable manifests/builds and DISC-003/BT-007 factor representation rather than creating another data lake or feature language. It adds the missing causal projection registry and independently rebuilt materialization receipt.
+- **Contracts/dependencies:** DATA-002, BT-007 and ML-001; every pipeline binds the exact dataset content digest and compiled factor-program digest, typed feature availability, label horizon and end offset, train-only fitted transforms, half-open expanding walk-forward folds, purge, embargo and overlap weighting. The service computes eligible training endpoints and excluded intervals and rejects build/program manifest drift.
+- **Tests/evidence/rollback/done:** 552 backend tests passed with two pre-existing warnings; all seven CI suites passed on both PRs. Tests reject insufficient purge, broken embargo, non-expanding windows, validation-fitted transforms, unknown factors, label drift, dataset-lineage drift, failed causal checks and rebuild mismatch. VM2 runs migration `e4a8c2d61f90`; live pipeline `632fd11d-2bc9-4891-8eaa-e9269a080fd0` and materialization `86247c0e-04dc-4e52-85de-3ae60aff04a4` bind the registered 1,200-row canonical build, two folds, two-bar purge/embargo, inverse-overlap weighting and matching rebuild evidence. Rollback stops new registrations and pins the last verified digest while retaining immutable records. Completion evidence is [ML-002 completion evidence](evidence/ML-002.md). No training, inference, promotion, order or capital authority was added.
 
 ### ML-003 — Model-family and regime evaluation
 
