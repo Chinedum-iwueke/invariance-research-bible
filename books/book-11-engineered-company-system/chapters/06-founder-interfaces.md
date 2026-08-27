@@ -213,10 +213,12 @@ boundaries they compose with.
 
 Source qualification at `swarm-control-plane` merge
 `4557667ce42d1d95684f931b57d557cc0bdab42b` passed 41 gateway tests spanning spoof,
-secret, flood, replay, stale link, clarification and dependency-outage cases. The final
-production receipt remains the root-owned VM2 reinstall/restart, gateway check and
-local audit-chain verification; source qualification alone is not represented as a
-live deployment.
+secret, flood, replay, stale link, clarification and dependency-outage cases. Production
+qualification on 2026-08-27 installed that merge on VM2: the service entered
+`active/running`, emitted `telegram_gateway_ready`, retained zero restarts through the
+acceptance window and verified its empty genesis audit chain. A founder-owned `/status`
+request returned the live task and mission summary plus `Channel security events: none`;
+it created no task, made no decision and granted no authority. CHAN-001 is complete.
 
 ### 6.3.2 CHAN-002 durable threaded transport
 
