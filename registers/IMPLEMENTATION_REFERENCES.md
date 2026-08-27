@@ -245,6 +245,21 @@ Telegram founder delivery and Mission Control status/actions. The source suite p
 production deployment and the intended-environment replay were not part of source
 qualification.
 
+## PLAT-002 workload identity addendum
+
+Control-plane PRs #126-#128 add exact-charter/package workload identities, central
+wildcard-free scope enforcement, bounded credential rotation, logical secret-policy
+rotation/revocation, redacted receipts and independently reviewed reduction-only
+emergency access. VM2 runs migration `f3a7c1d92e60` and healthy image
+`sha256:0d6be1cde4141e1fba829761e6b3ab1a1e8cd30d01b93e8461a47c22edb1a4d3`.
+Fourteen credentials are covered and none are uncovered. The idempotent bootstrap
+digest is `1a1cf583746e13a3bedb511f616664460ab4c9702dbbcdba85278c30e90105b0`;
+the nine-check live pilot digest is
+`ae388619c5987dc231974fa26fc61a5eecd6b749fb02e9efb31f3d26bfcecad0`.
+See [PLAT-002 completion evidence](../evidence/PLAT-002.md). No retained record
+contains a raw credential or secret value, and no identity grants capital or order
+authority.
+
 ## RI-012 and RI-013 implementation addendum
 
 Incremental founder-inbox reconciliation, checkpoint/resume and finalize-only behavior

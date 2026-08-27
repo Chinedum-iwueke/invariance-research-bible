@@ -97,3 +97,29 @@ whose digest is retained in the lease event. Missing scope, package replacement,
 conflict, expiry or revocation denies the lease before approval consumption. In the
 production bootstrap, 14 deployed agents received 41 per-capability grants; a second
 run created no records. No record in this registry supplies capital or order authority.
+
+## 3.8 Workload identity and runtime authorization
+
+PLAT-002 binds the credential used by a running service to the exact AGT-001 authority
+snapshot that makes that service legitimate. The immutable identity manifest contains
+the agent, active charter and role-package digests, machine, control-plane audience,
+wildcard-free API scopes, accountable owner and expiry. Authentication rechecks the
+enabled agent, active charter, exact active package deployment and complete unexpired
+grant set on every request. Revoking or replacing any of those records therefore
+invalidates the runtime identity without waiting for credential expiry.
+
+The central authentication dependency maps each agent API path to one explicit scope.
+Task lease, task execution, infrastructure brokering, research publication, fleet
+observation, operational notes, package inspection and heartbeat are separate rights.
+The production bootstrap bound 14 deployed credentials and then activated enforcement
+only after the uncovered count reached zero. Its immediate replay created no identity
+and rebound no credential.
+
+Credential rotation creates a bounded 30-900 second overlap. Finalization revokes the
+prior credential; rollback, while the overlap is still valid, revokes the new credential
+and restores the prior identity-bound credential. Logical secret policies contain a
+reference, required scope, rotation date, expiry and digest, never a secret value.
+Authorization receipts drop secret-, token- and password-like context keys. Emergency
+grants require separate founder approval and security review, last at most one hour and
+can only halt, isolate or revoke. They cannot read secrets, broaden normal work or grant
+capital/order authority.
