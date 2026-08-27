@@ -403,6 +403,39 @@ deterministic variants under digest
 The compiler creates specifications only and has no trial-execution, selection,
 promotion, order or capital authority.
 
+## 4.7.6 Budgeted statistical search
+
+DISC-004 searches only the finite trial universe already compiled by DISC-003. Each
+campaign freezes the factor-program digest, objective, direction, seed, exploration
+weight and evaluation/batch budgets. Exhaustive, structured, seeded random, Bayesian
+surrogate and evolutionary-neighborhood planners differ only in proposal ordering; none
+can change the registered universe or execution truth.
+
+```mermaid
+flowchart LR
+    Program[DISC-003 finite trial universe] --> Campaign[Fixed search campaign]
+    Campaign --> Planner{Bounded method}
+    Planner --> Proposal[Digest-bound proposal batch]
+    Proposal --> Observation[Completed, failed, cancelled or invalid]
+    Observation --> History[Append-only event chain]
+    History -->|budget remains| Planner
+    History -->|fixed budget observed| Complete[Complete family trajectory]
+    Complete --> Audit[DISC-007 selection audit]
+```
+
+Every proposal in a batch must be observed before the next batch. Failed, cancelled and
+invalid trials consume budget and remain visible; they cannot carry objective values.
+Completed values must be finite. Completion is fixed-budget exhaustion, never a favorable
+outcome trigger. An operator may cancel a campaign, but the cancellation is terminal and
+records all remaining candidates as non-results.
+
+Production runs migration `f9b3c6d85e20`. Live Bayesian campaign
+`64fa4499-4728-4db8-a1fd-570e503b075b` retained a completed, failed and completed sequence,
+then completed exactly at its three-evaluation boundary. Its replay verified event head
+`010acf94e119f18bf67ae7d9683465886bf2d210ab6c73013f40af224d28cef8`.
+The service has no trial-execution, result-mutation, selection, promotion, order or
+capital authority.
+
 ## 4.8 Typed knowledge graph and cognitive services
 
 RI-008, implemented in PR 34 and deployed on VM2 at this snapshot, adds:
