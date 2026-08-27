@@ -207,6 +207,14 @@ activation. The producer cannot serve as the only reviewer. Activating a new ver
 retires the prior active digest while preserving its event chain, so rollback and
 historical replay remain possible.
 
+Production replay on 2026-08-27 activated bundle
+`12d23600-6ee5-401b-b43e-0f016641e046` at digest
+`b00090c9cef72f22eeb56b096854f48bfe81ffefcd4f7b48b2a6ff9a28cf81e3`.
+Valid output plus all four adversarial categories passed, its nine-event chain was
+retained under report digest
+`8fc5f2047ebce3be5d9f204e05eef1aadebc029d1c3e4bafc99f0cba9aa99c99`,
+and the report explicitly confirms that action authority remained false.
+
 AGT-009 is the planned reusable-workflow layer. It will distill repeated provenance-
 bearing task traces into sanitized typed skill candidates, rehearse them against
 historical success and failure cases, and promote only the independently reviewed
