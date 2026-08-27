@@ -330,6 +330,44 @@ supersession `65e61ffe-9fcf-46dd-bb51-7bc1fb02e2ee`. The pilot report digest is
 `264960712733bbec083fa443e85930a5dcc38ecaac1a330faddd48fc68f59a7b`.
 The service has no source-write, strategy-execution, order or capital authority.
 
+## 4.7.4 Selection-bias and research-overfitting audit
+
+DISC-007 evaluates the research process, not merely its reported winner. It imports the
+digest-bound complete BT-006 family ledger and binds the audit to a retained DISC-006
+mechanism evaluation. Every planned variant remains present, including failed and
+cancelled attempts.
+
+```mermaid
+flowchart LR
+    Plan[BT-006 registered search plan] --> Ledger[Complete family ledger]
+    Trials[Completed, failed and cancelled trials] --> Ledger
+    Stop[Stopping rule and observed researcher choices] --> Ledger
+    Mechanism[DISC-006 evaluation] --> Audit[Independent selection audit]
+    Ledger --> Audit
+    Audit --> FWER[Family-wise and FDR correction]
+    Audit --> DSR[Selection-adjusted Sharpe diagnostic]
+    Audit --> PBO[Validation-split PBO]
+    Audit -->|optional stopping or hidden choices| Block[Blocked]
+    Audit -->|evidence fails correction| Risk[Selection risk detected]
+    Audit -->|survives all gates| Review[Eligible for independent review only]
+```
+
+The auditor rejects winner-only summaries, omitted trials, changed digests, reduced
+multiplicity and validation splits that rank a favorable subset. Institutional bounds
+prevent a caller from loosening alpha above 0.05 or PBO tolerance above 0.5. Optional
+stopping and observed-but-undeclared parameter, metric, seed or transformation choices
+are blocking process findings. A `selection_adjusted` conclusion is evidence for the
+next independent review; it is not promotion and cannot authorize execution.
+
+Production runs migration `d7f1a4b63c90`. The live replay retained a four-member family
+with two completed, one failed and one cancelled trial. The nominal winner's p-value
+of `0.02` corrected to family-wise `0.08`, producing `selection_risk_detected` instead
+of allowing the winner to pass by presentation. Audit digest
+`f8bf5a21bf539e0b4e46cf4b54405d0cd4e0fcaa9d0a1c47950d43ec487dd62f` and report
+digest `bad4c9db76f3aceec9a06cc8652519707c517e5e223e3434f56a9867b71ed8a0`
+retain that decision. The service has no promotion, strategy-execution, order or
+capital authority.
+
 ## 4.8 Typed knowledge graph and cognitive services
 
 RI-008, implemented in PR 34 and deployed on VM2 at this snapshot, adds:
