@@ -123,3 +123,29 @@ Authorization receipts drop secret-, token- and password-like context keys. Emer
 grants require separate founder approval and security review, last at most one hour and
 can only halt, isolate or revoke. They cannot read secrets, broaden normal work or grant
 capital/order authority.
+
+## 3.9 Provenance-bearing execution context
+
+AGT-002 turns retrieved information into an immutable task-attempt input rather than an
+unrecorded prompt side effect. An orchestrator chooses active canonical evidence for the
+next unconsumed attempt. Each selected item records canonical object and content digests,
+the reason it was selected, access sensitivity, expiry, exact prompt position, replay
+coordinates and any contradiction among the selected objects. Positions are unique and
+contiguous. Default packs are limited to 32 items and 64 KiB.
+
+Assembly resolves the agent's current AGT-001 charter, exact package and grants itself;
+the caller cannot assert an authorization digest. Inactive, cross-project, unapproved
+restricted, protected or oversized context fails closed. Protected evidence is never
+placed into this path. The complete rendered envelope is stored with a pack digest and
+an outer manifest digest, so later replay reconstructs exactly what the agent was
+allowed to see rather than re-rendering whichever corpus state happens to be current.
+
+The feature is opt-in per task through `governed_context_required`. Once the agent owns
+the lease, the worker fetches the attempt-bound manifest and creates a mode-`0600`
+`context-manifest.json` outside the repository checkout before starting execution.
+Scratch content stays inside that isolated attempt workspace. The control plane stores
+only a digest, safe relative path, kind, sensitivity, expiry and receipt digest. Task
+completion, failure or release marks every active scratch receipt discarded while
+preserving canonical evidence and the immutable context manifest. The live no-execution
+pilot bound real authority and corpus evidence, replayed exactly, discarded its one
+scratch receipt and ended cancelled without execution or capital authority.
