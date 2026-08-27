@@ -221,3 +221,29 @@ historical success and failure cases, and promote only the independently reviewe
 digest through the existing package lifecycle. Agents may propose these skills but
 cannot approve, deploy or use them to expand their grants. Hidden reasoning, secrets,
 one-off task state and unreviewed model text are never reusable institutional skills.
+
+## 3.13 Independent evaluator routing and anti-collusion
+
+AGT-006 replaces reviewer labels with an enforceable routing record. An evaluator
+profile is versioned and bound to an enabled agent, declared capabilities and an exact
+active role-package digest. A route binds the subject digest, producer identity,
+required review kinds and correlation policy before any reviewer is selected. The
+selection is deterministic and a route cannot reuse an agent, package or context group
+across the producer and evaluators or among evaluators.
+
+The system does not overstate what the current fleet can prove. Host, provider, model
+family and runtime are correlation dimensions. Shared dimensions are scored, retained
+on each assignment and subject to a pairwise ceiling. A route may permit disclosed
+shared infrastructure when its policy allows it, but the receipt says that correlated
+risk remains. A stricter policy fails closed when independent capacity is unavailable.
+This means two differently named agents running the same package or context do not
+become independent merely because the organization chart calls them reviewers.
+
+Only the routed evaluator identity can attach a review ID and digest. After every
+required assignment completes, Hermes issues an immutable assertion over the producer,
+policy, assignments, review digests and disclosed correlations. Before that point, the
+assertion endpoint blocks promotion. The receipt itself provides no execution,
+deployment, capital or order authority. Source validation passes all 403 backend tests
+with migration `d5a9c3e72f10` as the sole head. Production completion still requires the
+migrated VM2 API and the live two-role pilot receipt; this chapter must be updated with
+those identities rather than treating source tests as production evidence.
