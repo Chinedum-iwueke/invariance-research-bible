@@ -821,9 +821,9 @@ package is not complete until its own tests, evidence and rollback boundary pass
 
 ### RL-001 — Offline-RL dataset and evaluation contract
 
-- **Status/scope/reuse/gap:** Planned; reuse immutable snapshots and execution journals, adding behavior-policy, action/support, reward and confounding metadata.
-- **Contracts/dependencies:** DATA-002, BT-007 and SHADOW-001; dataset versions are point-in-time and no-capital.
-- **Tests/evidence/rollback/done:** Test support gaps, leakage, reward errors and policy mismatch. Retain dataset/audit manifests. Rollback quarantines the dataset. Done when offline evaluation limitations are explicit and reproducible.
+- **Status/scope/reuse/gap (2026-08-27):** Completed, merged, migrated and production-replayed through control-plane PR #186 at `8a9c3ca65cf592fca0f4ef593ce95e4a2918c5cf`. RL-001 reuses DATA-002 immutable builds and Bulletproof's sealed SHADOW-001 journal/replay rather than storing transitions or constructing another data lake. It adds an immutable offline-RL dataset/evaluation contract and server-computed admissibility audit.
+- **Contracts/dependencies:** DATA-002, BT-007 and SHADOW-001; each contract binds the dataset build, sealed journal and exact replay digests, behavior-policy identity and propensities, causally available state features, complete bounded action space and support, reward formula/horizon/rebuild, episode termination, confounders and a later-evaluation protocol. Unsupported actions must abstain, and model selection is separate from final evaluation.
+- **Tests/evidence/rollback/done:** 580 backend tests passed with two pre-existing warnings and all seven CI suites passed. Tests quarantine temporal/reward leakage, missing propensities, low support and unsafe importance weights and reject reward-rebuild, action-space and digest drift. VM2 runs migration `e7d2b5a94c30`; live dataset `807c244c-7574-43c2-a80a-4c6c6ea11d25` bound DATA-002 build `72fba926-a6c3-49d5-8120-f301ba6ce9ea`, 1,000 transitions, 40 episodes and the retained SHADOW-001 digests, then replayed audit digest `cc8f51b2df32316019f14592cac2d5b034987b155f6e88bcb6200ffee32f6989` exactly. Market impact remains proxy-confounded and latent liquidity remains unobserved, explicitly prohibiting causal policy claims. Rollback quarantines the contract without mutating source builds/journals. No policy-improvement, deployment, order or capital authority exists. Evidence: `plans/evidence/RL-001.md`.
 
 ### RL-002 — Conservative off-policy proposal evaluation
 
