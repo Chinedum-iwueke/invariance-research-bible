@@ -498,7 +498,48 @@ position sizing or capital authority. ML-002 through ML-005 own causal pipeline
 construction, baselines, uncertainty/interpretability and monitoring before any later
 consumer may seek separate authorization.
 
-### 5.8.3 PORT-001 portfolio-candidate risk service
+### 5.8.3 ML-002 causal feature, label and split pipelines
+
+ML-002 adds the causal dataset boundary between immutable market data, the BT-007 factor
+language and the ML-001 model registry. It does not copy source observations or define a
+second feature language. A pipeline binds one DATA-002 dataset-build ID and content
+digest to one active factor-program ID and compiled digest over the same dataset
+manifest. Manifest drift fails closed.
+
+Every feature declares its compiled factor, availability lag and missingness policy.
+Every label declares its kind, horizon and `label_end_offset_bars`. Fitted transforms
+have only one legal fit scope: `train_only`. The split contract supports explicit
+half-open expanding walk-forward intervals with contiguous fold identity, a purge at
+least as large as the maximum label end offset, a positive embargo between validation
+folds and either uniform or inverse-label-overlap sample weights.
+
+```mermaid
+flowchart LR
+    Build[Immutable DATA-002 build] --> Verify[Manifest and digest compatibility]
+    Program[BT-007 factor program] --> Verify
+    Verify --> Compile[Feature, label and split compiler]
+    Compile --> Bounds[Eligible train endpoint, purge and embargo intervals]
+    Bounds --> Materialize[External deterministic materialization]
+    Materialize --> Rebuild[Independent rebuild]
+    Rebuild --> Receipt[Immutable fold checks and equal content digests]
+```
+
+The compiler writes the latest eligible training observation and the exact purged and
+embargoed intervals into each fold. Materialization cannot succeed by asserting a
+boolean alone: its measured maximum training-label end and minimum validation-feature
+time are checked against those compiled bounds. Every fold must also prove train-only
+fit and point-in-time joins, and the independent rebuild digest must equal the original.
+
+VM2 runs migration `e4a8c2d61f90`. The first live attempt stopped because the existing
+factor program had a valid immutable manifest but no DATA-002 build receipt. The repair
+registered the existing 1,200-row canonical source object, its digest, declared quality
+checks and identical rebuild digest; it did not synthesize another dataset or weaken
+lineage. Live pipeline `632fd11d-2bc9-4891-8eaa-e9269a080fd0` compiled two expanding
+folds with two-bar purge and embargo and inverse-overlap weighting. Materialization
+`86247c0e-04dc-4e52-85de-3ae60aff04a4` independently reproduced its content. ML-002
+has no training, inference, promotion, order or capital authority.
+
+### 5.8.4 PORT-001 portfolio-candidate risk service
 
 PORT-001 adds `bt.portfolio_engine.candidate_service` without replacing the classic
 engine, the sleeve runner, `PortfolioRiskCoordinator`, or execution adapters. Its input
