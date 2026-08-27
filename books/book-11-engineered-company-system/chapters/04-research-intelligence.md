@@ -472,6 +472,44 @@ and nondeterministic-output paths under constraints digest
 The service has no execution, result-mutation, selection, promotion, order or capital
 authority.
 
+## 4.7.8 Bounded autonomous research sessions
+
+DISC-008 permits unattended research coordination only inside an immutable AGT-003 task
+graph. Registration freezes the graph digest, exact ordered agenda, allowed scope and
+task, attempt, duration, reconciliation, stall and worker-loss budgets. Every task must
+be risk zero. The authority contract is structurally no-capital and cannot set approval,
+scope-expansion or promotion authority to true.
+
+```mermaid
+flowchart LR
+    Graph[Unactivated AGT-003 graph] --> Session[Frozen DISC-008 session]
+    Session --> Controller[Existing task-graph controller]
+    Controller --> Checkpoint[Progress and evidence checkpoints]
+    Checkpoint -->|within budget| Controller
+    Checkpoint -->|drift, conflict, stall or loss| Escalate[Fail closed and cancel remaining work]
+    Controller -->|graph succeeds| Await[Awaiting independent closeout]
+    Await --> Eval[AGT-006 independence receipt]
+    Await --> Audit[DISC-007 selection audit]
+    Eval --> Dossier[Canonical retained-outcome dossier]
+    Audit --> Dossier
+    Dossier --> Complete[Completed session]
+```
+
+Graph success is not session success. Closeout recomputes the dossier digest and requires
+it to bind the exact session, graph, agenda, budget, active selection-audit digest and all
+observed positive, negative, invalid, failed and cancelled outcomes. An omitted non-result
+fails closed. The session event chain records registration, activation, progress,
+escalation, cancellation and completion. Cancellation reuses graph cancellation and
+declared compensation; it never deletes session, task or evidence lineage.
+
+Production runs migration `b1d5e8f20a40`. Live session
+`be033159-bc20-4c82-b81f-fbf016027033` retained negative, failed and invalid outcomes,
+then closed under AGT-006 receipt
+`153cf0ea907329c97aaf5728507dc3806b42548b94e4d213acde032b47683104`
+and DISC-007 audit
+`f8bf5a21bf539e0b4e46cf4b54405d0cd4e0fcaa9d0a1c47950d43ec487dd62f`.
+It has no self-approval, scope expansion, promotion, order or capital authority.
+
 ## 4.8 Typed knowledge graph and cognitive services
 
 RI-008, implemented in PR 34 and deployed on VM2 at this snapshot, adds:
