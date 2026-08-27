@@ -539,7 +539,47 @@ folds with two-bar purge and embargo and inverse-overlap weighting. Materializat
 `86247c0e-04dc-4e52-85de-3ae60aff04a4` independently reproduced its content. ML-002
 has no training, inference, promotion, order or capital authority.
 
-### 5.8.4 PORT-001 portfolio-candidate risk service
+### 5.8.4 ML-003 model-family and regime evaluation
+
+ML-003 is the comparative evidence layer above ML-001 model bundles and an ML-002
+causal materialization. It does not fit models or activate them. Registration requires
+a current non-blocked DISC-007 audit and a complete ladder containing unconditional and
+linear baselines plus supervised, unsupervised, regime and meta-label candidates. Every
+candidate binds its model-bundle and prediction digests.
+
+```mermaid
+flowchart LR
+    Materialization[Verified ML-002 folds] --> Compare[Complete family ladder]
+    Audit[Current DISC-007 audit] --> Compare
+    Compare --> Baseline[Strongest declared baseline]
+    Compare --> Slices[Fold and regime scorecards]
+    Compare --> Permute[Label-permutation control]
+    Baseline --> Qualify[Incremental conditional-value gate]
+    Slices --> Qualify
+    Permute --> Qualify
+    Qualify --> Ledger[Immutable ranked and rejected candidates]
+```
+
+Each candidate covers the same causal folds in order and the exact required regime set.
+Fold evidence retains the primary score, log loss and Brier score. Regime evidence
+retains observation and positive/negative-label counts, making class-support claims
+auditable. Qualification requires value above the strongest baseline, a minimum score
+in every regime, bounded cross-regime dispersion, sufficient minority support and a
+passing label-permutation control. Ranking does not override a failed gate, and failed
+or merely weak families remain in the scorecard.
+
+VM2 runs migration `e5b9d3f72a10`. Live evaluation
+`25e3afbc-d0dd-4008-bdc0-9777fd8bb6b8` bound ML-002 materialization
+`86247c0e-04dc-4e52-85de-3ae60aff04a4` and DISC-007 audit
+`45b83a75-8831-4ced-a0f3-93a5d78e981e`. It retained six candidates. The strongest
+baseline scored `0.54`; the regime specialist, supervised logistic and meta-label
+families qualified, while the unsupervised family remained retained but below the
+incremental-value gate. Scorecard digest
+`2718faf445876f79d21443c5fa06ffd7203a5e487b53117bc66ee312426a9835`
+replayed exactly. ML-003 has no training, activation, promotion, order or capital
+authority.
+
+### 5.8.5 PORT-001 portfolio-candidate risk service
 
 PORT-001 adds `bt.portfolio_engine.candidate_service` without replacing the classic
 engine, the sleeve runner, `PortfolioRiskCoordinator`, or execution adapters. Its input
