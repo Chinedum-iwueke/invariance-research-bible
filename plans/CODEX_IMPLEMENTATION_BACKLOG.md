@@ -700,9 +700,9 @@ package is not complete until its own tests, evidence and rollback boundary pass
 
 ### DATA-001 — Point-in-time instrument and reference-data service
 
-- **Status/scope/reuse/gap:** Planned. Reuse Bulletproof symbols, venue metadata and dataset manifests; add one canonical, temporal instrument/venue/calendar/clock identity service rather than another symbol map.
+- **Status/scope/reuse/gap (2026-08-27):** Completed, merged, deployed and production-observed through control-plane PRs #145 and #146, ending at `24b765796550f3758faecf52965858ce726879c1`. DATA-001 reuses Bulletproof symbols, venue metadata and dataset manifests while adding one canonical temporal identity service rather than another symbol map. VM2 runs migration `e2d7a4c91b60`; the rebuilt API is healthy and exposes immutable snapshot registration/list/get plus point-in-time resolution.
 - **Contracts/dependencies:** After BASE-002, expose effective-dated instrument, venue, session, corporate-action and reference-data records consumed by DATA-002, BT-004 and EXEC-001/003. Unknown or conflicting identity fails closed.
-- **Tests/evidence/rollback/done:** Test relisting, symbol reuse, venue changes, holidays, clock skew and point-in-time replay. Retain snapshot digests and consumer compatibility results. Roll back consumers to the prior versioned snapshot. Done when historical identity reconstructs without present-day leakage.
+- **Tests/evidence/rollback/done:** The implementation separates market-effective from knowledge-availability clocks, binds dataset manifests to stable instrument/listing identities, rejects overlapping or unknown identity, and supports ordered immutable supersession. The full backend suite passed 418 tests; the live no-capital pilot passed stable identity, old/new symbol replay, known corporate actions, holiday closure, digest binding and unknown-identity fail-closed checks. The retained snapshot digest is `16c689717341872f0b15d0324122ddbc749d2174197d8f3f4ea7faadf75e3871`; evidence is [DATA-001 completion evidence](evidence/DATA-001.md). Consumers can roll back by pinning the prior immutable snapshot. No order or capital authority was added.
 
 ### DATA-002 — Immutable market-data catalog and availability ledger
 

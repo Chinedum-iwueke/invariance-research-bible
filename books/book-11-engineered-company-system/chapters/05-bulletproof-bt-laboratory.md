@@ -78,11 +78,39 @@ remain missing. Replaying the manifest against the source root detects changed b
 The builder writes only a JSON manifest outside source partitions and never repairs or
 rewrites the lake.
 
-This is a snapshot qualification boundary, not lake-wide certification. DATA-001
-through DATA-003 still own complete venue identity, historical membership population,
-vendor correction ingestion, entitlement policy, quality SLOs and recovery.
+This is a snapshot qualification boundary, not lake-wide certification. DATA-002 and
+DATA-003 still own historical membership population, vendor correction ingestion,
+entitlement policy, quality SLOs and recovery.
 
-### 5.4.1 BT-004 classic-engine certification
+### 5.4.1 Point-in-time reference identity
+
+DATA-001 supplies the canonical identity layer consumed beside Bulletproof dataset
+manifests. An immutable, content-digested snapshot contains effective-dated venues,
+stable instruments, venue listings, session calendars and corporate actions. Instrument
+identity remains stable when a venue symbol changes; listing identity and revision
+history retain the venue-specific representation.
+
+Every temporal record has two clocks. `valid_from` and exclusive `valid_to` describe
+when the fact applied in the market. `observed_at` and `available_at` describe when the
+company could have known it. Resolution binds venue, symbol, effective time, knowledge
+cutoff and optional snapshot digest, returning the exact instrument, listing, venue,
+calendar, session state and then-known corporate actions. Unknown, overlapping or
+conflicting identity fails closed rather than guessing from the present-day symbol map.
+
+Snapshots cannot be mutated. A correction is a new revision with explicit ancestry;
+snapshot replacement is an ordered supersession with a later knowledge clock. Dataset
+manifests may bind the snapshot digest and must map every requested instrument to its
+stable instrument, venue and listing identifiers. Consumers roll back by pinning a
+prior digest.
+
+The production proof runs on VM2 at migration `e2d7a4c91b60`. Snapshot
+`16c689717341872f0b15d0324122ddbc749d2174197d8f3f4ea7faadf75e3871`
+replayed both sides of a BTC venue-symbol change without changing stable identity,
+replayed only the corporate action known by the cutoff, closed an explicit holiday and
+rejected an unknown venue. The service is reference evidence only and has no order or
+capital authority.
+
+### 5.4.2 BT-004 classic-engine certification
 
 BT-004 preserves the existing classic event-driven engine and certifies its causal,
 accounting and replay boundary rather than creating another simulator. Canonical events
@@ -104,7 +132,7 @@ platform floating-point noise cannot change a logically equal gate decision.
 The retained pinned Python 3.11 validation reports 1,231 passing tests and 27 explicit
 skips across the full repository.
 
-### 5.4.2 BT-005 market-model qualification
+### 5.4.3 BT-005 market-model qualification
 
 BT-005 keeps the classic fee, spread, slippage/impact, bar-delay, market-fill,
 reconciliation and diagnostic implementations as the sole authority. A versioned
@@ -122,7 +150,7 @@ digest, and matches it to lineage. Pessimistic stress cannot reduce modeled cost
 retained pinned suite reports 1,237 passing tests and 27 explicit skips. BT-006 through
 BT-008 retain their search, feature-lineage and publication boundaries.
 
-### 5.4.3 BT-006 prospective search accounting
+### 5.4.4 BT-006 prospective search accounting
 
 BT-006 preserves the existing hypothesis contract, constraint filtering, grid runner,
 parallel execution, strict resume and worker resource controls. A prospective search
@@ -143,7 +171,7 @@ ledger is Bulletproof's execution projection. The pinned Python 3.11 suite repor
 1,245 passes and 27 explicit skips. BT-007 owns feature and fit-boundary lineage, and
 BT-008 owns canonical dual-memory publication.
 
-### 5.4.4 BT-007 representation and fit-boundary certification
+### 5.4.5 BT-007 representation and fit-boundary certification
 
 BT-007 preserves the immutable dataset snapshot, canonical research panel, classic
 state-feature builders, hypothesis schemas and strategy implementations as the only
