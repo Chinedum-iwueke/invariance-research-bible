@@ -287,6 +287,49 @@ the superseded original. Its report digest is
 `fa46dcb44d1a913b72193f114cc69148dbf0a5f1e0bb4a832a60fb70cfa8db9d`.
 The service grants no source-write, strategy-execution, order or capital authority.
 
+## 4.7.3 Mechanism and falsification
+
+DISC-006 turns a qualified mechanism map into a prospective test contract. It reuses
+the canonical hypothesis, frozen evidence dossier, explicit opposition records and
+DISC-002 map; it does not create another evidence store or infer that a mapped anomaly
+is causal.
+
+```mermaid
+flowchart LR
+    Map[Active mechanism or opportunity map] --> Plan[Immutable mechanism plan]
+    Hypothesis[Registered hypothesis] --> Plan
+    Dossier[Frozen dossier and opposition] --> Plan
+    Plan --> Test[Decisive tests run elsewhere]
+    Evidence[Canonical outcome evidence] --> Eval[Independent evaluation]
+    Test --> Eval
+    Eval -->|any decisive failure| F[Falsified]
+    Eval -->|all pass and rivals ruled out| S[Supported]
+    Eval -->|otherwise| U[Unresolved]
+    F -->|new evidence| Sup[Immutable supersession]
+    S -->|new evidence| Sup
+    U -->|new evidence| Sup
+```
+
+A plan records the mechanism, scope, assumptions, competing explanations,
+confounders, evidence cutoff and exact decisive tests before outcomes exist. Each test
+has distinct prediction, null and falsification statements, a frozen analysis digest
+and explicit rival targets. Registration fails if any rival is uncovered or if the
+plan lacks its dossier/opposition provenance.
+
+An evaluation must postdate registration and bind the unchanged plan digest. It covers
+every preregistered test exactly once, cites an existing canonical evidence object by
+both identity and digest and reports the disposition of every targeted rival. A failed
+decisive test dominates supportive language and yields `falsified`. `Supported` is
+reserved for all tests passing with every rival ruled out; incomplete or inconclusive
+evidence remains `unresolved`. Later judgments supersede prior evaluations while
+retaining both records and their digests.
+
+Production runs migration `c6e9f3a52b80`. The live no-capital replay retained
+falsified evaluation `64195922-e004-4ae9-a091-8236a89cdb22` and then an unresolved
+supersession `65e61ffe-9fcf-46dd-bb51-7bc1fb02e2ee`. The pilot report digest is
+`264960712733bbec083fa443e85930a5dcc38ecaac1a330faddd48fc68f59a7b`.
+The service has no source-write, strategy-execution, order or capital authority.
+
 ## 4.8 Typed knowledge graph and cognitive services
 
 RI-008, implemented in PR 34 and deployed on VM2 at this snapshot, adds:
