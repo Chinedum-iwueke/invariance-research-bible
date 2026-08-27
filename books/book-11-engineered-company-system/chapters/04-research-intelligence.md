@@ -510,6 +510,44 @@ and DISC-007 audit
 `f8bf5a21bf539e0b4e46cf4b54405d0cd4e0fcaa9d0a1c47950d43ec487dd62f`.
 It has no self-approval, scope expansion, promotion, order or capital authority.
 
+## 4.7.9 Discovery portfolio and information-gain scheduler
+
+DISC-009 converts the institution's eligible discovery inventory into an immutable,
+diversified research-attention portfolio. Eligible inputs are current curricula, active
+DISC-002 opportunity maps, active DISC-006 mechanism evaluations, current DISC-007
+selection audits whose upstream lineage is still active, and completed DISC-008 sessions.
+The service verifies every source against its canonical record before it scores anything.
+
+```mermaid
+flowchart LR
+    Sources[Current discovery sources] --> Verify[Canonical source and lineage verification]
+    Verify --> Gain[Novelty and expected information gain]
+    Gain --> Allocate[Deterministic diversity and attention allocator]
+    Allocate --> Selected[Selected research attention]
+    Allocate --> Counterfactual[Ranked exclusions and reasons]
+    Selected --> Portfolio[Immutable portfolio and event chain]
+    Counterfactual --> Portfolio
+```
+
+Callers provide bounded relevance, feasibility and attention-cost estimates, but not
+epistemic confidence. Uncertainty is derived by the server from the source record.
+Novelty is computed against both the candidate set and prior completed sessions. The
+allocator first satisfies the declared domain-diversity floor and then fills remaining
+capacity by expected information gain per attention unit, subject to total-attention,
+selection-count, per-domain and per-cluster caps. Every candidate retains its normalized
+score inputs, digest, deterministic rank, selection state and either a selection rationale
+or a counterfactual exclusion reason. No excluded alternative disappears from history.
+
+Migrations `c2e6f9a31b50` and `d3f7a2b41c60` add the portfolio ledger and the typed
+`ResearchProgram.project` compatibility boundary. The existing M14 research program is
+explicitly bound to `bulletproof-bt`; unknown legacy programs remain `unbound` rather than
+being assigned by inference. Live portfolio `18fe8f06-ff9a-45f5-8d1c-6d8a5b41419e`
+selected two domains from three candidates and retained the third with reason
+`attention_budget`. Allocation digest
+`a86537d6ea9c4dede83f5054789298b9c41fa7002d4e758fb8209f337b42a309`
+replayed exactly. The scheduler has no task-creation, execution, promotion, order or
+capital authority.
+
 ## 4.8 Typed knowledge graph and cognitive services
 
 RI-008, implemented in PR 34 and deployed on VM2 at this snapshot, adds:
