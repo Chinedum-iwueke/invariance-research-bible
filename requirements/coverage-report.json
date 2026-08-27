@@ -34,6 +34,7 @@
     "AGT-006": 164,
     "AGT-007": 116,
     "AGT-008": 86,
+    "AGT-009": 86,
     "BASE-001": 82,
     "BASE-002": 148,
     "BASE-003": 104,
@@ -148,7 +149,7 @@
     "WS-002": 99
   },
   "claim_boundary": "Complete disposition proves planning coverage, not implementation, operational qualification, scientific truth, or profitability.",
-  "ledger_sha256": "35c8f1fb2fe1ac1e156382681f3c14909bc66d7524f95fe7311a685286eebeb7",
+  "ledger_sha256": "0b8d9f8983d8008677fd0a385637b3b303348c1cbec57ab4bc219f2b7c398827",
   "orphan_requirement_count": 0,
   "orphan_work_package_count": 0,
   "requirement_count": 1075,
