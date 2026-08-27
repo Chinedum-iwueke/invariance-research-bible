@@ -140,7 +140,36 @@ pinning prior digest
 The catalog grants no source-write, execution, order or capital authority. DATA-003
 still owns continuous quality SLOs, entitlements, retention, storage and recovery.
 
-### 5.4.3 BT-004 classic-engine certification
+### 5.4.3 Governed lake operations
+
+DATA-003 completes the operational boundary around the immutable DATA-002 catalog. An
+immutable governance snapshot binds one exact catalog digest to quality SLOs, lineage
+edges, entitlement rules, storage budgets, retention holds, recovery manifests and
+derived-publication records. This is metadata governance: protected source payload is
+forbidden by the strict API schemas, source objects stay read-only, and no prompt or
+evidence export receives their contents.
+
+Admission is default-deny. A requested read or deletion must name an entitled
+principal, action and purpose and pass schema, duplicate, gap, freshness and capacity
+checks. A retention hold blocks deletion while preserving governed read access.
+Lineage closes over declared upstream objects, and unknown principals, objects or
+recovery members fail closed. Capacity warnings are observable before exhaustion;
+exhaustion denies admission rather than silently degrading the lake.
+
+Every decision and operation enters an append-only, digest-chained event ledger. A
+derived publication can be disabled without mutating its source partitions. Restore
+then requires the disabled state, an integrity-verified backup, the same catalog
+digest and the exact declared object set. This makes rollback a replayable recovery
+operation rather than an informal file copy.
+
+Production runs migration `a4f9c3d72e10`. Snapshot
+`0acbf36c-29d4-427d-a83b-f943b004d3ba` bound catalog
+`3c5352526ef607d02502144cf8623dc53098322c4bf84f8395e0650384aa2e07`;
+the live pilot passed nine admission, denial, retention, capacity, disable, restore,
+visibility and protected-payload checks and retained six events. DATA-003 grants no
+source-write, execution, order or capital authority.
+
+### 5.4.4 BT-004 classic-engine certification
 
 BT-004 preserves the existing classic event-driven engine and certifies its causal,
 accounting and replay boundary rather than creating another simulator. Canonical events
@@ -162,7 +191,7 @@ platform floating-point noise cannot change a logically equal gate decision.
 The retained pinned Python 3.11 validation reports 1,231 passing tests and 27 explicit
 skips across the full repository.
 
-### 5.4.4 BT-005 market-model qualification
+### 5.4.5 BT-005 market-model qualification
 
 BT-005 keeps the classic fee, spread, slippage/impact, bar-delay, market-fill,
 reconciliation and diagnostic implementations as the sole authority. A versioned
@@ -180,7 +209,7 @@ digest, and matches it to lineage. Pessimistic stress cannot reduce modeled cost
 retained pinned suite reports 1,237 passing tests and 27 explicit skips. BT-006 through
 BT-008 retain their search, feature-lineage and publication boundaries.
 
-### 5.4.5 BT-006 prospective search accounting
+### 5.4.6 BT-006 prospective search accounting
 
 BT-006 preserves the existing hypothesis contract, constraint filtering, grid runner,
 parallel execution, strict resume and worker resource controls. A prospective search
@@ -201,7 +230,7 @@ ledger is Bulletproof's execution projection. The pinned Python 3.11 suite repor
 1,245 passes and 27 explicit skips. BT-007 owns feature and fit-boundary lineage, and
 BT-008 owns canonical dual-memory publication.
 
-### 5.4.6 BT-007 representation and fit-boundary certification
+### 5.4.7 BT-007 representation and fit-boundary certification
 
 BT-007 preserves the immutable dataset snapshot, canonical research panel, classic
 state-feature builders, hypothesis schemas and strategy implementations as the only
