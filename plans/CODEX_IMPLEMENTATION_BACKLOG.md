@@ -692,9 +692,9 @@ package is not complete until its own tests, evidence and rollback boundary pass
 
 ### CHAN-001 — Restricted Telegram founder channel
 
-- **Status/scope/reuse/gap:** Planned toward production qualification; reuse gateway, planner, outbox and safe approvals, closing clarification, dedupe, status and outage behavior.
+- **Status/scope/reuse/gap:** Source-qualified on 2026-08-27 at `swarm-control-plane` merge `4557667ce42d1d95684f931b57d557cc0bdab42b`; reuse gateway, CHAN-002 threading, OPS-006 planner, founder outbox and digest-bound approvals. The remaining production receipt is the root-owned VM2 gateway reinstall/restart and live redacted audit-chain check.
 - **Contracts/dependencies:** OPS-001/002, UI-004 and AGT-004; plain English creates proposals, non-executable requests ask questions, and secrets/sudo are prohibited.
-- **Tests/evidence/rollback/done:** Test spoofed user, replay, flood, stale link, outage, clarification and secret input. Retain redacted transcripts. Rollback disables commands while status remains. Done when mobile intake is safe and never bypasses Mission Control authority.
+- **Tests/evidence/rollback/done:** Forty-one gateway tests cover spoofed user, replay, flood, stale link, outage, clarification, secret non-retention and Telegram-send/control-plane-ack recovery without duplicate delivery. Hash-chained events retain only redacted classifications. Rollback disables decision commands while status/alerts and durable state remain. Completion requires the merged build active on VM2, a successful gateway check, a valid local audit chain and one founder-owned `/status` replay that creates no task.
 
 #### Execution phase — Point-in-time data and deterministic laboratory
 

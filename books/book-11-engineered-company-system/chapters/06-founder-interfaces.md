@@ -187,7 +187,38 @@ expiring handoffs bound to the control-plane proposal/approval identity.
 Telegram is an intent and approval channel, not a privileged terminal. Root operations
 still require typed, approved broker actions; a password must never be sent in chat.
 
-### 6.3.1 CHAN-002 durable threaded transport
+### 6.3.1 CHAN-001 restricted-channel qualification
+
+CHAN-001 hardens the existing channel rather than introducing another founder intake
+path. Sender and private-chat identifiers are checked before classification or any
+control-plane request. Secret-shaped assignments, private keys, known credential token
+forms, sudo-password text and oversized messages are refused before transcript storage;
+the retained security event contains only the rejection class, message length and
+transport identity, never the body or a credential-derived digest. A real credential
+pasted into Telegram still requires rotation.
+
+The protected SQLite state now carries a restart-safe founder rate window and a
+hash-chained redacted security-event ledger. Flooding is bounded without creating
+planner work. `/status` reports aggregate channel-security classifications, while the
+operator audit verifies the chain head without granting action authority or exposing a
+transcript.
+
+Founder notifications close the delivery/acknowledgement race explicitly. After
+Telegram accepts a message, its message identity is recorded locally before the
+control-plane outbox is acknowledged. If that acknowledgement fails, the gateway
+retries only the acknowledgement and does not send a second approval or alert. Update
+offsets, edited-message immutability, digest/state revalidation, expiring single-use
+handoffs and clarification-only proposals remain the CHAN-002, UI-004 and OPS-006
+boundaries they compose with.
+
+Source qualification at `swarm-control-plane` merge
+`4557667ce42d1d95684f931b57d557cc0bdab42b` passed 41 gateway tests spanning spoof,
+secret, flood, replay, stale link, clarification and dependency-outage cases. The final
+production receipt remains the root-owned VM2 reinstall/restart, gateway check and
+local audit-chain verification; source qualification alone is not represented as a
+live deployment.
+
+### 6.3.2 CHAN-002 durable threaded transport
 
 CHAN-002 makes Telegram restart-safe without making it authoritative. The protected
 SQLite store retains a monotonic update offset, selected thread, message-to-conversation
