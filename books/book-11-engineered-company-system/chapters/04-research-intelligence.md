@@ -251,6 +251,42 @@ execution authority: it cannot create a trial, lease a worker, promote research 
 touch capital. Deployment migration, Mission Control installation and a live replay
 remain the operational acceptance boundary for the source-complete implementation.
 
+## 4.7.2 Observation, anomaly and opportunity maps
+
+DISC-002 provides the typed bridge from a governed daily question to later hypothesis
+work without pretending that every unusual estimate is investable. It reuses the
+DISC-001 cycle, RI canonical evidence and DATA-002/003 data contracts. It does not run
+a backtest, generate a strategy, select a portfolio or acquire trading authority.
+
+```mermaid
+flowchart LR
+    O[Observation] -->|passed null control| A[Anomaly]
+    A -->|mechanism, rivals, falsification| M[Mechanism]
+    M -->|independent incremental evidence| C[Cost assessment]
+    C -->|positive reconciled net effect| P[Opportunity map]
+    C -->|cost erased or uncertain| N[Retained null or negative map]
+```
+
+Every immutable map binds its source daily cycle, exact point-in-time population,
+catalog digest, successful lake-admission event, baseline, estimate, uncertainty,
+regime controls and canonical evidence identities and digests. An anomaly requires a
+passed permutation, placebo, negative or time-shift control. A mechanism requires a
+causal story, rival explanations and explicit falsification outcomes. An opportunity
+additionally requires at least two differently produced evidence objects, a non-zero
+incremental effect and arithmetic reconciliation of gross effect less transaction,
+financing and impact costs to a positive net effect.
+
+Semantic duplicates are conflicts, not extra discoveries. Revisions use
+`supersedes_map_id`; registration and supersession enter an append-only digest chain.
+Protected market payload cannot enter the strict contract. A cost-erased candidate
+fails admission and remains evidence rather than being promoted by wording.
+
+Production runs migration `b5d8e2f41a70`. The live pilot registered map
+`358f8ec0-700e-4c39-af52-b2515b54cf7c`, rejected the cost-erased fixture and retained
+the superseded original. Its report digest is
+`fa46dcb44d1a913b72193f114cc69148dbf0a5f1e0bb4a832a60fb70cfa8db9d`.
+The service grants no source-write, strategy-execution, order or capital authority.
+
 ## 4.8 Typed knowledge graph and cognitive services
 
 RI-008, implemented in PR 34 and deployed on VM2 at this snapshot, adds:
