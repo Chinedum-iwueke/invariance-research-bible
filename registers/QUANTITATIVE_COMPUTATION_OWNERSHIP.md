@@ -39,3 +39,10 @@ A computational milestone is complete only when all of the following exist:
 A schema, fixture, registry, gate or API by itself cannot close a computational
 milestone. Until all six conditions pass, status is `reopened: producer missing` or
 `planned`, even when its governance slice is deployed.
+
+As of 2026-08-28, all six conditions pass for DATA-001..003,
+DISC-002..005/007, ML-002..004, RL-001..002 and RISK-001..002. The qualified
+producer is Bulletproof merge `80db509bfdbfc08c2420f1099650c77a22c7fc4d`;
+Hermes merge `54c444722d55057a2e8d4b8bdb5845f8dbbb3575` supplies the immutable
+consumer registry. The retained live replay registered and read back all 15
+receipts without allocation, capital, order or promotion authority.

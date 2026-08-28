@@ -797,6 +797,14 @@ The binding register is
 and the milestone verdicts are retained in the
 [quantitative ownership audit](../../../plans/QUANTITATIVE_OWNERSHIP_AUDIT.md).
 
+The correction closed on 2026-08-28. Bulletproof merge `80db509` added the 15
+authoritative producer receipts, while control-plane merge `54c4447` added only
+validation, immutable registration and exact replay. A live VM2 replay
+registered and read back all 15 receipts; its retained file digest is
+`c77c865342facd8f6b2c15bbe94a6c6243b5b6e88e452920fb21c83c54ec7aff`.
+The fixtures validate ownership, contracts, causal gates and replay. They do
+not assert alpha, production readiness or trading authority.
+
 ### 5.10 No-capital company walking skeleton
 
 WS-001 composes the governed laboratory path instead of creating parallel research
