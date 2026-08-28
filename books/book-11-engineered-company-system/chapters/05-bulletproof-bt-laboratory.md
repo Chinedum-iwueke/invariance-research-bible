@@ -834,6 +834,27 @@ record `5cab237f-bc51-4a13-b8ef-c8426fd3da5d`. The retained fixture proves a lat
 `1,3,2` stream can reconstruct deterministically after its gap closes. It is not an
 authenticated venue-stream certification and grants no permission to send orders.
 
+### 5.8.14 EXEC-002 market-microstructure state models
+
+EXEC-002 keeps market-state mathematics in `bt.institutional.microstructure`. It
+consumes the canonical EXEC-001 journal only through a declared receive-time cutoff
+and reconstructs best bid and ask, spread, depth and trade imbalance, mark-index
+basis, funding, open interest and liquidation evidence. The producer also binds its
+valid EXEC-001 and DATA-003 receipts, exact source-event digests and model identity.
+
+Each field is independently `observed`, `inferred` or `unavailable`. Source event IDs,
+limitations and uncertainty travel with the value. A crossed book fails closed;
+missing levels do not become zero; a venue reset clears earlier state; delayed funding
+and open interest expire; and a liquidation proxy remains explicitly model-dependent
+rather than masquerading as an exchange-reported liquidation.
+
+Bulletproof merge `adcbc093` produced receipt `19881008...`; 1,343 tests passed with
+27 declared skips. Hermes merge `6c913021` adds model identity and receipt verification
+only. VM2 registered model `59a5d26a...` and replayed the exact receipt as record
+`708a844a-5023-4123-b934-8471acd01a70`, preserving state digest `808b035c...`.
+This proves deterministic fixture reconstruction and cross-repository replay. It does
+not prove live exchange continuity, microstructure alpha or authority to send orders.
+
 ### 5.9 Quantitative computation ownership correction
 
 The 2026-08-28 cross-repository audit makes Bulletproof the sole authoritative

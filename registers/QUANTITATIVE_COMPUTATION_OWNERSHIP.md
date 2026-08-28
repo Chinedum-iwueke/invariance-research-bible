@@ -61,6 +61,14 @@ and validates receipts without ordering events. VM2 replayed receipt
 `63e1a21d355c72b841ea7d6366859e098d369551c2623a5e805de8663a3a3a5c`
 exactly and granted no allocation, capital, order or promotion authority.
 
+EXEC-002 satisfies the gate. Bulletproof merge
+`adcbc0937befaf97ecefe4152b84e2cfa355abe4` owns all market-microstructure state
+calculations and preserves observed, inferred and unavailable provenance. Hermes merge
+`6c913021057a94ea15a6472d8fdde95b8b9d0f15` registers the immutable model identity
+and verifies receipts without calculating market state. VM2 replayed receipt
+`1988100824f76b42c7efbe6267b489325a08af69490ab982d15b9f0e1648ace7`
+exactly and granted no allocation, capital, order or promotion authority.
+
 PORT-003 satisfies the same gate. Bulletproof merge
 `866e1c1c0ab23b0bb65fa795030eabf1daedfcb1` owns every benchmark, covariance,
 optimization, rounding, sensitivity and fallback calculation. Hermes merge
