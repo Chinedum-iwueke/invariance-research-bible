@@ -46,3 +46,9 @@ producer is Bulletproof merge `80db509bfdbfc08c2420f1099650c77a22c7fc4d`;
 Hermes merge `54c444722d55057a2e8d4b8bdb5845f8dbbb3575` supplies the immutable
 consumer registry. The retained live replay registered and read back all 15
 receipts without allocation, capital, order or promotion authority.
+
+PORT-002 also satisfies the six-part completion gate. Bulletproof merge
+`79caf1d334a5e80d03cf644875dfa022d09c952a` is the authoritative dependency,
+diversification and concentration producer. Hermes merge `3a2a38ba15d455263281c42d06881d7aebc601d0`
+only admits its immutable receipt. VM2 replayed receipt `70f4ff8045875341e8f324cd2a1f44ff22a309d4dc0362c011b5a51a1c5138be`
+exactly and granted no allocation, capital, order or promotion authority.

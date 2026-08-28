@@ -763,8 +763,32 @@ Its report digest is
 The full Python 3.11 suite passed 1,294 tests with 27 declared skips. Separate dossiers
 prove rejection of missing overlap, infeasible stressed capacity and excessive scenario
 loss. These are deterministic fixtures, not market-performance or production-allocation
-evidence. PORT-002 through PORT-004 and RISK-001 onward own richer dependence models,
-optimization, allocation registry, path stress and governed admission.
+evidence. PORT-002 now owns the richer dependence model. PORT-003 through PORT-004
+and later risk packets own optimization, allocation registry, path stress and governed
+admission.
+
+### 5.8.11 PORT-002 dependency, diversification and concentration service
+
+PORT-002 is implemented in `bt.institutional.portfolio`, not in Hermes. It binds an
+admitted PORT-001 dossier to an exact common observation window, state labels, shared
+economic and operational exposures, dataset and source commits, freshness limits and
+concentration policy. It measures overall and state-conditioned correlation with
+confidence intervals, empirical lower-tail dependence and shared-exposure dependence.
+The maximum of these channels forms a conservative joint-dependency score.
+
+Deterministic connected components turn the joint-dependency matrix into clusters.
+The dossier reports cluster and shared-exposure weights, HHI, effective candidate count,
+portfolio volatility, weighted standalone volatility, diversification ratio and a
+correlation-convergence stress. Missing overlap earns no diversification credit. Sparse
+state histories, stale windows, inconsistent state labels, undefined dependence and
+limit breaches are retained as failures.
+
+Bulletproof merge `79caf1d` produced immutable receipt `70f4ff80...`. The full suite
+passed 1,319 tests with 27 declared skips. Hermes merge `3a2a38b` adds only receipt
+validation and registration, and VM2 replayed the receipt exactly as record
+`5c55f791-227a-4c40-a86a-301eec866b9e`. The deterministic fixture proves the service
+and ownership boundary, not portfolio fitness or alpha. PORT-002 never changes weights
+and grants no allocation, capital, order or promotion authority.
 
 ### 5.9 Quantitative computation ownership correction
 
