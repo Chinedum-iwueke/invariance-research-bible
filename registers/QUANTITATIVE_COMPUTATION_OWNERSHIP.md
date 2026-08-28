@@ -53,6 +53,14 @@ diversification and concentration producer. Hermes merge `3a2a38ba15d455263281c4
 only admits its immutable receipt. VM2 replayed receipt `70f4ff8045875341e8f324cd2a1f44ff22a309d4dc0362c011b5a51a1c5138be`
 exactly and granted no allocation, capital, order or promotion authority.
 
+EXEC-001 satisfies the gate. Bulletproof merge
+`22e0bda5d7160db49b864db2d3400596d3b814c7` owns canonical event production,
+sequence/clock validation and point-in-time reconstruction. Hermes merge
+`8e53f9350030477899ce1849abe6d532a6920f20` registers the immutable event schema
+and validates receipts without ordering events. VM2 replayed receipt
+`63e1a21d355c72b841ea7d6366859e098d369551c2623a5e805de8663a3a3a5c`
+exactly and granted no allocation, capital, order or promotion authority.
+
 PORT-003 satisfies the same gate. Bulletproof merge
 `866e1c1c0ab23b0bb65fa795030eabf1daedfcb1` owns every benchmark, covariance,
 optimization, rounding, sensitivity and fallback calculation. Hermes merge

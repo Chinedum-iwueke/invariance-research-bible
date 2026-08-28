@@ -813,6 +813,27 @@ the receipt exactly as record `63ef6757-137c-4712-9d13-1b4e2b15a4cf`. This is
 construction evidence, not permission to allocate capital or send orders. PORT-004
 and the later live gates retain those separate decision rights.
 
+### 5.8.13 EXEC-001 canonical market/order event and clock service
+
+EXEC-001 extends Bulletproof's typed runtime events, lifecycle journal and checkpoints
+with one immutable canonical envelope. Source and stream epoch, event identity, kind,
+instrument identity, event and receive clocks, source sequence, payload digest,
+correction lineage and event digest travel together. Receive time is the knowledge
+boundary: a point-in-time replay cannot include an event that had not yet arrived.
+
+The SQLite journal is append-only. Exact duplicates are idempotent, while reuse of an
+identity with different content is rejected. Sequence gaps and late arrivals remain
+explicit evidence. Corrections append a new event and supersede the prior event only
+in the derived projection; history is never rewritten. Replay ordering is deterministic
+and does not silently substitute database insertion order for source chronology.
+
+Bulletproof merge `22e0bda5` produced receipt `63e1a21d...`; 1,334 tests passed with
+27 declared skips. Hermes merge `8e53f935` registers schema `b3355f73...` and verifies
+the receipt without reconstructing state. VM2 stored schema `c596717e...` and receipt
+record `5cab237f-bc51-4a13-b8ef-c8426fd3da5d`. The retained fixture proves a late
+`1,3,2` stream can reconstruct deterministically after its gap closes. It is not an
+authenticated venue-stream certification and grants no permission to send orders.
+
 ### 5.9 Quantitative computation ownership correction
 
 The 2026-08-28 cross-repository audit makes Bulletproof the sole authoritative
