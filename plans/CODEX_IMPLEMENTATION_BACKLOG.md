@@ -827,9 +827,9 @@ package is not complete until its own tests, evidence and rollback boundary pass
 
 ### RL-002 — Conservative off-policy proposal evaluation
 
-- **Status/scope/reuse/gap:** Planned; reuse RL-001 and statistical review, adding conservative estimators, uncertainty stress and safe proposal gates.
-- **Contracts/dependencies:** RL-001, DISC-007 and ML-004; output remains shadow-only and carries support/uncertainty bounds.
-- **Tests/evidence/rollback/done:** Test estimator bias, weak overlap, extrapolation and adversarial rewards. Retain estimator comparison. Rollback rejects the proposal. Done when policies cannot pass on unsupported optimistic estimates.
+- **Status/scope/reuse/gap (2026-08-28):** Completed, merged, migrated and production-replayed through control-plane PRs #187-#188, ending at `78d4be17835b07fe8530b23768f5d2ca74d69656`. RL-002 reuses the qualified RL-001 dataset, current DISC-007 audit and qualified ML-004 candidate instead of training a policy or duplicating dataset/calibration registries. It adds an immutable conservative proposal comparison and shadow-only decision.
+- **Contracts/dependencies:** RL-001, DISC-007 and ML-004; every proposal binds the target and base-candidate digests, only RL-001-permitted estimators, confidence intervals, effective sample size, importance weights, action overlap, extrapolation, reward-model rebuild and required adversarial-reward, support-trimming, weight-clipping and cost-expansion receipts. The server derives the worst lower bound and independently applies typed gates.
+- **Tests/evidence/rollback/done:** 596 backend tests passed with two pre-existing warnings and all CI suites passed on both PRs. Tests reject estimator disagreement, weak effective sample size, unsafe weights, weak overlap, extrapolation, unsupported actions, reward rebuild drift, adversarial stress failure, quarantined/stale dependencies and candidate mismatch. VM2 runs migration `e8c3b6a05d40`; live evaluation `77bda11b-e6cc-4c00-a76d-6261ffbb73a1` bound RL-001 `807c244c-7574-43c2-a80a-4c6c6ea11d25`, DISC-007 `45b83a75-8831-4ced-a0f3-93a5d78e981e` and ML-004 `5560e515-7ad5-4a92-80c2-e3b1482a502b`. It retained conservative value `0.016`, estimator spread `0.007`, no failures and exact digest `b14150114e7247e06a27952496cb2ad26f03d517341486093bdddbbe2c856938`. Rollback rejects the proposal while retaining comparisons. `shadow_eligible` grants no causal-policy, deployment, order or capital authority. Evidence: `plans/evidence/RL-002.md`.
 
 #### Execution phase — Portfolio, risk, execution and demo certification
 
