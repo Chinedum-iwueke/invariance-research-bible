@@ -52,3 +52,11 @@ PORT-002 also satisfies the six-part completion gate. Bulletproof merge
 diversification and concentration producer. Hermes merge `3a2a38ba15d455263281c42d06881d7aebc601d0`
 only admits its immutable receipt. VM2 replayed receipt `70f4ff8045875341e8f324cd2a1f44ff22a309d4dc0362c011b5a51a1c5138be`
 exactly and granted no allocation, capital, order or promotion authority.
+
+PORT-003 satisfies the same gate. Bulletproof merge
+`866e1c1c0ab23b0bb65fa795030eabf1daedfcb1` owns every benchmark, covariance,
+optimization, rounding, sensitivity and fallback calculation. Hermes merge
+`ffbb9bc5e39873672d3f260c6fb8a50f07b018c3` registers the exact versioned solver
+and verifies its receipt without recomputation. VM2 replayed receipt
+`c196ca8f43a1c67c49284b111df44083ba8e076cdb75097b90844ebc5e414825`
+exactly and granted no allocation, capital, order or promotion authority.

@@ -790,6 +790,29 @@ validation and registration, and VM2 replayed the receipt exactly as record
 and ownership boundary, not portfolio fitness or alpha. PORT-002 never changes weights
 and grants no allocation, capital, order or promotion authority.
 
+### 5.8.12 PORT-003 construction benchmarks and robust optimizer registry
+
+PORT-003 keeps construction mathematics in `bt.institutional.construction`. The
+producer binds qualified PORT-002 dependency and RISK-001 risk receipts to expected
+returns, uncertainty, covariance, prior weights, explicit bounds, turnover and
+sensitivity limits, rounding increment and an exact versioned solver specification.
+It regularizes covariance with declared shrinkage and retains equal-weight and
+inverse-volatility risk-budget portfolios as its benchmark ladder.
+
+The projected-gradient robust mean-variance candidate is accepted only when it is
+feasible, deterministic, within turnover and perturbation-sensitivity limits, exactly
+rounded to the configured increment and better than the strongest qualified benchmark
+under the declared robust objective. Otherwise Bulletproof selects the deterministic
+benchmark and records why. Impossible bounds and materially indefinite covariance fail
+closed rather than producing a portfolio.
+
+Bulletproof merge `866e1c1c` produced source-bound receipt `c196ca8f...`; 1,326 tests
+passed with 27 declared skips. Hermes merge `ffbb9bc5` adds the versioned solver
+identity and receipt verifier only. VM2 registered solver `902a8423...` and replayed
+the receipt exactly as record `63ef6757-137c-4712-9d13-1b4e2b15a4cf`. This is
+construction evidence, not permission to allocate capital or send orders. PORT-004
+and the later live gates retain those separate decision rights.
+
 ### 5.9 Quantitative computation ownership correction
 
 The 2026-08-28 cross-repository audit makes Bulletproof the sole authoritative
