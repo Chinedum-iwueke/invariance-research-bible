@@ -766,7 +766,46 @@ loss. These are deterministic fixtures, not market-performance or production-all
 evidence. PORT-002 through PORT-004 and RISK-001 onward own richer dependence models,
 optimization, allocation registry, path stress and governed admission.
 
-### 5.9 No-capital company walking skeleton
+### 5.9 Quantitative computation ownership correction
+
+The 2026-08-28 cross-repository audit makes Bulletproof the sole authoritative
+producer of market-data-derived, statistical, ML, RL, portfolio, risk and execution
+calculations. Hermes owns identity, authorization, lifecycle, immutable registration,
+policy gates, orchestration, audit and replay. Workers invoke a pinned Bulletproof
+producer and transport its receipt; they do not reproduce the calculation.
+
+This correction preserves the deployed Hermes schemas, migrations, registries and
+fail-closed gates. It changes what those components prove. A control-plane fixture,
+server-side score or exact API replay proves governance behavior, not completion of a
+quantitative capability. Small deterministic recomputations may remain as independent
+validators, but disagreement with the Bulletproof receipt fails closed and the Hermes
+result never becomes an alternate scientific truth.
+
+The audit keeps BT-001 through BT-009, SHADOW-001, ML-001, PORT-001 and WS-001
+complete because their authoritative native producers exist in Bulletproof and their
+boundaries are evidenced. It reopens DATA-001 through DATA-003, DISC-002 through
+DISC-005, DISC-007, ML-002 through ML-004, RL-001 through RL-002 and RISK-001 through
+RISK-002. Their deployed Hermes portions remain completed governance slices, but each
+packet now needs its missing Bulletproof producer, native tests, a digest-bound receipt
+and a live no-capital cross-repository replay before it can close again. DISC-001,
+DISC-006, DISC-008 and DISC-009 remain complete as orchestration or institutional
+governance capabilities; any quantitative evidence they consume must reference a
+qualified Bulletproof receipt.
+
+The binding register is
+[Quantitative computation ownership](../../../registers/QUANTITATIVE_COMPUTATION_OWNERSHIP.md),
+and the milestone verdicts are retained in the
+[quantitative ownership audit](../../../plans/QUANTITATIVE_OWNERSHIP_AUDIT.md).
+
+The correction closed on 2026-08-28. Bulletproof merge `80db509` added the 15
+authoritative producer receipts, while control-plane merge `54c4447` added only
+validation, immutable registration and exact replay. A live VM2 replay
+registered and read back all 15 receipts; its retained file digest is
+`c77c865342facd8f6b2c15bbe94a6c6243b5b6e88e452920fb21c83c54ec7aff`.
+The fixtures validate ownership, contracts, causal gates and replay. They do
+not assert alpha, production readiness or trading authority.
+
+### 5.10 No-capital company walking skeleton
 
 WS-001 composes the governed laboratory path instead of creating parallel research
 machinery. Its valid-negative leg replays the completed BT-009 publication from a
@@ -786,7 +825,7 @@ The forward-join fixture was retained as invalid outcome
 `f54be6e2-24ce-4dbf-a4b0-7c64cf19ed0f`, and the injected memory-publication
 failure recovered without granting capital or order authority.
 
-### 5.10 LIVE-001 pre-capital canary boundary
+### 5.11 LIVE-001 pre-capital canary boundary
 
 Bulletproof commit `e6ce17ed9b8e14e23ea54f121f1f448387ae2ecf` closes a
 dangerous gap in the existing live runtime without declaring it production-ready.
