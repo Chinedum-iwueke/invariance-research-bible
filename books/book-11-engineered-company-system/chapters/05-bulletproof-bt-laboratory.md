@@ -701,7 +701,35 @@ Its deterministic fixture was admissible, included model failure, and replayed e
 That proves the control path, not the economic validity of a portfolio. RISK-001 has no
 allocation, order or capital authority.
 
-### 5.8.9 PORT-001 portfolio-candidate risk service
+### 5.8.9 RISK-002 leverage, margin, liquidation and rule engine
+
+RISK-002 converts venue constraints into immutable, point-in-time decision evidence.
+It reuses DATA-001 to resolve the one listing revision effective and known at the
+evaluation clock, binds an admissible RISK-001 dossier, and retains Bulletproof's
+existing position, leverage, funding and forced-liquidation telemetry. It does not
+replace the engine, size positions or communicate with an exchange.
+
+A rule pack identifies its source and digest, observed and available clocks, effective
+interval, lifecycle transition, predecessor, and active/suspended/retired state. Its
+margin tiers must start at zero, remain contiguous and carry maximum leverage,
+maintenance rate and maintenance amount. The pack also defines exact price and
+quantity increments, maximum mark/index deviation, funding bound and minimum
+liquidation buffer.
+
+For each digest-bound position state the server selects the applicable tier and derives
+notional, initial margin, maintenance margin, long/short unrealized PnL, equity after
+funding and fees, mark deviation, effective funding rate and liquidation buffer. It
+then produces `allowed` only when every hard constraint passes. Unknown, future,
+stale, inactive, expired, ambiguous or malformed rule state fails closed. Historical
+listing revisions remain retained but are filtered by effective and knowledge clocks.
+
+The VM2 pilot registered evaluation `8ed31a3e-8dae-469b-b636-79dd68bdf682`
+against live DATA-001 and RISK-001 records and replayed receipt
+`10d5294738b2188e3d5a221ee0d96cacee2c7e4d94abe3db58bf82b231164d1b`
+exactly. Its limits are deterministic test fixtures, not current Binance rules. The
+receipt has no allocation, order or capital authority.
+
+### 5.8.10 PORT-001 portfolio-candidate risk service
 
 PORT-001 adds `bt.portfolio_engine.candidate_service` without replacing the classic
 engine, the sleeve runner, `PortfolioRiskCoordinator`, or execution adapters. Its input
