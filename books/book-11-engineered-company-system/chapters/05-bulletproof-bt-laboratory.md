@@ -674,7 +674,34 @@ estimator spread was `0.007`, and evaluation digest
 `b14150114e7247e06a27952496cb2ad26f03d517341486093bdddbbe2c856938`
 replayed exactly. RL-002 has no causal-policy, deployment, order or capital authority.
 
-### 5.8.8 PORT-001 portfolio-candidate risk service
+### 5.8.8 RISK-001 drawdown, tail and reverse-stress engine
+
+RISK-001 is the immutable risk-admission layer between an evidence-only portfolio
+candidate and later construction or capital decisions. It deliberately reuses the
+classic Bulletproof laboratory: historical drawdown paths, Monte Carlo drawdown
+distributions, ruin estimates and cost stress remain computed there. The control plane
+binds those results through the BT-004 run digest, BT-005 cost-model digest, PORT-001
+candidate digest, portfolio-state digest and a versioned scenario-pack digest.
+
+Each request must include drawdown depth, duration, recovery and underwater-path
+identity; VaR and expected shortfall with a conservative uncertainty upper bound; and
+exactly five attributable failure mechanisms: price gap, correlation break, liquidity
+freeze, model failure and prolonged drawdown. Each mechanism also carries a bounded
+reverse-stress bracket identifying the first tested shock that crosses the declared
+loss limit. The server independently derives the worst scenario, breached scenarios,
+tail envelope, reverse thresholds and final decision.
+
+Evidence age and upper uncertainty envelopes govern admission. Stale evidence, excess
+drawdown, excess tail loss or any scenario breach produces `blocked`; callers cannot
+submit their own decision. The persisted dossier is digest-addressed and replayable.
+The production pilot registered assessment
+`b7713035-e37d-4841-8ecc-acd809409de8` with dossier digest
+`1860339b7bded1a112f5579b35a985260919502c4ee4ee1c0a2884f73afeeed4`.
+Its deterministic fixture was admissible, included model failure, and replayed exactly.
+That proves the control path, not the economic validity of a portfolio. RISK-001 has no
+allocation, order or capital authority.
+
+### 5.8.9 PORT-001 portfolio-candidate risk service
 
 PORT-001 adds `bt.portfolio_engine.candidate_service` without replacing the classic
 engine, the sleeve runner, `PortfolioRiskCoordinator`, or execution adapters. Its input
