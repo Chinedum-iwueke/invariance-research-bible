@@ -643,7 +643,38 @@ episodes and the retained SHADOW-001 evidence. Audit digest
 replayed exactly. Market impact remains a proxy and latent liquidity remains unobserved.
 RL-001 has no policy-improvement, deployment, order or capital authority.
 
-### 5.8.7 PORT-001 portfolio-candidate risk service
+### 5.8.7 RL-002 conservative off-policy proposal evaluation
+
+RL-002 evaluates whether a target-policy proposal has enough conservative evidence to
+enter further shadow study. It does not train or deploy a policy. Registration requires
+a qualified RL-001 dataset, a current non-blocked DISC-007 selection audit and a
+qualified ML-004 calibration assessment whose candidate identity matches the proposal.
+
+Each immutable proposal retains multiple digest-bound estimator receipts with point and
+confidence estimates, effective sample sizes and maximum importance weights. It also
+retains action overlap, extrapolation and unsupported actions, an independently rebuilt
+reward model, and adversarial-reward, support-trimming, importance-weight-clipping and
+cost-expansion stresses. Every estimator must have been permitted by the bound RL-001
+contract.
+
+The server derives the conservative value as the worst lower bound across every
+estimator and required stress. It rejects values below the floor, estimator disagreement,
+weak effective sample size, unsafe weights, weak overlap, excess extrapolation,
+unsupported actions or any stress below the declared floor. A pass means only
+`shadow_eligible`; it is neither causal identification nor promotion.
+
+Control-plane PRs #187-#188 merged through
+`78d4be17835b07fe8530b23768f5d2ca74d69656` after 596 backend tests and all
+CI suites passed. VM2 runs migration `e8c3b6a05d40`. Live evaluation
+`77bda11b-e6cc-4c00-a76d-6261ffbb73a1` bound RL-001 dataset
+`807c244c-7574-43c2-a80a-4c6c6ea11d25`, DISC-007 audit
+`45b83a75-8831-4ced-a0f3-93a5d78e981e` and ML-004 assessment
+`5560e515-7ad5-4a92-80c2-e3b1482a502b`. Its worst lower bound was `0.016`,
+estimator spread was `0.007`, and evaluation digest
+`b14150114e7247e06a27952496cb2ad26f03d517341486093bdddbbe2c856938`
+replayed exactly. RL-002 has no causal-policy, deployment, order or capital authority.
+
+### 5.8.8 PORT-001 portfolio-candidate risk service
 
 PORT-001 adds `bt.portfolio_engine.candidate_service` without replacing the classic
 engine, the sleeve runner, `PortfolioRiskCoordinator`, or execution adapters. Its input
