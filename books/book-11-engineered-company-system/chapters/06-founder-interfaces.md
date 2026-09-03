@@ -287,10 +287,28 @@ and a targeted question. Conversation fluency still creates no execution authori
 proposal materialization, task approval, role attestation, worker permissions and
 downstream scientific truth gates remain independent controls.
 
-Migration `c2f8a6d41e90`, refreshed planner package `1.1.0`, VM1 Telegram restart and
-Mac Mission Control reinstall are the remaining production activation gates. The
-source validation replays the August 23 five-message exchange as one research thread
-at revision five rather than five unrelated tasks.
+The September 2026 hardening separates cognition from compilation. A repository name
+selects planning context but does not imply checkout access and does not require an
+execution repository grant. A first read-only Codex stage receives the ordered,
+deduplicated conversation and bounded snapshots of hybrid Research Intelligence
+retrieval, registered dataset manifests, registered hypotheses and enabled task
+capabilities. It returns one typed disposition: answer, genuinely blocking
+clarification, or compile. Only the last invokes the strict proposal compiler. Neither
+stage can lease execution work, approve a digest or acquire capital authority.
+
+The operational path is observable. Lease start records `planning`; effective-authority
+denial records `task_authority_denied` with exact reasons; and a current revision that
+does not advance within two minutes becomes `attention_required` and emits one
+deduplicated founder alert. Telegram renders planning and stalled notices. Mission
+Control refreshes open Chat & Work state every ten seconds and displays the canonical
+conversation, proposal, task, event and evidence chain. This closes the failure mode
+where an authorized founder request remained queued while both channels reported an
+apparently idle planner.
+
+The source validation replays the August 23 five-message exchange as one research
+thread at revision five rather than five unrelated tasks. Production qualification of
+the hardening additionally requires deployment and successful replay of the stranded
+August 29 thread.
 
 ### 6.4.2 UI-007 integrated conversation workspace
 
