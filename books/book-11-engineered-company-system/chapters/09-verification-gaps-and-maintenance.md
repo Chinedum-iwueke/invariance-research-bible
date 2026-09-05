@@ -222,6 +222,32 @@ the correction. Mission Control exposes the outstanding review queue and benchma
 progress. Deployment, independent live-corpus adjudication and the first live
 benchmark remain required before this capability can be described as qualified.
 
+RI-014C now adds the first deterministic utility layer over those representations.
+Search is restricted to v2 evidence that is parser-accepted or independently labelled
+equivalent and can match formula tokens, scoped symbol names and definitions, units and
+dimensions, expression trees, table grids, captions and canonical cross-references.
+Selections become immutable mathematics context packs containing canonical source IDs,
+source-region and representation digests, exact structured content, uncertainties and
+an explicit abstention rule. The Research Copilot may consult this pack beside ordinary
+canonical retrieval, but mathematical claims still cite canonical source objects and
+retain the separate mathematics-pack digest.
+
+A bounded Decimal evaluator supports only deterministic numeric, symbol, grouping,
+implicit-product and basic arithmetic AST nodes. It requires a registered context pack
+that contains the exact accepted representation, retains substitutions, tree, units,
+result and digests, and refuses missing symbols, material uncertainty, unsupported
+operators, division by zero and unsafe exponent forms. It has no code, network,
+filesystem, approval, deployment, order or capital authority. Immutable per-role
+capability profiles bind demonstrated tasks, limitations and independent utility
+metrics to exact corpus and representation versions. Fidelity qualification never
+automatically qualifies an agent's mathematical reasoning.
+
+The joint RI-014 production pilot now has an honest two-stage contract: freeze a
+deterministic equation/table/figure sample and expose it for independent adjudication;
+then refuse finalization until every item has one non-conflicting label. Its terminal
+result is either an immutable qualified evaluation digest or a retained failure. No
+automated parser or recovery worker fabricates the ground truth needed to pass.
+
 Corpus-derived state is not yet a closed automatic pipeline. A changed inbox batch
 coalesces files and performs one full retrieval rebuild; an unchanged refresh skips the
 rebuild; a direct UI upload rebuilds retrieval immediately. The current rebuild deletes
