@@ -178,6 +178,23 @@ table fidelity, so its placeholder cell score is not evidence. RI-014 remains
 open for material-versus-layout disagreement analysis and a properly stratified
 equation, table and figure corpus evaluation.
 
+The forward path is deliberately utility-led. RI-014A reconstructs mathematical
+structure and retains unresolved notation rather than guessing it. RI-014B creates
+immutable independent adjudications and measures precision, recall, coverage and
+abstention against real labels. RI-014C makes accepted formulae, symbol definitions,
+units, tables and cross-references separately retrievable and supplies them to agents
+in provenance-bearing context packs. Mathematical transformations and calculations
+must run through bounded deterministic tools and retain expression, unit, output and
+citation evidence. Mission Control reports what each agent has demonstrated it can
+do, what portion of the corpus has usable structure, and what remains uncertain.
+
+This makes the corpus useful before it is perfect: high-confidence accepted objects
+can support explanation, comparison, hypothesis formation and Bulletproof
+specification work immediately; uncertain objects remain searchable with source
+images and prose context but cannot silently drive calculations. Progress is judged
+by held-out company research tasks and reduced unsupported claims, not by asserting
+that every page has been understood.
+
 Corpus-derived state is not yet a closed automatic pipeline. A changed inbox batch
 coalesces files and performs one full retrieval rebuild; an unchanged refresh skips the
 rebuild; a direct UI upload rebuilds retrieval immediately. The current rebuild deletes
