@@ -195,6 +195,15 @@ images and prose context but cannot silently drive calculations. Progress is jud
 by held-out company research tasks and reduced unsupported claims, not by asserting
 that every page has been understood.
 
+RI-014A entered source at control-plane commit `428bffa`. Its v2 reconstruction
+contract removes the single-line whitespace table heuristic, retains complete bounded
+equation continuations, separates glyph-faithful content from safe layout
+normalization, and expands deterministic syntax trees to sets, tuples, vectors,
+indexed symbols and implicit products. Unsupported or incomplete notation remains
+lossless and review-required. Historical representation versions remain immutable;
+production reconstruction must publish new v2 evidence and fail when a required
+scientific stratum is absent.
+
 Corpus-derived state is not yet a closed automatic pipeline. A changed inbox batch
 coalesces files and performs one full retrieval rebuild; an unchanged refresh skips the
 rebuild; a direct UI upload rebuilds retrieval immediately. The current rebuild deletes
