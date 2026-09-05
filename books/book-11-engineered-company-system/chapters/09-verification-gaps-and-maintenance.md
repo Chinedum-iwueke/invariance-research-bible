@@ -156,6 +156,18 @@ table, contradiction, abstention and multi-hop reasoning. Until those packages p
 means the declared curriculum checks passed at named corpus/projection digests. Neither
 label means complete comprehension. Mission Control must expose that distinction.
 
+RI-014 was implemented in source on 2026-09-05. Migration `fae4c6b93d20` adds an
+immutable derived-representation registry and digest-bound corpus fidelity manifests.
+Each accepted equation, table or figure remains linked to its canonical scientific
+object and rendered-region digest. Unicode-normalized content, ordered mathematical
+tokens, scoped symbol definitions, declared units and dimensions, table cell grids,
+figure captions and canonical cross-references are retained alongside every parser
+output. Two independent parsers must agree; OCR-only evidence, confidence below 0.90,
+material disagreement or conflicting dimensions is retained as `review_required` and
+cannot qualify a corpus manifest. This is a fidelity and replay contract, not a claim
+that tokenization alone proves mathematical understanding. VM2 activation and the
+held-out live corpus measurement remain visible production gates.
+
 Corpus-derived state is not yet a closed automatic pipeline. A changed inbox batch
 coalesces files and performs one full retrieval rebuild; an unchanged refresh skips the
 rebuild; a direct UI upload rebuilds retrieval immediately. The current rebuild deletes
