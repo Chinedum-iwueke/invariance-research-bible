@@ -168,6 +168,16 @@ cannot qualify a corpus manifest. This is a fidelity and replay contract, not a 
 that tokenization alone proves mathematical understanding. VM2 activation and the
 held-out live corpus measurement remain visible production gates.
 
+The first production measurement on 2026-09-05 exercised that boundary rather
+than weakening it. VM2 manifest `73f09651-5f97-4eb0-9122-37aeadfe6706`, digest
+`43e31d9d5d91b47e3703f593604c43b6bf67d1b2a289d73d0d115a8e657adf11`,
+accepted three of 20 held-out equation regions and routed 17 to review; four
+additional candidates had empty independent regions. Its `not_qualified` state
+is the correct institutional conclusion. The equation-only pilot did not measure
+table fidelity, so its placeholder cell score is not evidence. RI-014 remains
+open for material-versus-layout disagreement analysis and a properly stratified
+equation, table and figure corpus evaluation.
+
 Corpus-derived state is not yet a closed automatic pipeline. A changed inbox batch
 coalesces files and performs one full retrieval rebuild; an unchanged refresh skips the
 rebuild; a direct UI upload rebuilds retrieval immediately. The current rebuild deletes
