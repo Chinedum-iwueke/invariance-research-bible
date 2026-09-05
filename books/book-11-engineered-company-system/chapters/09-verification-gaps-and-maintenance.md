@@ -204,6 +204,24 @@ lossless and review-required. Historical representation versions remain immutabl
 production reconstruction must publish new v2 evidence and fail when a required
 scientific stratum is absent.
 
+RI-014B now supplies the missing ground-truth boundary in source. A representation
+producer cannot adjudicate its own output. Independent reviewers record one of six
+typed decisions with a substantive rationale, reviewer identity and role, corpus
+digest, exact source-region digest, immutable record digest and hash-chained creation
+event. Disagreement between reviewers is retained as a conflict and blocks benchmark
+qualification; it is not resolved by majority inference or parser confidence.
+
+Held-out benchmark membership is reproducibly selected by scientific type with a
+declared seed and a digest-bound sampling algorithm. Precision, recall, coverage,
+abstention accuracy, material-error escape rate, per-type confusion matrices and
+Wilson confidence intervals are computed from adjudications, never supplied by the
+parser under test. Recovery and parser workers may propose a corrected payload only
+after a material decision, under a new representation version and in
+`pending_approval`; they cannot self-adjudicate, mutate historical evidence or publish
+the correction. Mission Control exposes the outstanding review queue and benchmark
+progress. Deployment, independent live-corpus adjudication and the first live
+benchmark remain required before this capability can be described as qualified.
+
 Corpus-derived state is not yet a closed automatic pipeline. A changed inbox batch
 coalesces files and performs one full retrieval rebuild; an unchanged refresh skips the
 rebuild; a direct UI upload rebuilds retrieval immediately. The current rebuild deletes
