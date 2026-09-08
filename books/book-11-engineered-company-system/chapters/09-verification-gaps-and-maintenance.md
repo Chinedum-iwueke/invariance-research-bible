@@ -11,6 +11,7 @@
 | RI-008 | Implemented/tested/observed | Live 762,232-node, 1,331,231-edge graph plus replay and tool receipts retained |
 | RI-009/009B/011 | Implemented/tested/observed | Twelve-domain portfolio production-qualified; retrieval SLO and graph freshness gates pass |
 | RI-010 | Implemented/tested/deployed/observed | Lifecycle, consolidation, supersession, retraction, lawful deletion and projection invalidation pilot passed |
+| RI-015 | Implemented/tested; deployment pending | Immutable hidden-suite evaluator and Mission Control truth surface pass locally; no live-corpus reasoning qualification is claimed before VM2 activation and an independent held-out run |
 | UI-003A/B/C | Implemented/tested/deployed/observed | Mac Research Workspace, grounded Copilot, graph exploration and canonical replay production-observed |
 | OPS-001 | Implemented/tested/deployed/observed | Durable approval outbox and readiness-race closure production-activated |
 | OPS-004 | Implemented/tested/deployed/partial | VM1/VM2 probes active; independent correlated-outage watchdog awaits an external always-on host |

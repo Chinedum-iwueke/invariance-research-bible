@@ -636,3 +636,38 @@ Graph readiness no longer streams the full canonical graph for each gate. Canoni
 object/edge mutations increment the existing database freshness epoch. Graph state
 stores its build epoch and compares it in constant time; pre-epoch states perform one
 exact digest comparison and adopt the current epoch only when the digest matches.
+
+## 4.11 Institutional intelligence truth evaluation
+
+RI-015 separates a working retrieval or graph service from demonstrated institutional
+reasoning. Migration `c1d7e4a92f60` introduces three immutable record classes:
+
+- an evaluation suite binds a public item manifest and protected independent gold to
+  exact corpus and projection digests;
+- an evaluation run binds exact structured responses, model/runtime identity,
+  evaluator identity, thresholds, limitations and an evaluation digest;
+- item results retain domain, task class, applicable scores, failure reasons and the
+  response evidence needed for replay.
+
+The task taxonomy covers direct citation, formula and table use, symbol
+disambiguation, cross-document synthesis, contradiction, temporal supersession,
+negative results, multi-hop graph reasoning and no-answer cases. Scoring covers
+citation entailment, answer completeness, unsupported-claim control, abstention,
+formula and table accuracy, ordered graph-path validity and latency. Aggregate scores
+include only applicable items: a citation question cannot acquire free formula or
+table credit. A stale corpus/projection digest, an absolute threshold miss or a metric
+regression beyond the suite tolerance fails readiness closed. Suite authors cannot
+evaluate their own hidden items, and API suite views omit the protected gold payload.
+
+Mission Control reads the canonical readiness endpoint and presents the overall claim
+boundary, exact evaluation digest, per-domain pass counts, limitations and
+representative-failure count. It does not derive a second readiness opinion in the
+browser.
+
+The source pilot contains 130 deterministic contract items across all thirteen Bible
+domains. This proves the registry and scoring contract, not the intelligence of the
+live corpus or an LLM. Contract runs always report `contract_validated` with an explicit
+limitation. Only an independently authored `live_corpus` suite, executed against its
+exact corpus, graph projection and named model runtime, may report `qualified`. At this
+snapshot VM2 activation and that independent live evaluation are pending, so live
+institutional intelligence remains `not_demonstrated`.
