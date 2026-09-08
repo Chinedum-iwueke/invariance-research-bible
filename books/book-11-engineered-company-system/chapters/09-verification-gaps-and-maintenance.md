@@ -254,6 +254,6 @@ durable retrieval, graph, curriculum, portfolio and verification DAG. Its bounde
 path is gated by continuous change history and has a full-rebuild fallback; per-phase
 receipts support restart, concurrent epoch movement fails closed, and Mission Control
 shows the active reconciliation. Production still requires migration
-`d2e8f5b13a70`, the one-time replayable RI-009B v1.1 baseline, the enabled VM2 worker
-and retained live delta, no-change and full-parity receipts. Until those gates are
+`d2e8f5b13a70`, an enabled VM2 worker projection pass, the one-time replayable RI-009B
+v1.1 baseline and retained live delta, no-change and full-parity receipts. Until those gates are
 recorded, canonical publication remains safe but production freshness is not claimed.

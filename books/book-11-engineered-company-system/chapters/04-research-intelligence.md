@@ -711,5 +711,7 @@ the orchestrator can version and replay it after later corpus changes.
 Mission Control and the fleet operation ledger show the target epoch, strategy,
 current phase, pending changes, projection status, retry state and any rebaseline
 requirement. A fully current, no-change poll performs zero projection work. Source
-implementation is complete; migration `d2e8f5b13a70`, the v1.1 curriculum baseline,
-the VM2 service and live delta/no-change/parity receipts remain the production proof.
+implementation is complete; migration `d2e8f5b13a70`, the VM2 service's initial
+projection pass, the v1.1 curriculum baseline and live delta/no-change/parity receipts
+remain the production proof. The projection pass must precede the baseline because the
+curriculum registry correctly refuses to bind a new version to stale derived evidence.
