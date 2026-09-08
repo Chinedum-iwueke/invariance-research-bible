@@ -249,12 +249,11 @@ then refuse finalization until every item has one non-conflicting label. Its ter
 result is either an immutable qualified evaluation digest or a retained failure. No
 automated parser or recovery worker fabricates the ground truth needed to pass.
 
-Corpus-derived state is not yet a closed automatic pipeline. A changed inbox batch
-coalesces files and performs one full retrieval rebuild; an unchanged refresh skips the
-rebuild; a direct UI upload rebuilds retrieval immediately. The current rebuild deletes
-and recreates the retrieval projection, while graph projection and curriculum
-evaluation are separate operations. Consequently a successful upload can leave the
-graph and all digest-bound curriculum evaluations stale. `RI-016` now owns the durable
-dependency DAG, correctness-proven incremental projection path, affected-domain
-evaluation and one terminal freshness receipt. Until it ships, corpus publication is
-canonical and safe but derived readiness may require explicit recovery and evaluation.
+RI-016 is source-complete and replaces the disconnected post-publication calls with a
+durable retrieval, graph, curriculum, portfolio and verification DAG. Its bounded delta
+path is gated by continuous change history and has a full-rebuild fallback; per-phase
+receipts support restart, concurrent epoch movement fails closed, and Mission Control
+shows the active reconciliation. Production still requires migration
+`d2e8f5b13a70`, the one-time replayable RI-009B v1.1 baseline, the enabled VM2 worker
+and retained live delta, no-change and full-parity receipts. Until those gates are
+recorded, canonical publication remains safe but production freshness is not claimed.

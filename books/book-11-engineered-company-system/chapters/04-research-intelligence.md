@@ -671,3 +671,45 @@ limitation. Only an independently authored `live_corpus` suite, executed against
 exact corpus, graph projection and named model runtime, may report `qualified`. At this
 snapshot VM2 activation and that independent live evaluation are pending, so live
 institutional intelligence remains `not_demonstrated`.
+
+## 4.12 Incremental derived-state orchestration
+
+RI-016 turns corpus freshness from a collection of manual rebuild commands into one
+durable dependency graph. PostgreSQL records every canonical object, edge and identity
+alias mutation with its target corpus epoch, affected object identities, project and
+transaction identifier. The orchestrator takes an advisory lock and coalesces all
+unclaimed changes into one reconciliation window.
+
+```mermaid
+flowchart LR
+    C[Canonical mutation ledger] --> S{Strategy gate}
+    S -->|complete bounded change set| RD[Retrieval delta]
+    S -->|first build, gap or large batch| RF[Full retrieval rebuild]
+    RD --> G[Graph delta or full fallback]
+    RF --> G
+    G --> E[Replay affected curricula]
+    E --> P[Recompute portfolio readiness]
+    P --> V[Verify one corpus epoch]
+    V --> R[Immutable terminal receipt]
+```
+
+Incremental execution is permitted only when both prior projections exist, ledger
+history begins at the next expected epoch and at most 5,000 object identities are
+affected. Alias and edge mutations invalidate their endpoints; graph provenance
+objects are included as dependencies. Any missing history, first build, explicit
+parity check or oversized batch uses the established full builders. Both paths compute
+complete content digests so a clean full rebuild can prove delta equivalence.
+
+Retrieval, graph, curricula and terminal verification are separately receipted. A
+restart skips completed phases. If the canonical epoch moves during a phase, the old
+run fails closed and a later poll claims the newer epoch. Canonical evidence remains
+available throughout; only derived readiness is stale. Curriculum evaluations now
+retain exact query cases. A legacy evaluation without those cases becomes
+`awaiting_rebaseline`, never silently current; after a one-time RI-009B v1.1 baseline,
+the orchestrator can version and replay it after later corpus changes.
+
+Mission Control and the fleet operation ledger show the target epoch, strategy,
+current phase, pending changes, projection status, retry state and any rebaseline
+requirement. A fully current, no-change poll performs zero projection work. Source
+implementation is complete; migration `d2e8f5b13a70`, the v1.1 curriculum baseline,
+the VM2 service and live delta/no-change/parity receipts remain the production proof.
