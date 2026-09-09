@@ -988,10 +988,20 @@ The first source preflight inspected the locally retained Bybit BTCUSDT perpetua
 1-minute research panel: 2,827,851 rows passed canonical-path, required-field,
 identity, strict-order, duplicate, coverage-manifest, fetch-manifest and fetch-success
 checks. The receipt proves those local bytes and declared lineage; it is not
-cryptographic exchange attestation and says nothing about alpha. Source implementation
-and bounded tests are complete. VM2 migration and service activation, canonical
-DATA-002/003 registration for that exact panel digest and the first BT-009 attempt are
-still required before Book XI may call the campaign production-active.
+cryptographic exchange attestation and says nothing about alpha. On 2026-09-09, VM2
+deployed migration `e3f7a1c94b20`, registered the exact panel through a real Bybit
+reference identity and DATA-002/003, digest-activated campaign
+`0d6453e5-7274-4807-8027-10bd9ec2c666`, and enabled its continuous director. The
+director was active with zero observed restarts.
+
+The first selected question reached a terminal BT-009 compilation failure because no
+registered strategy exactly implements the weekend-liquidity by short-horizon-momentum
+interaction. The system retained the failure, ran zero trials and made no performance
+claim. That is successful fail-closed orchestration, not a backtest result. The next
+required layer is a continuous Bulletproof scientific executor that can consume the
+campaign lease, reuse an exact strategy or enter bounded strategy engineering, run the
+classic engine and publish terminal evidence without an operator manually driving the
+handoff.
 
 There is also a material capability boundary: BT-009 can reuse supported registered
 strategies and govern bounded strategy engineering, while its generic contract runner
