@@ -18,7 +18,7 @@ activation is pending and is not inferred by this record.
   gates, and permits only prospective shadow review.
 - A continuous director and Mission Control surface expose active and terminal state.
 
-Local verification passed 702 Hermes backend tests, 72 Mission Control tests, 1,336
+Local verification passed 702 Hermes backend tests, 72 Mission Control tests, 1,337
 Bulletproof tests with 27 declared skips, and 7 Bible tests with 11 subtests. Ruff,
 JavaScript syntax, Python compilation, Alembic-head, OpenAPI-route, shell-syntax,
 systemd-unit and whitespace checks passed.
