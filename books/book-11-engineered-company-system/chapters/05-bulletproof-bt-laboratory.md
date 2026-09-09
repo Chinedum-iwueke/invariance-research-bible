@@ -943,3 +943,59 @@ restart/kill drills must pass, M8 readiness and least-privilege no-withdrawal
 credentials must exist, and founder/risk authorities must separately approve the exact
 short-lived plan. The resulting micro-live session must then flatten and reconcile and
 publish its signed dossier. It grants no scaling authority.
+
+### 5.12 ALPHA-001 real-data campaign
+
+ALPHA-001 joins the already separate institutional components without moving
+quantitative computation into Hermes. Bulletproof emits the authoritative real-data
+admission receipt after resolving a panel beneath its configured canonical root,
+hashing the retained bytes, inspecting Parquet identity and schema, checking strict
+timestamp order and duplicates, and binding the acquisition coverage and fetch-state
+manifests. Hermes accepts the campaign only when that receipt's dataset digest agrees
+with one immutable DATA-002 build and curated catalog partition and when DATA-003
+provides the named runner a current read-for-research entitlement.
+
+The campaign freezes its Bulletproof commit, venues, instruments, dataset partitions,
+DISC-009 allocation, ordered selected questions and hypothesis, trial, duration and
+failure budgets. Founder activation is digest-bound and grants no capital, orders,
+self-approval or live promotion. Attempts must answer an exact selected question and
+retain the hypothesis, dataset, source, evidence and gate digests. One selected
+question cannot be quietly rerun until it produces a favorable answer. Negative,
+invalid and failed results remain first-class evidence.
+
+```mermaid
+flowchart LR
+    D[DISC-009 selected question] --> H[Evidence-grounded hypothesis]
+    H --> S[Registered strategy reuse or bounded engineering]
+    S --> B[Classic Bulletproof execution]
+    B --> T[Truth and causal gates]
+    T --> E[Independent evaluation]
+    E --> P[BT-009 atomic publication]
+    P -->|all gates pass| C[Prospective shadow candidate]
+    P -->|negative invalid or failed| R[Retained result and next question]
+    C --> X[Separate shadow risk demo and live gates]
+```
+
+Hermes' continuous campaign controller reconciles active campaign budgets and heartbeats; Mission
+Control displays the campaign, next action, real-data bindings, progress and terminal
+reason. A candidate requires truth certification, point-in-time validity,
+reproducibility, out-of-sample and cost-stress evaluation, selection-bias audit,
+independent review and a complete BT-009 publication. Even then its only consequence
+is founder review for prospective shadow. It cannot order, allocate money or promote
+itself.
+
+The first source preflight inspected the locally retained Bybit BTCUSDT perpetual
+1-minute research panel: 2,827,851 rows passed canonical-path, required-field,
+identity, strict-order, duplicate, coverage-manifest, fetch-manifest and fetch-success
+checks. The receipt proves those local bytes and declared lineage; it is not
+cryptographic exchange attestation and says nothing about alpha. Source implementation
+and bounded tests are complete. VM2 migration and service activation, canonical
+DATA-002/003 registration for that exact panel digest and the first BT-009 attempt are
+still required before Book XI may call the campaign production-active.
+
+There is also a material capability boundary: BT-009 can reuse supported registered
+strategies and govern bounded strategy engineering, while its generic contract runner
+does not itself perform market-data execution. An unsupported new question therefore
+becomes an explicit failed or blocked attempt until its strategy is safely engineered;
+contract materialization is never mislabeled as a backtest. This is the next breadth
+constraint, not permission to weaken the classic engine or scientific gates.
