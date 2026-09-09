@@ -1009,3 +1009,51 @@ does not itself perform market-data execution. An unsupported new question there
 becomes an explicit failed or blocked attempt until its strategy is safely engineered;
 contract materialization is never mislabeled as a backtest. This is the next breadth
 constraint, not permission to weaken the classic engine or scientific gates.
+
+### 5.13 ALPHA-002 continuous scientific executor
+
+ALPHA-002 closes the manual handoff identified by ALPHA-001 without making Hermes a
+quantitative engine. The campaign director materializes one ordinary, digest-bound
+`alpha_research_execution` task for the next selected DISC-009 question. The task
+contains the exact question/candidate identities, frozen Bulletproof commit,
+DATA-002/003-admitted panel identity, finite variant budget and a replayable Research
+Intelligence context pack. The existing Hermes lease supplies crash recovery,
+heartbeats, attempt accounting and cancellation.
+
+A dedicated unprivileged VM1 agent can lease only this risk-zero task type against
+`bulletproof_bt`. It creates an isolated worktree at the frozen commit and invokes a
+fixed Bulletproof-owned executor. That executor verifies the checkout, input bytes and
+question digest before resolution. Resolution is deliberately exact: a typed
+`hypothesis_id:`/`strategy:` marker or the full registered title may select a
+hypothesis. Semantic similarity cannot. A missing implementation yields a cited
+strategy-engineering artifact, zero trials and an honest terminal failure.
+
+For an exact registered hypothesis, Bulletproof reduces the approved grid
+prospectively to one declared variant for this initial campaign, records a 60/20/20
+temporal representation contract, runs the classic engine and emits the standard
+market model, search plan, truth report and digest-finalized bundle. The final 20% of
+decision time is evaluated as held out. The candidate gate requires at least 50
+held-out trades, positive held-out mean net R and positive mean net R after charging
+the observed cost drag a second time. These are minimum operational gates, not a
+claim that the thresholds prove future profitability.
+
+Bundles move to a content-addressed durable directory before the task workspace can
+be discarded. A small Bulletproof-native SQLite ledger precommits the campaign,
+question, data and bundle identities. Hermes then idempotently registers source,
+snapshot, hypothesis, experiment, trial, result, reviews and decision; creates
+canonical source/dataset/run evidence; and advances the BT-009 bridge through current
+retrieval/graph projection and native-memory confirmation. Any mismatch or stale
+projection stops publication.
+
+Mission Control and Telegram show the task number, queued/leased/running/terminal
+state, attempt count, heartbeat, disposition and failure. Native failures can retry
+only three times and the fixed workflow stops after six hours. Exhaustion becomes a
+visible campaign `needs_attention` state. Campaign cancellation immediately cancels
+queued work or requests cooperative cancellation from a running native process.
+
+The publication coordinator currently performs two distinct deterministic
+research-registry checks, statistical and adversarial. This establishes the existing
+BT-009 registry contract but is not represented as provider-, package- or
+context-independent AGT-006 evaluation. No result may cross a later promotion boundary
+without a genuine AGT-006 independence receipt. ALPHA-002 itself grants no capital,
+order, shadow-promotion, demo, live or self-approval authority.
