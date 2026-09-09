@@ -710,8 +710,12 @@ the orchestrator can version and replay it after later corpus changes.
 
 Mission Control and the fleet operation ledger show the target epoch, strategy,
 current phase, pending changes, projection status, retry state and any rebaseline
-requirement. A fully current, no-change poll performs zero projection work. Source
-implementation is complete; migration `d2e8f5b13a70`, the VM2 service's initial
-projection pass, the v1.1 curriculum baseline and live delta/no-change/parity receipts
-remain the production proof. The projection pass must precede the baseline because the
-curriculum registry correctly refuses to bind a new version to stale derived evidence.
+requirement. A fully current, no-change poll performs zero projection work. Production
+now runs migration `d2e8f5b13a70` and the VM2 orchestrator. The thirteen-domain
+RI-009B `1.2.0` portfolio is qualified, and corpus epoch `577353` converged with no
+pending changes and `current=true`. Forced-full run
+`43885a98-501b-436a-9162-6f8fe4c9cdd5` exactly reproduced retrieval digest
+`1ba49d4e2368a78fdace74ca5d865b58ba92e6f249a3202275f119c6e06e26ea`
+and graph digest
+`c0eaf61a7a01d5058637206abf2bef575f784efb33d9c296ef9a298eb0ea1988`.
+This closes the production parity claim without weakening curriculum thresholds.

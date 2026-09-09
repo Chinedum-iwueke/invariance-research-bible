@@ -9,7 +9,7 @@
 | RI-001..006 | Implemented/tested | Isolated/database rehearsals retained; live health must be queried |
 | RI-007/012/013 | Implemented/tested/deployed | Incremental inbox, bounded Codex-advised recovery and two-item terminal action register observed |
 | RI-008 | Implemented/tested/observed | Live 762,232-node, 1,331,231-edge graph plus replay and tool receipts retained |
-| RI-009/009B/011 | Implemented/tested/observed | Twelve-domain portfolio production-qualified; retrieval SLO and graph freshness gates pass |
+| RI-009/009B/011/016 | Implemented/tested/deployed/observed | Thirteen-domain `1.2.0` portfolio qualified; automatic derived-state convergence and incremental/full digest parity passed at epoch `577353` |
 | RI-010 | Implemented/tested/deployed/observed | Lifecycle, consolidation, supersession, retraction, lawful deletion and projection invalidation pilot passed |
 | RI-015 | Implemented/tested; deployment pending | Immutable hidden-suite evaluator and Mission Control truth surface pass locally; no live-corpus reasoning qualification is claimed before VM2 activation and an independent held-out run |
 | UI-003A/B/C | Implemented/tested/deployed/observed | Mac Research Workspace, grounded Copilot, graph exploration and canonical replay production-observed |
@@ -249,11 +249,12 @@ then refuse finalization until every item has one non-conflicting label. Its ter
 result is either an immutable qualified evaluation digest or a retained failure. No
 automated parser or recovery worker fabricates the ground truth needed to pass.
 
-RI-016 is source-complete and replaces the disconnected post-publication calls with a
-durable retrieval, graph, curriculum, portfolio and verification DAG. Its bounded delta
-path is gated by continuous change history and has a full-rebuild fallback; per-phase
-receipts support restart, concurrent epoch movement fails closed, and Mission Control
-shows the active reconciliation. Production still requires migration
-`d2e8f5b13a70`, an enabled VM2 worker projection pass, the one-time replayable RI-009B
-v1.1 baseline and retained live delta, no-change and full-parity receipts. Until those gates are
-recorded, canonical publication remains safe but production freshness is not claimed.
+RI-016 replaces disconnected post-publication calls with a durable retrieval, graph,
+curriculum, portfolio and verification DAG. Its bounded delta path is gated by
+continuous change history and has a full-rebuild fallback; per-phase receipts support
+restart, concurrent epoch movement fails closed, and Mission Control shows active
+reconciliation. Production migration `d2e8f5b13a70`, the VM2 orchestrator and the
+thirteen-domain RI-009B `1.2.0` baseline are active. At epoch `577353`, forced-full run
+`43885a98-501b-436a-9162-6f8fe4c9cdd5` reproduced the existing retrieval and graph
+content digests exactly, with zero pending changes and `current=true`. Production
+freshness and incremental/full equivalence are therefore evidenced rather than inferred.
