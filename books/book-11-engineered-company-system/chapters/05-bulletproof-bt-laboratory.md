@@ -1057,3 +1057,38 @@ BT-009 registry contract but is not represented as provider-, package- or
 context-independent AGT-006 evaluation. No result may cross a later promotion boundary
 without a genuine AGT-006 independence receipt. ALPHA-002 itself grants no capital,
 order, shadow-promotion, demo, live or self-approval authority.
+
+### 5.14 ALPHA-003 governed hypothesis-to-strategy bridge
+
+ALPHA-003 replaces ALPHA-002's zero-trial dead end with a typed state machine while
+preserving repository ownership. Hermes freezes a selected Research Intelligence
+question, DISC-009 candidate identity, DATA-002/003 panel digest, Bulletproof commit,
+UTC window, Tier2B policy and finite search budget. Bulletproof, not Hermes, returns
+the citation-bearing hypothesis card and owns every market-data-derived calculation.
+
+The founder first approves only the hypothesis semantics. Bulletproof then generates
+or reuses the native hypothesis YAML and strategy implementation and emits a separate
+qualification receipt covering schema, point-in-time causality, backward auxiliary
+joins, leakage review and independent specification review. Hermes presents the
+qualified dataset digest, window, tier and complete parameter grid for a second
+digest-bound founder approval. Therefore a plausible idea cannot silently acquire
+execution authority, and card approval cannot be reused as execution approval.
+
+The first implementation maps the genuine weekend-liquidity/momentum question to a
+closed-bar BTC perpetual strategy. It uses the sign of trailing 60-minute return,
+UTC weekend gating, next-bar execution, ATR risk, time exit and constant-R sizing.
+The prospective grid contains exactly eight combinations. Bulletproof runs all rows
+through the classic event-driven engine, selects on validation mean net R only, and
+opens the test partition only after selection. It records realistic fees, spread,
+slippage and delay plus doubled-cost stress, a selection-bias audit, a descriptive
+weekend-versus-weekday association receipt, standard truth artifacts and one
+digest-finalized bundle per variant.
+
+Unknown questions are not mapped by similarity. Hermes instead creates a founder-
+approved `engineering_mission` restricted to Bulletproof hypothesis, strategy and
+test paths. The engineering result must be merged and rebound to a new immutable
+source commit before scientific execution can resume. Positive, negative, invalid
+and failed outcomes all remain durable; a terminal BT-009 publication advances the
+campaign automatically to the next question unless every candidate gate passes, in
+which case it stops at prospective shadow review. No part of ALPHA-003 grants capital,
+orders, demo/live execution, production promotion or self-approval.
