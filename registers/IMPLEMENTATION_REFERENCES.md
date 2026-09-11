@@ -317,9 +317,13 @@ mapping-schema digest `ae6a8354ad95b94daf036e8f9276ca11727d0989de201e605e98fe2fa
 mapping digest `605c8ae33b065ff32861ac2c801743a5d7353c7c81a9bab1d1b8161f8d9872dc`
 and producer receipt `082e20bd3f77516d3b2370d601b00ed6f648095313b2897b278f29edbe2008d7`.
 Fourteen focused tests, the 1,366-test full suite with 28 declared skips, and Ruff pass.
+The source merged through PR #285 as
+`6ea7656aa744d4a9356d71854b9727535dec1230`.
 
 Hermes commit `1d01d461208d7cbbfcc3b9d31102a42f2114f965` adds migration
 `e4f8b2d05c30`, immutable mapping-schema registration, exact receipt admission and the
 cross-repository replay pilot. Its backend suite passes 730 tests with two pre-existing
 warnings. Production deployment and replay are not yet evidenced. No artifact grants
 allocation, capital, order, promotion or routing authority.
+The source merged through PR #224 as
+`6477a0bc2b162d8142b6108ae804ecf1bf1ed012`.
