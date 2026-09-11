@@ -588,7 +588,7 @@ PLAT-007 rather than OPS-005.
 - **Status/scope/reuse/gap (2026-08-25):** Pre-capital source gate complete and locally validated at Bulletproof commit `e6ce17ed9b8e14e23ea54f121f1f448387ae2ecf`; operational milestone remains `blocked_before_capital`. The runtime now validates a root-owned mode-`0600`, digest-bound, expiring authorization bundle before constructing an exchange adapter or resolving credentials. It binds PORT-001 non-allocation evidence, demo qualification, connector certification, M8 readiness, kill/rollback rehearsal, exact venue/symbol/time/loss/order limits and a separately signed approval. Runtime controls reject widened limits, stale/future bars, duration, loss and gross-notional breaches, and Binance now requires its private stream. No demo or live order was placed, no credentials were requested, and no scaling authority exists. Missing work is genuine DEMO-001 venue evidence, production connector certification, real M8/kill evidence, dedicated no-withdrawal credentials, a separate founder/risk approval and the serialized micro-live/flatten/reconciliation dossier.
 - **Objective/requirement/citations:** Execute M7 demo qualification and separately approved micro-live canary.
 - **Repository/files:** Execution adapters, risk/kill/reconciliation, secrets and incident systems.
-- **Prerequisites/scope:** SHADOW-001, PORT-001, M8 operational gates, explicit human approval. **Non-goals:** scaling.
+- **Prerequisites/scope:** DEMO-001, EXEC-003..009, EXEC-011, PORT-004, RISK-003..005, SHADOW-002, PLAT-005/007, SEC-002 and a fresh founder-plus-risk approval. **Non-goals:** scaling.
 - **Data/access:** Dedicated least-privilege venue credentials; never in prompts/artifacts.
 - **Steps/interfaces:** Certification, demo, approval, hard loss/order limits, canary, kill, reconciliation, review.
 - **Tests/acceptance:** Venue sandbox plus forced outage/partial fill/stale data/key rotation/kill drills.
@@ -637,6 +637,18 @@ the registry consumed by PLAT-002; CAD-002 produces scorecards consumed by EVOLV
 SHADOW-002 produces monitoring evidence consumed by RISK-004; and EXEC-004 owns order
 state consumed by the composed RISK-005 service. SEC-002 defines the baseline consumed
 by PLAT-008 rather than depending on that downstream deployment package.
+
+The 2026-09-11 dependency refresh removes four remaining stale future dependencies:
+SHADOW-002 and EXEC-009 emit monitoring evidence later consumed by CAD-001; ML-006 owns
+its bounded drift and retirement triggers before CAD-001 adds institutional scheduling;
+and AGT-009 emits governed skill evidence later consumed by EVOLVE-001. A packet may
+name a later consumer, but that consumer is never a prerequisite. The capital-critical
+order is `EXEC-003 -> EXEC-004 -> EXEC-005 -> PORT-004 -> RISK-003 -> SHADOW-002 ->
+RISK-004 -> RISK-005 -> EXEC-006 -> EXEC-007 -> EXEC-008 -> DEMO-001 -> EXEC-009 ->
+EXEC-011 -> LIVE-001 -> LIVE-002`. EXEC-011 user-interface slices may begin with
+EXEC-004, but its full replay and observability gate closes only after EXEC-009.
+ML-005/006 and RL-003 may proceed in parallel after their declared inputs exist; they
+remain advisory and cannot silently become capital-path prerequisites.
 
 Parallel work is allowed only where the coverage dependency graph and the ownership
 rules below do not conflict. Capital work cannot become executable merely because its
@@ -948,9 +960,9 @@ package is not complete until its own tests, evidence and rollback boundary pass
 
 ### EXEC-003 — Venue identity and fragmentation service
 
-- **Status/scope/reuse/gap:** Planned; reuse DATA-001 instrument identities, adding cross-venue equivalence, fragmentation and routing constraints.
-- **Contracts/dependencies:** DATA-001 and EXEC-001/002; mappings are effective-dated and never assume symbols imply fungibility.
-- **Tests/evidence/rollback/done:** Test contract differences, delistings, venue outage and incompatible settlement. Retain mapping/routing evidence. Rollback quarantines a mapping. Done when consolidated views preserve venue-specific risk.
+- **Status/scope/reuse/gap (2026-09-11):** Source-complete, CI-qualified and merged through Bulletproof PR #285 (`6ea7656aa744d4a9356d71854b9727535dec1230`) and Hermes PR #224 (`6477a0bc2b162d8142b6108ae804ecf1bf1ed012`), pending production replay. Bulletproof owns the effective-dated venue identity, explicit equivalence, fragmentation, contract conversion and outage-aware comparison-route producer. Hermes adds only an immutable schema registry and native-receipt verifier; it does not infer mappings or route orders. Every produced route is explicitly `order_route_eligible: false`.
+- **Contracts/dependencies:** DATA-001 and EXEC-001/002 receipts are mandatory. Symbols never imply fungibility. Identities bind venue, instrument, base/quote/settlement/margin assets, linear/inverse form, contract size, tick/quantity/minimum constraints, expiry, effective interval and status. Relationship records declare `economic_equivalent`, `hedge_substitute` or `reference_only`; incompatible settlement, inactive members, ambiguous active mappings, naive clocks and stale or unavailable venues fail closed or remain quarantined.
+- **Tests/evidence/rollback/done:** Fourteen native tests cover explicit mapping, nonfungibility, contract conversion and bounds, incompatible settlement, delisting, outage, stale observations, future-effective relationships, quarantine isolation, ambiguity, clock safety and dependency drift. The complete supported-environment Bulletproof suite passed 1,366 tests with 28 declared skips; Hermes passed 730 backend tests. Hermes registry and receipt tests cover immutable exact replay and active-schema admission. The deterministic pilot preserves target-venue constraints and proves only normalized comparison views, never venue certification or order authority. Rollback deactivates the schema or quarantines the mapping while preserving all receipts. Source definition of done is met; VM2 migration, registry activation and a live cross-repository no-order replay remain the production acceptance step. Evidence: `plans/evidence/EXEC-003.md`.
 
 ### EXEC-004 — Idempotent order management and reconciliation
 
@@ -979,7 +991,7 @@ package is not complete until its own tests, evidence and rollback boundary pass
 ### SHADOW-002 — Prospective candidate monitoring and re-evaluation
 
 - **Status/scope/reuse/gap:** Planned; reuse SHADOW-001 journal and GOV-003 lifecycle, adding degradation, incident and scheduled re-evaluation rules.
-- **Contracts/dependencies:** SHADOW-001, PORT-001 and CAD-001; candidates bind health metrics, thresholds, expiry and demotion proposal. RISK-004 consumes this evidence to decide admission; monitoring does not depend on the admission decision it informs.
+- **Contracts/dependencies:** SHADOW-001, PORT-001, GOV-003 and PLAT-005; candidates bind health metrics, thresholds, expiry and demotion proposal. RISK-004 consumes this evidence to decide admission, while later CAD-001 reviews consume its schedule and degradation evidence; neither downstream consumer is a prerequisite.
 - **Tests/evidence/rollback/done:** Test data gaps, drift, outage, false recovery and stale evidence. Retain monitoring/review dossier. Rollback freezes candidate use. Done when deterioration cannot silently continue or promote a candidate.
 
 ### RISK-004 — Candidate admission and lifecycle authority
@@ -1021,7 +1033,7 @@ package is not complete until its own tests, evidence and rollback boundary pass
 ### EXEC-009 — Execution degradation feedback
 
 - **Status/scope/reuse/gap:** Planned; reuse EXEC-005 telemetry and SHADOW-002 lifecycle, adding venue/strategy degradation incidents and bounded demotion proposals.
-- **Contracts/dependencies:** EXEC-005/008 and CAD-001; alerts cannot self-modify execution or restore eligibility.
+- **Contracts/dependencies:** EXEC-005/008, SHADOW-002, GOV-003 and PLAT-005; alerts cannot self-modify execution or restore eligibility. Later CAD-001 review scheduling consumes these incidents and is not a prerequisite.
 
 ### ML-005 — Conditional cost, slippage and capacity models
 
@@ -1032,7 +1044,7 @@ package is not complete until its own tests, evidence and rollback boundary pass
 ### ML-006 — Model drift, retraining and retirement
 
 - **Status/scope/reuse/gap:** Planned; reuse SHADOW-002 and GOV-003, adding drift diagnosis and governed retraining proposals.
-- **Contracts/dependencies:** ML-003/004 and CAD-001; retraining is a new registered trial with new artifacts, never mutation in place.
+- **Contracts/dependencies:** ML-003/004, SHADOW-002 and GOV-003; retraining is a new registered trial with new artifacts, never mutation in place. Later CAD-001 supplies institutional review cadence rather than blocking the native drift and retirement controls.
 - **Tests/evidence/rollback/done:** Test drift false positives, concept shift, failed retraining and rollback. Retain comparison and retirement dossiers. Done when degraded models abstain/demote and replacements requalify independently.
 
 ### RL-003 — Learned sizing/allocation/execution sandbox
@@ -1064,7 +1076,7 @@ package is not complete until its own tests, evidence and rollback boundary pass
 ### AGT-009 — Workflow distillation and governed skill registry
 
 - **Status/scope/reuse/gap:** Planned. Reuse successful task-graph traces, runbook packages, role packages, operational notes and AGT-008 improvement proposals. Add a bounded compiler that identifies genuinely repeated workflows, removes task-specific state and secrets, proposes reusable typed skill packages, and registers versioned lifecycle evidence. It must not convert one-off success, hidden chain-of-thought, unreviewed model text or an execution transcript containing credentials into a skill.
-- **Contracts/dependencies:** AGT-003/004/005/006/008, GOV-001/003/004, SEC-001 and EVOLVE-001. A skill candidate binds source task/result/event digests, recurrence evidence, typed inputs/outputs, preconditions, allowed capabilities/tools/data classes, target machines, budgets, stop/compensation rules, prohibited actions, deterministic steps, bounded model-assisted steps, tests, owner, compatibility range, expiry and rollback version. Lifecycle is `draft -> rehearsed -> approved -> deployed -> deprecated/retired`; the proposing agent cannot review, approve, deploy or expand its own grants.
+- **Contracts/dependencies:** AGT-003/004/005/006/008, GOV-001/003/004 and SEC-001. A skill candidate binds source task/result/event digests, recurrence evidence, typed inputs/outputs, preconditions, allowed capabilities/tools/data classes, target machines, budgets, stop/compensation rules, prohibited actions, deterministic steps, bounded model-assisted steps, tests, owner, compatibility range, expiry and rollback version. Lifecycle is `draft -> rehearsed -> approved -> deployed -> deprecated/retired`; the proposing agent cannot review, approve, deploy or expand its own grants. Later EVOLVE-001 consumes the retained skill lifecycle and performance evidence; it is not required to create that evidence.
 - **Steps/interfaces:** Detect repeated successful and failed patterns; cluster only provenance-compatible traces; produce a generalized workflow diff and secret/context scrub receipt; compile a declarative skill/runbook package; run historical replay, negative fixtures, security scanning, deterministic parity and sandbox rehearsal; route independent evaluation; present a founder-readable capability/grant diff; promote the exact digest; resolve it through the normal package registry; measure later executions against the baseline; propose revision or retirement on drift. Expose candidates, evidence, versions, active deployments, failures and provenance in Mission Control.
 - **Tests/evidence/rollback/done:** Test false recurrence, memorized task data, secret leakage, prompt injection, excessive permissions, non-deterministic steps, reward gaming, scope expansion, self-approval, incompatible runtime, regression, failed upgrade and retirement. Retain trace-selection manifest, sanitized source map, compiled package digest, golden/negative/replay results, independent review, founder decision and deployment receipts. Rollback revokes the new deployment and activates the previously approved digest without deleting history. Done when a fresh compatible agent can reuse an approved skill on a new task within declared tolerances, every output replays to source evidence, and neither the authoring agent nor generated skill can acquire undeclared authority.
 
@@ -1191,6 +1203,12 @@ package is not complete until its own tests, evidence and rollback boundary pass
 - **Tests/evidence/rollback/done:** Test gaming, missing data and perverse incentives. Retain scorecard lineage and governance decisions. Rollback retires the metric. Done when improvement claims are calibrated to reliability and evidence quality.
 
 #### Execution phase — Separately governed capital scaling
+
+The existing LIVE-001 packet becomes operationally eligible only after DEMO-001,
+EXEC-003..009, the full EXEC-011 replay/visibility gate, PORT-004, RISK-003..005,
+SHADOW-002, PLAT-005/007, SEC-002 and a fresh founder-plus-risk approval are complete.
+This checkpoint does not authorize capital; it prevents the earlier source-only
+LIVE-001 implementation from being mistaken for a deployable canary.
 
 ### LIVE-002 — Evidence-gated scaling and multi-candidate production
 
