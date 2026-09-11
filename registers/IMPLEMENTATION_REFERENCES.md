@@ -307,3 +307,19 @@ Ruff and JavaScript syntax checks passed.
 - Tests reference absent contract files for L1-H10A, L1-H10B, and L1-H2B.
 - L1-H1 and L1-H1C grid tests disagree with the checked-in contracts: L1-H1 materializes only `tp_enabled: true`, and L1-H1C materializes 32 variants rather than the asserted 54.
 - These failures show drift among tests, hypothesis YAML, and runtime behavior. They limit current claims about repository-wide regression closure but do not negate the separately passing focused engine, accounting, causality, risk-reservation, portfolio, and adapter tests.
+
+## EXEC-003 venue identity addendum
+
+Bulletproof source commit `ef842db13d2775c2edbf8c372224d4ad9a964814` adds the
+effective-dated explicit cross-venue identity producer. Native report SHA-256
+`c8d5ab670c7f465a09f86ac8af61d9092086d3ad46713a84d7590302bc4dc438` binds
+mapping-schema digest `ae6a8354ad95b94daf036e8f9276ca11727d0989de201e605e98fe2faa14b74c`,
+mapping digest `605c8ae33b065ff32861ac2c801743a5d7353c7c81a9bab1d1b8161f8d9872dc`
+and producer receipt `082e20bd3f77516d3b2370d601b00ed6f648095313b2897b278f29edbe2008d7`.
+Fourteen focused tests, the 1,366-test full suite with 28 declared skips, and Ruff pass.
+
+Hermes commit `1d01d461208d7cbbfcc3b9d31102a42f2114f965` adds migration
+`e4f8b2d05c30`, immutable mapping-schema registration, exact receipt admission and the
+cross-repository replay pilot. Its backend suite passes 730 tests with two pre-existing
+warnings. Production deployment and replay are not yet evidenced. No artifact grants
+allocation, capital, order, promotion or routing authority.

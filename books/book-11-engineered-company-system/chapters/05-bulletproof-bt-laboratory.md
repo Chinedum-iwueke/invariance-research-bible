@@ -855,6 +855,34 @@ only. VM2 registered model `59a5d26a...` and replayed the exact receipt as recor
 This proves deterministic fixture reconstruction and cross-repository replay. It does
 not prove live exchange continuity, microstructure alpha or authority to send orders.
 
+### 5.8.15 EXEC-003 venue identity and fragmentation service
+
+EXEC-003 keeps cross-venue identity mathematics in `bt.institutional.venue`. It
+consumes the admitted DATA-001, EXEC-001 and EXEC-002 receipts and produces an
+effective-dated view of venue-specific instruments, explicitly declared equivalence
+groups and directional comparison routes. A shared symbol is never evidence of
+fungibility. Base, instrument type, quote, settlement, margin asset, inverse/linear
+form and expiry must agree before a relationship can be economically equivalent.
+
+Every identity retains contract size, price tick, quantity step, minimum quantity and
+minimum notional. Directional routes preserve the target venue's constraints and an
+explicit contract conversion ratio. Delisted or future-effective instruments,
+incompatible settlement, ambiguous active relationships, naive clocks and stale or
+unavailable venue observations fail closed or remain quarantined. Outage handling can
+remove a venue from comparison without rewriting historical identity evidence.
+
+Bulletproof source commit `ef842db13d2775c2edbf8c372224d4ad9a964814` is locally
+qualified by fourteen focused tests, the 1,366-test full suite with 28 declared skips,
+and Ruff. Its deterministic two-venue pilot
+produced mapping-schema digest `ae6a8354...`, mapping digest `605c8ae3...` and receipt
+`082e20bd...`, while marking both routes `order_route_eligible: false`. Hermes commit
+`1d01d461208d7cbbfcc3b9d31102a42f2114f965` adds migration `e4f8b2d05c30`, the
+immutable schema registry and receipt verifier; its 730-test backend suite and Ruff
+pass. Hermes does not calculate mappings. This is identity and analytical-fragmentation
+evidence, not connector certification, routing advice, capital authority or permission
+to submit an order. VM2 migration, schema activation and a no-order cross-repository
+replay remain required before the claim can be upgraded from source-complete to deployed.
+
 ### 5.9 Quantitative computation ownership correction
 
 The 2026-08-28 cross-repository audit makes Bulletproof the sole authoritative
