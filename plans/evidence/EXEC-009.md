@@ -24,10 +24,13 @@ has no order, capital, allocation, promotion or restoration authority.
 
 ## Verification
 
-The native focused suite passes fourteen tests. The Hermes registry and receipt suite
-passes twenty-five focused tests. The deterministic native pilot proves healthy,
-confirmed strategy degradation, critical outage and false-recovery behavior. The
-cross-repository pilot verifies exact immutable replay after migration
+The native focused suite passes fourteen tests and the full Bulletproof suite passes
+1,517 tests with 28 declared skips. The Hermes registry and receipt suite passes
+twenty-five focused tests and the full backend suite passes 778 tests. All three PRs'
+CI checks pass. Native commit `7acfb6b1876c3cd46d3d98fa830236bae69d3489`
+produced receipt `51ea5d1e710851b89ec9e87c823977b494c909e9812c5e90ad44f5add6564aa8`.
+It proves healthy, confirmed strategy degradation, critical outage and false-recovery
+behavior. The cross-repository pilot verifies exact immutable replay after migration
 `d7a3f1c59e20` is deployed.
 
 Live venue evidence is intentionally absent until EXEC1 is provisioned and DEMO-001
