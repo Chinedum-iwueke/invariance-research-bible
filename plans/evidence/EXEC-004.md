@@ -19,10 +19,16 @@ Date: 2026-09-12
 - Ambiguous submissions recovered from independent venue evidence: 1
 - Adversarial stale-snapshot action: `freeze_and_investigate`
 - Allocation, capital, order, promotion, routing and cancellation authority: false
-- Production activation: pending VM2 migration/API deployment and exact cross-repository replay
+- VM2 migration: `e5a9c3f16d40`; rebuilt API image `sha256:63eb575d2329d84cf53be84182e336baeccf8bda5857e8b659f59c8dd0619bd7` healthy
+- Live OMS-schema record: `2f823ef3-92ad-4199-bc33-b18a99cd5a48`
+- Live quantitative-receipt record: `9e572f47-6fd6-4706-a7d0-79e5dd2e47d5`
+- Cross-repository report digest: `d2346e630f3ac0bcaa665416ee8557f5c96a4d6818e975d8a28eedcf29a412f1`
+- Live reconciliation result: qualified with `submission_allowed: true`
+- Production activation: complete; exact replay succeeded
 
 The deterministic fixture proves command and event idempotency, partial-fill lifecycle,
 cancel-race handling, terminal-state protection, ambiguous-submission recovery from a
 fresh independent venue snapshot, material-discrepancy freeze and digest-replayable
-Hermes admission. It does not certify an exchange adapter, authenticated venue
-behavior, demo execution, risk admission or permission to submit an order.
+Hermes admission. The production replay proves the deployed registry and exact receipt
+path for this no-order fixture. It does not certify an exchange adapter, authenticated
+venue behavior, demo execution, risk admission or permission to submit an order.
