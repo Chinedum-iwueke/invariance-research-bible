@@ -396,3 +396,19 @@ The credentialed replay registered schema `1ceb8bc7-49ff-4627-ba15-0a25d978cbe5`
 and quantitative receipt `b4999dba-e29d-44d9-9a27-19c3be0bf0c6`, reproduced the
 native digests and retained report digest `de5d0965038cca501fd15477951a0e9af1e6f4d8605dccced8ffcb483c8e9edd`.
 Deterministic fixture capacity is not a live venue capacity claim or capital authority.
+
+## RISK-003 dynamic risk budget addendum
+
+Bulletproof source commit `f5d80f97b318ba14f84863595cc8e0740dca0de6` adds the
+authoritative causal dynamic-budget producer and merged through PR #289 as
+`24ea8c5d44a76ed85097a14aacdfdadfb6fc97a6`. Seventeen focused tests, every CI
+shard and the full 1,430-test suite with 28 declared skips passed. Native receipt
+`e21533c0fa1a2242c16005f4daba206134af5aadb13ea69107789cc4643fde61` binds
+schema `bd876f5de05e0a90a06f29ae3db1a29b1e16c736af4dcc5f897afdf31d05b367`
+and budget trajectory `6c27f2da9713157cc58ad45f9bda4f4519b24703ff68c74201fdb1d5cf752f0b`.
+
+Hermes source commit `a987a9f` adds migration `b8d4f0c69a71`, immutable policy-schema
+registration and exact receipt admission, and merged through PR #228 as
+`3d0535787e434837fd8fdcda0049e460401e970d`. Its full backend suite passed 746
+tests. The VM2 migration and credentialed replay remain pending production evidence.
+No RISK-003 artifact grants allocation, capital, order or promotion authority.

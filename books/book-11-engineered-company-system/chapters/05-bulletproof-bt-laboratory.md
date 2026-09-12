@@ -999,6 +999,40 @@ quantitative receipt `b4999dba-e29d-44d9-9a27-19c3be0bf0c6`, reproduced the nati
 digests and retained terminal report digest `de5d0965038cca501fd15477951a0e9af1e6f4d8605dccced8ffcb483c8e9edd`.
 No live Bybit or Binance capacity is inferred from the deterministic fixture.
 
+### 5.8.19 RISK-003 dynamic risk budgets and regime scaling
+
+RISK-003 keeps every dynamic risk calculation in
+`bt.institutional.risk_budget`. It consumes exact qualified receipts from RISK-001,
+RISK-002, ML-004 and PORT-004, then applies causal volatility, regime, confidence,
+uncertainty, hysteresis, recovery-delay, expiry and capacity controls. Each state binds
+its source digest and observed/available clocks. Future-only state is excluded.
+Missing, stale, unknown-regime or zero-capacity evidence selects a static conservative
+fallback instead of borrowing confidence from an earlier regime.
+
+Risk reductions take effect immediately. Risk increases require consecutive recovery
+observations and cannot exceed the declared upward step. Thus volatility shocks,
+regime deterioration, lower confidence or higher uncertainty cannot increase the
+recommended budget. PORT-004 caps the capital base before the risk fraction becomes a
+risk notional. The producer emits a complete immutable trajectory and grants no
+allocation, capital, order or promotion authority.
+
+Bulletproof source commit `f5d80f97b318ba14f84863595cc8e0740dca0de6` merged through
+PR #289 as `24ea8c5d44a76ed85097a14aacdfdadfb6fc97a6`. Seventeen focused
+tests, all CI shards and the full 1,430-test suite with 28 declared skips passed. The
+native pilot produced receipt `e21533c0fa1a2242c16005f4daba206134af5aadb13ea69107789cc4643fde61`,
+policy-schema digest `bd876f5de05e0a90a06f29ae3db1a29b1e16c736af4dcc5f897afdf31d05b367`
+and budget digest `6c27f2da9713157cc58ad45f9bda4f4519b24703ff68c74201fdb1d5cf752f0b`.
+The deterministic shock path cut risk immediately, delayed and bounded its recovery,
+and ended at `0.3%`, or `$300` against `$100,000` supported capacity. Expired state
+selected the `0.25%` static fallback.
+
+Hermes source commit `a987a9f` merged through PR #228 as
+`3d0535787e434837fd8fdcda0049e460401e970d`. It adds only migration
+`b8d4f0c69a71`, an immutable schema registry, exact native-receipt admission and replay
+tooling. Its 746-test backend suite, focused tests, Ruff and single-head migration
+check passed. VM2 migration, rebuilt API and credentialed replay remain explicit
+production evidence; their absence does not get rewritten as deployment success.
+
 ### 5.9 Quantitative computation ownership correction
 
 The 2026-08-28 cross-repository audit makes Bulletproof the sole authoritative
