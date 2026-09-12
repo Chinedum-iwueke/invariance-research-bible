@@ -1030,8 +1030,14 @@ Hermes source commit `a987a9f` merged through PR #228 as
 `3d0535787e434837fd8fdcda0049e460401e970d`. It adds only migration
 `b8d4f0c69a71`, an immutable schema registry, exact native-receipt admission and replay
 tooling. Its 746-test backend suite, focused tests, Ruff and single-head migration
-check passed. VM2 migration, rebuilt API and credentialed replay remain explicit
-production evidence; their absence does not get rewritten as deployment success.
+check passed. VM2 runs that migration and healthy rebuilt image
+`sha256:b9dd898a560585c6179217f05175c5a6cb7a5491a77d19291637f3ef392939cc`.
+The credentialed replay registered schema `e16641dc-8267-4f0f-9610-99433cc66f83`
+and quantitative receipt `261a8c36-2126-4c80-9e52-f8429b15acb1`, reproduced the
+native schema, budget and receipt digests, confirmed uncertainty monotonicity and
+retained report digest `475d6bcbf40da4a3307c84b0e4f2b88cb01dec6882eea3cc018e208ac4485d9b`.
+The replay's `0.3%` recommendation and `$300` fixture notional remain evidence of
+deterministic mechanics, not capital or order authority.
 
 ### 5.9 Quantitative computation ownership correction
 
