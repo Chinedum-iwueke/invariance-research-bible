@@ -349,6 +349,10 @@ The full native suite passed 1,379 tests with 28 declared skips.
 Hermes commit `c2604a76bffa271e44630dedbbcea751aa74767c` adds migration
 `e5a9c3f16d40`, immutable OMS-schema registration and exact native-receipt admission,
 and merged through PR #225 as `cdd6179291ee5acbf3fc08b69a830061a905c398`.
-The backend suite passed 734 tests. The VM2 migration/API activation and exact
-cross-repository replay remain pending. No artifact grants allocation, capital, order,
-promotion, routing or cancellation authority.
+The backend suite passed 734 tests. On 2026-09-12 VM2 ran migration `e5a9c3f16d40`
+and healthy image `sha256:63eb575d2329d84cf53be84182e336baeccf8bda5857e8b659f59c8dd0619bd7`.
+The exact replay registered schema `2f823ef3-92ad-4199-bc33-b18a99cd5a48` and receipt
+record `9e572f47-6fd6-4706-a7d0-79e5dd2e47d5`, retained report digest
+`d2346e630f3ac0bcaa665416ee8557f5c96a4d6818e975d8a28eedcf29a412f1` and returned
+`submission_allowed: true` after qualified reconciliation. No artifact grants
+allocation, capital, order, promotion, routing or cancellation authority.

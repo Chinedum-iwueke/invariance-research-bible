@@ -917,9 +917,14 @@ Hermes commit `c2604a76bffa271e44630dedbbcea751aa74767c` merged through PR #225 
 `cdd6179291ee5acbf3fc08b69a830061a905c398`. It adds migration `e5a9c3f16d40`, an
 immutable OMS-schema registry and exact producer-receipt admission. Its 15 focused
 and 734 full backend tests passed. Hermes does not calculate order state and has no
-submission, cancellation or capital authority. VM2 activation and the exact
-cross-repository replay remain the production acceptance step, so this entry records
-source completion without claiming an undeployed production capability.
+submission, cancellation or capital authority. On 2026-09-12 VM2 reached migration
+`e5a9c3f16d40` on healthy rebuilt image `sha256:63eb575d2329...`. The live replay
+registered OMS schema `2f823ef3...` and quantitative receipt `9e572f47...`, reproduced
+the native specification, journal, reconciliation and receipt digests, and retained
+terminal report digest `d2346e63...`. It returned `submission_allowed: true` only
+after qualified reconciliation and still reported `capital_or_order_authority:
+false`. EXEC-004 is therefore production-replayed for its declared no-order boundary;
+adapter certification and permissioned execution remain later gates.
 
 ### 5.9 Quantitative computation ownership correction
 
