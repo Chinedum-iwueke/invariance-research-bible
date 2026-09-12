@@ -356,3 +356,23 @@ record `9e572f47-6fd6-4706-a7d0-79e5dd2e47d5`, retained report digest
 `d2346e630f3ac0bcaa665416ee8557f5c96a4d6818e975d8a28eedcf29a412f1` and returned
 `submission_allowed: true` after qualified reconciliation. No artifact grants
 allocation, capital, order, promotion, routing or cancellation authority.
+
+## EXEC-005 execution-quality calibration addendum
+
+Bulletproof source commit `d6cde7665385732d0f49deafbaac324161da33d9` adds the
+point-in-time execution calibration producer and merged through PR #287 as
+`97d20db19b81054b729c0fb11a2ca1657aa4c632`. Native receipt
+`fc819372f8cedde7a1e4ad99162eb9d2e5d5a59d4432e8f26c7575d9581be434` binds
+calibration digest `e1aa6787a920c155159c39f0c56746ae96f3f0826034e6bc22b6ebec540687d9`
+and empirical bundle digest `e46c1ea0e0a0e826673496cbe1a023022ee7059db62314c04469b5358d26fbdf`.
+Fifteen focused tests and every required CI shard passed. The supported local suite
+passed 1,394 tests with 28 declared skips; five volatile-panel failures reproduce in
+the untouched EXEC-004 checkout under the same shared environment.
+
+Hermes source commit `7bd40a980d93c22c800f26ed0d217e00798d3385` adds migration
+`f6b2d8a47e50`, immutable schema registration and exact native-receipt admission, and
+merged through PR #226 as `5906127939090b30a114efdf1d9d243d85fdebde`. Its backend
+suite passed 738 tests. VM2 runs the migration and healthy rebuilt image
+`sha256:6e2199467f35b38b010d11130d6c2d23f78b674fa5bf2417dad43fd437a39bc7`.
+The exact credentialed cross-repository replay remains staged; no live-stratum
+qualification or execution authority is inferred from deployment alone.
