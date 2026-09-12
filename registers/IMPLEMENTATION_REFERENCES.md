@@ -334,3 +334,21 @@ The exact replay registered venue-identity record
 `f9322c93-08f4-4aa9-abc6-348e07b21039`; report digest
 `419af24787bdec980d8431d1094a9cf6be97d28486940065d0ebb90179a793e1`
 retains two comparison routes and no capital or order authority.
+
+## EXEC-004 idempotent OMS and reconciliation addendum
+
+Bulletproof source commit `b0865ca1d2aa57acac1015d8ba088c34bf0fb2c4` adds the
+authoritative command, order, fill and reconciliation producer and merged through PR
+#286 as `e7100d9345ef419d0deccdee49bc1c6e4896e610`. The native pilot binds OMS
+specification digest `4b102ffd35b8ce6d4b4c506d23028def8ef024ff5e721a2b3563fa86475233e2`,
+receipt `4a35c72296052fbb45bce1b3a9dfb70e2a1ae5bcb753f89d19e92fe439fbd72f`,
+journal `7d510e212a4f56bc84ffdb4cf48422a5c555d7414793dad36b5032cfe3f84df7`
+and reconciliation `ef6435f3213e523f816fde2435365122bd0a66030c4582028f80bcbcbdfe749a`.
+The full native suite passed 1,379 tests with 28 declared skips.
+
+Hermes commit `c2604a76bffa271e44630dedbbcea751aa74767c` adds migration
+`e5a9c3f16d40`, immutable OMS-schema registration and exact native-receipt admission,
+and merged through PR #225 as `cdd6179291ee5acbf3fc08b69a830061a905c398`.
+The backend suite passed 734 tests. The VM2 migration/API activation and exact
+cross-repository replay remain pending. No artifact grants allocation, capital, order,
+promotion, routing or cancellation authority.

@@ -888,6 +888,39 @@ receipt record `f9322c93...` replayed the exact native digests. Terminal report 
 `419af247...` retained two comparison routes and `capital_or_order_authority: false`.
 EXEC-003 is therefore production-replayed for its declared no-order boundary.
 
+### 5.8.16 EXEC-004 idempotent order management and reconciliation
+
+EXEC-004 keeps order-state truth in `bt.institutional.oms`. A command receives a
+deterministic client identity derived from its immutable contents. Replaying that
+command returns the prior result; reusing the identity with different contents fails
+closed. The append-only journal records commands, acknowledgements, partial and final
+fills, cancel intent, cancellation, rejection and reconciliation without allowing a
+terminal order to regress into an active state.
+
+Recovery never assumes that a timeout means an order was not accepted. Unknown
+submissions are resolved only against a fresh independent venue snapshot. Orders,
+fills, positions and balances are reconciled as separate domains; duplicate venue
+events are suppressed, while missing, conflicting or stale evidence causes
+`freeze_and_investigate`. That freeze prevents a second submission until ambiguity is
+removed. This is the core invariant behind the milestone: uncertain state cannot
+silently become another order.
+
+Bulletproof source commit `b0865ca1d2aa57acac1015d8ba088c34bf0fb2c4` merged through
+PR #286 as `e7100d9345ef419d0deccdee49bc1c6e4896e610`. Eighteen new native tests,
+28 combined focused tests, the 1,379-test full suite with 28 declared skips and Ruff
+passed. Its pilot suppressed one duplicate command, recovered one ambiguous
+submission and froze on a stale adversarial snapshot. Producer receipt `4a35c722...`
+binds specification `4b102ffd...`, journal `7d510e21...` and reconciliation
+`ef6435f3...`; the report SHA-256 is `2080397b...`.
+
+Hermes commit `c2604a76bffa271e44630dedbbcea751aa74767c` merged through PR #225 as
+`cdd6179291ee5acbf3fc08b69a830061a905c398`. It adds migration `e5a9c3f16d40`, an
+immutable OMS-schema registry and exact producer-receipt admission. Its 15 focused
+and 734 full backend tests passed. Hermes does not calculate order state and has no
+submission, cancellation or capital authority. VM2 activation and the exact
+cross-repository replay remain the production acceptance step, so this entry records
+source completion without claiming an undeployed production capability.
+
 ### 5.9 Quantitative computation ownership correction
 
 The 2026-08-28 cross-repository audit makes Bulletproof the sole authoritative
