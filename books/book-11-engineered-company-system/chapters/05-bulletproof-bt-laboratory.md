@@ -994,8 +994,10 @@ PR #227 as `6097eb39a02ad1f6ca0849783d3731d4fc29480d`. It adds only migration
 `a7c3e9b58f60`, an immutable schema registry, exact receipt admission and replay
 tooling. Its 742-test backend suite and required CI gates passed. VM2 runs the healthy
 rebuilt image `sha256:5b9d598d6fa1...`, and the live OpenAPI route is installed. The
-credentialed replay remains staged; no live Bybit or Binance capacity is inferred from
-the deterministic fixture.
+credentialed replay registered schema `1ceb8bc7-49ff-4627-ba15-0a25d978cbe5` and
+quantitative receipt `b4999dba-e29d-44d9-9a27-19c3be0bf0c6`, reproduced the native
+digests and retained terminal report digest `de5d0965038cca501fd15477951a0e9af1e6f4d8605dccced8ffcb483c8e9edd`.
+No live Bybit or Binance capacity is inferred from the deterministic fixture.
 
 ### 5.9 Quantitative computation ownership correction
 

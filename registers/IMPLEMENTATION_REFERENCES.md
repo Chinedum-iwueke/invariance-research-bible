@@ -392,5 +392,7 @@ Hermes source commit `75ed1eb9cbdae2d128e011d83aae3484747b59b7` adds migration
 `a7c3e9b58f60`, immutable schema registration and exact receipt admission, and merged
 through PR #227 as `6097eb39a02ad1f6ca0849783d3731d4fc29480d`. Its backend suite
 passed 742 tests. VM2 runs healthy image `sha256:5b9d598d6fa1dbaf3a00673b51ff4f5742d90a168379acf1587750f6876b4183`.
-Credentialed replay remains staged, and deterministic fixture capacity is not a live
-venue capacity claim or capital authority.
+The credentialed replay registered schema `1ceb8bc7-49ff-4627-ba15-0a25d978cbe5`
+and quantitative receipt `b4999dba-e29d-44d9-9a27-19c3be0bf0c6`, reproduced the
+native digests and retained report digest `de5d0965038cca501fd15477951a0e9af1e6f4d8605dccced8ffcb483c8e9edd`.
+Deterministic fixture capacity is not a live venue capacity claim or capital authority.

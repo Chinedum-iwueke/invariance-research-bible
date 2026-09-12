@@ -20,7 +20,11 @@ Date: 2026-09-12
 - VM2 image: `sha256:5b9d598d6fa1dbaf3a00673b51ff4f5742d90a168379acf1587750f6876b4183`, healthy
 - Live OpenAPI route: `/v1/research/portfolio-capacity-schemas`
 - Allocation, capital, order and promotion authority: false
-- Exact credentialed cross-repository replay: staged; pending operator execution
+- Live schema registration: `1ceb8bc7-49ff-4627-ba15-0a25d978cbe5`
+- Live quantitative receipt: `b4999dba-e29d-44d9-9a27-19c3be0bf0c6`
+- Credentialed replay report digest: `de5d0965038cca501fd15477951a0e9af1e6f4d8605dccced8ffcb483c8e9edd`
+- Retained report: `/var/lib/invariance-swarm/port004/report.json`, mode `0600`, owner `root:root`
+- Exact credentialed cross-repository replay: complete, `success: true`
 
 The fixture proves deterministic point-in-time turnover, cost, capacity, stress,
 abstention and receipt-replay mechanics. It does not establish current Bybit/Binance
