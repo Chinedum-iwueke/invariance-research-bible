@@ -1317,6 +1317,29 @@ credentials must exist, and founder/risk authorities must separately approve the
 short-lived plan. The resulting micro-live session must then flatten and reconcile and
 publish its signed dossier. It grants no scaling authority.
 
+### 5.11.1 DEMO-001 production-like venue boundary
+
+DEMO-001 now has a Bulletproof-native certification contract rather than treating the
+existing paper-broker runner as exchange evidence. It records evidence origin per
+drill and requires direct Bybit demo observation for authentication, clock,
+instrument constraints, submission, fills, cancellation, amendment, typed rejection,
+private-stream reconnection, restart reconciliation and final flattening. Local
+partial-fill, duplicate, stale-data, kill and incident drills qualify only when run
+inside the same authenticated demo session and bound to its immutable journal.
+
+Hermes does not execute or recompute these operations. It registers the immutable
+schema and exact Bulletproof receipt. Qualification requires exact upstream execution
+and risk receipts, current PLAT-005 observability, a one-way credential fingerprint,
+an explicit no-withdrawal boundary, expiration and a final state with no open orders
+and zero position. It grants no live-order, capital, allocation, promotion, scaling or
+profitability authority.
+
+The first production attempt on 2026-09-12 stopped honestly before credentials or
+orders: both VM1 and VM2 received HTTP 403 from Bybit's demo server-time endpoint, and
+the execution process had no dedicated demo credentials. The source gate is complete;
+venue certification remains externally blocked until an allowed execution host can
+run and retain all drills. No fixture is substituted for that missing evidence.
+
 ### 5.12 ALPHA-001 real-data campaign
 
 ALPHA-001 joins the already separate institutional components without moving
