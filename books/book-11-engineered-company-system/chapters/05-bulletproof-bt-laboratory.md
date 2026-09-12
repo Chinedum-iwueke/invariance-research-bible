@@ -1339,6 +1339,10 @@ orders: both VM1 and VM2 received HTTP 403 from Bybit's demo server-time endpoin
 the execution process had no dedicated demo credentials. The source gate is complete;
 venue certification remains externally blocked until an allowed execution host can
 run and retain all drills. No fixture is substituted for that missing evidence.
+The source changes are merged through Bulletproof PR #297 and Hermes PR #237. VM2
+runs migration `c6f2a9d48b70` and the active immutable contract digest is
+`64376e2bbeb981f47282218bbc567d2872db455618833f91e9d78dd18fc5ca8d`;
+there is deliberately no DEMO-001 quantitative receipt yet.
 
 ### 5.12 ALPHA-001 real-data campaign
 
