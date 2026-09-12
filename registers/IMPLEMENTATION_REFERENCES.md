@@ -410,5 +410,10 @@ and budget trajectory `6c27f2da9713157cc58ad45f9bda4f4519b24703ff68c74201fdb1d5c
 Hermes source commit `a987a9f` adds migration `b8d4f0c69a71`, immutable policy-schema
 registration and exact receipt admission, and merged through PR #228 as
 `3d0535787e434837fd8fdcda0049e460401e970d`. Its full backend suite passed 746
-tests. The VM2 migration and credentialed replay remain pending production evidence.
+tests. VM2 runs that migration and healthy rebuilt image
+`sha256:b9dd898a560585c6179217f05175c5a6cb7a5491a77d19291637f3ef392939cc`.
+The credentialed replay registered schema `e16641dc-8267-4f0f-9610-99433cc66f83`
+and quantitative receipt `261a8c36-2126-4c80-9e52-f8429b15acb1`, reproduced every
+native digest and retained report digest
+`475d6bcbf40da4a3307c84b0e4f2b88cb01dec6882eea3cc018e208ac4485d9b`.
 No RISK-003 artifact grants allocation, capital, order or promotion authority.

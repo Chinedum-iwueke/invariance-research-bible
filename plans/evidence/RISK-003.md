@@ -14,7 +14,14 @@ Date: 2026-09-12
 - Hermes merge: PR #228, `3d0535787e434837fd8fdcda0049e460401e970d`
 - Hermes tests: 18 focused; 746 full backend; Ruff clean
 - Migration: `b8d4f0c69a71`, single head
-- VM2 deployment and exact credentialed cross-repository replay: pending
+- VM2 migration: `b8d4f0c69a71` at head
+- VM2 API image: `sha256:b9dd898a560585c6179217f05175c5a6cb7a5491a77d19291637f3ef392939cc`, healthy
+- Registered schema: `e16641dc-8267-4f0f-9610-99433cc66f83`
+- Registered quantitative receipt: `261a8c36-2126-4c80-9e52-f8429b15acb1`
+- Credentialed replay receipt digest: `e21533c0fa1a2242c16005f4daba206134af5aadb13ea69107789cc4643fde61`
+- Credentialed replay report digest: `475d6bcbf40da4a3307c84b0e4f2b88cb01dec6882eea3cc018e208ac4485d9b`
+- Credentialed replay result: success; effective risk `0.003` / `$300`; stale input selects `static_conservative_fallback`; uncertainty monotonic
+- Retained report: `/var/lib/invariance-swarm/risk003/report.json`, mode `0600`, owner `root:root`
 - Allocation, capital, order and promotion authority: false
 
 The deterministic fixture proves causal shock reduction, delayed and bounded recovery,
