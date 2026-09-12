@@ -1172,6 +1172,34 @@ qualification receipt is `1b7713a7-58f8-49cc-b8e7-86599fb86f7b`; it carries no
 capital or order authority. Real exchange behavior remains separately qualified by
 DEMO-001.
 
+### 5.8.24 EXEC-007 runtime freeze, kill and human recovery
+
+EXEC-007 replaces process-local safety intent with a durable execution interlock. The
+Bulletproof runtime reads a digest-valid local state and its hash-chained journal before
+live startup and before every connector submission. Missing state, corruption, journal
+divergence, `frozen` or `killed` all block exposure-increasing work. A running process
+therefore observes an operator kill without needing a restart or a reachable control
+plane. Emergency cancellation remains available without normal live approval; closing
+positions is separately constrained to authorized reduce-only perpetual orders.
+
+Recovery is not a service restart. The operator must present a qualified exact EXEC-004
+receipt whose reconciliation permits submission and a fresh GOV-001
+`execution-recovery/resume` decision bound to the current state digest and human actor.
+The operator then performs an explicit recovery transition. A reconcile-only, incomplete
+or corrupt prior runtime state remains blocked, while EXEC-006 and fresh per-child
+RISK-005 decisions still apply after recovery.
+
+Bulletproof PR #294 merged as `b3980eb9d433d1ac7381988c005fc412f06b6484` and
+passed 1,488 tests with 28 declared skips. Hermes PR #234 merged as
+`9e50aa7525de826bbc66df42f466bf541097d0c3`; the authority activation race found during
+deployment was corrected by PR #235, `8d5d851ef37f4f96dddaaae3f14eafcd6dc975f6`.
+VM2 runs migration `a4d9e7c26b30`, healthy image
+`sha256:31e572c969f6d015150680fff07e62748b0d34d97f2495f8e45e639b52bcb03d`,
+active safety schema `4d426d8b-1aca-4779-99c8-cb09aff75c1f` and exact receipt
+`5088ec6d-a852-4684-b669-c829f65efc46`. All four required no-network drills passed.
+VM1's installed safety state remains deliberately frozen; no order or capital authority
+was exercised. DEMO-001 remains responsible for real demo-venue recovery evidence.
+
 ### 5.9 Quantitative computation ownership correction
 
 The 2026-08-28 cross-repository audit makes Bulletproof the sole authoritative
