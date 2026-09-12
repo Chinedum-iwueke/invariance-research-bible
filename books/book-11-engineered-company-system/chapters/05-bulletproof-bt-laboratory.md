@@ -1200,6 +1200,32 @@ active safety schema `4d426d8b-1aca-4779-99c8-cb09aff75c1f` and exact receipt
 VM1's installed safety state remains deliberately frozen; no order or capital authority
 was exercised. DEMO-001 remains responsible for real demo-venue recovery evidence.
 
+### 5.8.25 EXEC-008 venue adapter certification and demo parity
+
+EXEC-008 makes adapter support and qualification explicit instead of trusting a venue
+name or a `certified` label. Bulletproof owns separate Binance-perpetual and
+Bybit-perpetual capability matrices covering orders, precision, clocks, private events,
+errors and REST reconciliation. A certification receipt binds exact EXEC-003, EXEC-004
+and EXEC-007 dependencies on one dataset identity, all required drill outcomes, the
+venue, product, environment, endpoint, adapter source commit, observation time and
+expiry. Hermes stores the schema and exact receipts but does not decide adapter parity.
+
+Evidence classes do not collapse into one another. Deterministic scripted responses can
+prove contract conformance, but cannot prove that a venue demo or live environment
+behaved correctly. Demo admission requires a current venue-observed demo receipt.
+Micro-live additionally requires an exact, unexpired live-environment receipt; a claimed
+status and arbitrary digest no longer satisfy the live authorization bundle. EXEC-008
+itself grants no order, capital, allocation, promotion or profitability authority.
+
+Bulletproof PR #295 merged as `03ec779dd489ddd8498406405cd208f94ba8cd14` and
+Hermes PR #236 as `f4eec14bbe0b7137c88517dce63b457da4b5186c`. VM2 runs
+migration `b5e1f8d37c40`, healthy image
+`sha256:9babb9566d96c43c0cf11c7c53bd39a0094d6310d9fd13877be277ec0dd80d5e`
+and schema `b9bf1690-90c4-41ba-8fe5-3bb818ca5270`. The first Bybit and Binance
+receipts replayed exactly, but both are deliberately `conformance_only`, not qualified,
+and ineligible for demo or micro-live. This is the honest handoff to DEMO-001, which must
+collect real demo-venue order, fill, reconnect, rejection, restart and kill evidence.
+
 ### 5.9 Quantitative computation ownership correction
 
 The 2026-08-28 cross-repository audit makes Bulletproof the sole authoritative
