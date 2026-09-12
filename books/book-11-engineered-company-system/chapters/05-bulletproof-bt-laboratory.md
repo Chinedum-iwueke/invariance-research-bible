@@ -1039,6 +1039,46 @@ retained report digest `475d6bcbf40da4a3307c84b0e4f2b88cb01dec6882eea3cc018e208a
 The replay's `0.3%` recommendation and `$300` fixture notional remain evidence of
 deterministic mechanics, not capital or order authority.
 
+### 5.8.20 SHADOW-002 prospective monitoring and re-evaluation
+
+SHADOW-002 keeps candidate-health calculation in
+`bt.institutional.shadow_monitoring`. The producer consumes an exact candidate digest,
+a sealed SHADOW-001 journal replay, causal observations, a fixed monitoring policy and
+prior monitoring or review state. Every observation carries observed and available
+clocks; future evidence is excluded. The policy evaluates data lag, monitored-service
+availability, prediction drift, execution-cost drift, drawdown, repeated breaches and
+scheduled review without looking ahead or mutating prior evidence.
+
+Failure is deliberately asymmetric. One breach freezes the candidate and requests
+review. Repeated breach requests demotion even if a later sample in the same batch
+looks healthy. Recovery after a freeze requests independent reactivation review; it
+never restores eligibility automatically. Missing or stale evidence also freezes.
+The output is an immutable monitoring receipt with no allocation, capital, order,
+promotion, demotion or reactivation authority. RISK-004 remains the separate lifecycle
+decision boundary.
+
+Bulletproof source commit `8524f95f2fdebdac361c40ce0e990ba26ef35491`
+merged through PR #290 as `87645886038ba8803d9540cf602e79da894182ce`.
+Twenty-five focused tests, all CI shards and the full 1,451-test suite with 28 declared
+skips passed. Native receipt `3a967a39f60b5d36f77645ecfd333b60252a2d50d887534035ab42cf15e071df`
+binds policy digest `1676a85b16c310f8b117c30618e99d0791c7ca8472c9069b008a1b9abf559d4a`,
+monitoring digest `0068cd261e651fa8a290998d669bc7e5a8b16402ee2baf334c11e591a5b09e56`
+and sealed SHADOW-001 replay digest
+`7b56e39a83529c6a7c1f9be00f8ef583975060b52d9401d4d28eea2454a778d1`.
+
+Hermes source commit `b4bb884f8107258b6d1cb43aac0dced9785f24fc` merged through PR
+#229 as `6891a1261bb80c1e1fd5c94572a34da7ccc188a4`. It adds only migration
+`c9f5a1d72b80`, immutable schema registration, exact native-receipt admission and replay
+tooling. Its 750-test backend suite and required CI gates passed. VM2 runs the healthy
+rebuilt image `sha256:af2cb3734af40a1d9c39841df42e24e035d903bfe939340f97b97515179f0f87`.
+The credentialed replay registered schema `2d5ca3f3-333f-4317-ab73-80c74cd4ae36`
+and quantitative receipt `4073a8a1-b652-4edd-b7d0-a61445b95537`, reproduced the
+native digests and retained report digest
+`8aaa934cc04e40a371966588717790dd3828dddce8cdac881b0e86227dc7e87e`.
+This proves the deployed monitoring machinery and its fail-closed transitions. It does
+not claim that a genuine candidate has yet completed a sustained live-feed shadow
+interval.
+
 ### 5.9 Quantitative computation ownership correction
 
 The 2026-08-28 cross-repository audit makes Bulletproof the sole authoritative

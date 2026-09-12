@@ -417,3 +417,26 @@ and quantitative receipt `261a8c36-2126-4c80-9e52-f8429b15acb1`, reproduced ever
 native digest and retained report digest
 `475d6bcbf40da4a3307c84b0e4f2b88cb01dec6882eea3cc018e208ac4485d9b`.
 No RISK-003 artifact grants allocation, capital, order or promotion authority.
+
+## SHADOW-002 prospective monitoring addendum
+
+Bulletproof source commit `8524f95f2fdebdac361c40ce0e990ba26ef35491` adds the
+authoritative prospective monitoring producer and merged through PR #290 as
+`87645886038ba8803d9540cf602e79da894182ce`. Twenty-five focused tests, every CI
+shard and the full 1,451-test suite with 28 declared skips passed. Native receipt
+`3a967a39f60b5d36f77645ecfd333b60252a2d50d887534035ab42cf15e071df` binds
+schema `1676a85b16c310f8b117c30618e99d0791c7ca8472c9069b008a1b9abf559d4a`,
+monitoring dossier `0068cd261e651fa8a290998d669bc7e5a8b16402ee2baf334c11e591a5b09e56`
+and SHADOW-001 replay `7b56e39a83529c6a7c1f9be00f8ef583975060b52d9401d4d28eea2454a778d1`.
+
+Hermes source commit `b4bb884f8107258b6d1cb43aac0dced9785f24fc` adds migration
+`c9f5a1d72b80`, immutable schema registration and exact receipt admission, and merged
+through PR #229 as `6891a1261bb80c1e1fd5c94572a34da7ccc188a4`. Its full backend
+suite passed 750 tests. VM2 runs that migration and healthy rebuilt image
+`sha256:af2cb3734af40a1d9c39841df42e24e035d903bfe939340f97b97515179f0f87`.
+The credentialed replay registered schema `2d5ca3f3-333f-4317-ab73-80c74cd4ae36`
+and quantitative receipt `4073a8a1-b652-4edd-b7d0-a61445b95537`, reproduced every
+native digest and retained report digest
+`8aaa934cc04e40a371966588717790dd3828dddce8cdac881b0e86227dc7e87e`.
+It proves deployed fail-closed monitoring, not completion of a sustained genuine
+candidate shadow interval or any capital, order or lifecycle authority.
