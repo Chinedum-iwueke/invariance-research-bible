@@ -323,7 +323,14 @@ The source merged through PR #285 as
 Hermes commit `1d01d461208d7cbbfcc3b9d31102a42f2114f965` adds migration
 `e4f8b2d05c30`, immutable mapping-schema registration, exact receipt admission and the
 cross-repository replay pilot. Its backend suite passes 730 tests with two pre-existing
-warnings. Production deployment and replay are not yet evidenced. No artifact grants
-allocation, capital, order, promotion or routing authority.
+warnings. No artifact grants allocation, capital, order, promotion or routing authority.
 The source merged through PR #224 as
 `6477a0bc2b162d8142b6108ae804ecf1bf1ed012`.
+
+On 2026-09-12 VM2 ran migration `e4f8b2d05c30` and healthy image
+`sha256:efe6afd82de57d1519dc5ad78564b089e6c372aedb372c82c02054633700f2ad`.
+The exact replay registered venue-identity record
+`e498a6cc-58c4-4814-8839-b957c6fcb2e7` and quantitative-receipt record
+`f9322c93-08f4-4aa9-abc6-348e07b21039`; report digest
+`419af24787bdec980d8431d1094a9cf6be97d28486940065d0ebb90179a793e1`
+retains two comparison routes and no capital or order authority.

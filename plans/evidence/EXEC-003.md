@@ -15,7 +15,11 @@ Date: 2026-09-11
 - Hermes verification: 730 passed with two pre-existing warnings; Ruff passed
 - Migration head: `e4f8b2d05c30`
 - Allocation, capital, order, promotion and routing authority: false
-- Production activation: pending VM2 migration/API deployment, schema registration and exact cross-repository replay
+- VM2 migration: `e4f8b2d05c30`; rebuilt API image `sha256:efe6afd82de57d1519dc5ad78564b089e6c372aedb372c82c02054633700f2ad` healthy
+- Live venue-identity record: `e498a6cc-58c4-4814-8839-b957c6fcb2e7`
+- Live quantitative-receipt record: `f9322c93-08f4-4aa9-abc6-348e07b21039`
+- Cross-repository report digest: `419af24787bdec980d8431d1094a9cf6be97d28486940065d0ebb90179a793e1`
+- Production activation: complete; exact replay succeeded with exit code `0`
 
 The deterministic fixture proves explicit point-in-time mapping, contract conversion,
 venue-specific constraints, outage handling, quarantine behavior, dependency binding

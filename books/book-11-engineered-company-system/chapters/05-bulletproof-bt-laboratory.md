@@ -882,8 +882,11 @@ immutable schema registry and receipt verifier; its 730-test backend suite and R
 pass, and PR #224 merged as `6477a0bc2b162d8142b6108ae804ecf1bf1ed012`.
 Hermes does not calculate mappings. This is identity and analytical-fragmentation
 evidence, not connector certification, routing advice, capital authority or permission
-to submit an order. VM2 migration, schema activation and a no-order cross-repository
-replay remain required before the claim can be upgraded from source-complete to deployed.
+to submit an order. On 2026-09-12 VM2 reached migration `e4f8b2d05c30` on healthy
+rebuilt image `sha256:efe6afd82de5...`; schema record `e498a6cc...` and quantitative
+receipt record `f9322c93...` replayed the exact native digests. Terminal report digest
+`419af247...` retained two comparison routes and `capital_or_order_authority: false`.
+EXEC-003 is therefore production-replayed for its declared no-order boundary.
 
 ### 5.9 Quantitative computation ownership correction
 
