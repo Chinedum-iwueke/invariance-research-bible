@@ -440,3 +440,15 @@ native digest and retained report digest
 `8aaa934cc04e40a371966588717790dd3828dddce8cdac881b0e86227dc7e87e`.
 It proves deployed fail-closed monitoring, not completion of a sustained genuine
 candidate shadow interval or any capital, order or lifecycle authority.
+
+## RISK-004 candidate admission addendum
+
+Bulletproof source `ecad17a36167845c7035b1302847b4455130e045` merged through PR
+#291 as `24c25839bcc22178cee1c1bb06153bf1e12c06f8`. Hermes source `17ceffc`
+merged through PR #230 as `9b1d68991dfec574769aa54b7ccbf43eddeb75b9`. The full
+suites passed 1,458 Bulletproof tests with 28 declared skips and 754 Hermes backend
+tests. VM2 runs migration `d1a6b4e83c90`, healthy image
+`sha256:060e7cd322a923c168b5f30dca4ee446dd816a63aa84f8ea1447054844e445e6`
+and active schema `2b4748c2-3052-4e3b-a706-e17698216324` with digest
+`c3740311dcdd619a6b9e9fa2b1cebc3a4be3962beed52a9a9103997b1d424cc6`.
+No candidate, allocation or capital decision was created by deployment.
