@@ -1140,6 +1140,38 @@ an activation-time source-hash transcription before any dependent receipt existe
 deployed follow-up rejects same-version provenance drift. Zero production RISK-005
 decision receipts exist until a genuine candidate reaches this boundary.
 
+### 5.8.23 EXEC-006 baseline execution algorithms and scheduler
+
+EXEC-006 gives the execution spine deterministic market, limit, TWAP and causal-profile
+VWAP schedules without granting a scheduler permission to trade. Bulletproof remains the
+authoritative quantitative producer. Hermes only registers the active schedule schema
+and preserves exact receipts.
+
+A schedule binds its parent intent, candidate, side, quantity, reference price, urgency,
+window, projected interval volumes, participation limits, child deadlines and volume
+profile. VWAP rejects profiles unavailable at schedule creation. Thin-book conflicts,
+undersized slices, invalid or overly aggressive limits, excessive horizon, unknown child
+state, clock drift and digest changes fail closed. Partial fills carry toward the next
+cumulative target only inside that child's participation cap. EXEC-005 supplies the
+pessimistic cost basis used to compare all four baselines.
+
+The scheduler's terminal boundary is deliberately two-step. It can emit an immutable
+`propose_submit`, but the child becomes `submit` only if a fresh exact RISK-005 receipt
+matches its order fields and current state version. Cancellation does not depend on an
+exposure-increasing authorization. The local qualification replay and dependency suites
+prove these mechanics, but do not claim a real venue fill or capital authority;
+production identifiers are recorded only after deployment.
+
+Bulletproof PR #293 merged as `abd40ef81d812e9d600de187606766d238b4b638`;
+the full suite passed 1,483 tests with 28 declared skips. Hermes PR #233 merged as
+`21bc3857ed844f1e0f44539180c9d3fdfff1e926`; 761 backend tests passed. VM2 runs
+migration `f3c8d6a15e20`, healthy image
+`sha256:2d41566521dc9747faa5284ccf34fc004d4085d29dd3eacde4454a3d5f1b01cb`
+and active schema `fd9d7e1b-7e14-41e3-ba2d-aa67502dc8da`. The exact deployed
+qualification receipt is `1b7713a7-58f8-49cc-b8e7-86599fb86f7b`; it carries no
+capital or order authority. Real exchange behavior remains separately qualified by
+DEMO-001.
+
 ### 5.9 Quantitative computation ownership correction
 
 The 2026-08-28 cross-repository audit makes Bulletproof the sole authoritative
