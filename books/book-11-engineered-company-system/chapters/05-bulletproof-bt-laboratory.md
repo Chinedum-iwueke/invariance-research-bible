@@ -926,6 +926,42 @@ after qualified reconciliation and still reported `capital_or_order_authority:
 false`. EXEC-004 is therefore production-replayed for its declared no-order boundary;
 adapter certification and permissioned execution remain later gates.
 
+### 5.8.17 EXEC-005 execution-quality calibration
+
+EXEC-005 keeps execution-calibration truth inside
+`bt.institutional.execution_calibration`. It consumes immutable execution observations
+through a declared knowledge cutoff and estimates fill and partial-fill behavior,
+acknowledgement and fill latency, signed implementation shortfall, model error and
+post-fill adverse selection. Results are stratified by venue, order type, size bucket
+and regime. Calibration and holdout observations cannot overlap, future-available
+evidence is excluded, and every source event is digest-bound.
+
+Qualification is prospective rather than an acceptance-rate shortcut. Each stratum
+must meet declared calibration and holdout sample minima, censoring limits and holdout
+cost-shift tolerance. A sparse, heavily censored, shifted or unavailable stratum emits
+an explicit pessimistic fallback. It cannot silently inherit an optimistic empirical
+cost. The resulting empirical bundle reuses the BT-005 market-model contract and
+remains an input to later portfolio, risk and execution gates; it has no order,
+capital, allocation, promotion, routing or cancellation authority.
+
+Bulletproof source commit `d6cde7665385732d0f49deafbaac324161da33d9` merged through
+PR #287 as `97d20db19b81054b729c0fb11a2ca1657aa4c632`. Fifteen focused tests,
+all CI collection/lint/contract shards and Ruff passed. The supported local suite
+passed 1,394 tests with 28 declared skips; five volatile-panel failures were reproduced
+unchanged in the untouched EXEC-004 checkout under the shared local environment. The
+native pilot excluded one future observation and selected a 5 bps pessimistic fallback
+for a sparse stratum. Receipt `fc819372...` binds calibration `e1aa6787...` and
+empirical market-model bundle `e46c1ea0...`.
+
+Hermes source commit `7bd40a980d93c22c800f26ed0d217e00798d3385` merged through
+PR #226 as `5906127939090b30a114efdf1d9d243d85fdebde`. It adds only migration
+`f6b2d8a47e50`, immutable schema registration, exact authoritative-producer receipt
+admission and replay tooling. Its 738-test backend suite and all required CI gates
+passed. On 2026-09-12 VM2 reached that migration on healthy rebuilt image
+`sha256:6e2199467f35...`; the route is present in the live OpenAPI surface. The exact
+credentialed receipt replay is staged separately, so this deployment does not yet
+claim that current venue observations qualify any live execution stratum.
+
 ### 5.9 Quantitative computation ownership correction
 
 The 2026-08-28 cross-repository audit makes Bulletproof the sole authoritative
