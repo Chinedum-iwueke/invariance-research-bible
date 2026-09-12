@@ -964,6 +964,39 @@ credentialed replay registered schema `88d60d24...` and quantitative receipt
 `f061249f...`. It still does not claim that current venue observations qualify any
 live execution stratum; the admitted fixture proves the governed calibration path.
 
+### 5.8.18 PORT-004 turnover, cost, capacity and liquidity service
+
+PORT-004 keeps portfolio feasibility calculations in `bt.institutional.capacity`.
+It composes the selected PORT-003 construction with the exact EXEC-005 execution
+calibration and point-in-time liquidity snapshots. The service calculates gross-L1
+and one-way turnover, candidate participation/depth/cost/liquidation constraints,
+base and stressed cost-capacity curves, and expected return net of rebalance costs.
+
+Every snapshot names the candidate, venue, listing, order type, size bucket and regime
+and binds observed and available clocks plus its source digest. Future-only, stale,
+missing, duplicated-conflicting or calibration-mismatched evidence cannot inherit a
+capacity estimate. The service then returns `abstain_zero_executable_capacity` and
+zero `capacity_supported_notional`. Stress costs cannot improve on base costs and
+stressed capacity cannot exceed base capacity. These outputs are analytical evidence,
+not permission to allocate or trade.
+
+Bulletproof source commit `159a79b7ee1bbf19e6208c8b5216fb0046178d44` merged through
+PR #288 as `ccddacee049dbc97d6bba5912f623a4d8345a8bd`. Fourteen focused tests,
+all required CI shards and Ruff passed. The supported local suite passed 1,408 tests
+with 28 declared skips; five volatile-panel failures remain independently reproduced
+in the untouched EXEC-004 checkout. Native receipt `8c2dc060...` binds schema
+`4f2d3384...` and capacity dossier `ef30b343...`. The deterministic fixture reports
+`$230,000` base capacity, `$140,000` stressed capacity, `$20,000` turnover and
+`$100,000` supported analytical notional; stale evidence returns zero.
+
+Hermes source commit `75ed1eb9cbdae2d128e011d83aae3484747b59b7` merged through
+PR #227 as `6097eb39a02ad1f6ca0849783d3731d4fc29480d`. It adds only migration
+`a7c3e9b58f60`, an immutable schema registry, exact receipt admission and replay
+tooling. Its 742-test backend suite and required CI gates passed. VM2 runs the healthy
+rebuilt image `sha256:5b9d598d6fa1...`, and the live OpenAPI route is installed. The
+credentialed replay remains staged; no live Bybit or Binance capacity is inferred from
+the deterministic fixture.
+
 ### 5.9 Quantitative computation ownership correction
 
 The 2026-08-28 cross-repository audit makes Bulletproof the sole authoritative
