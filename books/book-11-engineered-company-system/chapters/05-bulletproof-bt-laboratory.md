@@ -1079,6 +1079,33 @@ This proves the deployed monitoring machinery and its fail-closed transitions. I
 not claim that a genuine candidate has yet completed a sustained live-feed shadow
 interval.
 
+### 5.8.21 RISK-004 candidate admission and lifecycle authority
+
+RISK-004 separates scientific recommendation from institutional authority. Bulletproof's
+`bt.institutional.candidate_admission` producer verifies the PORT-001 dossier plus exact
+PORT-002 through PORT-004, RISK-001 through RISK-003 and SHADOW-002 receipts. Candidate
+and dataset bindings must agree, evidence must be causal and unexpired, positive
+requests must remain within the current risk budget, and admission, allocation,
+scaling, demotion and retirement remain distinct immutable recommendations.
+
+The Bulletproof receipt has no transition, allocation, capital, order or promotion
+authority. Hermes admits it only against an active digest-exact schema, then requires
+one fresh receipt matching the candidate, action and expiry before a portfolio-candidate
+promotion or capital qualification/allocation can reach GOV-003. GOV-003 still resolves
+the accountable actor, separation of duties, vetoes, optimistic lifecycle version and
+immutable consequence chain. Thus neither research success nor monitoring output can
+silently become money.
+
+Bulletproof source `ecad17a36167845c7035b1302847b4455130e045` merged through PR
+#291 as `24c25839bcc22178cee1c1bb06153bf1e12c06f8`; 28 focused tests, every
+CI shard and the full 1,458-test suite with 28 declared skips passed. Hermes source
+`17ceffc` merged through PR #230 as `9b1d68991dfec574769aa54b7ccbf43eddeb75b9`;
+34 focused and 754 full backend tests passed. VM2 runs migration `d1a6b4e83c90`, healthy
+image `sha256:060e7cd322a923c168b5f30dca4ee446dd816a63aa84f8ea1447054844e445e6`
+and active schema `2b4748c2-3052-4e3b-a706-e17698216324`. Deployment registered the
+policy boundary only. The first real receipt and lifecycle decision must come from a
+genuine eligible candidate and independent approval.
+
 ### 5.9 Quantitative computation ownership correction
 
 The 2026-08-28 cross-repository audit makes Bulletproof the sole authoritative
