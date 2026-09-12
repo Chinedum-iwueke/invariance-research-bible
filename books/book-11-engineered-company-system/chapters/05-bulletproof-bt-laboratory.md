@@ -1106,6 +1106,40 @@ and active schema `2b4748c2-3052-4e3b-a706-e17698216324`. Deployment registered 
 policy boundary only. The first real receipt and lifecycle decision must come from a
 genuine eligible candidate and independent approval.
 
+### 5.8.22 RISK-005 real-time deterministic risk service
+
+RISK-005 turns the existing hard controls into a per-order, deterministic decision
+boundary without moving quantitative ownership into Hermes. Bulletproof requires exact
+RISK-002 venue rules, RISK-003 budgets, RISK-004 candidate admission, EXEC-001 causal
+event state and EXEC-004 reconciled OMS receipts. It binds their dataset identity to one
+candidate, one order shape and one state version whose observed and available clocks are
+no later than the decision clock.
+
+The result is `allow`, `deny`, or a narrowly scoped `reduce_only_exit`. Stale state,
+missed latency deadlines, state-version races, partitions, unresolved incidents,
+reconciliation failure, expired admission and symbol, quantity, notional, open-order,
+gross-exposure and loss-limit breaches deny new exposure. Degraded mode can authorize
+only an order that actually reduces the signed current position. Cancellation and the
+independent emergency freeze/close path do not depend on the service.
+
+Both Bulletproof external submission surfaces verify the exact receipt again immediately
+before invoking a broker adapter. Changed quantity, side, symbol, reference price, reduce
+flag, state version, receipt bytes or decision age fails closed. Hermes stores the active
+schema and exact producer receipt but cannot calculate an alternate decision. The
+qualification fixture proves deterministic allow, deny and reduce-only behavior; it does
+not claim a real candidate, a venue order or capital authority. EXEC-006 must attach a
+fresh genuine receipt to every scheduled demo/live order.
+
+Bulletproof PR #292 merged as `14596cbab85fb2df7be24985d8dd5f51dbb0e53d`;
+its full suite passed 1,475 tests with 28 declared skips. Hermes PRs #231-#232 merged
+through `f3a6af861297e4b3dd967557f185bf1d31123eb5`; 757 backend tests and all CI gates
+passed. VM2 runs migration `e2b7c5f94d10`, healthy image
+`sha256:c9e606135c52856ddccca61be2188cfb5185c6cf0d28409308f28c0d8b6eb6a2`
+and active schema `f5b47f51-f0cb-4681-989e-4664db917e9f`. A bounded correction fixed
+an activation-time source-hash transcription before any dependent receipt existed; the
+deployed follow-up rejects same-version provenance drift. Zero production RISK-005
+decision receipts exist until a genuine candidate reaches this boundary.
+
 ### 5.9 Quantitative computation ownership correction
 
 The 2026-08-28 cross-repository audit makes Bulletproof the sole authoritative
