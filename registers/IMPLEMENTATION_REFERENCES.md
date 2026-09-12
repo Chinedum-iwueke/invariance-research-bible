@@ -378,3 +378,19 @@ The exact credentialed cross-repository replay registered schema `88d60d24-441c-
 and receipt `a08d562a-09bd-465b-86ed-534255fbcc96`, reproduced every native digest and
 retained report digest `f061249f89d4823597480491ebf9aa327d70f2dddbba200ce67d617961163fd5`.
 No live-stratum qualification or execution authority is inferred from the fixture.
+
+## PORT-004 turnover, cost, capacity and liquidity addendum
+
+Bulletproof source commit `159a79b7ee1bbf19e6208c8b5216fb0046178d44` adds the
+authoritative PORT-004 producer and merged through PR #288 as
+`ccddacee049dbc97d6bba5912f623a4d8345a8bd`. Native receipt `8c2dc060...` binds
+schema `4f2d3384...` and capacity dossier `ef30b343...`. Fourteen focused tests and
+all required CI shards passed; the supported local suite passed 1,408 tests with 28
+declared skips and the five previously reproduced volatile-panel baseline failures.
+
+Hermes source commit `75ed1eb9cbdae2d128e011d83aae3484747b59b7` adds migration
+`a7c3e9b58f60`, immutable schema registration and exact receipt admission, and merged
+through PR #227 as `6097eb39a02ad1f6ca0849783d3731d4fc29480d`. Its backend suite
+passed 742 tests. VM2 runs healthy image `sha256:5b9d598d6fa1dbaf3a00673b51ff4f5742d90a168379acf1587750f6876b4183`.
+Credentialed replay remains staged, and deterministic fixture capacity is not a live
+venue capacity claim or capital authority.
