@@ -1217,8 +1217,10 @@ Micro-live additionally requires an exact, unexpired live-environment receipt; a
 status and arbitrary digest no longer satisfy the live authorization bundle. EXEC-008
 itself grants no order, capital, allocation, promotion or profitability authority.
 
-Bulletproof PR #295 merged as `03ec779dd489ddd8498406405cd208f94ba8cd14` and
-Hermes PR #236 as `f4eec14bbe0b7137c88517dce63b457da4b5186c`. VM2 runs
+Bulletproof PRs #295 and #296 merged as `03ec779dd489ddd8498406405cd208f94ba8cd14`
+and `bacfcd4f6334cd40f8e36ba9460fcf1ead326cb9`; the latter adds tested Binance
+private-stream reconnect and fresh listen-key acquisition. Hermes PR #236 merged as
+`f4eec14bbe0b7137c88517dce63b457da4b5186c`. VM2 runs
 migration `b5e1f8d37c40`, healthy image
 `sha256:9babb9566d96c43c0cf11c7c53bd39a0094d6310d9fd13877be277ec0dd80d5e`
 and schema `b9bf1690-90c4-41ba-8fe5-3bb818ca5270`. The first Bybit and Binance
