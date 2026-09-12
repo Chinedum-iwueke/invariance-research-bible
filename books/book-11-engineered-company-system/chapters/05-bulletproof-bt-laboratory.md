@@ -959,8 +959,10 @@ PR #226 as `5906127939090b30a114efdf1d9d243d85fdebde`. It adds only migration
 admission and replay tooling. Its 738-test backend suite and all required CI gates
 passed. On 2026-09-12 VM2 reached that migration on healthy rebuilt image
 `sha256:6e2199467f35...`; the route is present in the live OpenAPI surface. The exact
-credentialed receipt replay is staged separately, so this deployment does not yet
-claim that current venue observations qualify any live execution stratum.
+credentialed replay registered schema `88d60d24...` and quantitative receipt
+`a08d562a...`, reproduced every native digest and retained terminal report digest
+`f061249f...`. It still does not claim that current venue observations qualify any
+live execution stratum; the admitted fixture proves the governed calibration path.
 
 ### 5.9 Quantitative computation ownership correction
 

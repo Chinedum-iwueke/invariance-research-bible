@@ -20,7 +20,11 @@ Date: 2026-09-12
 - VM2 image: `sha256:6e2199467f35b38b010d11130d6c2d23f78b674fa5bf2417dad43fd437a39bc7`, healthy
 - Live OpenAPI route: `/v1/research/execution-calibration-schemas`
 - Allocation, capital, order, promotion, routing and cancellation authority: false
-- Exact credentialed cross-repository replay: staged; pending operator execution
+- Live execution-calibration schema: `88d60d24-441c-4019-8c1f-5d3d79cbe761`
+- Live quantitative receipt: `a08d562a-09bd-465b-86ed-534255fbcc96`
+- Cross-repository report digest: `f061249f89d4823597480491ebf9aa327d70f2dddbba200ce67d617961163fd5`
+- Retained report: `/var/lib/invariance-swarm/exec005/report.json`, mode `0600`, owner `root:root`
+- Exact credentialed cross-repository replay: complete; `success: true`
 
 The fixture proves causal observation filtering, split isolation, empirical distribution
 construction, holdout scoring, digest replay and pessimistic fallback behavior. It does

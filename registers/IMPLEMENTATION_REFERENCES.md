@@ -374,5 +374,7 @@ Hermes source commit `7bd40a980d93c22c800f26ed0d217e00798d3385` adds migration
 merged through PR #226 as `5906127939090b30a114efdf1d9d243d85fdebde`. Its backend
 suite passed 738 tests. VM2 runs the migration and healthy rebuilt image
 `sha256:6e2199467f35b38b010d11130d6c2d23f78b674fa5bf2417dad43fd437a39bc7`.
-The exact credentialed cross-repository replay remains staged; no live-stratum
-qualification or execution authority is inferred from deployment alone.
+The exact credentialed cross-repository replay registered schema `88d60d24-441c-4019-8c1f-5d3d79cbe761`
+and receipt `a08d562a-09bd-465b-86ed-534255fbcc96`, reproduced every native digest and
+retained report digest `f061249f89d4823597480491ebf9aa327d70f2dddbba200ce67d617961163fd5`.
+No live-stratum qualification or execution authority is inferred from the fixture.
