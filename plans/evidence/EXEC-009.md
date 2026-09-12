@@ -18,12 +18,13 @@ has no order, capital, allocation, promotion or restoration authority.
 - Immediate fail-closed review for outage or stale venue rules.
 - Immutable incident digests and exact producer receipt.
 - Independent-review-only restoration after restriction, fallback, demotion or kill.
-- Exact same-dataset EXEC-005, EXEC-008 and SHADOW-002 receipt binding, with matching candidate
-  identity and immutable GOV-003/PLAT-005 context digests.
+- Exact same-dataset, allowlisted-producer EXEC-005, EXEC-008 and SHADOW-002
+  receipt binding, with matching candidate and adapter venue/environment identities
+  plus immutable GOV-003/PLAT-005 context digests.
 
 ## Verification
 
-The native focused suite passes twelve tests. The Hermes registry and receipt suite
+The native focused suite passes fourteen tests. The Hermes registry and receipt suite
 passes twenty-five focused tests. The deterministic native pilot proves healthy,
 confirmed strategy degradation, critical outage and false-recovery behavior. The
 cross-repository pilot verifies exact immutable replay after migration

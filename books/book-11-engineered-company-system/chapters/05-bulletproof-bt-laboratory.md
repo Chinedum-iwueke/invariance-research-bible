@@ -1245,10 +1245,11 @@ Stale evidence, an outage or stale venue rules fail closed. Exact duplicate obse
 cannot manufacture confirmation, and healthy recovery only establishes evidence for an
 independent restore review. It never restores execution automatically.
 
-Every receipt binds the exact EXEC-005, EXEC-008 and SHADOW-002 producer receipts, the
-same candidate identity, and the active GOV-003 policy and PLAT-005 observability
-digests. This prevents a valid degradation calculation from being replayed against a
-different candidate or detached operational context.
+Every receipt binds exact same-dataset EXEC-005, EXEC-008 and SHADOW-002 receipts from
+their allowlisted producers, the same candidate identity, a matching qualified adapter
+venue/environment, and the active GOV-003 policy and PLAT-005 observability digests.
+This prevents a valid degradation calculation from being replayed against a different
+candidate, venue or detached operational context.
 
 This is a measurement and recommendation boundary, not an adaptive trading authority.
 EXEC-009 cannot tune a strategy, alter routing, place orders, expose capital, promote a
