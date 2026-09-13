@@ -50,9 +50,9 @@ exercise, not only a successful backup command.
 
 - Full off-host backup and disaster recovery are not yet proven company-wide.
 - Alerting, tracing and production SLO evidence remain incomplete.
-- VM1 and VM2 fleet probes are active, but simultaneous loss of both hosts cannot be
-  detected independently until the external watchdog is placed on an always-on VPS
-  outside their shared failure domain and its outage/recovery behavior is rehearsed.
+- VM1 and VM2 fleet probes are active and EXEC1 is an enrolled external observer.
+  Simultaneous-loss alerting is not qualified until EXEC1 receives its restricted
+  direct-alert credential and its outage/recovery behavior is rehearsed.
 - Scientific ingestion uses bounded local scanners, structural repair, independent
   parsing and OCR. A dedicated Codex identity may advise which remaining allowlisted
   method to attempt or recommend a terminal classification, but receives no artifact
@@ -105,13 +105,14 @@ enabled, active and publishing authenticated observations every 20 seconds as
 `vm1-developer` and `vm2-deployment`. This establishes operational individual-host
 telemetry; it does not yet production-qualify correlated-outage alerting.
 
-The independent watchdog is explicitly deferred until a minimal hardened, always-on
-VPS is provisioned outside the VM1/VM2 failure domain. That host must use a dedicated
-restricted observer credential and alert-only Telegram fallback, expose no execution
-authority, and restrict outbound access to the declared health targets and Telegram.
-Production qualification still requires live value comparison with kernel references,
-observed Telegram warning/recovery delivery, and digest-bound rehearsals of VM1 loss,
-VM2 loss, simultaneous loss, recovery, duplicate suppression and credential rotation.
+EXEC1 is now provisioned, hardened, enrolled in the private fleet and publishing
+bounded observations outside the VM1/VM2 failure domain. It remains intentionally
+separate from the Lagos execution host. The direct watchdog still needs a dedicated
+restricted observer credential and alert-only Telegram fallback, with network access
+limited to the declared health targets and Telegram. Production qualification still
+requires observed Telegram warning/recovery delivery and digest-bound rehearsals of
+VM1 loss, VM2 loss, simultaneous loss, recovery, duplicate suppression and credential
+rotation.
 Rollback disables probes and watchdogs without deleting incident evidence.
 
 ## 8.8 Verified control-plane backup lifecycle

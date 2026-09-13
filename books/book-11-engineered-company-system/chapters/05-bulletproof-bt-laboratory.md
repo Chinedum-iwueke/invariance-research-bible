@@ -1259,8 +1259,8 @@ This is a measurement and recommendation boundary, not an adaptive trading autho
 EXEC-009 cannot tune a strategy, alter routing, place orders, expose capital, promote a
 candidate or suppress an incident. Later CAD-001 and GOV-003 policy consumes its immutable
 incidents and recommendations. The deterministic source replay and contract tests are
-complete; live continuity claims await geographically eligible execution egress and
-current venue-observed DEMO-001, EXEC-005 and EXEC-008 evidence.
+complete. EXEC2 now supplies measured Lagos egress, while live continuity claims still
+await current venue-observed DEMO-001, EXEC-005 and EXEC-008 evidence.
 
 ### 5.9 Quantitative computation ownership correction
 
@@ -1374,11 +1374,12 @@ the execution process had no dedicated demo credentials. The source gate is comp
 venue certification remains externally blocked until an allowed execution host can
 run and retain all drills. No fixture is substituted for that missing evidence.
 The first EXEC1 VPS was provisioned and hardened on 2026-09-13, but independent egress
-checks identified Oregon, United States: Bybit main and demo returned HTTP 403 and
-Binance futures main returned HTTP 451, while Binance futures testnet alone was
-reachable. No venue credential was installed and no order was sent. EXEC1 may serve as
-the independent fleet watchdog, but demo/live qualification still requires the provider
-to assign genuinely eligible egress or a replacement host in an eligible jurisdiction.
+checks identified Oregon, United States. It is retained as the external fleet observer
+and receives no venue credentials or order authority. A distinct hardened EXEC2 host
+now has measured Lagos, Nigeria egress and HTTP 200 reachability to Bybit main/demo and
+Binance spot/futures public time endpoints. This removes the location preflight blocker,
+but it is not demo qualification: no credential is installed, no authenticated drill or
+order has run, and no venue-observed receipt exists.
 The source changes are merged through Bulletproof PR #297 and Hermes PR #237. VM2
 runs migration `c6f2a9d48b70` and the active immutable contract digest is
 `64376e2bbeb981f47282218bbc567d2872db455618833f91e9d78dd18fc5ca8d`;
