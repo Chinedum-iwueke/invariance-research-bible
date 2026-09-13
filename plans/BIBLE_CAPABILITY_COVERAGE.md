@@ -236,9 +236,9 @@ provable increments. Each must be copied into the executable backlog before work
 | EXEC-006 | Baseline execution algorithms and deterministic scheduler | Cost-risk evaluation and hard constraints pass |
 | EXEC-007 | Pre-trade/runtime controls, freeze, kill and human recovery | Kill remains independent, tested and available under degradation |
 | EXEC-008 | Venue adapter certification and demo parity dossier | No adapter reaches micro-live without environment-specific certification |
-| EXEC-009 | **Source-complete; live venue evidence awaits EXEC1.** Venue/model/strategy/infrastructure degradation and execution feedback loop | Alerts cause bounded restriction, fallback, demotion or kill review, never self-modifying execution or automatic restoration |
+| EXEC-009 | **Source-complete; live venue evidence awaits eligible execution egress.** Venue/model/strategy/infrastructure degradation and execution feedback loop | Alerts cause bounded restriction, fallback, demotion or kill review, never self-modifying execution or automatic restoration |
 | EXEC-010 | Asset-class expansion qualification | Each new market gets a separate mechanics/data/adapter/risk dossier |
-| EXEC-011 | **Source-complete; live venue evidence awaits EXEC1.** Canonical Binance/Bybit telemetry, deterministic trade replay and Mission Control execution observability | Shadow, demo and live venue state is environment-labelled, reconciled and reproducible to declared backtest-compatible tolerances without exposing credentials; venue qualification still requires private-stream drills |
+| EXEC-011 | **Source-complete; first EXEC1 allocation is hardened but geographically ineligible.** Canonical Binance/Bybit telemetry, deterministic trade replay and Mission Control execution observability | Shadow, demo and live venue state is environment-labelled, reconciled and reproducible to declared backtest-compatible tolerances without exposing credentials; venue qualification still requires eligible egress and private-stream drills |
 
 ### I. Product, Mission Control and founder operations
 
@@ -260,7 +260,7 @@ provable increments. Each must be copied into the executable backlog before work
 |---|---|---|
 | OPS-001 | Durable approval outbox and readiness reconciliation | No missed lease window, duplicate flood or manual `once` requirement |
 | OPS-002 | Four-domain plain-English intake pilots | Engineering, infrastructure, research and knowledge transcripts pass |
-| OPS-004 | Fleet observability and founder alerting | VM1/VM2 resource and outage incidents are sustained-signal, deduplicated, independently observable and replayable |
+| OPS-004 | Fleet observability and founder alerting; third-host EXEC1 foundation provisioned, activation/rehearsal pending | VM1/VM2 resource and outage incidents are sustained-signal, deduplicated, independently observable and replayable, including correlated loss from an independent host |
 | OPS-005 | Automated control-plane backups and freshness enforcement | Persistent VM2 scheduling produces digest-bound verified generations, stale/corrupt backups fail closed, and a disposable restore proves measured recovery |
 | OPS-006 | Stateful conversational founder intake and specification compiler | Natural follow-ups, schema guidance and governed defaults compile one revisioned approval-ready job |
 | OPS-007 | Fleet-wide governed operation ledger and background-work visibility | Every governed task and instrumented long-running operation has durable identity, phase, honest progress, heartbeat, failure and terminal replay in Mission Control |
@@ -283,7 +283,7 @@ provable increments. Each must be copied into the executable backlog before work
 |---|---|---|
 | WS-001 | No-capital walking skeleton | Evidence to decision loop replays, including negative and invalid paths |
 | WS-002 | Whole-company degraded-mode and partial-publication compensation | No split-brain authority or orphan canonical state |
-| DEMO-001 | Venue demo certification with production-like controls | Reconciliation, kill, restart and incident drills pass |
+| DEMO-001 | Venue demo certification with production-like controls; blocked on eligible execution egress | Reconciliation, kill, restart and incident drills pass on the actual venue environment |
 | LIVE-001 | Founder/risk-approved micro-live canary | Quantified loss envelope, expiry, independent kill and rollback pass |
 | LIVE-002 | Evidence-gated scaling and multi-candidate production | Scaling requires prospective, portfolio, execution and operations dossiers |
 | EVOLVE-001 | Schema/role/model migration and retirement | Old evidence replays after replacement; no history loss |
