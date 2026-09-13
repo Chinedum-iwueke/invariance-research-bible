@@ -1228,6 +1228,36 @@ receipts replayed exactly, but both are deliberately `conformance_only`, not qua
 and ineligible for demo or micro-live. This is the honest handoff to DEMO-001, which must
 collect real demo-venue order, fill, reconnect, rejection, restart and kill evidence.
 
+### 5.8.26 EXEC-009 execution-degradation feedback
+
+EXEC-009 closes the feedback path from prospective execution evidence to bounded
+operational review. Bulletproof compares point-in-time observations with immutable
+thresholds and preserves venue, environment, strategy, listing, order type, size and
+regime strata. Fill rate, acknowledgement and fill latency, implementation shortfall,
+adverse selection, queue-model error, rejection rate, reconciliation breaks, service
+availability and venue-rule freshness remain explicit rather than being collapsed into
+one health score.
+
+The producer diagnoses venue, model, strategy and infrastructure degradation separately.
+One current noncritical breach requests observation and recalibration; consecutive
+breaches request restriction, shadow fallback or demotion review according to cause.
+Stale evidence, an outage or stale venue rules fail closed. Exact duplicate observations
+cannot manufacture confirmation, and healthy recovery only establishes evidence for an
+independent restore review. It never restores execution automatically.
+
+Every receipt binds exact same-dataset EXEC-005, EXEC-008 and SHADOW-002 receipts from
+their allowlisted producers, the same candidate identity, a matching qualified adapter
+venue/environment, and the active GOV-003 policy and PLAT-005 observability digests.
+This prevents a valid degradation calculation from being replayed against a different
+candidate, venue or detached operational context.
+
+This is a measurement and recommendation boundary, not an adaptive trading authority.
+EXEC-009 cannot tune a strategy, alter routing, place orders, expose capital, promote a
+candidate or suppress an incident. Later CAD-001 and GOV-003 policy consumes its immutable
+incidents and recommendations. The deterministic source replay and contract tests are
+complete; live continuity claims await the allowed EXEC1 host and current venue-observed
+DEMO-001, EXEC-005 and EXEC-008 evidence.
+
 ### 5.9 Quantitative computation ownership correction
 
 The 2026-08-28 cross-repository audit makes Bulletproof the sole authoritative
