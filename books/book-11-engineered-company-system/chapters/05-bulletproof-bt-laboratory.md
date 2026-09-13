@@ -406,14 +406,16 @@ authority.
 Shadow execution belongs on VM1 initially. It consumes public/read-only venue feeds,
 records prospective decisions and simulated fills, and cannot submit orders. Demo and
 capital-bearing collectors/order services belong on hardened VM2 after certification.
-The planned `EXEC-011` bridge will preserve raw protected venue references while
-projecting normalized decision, intent, order, fill, position, cash, fee, funding,
-margin, incident and reconciliation events into immutable trade episodes compatible
-with classic-backtest reporting. Mission Control will expose environment-labelled
-shadow/demo/live health, lag, positions, orders, fills, costs, PnL, incidents and
-exact replay lineage. Until that package and its dependencies pass, venue state is
-inspectable through Bulletproof artifacts and CLI diagnostics, not a complete Mission
-Control execution console.
+The source-complete `EXEC-011` bridge preserves only digests of protected raw venue
+records while projecting normalized decision, intent, order, fill, position, cash,
+fee, funding, margin, incident and reconciliation events into immutable trade episodes
+compatible with classic-backtest reporting. Bulletproof owns normalization and replay;
+Hermes verifies the exact producer receipt and retains a bounded sanitized projection.
+Mission Control exposes explicit shadow/demo/live state, freshness, positions, cash,
+orders, fills, completed episodes, incidents, reconciliation breaks and receipt,
+projection and event-head lineage. Deterministic fixtures prove the software path, not
+venue readiness: private-stream restart, partial-fill, correction and outage drills on
+the hardened EXEC1 host remain required separately for Binance and Bybit qualification.
 
 ### 5.8.1 SHADOW-001 prospective journal and replay
 

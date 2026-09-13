@@ -238,7 +238,7 @@ provable increments. Each must be copied into the executable backlog before work
 | EXEC-008 | Venue adapter certification and demo parity dossier | No adapter reaches micro-live without environment-specific certification |
 | EXEC-009 | **Source-complete; live venue evidence awaits EXEC1.** Venue/model/strategy/infrastructure degradation and execution feedback loop | Alerts cause bounded restriction, fallback, demotion or kill review, never self-modifying execution or automatic restoration |
 | EXEC-010 | Asset-class expansion qualification | Each new market gets a separate mechanics/data/adapter/risk dossier |
-| EXEC-011 | Canonical Binance/Bybit telemetry, trade replay and Mission Control execution observability | Shadow, demo and live venue state is environment-labelled, reconciled and reproducible to declared backtest-compatible tolerances without exposing credentials |
+| EXEC-011 | **Source-complete; live venue evidence awaits EXEC1.** Canonical Binance/Bybit telemetry, deterministic trade replay and Mission Control execution observability | Shadow, demo and live venue state is environment-labelled, reconciled and reproducible to declared backtest-compatible tolerances without exposing credentials; venue qualification still requires private-stream drills |
 
 ### I. Product, Mission Control and founder operations
 
