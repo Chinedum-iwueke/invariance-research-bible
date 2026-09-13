@@ -2,28 +2,39 @@
 
 ## Claim
 
-The production-like Bybit demo certification contract is implemented and fails closed. DEMO-001 is not operationally certified because the required venue pass cannot run from the present hosts.
+Bybit demo execution is production-certified on the Lagos EXEC2 host. This evidence
+does not authorize live trading, capital allocation, scaling or a profitability claim.
 
-## Implemented boundary
+## Venue evidence
 
-- Bulletproof computes the certification; Hermes stores only its immutable schema and exact receipt.
-- Each drill records whether it is venue-observed or an authenticated in-environment replay and binds a content digest.
-- Venue observation is mandatory for authentication, clock, current instrument constraints, order/fill/cancel/amend/rejection behavior, private reconnect, restart reconciliation and final flattening.
-- The adapter now retains `minOrderQty`, `maxOrderQty` and `minNotionalValue` from current Bybit instrument metadata.
-- Qualification expires and requires exact dependency receipts, a PLAT-005 digest, a secret-free credential fingerprint, no withdrawal authority, the demo endpoint and a zero-order/zero-position terminal state.
+- All 16 required authenticated and in-session replay drills passed against
+  `api-demo.bybit.com`.
+- Dynamic instrument discovery bounded the mutation; submit, amend, cancel, typed
+  rejection, minimum-size fill and immediate reduce-only flatten were observed.
+- Private-stream reconnect, restart reconciliation, duplicate/stale/partial-fill replay,
+  incident retention and independent runtime kill passed.
+- The closure reconstructed 18 canonical events, six orders, four fills and two trade
+  episodes. Terminal open orders and position quantity were both zero.
+- Protected raw venue history remains mode `0600`, root-owned on EXEC2. No secret was
+  published into Hermes or Mission Control.
 
-## External blocker observed on 2026-09-12
+## Immutable production evidence
 
-Both VM1 and VM2 returned HTTP 403 for unauthenticated `https://api-demo.bybit.com/v5/market/time`. No `BYBIT_DEMO_API_KEY` or `BYBIT_DEMO_API_SECRET` was available to the execution process. The system therefore sent no order, created no venue-observed receipt and grants no demo or micro-live eligibility.
+- DEMO-001 receipt: `9c231639-9797-4824-be69-e3e809d22776`
+- DEMO-001 receipt digest: `19750e4734a40ddda7d600a0fbc6eb96a5b2c8dc818ab5b718b0e078fba6b17f`
+- DEMO-001 schema digest: `01f9a4c176f8fbed5e4a3a422b54f196ae7f74cd8fd87246a6d154970dbd7ffc`
+- EXEC-008 receipt: `b6dd6547-6510-4aee-9154-033e468407de`
+- RISK-005 fail-closed receipt: `c2938956-9c93-4482-a9f6-a3f108cd4d6a`
+- EXEC-009 receipt: `f9d544ae-3ce0-4c3a-89d5-13a5b4758eb0`
+- EXEC-011 receipt: `db0bb60f-60f8-49ad-ac26-3a25ce34894f`
+- Publication report digest: `e886e6bae0a47c2a69ef487900d1bfeceb63f1a501b0e0e8322dfe7c4190d5e0`
+- VM2 migration head: `e8b4c2d60f31`; rebuilt API healthy.
 
-## Source and deployment evidence
+RISK-005 intentionally recorded missing candidate admission as a deterministic deny
+with zero effective quantity. That proves the risk service remains available and closed
+to exposure when no genuine RISK-004 admission exists.
 
-- Bulletproof PR #297: merge `41eaaaeb73aa95b8bfec40563a0f6d0f421ee113`; 1,503 tests passed with 28 declared skips and all CI shards passed.
-- Hermes PR #237: merge `3f4eb263046f7423fdf5e701560d1cac5bb5185b`; 774 backend tests and all CI gates passed.
-- VM2: migration `c6f2a9d48b70`; healthy image `sha256:edc7aac7b4149db86b08d3cc1a227eb8715a4c91cefc532fe63ac6381f383c22`.
-- Active immutable schema: `240bfa4c-1f98-48de-80c3-be4297dfd5e8`, digest `64376e2bbeb981f47282218bbc567d2872db455618833f91e9d78dd18fc5ca8d`.
-- No DEMO-001 quantitative receipt was registered because no venue run completed.
+## Rollback
 
-## Remaining acceptance
-
-Run from a Bybit-permitted always-on execution host with dedicated demo trade credentials. Complete every drill, prove final flat state, register the exact receipt in Hermes and retain the dossier. A failed venue drill is a terminal failed certification, not permission to weaken a threshold.
+Expire or revoke certification, freeze submission, cancel and flatten demo state under
+separate emergency authority, and preserve all raw history, incidents and receipts.

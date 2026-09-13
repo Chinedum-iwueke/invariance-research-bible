@@ -346,11 +346,12 @@ or capital-bearing endpoint was consumed.
 This is operational evidence, not a profitability result and not live authority. The
 secret-free dossier has SHA-256
 `a33139834e8372bd3ac99c2a36eb156c551cec80e3e796d49951f4788bac4483`.
-DEMO-001 remains incomplete until Bulletproof binds every exact upstream receipt and
-emits the qualified certification receipt. EXEC-011 likewise remains incomplete until
-the venue history becomes an immutable canonical event replay, Hermes admits the exact
-producer receipt, and Mission Control reproduces the resulting order, fill, position,
-fee and reconciliation view.
+The closure subsequently bound every exact upstream receipt and emitted qualified
+DEMO-001 receipt `19750e4734a40ddda7d600a0fbc6eb96a5b2c8dc818ab5b718b0e078fba6b17f`.
+EXEC-011 converted the protected venue history into 18 canonical events, six orders,
+four fills and two trade episodes. Hermes admitted the exact receipt and Mission Control
+reproduced the flat projection under digest
+`bf8c4aa08145afc03c1810098503be3bf62f5384c23f264a624cff66871061ac`.
 
 ## 5.6 Research memory and Hermes bridge
 
@@ -419,26 +420,25 @@ These components do **not** make live or demo operation a keys-only setup. A ven
 profile is usable only after least-privilege secret installation, environment and
 account verification, clock and instrument-filter checks, public/private stream
 readiness, restart recovery, REST-to-stream reconciliation, kill-switch rehearsal
-and a current certification dossier. Bybit demo is currently the nearest complete
-bounded path. Binance private-stream parity and continuous compiled-strategy market
+and a current certification dossier. Bybit demo is now the first completed bounded
+venue path. Binance private-stream parity and continuous compiled-strategy market
 data execution remain release gates; live profiles are canaries, not general capital
 authority.
 
 Shadow execution belongs on VM1 initially. It consumes public/read-only venue feeds,
 records prospective decisions and simulated fills, and cannot submit orders. Demo and
-capital-bearing collectors/order services belong on hardened VM2 after certification.
-The source-complete `EXEC-011` bridge preserves only digests of protected raw venue
+capital-bearing collectors/order services belong on the hardened EXEC2 venue host.
+The production-activated `EXEC-011` bridge preserves only digests of protected raw venue
 records while projecting normalized decision, intent, order, fill, position, cash,
 fee, funding, margin, incident and reconciliation events into immutable trade episodes
 compatible with classic-backtest reporting. Bulletproof owns normalization and replay;
 Hermes verifies the exact producer receipt and retains a bounded sanitized projection.
 Mission Control exposes explicit shadow/demo/live state, freshness, positions, cash,
 orders, fills, completed episodes, incidents, reconciliation breaks and receipt,
-projection and event-head lineage. Deterministic fixtures prove the software path, not
-venue readiness: private-stream restart, partial-fill, correction and outage drills on
-a hardened, measured and geographically eligible execution host remain required
-separately for Binance and Bybit qualification. The first EXEC1 allocation is suitable
-for independent fleet observation but failed that venue-egress boundary.
+projection and event-head lineage. Bybit demo has passed the authenticated and
+in-session replay drills on EXEC2; Binance demo and every live environment still require
+their own current qualification. The first EXEC1 allocation remains suitable for
+independent fleet observation but failed the venue-egress boundary.
 
 ### 5.8.1 SHADOW-001 prospective journal and replay
 
@@ -1223,7 +1223,8 @@ VM2 runs migration `a4d9e7c26b30`, healthy image
 active safety schema `4d426d8b-1aca-4779-99c8-cb09aff75c1f` and exact receipt
 `5088ec6d-a852-4684-b669-c829f65efc46`. All four required no-network drills passed.
 VM1's installed safety state remains deliberately frozen; no order or capital authority
-was exercised. DEMO-001 remains responsible for real demo-venue recovery evidence.
+was exercised. DEMO-001 later supplied the separate real demo-venue recovery evidence
+without changing this no-network qualification receipt.
 
 ### 5.8.25 EXEC-008 venue adapter certification and demo parity
 
@@ -1390,21 +1391,23 @@ and zero position. It grants no live-order, capital, allocation, promotion, scal
 profitability authority.
 
 The first production attempt on 2026-09-12 stopped honestly before credentials or
-orders: both VM1 and VM2 received HTTP 403 from Bybit's demo server-time endpoint, and
-the execution process had no dedicated demo credentials. The source gate is complete;
-venue certification remains externally blocked until an allowed execution host can
-run and retain all drills. No fixture is substituted for that missing evidence.
+orders: both VM1 and VM2 received HTTP 403 from Bybit's demo server-time endpoint. No
+fixture was substituted. That failure remains evidence of the location boundary rather
+than being overwritten by the later successful run.
 The first EXEC1 VPS was provisioned and hardened on 2026-09-13, but independent egress
 checks identified Oregon, United States. It is retained as the external fleet observer
 and receives no venue credentials or order authority. A distinct hardened EXEC2 host
 now has measured Lagos, Nigeria egress and HTTP 200 reachability to Bybit main/demo and
 Binance spot/futures public time endpoints. This removes the location preflight blocker,
-but it is not demo qualification: no credential is installed, no authenticated drill or
-order has run, and no venue-observed receipt exists.
-The source changes are merged through Bulletproof PR #297 and Hermes PR #237. VM2
-runs migration `c6f2a9d48b70` and the active immutable contract digest is
-`64376e2bbeb981f47282218bbc567d2872db455618833f91e9d78dd18fc5ca8d`;
-there is deliberately no DEMO-001 quantitative receipt yet.
+and later received dedicated demo credentials under the root-owned execution boundary.
+All 16 required drills then passed against Bybit demo, including minimum-size entry,
+immediate reduce-only flatten, reconnect, restart reconciliation and kill behavior.
+VM2 runs migrations through `e8b4c2d60f31`. Hermes registered DEMO-001 receipt
+`9c231639-9797-4824-be69-e3e809d22776` and EXEC-011 replay
+`c2107e96-4c87-4ca0-a09e-d1bb244cf338`; publication report
+`e886e6bae0a47c2a69ef487900d1bfeceb63f1a501b0e0e8322dfe7c4190d5e0`
+proves qualification and Mission Control visibility. This remains demo evidence only:
+it grants no live endpoint, capital, allocation, scaling or profitability authority.
 
 ### 5.12 ALPHA-001 real-data campaign
 
