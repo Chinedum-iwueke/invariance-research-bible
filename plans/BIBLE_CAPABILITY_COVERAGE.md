@@ -238,7 +238,7 @@ provable increments. Each must be copied into the executable backlog before work
 | EXEC-008 | Venue adapter certification and demo parity dossier | No adapter reaches micro-live without environment-specific certification |
 | EXEC-009 | **Source-complete; Lagos execution egress prepared, live venue evidence pending.** Venue/model/strategy/infrastructure degradation and execution feedback loop | Alerts cause bounded restriction, fallback, demotion or kill review, never self-modifying execution or automatic restoration |
 | EXEC-010 | Asset-class expansion qualification | Each new market gets a separate mechanics/data/adapter/risk dossier |
-| EXEC-011 | **Source-complete; EXEC2 Lagos host prepared, authenticated evidence pending.** Canonical Binance/Bybit telemetry, deterministic trade replay and Mission Control execution observability | Shadow, demo and live venue state is environment-labelled, reconciled and reproducible to declared backtest-compatible tolerances without exposing credentials; venue qualification still requires private-stream drills |
+| EXEC-011 | **Bybit demo production replay complete.** Canonical venue telemetry, deterministic trade replay and Mission Control observability | Bybit demo state is reconstructed from 18 canonical events without exposing credentials; Binance demo and live environments remain separate qualification scopes |
 
 ### I. Product, Mission Control and founder operations
 
@@ -283,7 +283,7 @@ provable increments. Each must be copied into the executable backlog before work
 |---|---|---|
 | WS-001 | No-capital walking skeleton | Evidence to decision loop replays, including negative and invalid paths |
 | WS-002 | Whole-company degraded-mode and partial-publication compensation | No split-brain authority or orphan canonical state |
-| DEMO-001 | Venue demo certification with production-like controls; EXEC2 host preflight passed and authenticated drills pending | Reconciliation, kill, restart and incident drills pass on the actual venue environment |
+| DEMO-001 | **Complete for Bybit demo on EXEC2 Lagos.** Venue certification with production-like controls and immutable evidence | All 16 drills passed, exact receipts replayed, terminal state was flat and Mission Control visibility was proven |
 | LIVE-001 | Founder/risk-approved micro-live canary | Quantified loss envelope, expiry, independent kill and rollback pass |
 | LIVE-002 | Evidence-gated scaling and multi-candidate production | Scaling requires prospective, portfolio, execution and operations dossiers |
 | EVOLVE-001 | Schema/role/model migration and retirement | Old evidence replays after replacement; no history loss |
