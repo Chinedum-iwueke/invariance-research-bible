@@ -331,6 +331,27 @@ improve throughput when they preserve input bytes, ordering, causal timestamps a
 canonical outputs. A filename containing `fast` does not grant backtest execution
 authority.
 
+### 5.5.2 Lagos demo execution activation
+
+The Lagos EXEC2 host is the isolated venue-facing execution machine. On 2026-09-13,
+Bulletproof commit `50c383e3caf24dcbe3a21275f26699316be5aa8b` ran the bounded
+DEMO-001 mutation suite against Bybit's demo endpoint. Current instrument rules selected
+the smallest permitted BTCUSDT order within a USD 250 demo-notional ceiling. The suite
+observed submit, amend, cancel, rejection, entry fill, reduce-only exit, private-stream
+reconnect and restart reconciliation, then proved zero open orders and a flat terminal
+position. Replay-only drills covered partial-fill state, duplicate suppression, stale
+data, incident retention and an independently journaled runtime kill. No live credential
+or capital-bearing endpoint was consumed.
+
+This is operational evidence, not a profitability result and not live authority. The
+secret-free dossier has SHA-256
+`a33139834e8372bd3ac99c2a36eb156c551cec80e3e796d49951f4788bac4483`.
+DEMO-001 remains incomplete until Bulletproof binds every exact upstream receipt and
+emits the qualified certification receipt. EXEC-011 likewise remains incomplete until
+the venue history becomes an immutable canonical event replay, Hermes admits the exact
+producer receipt, and Mission Control reproduces the resulting order, fill, position,
+fee and reconciliation view.
+
 ## 5.6 Research memory and Hermes bridge
 
 The intended BT-009 founder path begins with an unrestricted plain-English scientific
