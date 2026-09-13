@@ -415,7 +415,9 @@ Mission Control exposes explicit shadow/demo/live state, freshness, positions, c
 orders, fills, completed episodes, incidents, reconciliation breaks and receipt,
 projection and event-head lineage. Deterministic fixtures prove the software path, not
 venue readiness: private-stream restart, partial-fill, correction and outage drills on
-the hardened EXEC1 host remain required separately for Binance and Bybit qualification.
+a hardened, measured and geographically eligible execution host remain required
+separately for Binance and Bybit qualification. The first EXEC1 allocation is suitable
+for independent fleet observation but failed that venue-egress boundary.
 
 ### 5.8.1 SHADOW-001 prospective journal and replay
 
@@ -1257,8 +1259,8 @@ This is a measurement and recommendation boundary, not an adaptive trading autho
 EXEC-009 cannot tune a strategy, alter routing, place orders, expose capital, promote a
 candidate or suppress an incident. Later CAD-001 and GOV-003 policy consumes its immutable
 incidents and recommendations. The deterministic source replay and contract tests are
-complete; live continuity claims await the allowed EXEC1 host and current venue-observed
-DEMO-001, EXEC-005 and EXEC-008 evidence.
+complete; live continuity claims await geographically eligible execution egress and
+current venue-observed DEMO-001, EXEC-005 and EXEC-008 evidence.
 
 ### 5.9 Quantitative computation ownership correction
 
@@ -1371,6 +1373,12 @@ orders: both VM1 and VM2 received HTTP 403 from Bybit's demo server-time endpoin
 the execution process had no dedicated demo credentials. The source gate is complete;
 venue certification remains externally blocked until an allowed execution host can
 run and retain all drills. No fixture is substituted for that missing evidence.
+The first EXEC1 VPS was provisioned and hardened on 2026-09-13, but independent egress
+checks identified Oregon, United States: Bybit main and demo returned HTTP 403 and
+Binance futures main returned HTTP 451, while Binance futures testnet alone was
+reachable. No venue credential was installed and no order was sent. EXEC1 may serve as
+the independent fleet watchdog, but demo/live qualification still requires the provider
+to assign genuinely eligible egress or a replacement host in an eligible jurisdiction.
 The source changes are merged through Bulletproof PR #297 and Hermes PR #237. VM2
 runs migration `c6f2a9d48b70` and the active immutable contract digest is
 `64376e2bbeb981f47282218bbc567d2872db455618833f91e9d78dd18fc5ca8d`;

@@ -14,7 +14,7 @@
 | RI-015 | Implemented/tested; deployment pending | Immutable hidden-suite evaluator and Mission Control truth surface pass locally; no live-corpus reasoning qualification is claimed before VM2 activation and an independent held-out run |
 | UI-003A/B/C | Implemented/tested/deployed/observed | Mac Research Workspace, grounded Copilot, graph exploration and canonical replay production-observed |
 | OPS-001 | Implemented/tested/deployed/observed | Durable approval outbox and readiness-race closure production-activated |
-| OPS-004 | Implemented/tested/deployed/partial | VM1/VM2 probes active; independent correlated-outage watchdog awaits an external always-on host |
+| OPS-004 | Implemented/tested/deployed/partial | VM1/VM2 probes active; hardened EXEC1 foundation exists, while private enrollment, restricted watchdog activation and correlated-outage rehearsal remain |
 | OPS-005 | Implemented/tested/deployed/observed | Two verified generations, isolated 77-table restore drill and persistent VM2 timers retained |
 | OPS-006/CHAN-002 | Implemented/tested/deployed/observed | Canonical conversations and durable threaded Telegram transport passed a two-thread restart replay |
 | UI-007 | Implemented/tested | Integrated conversation-to-proposal/task/approval/evidence workspace passes source and responsive checks; Mac reinstall and live execution replay remain |
@@ -101,8 +101,10 @@ must never be stored in this repository.
    market-model coverage; do not reintroduce the deprecated fast path.
 3. Execute `WS-001` to extend BT-009's bounded synthetic VM2 replay into the broader
    company walking skeleton without capital authority.
-5. Provision the deferred external watchdog and rehearse correlated VM1/VM2 outage
-   detection before upgrading OPS-004 from partial to production-qualified.
+5. Finish the hardened EXEC1 host's correct-tailnet enrollment, restricted watchdog
+   credential and fleet-probe activation, then rehearse correlated VM1/VM2 outage
+   detection before upgrading OPS-004 from partial to production-qualified. Its
+   measured Oregon egress is not eligible for Bybit/Binance production execution.
 6. Add encrypted off-host control-plane backup replication under PLAT-007; OPS-005's
    local verified lifecycle remains active but is not a substitute for disaster-domain
    separation.
