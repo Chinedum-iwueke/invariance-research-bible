@@ -690,7 +690,7 @@ silently supply a formula, parameter value or quantitative result.
 
 RI-014D makes that stronger use automatic and proportional. When an agent needs an
 equation, the control plane first looks for an immutable receipt keyed to the exact
-source region, representation, semantic-token expression, assurance policy and
+source region, representation, lossless character expression, assurance policy and
 required level. A cache hit avoids corpus reprocessing. A miss runs the existing
 independent parser outputs through source binding, exact token comparison and lossless
 AST checks. Only unanimous passing evidence can issue `machine_verified`; otherwise
@@ -705,6 +705,16 @@ prove the equation's scientific premise or create research, shadow, order or cap
 authority. ALPHA-004 and the deterministic calculator both validate that binding,
 closing the route where a caller could previously submit an arbitrary digest-shaped
 claim.
+
+The first production proof ran on 14 September 2026. VM2 migration
+`a0d6e8f92b51` and merged revision
+`504fb9ceea29d05cf571f2334cb74ccc6d9e5714` issued source-bound
+`machine_verified` receipt
+`441d4208430936b44830ebbf47dc8c21ca72a5ad5e355143e695b8de41f643b2`,
+reused the cached request and rejected a mismatched expression. The report digest
+is `675ffd7409aedb864dd535272ff89b150ef9ce0a2e1afa65310d1ac7cf10ed4c`.
+This demonstrates the just-in-time mechanism, not corpus-wide mathematical or
+institutional-intelligence qualification.
 
 ## 4.12 Incremental derived-state orchestration
 
