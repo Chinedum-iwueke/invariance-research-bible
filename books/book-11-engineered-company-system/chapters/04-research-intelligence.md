@@ -682,10 +682,11 @@ its own answer cannot satisfy this gate.
 
 ALPHA-004 consumes RI evidence under this claim boundary. It may ask an LLM to locate,
 transcribe or explain a mathematical expression, but that response remains provisional.
-An equation becomes calculation-bearing only when its glyph-faithful source span is
-replayed exactly or a separate deterministic or independent verification receipt is
-bound to it. Pending or disputed notation can inspire a question, with the uncertainty
-visible, but cannot silently supply a formula, parameter value or quantitative result.
+Source replay makes an equation locatable and explainable but, while RI-014 remains
+unqualified, does not make it calculation-bearing. That stronger use requires a
+separate deterministic or independent verification receipt. Pending, replay-only or
+disputed notation can inspire a question, with the uncertainty visible, but cannot
+silently supply a formula, parameter value or quantitative result.
 
 ## 4.12 Incremental derived-state orchestration
 

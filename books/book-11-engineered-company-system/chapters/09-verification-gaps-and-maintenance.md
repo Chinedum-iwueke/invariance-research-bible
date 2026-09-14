@@ -200,11 +200,12 @@ that every page has been understood.
 
 ALPHA-004 applies the same rule during continuous discovery. An LLM may act as a
 source-bound locator, transcription assistant and explanation generator. It is not an
-independent verifier of its own reconstruction. Exact source replay or a separately
-identified deterministic or independent receipt is required before an equation can
-drive a calculation or qualification; otherwise the candidate records `pending`
-equation assurance and abstains. This makes more of the corpus usable without
-converting model confidence into invented mathematical truth.
+independent verifier of its own reconstruction. Exact source replay supports locating
+and explanation only while RI-014 is unqualified. A separately identified deterministic
+or independent receipt is required before an equation can drive a calculation or
+qualification; otherwise the candidate records pending equation assurance and abstains.
+This makes more of the corpus usable without converting model confidence into invented
+mathematical truth.
 
 RI-014A entered source at control-plane commit `428bffa`. Its v2 reconstruction
 contract removes the single-line whitespace table heuristic, retains complete bounded
