@@ -688,6 +688,24 @@ separate deterministic or independent verification receipt. Pending, replay-only
 disputed notation can inspire a question, with the uncertainty visible, but cannot
 silently supply a formula, parameter value or quantitative result.
 
+RI-014D makes that stronger use automatic and proportional. When an agent needs an
+equation, the control plane first looks for an immutable receipt keyed to the exact
+source region, representation, semantic-token expression, assurance policy and
+required level. A cache hit avoids corpus reprocessing. A miss runs the existing
+independent parser outputs through source binding, exact token comparison and lossless
+AST checks. Only unanimous passing evidence can issue `machine_verified`; otherwise
+the request remains a visible exception.
+
+An `independently_verified` result has a separate boundary. The external attempt must
+carry an AGT-006 independence receipt whose subject is the assurance request cache
+key and must match the digest of the independently routed review. Different provider
+names or repeated calls to one model do not establish independence. The resulting receipt says only that the transcription and deterministic
+representation of this exact expression are fit for bounded calculation. It does not
+prove the equation's scientific premise or create research, shadow, order or capital
+authority. ALPHA-004 and the deterministic calculator both validate that binding,
+closing the route where a caller could previously submit an arbitrary digest-shaped
+claim.
+
 ## 4.12 Incremental derived-state orchestration
 
 RI-016 turns corpus freshness from a collection of manual rebuild commands into one
