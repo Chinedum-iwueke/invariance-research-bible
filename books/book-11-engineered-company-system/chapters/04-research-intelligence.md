@@ -672,6 +672,21 @@ exact corpus, graph projection and named model runtime, may report `qualified`. 
 snapshot VM2 activation and that independent live evaluation are pending, so live
 institutional intelligence remains `not_demonstrated`.
 
+To change that state honestly, operators must freeze a hidden, independently authored
+live-corpus suite spanning all thirteen domains and the complete task taxonomy, bind it
+to current corpus and projection digests, execute the named production model/runtime,
+and record an evaluator-independent run. `demonstrated` requires every absolute metric
+threshold and regression tolerance to pass with replayable responses and representative
+failures retained. A contract fixture, a successful retrieval, or the same model grading
+its own answer cannot satisfy this gate.
+
+ALPHA-004 consumes RI evidence under this claim boundary. It may ask an LLM to locate,
+transcribe or explain a mathematical expression, but that response remains provisional.
+An equation becomes calculation-bearing only when its glyph-faithful source span is
+replayed exactly or a separate deterministic or independent verification receipt is
+bound to it. Pending or disputed notation can inspire a question, with the uncertainty
+visible, but cannot silently supply a formula, parameter value or quantitative result.
+
 ## 4.12 Incremental derived-state orchestration
 
 RI-016 turns corpus freshness from a collection of manual rebuild commands into one
