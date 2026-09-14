@@ -1373,6 +1373,24 @@ credentials must exist, and founder/risk authorities must separately approve the
 short-lived plan. The resulting micro-live session must then flatten and reconcile and
 publish its signed dossier. It grants no scaling authority.
 
+The 2026-09-14 readiness audit tightened this boundary after finding that a generic
+PORT-001 `candidate` label could satisfy the source gate without the later lifecycle
+decision. Authorization bundle v1.1.0 now requires the complete immutable RISK-004
+producer receipt, verifies its receipt digest, binds it to the same candidate digest,
+requires an eligible `admit` recommendation, rejects automatic transition, and checks
+its expiry. This is a recommendation input to the separate founder/risk approval, not
+an allocation or order authorization. The focused live-control, startup, admission and
+authorization suite passes 26 tests.
+
+Production state remains honestly blocked. The first ALPHA-003 real-data experiment
+was reproducible and truth-certified but negative: it failed held-out trade support,
+positive net edge and doubled-cost net edge. No campaign has a candidate attempt and
+no RISK-004 admission receipt exists. Bybit demo mechanics and Mission Control replay
+are proven, but that short-lived certificate must be renewed before use; live EXEC-008
+certification, PLAT-007 off-host recovery and SEC-002 host/network hardening also remain
+open. Therefore no live authorization bundle can currently validate and no capital
+operation is permitted.
+
 ### 5.11.1 DEMO-001 production-like venue boundary
 
 DEMO-001 now has a Bulletproof-native certification contract rather than treating the
@@ -1557,3 +1575,10 @@ and failed outcomes all remain durable; a terminal BT-009 publication advances t
 campaign automatically to the next question unless every candidate gate passes, in
 which case it stops at prospective shadow review. No part of ALPHA-003 grants capital,
 orders, demo/live execution, production promotion or self-approval.
+
+The first automatically generated engineering mission exposed a deployment defect,
+not a quantitative result: Node/V8 could not start under the coding worker's
+`MemoryDenyWriteExecute=true` sandbox. The worker now supplies
+`NODE_OPTIONS=--jitless`, retaining write-xor-execute protection while allowing Codex
+to run. The original failed attempt and logs remain evidence; retry still requires the
+updated unit to be installed and restarted on VM1.
