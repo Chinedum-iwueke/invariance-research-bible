@@ -1582,3 +1582,35 @@ not a quantitative result: Node/V8 could not start under the coding worker's
 `NODE_OPTIONS=--jitless`, retaining write-xor-execute protection while allowing Codex
 to run. The original failed attempt and logs remain evidence; retry still requires the
 updated unit to be installed and restarted on VM1.
+
+### 5.15 ALPHA-004 continuous evidence-grounded discovery
+
+ALPHA-004 turns the research laboratory into a supervised, renewable operating
+loop. Two distinct VM1 workloads, the Research Intelligence director and senior
+researcher, consume bounded context assembled from cited literature, retained
+terminal research outcomes, market observations, execution degradation and
+portfolio gaps. A VM2 director records heartbeats and immutable cycle events,
+rejects instruction-like or non-predictive output, checks DATA-002/003 admission,
+deduplicates questions, replenishes DISC-009 and opens the next no-capital campaign
+when the prior queue is exhausted.
+
+The loop is delegated by a founder-approved mandate lasting no more than seven
+days. The mandate freezes venue, dataset, instrument, point-in-time, liquidity,
+cycle, candidate and campaign limits. Within that exact envelope, risk-zero card
+and bounded scientific-execution approvals may proceed overnight. New strategy
+code, wider data access, shadow admission, production promotion, orders and capital
+remain separately approval-bound. The proposer cannot serve as its evaluator, and
+an AGT-006 independence receipt remains mandatory at the promotion boundary.
+
+Hermes does not become a quantitative engine in this loop. It selects, validates,
+schedules and records. Bulletproof continues to own strategy implementations,
+market-data-derived calculations, causal and leakage gates, walk-forward execution,
+cost stress and terminal BT-009 evidence. Point-in-time Binance and Bybit universe
+eligibility is the intersection of the mandate with current admitted DATA-002/003
+bindings; unavailable, stale or insufficient-liquidity instruments cause abstention.
+
+Mission Control exposes mandate expiry, both worker heartbeats, cycle phase, stalls
+and counts for generated, rejected, duplicated, accepted, compiled, tested,
+falsified, invalid, failed, awaiting-engineering and shadow-reaching work. Disabling
+the services or allowing the mandate to expire stops replenishment without deleting
+the accumulated negative evidence that improves novelty and abductive selection.
