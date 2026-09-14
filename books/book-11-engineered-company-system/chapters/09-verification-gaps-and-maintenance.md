@@ -207,6 +207,16 @@ qualification; otherwise the candidate records pending equation assurance and ab
 This makes more of the corpus usable without converting model confidence into invented
 mathematical truth.
 
+RI-014D implements the just-in-time path rather than asking a founder to label every
+equation in advance. Requests are cached by immutable evidence identity, automatic
+machine verification uses two parser families plus exact source/token/AST checks, and
+only failures or genuinely stronger assurance requests enter an exception queue.
+Independent model output is admissible only with an AGT-006 receipt bound to that
+request. Mission Control exposes pending, awaiting-independent, needs-attention and
+verified counts. Global RI-014 corpus qualification and RI-015 reasoning qualification
+remain unchanged; a successful just-in-time receipt must never be generalized beyond
+its exact expression.
+
 RI-014A entered source at control-plane commit `428bffa`. Its v2 reconstruction
 contract removes the single-line whitespace table heuristic, retains complete bounded
 equation continuations, separates glyph-faithful content from safe layout
