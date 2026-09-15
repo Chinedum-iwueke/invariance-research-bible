@@ -476,3 +476,10 @@ tests (one optional skip), with clean lint. Reviewer execution, blocked-route
 recovery after profile registration and deployment remain open. The unchanged
 native inventory child is verified live after 47 minutes; this is ongoing work,
 not proof of full-lake admission or concurrent backtest completion.
+
+Blocked strategy-review recovery now watches active evaluator catalog changes,
+retries the same frozen request and appends audit evidence. It preserves producer
+exclusions and avoids duplicate retries or replacing assigned reviews. Fifty-one
+focused routing/campaign tests and lint pass. Reviewer provisioning/execution and
+production deployment remain open. The original supervised lake inventory has
+reached 1,730 objects without a restart; full registration is still unproven.

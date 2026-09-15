@@ -959,6 +959,12 @@ Missing reviewers appear as a blocked route and visible campaign reason. Tests:
 execution, blocked-route recovery following profile registration and deployment
 are still open. The existing native inventory child remains live after 47 minutes.
 
+Blocked-route recovery source follow-up: catalog changes trigger retry under the
+same frozen review subject/exclusions, with append-only audit evidence. Unchanged
+catalogs and assigned routes are no-ops. Fifty-one focused tests and lint pass.
+Reviewer services, production deployment and genuine concurrent executions remain
+open; the original supervised lake inventory has progressed to 1,730 objects.
+
 - **Engineering review and full-suite continuation (2026-09-15):** PR #271 pushes the scientific handoff after independent review closed recursive-JSON and question-mismatch failure paths. Controlled decoding/depth validation is identical across three consumers, preserving the closed planner schema. Fresh full suites passed 852 backend (one optional skip), 309 worker. CI pending. API independently confirms operation `1f24f55d-45c3-4eae-b3ac-6c129023f9c3` with fresh heartbeat and the original native scan, not a restarted attempt. Next native work must discover newly engineered cards and bind genuinely independent evaluator evidence; a hardcoded `independent_review_complete` boolean is insufficient for the requested qualification proof.
 
 - **Scientific engineering handoff source pass (2026-09-15):** New engineering contracts preserve bounded, validated JSON evidence for both coder and independent reviewer: exact candidate/campaign/question digests, admitted dataset, frozen window, instrument, tier, variant ceiling, RI citations and unchanged authority. Changed/missing discovery evidence blocks task creation. New explicitly approved scopes include the existing native draft pipeline and assignment runner so generated cards are discoverable without weekend-template substitution; historical tasks/approvals are unchanged. Focused tests passed 20 campaign, eight proposal, 30 worker engineering/planner; lint passed. Source only, not deployed or proof of actual strategy engineering/concurrent backtests.
