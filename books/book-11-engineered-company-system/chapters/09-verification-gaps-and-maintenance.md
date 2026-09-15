@@ -315,3 +315,13 @@ operator reauthentication remains required. Recovery requires a later explicit
 task-resume event with exact mandate, cycle and stage bindings; original failure
 events remain authoritative. Approval and online services are not productive
 discovery proof. Two overlapping terminal BT-009 receipts remain outstanding.
+
+Operator reauthentication and restart were followed by an audited resume at
+20:04 UTC on September 15. Attempt 4 still failed startup. A read-only namespace
+trace identified `CODEX_HOME/installation_id`, opened read-write, as the remaining
+mandatory write. Hermes PR #265 gives discovery a private runtime home and binds
+the original authentication file read-only into it; credentials are not copied
+and `ProtectSystem=strict` remains enabled. Plugin/app integration is disabled
+for bounded discovery. The corrected namespace completed authenticated inference
+with `runtime-ok` after one temporary capacity response. The production units
+still require privileged reinstall before another audited discovery resume.
