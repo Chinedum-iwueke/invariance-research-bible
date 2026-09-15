@@ -325,3 +325,18 @@ and `ProtectSystem=strict` remains enabled. Plugin/app integration is disabled
 for bounded discovery. The corrected namespace completed authenticated inference
 with `runtime-ok` after one temporary capacity response. The production units
 still require privileged reinstall before another audited discovery resume.
+
+The founder completed that reinstall at 20:10 UTC on September 15. Audited
+attempt 5 completed intelligence inference at 20:13 UTC, but abstained because
+its immutable context contained no literature citations. The abstention and
+earlier failures remain evidence. Focused data-aware retrieval, under unchanged
+calibration, now supplies canonical citations and bounded query receipts.
+An initial recovery transaction failed atomically because two pending events
+shared a sequence under `autoflush=False`; PR #267 fixes append ordering and
+tests it against isolated PostgreSQL, rather than relying only on mocks.
+The rebuilt VM2 API is healthy. Fresh cycle
+`6ac128cf-9163-48d3-a1a7-e925db4a2704` contains nine citations and is processing
+intelligence synthesis. Productive hypothesis acceptance, native qualification,
+and two overlapping terminal BT-009 publications are still separate unclosed
+gates. Neither LLM inference nor retrieved literature qualifies whole-corpus
+mathematical fidelity or demonstrates RI-015 reasoning independence.
