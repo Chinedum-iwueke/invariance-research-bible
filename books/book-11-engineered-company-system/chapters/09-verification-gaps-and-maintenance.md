@@ -357,3 +357,20 @@ Stable/volatile groups are optional descriptive metadata, not mandatory research
 universes. Completion requires file-level catalog accounting and two genuine
 qualified one-year native jobs with overlapping execution and terminal receipts;
 online agents, fixture replay and BTC-only template reuse are insufficient.
+
+ALPHA-007 now has native content-bound inventory and protected CLI source at
+`ed2367b`, with 14 inventory/admission/producer tests passing. Hermes source at
+`b75c22e` registers only that exact inventory producer, exposes its summary and
+scoped operation reports, and corrects discovery identifiers and liquidity
+context. The full backend suite passes 831 tests (one optional database skip),
+and the worker suite passes 289. Actual full-lake scanning, registration, quality
+qualification, broader approved execution and concurrent terminal publications
+remain unproven. No expanded mandate, native-code approval or capital action
+is inferred from this source evidence.
+
+Independent ALPHA-007 pre-landing review caught incomplete traversal, unsafe file
+reopening, special files, incorrect nested-column time bounds, fabricated summary
+acceptance and concurrent report resurrection. Corrections at native `aa82838`
+and Hermes `1743cf7` pass 19 native and 834 backend tests (one optional database
+skip). PRs #307 and #268 are open with CI running. This is stronger source/test
+evidence, not production registration or the requested concurrent backtest proof.
