@@ -1614,3 +1614,25 @@ and counts for generated, rejected, duplicated, accepted, compiled, tested,
 falsified, invalid, failed, awaiting-engineering and shadow-reaching work. Disabling
 the services or allowing the mandate to expire stops replenishment without deleting
 the accumulated negative evidence that improves novelty and abductive selection.
+
+### 5.16 ALPHA-005 conversational founder hypothesis intake
+
+ALPHA-005 joins founder conversation to the same governed laboratory rather than a
+second chat-only research path. When the founder asks Hermes to challenge or test an
+idea, the planner may propose a `founder_hypothesis_intake` operation bound to an
+active weekly mandate. Approval writes a digest-bound queue item. It neither validates
+the premise nor starts a backtest.
+
+The Research Intelligence director handles evidence retrieval first. The separately
+chartered senior researcher then contests predictive meaning, causal timing, novelty,
+falsifiability and admitted data availability. A surviving typed card enters the same
+DISC-009 and ALPHA/BT-009 route as autonomously discovered work; a rejection is retained
+as useful institutional evidence.
+
+Founder-submitted work defaults to at least 365 days of historical evidence and at
+most eight preregistered variants. Stable, volatile and eligible universe slices are
+selected point in time before outcome evaluation. The system records rejected universe
+alternatives and never calls the best-performing ex-post slice the chosen universe.
+Mission Control shows the queue and its exact constraints, while background polling
+preserves the founder's reading position. No conversational action grants code, shadow,
+order, capital or self-evaluation authority.
