@@ -378,6 +378,17 @@ being added separately; neither inventory nor base OHLCV quality grants executio
 authority or verifies auxiliary timing. This correction retains the entire lake
 scope rather than treating the canonical subset as the full accounting goal.
 
+The bounded custody correction is pushed in native PR #308 (`19d361c`) and
+Hermes PR #269 (`7346bc8`). Native shard receipts retain at most 10,000 objects,
+globally ordered paths and a source-bound completeness root; dataset identity
+stays stable across scan IDs. Window quality consumes verified shards without
+rebuilding the million-object envelope. Hermes checks complete custody and the
+exact named quality gates without computing quantitative estimates. Fresh tests:
+850 backend passed (one optional database skip), 295 worker passed and 32 native
+focused tests passed. Corrective CI and production replay remain open; no full
+registration, admitted candidate, broadened mandate or concurrent backtest is
+claimed from these tests.
+
 Independent ALPHA-007 pre-landing review caught incomplete traversal, unsafe file
 reopening, special files, incorrect nested-column time bounds, fabricated summary
 acceptance and concurrent report resurrection. Corrections at native `aa82838`
