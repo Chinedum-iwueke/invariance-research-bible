@@ -347,3 +347,13 @@ domain/cluster keys that the canonical API schema rejects. All three therefore
 remain `candidate_schema_invalid`, not scientifically falsified results.
 Discovery runtime and citation recovery are demonstrated; producer/consumer
 contract repair and two qualified concurrent native publications remain open.
+
+The founder explicitly set full-lake autonomous integration as the next active
+goal, tracked by ALPHA-007. Extend existing native DATA catalog/quality producers,
+then hypothesis-driven representation and mixed-basket selection, discovery
+contract closure, governed native strategy engineering, shared-budget concurrent
+execution, and terminal publication with continuous replenishment, in that order.
+Stable/volatile groups are optional descriptive metadata, not mandatory research
+universes. Completion requires file-level catalog accounting and two genuine
+qualified one-year native jobs with overlapping execution and terminal receipts;
+online agents, fixture replay and BTC-only template reuse are insufficient.
