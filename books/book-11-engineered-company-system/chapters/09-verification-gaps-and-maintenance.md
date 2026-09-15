@@ -456,3 +456,14 @@ acceptance and concurrent report resurrection. Corrections at native `aa82838`
 and Hermes `1743cf7` pass 19 native and 834 backend tests (one optional database
 skip). PRs #307 and #268 are open with CI running. This is stronger source/test
 evidence, not production registration or the requested concurrent backtest proof.
+
+The subsequent ALPHA-007 source pass freezes actual authorized producer profiles
+at lease and binds explicit immutable specification/causality reviews to the exact
+approved card, data, window and grid. Drafter and qualifier identities remain
+excluded even when the same agent changes package versions. Native execution
+fails before compute without a bound approving review; zero-trial engineering
+failures are retained without being called scientific falsification. Thirty-one
+native regressions pass. Actual supervised reviewer registration/execution,
+engineering-author provenance, deployment, broader approved lake admission and
+two concurrent terminal BT-009 results remain open. The unchanged supervised
+inventory run has progressed to 1,600 objects, not complete-root registration.
