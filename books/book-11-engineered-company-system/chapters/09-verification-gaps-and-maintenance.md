@@ -389,6 +389,17 @@ focused tests passed. Corrective CI and production replay remain open; no full
 registration, admitted candidate, broadened mandate or concurrent backtest is
 claimed from these tests.
 
+ALPHA-007 production continuation merged native PR #308 and Hermes PR #269 after
+ten native and eight Hermes CI checks passed. The worker suite passed 300 tests.
+VM2 deployed healthy merge `2e3750da0`. VM1 user systemd unit
+`alpha007-full-lake-20260915.service` supervises ledger-acknowledged run
+`0767bfbe-206f-4290-9900-f9771b7a83b8`, bound to native `19d361c`. Incremental
+shard publication must finish before complete-root registration and frozen
+2025-05-01 through 2026-05-01 UTC panel quality. Full-lake registration remains
+in progress, not completed; adaptive baskets, broader approved execution and two
+concurrent terminal scientific backtests remain unproven. Service activity alone
+does not close this boundary.
+
 Independent ALPHA-007 pre-landing review caught incomplete traversal, unsafe file
 reopening, special files, incorrect nested-column time bounds, fabricated summary
 acceptance and concurrent report resurrection. Corrections at native `aa82838`
