@@ -389,6 +389,13 @@ focused tests passed. Corrective CI and production replay remain open; no full
 registration, admitted candidate, broadened mandate or concurrent backtest is
 claimed from these tests.
 
+Independent review of the ALPHA-007 catalog-grounding pass caught chat/planner
+overrides of the new universe default. Hermes `9c03a1f`, PR #270, corrects both;
+conversation tests passed seven and planner tests 17. Full pre-correction suites
+passed 852 backend tests (one optional database skip) and 301 worker tests. CI and
+deployment for this follow-up remain pending, and the original full-lake scan is
+still supervised under its exact unit/PID rather than restarted.
+
 The next ALPHA-007 source pass exposes receipt-backed full-lake catalog grounding
 to discovery without modifying executable mandate bindings. Universe hints default
 to all eligible assets; fixed stable/volatile labels are optional. Tests reject
