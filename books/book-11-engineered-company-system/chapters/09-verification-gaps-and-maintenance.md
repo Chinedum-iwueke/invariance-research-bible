@@ -389,6 +389,13 @@ focused tests passed. Corrective CI and production replay remain open; no full
 registration, admitted candidate, broadened mandate or concurrent backtest is
 claimed from these tests.
 
+The next ALPHA-007 source pass exposes receipt-backed full-lake catalog grounding
+to discovery without modifying executable mandate bindings. Universe hints default
+to all eligible assets; fixed stable/volatile labels are optional. Tests reject
+catalog-only ETH execution without an admitted binding. Focused backend tests
+passed 57 cases, strengthened context tests 23, worker prompt/contracts seven and
+lint passed. Deployment and genuine adaptive basket execution remain open.
+
 ALPHA-007 production continuation merged native PR #308 and Hermes PR #269 after
 ten native and eight Hermes CI checks passed. The worker suite passed 300 tests.
 VM2 deployed healthy merge `2e3750da0`. VM1 user systemd unit
