@@ -300,3 +300,11 @@ Mission Control's backtest activity projection exposes waiting/running/finished
 tasks, tiers, frozen bindings, heartbeat phases, native summary metrics, failed
 gates and receipts. It preserves failures and makes unknowns visible; Hermes
 does not recompute quantitative results or infer admission from task success.
+
+The backtest view is deployed on VM2 and reinstalled on Mac; live desktop/mobile
+checks show 12 historical tasks and the eight-trial negative Tier2B attempt without
+scroll jumps. A new one-year mandate first failed because the real-data admission
+receipt bound the old native commit. The unchanged panel was re-admitted under an
+explicitly verified native import path and `a864ac0` checkout, then registered on
+VM2. `ALPHA004-CAPACITY-20260915` now awaits founder approval. Creating this
+request is not a successful discovery attempt or the two-job terminal proof.
