@@ -306,5 +306,12 @@ checks show 12 historical tasks and the eight-trial negative Tier2B attempt with
 scroll jumps. A new one-year mandate first failed because the real-data admission
 receipt bound the old native commit. The unchanged panel was re-admitted under an
 explicitly verified native import path and `a864ac0` checkout, then registered on
-VM2. `ALPHA004-CAPACITY-20260915` now awaits founder approval. Creating this
-request is not a successful discovery attempt or the two-job terminal proof.
+VM2. The founder approved `ALPHA004-CAPACITY-20260915` on September 15.
+Its first intelligence task `A4-aae38741-001-I` failed three attempts on
+read-only Codex runtime initialization. The correction directs SQLite and logs
+to a private attempt directory without making credentials writable. A live
+startup probe then reached authentication but returned `refresh_token_reused`;
+operator reauthentication remains required. Recovery requires a later explicit
+task-resume event with exact mandate, cycle and stage bindings; original failure
+events remain authoritative. Approval and online services are not productive
+discovery proof. Two overlapping terminal BT-009 receipts remain outstanding.
