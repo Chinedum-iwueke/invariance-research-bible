@@ -1636,3 +1636,49 @@ alternatives and never calls the best-performing ex-post slice the chosen univer
 Mission Control shows the queue and its exact constraints, while background polling
 preserves the founder's reading position. No conversational action grants code, shadow,
 order, capital or self-evaluation authority.
+
+### Representation-aware intake correction (2026-09-15)
+
+The native follow-up generalizes fixed durations to positive integer m/h/d units,
+with 7m, 12m and 2h classic-engine regression coverage. Seconds remain unsupported.
+Strict epoch-anchored UTC buckets, actual emission timestamps, no fabricated
+minutes and per-symbol strictly increasing input preserve causal semantics.
+Strategy-specific cadence and auxiliary-field qualifications are not bypassed.
+These source changes are not yet deployed; the earlier pinned intake capability
+snapshot remains historical evidence until refreshed against the new native commit.
+
+Conversational reasoning distinguishes downstream qualification blockers from
+clarification fields. Compile/respond outputs must not carry clarification-only
+fields; one bounded regeneration may correct an invalid output and persistent
+failure stops without execution. Prior recovery results remain immutable.
+
+Intake uses admitted catalog partitions, universe memberships, coverage and
+transformations, not an assumption that all local files are authorized. Reuse
+Bulletproof's strict UTC closed-bucket resampler and separate signal/execution
+clocks. The reviewed native snapshot supports 5m and 1h but not 10m. Auxiliary
+funding/OI/mark/index transformations need their own causal contracts. The current
+production snapshot proves Bybit BTCUSDT coverage, not full multi-venue universe
+admission. Source tests pass; refreshed production replay remains pending.
+
+ML branches from causal signal/state evidence through ML-002 projections and
+ML-001/003/004 model, evaluation and calibration receipts, then returns through
+the common portfolio/promotion gates. RL needs RL-001 transition, behavior-policy,
+propensity, action-support and reward lineage plus RL-002 off-policy evaluation.
+Neither a signal episode nor a registry entry grants training or trading authority.
+
+### Native capacity-governed laboratory (ALPHA-006)
+
+The laboratory reuses Bulletproof's global capacity scheduler rather than adding a
+Hermes compute engine. Each experiment freezes no more than eight informative grid
+combinations before results and uses up to eight spawned classic-engine workers.
+Two separately registered no-capital consumers can queue separate campaigns; one
+shared native database governs aggregate CPU/load/RAM and process-group pause/resume.
+Startup reservations and orphan locked jobs remain accounted for. Memory estimates
+must be calibrated on the actual universe, not advertised as measured capacity.
+
+Scheduling does not alter strategy, data, execution timing, financial risk or promotion
+gates. Assignment bytes and living lease-owner process identity are bound before
+execution; cancellation stops native groups and retains evidence. Capacity metadata
+travels with idle agent and active task heartbeats. Local tests reproduce classic
+trade/equity values exactly in serial and parallel. Deployment, fleet monitoring and
+two concurrent terminal BT-009 receipts remain required for operational completion.
