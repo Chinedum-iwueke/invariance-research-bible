@@ -398,6 +398,16 @@ active. Long-running VM1 planner/researcher prompt loading still requires a
 controlled restart, and full-lake completion and concurrent scientific execution
 remain unproven.
 
+The next engineering handoff source pass supplies the coder and independent
+reviewer identical bounded, validated JSON scientific evidence rather than
+leaving RI citations only in approval metadata. Evidence binds exact question,
+candidate, campaign, admitted dataset, window and variant ceiling; altered source
+evidence blocks task creation. New code remains explicitly approved, with native
+draft-pipeline/runner integration included in the proposed scope and historical
+approvals unchanged. Focused tests passed 20 campaign, eight proposal and 30
+worker engineering/planner. Actual generated/qualified strategies and concurrent
+native backtest receipts remain unproven.
+
 Independent review of the ALPHA-007 catalog-grounding pass caught chat/planner
 overrides of the new universe default. Hermes `9c03a1f`, PR #270, corrects both;
 conversation tests passed seven and planner tests 17. Full pre-correction suites
