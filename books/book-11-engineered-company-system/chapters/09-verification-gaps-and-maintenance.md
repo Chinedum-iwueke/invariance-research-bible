@@ -368,6 +368,16 @@ qualification, broader approved execution and concurrent terminal publications
 remain unproven. No expanded mandate, native-code approval or capital action
 is inferred from this source evidence.
 
+Production full-lake inspection subsequently counted 1,846,467 raw files and
+2,769 canonical files. The single-envelope inventory limit was inadequate, so
+the tracked production attempt was stopped explicitly; its failed ledger record
+and progress were preserved and no scanner was orphaned. Full registration is
+still open: bounded content-bound shard custody and a complete root receipt must
+replace the oversized envelope. Native window-specific panel quality checks are
+being added separately; neither inventory nor base OHLCV quality grants execution
+authority or verifies auxiliary timing. This correction retains the entire lake
+scope rather than treating the canonical subset as the full accounting goal.
+
 Independent ALPHA-007 pre-landing review caught incomplete traversal, unsafe file
 reopening, special files, incorrect nested-column time bounds, fabricated summary
 acceptance and concurrent report resurrection. Corrections at native `aa82838`
