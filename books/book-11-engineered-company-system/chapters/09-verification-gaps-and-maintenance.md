@@ -340,3 +340,10 @@ intelligence synthesis. Productive hypothesis acceptance, native qualification,
 and two overlapping terminal BT-009 publications are still separate unclosed
 gates. Neither LLM inference nor retrieved literature qualifies whole-corpus
 mathematical fidelity or demonstrates RI-015 reasoning independence.
+
+At 20:29 UTC that fresh cycle finished both inference stages and retained three
+proposals, but accepted none. The worker output schema permitted underscore
+domain/cluster keys that the canonical API schema rejects. All three therefore
+remain `candidate_schema_invalid`, not scientifically falsified results.
+Discovery runtime and citation recovery are demonstrated; producer/consumer
+contract repair and two qualified concurrent native publications remain open.
