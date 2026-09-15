@@ -467,3 +467,12 @@ native regressions pass. Actual supervised reviewer registration/execution,
 engineering-author provenance, deployment, broader approved lake admission and
 two concurrent terminal BT-009 results remain open. The unchanged supervised
 inventory run has progressed to 1,600 objects, not complete-root registration.
+
+Automatic strategy/causality routing now creates a bound immutable route after
+approval replay and excludes every frozen producer identity before evaluator
+selection. Missing reviewer capacity is explicitly blocked and surfaced through
+campaign planning detail. Source validation passes 49 focused and 875 backend
+tests (one optional skip), with clean lint. Reviewer execution, blocked-route
+recovery after profile registration and deployment remain open. The unchanged
+native inventory child is verified live after 47 minutes; this is ongoing work,
+not proof of full-lake admission or concurrent backtest completion.
