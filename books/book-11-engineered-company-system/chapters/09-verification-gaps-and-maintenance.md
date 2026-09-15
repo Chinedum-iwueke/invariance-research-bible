@@ -389,6 +389,15 @@ focused tests passed. Corrective CI and production replay remain open; no full
 registration, admitted candidate, broadened mandate or concurrent backtest is
 claimed from these tests.
 
+PR #270 subsequently merged and deployed to VM2 at `40ca4c759`, with container
+verification of the all-eligible default. Eight CI gates passed; final full suites
+passed 852 backend tests (one optional skip) and 302 worker. One unchanged
+child-start timeout failed during a concurrent run, then passed isolated and full
+reruns; this is retained rather than erased. The exact inventory unit remains
+active. Long-running VM1 planner/researcher prompt loading still requires a
+controlled restart, and full-lake completion and concurrent scientific execution
+remain unproven.
+
 Independent review of the ALPHA-007 catalog-grounding pass caught chat/planner
 overrides of the new universe default. Hermes `9c03a1f`, PR #270, corrects both;
 conversation tests passed seven and planner tests 17. Full pre-correction suites
