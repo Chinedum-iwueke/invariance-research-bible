@@ -279,3 +279,24 @@ thirteen-domain RI-009B `1.2.0` baseline are active. At epoch `577353`, forced-f
 `43885a98-501b-436a-9162-6f8fe4c9cdd5` reproduced the existing retrieval and graph
 content digests exactly, with zero pending changes and `current=true`. Production
 freshness and incremental/full equivalence are therefore evidenced rather than inferred.
+
+## September 15 production truth audit
+
+The native capacity director and two registered executor slots are active and
+authenticated, but their queue is empty. Operational closure still requires two
+overlapping terminal BT-009 attempts. Discovery workers restarted with the corrected
+jitless subprocess environment; a successful fresh attempt is still required.
+The current weekly mandate binds an old engine commit and a 30-day BTC window.
+Only a distinct founder-approved mandate can authorize the reviewed engine and
+one-year admitted window. Existing approvals must not be silently expanded.
+
+RI-014D demonstrates just-in-time source-bound assurance, not global mathematical
+accuracy. Twenty scientific benchmark regions remain unadjudicated, and RI-015
+has no live reasoning evaluation runs. RI-016 freshness does not close either gap.
+The senior researcher has literature retrieval and independent review wiring;
+productive discovery is not yet demonstrated by the current zero-hypothesis mandate.
+
+Mission Control's backtest activity projection exposes waiting/running/finished
+tasks, tiers, frozen bindings, heartbeat phases, native summary metrics, failed
+gates and receipts. It preserves failures and makes unknowns visible; Hermes
+does not recompute quantitative results or infer admission from task success.
