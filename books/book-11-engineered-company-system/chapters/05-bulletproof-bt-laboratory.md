@@ -1682,3 +1682,10 @@ execution; cancellation stops native groups and retains evidence. Capacity metad
 travels with idle agent and active task heartbeats. Local tests reproduce classic
 trade/equity values exactly in serial and parallel. Deployment, fleet monitoring and
 two concurrent terminal BT-009 receipts remain required for operational completion.
+
+Control-plane PR #260 is merged and the rebuilt VM2 API is verified healthy with
+matching image identities and unchanged migration head `b1e7f9a03c62`. Its advisory
+representation snapshot now binds native `6b3c068` and accepts the shared integer
+duration contract; earlier statements about a fixed allowlist are historical.
+The VM1 worker package is reinstalled; privileged registration/restart and concurrent
+terminal publication remain operational gates. No old approval is expanded.
