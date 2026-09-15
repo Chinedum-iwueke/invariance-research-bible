@@ -408,6 +408,23 @@ approvals unchanged. Focused tests passed 20 campaign, eight proposal and 30
 worker engineering/planner. Actual generated/qualified strategies and concurrent
 native backtest receipts remain unproven.
 
+PR #271 subsequently pushes the reviewed handoff, with deep-JSON and changed
+question rejection confirmed by independent source review. Fresh full suites
+passed 852 backend tests (one optional skip) and 309 worker; all eight CI checks passed, with deployment pending.
+Independent live API readback confirms the exact inventory operation's running
+state and fresh heartbeat. New native template discovery and independent
+evaluator receipt binding remain necessary before claiming genuinely qualified
+backtests; a constant boolean in qualification output is not sufficient proof.
+
+Native exact-question generated-card discovery now has ten passing source tests.
+It preserves immutable dataset/window bindings, rejects self-approval and unsafe
+files, and computes the real grid size. This is source engineering evidence,
+not scientific semantic qualification. The active roadmap is complete lake
+accounting and admission, catalog-grounded adaptive discovery, genuinely
+independent native strategy qualification, overlapping one-year classic runs,
+terminal publication and automatic replenishment. Shadow and capital remain
+separately gated on an actual survivor.
+
 Independent review of the ALPHA-007 catalog-grounding pass caught chat/planner
 overrides of the new universe default. Hermes `9c03a1f`, PR #270, corrects both;
 conversation tests passed seven and planner tests 17. Full pre-correction suites

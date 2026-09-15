@@ -942,6 +942,8 @@ package is not complete until its own tests, evidence and rollback boundary pass
 
 ### ALPHA-007 — Full-lake autonomous research integration and adaptive baskets
 
+- **Engineering review and full-suite continuation (2026-09-15):** PR #271 pushes the scientific handoff after independent review closed recursive-JSON and question-mismatch failure paths. Controlled decoding/depth validation is identical across three consumers, preserving the closed planner schema. Fresh full suites passed 852 backend (one optional skip), 309 worker. CI pending. API independently confirms operation `1f24f55d-45c3-4eae-b3ac-6c129023f9c3` with fresh heartbeat and the original native scan, not a restarted attempt. Next native work must discover newly engineered cards and bind genuinely independent evaluator evidence; a hardcoded `independent_review_complete` boolean is insufficient for the requested qualification proof.
+
 - **Scientific engineering handoff source pass (2026-09-15):** New engineering contracts preserve bounded, validated JSON evidence for both coder and independent reviewer: exact candidate/campaign/question digests, admitted dataset, frozen window, instrument, tier, variant ceiling, RI citations and unchanged authority. Changed/missing discovery evidence blocks task creation. New explicitly approved scopes include the existing native draft pipeline and assignment runner so generated cards are discoverable without weekend-template substitution; historical tasks/approvals are unchanged. Focused tests passed 20 campaign, eight proposal, 30 worker engineering/planner; lint passed. Source only, not deployed or proof of actual strategy engineering/concurrent backtests.
 
 - **Catalog-grounding deployment (2026-09-15):** PR #270 merged and VM2 deployed `40ca4c759`; container behavior confirms `all_eligible`. All eight CI gates passed. Final full suites passed 852 backend tests (one optional skip) and 302 worker. The prior concurrent run's unchanged child-start timing failure passed isolated and full reruns and is retained in validation evidence. The exact inventory operation remains active across deployment. VM1 planner/researcher prompt loading still needs controlled service restart; inventory completion, executable multi-asset admission and concurrent scientific backtests remain open.
@@ -1301,6 +1303,33 @@ LIVE-001 implementation from being mistaken for a deployable canary.
 - **Tests/evidence/rollback/done:** Test concentration, degradation, outage, loss limit and emergency kill. Retain founder/risk approvals and production dossier. Rollback reduces allocation or exits under deterministic controls. Done when scaling has current independent evidence and bounded loss.
 
 ## Shared-surface rules
+
+### Active Autonomous Research Roadmap (2026-09-15)
+
+1. ALPHA-007 / DATA-002/003: finish complete lake accounting, immutable shards,
+   structural panel quality and point-in-time admission. Raw assets without a
+   validated adapter remain visibly accounted for, not silently executable.
+2. ALPHA-004 / DISC-009: ground researchers in the complete catalog and prior
+   outcomes; choose assets, mixed baskets and causal representations before
+   results. Approve an expanded weekly mandate before broader execution.
+3. BT-009 / AGT-006: discover source-reviewed exact-question native cards,
+   generate/reuse YAML and strategy implementations, and bind genuinely
+   independent qualification evidence. Keep new-code approval explicit.
+4. ALPHA-002 capacity: run at most eight variants per hypothesis with the native
+   shared scheduler. Prove two authorized one-year scientific jobs overlap and
+   retain rich causal, failure, cost-stress and ML/RL-ready logging.
+5. BT-009 / ALPHA-004: publish both terminal receipts, learn from every outcome
+   and demonstrate automatic replenishment rather than repeated manual repair.
+6. RISK-004 / SHADOW-002 / DEMO-001 / LIVE-001: only a genuine surviving candidate
+   may enter prospective monitoring, environment-specific certification and
+   explicit bounded capital approval. No alpha or capital exposure is promised.
+
+The first five steps are the active delivery goal. Current scan remains running;
+no complete-root registration or concurrent terminal backtest proof is claimed.
+All eight control-plane PR #271 checks passed, with deployment pending. Native
+exact-question card discovery has ten passing source tests, including immutable
+binding and no-self-approval checks; independent evaluator enforcement remains
+open. Whole-corpus mathematics and RI-015 reasoning remain unqualified.
 
 - RI-001 owns canonical evidence schemas; no concurrent task may invent alternatives.
 - BT-003 owns the run-bundle producer contract; RI ingestion consumes it.
