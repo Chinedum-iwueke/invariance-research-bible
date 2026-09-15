@@ -917,6 +917,8 @@ package is not complete until its own tests, evidence and rollback boundary pass
 
 ### ALPHA-006 — Native capacity-governed parallel laboratory
 
+- **Native landing (2026-09-15):** Bulletproof PR #306 passed all CI shards and merged at `a864ac0910890f98f457eb4140b28ede9921e91d`. VM1's native checkout is clean at that merge; its resampler SHA-256 matches the deployed advisory snapshot. The strict chronological-input gate remains intact; the hypothesis fixture was corrected to provide chronological exit bars. This source deployment does not imply that the privileged capacity services or concurrent production replay have been activated.
+
 - **Rollout evidence (2026-09-15):** Control-plane PR #260 merged at `f7b254aea04b721a3f98624e114c4908eb89f9be`; VM2 checkout is clean, the rebuilt/running API image identities match (`sha256:954bcae5f6830797558f68b2d78fff595a251b8b2dc598c222705e8da2e5a89d`), `/health` passes and migration remains `b1e7f9a03c62 (head)`. The deployed advisory snapshot now binds native commit `6b3c068c4bb59b639d7c2f4ec3cf30643da3735d` and the shared integer-duration contract; the earlier allowlist notes above are historical. VM1 worker package was reinstalled. Root service registration/restart and the two concurrent terminal BT-009 receipts remain pending; no new financial authority or research approval was created.
 
 - **Status/scope (2026-09-15):** Locally implemented and tested; operational closure pending deployment and two-job production replay. Backtests have at most eight preregistered grid combinations and up to eight workers. Separate campaigns may execute concurrently only within measured host capacity and immutable approvals. Eight combinations are a ceiling, not a claim of globally optimal experimental design.

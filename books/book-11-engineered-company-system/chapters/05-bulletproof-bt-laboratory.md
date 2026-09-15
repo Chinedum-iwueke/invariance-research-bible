@@ -1689,3 +1689,9 @@ representation snapshot now binds native `6b3c068` and accepts the shared intege
 duration contract; earlier statements about a fixed allowlist are historical.
 The VM1 worker package is reinstalled; privileged registration/restart and concurrent
 terminal publication remain operational gates. No old approval is expanded.
+
+Bulletproof PR #306 passed every CI shard and merged at
+`a864ac0910890f98f457eb4140b28ede9921e91d`. VM1's native checkout is clean
+at that merge and the resampler bytes match the deployed advisory snapshot.
+Privileged service activation and two concurrent terminal publications remain
+pending; source deployment alone is not operational qualification.
