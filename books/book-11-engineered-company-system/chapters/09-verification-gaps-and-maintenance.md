@@ -483,3 +483,13 @@ exclusions and avoids duplicate retries or replacing assigned reviews. Fifty-one
 focused routing/campaign tests and lint pass. Reviewer provisioning/execution and
 production deployment remain open. The original supervised lake inventory has
 reached 1,730 objects without a restart; full registration is still unproven.
+
+Later runtime evidence supersedes those live observations: VM1's prior boot ends
+at 22:15 UTC and the next boot begins at 22:32 UTC. The transient inventory unit
+was lost without complete receipts. Its operation is preserved as failed with
+1,874 partial objects. Persistent user supervision with verified lingering now
+runs replacement `93a00b1f-e9ae-4dca-931c-efc6bf9dd99a` under the same source
+and window; no receipt or registration is invented. Read-only strategy-review
+executor source passes the full 319-test worker suite, but actual role deployment,
+workflow dispatch and authenticated completion remain open. This is stronger
+delivery evidence, not a qualified review or a functioning end-to-end loop.

@@ -965,6 +965,15 @@ catalogs and assigned routes are no-ops. Fifty-one focused tests and lint pass.
 Reviewer services, production deployment and genuine concurrent executions remain
 open; the original supervised lake inventory has progressed to 1,730 objects.
 
+Runtime correction: the previous VM1 boot ended at 22:15 UTC and restarted at
+22:32 UTC, removing the transient scan. Its operation is retained as terminal
+failed/inventory_interrupted with 1,874 partial objects and no complete receipt.
+Persistent user supervision and lingering are now enabled; replacement run
+`93a00b1f-e9ae-4dca-931c-efc6bf9dd99a` is verified live under the unchanged
+native commit/window. Read-only review executor source passes the 319-test worker
+suite, but production workflow dispatch, authenticated completion, reviewer-role
+provisioning and engineering-author provenance are still open.
+
 - **Engineering review and full-suite continuation (2026-09-15):** PR #271 pushes the scientific handoff after independent review closed recursive-JSON and question-mismatch failure paths. Controlled decoding/depth validation is identical across three consumers, preserving the closed planner schema. Fresh full suites passed 852 backend (one optional skip), 309 worker. CI pending. API independently confirms operation `1f24f55d-45c3-4eae-b3ac-6c129023f9c3` with fresh heartbeat and the original native scan, not a restarted attempt. Next native work must discover newly engineered cards and bind genuinely independent evaluator evidence; a hardcoded `independent_review_complete` boolean is insufficient for the requested qualification proof.
 
 - **Scientific engineering handoff source pass (2026-09-15):** New engineering contracts preserve bounded, validated JSON evidence for both coder and independent reviewer: exact candidate/campaign/question digests, admitted dataset, frozen window, instrument, tier, variant ceiling, RI citations and unchanged authority. Changed/missing discovery evidence blocks task creation. New explicitly approved scopes include the existing native draft pipeline and assignment runner so generated cards are discoverable without weekend-template substitution; historical tasks/approvals are unchanged. Focused tests passed 20 campaign, eight proposal, 30 worker engineering/planner; lint passed. Source only, not deployed or proof of actual strategy engineering/concurrent backtests.
