@@ -974,6 +974,14 @@ native commit/window. Read-only review executor source passes the 319-test worke
 suite, but production workflow dispatch, authenticated completion, reviewer-role
 provisioning and engineering-author provenance are still open.
 
+Source integration follow-up: reviewer contracts now pass through the ordinary
+allowlisted worker policy/workflow/dispatcher. Assigned routes materialize tasks
+bound to evaluator/source/profile/package; authenticated lease completion records
+typed verdicts only after frozen identity and routed-subject replay. Full suites:
+885 backend (one optional skip) and 320 worker; lint passes. Production reviewer
+provisioning/deployment and genuine review receipts remain open. The replacement
+inventory remains live at 1,221 objects, not complete-root registration.
+
 - **Engineering review and full-suite continuation (2026-09-15):** PR #271 pushes the scientific handoff after independent review closed recursive-JSON and question-mismatch failure paths. Controlled decoding/depth validation is identical across three consumers, preserving the closed planner schema. Fresh full suites passed 852 backend (one optional skip), 309 worker. CI pending. API independently confirms operation `1f24f55d-45c3-4eae-b3ac-6c129023f9c3` with fresh heartbeat and the original native scan, not a restarted attempt. Next native work must discover newly engineered cards and bind genuinely independent evaluator evidence; a hardcoded `independent_review_complete` boolean is insufficient for the requested qualification proof.
 
 - **Scientific engineering handoff source pass (2026-09-15):** New engineering contracts preserve bounded, validated JSON evidence for both coder and independent reviewer: exact candidate/campaign/question digests, admitted dataset, frozen window, instrument, tier, variant ceiling, RI citations and unchanged authority. Changed/missing discovery evidence blocks task creation. New explicitly approved scopes include the existing native draft pipeline and assignment runner so generated cards are discoverable without weekend-template substitution; historical tasks/approvals are unchanged. Focused tests passed 20 campaign, eight proposal, 30 worker engineering/planner; lint passed. Source only, not deployed or proof of actual strategy engineering/concurrent backtests.

@@ -493,3 +493,12 @@ and window; no receipt or registration is invented. Read-only strategy-review
 executor source passes the full 319-test worker suite, but actual role deployment,
 workflow dispatch and authenticated completion remain open. This is stronger
 delivery evidence, not a qualified review or a functioning end-to-end loop.
+
+Reviewer source now integrates with existing workflow policy and restricted
+dispatch. Assigned routes materialize governed tasks bound to source/evaluator
+profile/package; completion records typed verdicts only under an authenticated
+running lease after routed-subject and frozen identity replay. Full validation:
+885 backend tests (one optional skip), 320 worker tests and clean lint. Actual
+role/grant provisioning, deployment and genuine independent review remain open.
+Replacement inventory continues under the same supervisor, reaching 1,221 objects;
+neither complete-root admission nor concurrent scientific execution is inferred.
