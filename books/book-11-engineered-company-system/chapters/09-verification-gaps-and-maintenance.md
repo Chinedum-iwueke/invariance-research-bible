@@ -325,3 +325,180 @@ and `ProtectSystem=strict` remains enabled. Plugin/app integration is disabled
 for bounded discovery. The corrected namespace completed authenticated inference
 with `runtime-ok` after one temporary capacity response. The production units
 still require privileged reinstall before another audited discovery resume.
+
+The founder completed that reinstall at 20:10 UTC on September 15. Audited
+attempt 5 completed intelligence inference at 20:13 UTC, but abstained because
+its immutable context contained no literature citations. The abstention and
+earlier failures remain evidence. Focused data-aware retrieval, under unchanged
+calibration, now supplies canonical citations and bounded query receipts.
+An initial recovery transaction failed atomically because two pending events
+shared a sequence under `autoflush=False`; PR #267 fixes append ordering and
+tests it against isolated PostgreSQL, rather than relying only on mocks.
+The rebuilt VM2 API is healthy. Fresh cycle
+`6ac128cf-9163-48d3-a1a7-e925db4a2704` contains nine citations and is processing
+intelligence synthesis. Productive hypothesis acceptance, native qualification,
+and two overlapping terminal BT-009 publications are still separate unclosed
+gates. Neither LLM inference nor retrieved literature qualifies whole-corpus
+mathematical fidelity or demonstrates RI-015 reasoning independence.
+
+At 20:29 UTC that fresh cycle finished both inference stages and retained three
+proposals, but accepted none. The worker output schema permitted underscore
+domain/cluster keys that the canonical API schema rejects. All three therefore
+remain `candidate_schema_invalid`, not scientifically falsified results.
+Discovery runtime and citation recovery are demonstrated; producer/consumer
+contract repair and two qualified concurrent native publications remain open.
+
+The founder explicitly set full-lake autonomous integration as the next active
+goal, tracked by ALPHA-007. Extend existing native DATA catalog/quality producers,
+then hypothesis-driven representation and mixed-basket selection, discovery
+contract closure, governed native strategy engineering, shared-budget concurrent
+execution, and terminal publication with continuous replenishment, in that order.
+Stable/volatile groups are optional descriptive metadata, not mandatory research
+universes. Completion requires file-level catalog accounting and two genuine
+qualified one-year native jobs with overlapping execution and terminal receipts;
+online agents, fixture replay and BTC-only template reuse are insufficient.
+
+ALPHA-007 now has native content-bound inventory and protected CLI source at
+`ed2367b`, with 14 inventory/admission/producer tests passing. Hermes source at
+`b75c22e` registers only that exact inventory producer, exposes its summary and
+scoped operation reports, and corrects discovery identifiers and liquidity
+context. The full backend suite passes 831 tests (one optional database skip),
+and the worker suite passes 289. Actual full-lake scanning, registration, quality
+qualification, broader approved execution and concurrent terminal publications
+remain unproven. No expanded mandate, native-code approval or capital action
+is inferred from this source evidence.
+
+Production full-lake inspection subsequently counted 1,846,467 raw files and
+2,769 canonical files. The single-envelope inventory limit was inadequate, so
+the tracked production attempt was stopped explicitly; its failed ledger record
+and progress were preserved and no scanner was orphaned. Full registration is
+still open: bounded content-bound shard custody and a complete root receipt must
+replace the oversized envelope. Native window-specific panel quality checks are
+being added separately; neither inventory nor base OHLCV quality grants execution
+authority or verifies auxiliary timing. This correction retains the entire lake
+scope rather than treating the canonical subset as the full accounting goal.
+
+The bounded custody correction is pushed in native PR #308 (`19d361c`) and
+Hermes PR #269 (`7346bc8`). Native shard receipts retain at most 10,000 objects,
+globally ordered paths and a source-bound completeness root; dataset identity
+stays stable across scan IDs. Window quality consumes verified shards without
+rebuilding the million-object envelope. Hermes checks complete custody and the
+exact named quality gates without computing quantitative estimates. Fresh tests:
+850 backend passed (one optional database skip), 295 worker passed and 32 native
+focused tests passed. Corrective CI and production replay remain open; no full
+registration, admitted candidate, broadened mandate or concurrent backtest is
+claimed from these tests.
+
+PR #270 subsequently merged and deployed to VM2 at `40ca4c759`, with container
+verification of the all-eligible default. Eight CI gates passed; final full suites
+passed 852 backend tests (one optional skip) and 302 worker. One unchanged
+child-start timeout failed during a concurrent run, then passed isolated and full
+reruns; this is retained rather than erased. The exact inventory unit remains
+active. Long-running VM1 planner/researcher prompt loading still requires a
+controlled restart, and full-lake completion and concurrent scientific execution
+remain unproven.
+
+The next engineering handoff source pass supplies the coder and independent
+reviewer identical bounded, validated JSON scientific evidence rather than
+leaving RI citations only in approval metadata. Evidence binds exact question,
+candidate, campaign, admitted dataset, window and variant ceiling; altered source
+evidence blocks task creation. New code remains explicitly approved, with native
+draft-pipeline/runner integration included in the proposed scope and historical
+approvals unchanged. Focused tests passed 20 campaign, eight proposal and 30
+worker engineering/planner. Actual generated/qualified strategies and concurrent
+native backtest receipts remain unproven.
+
+PR #271 subsequently pushes the reviewed handoff, with deep-JSON and changed
+question rejection confirmed by independent source review. Fresh full suites
+passed 852 backend tests (one optional skip) and 309 worker; all eight CI checks passed, with deployment pending.
+Independent live API readback confirms the exact inventory operation's running
+state and fresh heartbeat. New native template discovery and independent
+evaluator receipt binding remain necessary before claiming genuinely qualified
+backtests; a constant boolean in qualification output is not sufficient proof.
+
+Native exact-question generated-card discovery now has ten passing source tests.
+It preserves immutable dataset/window bindings, rejects self-approval and unsafe
+files, and computes the real grid size. This is source engineering evidence,
+not scientific semantic qualification. The active roadmap is complete lake
+accounting and admission, catalog-grounded adaptive discovery, genuinely
+independent native strategy qualification, overlapping one-year classic runs,
+terminal publication and automatic replenishment. Shadow and capital remain
+separately gated on an actual survivor.
+
+Independent review of the ALPHA-007 catalog-grounding pass caught chat/planner
+overrides of the new universe default. Hermes `9c03a1f`, PR #270, corrects both;
+conversation tests passed seven and planner tests 17. Full pre-correction suites
+passed 852 backend tests (one optional database skip) and 301 worker tests. CI and
+deployment for this follow-up remain pending, and the original full-lake scan is
+still supervised under its exact unit/PID rather than restarted.
+
+The next ALPHA-007 source pass exposes receipt-backed full-lake catalog grounding
+to discovery without modifying executable mandate bindings. Universe hints default
+to all eligible assets; fixed stable/volatile labels are optional. Tests reject
+catalog-only ETH execution without an admitted binding. Focused backend tests
+passed 57 cases, strengthened context tests 23, worker prompt/contracts seven and
+lint passed. Deployment and genuine adaptive basket execution remain open.
+
+ALPHA-007 production continuation merged native PR #308 and Hermes PR #269 after
+ten native and eight Hermes CI checks passed. The worker suite passed 300 tests.
+VM2 deployed healthy merge `2e3750da0`. VM1 user systemd unit
+`alpha007-full-lake-20260915.service` supervises ledger-acknowledged run
+`0767bfbe-206f-4290-9900-f9771b7a83b8`, bound to native `19d361c`. Incremental
+shard publication must finish before complete-root registration and frozen
+2025-05-01 through 2026-05-01 UTC panel quality. Full-lake registration remains
+in progress, not completed; adaptive baskets, broader approved execution and two
+concurrent terminal scientific backtests remain unproven. Service activity alone
+does not close this boundary.
+
+Independent ALPHA-007 pre-landing review caught incomplete traversal, unsafe file
+reopening, special files, incorrect nested-column time bounds, fabricated summary
+acceptance and concurrent report resurrection. Corrections at native `aa82838`
+and Hermes `1743cf7` pass 19 native and 834 backend tests (one optional database
+skip). PRs #307 and #268 are open with CI running. This is stronger source/test
+evidence, not production registration or the requested concurrent backtest proof.
+
+The subsequent ALPHA-007 source pass freezes actual authorized producer profiles
+at lease and binds explicit immutable specification/causality reviews to the exact
+approved card, data, window and grid. Drafter and qualifier identities remain
+excluded even when the same agent changes package versions. Native execution
+fails before compute without a bound approving review; zero-trial engineering
+failures are retained without being called scientific falsification. Thirty-one
+native regressions pass. Actual supervised reviewer registration/execution,
+engineering-author provenance, deployment, broader approved lake admission and
+two concurrent terminal BT-009 results remain open. The unchanged supervised
+inventory run has progressed to 1,600 objects, not complete-root registration.
+
+Automatic strategy/causality routing now creates a bound immutable route after
+approval replay and excludes every frozen producer identity before evaluator
+selection. Missing reviewer capacity is explicitly blocked and surfaced through
+campaign planning detail. Source validation passes 49 focused and 875 backend
+tests (one optional skip), with clean lint. Reviewer execution, blocked-route
+recovery after profile registration and deployment remain open. The unchanged
+native inventory child is verified live after 47 minutes; this is ongoing work,
+not proof of full-lake admission or concurrent backtest completion.
+
+Blocked strategy-review recovery now watches active evaluator catalog changes,
+retries the same frozen request and appends audit evidence. It preserves producer
+exclusions and avoids duplicate retries or replacing assigned reviews. Fifty-one
+focused routing/campaign tests and lint pass. Reviewer provisioning/execution and
+production deployment remain open. The original supervised lake inventory has
+reached 1,730 objects without a restart; full registration is still unproven.
+
+Later runtime evidence supersedes those live observations: VM1's prior boot ends
+at 22:15 UTC and the next boot begins at 22:32 UTC. The transient inventory unit
+was lost without complete receipts. Its operation is preserved as failed with
+1,874 partial objects. Persistent user supervision with verified lingering now
+runs replacement `93a00b1f-e9ae-4dca-931c-efc6bf9dd99a` under the same source
+and window; no receipt or registration is invented. Read-only strategy-review
+executor source passes the full 319-test worker suite, but actual role deployment,
+workflow dispatch and authenticated completion remain open. This is stronger
+delivery evidence, not a qualified review or a functioning end-to-end loop.
+
+Reviewer source now integrates with existing workflow policy and restricted
+dispatch. Assigned routes materialize governed tasks bound to source/evaluator
+profile/package; completion records typed verdicts only under an authenticated
+running lease after routed-subject and frozen identity replay. Full validation:
+885 backend tests (one optional skip), 320 worker tests and clean lint. Actual
+role/grant provisioning, deployment and genuine independent review remain open.
+Replacement inventory continues under the same supervisor, reaching 1,221 objects;
+neither complete-root admission nor concurrent scientific execution is inferred.

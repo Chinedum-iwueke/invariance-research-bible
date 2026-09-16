@@ -919,7 +919,11 @@ package is not complete until its own tests, evidence and rollback boundary pass
 
 ### ALPHA-006 — Native capacity-governed parallel laboratory
 
+- **Grounded recovery (2026-09-15):** The founder installed the corrected supervised units at 20:10 UTC. Audited attempt 5 completed real intelligence inference at 20:13 UTC but correctly abstained with zero literature citations; the original cycle remains retained. Hermes PR #266 adds bounded data-aware literature queries without lowering retrieval thresholds or expanding admitted data. PR #267 fixes event sequencing under production `autoflush=False` sessions, with an isolated PostgreSQL regression and eight passing CI checks. The rebuilt VM2 API is healthy. Explicit operator recovery created fresh cycle `6ac128cf-9163-48d3-a1a7-e925db4a2704` with nine canonical literature citations; intelligence synthesis is running. This is grounding/recovery evidence, not two qualified hypotheses or concurrent terminal BT-009 closure. New native strategy code still requires explicit approval; whole-corpus mathematical fidelity and RI-015 independent reasoning qualification remain open.
+
 - **Recovery replay correction (2026-09-15):** After worker reauthentication/restart, audited task resume produced attempt 4 at 20:04 UTC; startup still failed. A matching read-only namespace trace proved Codex requires read-write access to `CODEX_HOME/installation_id`, not only redirected SQLite/log paths. Hermes PR #265 provides a private runtime home with the original authentication file bind-mounted read-only, disables plugin/app integration, and preserves strict service confinement. All 288 worker tests pass; the corrected namespace completed authenticated `runtime-ok` inference. Production unit reinstall and another audited resume are required. This probe is not a literature-derived hypothesis or a terminal backtest receipt; productive-loop and concurrent-publication closure remain open.
+
+- **Fresh cycle outcome (2026-09-15, 20:29 UTC):** Both grounded intelligence synthesis and senior-research hypothesis generation succeeded. Three proposals were retained, but all three failed the canonical candidate schema: worker output permits underscore-separated domain/cluster keys while the API requires hyphen-separated keys. Cycle `6ac128cf-9163-48d3-a1a7-e925db4a2704` is terminal `rejected`, with generated=3, accepted=0, rejected=3. This is an engineering handoff failure, not evidence against the proposed predictive relationships. Repair the producer/consumer schema contract before another discovery attempt; do not change historical documents or weaken availability/liquidity gates to force acceptance. Two qualified native hypotheses and concurrent terminal BT-009 receipts remain outstanding.
 
 - **Admission and visibility deployment (2026-09-15):** PR #262 merged at `f22fe150f`; VM2 API is healthy with matching built/running image identities, and Mission Control was reinstalled on Mac. Live desktop/mobile checks show the 12-task history and eight-trial negative Tier2B result without scroll jumps. The new mandate initially failed correctly because the admission receipt bound an old engine. Native admission was rebuilt with an explicitly verified import path and registered as `09c3b6a6-b7d5-4efe-88a6-637259ab47ce` (digest `eadd66dbc7d6091db9db10e0e138abe20290ad941332ad142259c748e355d201`) for unchanged dataset `9a211d88…` at reviewed native commit `a864ac0`. The founder approved distinct mandate `ALPHA004-CAPACITY-20260915` / `aae38741-7f41-40bc-8612-0ba266467a55` for the 2025-05-01–2026-05-01 window. Its first task failed runtime initialization; the subsequent probe identified required worker reauthentication. No productive discovery or concurrent-execution closure is inferred from approval.
 
@@ -935,6 +939,75 @@ package is not complete until its own tests, evidence and rollback boundary pass
 - **Contracts/dependencies:** ALPHA-002/003/004/005, BT-003/009, AGT-001, PLAT-002 and OPS-007. Freeze grid/dataset/window/code/cost/gate identities before admission. Bind queued bytes to SHA-256 and a living PID/start identity; reject drift, dead owners and duplicate immutable submissions. Cap per-job workers at eight, count orphan locks conservatively, reserve CPU/load/RAM and unrealized startup memory, and deny admission when memory telemetry is unavailable. The initial 2 GiB/worker estimate must be calibrated upward from representative peak RSS for larger universes; it is not empirical qualification.
 - **Tests/evidence:** Native focused suite 32 passed; an additional two-job shared-budget launch regression also passes (seven admission tests in the final rerun). Real classic-engine serial/parallel comparison reproduced all named trade/equity fields exactly on two variants with 230 trades each. Full worker suite 276 passed; backend discovery/conversation suite 14 passed. Shell/systemd checks pass with unrelated existing warnings. Control-plane `docs/alpha-capacity-validation.md` and its activation runbook retain the boundary between verified source and pending production evidence.
 - **Visibility/rollback/done:** Bounded capacity state is carried in idle agent and running task heartbeats; existing Hermes task/operation visibility remains authoritative. Add director/consumer units to fleet monitoring. Stop both slots and the director, preserve all queue/bundle/publication evidence, reconcile orphan leases, then restore the single consumer. Do not run the old and new consumer for one identity together. Operational done requires reviewed native/worker commits deployed, separately registered identities healthy, one shared capacity budget, two authorized concurrent assignments, resource/backpressure/cancellation/restart drills and two terminal BT-009 receipts. No code, data, shadow, order or capital grant is expanded by scheduling.
+
+### ALPHA-007 — Full-lake autonomous research integration and adaptive baskets
+
+Latest source evidence: immutable lease-time drafter/qualifier identities and
+explicit typed strategy-specification/causality reviews bind the approved card,
+dataset, window and grid. Native review verification occurs before compute;
+missing review retains a zero-trial failure. Same-agent package rollovers preserve
+historical exclusions and explicit qualifier primary identity (31 native tests).
+Actual reviewer services/route execution, engineering-author provenance and
+deployment remain open. Inventory run `0767bfbe-206f-4290-9900-f9771b7a83b8`
+continues under the original supervisor, reaching 1,600 objects; no full-lake
+quality/admission or two concurrent scientific results are claimed yet.
+
+Automatic review-routing source follow-up: exact approved qualification creates
+an immutable strategy/causality route with all frozen producer exclusions.
+Missing reviewers appear as a blocked route and visible campaign reason. Tests:
+49 focused and 875 backend, one optional skip; lint passes. Supervised reviewer
+execution, blocked-route recovery following profile registration and deployment
+are still open. The existing native inventory child remains live after 47 minutes.
+
+Blocked-route recovery source follow-up: catalog changes trigger retry under the
+same frozen review subject/exclusions, with append-only audit evidence. Unchanged
+catalogs and assigned routes are no-ops. Fifty-one focused tests and lint pass.
+Reviewer services, production deployment and genuine concurrent executions remain
+open; the original supervised lake inventory has progressed to 1,730 objects.
+
+Runtime correction: the previous VM1 boot ended at 22:15 UTC and restarted at
+22:32 UTC, removing the transient scan. Its operation is retained as terminal
+failed/inventory_interrupted with 1,874 partial objects and no complete receipt.
+Persistent user supervision and lingering are now enabled; replacement run
+`93a00b1f-e9ae-4dca-931c-efc6bf9dd99a` is verified live under the unchanged
+native commit/window. Read-only review executor source passes the 319-test worker
+suite, but production workflow dispatch, authenticated completion, reviewer-role
+provisioning and engineering-author provenance are still open.
+
+Source integration follow-up: reviewer contracts now pass through the ordinary
+allowlisted worker policy/workflow/dispatcher. Assigned routes materialize tasks
+bound to evaluator/source/profile/package; authenticated lease completion records
+typed verdicts only after frozen identity and routed-subject replay. Full suites:
+885 backend (one optional skip) and 320 worker; lint passes. Production reviewer
+provisioning/deployment and genuine review receipts remain open. The replacement
+inventory remains live at 1,221 objects, not complete-root registration.
+
+- **Engineering review and full-suite continuation (2026-09-15):** PR #271 pushes the scientific handoff after independent review closed recursive-JSON and question-mismatch failure paths. Controlled decoding/depth validation is identical across three consumers, preserving the closed planner schema. Fresh full suites passed 852 backend (one optional skip), 309 worker. CI pending. API independently confirms operation `1f24f55d-45c3-4eae-b3ac-6c129023f9c3` with fresh heartbeat and the original native scan, not a restarted attempt. Next native work must discover newly engineered cards and bind genuinely independent evaluator evidence; a hardcoded `independent_review_complete` boolean is insufficient for the requested qualification proof.
+
+- **Scientific engineering handoff source pass (2026-09-15):** New engineering contracts preserve bounded, validated JSON evidence for both coder and independent reviewer: exact candidate/campaign/question digests, admitted dataset, frozen window, instrument, tier, variant ceiling, RI citations and unchanged authority. Changed/missing discovery evidence blocks task creation. New explicitly approved scopes include the existing native draft pipeline and assignment runner so generated cards are discoverable without weekend-template substitution; historical tasks/approvals are unchanged. Focused tests passed 20 campaign, eight proposal, 30 worker engineering/planner; lint passed. Source only, not deployed or proof of actual strategy engineering/concurrent backtests.
+
+- **Catalog-grounding deployment (2026-09-15):** PR #270 merged and VM2 deployed `40ca4c759`; container behavior confirms `all_eligible`. All eight CI gates passed. Final full suites passed 852 backend tests (one optional skip) and 302 worker. The prior concurrent run's unchanged child-start timing failure passed isolated and full reruns and is retained in validation evidence. The exact inventory operation remains active across deployment. VM1 planner/researcher prompt loading still needs controlled service restart; inventory completion, executable multi-asset admission and concurrent scientific backtests remain open.
+
+- **Conversational handoff correction (2026-09-15):** Independent review identified explicit stable/volatile overrides in chat grounding and planner instructions. Hermes commit `9c03a1f`, PR #270, corrects both to `all_eligible` defaults while preserving founder-selected labels and exact mandate execution scope. Full suites before the final chat correction passed 852 backend tests (one optional database skip), 301 worker; corrected conversation tests passed seven and planner tests 17. PR #270 CI is running. Native inventory supervisor PID 3873138 remains live under the same operation, not restarted. Full-lake completion, broader engineering and actual concurrent backtests remain open.
+
+- **Catalog grounding source pass (2026-09-15):** Discovery now reuses the receipt-backed full-lake summary as `lake_catalog`, separate from unchanged executable mandate `datasets`. Founder intake defaults to `all_eligible`; stable/volatile labels remain optional explicit hints. Researcher instructions require pre-outcome hypothesis-specific cross-group reasoning and preserve out-of-scope ideas as data/engineering gaps. Regression proves catalog-visible ETH cannot satisfy an executable binding without DATA-002/003 admission. Focused backend tests passed 57 cases; strengthened context suite passed 23, worker prompt/contracts seven, and lint passed. This source pass is not yet deployed; actual adaptive basket construction and execution remain open.
+
+- **Supervised production continuation (2026-09-15):** Native PR #308 and Hermes PR #269 merged after all ten native and eight Hermes CI checks passed; worker suite passed 300 tests. VM2 deployed merge `2e3750da0` and verified healthy bounded-custody support. VM1 user unit `alpha007-full-lake-20260915.service` supervises run `0767bfbe-206f-4290-9900-f9771b7a83b8` under reviewed native `19d361c`, after ledger acknowledgement and before scanning. Completed shards publish incrementally; a complete root precedes native quality for the frozen 2025-05-01 through 2026-05-01 UTC window. No automatic restart or execution scope expansion is authorized. Full registration and quality remain in progress; adaptive baskets, broader engineering and two concurrent terminal backtests remain open.
+
+- **Bounded custody correction (2026-09-15):** Native PR #308 at `19d361c` adds bounded globally ordered shards, a complete root, stable data identity across run IDs, verified streaming v2 consumption, and a dedicated native quality CLI. Hermes PR #269 at `7346bc8` validates complete source/run/content custody, exact native quality checks, dispositions, source quarantine and window/content bindings; publishes completed shards incrementally. Fresh tests: 850 backend passed (one optional database skip), 295 worker passed, 32 native focused tests passed and native lint passed. Both corrective PRs are awaiting fresh CI. No full-lake root or quality receipt has been production-published; no wider execution mandate or concurrent backtest is inferred.
+
+- **Production scale correction (2026-09-15):** Native PR #307 and Hermes PR #268 are merged; VM2 is healthy on rebuilt image `sha256:0606f0664916a02c0fbd4fb0c1e6f0e133ffec53d85ed2064e4f5a529b886353`. Tracked real scan `d3dfa5fd-924a-4574-a301-3aa005240686` exposed 1,846,467 raw files plus 2,769 canonical files, exceeding the single-receipt 250,000-object limit. The operator explicitly stopped it; the API retained terminal failure and process inspection proved no orphaned scanner. Full-lake publication remains open. Native bounded 10,000-object shard/root custody and measured window-specific panel quality are under implementation; initial combined tests pass 29 cases. Every shard must be registered and the complete root receipt verified before claiming full accounting. Passing base OHLCV quality does not infer auxiliary timing, point-in-time membership, mandate expansion or execution authority.
+
+- **Pre-landing correction (2026-09-15):** Independent review found and corrected silent subtree omissions, unsafe path reopening, special-file blocking, nested timestamp bounds, fabricated summary acceptance and lifecycle races. Native commit `aa82838` uses explicit traversal errors, no-follow directory/file descriptors, regular-file enforcement, same-descriptor metadata, timezone-aware bounds and ctime/device stability checks. Hermes commit `1743cf7` derives summary checks and locks immutable run reports through terminal transitions. Fresh verification: 834 backend tests passed (one optional database skip) and 19 native tests passed. Hermes PR #268 and Bulletproof PR #307 are open with CI running. The supervised full scan and all subsequent execution/admission gates remain open.
+
+- **Implementation evidence (2026-09-15):** Native commit `ed2367b` adds content-bound full-lake inventory/CLI across raw, canonical and manifests, retains unknown/corrupt/symlink dispositions, supports both layouts, and explicitly grants no execution eligibility. Inventory/admission/producer suite: 14 passed. Hermes commit `b75c22e` adds exact-producer receipt registration, a receipt-backed inventory summary and scoped inventory operation reports; fixes hyphenated discovery identifiers and supplies approved liquidity constraints. Full backend suite: 831 passed, one optional PostgreSQL test skipped; worker suite: 289 passed. Production scan/publication, DATA-003 quality admission, broader approved research scope, mixed baskets and two concurrent terminal native receipts remain open. Neither local source nor these focused inventory tests demonstrates full-lake operational registration.
+
+- **Status and objective (2026-09-15):** Active founder-requested integration goal, not operationally complete. Reuse DATA-001/002/003 and ALPHA-003/004/005/006; do not duplicate their quantitative producers in Hermes. Deliver the literature-to-hypothesis-to-native-test loop across actual Binance and Bybit data, rather than merely online services or a BTC-only registered panel.
+- **Ordered delivery roadmap:** (1) Extend native DATA-002/003 inventory and registration to every existing lake asset/partition, preserving explicit missing coverage, quarantine, provenance and auxiliary timing. (2) Extend ALPHA-005 representation-aware intake to propose hypothesis-specific assets and mixed baskets using point-in-time availability, liquidity and pre-outcome selection. Stable/volatile labels are optional metadata, not execution boundaries. (3) Close ALPHA-004 worker/API output contracts with replay regressions, complete catalog grounding and prior-result feedback. (4) Extend the existing ALPHA-003/BT-009 native engineering path beyond its weekend-momentum template, with typed YAML/strategy implementation and independent causality/leakage/reproducibility review. (5) Demonstrate ALPHA-006 shared-budget concurrency with two genuine authorized one-year classic Bulletproof jobs and rich learning-ready logs. (6) Publish terminal BT-009 receipts and demonstrate automatic replenishment after negative, invalid and failed outcomes, pausing survivors at shadow review.
+- **Contracts and boundaries:** Catalog visibility is not execution eligibility. Freeze selected asset set, historical window, native code, dataset digests, representation, costs, maximum eight variants and acceptance gates before execution. Automatically register discovered data within approved lake authority; a distinct founder-approved research mandate must bind expanded execution scope. No old BTC-only approval is silently broadened. New code, shadow admission and all order/capital authority retain explicit approval and independent evaluation.
+- **Tests and evidence:** Exercise all-file accounting, invalid/corrupt partitions, repeat registration, gaps and stale auxiliary data, delisted instruments, mixed-group basket selection, arbitrary safe minute resampling, producer/consumer schema parity, end-to-end task generation and publication, measured capacity backpressure and overlapping native job intervals. Rich run evidence must preserve specifications, seeds, splits, parameter grid, trades/equity/costs, signal/feature lineage and reason-coded failures; downstream ML/RL receives only causal, explicitly qualified inputs, not automatic learning authority.
+- **Rollback and dependencies:** Disable new catalog publication/campaign intake, preserve immutable inventory and research evidence, reconcile active native jobs and restore the prior single-panel mandate without mutating historical approvals. Depend on existing DATA, ALPHA, BT-009, AGT independence, workload identity and fleet observability contracts.
+- **Definition of done:** Every discovered lake file is represented with an explicit catalog disposition; the researcher can preregister suitable cross-group baskets with availability justification; two real independently qualified one-year native Bulletproof jobs demonstrably overlap and produce terminal BT-009 receipts; a following cycle is automatically scheduled using retained outcomes. Update this backlog and Book XI with deployment/test receipts. Whole-corpus mathematical fidelity, RI-015 qualification and live profitability are not inferred from this operational proof.
 
 ### ML-002 — Causal feature, label and split pipelines
 
@@ -1270,6 +1343,33 @@ LIVE-001 implementation from being mistaken for a deployable canary.
 - **Tests/evidence/rollback/done:** Test concentration, degradation, outage, loss limit and emergency kill. Retain founder/risk approvals and production dossier. Rollback reduces allocation or exits under deterministic controls. Done when scaling has current independent evidence and bounded loss.
 
 ## Shared-surface rules
+
+### Active Autonomous Research Roadmap (2026-09-15)
+
+1. ALPHA-007 / DATA-002/003: finish complete lake accounting, immutable shards,
+   structural panel quality and point-in-time admission. Raw assets without a
+   validated adapter remain visibly accounted for, not silently executable.
+2. ALPHA-004 / DISC-009: ground researchers in the complete catalog and prior
+   outcomes; choose assets, mixed baskets and causal representations before
+   results. Approve an expanded weekly mandate before broader execution.
+3. BT-009 / AGT-006: discover source-reviewed exact-question native cards,
+   generate/reuse YAML and strategy implementations, and bind genuinely
+   independent qualification evidence. Keep new-code approval explicit.
+4. ALPHA-002 capacity: run at most eight variants per hypothesis with the native
+   shared scheduler. Prove two authorized one-year scientific jobs overlap and
+   retain rich causal, failure, cost-stress and ML/RL-ready logging.
+5. BT-009 / ALPHA-004: publish both terminal receipts, learn from every outcome
+   and demonstrate automatic replenishment rather than repeated manual repair.
+6. RISK-004 / SHADOW-002 / DEMO-001 / LIVE-001: only a genuine surviving candidate
+   may enter prospective monitoring, environment-specific certification and
+   explicit bounded capital approval. No alpha or capital exposure is promised.
+
+The first five steps are the active delivery goal. Current scan remains running;
+no complete-root registration or concurrent terminal backtest proof is claimed.
+All eight control-plane PR #271 checks passed, with deployment pending. Native
+exact-question card discovery has ten passing source tests, including immutable
+binding and no-self-approval checks; independent evaluator enforcement remains
+open. Whole-corpus mathematics and RI-015 reasoning remain unqualified.
 
 - RI-001 owns canonical evidence schemas; no concurrent task may invent alternatives.
 - BT-003 owns the run-bundle producer contract; RI ingestion consumes it.
