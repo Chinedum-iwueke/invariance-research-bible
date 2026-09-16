@@ -502,3 +502,23 @@ running lease after routed-subject and frozen identity replay. Full validation:
 role/grant provisioning, deployment and genuine independent review remain open.
 Replacement inventory continues under the same supervisor, reaching 1,221 objects;
 neither complete-root admission nor concurrent scientific execution is inferred.
+
+#### September 16: Deployed Review Contracts, Interrupted Inventory
+
+The prior live-scan observation is superseded. VM1 rebooted again and replacement
+run `93a00b1f-e9ae-4dca-931c-efc6bf9dd99a` stopped at 1,753 objects without a
+root receipt. The Mac update was started after the freezes and is not their cause.
+No recorded guest OOM/panic establishes the interruption mechanism; host evidence
+is still needed. The scan remains stopped. VM2 now runs merged review-completion
+contracts with healthy image/source verification; reviewer packages/profile
+provisioning have 21 focused passing tests but actual services/review receipts are
+not established.
+
+Native recovery no longer needs to wait for a 10,000-file publication boundary:
+per-object private checkpoints retain metadata, with root/source and filesystem
+fingerprint invalidation and fresh traversal for added/deleted files. Fixture
+recovery avoids rehashing unchanged objects. A reused digest remains a prior-byte
+observation, not fresh integrity proof; selected execution inputs require separate
+validation. This implementation is not a production scan success, data admission,
+reasoning qualification or autonomous-loop closure. Two concurrent one-year
+scientific results and automatic replenishment remain required evidence.

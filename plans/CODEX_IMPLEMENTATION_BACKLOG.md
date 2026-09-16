@@ -1380,3 +1380,28 @@ open. Whole-corpus mathematics and RI-015 reasoning remain unqualified.
 The precise recommended next task is **OPS-002**, proving four bounded
 plain-English proposal paths now that approval/readiness, qualified retrieval,
 curriculum breadth, and production-qualified lifecycle-aware memory exist.
+
+### ALPHA-007 Recovery Update — 2026-09-16
+
+Status remains open. Hermes PR 271, Bulletproof PR 309 and Bible PR 136 are
+merged; VM2 runs healthy merged API `723029a1d` at migration `b1e7f9a03c62`.
+Actual independent-review worker provisioning is not yet complete. Two narrow
+signed packages and immutable profile provisioning now reuse the existing
+bootstrap, with 21 focused worker tests passing; no pilot verdict is counted.
+
+Inventory run `93a00b1f-e9ae-4dca-931c-efc6bf9dd99a` was interrupted at
+1,753 objects by another VM1 reboot. The scanner is stopped. The old 10,000-file
+publication threshold provided no reusable checkpoint before either interruption.
+Native per-object private SQLite checkpoints now retain completed metadata and
+invalidate on source/root or filesystem fingerprint changes. A complete traversal
+still discovers additions/deletions. Reused byte digests are explicitly prior
+observations, not fresh cryptographic verification or execution admission. Small
+fixture tests cover interrupted recovery, changed inputs, additions/deletions,
+source invalidation and private-file protection; production recovery is unproven.
+
+Next: resolve host interruption evidence, bound scan resources, qualify native
+checkpoint recovery in production, provision actual reviewer/producer identities
+and services, complete DATA-002/003 registration and separately approved scope,
+then demonstrate two concurrent genuine one-year terminal BT-009 attempts and
+automatic replenishment. Whole-corpus math fidelity and RI-015 reasoning remain
+unqualified; no capital or shadow approval is implied.
