@@ -553,3 +553,30 @@ and the unchanged native source/mandate digest. This corrects the missing-contex
 handoff without rewriting prior outputs or treating historical commands as approval.
 The task is not yet leased; complete lake registration and scientific execution
 remain unproven. Grounding recovery is not loop closure.
+
+#### September 16: Manifest-First Admission And Native Capability Binding
+
+ALPHA-008 corrects the operational interpretation of “full-lake access.” Normal
+research cycles do not recursively scan raw storage. They consume the immutable
+native manifest catalog, which exposes 689 assets and 123 one-year candidates in
+the current production receipt. Only a hypothesis's preregistered panel set is
+then opened, freshly hashed, checked and registered through DATA-001/002/003.
+A separate rare custody audit may still traverse every file, but it is neither a
+per-cycle dependency nor a substitute for selected-input integrity.
+
+The same weekly mandate freezes a native strategy-capability catalog at the exact
+Bulletproof source commit. Reuse is an explicit senior-research decision and
+requires matching mechanism, timeframe, input cardinality, finite grid, truth
+semantics and logging contract. The resulting card binds the exact registered
+YAML digest and does not pretend an LLM reconstructed its feature logic. Novel
+mechanisms still require founder-approved code. Current registered strategies are
+single-instrument: basket questions remain valid, but must route to engineering
+rather than silently dropping every asset after the first.
+
+Focused verification passes 89 backend, 28 worker and 37 native tests. Full
+control-plane suites pass 897 backend tests with one optional skip and 333 worker
+tests. Migration `c2a8e4f61d90` is the sole head. These are source claims only.
+Native full-suite completion, reviewed merges, production deployment, a fresh
+founder-approved weekly mandate, two overlapping genuine one-year Bulletproof
+runs, terminal BT-009 publication and automatic replenishment remain the active
+closure sequence. No alpha, shadow or capital authority is inferred.
