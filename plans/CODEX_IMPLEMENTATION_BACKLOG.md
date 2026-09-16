@@ -1009,6 +1009,15 @@ inventory remains live at 1,221 objects, not complete-root registration.
 - **Rollback and dependencies:** Disable new catalog publication/campaign intake, preserve immutable inventory and research evidence, reconcile active native jobs and restore the prior single-panel mandate without mutating historical approvals. Depend on existing DATA, ALPHA, BT-009, AGT independence, workload identity and fleet observability contracts.
 - **Definition of done:** Every discovered lake file is represented with an explicit catalog disposition; the researcher can preregister suitable cross-group baskets with availability justification; two real independently qualified one-year native Bulletproof jobs demonstrably overlap and produce terminal BT-009 receipts; a following cycle is automatically scheduled using retained outcomes. Update this backlog and Book XI with deployment/test receipts. Whole-corpus mathematical fidelity, RI-015 qualification and live profitability are not inferred from this operational proof.
 
+### ALPHA-008 — Manifest-first lazy admission and native capability reuse
+
+- **Status (2026-09-16):** Source-complete and fully tested; merge, deployment and operational proof remain open. This milestone corrects ALPHA-007's impractical assumption that autonomous discovery should wait for or repeat a million-file custody scan. The immutable native manifest catalog supplies broad Binance/Bybit visibility in normal cycles. Byte-level inspection is lazy and restricted to the exact preregistered panels selected before outcomes.
+- **Scope and ownership:** Bulletproof owns panel discovery, canonical paths, byte hashes, schema/identity checks, exact one-minute continuity, frozen-window coverage, same-host recovery copies, strategy YAML/registry inspection and all quantitative execution. Hermes owns the approved catalog binding, risk-zero admission leases, immutable candidate/admission lifecycle, DATA-001/002/003 institutional registration, mandate/campaign scope and visibility. Raw files remain read-only and never enter LLM prompts. Stable/volatile labels remain optional metadata; a researcher may select any point-in-time eligible single asset or hypothesis-specific basket.
+- **Admission contract:** One immutable ALPHA admission v2 receipt binds venue, instrument, source timeframe, path, byte size, digest, columns, row/time bounds, coverage/fetch/instrument manifest digests, quality result and verified recovery-copy digest. Batch admission accepts 1-20 unique catalog assets only. Catalog visibility is not execution eligibility. A separate append-only candidate admission ledger preserves the original discovery record and materializes exact DATA records only after the native receipt validates.
+- **Strategy capability contract:** Every weekly mandate freezes the exact native Bulletproof strategy catalog at its source commit. Reuse requires exact hypothesis ID, YAML path/digest, registered strategy, compatible research timeframe and input cardinality, no more than eight variants, exact truth semantics and an explicit logging contract. Registered-contract cards reference that immutable YAML instead of fabricating duplicate feature logic. A novel mechanism or mixed-basket implementation enters the existing founder-approved engineering route. No unsupported question may fall back to weekend momentum or execute only the first basket member.
+- **Tests and evidence:** Focused suites pass 89 backend, 28 worker and 37 native tests. Complete control-plane suites pass 897 backend tests with one optional skip and 333 worker tests. Migration graph has one head, `c2a8e4f61d90`. Evidence is retained in control-plane `docs/alpha-008-validation.md`. Repository-wide native validation, reviewed merges, VM2 migration/API rollout, VM1 worker/native rollout, a new digest-approved weekly mandate and the two requested concurrent one-year terminal BT-009 receipts remain open and cannot be inferred from source tests.
+- **Rollback/dependencies/done:** Depend on ALPHA-003 through ALPHA-007, DATA-001/002/003, BT-009, AGT-006 and the shared native capacity scheduler. Rollback disables new lazy-admission leases and mandate activation while preserving catalog, candidate, DATA and receipt evidence. Operational completion requires production catalog/capability readback, at least two selected panel admissions, two genuinely qualified hypotheses overlapping in native execution, terminal retained publications and automatic next-cycle replenishment. No shadow, order, capital, profitability, whole-corpus mathematics or RI-015 qualification is implied.
+
 ### ML-002 — Causal feature, label and split pipelines
 
 - **Ownership correction (2026-08-28): Closed. Native producer and live replay now satisfy this correction; the stated repository boundary remains binding.** Hermes retains immutable pipeline contracts and admissibility gates. Bulletproof must materialize features, labels, purge/embargo splits and overlap weights from native data and publish the authoritative rebuild receipt.
@@ -1380,3 +1389,57 @@ open. Whole-corpus mathematics and RI-015 reasoning remain unqualified.
 The precise recommended next task is **OPS-002**, proving four bounded
 plain-English proposal paths now that approval/readiness, qualified retrieval,
 curriculum breadth, and production-qualified lifecycle-aware memory exist.
+
+### ALPHA-007 Recovery Update — 2026-09-16
+
+Status remains open. Hermes PR 271, Bulletproof PR 309 and Bible PR 136 are
+merged; VM2 runs healthy merged API `723029a1d` at migration `b1e7f9a03c62`.
+Actual independent-review worker provisioning is not yet complete. Two narrow
+signed packages and immutable profile provisioning now reuse the existing
+bootstrap, with 21 focused worker tests passing; no pilot verdict is counted.
+
+Inventory run `93a00b1f-e9ae-4dca-931c-efc6bf9dd99a` was interrupted at
+1,753 objects by another VM1 reboot. The scanner is stopped. The old 10,000-file
+publication threshold provided no reusable checkpoint before either interruption.
+Native per-object private SQLite checkpoints now retain completed metadata and
+invalidate on source/root or filesystem fingerprint changes. A complete traversal
+still discovers additions/deletions. Reused byte digests are explicitly prior
+observations, not fresh cryptographic verification or execution admission. Small
+fixture tests cover interrupted recovery, changed inputs, additions/deletions,
+source invalidation and private-file protection; production recovery is unproven.
+
+Next: resolve host interruption evidence, bound scan resources, qualify native
+checkpoint recovery in production, provision actual reviewer/producer identities
+and services, complete DATA-002/003 registration and separately approved scope,
+then demonstrate two concurrent genuine one-year terminal BT-009 attempts and
+automatic replenishment. Whole-corpus math fidelity and RI-015 reasoning remain
+unqualified; no capital or shadow approval is implied.
+
+Reviewer service packaging now includes separate spec/causality instances,
+private writable runtimes with read-only credential mounts, and explicit start
+opt-in. Each instance is limited to 2 GiB memory, one CPU quota and 128 tasks.
+Systemd template validation passes. Lease-loss process-wait cleanup has a
+regression assertion; operational service installation and genuine verdicts are
+still pending. Native DATA-003 rehashes selected panels and rejects changed bytes,
+so checkpoint reuse cannot replace selected-panel integrity checks.
+
+Production provenance progress: two existing native capacity executors now have
+registry-derived package/runtime producer profiles, without credential/package,
+grant, mandate or approval mutation. Profile IDs are
+`d5552111-94e7-4a40-a29d-1795dd969bb7` and
+`bda7c742-1aad-4dd8-847f-4f6482ea3345`; runtime is `hermes/0.3.2`.
+Their review kind is `alpha_native_producer`, not an evaluator capability.
+These profiles can bind future lease provenance; they cannot repair historical
+leases or establish independent review. The live campaign is still waiting on
+strategy engineering and no alpha review route exists yet. Dedicated reviewer
+registration/start require the protected VM1 bootstrap, where unattended sudo
+currently requires operator input. Safe source work remains available.
+
+Grounding recovery now has production evidence: terminal predeployment cycle 8
+`9cd916fd-08d3-4158-81c8-1da0d1df69b4` is preserved, and the digest-bound API
+created cycle 9 `f838efba-d2bf-4aa1-a226-8b6c652d914d`, digest
+`af3875a132fac4627ac9404870d1b5ef632a61194f4751edae969eb447114de5`.
+Task `A4-aae38741-009-I` is queued, not yet leased, with nine actual literature
+citations, explicit maximum-eight variant constraints and the approved one-year
+window. Mandate digest/source/asset scope remain unchanged. Complete lake catalog
+status is still `not_registered`; no broader universe or backtest is inferred.

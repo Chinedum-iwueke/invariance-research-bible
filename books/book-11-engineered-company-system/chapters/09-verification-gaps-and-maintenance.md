@@ -502,3 +502,81 @@ running lease after routed-subject and frozen identity replay. Full validation:
 role/grant provisioning, deployment and genuine independent review remain open.
 Replacement inventory continues under the same supervisor, reaching 1,221 objects;
 neither complete-root admission nor concurrent scientific execution is inferred.
+
+#### September 16: Deployed Review Contracts, Interrupted Inventory
+
+The prior live-scan observation is superseded. VM1 rebooted again and replacement
+run `93a00b1f-e9ae-4dca-931c-efc6bf9dd99a` stopped at 1,753 objects without a
+root receipt. The Mac update was started after the freezes and is not their cause.
+No recorded guest OOM/panic establishes the interruption mechanism; host evidence
+is still needed. The scan remains stopped. VM2 now runs merged review-completion
+contracts with healthy image/source verification; reviewer packages/profile
+provisioning have 21 focused passing tests but actual services/review receipts are
+not established.
+
+Native recovery no longer needs to wait for a 10,000-file publication boundary:
+per-object private checkpoints retain metadata, with root/source and filesystem
+fingerprint invalidation and fresh traversal for added/deleted files. Fixture
+recovery avoids rehashing unchanged objects. A reused digest remains a prior-byte
+observation, not fresh integrity proof; selected execution inputs require separate
+validation. This implementation is not a production scan success, data admission,
+reasoning qualification or autonomous-loop closure. Two concurrent one-year
+scientific results and automatic replenishment remain required evidence.
+
+Reviewer runtime packaging follows existing worker sandboxing, with separate
+private writable directories and read-only credential mounts; credentials are
+neither copied nor rotated. Explicit installation/start are separate actions.
+Per-service resource limits constrain memory, CPU and process count. A lease-loss
+test exposed an orphaned shielded process-wait coroutine; the executor now owns
+one wait task and cancels/joins it during cleanup. Native DATA-003 still freshly
+hashes selected panel bytes. Template/tests are engineering evidence, not actual
+independent judgment, scientific qualification or loop closure.
+
+Live catalog inspection confirmed only two generic evaluator profiles and no
+alpha review routes. Existing native executor producer profiles have now been
+registered against their actual active signed packages and registry runtime
+`hermes/0.3.2`: profile digests
+`7569997c5724a8944b70691bad31194982a2cc86acfbe223714ce09afa5bc7ee`
+and `d7fa26097c1752db2a087a1ba5a7b899fefbf516cde43cd19c89eaed87208857`.
+The provider/model declaration describes native deterministic production, not an
+LLM evaluation. Future leases can freeze this provenance; historical missing
+provenance is not retroactively invented. No package, grant, credential, scope,
+approval or reviewer authority changed. Strategy engineering, real evaluator
+services and two concurrent terminal scientific attempts remain outstanding.
+
+Digest-bound recovery preserved the terminal predeployment ungrounded cycle and
+created a new cycle with current context. Cycle
+`f838efba-d2bf-4aa1-a226-8b6c652d914d` has queued task
+`A4-aae38741-009-I`, nine retained literature citations and explicit research
+constraints: eight variants, the approved 2025-05-01 through 2026-05-01 window,
+and the unchanged native source/mandate digest. This corrects the missing-context
+handoff without rewriting prior outputs or treating historical commands as approval.
+The task is not yet leased; complete lake registration and scientific execution
+remain unproven. Grounding recovery is not loop closure.
+
+#### September 16: Manifest-First Admission And Native Capability Binding
+
+ALPHA-008 corrects the operational interpretation of “full-lake access.” Normal
+research cycles do not recursively scan raw storage. They consume the immutable
+native manifest catalog, which exposes 689 assets and 123 one-year candidates in
+the current production receipt. Only a hypothesis's preregistered panel set is
+then opened, freshly hashed, checked and registered through DATA-001/002/003.
+A separate rare custody audit may still traverse every file, but it is neither a
+per-cycle dependency nor a substitute for selected-input integrity.
+
+The same weekly mandate freezes a native strategy-capability catalog at the exact
+Bulletproof source commit. Reuse is an explicit senior-research decision and
+requires matching mechanism, timeframe, input cardinality, finite grid, truth
+semantics and logging contract. The resulting card binds the exact registered
+YAML digest and does not pretend an LLM reconstructed its feature logic. Novel
+mechanisms still require founder-approved code. Current registered strategies are
+single-instrument: basket questions remain valid, but must route to engineering
+rather than silently dropping every asset after the first.
+
+Focused verification passes 89 backend, 28 worker and 37 native tests. Full
+control-plane suites pass 897 backend tests with one optional skip and 333 worker
+tests. Migration `c2a8e4f61d90` is the sole head. These are source claims only.
+Native full-suite completion, reviewed merges, production deployment, a fresh
+founder-approved weekly mandate, two overlapping genuine one-year Bulletproof
+runs, terminal BT-009 publication and automatic replenishment remain the active
+closure sequence. No alpha, shadow or capital authority is inferred.
