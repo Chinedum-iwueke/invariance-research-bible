@@ -1405,3 +1405,11 @@ and services, complete DATA-002/003 registration and separately approved scope,
 then demonstrate two concurrent genuine one-year terminal BT-009 attempts and
 automatic replenishment. Whole-corpus math fidelity and RI-015 reasoning remain
 unqualified; no capital or shadow approval is implied.
+
+Reviewer service packaging now includes separate spec/causality instances,
+private writable runtimes with read-only credential mounts, and explicit start
+opt-in. Each instance is limited to 2 GiB memory, one CPU quota and 128 tasks.
+Systemd template validation passes. Lease-loss process-wait cleanup has a
+regression assertion; operational service installation and genuine verdicts are
+still pending. Native DATA-003 rehashes selected panels and rejects changed bytes,
+so checkpoint reuse cannot replace selected-panel integrity checks.

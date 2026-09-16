@@ -522,3 +522,12 @@ observation, not fresh integrity proof; selected execution inputs require separa
 validation. This implementation is not a production scan success, data admission,
 reasoning qualification or autonomous-loop closure. Two concurrent one-year
 scientific results and automatic replenishment remain required evidence.
+
+Reviewer runtime packaging follows existing worker sandboxing, with separate
+private writable directories and read-only credential mounts; credentials are
+neither copied nor rotated. Explicit installation/start are separate actions.
+Per-service resource limits constrain memory, CPU and process count. A lease-loss
+test exposed an orphaned shielded process-wait coroutine; the executor now owns
+one wait task and cancels/joins it during cleanup. Native DATA-003 still freshly
+hashes selected panel bytes. Template/tests are engineering evidence, not actual
+independent judgment, scientific qualification or loop closure.
