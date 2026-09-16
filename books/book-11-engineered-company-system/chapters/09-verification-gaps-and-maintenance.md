@@ -531,3 +531,15 @@ test exposed an orphaned shielded process-wait coroutine; the executor now owns
 one wait task and cancels/joins it during cleanup. Native DATA-003 still freshly
 hashes selected panel bytes. Template/tests are engineering evidence, not actual
 independent judgment, scientific qualification or loop closure.
+
+Live catalog inspection confirmed only two generic evaluator profiles and no
+alpha review routes. Existing native executor producer profiles have now been
+registered against their actual active signed packages and registry runtime
+`hermes/0.3.2`: profile digests
+`7569997c5724a8944b70691bad31194982a2cc86acfbe223714ce09afa5bc7ee`
+and `d7fa26097c1752db2a087a1ba5a7b899fefbf516cde43cd19c89eaed87208857`.
+The provider/model declaration describes native deterministic production, not an
+LLM evaluation. Future leases can freeze this provenance; historical missing
+provenance is not retroactively invented. No package, grant, credential, scope,
+approval or reviewer authority changed. Strategy engineering, real evaluator
+services and two concurrent terminal scientific attempts remain outstanding.

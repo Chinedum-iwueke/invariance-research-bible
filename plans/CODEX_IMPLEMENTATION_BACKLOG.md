@@ -1413,3 +1413,15 @@ Systemd template validation passes. Lease-loss process-wait cleanup has a
 regression assertion; operational service installation and genuine verdicts are
 still pending. Native DATA-003 rehashes selected panels and rejects changed bytes,
 so checkpoint reuse cannot replace selected-panel integrity checks.
+
+Production provenance progress: two existing native capacity executors now have
+registry-derived package/runtime producer profiles, without credential/package,
+grant, mandate or approval mutation. Profile IDs are
+`d5552111-94e7-4a40-a29d-1795dd969bb7` and
+`bda7c742-1aad-4dd8-847f-4f6482ea3345`; runtime is `hermes/0.3.2`.
+Their review kind is `alpha_native_producer`, not an evaluator capability.
+These profiles can bind future lease provenance; they cannot repair historical
+leases or establish independent review. The live campaign is still waiting on
+strategy engineering and no alpha review route exists yet. Dedicated reviewer
+registration/start require the protected VM1 bootstrap, where unattended sudo
+currently requires operator input. Safe source work remains available.
