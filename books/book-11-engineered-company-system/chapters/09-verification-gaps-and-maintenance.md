@@ -543,3 +543,13 @@ LLM evaluation. Future leases can freeze this provenance; historical missing
 provenance is not retroactively invented. No package, grant, credential, scope,
 approval or reviewer authority changed. Strategy engineering, real evaluator
 services and two concurrent terminal scientific attempts remain outstanding.
+
+Digest-bound recovery preserved the terminal predeployment ungrounded cycle and
+created a new cycle with current context. Cycle
+`f838efba-d2bf-4aa1-a226-8b6c652d914d` has queued task
+`A4-aae38741-009-I`, nine retained literature citations and explicit research
+constraints: eight variants, the approved 2025-05-01 through 2026-05-01 window,
+and the unchanged native source/mandate digest. This corrects the missing-context
+handoff without rewriting prior outputs or treating historical commands as approval.
+The task is not yet leased; complete lake registration and scientific execution
+remain unproven. Grounding recovery is not loop closure.

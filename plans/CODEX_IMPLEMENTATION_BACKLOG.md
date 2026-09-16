@@ -1425,3 +1425,12 @@ leases or establish independent review. The live campaign is still waiting on
 strategy engineering and no alpha review route exists yet. Dedicated reviewer
 registration/start require the protected VM1 bootstrap, where unattended sudo
 currently requires operator input. Safe source work remains available.
+
+Grounding recovery now has production evidence: terminal predeployment cycle 8
+`9cd916fd-08d3-4158-81c8-1da0d1df69b4` is preserved, and the digest-bound API
+created cycle 9 `f838efba-d2bf-4aa1-a226-8b6c652d914d`, digest
+`af3875a132fac4627ac9404870d1b5ef632a61194f4751edae969eb447114de5`.
+Task `A4-aae38741-009-I` is queued, not yet leased, with nine actual literature
+citations, explicit maximum-eight variant constraints and the approved one-year
+window. Mandate digest/source/asset scope remain unchanged. Complete lake catalog
+status is still `not_registered`; no broader universe or backtest is inferred.
