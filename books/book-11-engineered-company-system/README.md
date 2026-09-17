@@ -2,7 +2,7 @@
 # Book XI — The Engineered Company System
 
 **Edition:** Living as-built engineering specification
-**Snapshot date:** 2026-09-11
+**Snapshot date:** 2026-09-17
 **Scope:** Hermes Swarm, Research Intelligence, Bulletproof BT, Mission Control,
 founder channels, VM2 operations, and the public Invariance application
 
@@ -40,6 +40,7 @@ evidence proves only the observed deployment window.
 7. [VM2 platform and Invariance application](chapters/07-vm2-and-invariance-application.md)
 8. [Security, reliability and recovery](chapters/08-security-reliability-and-recovery.md)
 9. [Verification, gaps and maintenance](chapters/09-verification-gaps-and-maintenance.md)
+10. [Codex and LLM runtime inventory](chapters/10-codex-and-llm-runtime-inventory.md)
 
 ## Source hierarchy
 
