@@ -580,3 +580,38 @@ Native full-suite completion, reviewed merges, production deployment, a fresh
 founder-approved weekly mandate, two overlapping genuine one-year Bulletproof
 runs, terminal BT-009 publication and automatic replenishment remain the active
 closure sequence. No alpha, shadow or capital authority is inferred.
+
+#### September 23: Reconciled Production Truth
+
+Control-plane PRs #346 through #352 are deployed. They stop repeated terminal-cycle
+accounting, reconstruct counters from immutable evidence, rotate native execution to
+bounded measured runtimes without widening authority, preserve charter compatibility,
+rebaseline all 13 RI retrieval domains at corpus epoch 577456 without weakening
+thresholds, and prevent an active native task from being discarded solely because
+its campaign deadline passed. PR #352 additionally recovers a completed full native
+receipt through a compact, identity-bound handoff when the evidence exceeds the
+bounded worker-result contract.
+
+Measured classic-engine throughput subsequently established that eight hours was
+still below the real one-year runtime. PR #351 passed the complete 373-test worker
+suite and raised only the bounded worker ceiling to 12 hours. The executor package
+was rotated to version 1.3.0, and the unchanged risk-zero task entered its final
+attempt with the same immutable plan digest.
+
+The first genuine one-year result is a retained negative with eight trials and a
+complete BT-009 publication/memory chain. Two approved jobs demonstrably overlapped,
+although memory-calibrated admission correctly limited the replacement funding run
+to four workers. That second run also completed negative, retaining four trials and
+the failed matched-control-support gate. BT-009 bridge
+`596171f2-2e8b-57e8-a405-186552478300` is complete through publication and memory.
+RI-016 subsequently closed at corpus epoch 577480 with digest parity. Automatic
+cycle-12 replenishment exists exactly once and novel code remains paused for founder
+approval.
+
+The operational claim must stay narrow. Manifest visibility covers 689 assets, but
+current execution is authorized only for an admitted Bybit BTCUSDT panel. The
+initial no-capital autonomous-loop certificate is therefore complete, but adaptive
+multi-asset and mixed-basket execution remain ALPHA-007 work. RI-014D remains
+source-bound just-in-time assurance rather than whole-corpus mathematical fidelity,
+and RI-015 still lacks a live independent reasoning qualification. Nothing in this
+evidence grants shadow, order or capital authority or claims profitability.

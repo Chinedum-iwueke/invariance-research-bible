@@ -1695,3 +1695,48 @@ Bulletproof PR #306 passed every CI shard and merged at
 at that merge and the resampler bytes match the deployed advisory snapshot.
 Privileged service activation and two concurrent terminal publications remain
 pending; source deployment alone is not operational qualification.
+
+#### September 23: Initial Autonomous Laboratory Certification
+
+The manifest-first path is now deployed. Its production DATA-002 receipt exposes
+689 assets, 3,441 availability records and 123 one-year coverage candidates while
+keeping raw lake bytes outside routine discovery prompts. This is broad catalog
+visibility, not broad execution authority: the active mandate still permits one
+content-bound Bybit BTCUSDT panel. Stable and volatile memberships are descriptive
+metadata, and future researchers may propose different assets or baskets only before
+outcomes and only through fresh DATA-002/003 admission.
+
+Hermes' mandate projection was rebuilt from immutable evidence after a terminal
+cycle had been counted repeatedly. The repair preserved all 29,706 duplicate events,
+restored authoritative counters to 11 cycles / one hypothesis / zero trials, and
+made repeated reconciliation idempotent. The director then created cycle 12 exactly
+once, generated its next campaign and paused novel strategy code at the founder G3
+gate. Autonomy continues inside the mandate without erasing code approval.
+
+Two genuine one-year jobs overlapped under the shared Bulletproof scheduler. The
+impact-proxy job terminalized as a retained negative with eight trials, complete
+scientific gates and BT-009 bridge `f801d5eb-8b58-51b1-aa6d-bae405ddf928`;
+bundle `5b82fd5223a8b8298a8c1da4d88a5670f02ba9862fe445f32f85e29a99ab5f26`
+is present in publication and memory. The funding-basis job outlived the original
+six-hour bound, and measured classic-engine throughput also showed that its unchanged
+retry would miss the reviewed eight-hour ceiling. The worker cooperatively retained
+and requeued that attempt before timeout. PR #351 then rotated only the signed
+executor package to a tested 12-hour ceiling while preserving the same question,
+data, window, tier, grid and risk-zero plan digest.
+
+The final funding-basis attempt completed four trials and terminalized negative on
+inadequate matched-control support. Its 77,605,586-byte native receipt is preserved
+in bundle `103cf716d7e079755b3e2963a1c338428ead1c4de2e8162078268edfbf84710a`.
+Because that receipt could not fit the bounded worker-result contract, PR #352 added
+a compact digest-addressed handoff and identity-bound recovery path instead of
+discarding evidence or enlarging the control-plane payload. BT-009 bridge
+`596171f2-2e8b-57e8-a405-186552478300` now contains approval, execution, truth,
+independent-review, publication and memory receipts. RI-016 is current at source
+epoch 577480 with incremental/full digest parity.
+
+The initial certificate is therefore BTC-scoped and no-capital. It demonstrates
+catalog-grounded discovery, approval-bound engineering, two terminal one-year native
+executions, retained negative evidence, BT-009 publication and exactly-once
+autonomous replenishment. It does not
+demonstrate alpha, shadow eligibility, live profitability, adaptive mixed-basket
+execution, whole-corpus mathematical fidelity or RI-015 reasoning qualification.
