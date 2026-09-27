@@ -15,7 +15,37 @@ registry or API is not sufficient completion evidence. The
 [2026-08-28 ownership audit](QUANTITATIVE_OWNERSHIP_AUDIT.md) reopens every packet
 whose Bulletproof-native producer and cross-repository receipt replay are absent.
 
-## Current execution snapshot — 2026-08-24
+## Current execution snapshot — 2026-09-27
+
+The initial no-capital autonomous laboratory certificate is real but deliberately
+narrow. ALPHA-008 has two retained one-year negative BT-009 outcomes, repaired
+mandate accounting and exactly-once next-cycle replenishment. Its production catalog
+exposes 689 assets and 123 one-year candidates, while the currently certified
+execution path remains the admitted BTC-scoped path. This proves a bounded loop can
+finish honestly; it does not prove alpha, broad multi-asset autonomy, shadow readiness
+or capital authority.
+
+ALPHA-009 adaptive multi-asset representation is implemented in source and deployed
+through the current Hermes worker/API contract, but its capability certificate remains
+open. The representation scientist can propose outcome-blind baskets, arbitrary safe
+minute aggregation and typed transformations, including bounded past-only fractional
+differentiation. Native Bulletproof code must still materialize and validate those
+choices. The active multi-asset campaign is in governed strategy correction: two
+revisions passed the full deterministic suite and were rejected by independent
+scientific review; a successor correction was still running at this snapshot. No
+qualified backtest or candidate is inferred from a running engineering task.
+
+Codex authentication continuity is now deployed: a VM1 watcher performs a real probe,
+opens one durable recovery incident, starts device authorization and exposes redacted
+same-thread retry through Telegram and Mission Control. VM2 runs migration
+`d3b9f5a72e10`. This is runtime continuity only and grants no research, approval,
+shadow, order or capital authority.
+
+Whole-corpus RI-014 mathematics fidelity and RI-015 institutional reasoning remain
+unqualified. RI-014D may qualify an exact just-in-time expression with deterministic
+or genuinely independent evidence; it cannot generalize that receipt to the corpus.
+
+## Historical execution snapshot — 2026-08-24
 
 The recently completed tranche is now reconciled across source, evidence and Book XI:
 
@@ -1020,6 +1050,14 @@ inventory remains live at 1,221 objects, not complete-root registration.
 
 - **Initial autonomy closure evidence (2026-09-24):** Mandate `436b5260-46d9-4d1c-b946-615a54a84db5` was reconstructed from immutable evidence after 29,706 duplicate counter applications: the authoritative projection changed from 11 cycles / 29,707 hypotheses / zero trials to 11 / one / zero without deleting the duplicate events. Successor cycle `43672446-c939-4a70-b7ee-155322a85e1b` was then created exactly once, replenished campaign `02fc8fed-641e-4db9-8d43-2dbbaf3e10d9` and stopped novel code at the explicit G3 approval gate. Impact campaign `c2fa962a-4f56-41ad-aaae-d01263fa62a6` retained eight negative trials and completed BT-009 bridge `f801d5eb-8b58-51b1-aa6d-bae405ddf928`, bundle `5b82fd5223a8b8298a8c1da4d88a5670f02ba9862fe445f32f85e29a99ab5f26`, with `retain_negative`. Funding-basis campaign `30ccd5ae-d78a-4d37-ade6-e742651b28de` retained four negative trials and completed BT-009 bridge `596171f2-2e8b-57e8-a405-186552478300`, publication `158843cb-2a03-5392-9ca3-04820cca146c`, and memory confirmation. Its 77,605,586-byte receipt remains in bundle `103cf716d7e079755b3e2963a1c338428ead1c4de2e8162078268edfbf84710a`; PR #352 repaired only the bounded publication handoff. Projection-audit digest `3de963bdb611fc790a7bdf7479c0585e340e14db5b5de9c68f0b8fb97cf39c49` confirms 12 cycles / one accepted hypothesis / zero mandate-attributed trials; manually controlled one-year campaigns are not misattributed to mandate counters.
 - **Remaining breadth boundary:** The catalog is broad, but the current executable mandate remains one admitted Bybit BTCUSDT panel. ALPHA-007 adaptive multi-asset selection, mixed-basket native implementations and broader content-bound admissions remain open. Whole-corpus equation fidelity, RI-015 independent reasoning qualification, shadow admission, profitability and capital authority are also outside this initial operational certificate.
+
+### ALPHA-009 — Adaptive multi-asset representation and causal materialization
+
+- **Status/scope/gap (2026-09-27):** Implemented, tested and deployed at the Hermes contract boundary; production capability qualification remains open. The supervised representation scientist may select a point-in-time eligible single asset or basket across optional stable/volatile labels, assign member roles and choose clocks plus a typed, outcome-blind transformation graph. Stable/volatile groups are evidence labels, never hard execution partitions. Selection must occur before target or held-out outcomes are visible.
+- **Ownership/contracts:** Hermes owns bounded context, role separation, immutable plan and audit records, exact DATA-002/003 bindings and lifecycle. Bulletproof alone materializes bars and panels, validates causal availability, aligns members, applies complete-bar aggregation and past-only fitted transforms, attaches compiled fields to the real engine input and produces quantitative evidence. Supported transformations include returns, local scaling and bounded fractional differentiation where justified; none is mandatory or proof of stationarity. Catalog visibility is not execution eligibility.
+- **Qualification evidence:** Certification requires semantically different single-asset and mixed-basket cases, exact strategy-consumer binding, malformed-provenance rejection and one terminal multi-asset BT-009 outcome. Two recent strategy revisions passed the full deterministic suite but were rejected independently for integration, provenance, outcome-taxonomy and held-out-evaluation defects. Their evidence is retained; the successor correction remained running at this snapshot. A test pass or model-authored plan alone is not qualification.
+- **Durable repair rule:** Shared failures in dispatch, evidence binding, lifecycle accounting, outcome taxonomy, held-out auditing, logging, resource governance or validators must be repaired in shared infrastructure. Closure requires the original regression plus a materially different hypothesis, asset, timeframe or failure fixture. Only hypothesis-specific mechanisms and calculations may remain strategy-local.
+- **Rollback/done:** Disable the representation worker and new multi-panel admission while preserving plans, admissions, tasks and rejected bundles. Done requires a qualified representation certificate, independently accepted native strategy bundle, terminal BT-009 publication and automatic subsequent-cycle behavior. No shadow, order, capital, profitability, universal stationarity, RI-014 corpus fidelity or RI-015 reasoning claim follows.
 
 ### ML-002 — Causal feature, label and split pipelines
 
