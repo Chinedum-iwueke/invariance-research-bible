@@ -3,7 +3,7 @@
 
 ## 9.1 Current milestone ledger
 
-| Package | Source state | Runtime/evidence state at 2026-08-22 |
+| Package | Source state | Latest recorded runtime/evidence state |
 |---|---|---|
 | BASE-001..003 | Implemented/tested | Completion evidence retained |
 | RI-001..006 | Implemented/tested | Isolated/database rehearsals retained; live health must be queried |
@@ -25,6 +25,9 @@
 | AGT-001 | Implemented/tested/deployed/observed | Exact-package charters/grants enforced at lease time; 14-agent/41-grant bootstrap and live allow/revoke/deny replay retained; Mac UI live with 14 active charters and 41 active grants |
 | PLAT-002 | Implemented/tested/deployed/observed | Fourteen identities and zero uncovered active-package credentials; central scope enforcement, secret-policy and emergency-access lifecycles, credential rollback and Mac identity inventory passed live replay |
 | AGT-002 | Implemented/tested/deployed/observed | Exact task-attempt context replay binds live authority and canonical evidence; protected/stale/contaminated/oversized packs fail closed; digest-only scratch was discarded in a non-executing live pilot |
+| ALPHA-008 | Implemented/tested/deployed/observed | Initial BTC-scoped no-capital certificate: two terminal one-year negative BT-009 outcomes and exactly-once replenishment retained; broad catalog visibility does not imply broad execution authority |
+| ALPHA-009 | Implemented/tested/deployed/partial | Representation worker and causal materialization contracts exist; multi-asset capability qualification remains open while the current strategy correction proceeds through independent review |
+| Codex authentication recovery | Implemented/tested/deployed/observed | VM1 real-probe watcher, VM2 recovery registry, restricted Telegram notice/retry and Mission Control recovery panel observed on 2026-09-27; no task or financial authority added |
 | BT-001 | Implemented/tested/merged | Canonical Python 3.11 contract matrix closes recorded collection and drift defects |
 | BT-002 | Implemented/tested/merged | Immutable bounded dataset, availability and correction-lineage contract merged |
 | BT-003 | Implemented/tested/merged | Atomic digest-finalized bundle and compatible Hermes producer contract merged; production run not yet claimed |
@@ -615,3 +618,32 @@ multi-asset and mixed-basket execution remain ALPHA-007 work. RI-014D remains
 source-bound just-in-time assurance rather than whole-corpus mathematical fidelity,
 and RI-015 still lacks a live independent reasoning qualification. Nothing in this
 evidence grants shadow, order or capital authority or claims profitability.
+
+## 9.8 Autonomous laboratory state observed on 2026-09-27
+
+ALPHA-008 has an initial BTC-scoped, no-capital operational certificate. Two genuine
+one-year negative outcomes reached terminal BT-009 publication, duplicate mandate
+accounting was reconstructed from immutable evidence and a successor discovery cycle
+was created exactly once. The catalog exposes 689 assets and 123 one-year candidates.
+This proves narrow loop closure, not broad multi-asset execution, alpha or capital
+readiness.
+
+ALPHA-009 adds the supervised outcome-blind representation role and native causal
+materialization contract. The current multi-asset path is not yet qualified. Two
+generated strategy revisions passed the full Bulletproof deterministic suite but were
+rejected by independent reviewers for integration, provenance, outcome and held-out
+evaluation defects. Their failures are retained; the successor engineering correction
+was still running at this snapshot. It must pass deterministic checks, independent
+review and governed publication before the milestone can close.
+
+The shared Codex authentication runtime now has a deployed recovery watcher. A real
+fixed-output probe detects rejected server-side credentials, one durable incident
+carries short-lived device authorization state, and Telegram and Mission Control can
+request a fresh code on the same incident. Tokens never leave VM1 and authentication
+recovery grants no task or financial authority.
+
+Defect closure is cross-context by policy. Shared dispatch, evidence, lifecycle,
+outcome, held-out, logging, resource and validation defects must be fixed in their
+common producer or validator and tested against both the original failure and a
+materially different context. A patch that only makes the current ETH, BTC or SOL
+fixture pass is not sufficient evidence of a sustained system correction.

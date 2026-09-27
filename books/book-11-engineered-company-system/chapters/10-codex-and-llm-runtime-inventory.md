@@ -13,13 +13,13 @@ The inventory is source-observed at these revisions:
 
 | Repository | Audited revision | Scope |
 |---|---|---|
-| `swarm-control-plane` | `4cdf0a2` | Hermes workers, planner, Mission Control and ingestion recovery |
-| `bulletproof_bt` | `33edbf501c2588647fb3c295d742a70fd3edc426` | Optional experiment-result interpretation |
+| `swarm-control-plane` | `329ebd59f85949a8c9fa7183cb350b45bdc7ac52` | Hermes workers, planner, Mission Control, ingestion recovery and Codex authentication continuity |
+| `bulletproof_bt` | `fd0ffae9d04583fcd4300e8308405fe2e32a0571` | Native adaptive-representation execution and optional experiment-result interpretation |
 | `invariance_research` | `234ebb0337a27166a81aa8727259bd00ce0d1614` | Public research assistant and analysis synthesis |
 
 These pins establish the audited source, not deployment. Only service evidence can
 prove that a call site is deployed or active. Runtime state
-below is the state observed on VM1 on 2026-09-17 unless another location is named.
+below is the state observed on VM1 on 2026-09-27 unless another location is named.
 
 ## 10.2 Hermes and Research Intelligence invocations
 
@@ -27,13 +27,15 @@ below is the state observed on VM1 on 2026-09-17 unless another location is name
 |---|---|---|---|---|
 | Founder conversational planner | Interprets a founder message against supplied grounding, decides whether to answer, clarify or compile, and emits a schema-bound proposal. A grounded request can use one reasoning call plus one proposal-compilation call. | Ephemeral read-only Codex directory; structured reasoning and proposal documents. | Cannot execute the proposal, approve it, deploy code, place orders or allocate capital. | `invariance-swarm-founder-planner.service` active on VM1 at audit time. |
 | ALPHA-004 Research Intelligence director and senior researcher | Produces evidence-bound research briefs and predictive, falsifiable candidate questions from bounded corpus, failure, observation, portfolio and data context. | `codex exec`, read-only, network disabled, plugins/apps disabled; strict stage-specific JSON. | Proposes only. Deterministic validation, data admission, independent review and approval remain separate. | Both supervised ALPHA-004 units active on VM1 at audit time. |
-| Engineering mission coding agent | Writes a bounded patch for an approved engineering contract, including native strategy implementation work. | `codex exec`, workspace-write, network disabled; allowed paths, file count, diff size and duration are enforced before tests. | Cannot push, merge, approve, trade or exceed the leased contract. | Generic executor implemented. Dedicated alpha strategy engineer remained inactive pending the exact production-parity rehearsal. |
+| ALPHA-009 data representation scientist | Selects a pre-outcome asset or basket, member roles, signal and execution clocks, candidate transformations and rejected alternatives for an exact accepted question. | `codex exec`, read-only, network disabled, plugins/apps disabled; `adaptive-representation-plan-v1.0.0` output only. Raw lake bytes and target outcomes are excluded. | Proposes data shape only. It cannot materialize features, tune against outcomes, admit panels or run a backtest. Native DATA-002/003 and Bulletproof validation remain mandatory. | Supervised representation unit active on VM1 at audit time; milestone qualification remains open. |
+| Engineering mission coding agent | Writes a bounded patch for an approved engineering contract, including native strategy implementation work. | `codex exec`, workspace-write, network disabled; allowed paths, file count, diff size and duration are enforced before tests. | Cannot push, merge, approve, trade or exceed the leased contract. | Dedicated alpha strategy engineer active. Two recent revisions passed the full deterministic suite but were rejected by independent scientific review; their successor correction was still running at this snapshot. |
 | Engineering mission code reviewer | Reviews the generated patch after deterministic tests and emits a schema-bound approval/findings document. | A second ephemeral, read-only Codex call in the engineering workspace. | Can reject the patch bundle; cannot approve scientific validity, merge code or authorize execution. | Invoked by engineering missions that reach review. It is not a substitute for AGT-006 scientific independence. |
 | Independent alpha strategy reviewers | Compares the pinned implementation with the exact hypothesis card for either strategy fidelity or causality/leakage semantics. | Separate evaluator identities, read-only Codex, network/plugins/apps disabled; digest-bound verdict. | Review-only. No engineering, backtest, promotion, order or capital authority. | `spec` and `causality` reviewer units active on VM1 at audit time. |
-| Mission Control Research Copilot | Answers founder research questions from canonical retrieval and optional mathematics context packs, separating cited source claims from uncited agent inference. | Read-only ephemeral Codex call over a bounded context pack; citations outside the pack are rejected. | Cannot approve research, execute strategies, deploy software or allocate capital. Mathematical context is not self-verification. | Implemented and previously Mac-deployed; Mac service health was not rechecked in this VM1 audit. |
+| Mission Control Research Copilot | Answers founder research questions from canonical retrieval and optional mathematics context packs, separating cited source claims from uncited agent inference. | Read-only ephemeral Codex call over a bounded context pack; citations outside the pack are rejected. | Cannot approve research, execute strategies, deploy software or allocate capital. Mathematical context is not self-verification. | Mac service reinstalled and observed serving on `127.0.0.1:8790` on 2026-09-27. |
 | Scientific-ingestion recovery adviser | Chooses among available deterministic repair, independent-parser and offline-OCR attempts from bounded diagnostics. | Advisory-only read-only Codex call; no artifact bytes, database or tools. Deterministic fallback remains available. | Cannot suppress scanner findings or authorize publication. | Implemented; recovery-steward unit inactive on VM1 at audit time. |
 | M14B daily director script | Generates five cited, falsifiable research questions from bounded passages and prior evidence. | Manual/standalone read-only Codex invocation with structured candidate output. | No execution or approval authority. | Legacy/operator-invoked surface; not evidence that the current ALPHA-004 service ran it. |
-| Alpha-loop production-parity rehearsal | Exercises the real engineering coder and reviewer against a synthetic disposable repository before activation. | Same Codex executor path as production, but no production API, market data, orders or capital. | Qualifies only the runtime boundary. It cannot qualify alpha or create a production scientific receipt. | Required gate; the 2026-09-17 outer systemd run was still being corrected at this source snapshot. |
+| Alpha-loop production-parity rehearsal | Exercises the real engineering coder and reviewer against a synthetic disposable repository before activation. | Same Codex executor path as production, but no production API, market data, orders or capital. | Qualifies only the runtime boundary. It cannot qualify alpha or create a production scientific receipt. | The production executor is active; each scientific bundle still requires its own deterministic and independent qualification. |
+| Codex authentication watcher | Runs a fixed-output real Codex probe so stale local login state is not mistaken for a usable server-side session. | Shared VM1 credential runtime under an exclusive refresh lock; only redacted state, verification URL, short-lived device code and expiry leave the host. | Authentication continuity only. It cannot reason about research, edit code, approve tasks or consume an experiment attempt. | Watcher active and recovery observed through VM1, VM2, Telegram and Mission Control on 2026-09-27. |
 
 RI-014D does not ask a model to certify its own mathematics. It accepts deterministic
 verification or a separately identified independent receipt. A model may locate,
@@ -86,7 +88,24 @@ The fleet operation ledger does not yet provide a complete call-by-call inventor
 interactive Codex sessions, token use, model identity and resulting commits. This
 chapter inventories executable roles, not every historical inference request.
 
-## 10.6 Surfaces that do not invoke an LLM
+## 10.6 Durable correction boundary
+
+An experiment failure does not justify a fixture-shaped patch. Dispatch, evidence
+binding, lifecycle accounting, outcome taxonomy, held-out evaluation, logging,
+resource control and validation are shared contracts. A defect in one of those
+contracts must be corrected at the shared producer or validator and receive both an
+original regression and a materially different hypothesis, asset, timeframe or
+failure fixture. Hypothesis-specific mechanisms and calculations remain in the native
+strategy module.
+
+This rule is active evidence, not retrospective polish. Two recent multi-asset
+engineering revisions passed Bulletproof's full deterministic suite but were rejected
+by independent reviewers for integration, provenance, outcome and held-out-evaluation
+defects. The rejected bundles remain immutable evidence; neither is merged or called
+certified. The successor correction remains in progress until deterministic tests,
+independent review and the governed publication path all finish.
+
+## 10.7 Surfaces that do not invoke an LLM
 
 - Telegram is a restricted transport and approval interface; it does not reason by
   itself. Conversational reasoning belongs to the founder planner.
@@ -99,7 +118,7 @@ chapter inventories executable roles, not every historical inference request.
   deterministic services unless an explicitly listed caller supplies their bounded
   output to a model.
 
-## 10.7 Required maintenance
+## 10.8 Required maintenance
 
 Any new model call must update this chapter in the same change or a linked
 documentation change. The entry must name the executable call site, runtime identity,
@@ -108,7 +127,7 @@ retained evidence, authority denied, deployment location and last observed healt
 Mission Control should ultimately expose this inventory and per-invocation telemetry so
 model work cannot occur invisibly.
 
-## 10.8 Executable source map
+## 10.9 Executable source map
 
 | Boundary | Authoritative source path |
 |---|---|
@@ -120,6 +139,7 @@ model work cannot occur invisibly.
 | Ingestion recovery adviser | `swarm-control-plane/backend/app/ingestion/recovery_controller.py` |
 | M14B director | `swarm-control-plane/worker/scripts/m14b_director.py` |
 | Production-parity rehearsal | `swarm-control-plane/worker/scripts/alpha_loop_rehearsal.py` |
+| Codex authentication watcher | `swarm-control-plane/worker/src/swarm_worker/codex_auth_watcher.py` |
 | Bulletproof interpretation | `bulletproof_bt/orchestrator/interpret_experiment_results.py` and `bulletproof_bt/orchestrator/analysis/llm_client.py` |
 | Public clarification | `invariance_research/src/lib/server/research-programs/clarification.ts` |
 | Public Research Copilot | `invariance_research/src/lib/server/research-copilot/reasoning.ts` and `invariance_research/src/lib/server/llm/chat-provider.ts` |
