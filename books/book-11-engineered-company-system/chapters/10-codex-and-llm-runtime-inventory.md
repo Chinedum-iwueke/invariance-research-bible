@@ -42,6 +42,18 @@ verification or a separately identified independent receipt. A model may locate,
 transcribe or explain an equation, but that output alone cannot become calculation or
 qualification authority.
 
+The 2026-09-27 ALPHA-009 cycle 2 provides live evidence for these two research roles.
+The senior researcher received exact recent-question exclusions plus a rotating
+catalog frontier and proposed SOL-to-ETH, RUNE and XAUT/PAXG questions at 2h and 4h,
+rather than paraphrasing another BTC question. The representation scientist retained
+both assets in the two relative/cross-asset questions, kept RUNE single-asset because
+another member was not causally necessary, and rejected fractional differentiation
+because the frozen return and spread semantics did not require it. Deterministic data
+gates then rejected the unavailable XAUT/PAXG panel and admitted ETH, SOL and RUNE.
+This is evidence of proposal and representation range. It is not evidence of alpha or
+a certified mixed-basket backtest; campaign `221c7817-f638-4a47-b4b2-7698ee62eedf`
+still requires approved native engineering and independent evaluation.
+
 ## 10.3 Bulletproof BT invocation
 
 Bulletproof's backtest, resampling, accounting, cost, walk-forward and metric
