@@ -26,7 +26,7 @@
 | PLAT-002 | Implemented/tested/deployed/observed | Fourteen identities and zero uncovered active-package credentials; central scope enforcement, secret-policy and emergency-access lifecycles, credential rollback and Mac identity inventory passed live replay |
 | AGT-002 | Implemented/tested/deployed/observed | Exact task-attempt context replay binds live authority and canonical evidence; protected/stale/contaminated/oversized packs fail closed; digest-only scratch was discarded in a non-executing live pilot |
 | ALPHA-008 | Implemented/tested/deployed/observed | Initial BTC-scoped no-capital certificate: two terminal one-year negative BT-009 outcomes and exactly-once replenishment retained; broad catalog visibility does not imply broad execution authority |
-| ALPHA-009 | Implemented/tested/deployed/partial | Representation worker and causal materialization contracts exist; multi-asset capability qualification remains open while the current strategy correction proceeds through independent review |
+| ALPHA-009 | Implemented/tested/deployed/partial | Representation worker and causal materialization contracts exist; three full-suite strategy revisions were independently rejected and multi-asset capability qualification remains open |
 | Codex authentication recovery | Implemented/tested/deployed/observed | VM1 real-probe watcher, VM2 recovery registry, restricted Telegram notice/retry and Mission Control recovery panel observed on 2026-09-27; no task or financial authority added |
 | BT-001 | Implemented/tested/merged | Canonical Python 3.11 contract matrix closes recorded collection and drift defects |
 | BT-002 | Implemented/tested/merged | Immutable bounded dataset, availability and correction-lineage contract merged |
@@ -629,12 +629,14 @@ This proves narrow loop closure, not broad multi-asset execution, alpha or capit
 readiness.
 
 ALPHA-009 adds the supervised outcome-blind representation role and native causal
-materialization contract. The current multi-asset path is not yet qualified. Two
+materialization contract. The current multi-asset path is not yet qualified. Three
 generated strategy revisions passed the full Bulletproof deterministic suite but were
-rejected by independent reviewers for integration, provenance, outcome and held-out
-evaluation defects. Their failures are retained; the successor engineering correction
-was still running at this snapshot. It must pass deterministic checks, independent
-review and governed publication before the milestone can close.
+rejected by independent reviewers. The latest review exposed a runner grid-type
+mismatch, self-asserted caller-frame digests, incompatible required logging, an unused
+grid dimension and missing runner-level regression coverage. The failures are retained;
+shared runner, evidence and logging contracts require another correction. It must pass
+deterministic checks, independent review and governed publication before the milestone
+can close.
 
 The shared Codex authentication runtime now has a deployed recovery watcher. A real
 fixed-output probe detects rejected server-side credentials, one durable incident

@@ -30,10 +30,12 @@ through the current Hermes worker/API contract, but its capability certificate r
 open. The representation scientist can propose outcome-blind baskets, arbitrary safe
 minute aggregation and typed transformations, including bounded past-only fractional
 differentiation. Native Bulletproof code must still materialize and validate those
-choices. The active multi-asset campaign is in governed strategy correction: two
-revisions passed the full deterministic suite and were rejected by independent
-scientific review; a successor correction was still running at this snapshot. No
-qualified backtest or candidate is inferred from a running engineering task.
+choices. The active multi-asset campaign remains in governed strategy correction:
+three revisions passed the full deterministic suite and were rejected by independent
+scientific review. The latest rejection exposed a runner grid-type mismatch,
+self-asserted caller-frame digests, incompatible required logging, an unused grid
+dimension and missing runner-level regression coverage. No qualified backtest or
+candidate is inferred from a passing suite or failed engineering task.
 
 Codex authentication continuity is now deployed: a VM1 watcher performs a real probe,
 opens one durable recovery incident, starts device authorization and exposes redacted
@@ -1055,7 +1057,7 @@ inventory remains live at 1,221 objects, not complete-root registration.
 
 - **Status/scope/gap (2026-09-27):** Implemented, tested and deployed at the Hermes contract boundary; production capability qualification remains open. The supervised representation scientist may select a point-in-time eligible single asset or basket across optional stable/volatile labels, assign member roles and choose clocks plus a typed, outcome-blind transformation graph. Stable/volatile groups are evidence labels, never hard execution partitions. Selection must occur before target or held-out outcomes are visible.
 - **Ownership/contracts:** Hermes owns bounded context, role separation, immutable plan and audit records, exact DATA-002/003 bindings and lifecycle. Bulletproof alone materializes bars and panels, validates causal availability, aligns members, applies complete-bar aggregation and past-only fitted transforms, attaches compiled fields to the real engine input and produces quantitative evidence. Supported transformations include returns, local scaling and bounded fractional differentiation where justified; none is mandatory or proof of stationarity. Catalog visibility is not execution eligibility.
-- **Qualification evidence:** Certification requires semantically different single-asset and mixed-basket cases, exact strategy-consumer binding, malformed-provenance rejection and one terminal multi-asset BT-009 outcome. Two recent strategy revisions passed the full deterministic suite but were rejected independently for integration, provenance, outcome-taxonomy and held-out-evaluation defects. Their evidence is retained; the successor correction remained running at this snapshot. A test pass or model-authored plan alone is not qualification.
+- **Qualification evidence:** Certification requires semantically different single-asset and mixed-basket cases, exact strategy-consumer binding, malformed-provenance rejection and one terminal multi-asset BT-009 outcome. Three recent strategy revisions passed the full deterministic suite but were rejected independently. The latest review exposed a runner grid-type mismatch, self-asserted caller-frame digests, incompatible required logging, an unused grid dimension and missing runner-level regression coverage. Their evidence is retained; the shared contracts require another governed correction. A test pass or model-authored plan alone is not qualification.
 - **Durable repair rule:** Shared failures in dispatch, evidence binding, lifecycle accounting, outcome taxonomy, held-out auditing, logging, resource governance or validators must be repaired in shared infrastructure. Closure requires the original regression plus a materially different hypothesis, asset, timeframe or failure fixture. Only hypothesis-specific mechanisms and calculations may remain strategy-local.
 - **Rollback/done:** Disable the representation worker and new multi-panel admission while preserving plans, admissions, tasks and rejected bundles. Done requires a qualified representation certificate, independently accepted native strategy bundle, terminal BT-009 publication and automatic subsequent-cycle behavior. No shadow, order, capital, profitability, universal stationarity, RI-014 corpus fidelity or RI-015 reasoning claim follows.
 
