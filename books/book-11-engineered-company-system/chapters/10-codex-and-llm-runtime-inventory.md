@@ -28,7 +28,7 @@ below is the state observed on VM1 on 2026-09-27 unless another location is name
 | Founder conversational planner | Interprets a founder message against supplied grounding, decides whether to answer, clarify or compile, and emits a schema-bound proposal. A grounded request can use one reasoning call plus one proposal-compilation call. | Ephemeral read-only Codex directory; structured reasoning and proposal documents. | Cannot execute the proposal, approve it, deploy code, place orders or allocate capital. | `invariance-swarm-founder-planner.service` active on VM1 at audit time. |
 | ALPHA-004 Research Intelligence director and senior researcher | Produces evidence-bound research briefs and predictive, falsifiable candidate questions from bounded corpus, failure, observation, portfolio and data context. | `codex exec`, read-only, network disabled, plugins/apps disabled; strict stage-specific JSON. | Proposes only. Deterministic validation, data admission, independent review and approval remain separate. | Both supervised ALPHA-004 units active on VM1 at audit time. |
 | ALPHA-009 data representation scientist | Selects a pre-outcome asset or basket, member roles, signal and execution clocks, candidate transformations and rejected alternatives for an exact accepted question. | `codex exec`, read-only, network disabled, plugins/apps disabled; `adaptive-representation-plan-v1.0.0` output only. Raw lake bytes and target outcomes are excluded. | Proposes data shape only. It cannot materialize features, tune against outcomes, admit panels or run a backtest. Native DATA-002/003 and Bulletproof validation remain mandatory. | Supervised representation unit active on VM1 at audit time; milestone qualification remains open. |
-| Engineering mission coding agent | Writes a bounded patch for an approved engineering contract, including native strategy implementation work. | `codex exec`, workspace-write, network disabled; allowed paths, file count, diff size and duration are enforced before tests. | Cannot push, merge, approve, trade or exceed the leased contract. | Dedicated alpha strategy engineer active. Two recent revisions passed the full deterministic suite but were rejected by independent scientific review; their successor correction was still running at this snapshot. |
+| Engineering mission coding agent | Writes a bounded patch for an approved engineering contract, including native strategy implementation work. | `codex exec`, workspace-write, network disabled; allowed paths, file count, diff size and duration are enforced before tests. | Cannot push, merge, approve, trade or exceed the leased contract. | Dedicated alpha strategy engineer active. Three recent revisions passed the full deterministic suite but were rejected by independent scientific review; no multi-asset bundle is certified. |
 | Engineering mission code reviewer | Reviews the generated patch after deterministic tests and emits a schema-bound approval/findings document. | A second ephemeral, read-only Codex call in the engineering workspace. | Can reject the patch bundle; cannot approve scientific validity, merge code or authorize execution. | Invoked by engineering missions that reach review. It is not a substitute for AGT-006 scientific independence. |
 | Independent alpha strategy reviewers | Compares the pinned implementation with the exact hypothesis card for either strategy fidelity or causality/leakage semantics. | Separate evaluator identities, read-only Codex, network/plugins/apps disabled; digest-bound verdict. | Review-only. No engineering, backtest, promotion, order or capital authority. | `spec` and `causality` reviewer units active on VM1 at audit time. |
 | Mission Control Research Copilot | Answers founder research questions from canonical retrieval and optional mathematics context packs, separating cited source claims from uncited agent inference. | Read-only ephemeral Codex call over a bounded context pack; citations outside the pack are rejected. | Cannot approve research, execute strategies, deploy software or allocate capital. Mathematical context is not self-verification. | Mac service reinstalled and observed serving on `127.0.0.1:8790` on 2026-09-27. |
@@ -98,12 +98,15 @@ original regression and a materially different hypothesis, asset, timeframe or
 failure fixture. Hypothesis-specific mechanisms and calculations remain in the native
 strategy module.
 
-This rule is active evidence, not retrospective polish. Two recent multi-asset
+This rule is active evidence, not retrospective polish. Three recent multi-asset
 engineering revisions passed Bulletproof's full deterministic suite but were rejected
-by independent reviewers for integration, provenance, outcome and held-out-evaluation
-defects. The rejected bundles remain immutable evidence; neither is merged or called
-certified. The successor correction remains in progress until deterministic tests,
-independent review and the governed publication path all finish.
+by independent reviewers. The latest review found that direct unit coverage concealed
+a runner grid-type mismatch, evidence digests were derived from the same untrusted
+caller frames they purported to authenticate, required logging remained incompatible,
+one grid dimension was not consumed and no runner-level regression exercised the
+governed path. The rejected bundles remain immutable evidence and are not merged or
+called certified. Another shared-contract correction must complete deterministic
+tests, independent review and governed publication.
 
 ## 10.7 Surfaces that do not invoke an LLM
 
