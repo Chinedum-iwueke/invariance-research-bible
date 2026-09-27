@@ -35,9 +35,11 @@ safe minute aggregation and typed transformations, including bounded past-only
 fractional differentiation; Bulletproof alone materializes and evaluates them.
 Production capability remains open: the founder approved the exact-merge mandate at
 `2026-09-27T19:22:51Z`, and its first intelligence, hypothesis and representation
-stages succeeded, but independent acceptance and one terminal mixed-basket BT-009
+stages succeeded. Cycle `71806f40-726e-4989-a928-a030fe28c3e5` rejected its sole
+generated question as a prior duplicate (`generated=1`, `duplicated=1`, `accepted=0`)
+and created no campaign. Independent acceptance and one terminal mixed-basket BT-009
 publication remain required. No qualified backtest or candidate is inferred from
-source qualification or successful planning stages alone.
+source qualification, successful planning stages or correct duplicate rejection.
 
 Codex authentication continuity is now deployed: a VM1 watcher performs a real probe,
 opens one durable recovery incident, starts device authorization and exposes redacted
@@ -1059,7 +1061,7 @@ inventory remains live at 1,221 objects, not complete-root registration.
 
 - **Status/scope/gap (2026-09-27):** Implemented, tested and deployed at the Hermes contract boundary; production capability qualification remains open. The supervised representation scientist may select a point-in-time eligible single asset or basket across optional stable/volatile labels, assign member roles and choose clocks plus a typed, outcome-blind transformation graph. Stable/volatile groups are evidence labels, never hard execution partitions. Selection must occur before target or held-out outcomes are visible.
 - **Ownership/contracts:** Hermes owns bounded context, role separation, immutable plan and audit records, exact DATA-002/003 bindings and lifecycle. Bulletproof alone materializes bars and panels, validates causal availability, aligns members, applies complete-bar aggregation and past-only fitted transforms, attaches compiled fields to the real engine input and produces quantitative evidence. Supported transformations include returns, local scaling and bounded fractional differentiation where justified; none is mandatory or proof of stationarity. Catalog visibility is not execution eligibility.
-- **Qualification evidence:** Certification requires semantically different single-asset and mixed-basket cases, exact strategy-consumer binding, malformed-provenance rejection and one terminal multi-asset BT-009 outcome. Three rejected revisions remain immutable evidence. Bulletproof PR #341 repaired their shared defects at merge `8207ee4e4256ff733df2e6bde4bb4af05c579134`: generic byte/receipt/lineage verification for fully provenance-bound contracts, gap-safe complete-hour construction, elapsed-time purge/embargo, a consumed frozen four-variant grid, sealed held-out access, compatible terminal logging and runner-level mutation coverage. The full native suite passed 1,786 tests with 34 skips; Ruff passed. Fresh no-authority BTCUSDT, ETHUSDT and SOLUSDT admissions bind the merge. The founder approved successor mandate `d90b621c-7e95-48b7-b5b9-f46ba36fdb68` (`ALPHA009-WEEK-20260927-R6`, digest `4933e1e334dd312581f298375099ed1fab00ba72a9e7edd24e7af18983c2d071`) at `2026-09-27T19:22:51Z`; its first intelligence, hypothesis and representation tasks succeeded. Source qualification and planning success are not production qualification.
+- **Qualification evidence:** Certification requires semantically different single-asset and mixed-basket cases, exact strategy-consumer binding, malformed-provenance rejection and one terminal multi-asset BT-009 outcome. Three rejected revisions remain immutable evidence. Bulletproof PR #341 repaired their shared defects at merge `8207ee4e4256ff733df2e6bde4bb4af05c579134`: generic byte/receipt/lineage verification for fully provenance-bound contracts, gap-safe complete-hour construction, elapsed-time purge/embargo, a consumed frozen four-variant grid, sealed held-out access, compatible terminal logging and runner-level mutation coverage. The full native suite passed 1,786 tests with 34 skips; Ruff passed. Fresh no-authority BTCUSDT, ETHUSDT and SOLUSDT admissions bind the merge. The founder approved successor mandate `d90b621c-7e95-48b7-b5b9-f46ba36fdb68` (`ALPHA009-WEEK-20260927-R6`, digest `4933e1e334dd312581f298375099ed1fab00ba72a9e7edd24e7af18983c2d071`) at `2026-09-27T19:22:51Z`; its first intelligence, hypothesis and representation tasks succeeded. Cycle `71806f40-726e-4989-a928-a030fe28c3e5` then rejected the one generated question as a prior duplicate and created no campaign. Source qualification, planning success and correct novelty rejection are not production qualification.
 - **Durable repair rule:** Shared failures in dispatch, evidence binding, lifecycle accounting, outcome taxonomy, held-out auditing, logging, resource governance or validators must be repaired in shared infrastructure. Closure requires the original regression plus a materially different hypothesis, asset, timeframe or failure fixture. Only hypothesis-specific mechanisms and calculations may remain strategy-local.
 - **Rollback/done:** Disable the representation worker and new multi-panel admission while preserving plans, admissions, tasks and rejected bundles. Done requires a qualified representation certificate, independently accepted native strategy bundle, terminal BT-009 publication and automatic subsequent-cycle behavior. No shadow, order, capital, profitability, universal stationarity, RI-014 corpus fidelity or RI-015 reasoning claim follows.
 
@@ -1424,9 +1426,10 @@ catalog accounting, two terminal one-year negative BT-009 publications, idempote
 accounting and exactly-once successor replenishment. The active delivery boundary is
 now breadth rather than recovery. PR #341 supplies the corrected native ETH/BTC/SOL
 foundation; founder-approved mandate `ALPHA009-WEEK-20260927-R6` is active and its
-first three reasoning stages succeeded. Independent review, a terminal multi-asset
-publication and automatic behavior after that outcome remain required. Whole-corpus
-mathematics and RI-015 reasoning remain unqualified.
+first three reasoning stages succeeded. Its first question was rejected as a duplicate,
+so the next cycle must generate a genuinely novel accepted question. Independent review,
+a terminal multi-asset publication and automatic behavior after that outcome remain
+required. Whole-corpus mathematics and RI-015 reasoning remain unqualified.
 
 - RI-001 owns canonical evidence schemas; no concurrent task may invent alternatives.
 - BT-003 owns the run-bundle producer contract; RI ingestion consumes it.
