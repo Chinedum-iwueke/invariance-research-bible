@@ -25,17 +25,17 @@ execution path remains the admitted BTC-scoped path. This proves a bounded loop 
 finish honestly; it does not prove alpha, broad multi-asset autonomy, shadow readiness
 or capital authority.
 
-ALPHA-009 adaptive multi-asset representation is implemented in source and deployed
-through the current Hermes worker/API contract, but its capability certificate remains
-open. The representation scientist can propose outcome-blind baskets, arbitrary safe
-minute aggregation and typed transformations, including bounded past-only fractional
-differentiation. Native Bulletproof code must still materialize and validate those
-choices. The active multi-asset campaign remains in governed strategy correction:
-three revisions passed the full deterministic suite and were rejected by independent
-scientific review. The latest rejection exposed a runner grid-type mismatch,
-self-asserted caller-frame digests, incompatible required logging, an unused grid
-dimension and missing runner-level regression coverage. No qualified backtest or
-candidate is inferred from a passing suite or failed engineering task.
+ALPHA-009 adaptive multi-asset representation is implemented through Hermes, and its
+reusable native Bulletproof foundation is now source-qualified. Bulletproof PR #341,
+merge `8207ee4e4256ff733df2e6bde4bb4af05c579134`, repaired the shared runner,
+immutable lake binding, logging, held-out and grid-consumption contracts exposed by
+three independently rejected revisions. Its complete suite passed 1,786 tests with
+34 skips. The representation scientist can propose outcome-blind baskets, arbitrary
+safe minute aggregation and typed transformations, including bounded past-only
+fractional differentiation; Bulletproof alone materializes and evaluates them.
+Production capability remains open: the exact merge still needs founder-approved
+scope, independent acceptance and one terminal mixed-basket BT-009 publication. No
+qualified backtest or candidate is inferred from source qualification alone.
 
 Codex authentication continuity is now deployed: a VM1 watcher performs a real probe,
 opens one durable recovery incident, starts device authorization and exposes redacted
@@ -1057,7 +1057,7 @@ inventory remains live at 1,221 objects, not complete-root registration.
 
 - **Status/scope/gap (2026-09-27):** Implemented, tested and deployed at the Hermes contract boundary; production capability qualification remains open. The supervised representation scientist may select a point-in-time eligible single asset or basket across optional stable/volatile labels, assign member roles and choose clocks plus a typed, outcome-blind transformation graph. Stable/volatile groups are evidence labels, never hard execution partitions. Selection must occur before target or held-out outcomes are visible.
 - **Ownership/contracts:** Hermes owns bounded context, role separation, immutable plan and audit records, exact DATA-002/003 bindings and lifecycle. Bulletproof alone materializes bars and panels, validates causal availability, aligns members, applies complete-bar aggregation and past-only fitted transforms, attaches compiled fields to the real engine input and produces quantitative evidence. Supported transformations include returns, local scaling and bounded fractional differentiation where justified; none is mandatory or proof of stationarity. Catalog visibility is not execution eligibility.
-- **Qualification evidence:** Certification requires semantically different single-asset and mixed-basket cases, exact strategy-consumer binding, malformed-provenance rejection and one terminal multi-asset BT-009 outcome. Three recent strategy revisions passed the full deterministic suite but were rejected independently. The latest review exposed a runner grid-type mismatch, self-asserted caller-frame digests, incompatible required logging, an unused grid dimension and missing runner-level regression coverage. Their evidence is retained; the shared contracts require another governed correction. A test pass or model-authored plan alone is not qualification.
+- **Qualification evidence:** Certification requires semantically different single-asset and mixed-basket cases, exact strategy-consumer binding, malformed-provenance rejection and one terminal multi-asset BT-009 outcome. Three rejected revisions remain immutable evidence. Bulletproof PR #341 repaired their shared defects at merge `8207ee4e4256ff733df2e6bde4bb4af05c579134`: generic byte/receipt/lineage verification for fully provenance-bound contracts, gap-safe complete-hour construction, elapsed-time purge/embargo, a consumed frozen four-variant grid, sealed held-out access, compatible terminal logging and runner-level mutation coverage. The full native suite passed 1,786 tests with 34 skips; Ruff passed. Fresh no-authority BTCUSDT, ETHUSDT and SOLUSDT admissions bind the merge. Successor mandate `d90b621c-7e95-48b7-b5b9-f46ba36fdb68` (`ALPHA009-WEEK-20260927-R6`, digest `4933e1e334dd312581f298375099ed1fab00ba72a9e7edd24e7af18983c2d071`) is awaiting founder approval. Source qualification is not production qualification.
 - **Durable repair rule:** Shared failures in dispatch, evidence binding, lifecycle accounting, outcome taxonomy, held-out auditing, logging, resource governance or validators must be repaired in shared infrastructure. Closure requires the original regression plus a materially different hypothesis, asset, timeframe or failure fixture. Only hypothesis-specific mechanisms and calculations may remain strategy-local.
 - **Rollback/done:** Disable the representation worker and new multi-panel admission while preserving plans, admissions, tasks and rejected bundles. Done requires a qualified representation certificate, independently accepted native strategy bundle, terminal BT-009 publication and automatic subsequent-cycle behavior. No shadow, order, capital, profitability, universal stationarity, RI-014 corpus fidelity or RI-015 reasoning claim follows.
 
@@ -1407,21 +1407,24 @@ LIVE-001 implementation from being mistaken for a deployable canary.
 3. BT-009 / AGT-006: discover source-reviewed exact-question native cards,
    generate/reuse YAML and strategy implementations, and bind genuinely
    independent qualification evidence. Keep new-code approval explicit.
-4. ALPHA-002 capacity: run at most eight variants per hypothesis with the native
-   shared scheduler. Prove two authorized one-year scientific jobs overlap and
-   retain rich causal, failure, cost-stress and ML/RL-ready logging.
-5. BT-009 / ALPHA-004: publish both terminal receipts, learn from every outcome
-   and demonstrate automatic replenishment rather than repeated manual repair.
+4. ALPHA-002 capacity: retain the completed initial proof of two terminal one-year
+   scientific jobs, at most eight variants per hypothesis, and rich causal, failure,
+   cost-stress and ML/RL-ready logging. Apply the same scheduler to broader baskets.
+5. BT-009 / ALPHA-004: retain the two published initial receipts and exactly-once
+   replenishment; next prove one terminal mixed-basket publication on the corrected
+   ALPHA-009 native foundation.
 6. RISK-004 / SHADOW-002 / DEMO-001 / LIVE-001: only a genuine surviving candidate
    may enter prospective monitoring, environment-specific certification and
    explicit bounded capital approval. No alpha or capital exposure is promised.
 
-The first five steps are the active delivery goal. Current scan remains running;
-no complete-root registration or concurrent terminal backtest proof is claimed.
-All eight control-plane PR #271 checks passed, with deployment pending. Native
-exact-question card discovery has ten passing source tests, including immutable
-binding and no-self-approval checks; independent evaluator enforcement remains
-open. Whole-corpus mathematics and RI-015 reasoning remain unqualified.
+The initial BTC-scoped loop has completed the first five operational proofs: broad
+catalog accounting, two terminal one-year negative BT-009 publications, idempotent
+accounting and exactly-once successor replenishment. The active delivery boundary is
+now breadth rather than recovery. PR #341 supplies the corrected native ETH/BTC/SOL
+foundation; mandate `ALPHA009-WEEK-20260927-R6` awaits founder approval before a
+mixed-basket campaign may run. Independent review, a terminal multi-asset publication
+and automatic behavior after that outcome remain required. Whole-corpus mathematics
+and RI-015 reasoning remain unqualified.
 
 - RI-001 owns canonical evidence schemas; no concurrent task may invent alternatives.
 - BT-003 owns the run-bundle producer contract; RI ingestion consumes it.
