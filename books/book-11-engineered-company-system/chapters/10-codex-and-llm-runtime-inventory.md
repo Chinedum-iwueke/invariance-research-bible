@@ -134,6 +134,9 @@ tests, independent review and governed publication.
   output to a model.
 - ALPHA-010 resource allocation is deterministic. Worker/RAM allocation, queue
   priority and idle-state classification do not use an LLM.
+- DISC-010 basket rotation, resampling, transforms, empirical nulls, family correction
+  and question-candidate receipts are native deterministic Bulletproof computations.
+  No model selects assets from outcomes, calculates an effect or opens final OOS.
 - RI-017 external retrieval and quarantine are deterministic connector functions. The
   senior researcher may later reason over admitted evidence through its already listed
   bounded invocation, but fetching a paper, feed or transcript is not itself an LLM

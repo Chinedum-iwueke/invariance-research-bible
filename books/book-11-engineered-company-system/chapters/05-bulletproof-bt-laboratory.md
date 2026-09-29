@@ -1768,14 +1768,21 @@ evaluation can consume useful capacity. No fallback may invent approval, change 
 open final OOS, broaden data/code authority or trade. With about 66 GiB available RAM,
 the measured 4.5 GiB estimate and an 8 GiB floor permit 12 workers: initially two jobs
 at six workers, not two eight-worker jobs. Production queue wiring and observation
-remain open.
+remain open. Bulletproof PR #353 now implements the first fallback: a native DISC-010
+receipt producer, content-bound runner, priority-10 capacity adapter and metadata-only
+replenisher. Control-plane PR #400 validates those receipts and supplies a hardened
+five-minute timer. Neither PR is production evidence until merged and deployed.
 
 DISC-010 owns the missing universe-wide OHLCV surveillance producer. It begins with
 transparent preregistered statistical families, complete search accounting and strict
 exploration/validation/final-OOS separation. Its output is an observation and
 falsifiable question, not a strategy. Existing native discovery, state, representation,
-correlation and alpha-zoo modules are reusable components but do not yet constitute
-that continuously scheduled service.
+correlation and alpha-zoo modules are reused by the new producer. The source contract
+freezes a three-asset basket from coverage metadata, supports safe arbitrary aggregation
+above one minute, evaluates eight cross-asset trials with train-only thresholds,
+empirical circular-shift nulls and family correction, and never opens final OOS. It
+retains invalid and null trials. Thirty-eight focused native tests and a synthetic CLI
+smoke pass; real-lake terminal receipts and Mission Control registration remain open.
 
 ML and RL do not form mandatory steps in every campaign. ML begins after a causal
 signal/state contract when nonlinear or conditional prediction is justified: ML-002
