@@ -1805,3 +1805,12 @@ RL-001 audits the offline dataset and RL-002 evaluates conservatively. No online
 capital exploration exists, and learned actions remain subordinate to deterministic
 risk and kill controls. A typed eligibility router for continuous-loop use remains
 planned.
+
+RI-017 reuses the immutable RI-006 surveillance registry rather than giving reasoning
+agents a browser session. Its initial source worker admits public statistical-finance and
+ML-method arXiv metadata plus Jane Street's public feed through exact HTTPS host,
+rights, digest, injection and replay controls. Only sanitized titles, provenance and
+deterministic assessments can enter ALPHA-004 as question seeds. They cannot support a
+claim or authorize a trial. Public YouTube transcripts, social observations,
+NeurIPS/ICML proceedings and full text remain unimplemented until each has an exact
+identity, rights, correction and parser contract.

@@ -138,9 +138,10 @@ tests, independent review and governed publication.
   and question-candidate receipts are native deterministic Bulletproof computations.
   No model selects assets from outcomes, calculates an effect or opens final OOS.
 - RI-017 external retrieval and quarantine are deterministic connector functions. The
-  senior researcher may later reason over admitted evidence through its already listed
-  bounded invocation, but fetching a paper, feed or transcript is not itself an LLM
-  call and retrieved text has no instruction authority.
+  senior researcher may reason over sanitized publication metadata through its already
+  listed bounded invocation, but fetching a feed is not itself an LLM call. The phase-one
+  worker supplies title, provenance and deterministic assessment only; abstract bodies
+  and retrieved instructions do not enter the model context or gain tool authority.
 - The AGT-009A source gate is deterministic. It applies SkillOpt-inspired trace,
   held-out, independence, authority and regression checks; no optimizer-model call is
   currently implemented or claimed.
