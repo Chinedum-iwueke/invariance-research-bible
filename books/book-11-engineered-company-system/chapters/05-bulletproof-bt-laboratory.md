@@ -1767,13 +1767,14 @@ representation/data-quality replays, governed evidence acquisition and held-out 
 evaluation can consume useful capacity. No fallback may invent approval, change a grid,
 open final OOS, broaden data/code authority or trade. With about 66 GiB available RAM,
 the measured 4.5 GiB estimate and an 8 GiB floor permit 12 workers: initially two jobs
-at six workers, not two eight-worker jobs. Production installation and observation
-remain open. Bulletproof PR #353 now implements the first fallback: a native DISC-010
+at six workers, not two eight-worker jobs. Bulletproof PR #353 implements the first fallback: a native DISC-010
 receipt producer, content-bound runner, priority-10 capacity adapter, metadata-only
 replenisher and exact per-trial contracts. Control-plane PR #400 validates and publishes
 completed receipts, runs separate hardened replenishment and publication timers,
 supplies recent retained outcomes to ALPHA-004 and exposes a Mission Control
-signal-surveillance ledger. Neither PR is production evidence until merged and deployed.
+signal-surveillance ledger. PR #401 adds immutable utilization snapshots, queue and
+allocation visibility plus low-water alerts. PR #402 reloads the resident scheduler
+only across a zero-active-work boundary and shortens replenishment to one minute.
 
 DISC-010 owns the missing universe-wide OHLCV surveillance producer. It begins with
 transparent preregistered statistical families, complete search accounting and strict
@@ -1785,8 +1786,18 @@ above one minute, evaluates eight cross-asset trials with train-only thresholds,
 empirical circular-shift nulls and family correction, and never opens final OOS. It
 retains invalid and null trials. Thirty-eight focused native tests and a synthetic CLI
 smoke pass; the full native root-4 suite passes 360 tests. Hermes validation, projection,
-publisher and UI suites also pass locally. Real-lake terminal receipts and production
-Mission Control observation remain open.
+publisher and UI suites also pass locally.
+
+The production boundary is now observed at control-plane commit
+`6991b641bf6b14f03d9bad363a64f81d6b4f582b` and Bulletproof commit
+`da9f1d2850b707752f0059857932f97fb32b4bb9`. At 20:07 UTC the canonical utilization
+snapshot reported a 12-worker resource budget, 12 active workers, no idle budget and
+two six-worker fallback allocations with about 65.8 GiB available RAM. Three cycles
+replenished after terminal work. Seven registered families retained 56 evaluated,
+zero invalid trials, zero question candidates and unopened final OOS. These are honest
+native signal screens, not backtests or alpha claims. Approved BT-009 jobs retain higher
+priority, but their concurrency is necessarily bounded by the supply of independently
+qualified hypotheses.
 
 The production audit at 2026-09-29 19:02 UTC found both VM1 capacity executors active
 but repeatedly returning `no_work`, no pending or locked native assignments and no new
@@ -1811,6 +1822,10 @@ agents a browser session. Its initial source worker admits public statistical-fi
 ML-method arXiv metadata plus Jane Street's public feed through exact HTTPS host,
 rights, digest, injection and replay controls. Only sanitized titles, provenance and
 deterministic assessments can enter ALPHA-004 as question seeds. They cannot support a
-claim or authorize a trial. Public YouTube transcripts, social observations,
+claim or authorize a trial. Its first production pass retained five fetch receipts and
+499 publications: 100 records from each of three q-fin feeds, 99 accepted and one
+rejected from the ML feed, and 100 from Jane Street. The worker runs unprivileged and
+receives the root-owned API credentials through systemd's credential projection.
+Public YouTube transcripts, social observations,
 NeurIPS/ICML proceedings and full text remain unimplemented until each has an exact
 identity, rights, correction and parser contract.
