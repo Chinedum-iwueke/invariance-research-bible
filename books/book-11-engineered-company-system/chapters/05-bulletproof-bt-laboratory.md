@@ -1767,11 +1767,13 @@ representation/data-quality replays, governed evidence acquisition and held-out 
 evaluation can consume useful capacity. No fallback may invent approval, change a grid,
 open final OOS, broaden data/code authority or trade. With about 66 GiB available RAM,
 the measured 4.5 GiB estimate and an 8 GiB floor permit 12 workers: initially two jobs
-at six workers, not two eight-worker jobs. Production queue wiring and observation
+at six workers, not two eight-worker jobs. Production installation and observation
 remain open. Bulletproof PR #353 now implements the first fallback: a native DISC-010
-receipt producer, content-bound runner, priority-10 capacity adapter and metadata-only
-replenisher. Control-plane PR #400 validates those receipts and supplies a hardened
-five-minute timer. Neither PR is production evidence until merged and deployed.
+receipt producer, content-bound runner, priority-10 capacity adapter, metadata-only
+replenisher and exact per-trial contracts. Control-plane PR #400 validates and publishes
+completed receipts, runs separate hardened replenishment and publication timers,
+supplies recent retained outcomes to ALPHA-004 and exposes a Mission Control
+signal-surveillance ledger. Neither PR is production evidence until merged and deployed.
 
 DISC-010 owns the missing universe-wide OHLCV surveillance producer. It begins with
 transparent preregistered statistical families, complete search accounting and strict
@@ -1782,7 +1784,17 @@ freezes a three-asset basket from coverage metadata, supports safe arbitrary agg
 above one minute, evaluates eight cross-asset trials with train-only thresholds,
 empirical circular-shift nulls and family correction, and never opens final OOS. It
 retains invalid and null trials. Thirty-eight focused native tests and a synthetic CLI
-smoke pass; real-lake terminal receipts and Mission Control registration remain open.
+smoke pass; the full native root-4 suite passes 360 tests. Hermes validation, projection,
+publisher and UI suites also pass locally. Real-lake terminal receipts and production
+Mission Control observation remain open.
+
+The production audit at 2026-09-29 19:02 UTC found both VM1 capacity executors active
+but repeatedly returning `no_work`, no pending or locked native assignments and no new
+completion after 2026-09-28 20:44 UTC. The two latest one-year outcomes were the retained
+negative SOL-to-ETH result described above and an invalid replacement stopped for
+insufficient chronological rows. Neither reached demo admission. Thus the loop was
+certified for bounded autonomous behavior but was not continuously utilizing available
+compute; ALPHA-010 and DISC-010 exist to close that operational distinction.
 
 ML and RL do not form mandatory steps in every campaign. ML begins after a causal
 signal/state contract when nonlinear or conditional prediction is justified: ML-002
