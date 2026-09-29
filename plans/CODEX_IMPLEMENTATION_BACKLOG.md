@@ -15,7 +15,7 @@ registry or API is not sufficient completion evidence. The
 [2026-08-28 ownership audit](QUANTITATIVE_OWNERSHIP_AUDIT.md) reopens every packet
 whose Bulletproof-native producer and cross-repository receipt replay are absent.
 
-## Current execution snapshot — 2026-09-28
+## Current execution snapshot — 2026-09-29
 
 The initial no-capital autonomous laboratory certificate is real but deliberately
 narrow. ALPHA-008 has two retained one-year negative BT-009 outcomes, repaired
@@ -51,6 +51,13 @@ shadow, order or capital authority.
 Whole-corpus RI-014 mathematics fidelity and RI-015 institutional reasoning remain
 unqualified. RI-014D may qualify an exact just-in-time expression with deterministic
 or genuinely independent evidence; it cannot generalize that receipt to the corpus.
+
+The certified loop is not continuously busy. The latest VM1 audit found zero queued or
+running native jobs; both capacity executors returned `no_work`. The last two successful
+capacity jobs ended on 2026-09-28 at 19:43 and 20:44 UTC. VM2's discovery director is
+active with six mandates, but its projections currently show no new hypotheses or
+trials. ALPHA-010 therefore owns queue-depth replenishment and safe fallback research;
+online daemons alone are not a utilization certificate.
 
 ## Historical execution snapshot — 2026-08-24
 
@@ -1065,6 +1072,41 @@ inventory remains live at 1,221 objects, not complete-root registration.
 - **Qualification evidence:** Certification requires semantically different single-asset and mixed-basket cases, exact strategy-consumer binding, malformed-provenance rejection and one terminal multi-asset BT-009 outcome. Three rejected revisions remain immutable evidence. Bulletproof PR #341 repaired their shared defects at merge `8207ee4e4256ff733df2e6bde4bb4af05c579134`; PR #352 repaired generic scientific-provenance projection at `3202a9245dab19d648b9051f6e23ee48a4500d00`. Cycle 2 `38d868f1-9df4-4bec-b0e3-59eb2af58aa4` generated distinct SOL-to-ETH, RUNE and XAUT/PAXG questions. Its outcome-blind plans retained necessary baskets, rejected unnecessary assets and fractional differentiation, and consulted no outcomes. XAUT/PAXG failed closed on unavailable DATA evidence. Replacement campaign `8e68ee6b-0807-4e67-8268-55313b89dd7e` completed the one-year 2023 SOLUSDT-to-ETHUSDT run with two frozen variants. Receipt `0ba464c8a583ababfa81b8ddbc5b7e424302befdfda1d529947a9e392a5268bc`, bundle `7443624e97c60a769a59fff8d53d84730926d6ea6740b674d93467dbb7a05bf2` and attempt `b075b9ae-c3d2-423c-b221-3f34c8932ff1` retain a negative result: support 41, mean net signed residual return `-0.0012288419031189024`, and doubled-cost mean `-0.0021288419031189024`. Truth, point-in-time, out-of-sample, cost-stress, selection-bias, logging, reproducibility and independent-review gates completed; the lower-bound and doubled-cost promotion gates failed. BT-009 bridge `56341390-6d9c-5f9b-8ab3-71e2ccf93a9f` and publication `fb139449-057b-5502-823f-653436d3f3b2` are complete. The controller retained the negative, drafted rank-2 RUNEUSDT work and created `A3-8e68ee6b-002-G3` at explicit new-code approval. RI-016 is current at epoch `577535`; immutable curriculum `1.3.0` passes all 13 domains without weakening anchors or thresholds.
 - **Durable repair rule:** Shared failures in dispatch, evidence binding, lifecycle accounting, outcome taxonomy, held-out auditing, logging, resource governance or validators must be repaired in shared infrastructure. Closure requires the original regression plus a materially different hypothesis, asset, timeframe or failure fixture. Only hypothesis-specific mechanisms and calculations may remain strategy-local.
 - **Rollback/done:** Disable the representation worker and new multi-panel admission while preserving plans, admissions, tasks and rejected bundles. Done requires a qualified representation certificate, independently accepted native strategy bundle, terminal BT-009 publication and automatic subsequent-cycle behavior. No shadow, order, capital, profitability, universal stationarity, RI-014 corpus fidelity or RI-015 reasoning claim follows.
+
+### ALPHA-010 — Capacity-aware continuous research utilization
+
+- **Status/scope (2026-09-29): Source policy foundation; deployment and operational qualification open.** Maintain two eligible/running backtests under normal measured capacity and permit a third only when RAM/CPU headroom supports it. Eight workers is a per-job ceiling. When approved backtests are absent, schedule preregistered signal screens, representation/data-quality replays, governed evidence acquisition or held-out skill evaluation instead of leaving useful compute idle.
+- **Authority and priority contract:** Work must already be authorized for its class. The controller cannot invent variants, approve new code, broaden data, open sealed OOS for discovery, create shadow authority or perform capital/order work. An empty eligible queue is a visible stall, not permission to manufacture work.
+- **Resource evidence:** The latest VM1 observation is 36 CPUs and about 66 GiB available RAM. With the measured 4.5 GiB worker estimate and 8 GiB floor, the safe initial budget is 12 workers, producing two six-worker jobs. Two or three eight-worker jobs require new representative peak-RSS evidence or more memory.
+- **Implementation/evidence:** Hermes source now contains a deterministic admission/allocation kernel with explicit rejection reasons and fallback classes. Five focused tests cover current-host allocation, three-job capacity, safe fallback, authority/OOS rejection and resource blocking. Production closure requires authoritative queue integration, Mission Control queue-depth/resource visibility, low-water alerts, deployment and observed transitions across two backtests plus one fallback class.
+- **Dependencies/rollback:** Reuse ALPHA-004/008/009, DISC-009, BT-009 and Bulletproof's existing global capacity scheduler. Disable new admissions while preserving queue rows, leases and receipts; never delete local untracked quantitative output.
+
+### RI-017 — Governed external research acquisition
+
+- **Status/scope (2026-09-29): Source trust policy; isolated worker and production receipts open.** Extend RI-006 beyond its two arXiv q-fin feeds to approved scholarly metadata, journal/RSS items, public YouTube/podcast transcripts and low-trust social observations.
+- **Trust boundary:** Existing reasoning agents remain network-disabled. A separate no-secret retrieval worker uses HTTPS and exact host allowlists, declares rights and pinned connector identity, emits immutable digests, quarantines instruction-like content and sends only sanitized admission candidates to canonical ingestion. Social posts are `observation_only`; transcripts and abstracts require source replay and never verify their own mathematics.
+- **Agent Reach use:** Audit and reuse connector/health patterns from pinned upstream commit `a19a171fa980a0785849596492e0af4db800c82f`. Do not embed its installer, browser-cookie import, account login, arbitrary shell or system-package paths in privileged agents. The phase-one policy grants no production install authority.
+- **Done/rollback:** Deploy the isolated worker, source registry, correction/retraction lifecycle, Mission Control queue and representative fetch/replay receipts. Disable fetching and preserve receipts/quarantine on rollback; never inject raw internet instructions into agent context.
+
+### DISC-010 — Native OHLCV signal surveillance
+
+- **Status/scope (2026-09-29): Planned with explicit ownership; existing components are insufficient closure.** Continuously scan admitted OHLCV panels for preregistered serial, cross-asset, calendar, dependence, volatility/volume/liquidity, tail, change-point, dispersion and representation observations. Stable/volatile labels remain optional metadata rather than fixed universes.
+- **Ownership and outcome separation:** Bulletproof is the sole quantitative producer. Universe/representation selection is outcome-blind; discovery uses exploration/training partitions, validation tests stability, and final OOS remains sealed for registered evaluation. Every transform, horizon, asset and subgroup consumes the complete multiple-testing/selection budget.
+- **Output:** Emit immutable observations and falsifiable questions with support, effect, uncertainty, costs, stability, falsifiers and trial lineage. A screen is not a strategy or alpha claim and still enters DISC-002/003/006/007/009 plus strategy engineering, independent review and BT-009.
+- **Done/rollback:** Compose the existing native representation, discovery, state-analysis, correlation and alpha-zoo components into one scheduled receipt producer; add synthetic null/leakage tests, complete family ledger, cross-asset replay and production evidence. Stop new screens while retaining all attempts and sealed partitions.
+
+### AGT-009A — Held-out workflow skill optimization
+
+- **Status/scope (2026-09-29): Deterministic qualification gate implemented; registry/deployment open.** Incorporate the useful SkillOpt pattern into AGT-009: trace-backed bounded Markdown changes, replay on historical tasks, held-out no-regression evaluation and staged adoption.
+- **Authority:** Proposer and evaluator identities differ; tool authority cannot expand; secret-like content, missing traces, missing held-out replay, regressions and baseline underperformance fail closed. Passing produces `staged_for_human_adoption`, never a self-edit or production deployment.
+- **Done:** Add immutable skill diff/evaluation receipts, registry lifecycle, independent routing, package signing, Mission Control review and rollback. The Microsoft package is design input, not a new unreviewed production dependency.
+
+### ML/RL continuous-loop eligibility router
+
+- **Status/scope (2026-09-29): Planned.** ML-002/003/004 and RL-001/002 have native producer/control-path evidence but are not automatically invoked by each ALPHA campaign. Add a typed router that classifies terminal signal, strategy and shadow receipts as `ml_eligible`, `rl_eligible` or `not_applicable` without weakening prerequisites.
+- **ML placement:** After a causal signal/state contract, ML-002 builds features/labels/splits, ML-003 compares families against unconditional/linear baselines and ML-004 calibrates uncertainty/abstention. Simple transparent strategies may bypass ML and retain `not_applicable` evidence.
+- **RL placement:** Only after sufficient immutable state/action/reward, behavior-policy propensity, support, fills and cost lineage. RL-001 audits the offline dataset; RL-002 evaluates proposals conservatively; RL-003 remains sandbox-only beneath deterministic risk. Online capital exploration is forbidden.
+- **Done:** Demonstrate automatic but non-authoritative proposal creation from materially different terminal receipts, exact causal lineage, no sealed-OOS reuse and no promotion/order/capital expansion.
 
 ### ML-002 — Causal feature, label and split pipelines
 

@@ -26,7 +26,10 @@
 | PLAT-002 | Implemented/tested/deployed/observed | Fourteen identities and zero uncovered active-package credentials; central scope enforcement, secret-policy and emergency-access lifecycles, credential rollback and Mac identity inventory passed live replay |
 | AGT-002 | Implemented/tested/deployed/observed | Exact task-attempt context replay binds live authority and canonical evidence; protected/stale/contaminated/oversized packs fail closed; digest-only scratch was discarded in a non-executing live pilot |
 | ALPHA-008 | Implemented/tested/deployed/observed | Initial BTC-scoped no-capital certificate: two terminal one-year negative BT-009 outcomes and exactly-once replenishment retained; broad catalog visibility does not imply broad execution authority |
-| ALPHA-009 | Implemented/tested/deployed/partial | Representation worker and causal materialization contracts exist; three full-suite strategy revisions were independently rejected and multi-asset capability qualification remains open |
+| ALPHA-009 | Implemented/tested/deployed/observed | Terminal one-year SOLUSDT-to-ETHUSDT negative publication closes the declared adaptive multi-asset boundary; arbitrary panels/transforms remain outside it |
+| ALPHA-010 | Source policy only | Capacity executors are active but the eligible queue is empty; queue-depth control, fallback work and Mission Control utilization evidence remain open |
+| RI-017 | Source trust policy only | External public evidence is not yet fetched by a deployed isolated worker; current ALPHA reasoning agents remain network-disabled |
+| DISC-010 | Planned | Native components exist, but no continuous universe-wide outcome-separated OHLCV surveillance producer is deployed |
 | Codex authentication recovery | Implemented/tested/deployed/observed | VM1 real-probe watcher, VM2 recovery registry, restricted Telegram notice/retry and Mission Control recovery panel observed on 2026-09-27; no task or financial authority added |
 | BT-001 | Implemented/tested/merged | Canonical Python 3.11 contract matrix closes recorded collection and drift defects |
 | BT-002 | Implemented/tested/merged | Immutable bounded dataset, availability and correction-lineage contract merged |

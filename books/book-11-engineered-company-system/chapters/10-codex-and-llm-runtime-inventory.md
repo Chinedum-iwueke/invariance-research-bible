@@ -132,6 +132,15 @@ tests, independent review and governed publication.
 - Research graph, retrieval, curriculum, freshness and operation-ledger services are
   deterministic services unless an explicitly listed caller supplies their bounded
   output to a model.
+- ALPHA-010 resource allocation is deterministic. Worker/RAM allocation, queue
+  priority and idle-state classification do not use an LLM.
+- RI-017 external retrieval and quarantine are deterministic connector functions. The
+  senior researcher may later reason over admitted evidence through its already listed
+  bounded invocation, but fetching a paper, feed or transcript is not itself an LLM
+  call and retrieved text has no instruction authority.
+- The AGT-009A source gate is deterministic. It applies SkillOpt-inspired trace,
+  held-out, independence, authority and regression checks; no optimizer-model call is
+  currently implemented or claimed.
 
 ## 10.8 Required maintenance
 

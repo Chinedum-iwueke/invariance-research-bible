@@ -1740,3 +1740,49 @@ executions, retained negative evidence, BT-009 publication and exactly-once
 autonomous replenishment. It does not
 demonstrate alpha, shadow eligibility, live profitability, adaptive mixed-basket
 execution, whole-corpus mathematical fidelity or RI-015 reasoning qualification.
+
+#### September 28: Adaptive multi-asset boundary
+
+ALPHA-009 subsequently closed its declared no-capital adaptive-representation boundary
+with a terminal one-year SOLUSDT-to-ETHUSDT native run. The outcome-blind representation
+plan selected a two-asset causal relation and rejected unnecessary transformations;
+Bulletproof materialized and evaluated the exact plan. The result was a retained
+negative with completed point-in-time, OOS, cost-stress, selection-bias, logging,
+reproducibility and independent-review gates. This demonstrates that the loop can choose
+and evaluate a mixed basket. It does not make every catalog asset executable, certify
+arbitrary transforms or establish alpha.
+
+#### September 29: Continuous utilization boundary
+
+The autonomous certificate did not imply permanent research throughput. The latest
+audit found both VM1 capacity consumers online but returning `no_work`; the native queue
+contained no pending or running jobs. The latest two successful capacity jobs ended on
+September 28 at 19:43 and 20:44 UTC. VM2's discovery director remained active, but its
+active mandate summaries exposed no new hypotheses or trials. The system was
+operationally alive and scientifically idle.
+
+ALPHA-010 introduces a deterministic queue-depth and resource policy. Approved
+backtests have first priority. When they are absent, eligible native signal screens,
+representation/data-quality replays, governed evidence acquisition and held-out skill
+evaluation can consume useful capacity. No fallback may invent approval, change a grid,
+open final OOS, broaden data/code authority or trade. With about 66 GiB available RAM,
+the measured 4.5 GiB estimate and an 8 GiB floor permit 12 workers: initially two jobs
+at six workers, not two eight-worker jobs. Production queue wiring and observation
+remain open.
+
+DISC-010 owns the missing universe-wide OHLCV surveillance producer. It begins with
+transparent preregistered statistical families, complete search accounting and strict
+exploration/validation/final-OOS separation. Its output is an observation and
+falsifiable question, not a strategy. Existing native discovery, state, representation,
+correlation and alpha-zoo modules are reusable components but do not yet constitute
+that continuously scheduled service.
+
+ML and RL do not form mandatory steps in every campaign. ML begins after a causal
+signal/state contract when nonlinear or conditional prediction is justified: ML-002
+materializes causal folds, ML-003 compares families with simple baselines and ML-004
+calibrates uncertainty/abstention. RL begins only after sufficient immutable state,
+action, reward, behavior-policy propensity, support, fill and cost evidence exists;
+RL-001 audits the offline dataset and RL-002 evaluates conservatively. No online
+capital exploration exists, and learned actions remain subordinate to deterministic
+risk and kill controls. A typed eligibility router for continuous-loop use remains
+planned.
