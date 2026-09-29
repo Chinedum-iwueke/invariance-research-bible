@@ -112,12 +112,12 @@ BOOK_PACKAGE_RULES: dict[int, list[tuple[range, tuple[str, ...]]]] = {
         (range(6, 9), ("RI-002", "RI-007", "RI-009", "RI-012", "RI-013", "RI-014")),
         (range(9, 12), ("RI-003", "RI-004", "RI-011", "RI-014", "RI-015", "UI-003")),
         (range(12, 17), ("RI-008", "RI-010", "RI-015", "AGT-002", "BT-008")),
-        (range(17, 19), ("RI-005", "RI-006", "RI-009", "RI-011", "RI-016", "SEC-001", "PLAT-005", "PLAT-007")),
+        (range(17, 19), ("RI-005", "RI-006", "RI-009", "RI-011", "RI-016", "RI-017", "SEC-001", "PLAT-005", "PLAT-007")),
     ],
     4: [
-        (range(1, 6), ("DISC-002", "DISC-003", "DISC-006", "DISC-009")),
-        (range(6, 12), ("DISC-003", "DISC-004", "DISC-005", "DISC-006", "AGT-004", "LLM-001")),
-        (range(12, 18), ("DISC-007", "DISC-008", "DISC-009", "BT-006", "GOV-003")),
+        (range(1, 6), ("DISC-002", "DISC-003", "DISC-006", "DISC-009", "DISC-010")),
+        (range(6, 12), ("DISC-003", "DISC-004", "DISC-005", "DISC-006", "DISC-010", "AGT-004", "LLM-001")),
+        (range(12, 18), ("DISC-007", "DISC-008", "DISC-009", "DISC-010", "BT-006", "GOV-003")),
     ],
     5: [
         (range(1, 9), ("BT-001", "BT-002", "BT-004", "BT-005", "DATA-001", "DATA-002", "DATA-003")),

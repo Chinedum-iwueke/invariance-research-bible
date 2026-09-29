@@ -1740,3 +1740,77 @@ executions, retained negative evidence, BT-009 publication and exactly-once
 autonomous replenishment. It does not
 demonstrate alpha, shadow eligibility, live profitability, adaptive mixed-basket
 execution, whole-corpus mathematical fidelity or RI-015 reasoning qualification.
+
+#### September 28: Adaptive multi-asset boundary
+
+ALPHA-009 subsequently closed its declared no-capital adaptive-representation boundary
+with a terminal one-year SOLUSDT-to-ETHUSDT native run. The outcome-blind representation
+plan selected a two-asset causal relation and rejected unnecessary transformations;
+Bulletproof materialized and evaluated the exact plan. The result was a retained
+negative with completed point-in-time, OOS, cost-stress, selection-bias, logging,
+reproducibility and independent-review gates. This demonstrates that the loop can choose
+and evaluate a mixed basket. It does not make every catalog asset executable, certify
+arbitrary transforms or establish alpha.
+
+#### September 29: Continuous utilization boundary
+
+The autonomous certificate did not imply permanent research throughput. The latest
+audit found both VM1 capacity consumers online but returning `no_work`; the native queue
+contained no pending or running jobs. The latest two successful capacity jobs ended on
+September 28 at 19:43 and 20:44 UTC. VM2's discovery director remained active, but its
+active mandate summaries exposed no new hypotheses or trials. The system was
+operationally alive and scientifically idle.
+
+ALPHA-010 introduces a deterministic queue-depth and resource policy. Approved
+backtests have first priority. When they are absent, eligible native signal screens,
+representation/data-quality replays, governed evidence acquisition and held-out skill
+evaluation can consume useful capacity. No fallback may invent approval, change a grid,
+open final OOS, broaden data/code authority or trade. With about 66 GiB available RAM,
+the measured 4.5 GiB estimate and an 8 GiB floor permit 12 workers: initially two jobs
+at six workers, not two eight-worker jobs. Production installation and observation
+remain open. Bulletproof PR #353 now implements the first fallback: a native DISC-010
+receipt producer, content-bound runner, priority-10 capacity adapter, metadata-only
+replenisher and exact per-trial contracts. Control-plane PR #400 validates and publishes
+completed receipts, runs separate hardened replenishment and publication timers,
+supplies recent retained outcomes to ALPHA-004 and exposes a Mission Control
+signal-surveillance ledger. Neither PR is production evidence until merged and deployed.
+
+DISC-010 owns the missing universe-wide OHLCV surveillance producer. It begins with
+transparent preregistered statistical families, complete search accounting and strict
+exploration/validation/final-OOS separation. Its output is an observation and
+falsifiable question, not a strategy. Existing native discovery, state, representation,
+correlation and alpha-zoo modules are reused by the new producer. The source contract
+freezes a three-asset basket from coverage metadata, supports safe arbitrary aggregation
+above one minute, evaluates eight cross-asset trials with train-only thresholds,
+empirical circular-shift nulls and family correction, and never opens final OOS. It
+retains invalid and null trials. Thirty-eight focused native tests and a synthetic CLI
+smoke pass; the full native root-4 suite passes 360 tests. Hermes validation, projection,
+publisher and UI suites also pass locally. Real-lake terminal receipts and production
+Mission Control observation remain open.
+
+The production audit at 2026-09-29 19:02 UTC found both VM1 capacity executors active
+but repeatedly returning `no_work`, no pending or locked native assignments and no new
+completion after 2026-09-28 20:44 UTC. The two latest one-year outcomes were the retained
+negative SOL-to-ETH result described above and an invalid replacement stopped for
+insufficient chronological rows. Neither reached demo admission. Thus the loop was
+certified for bounded autonomous behavior but was not continuously utilizing available
+compute; ALPHA-010 and DISC-010 exist to close that operational distinction.
+
+ML and RL do not form mandatory steps in every campaign. ML begins after a causal
+signal/state contract when nonlinear or conditional prediction is justified: ML-002
+materializes causal folds, ML-003 compares families with simple baselines and ML-004
+calibrates uncertainty/abstention. RL begins only after sufficient immutable state,
+action, reward, behavior-policy propensity, support, fill and cost evidence exists;
+RL-001 audits the offline dataset and RL-002 evaluates conservatively. No online
+capital exploration exists, and learned actions remain subordinate to deterministic
+risk and kill controls. A typed eligibility router for continuous-loop use remains
+planned.
+
+RI-017 reuses the immutable RI-006 surveillance registry rather than giving reasoning
+agents a browser session. Its initial source worker admits public statistical-finance and
+ML-method arXiv metadata plus Jane Street's public feed through exact HTTPS host,
+rights, digest, injection and replay controls. Only sanitized titles, provenance and
+deterministic assessments can enter ALPHA-004 as question seeds. They cannot support a
+claim or authorize a trial. Public YouTube transcripts, social observations,
+NeurIPS/ICML proceedings and full text remain unimplemented until each has an exact
+identity, rights, correction and parser contract.

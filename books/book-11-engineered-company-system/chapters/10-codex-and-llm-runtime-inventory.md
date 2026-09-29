@@ -132,6 +132,19 @@ tests, independent review and governed publication.
 - Research graph, retrieval, curriculum, freshness and operation-ledger services are
   deterministic services unless an explicitly listed caller supplies their bounded
   output to a model.
+- ALPHA-010 resource allocation is deterministic. Worker/RAM allocation, queue
+  priority and idle-state classification do not use an LLM.
+- DISC-010 basket rotation, resampling, transforms, empirical nulls, family correction
+  and question-candidate receipts are native deterministic Bulletproof computations.
+  No model selects assets from outcomes, calculates an effect or opens final OOS.
+- RI-017 external retrieval and quarantine are deterministic connector functions. The
+  senior researcher may reason over sanitized publication metadata through its already
+  listed bounded invocation, but fetching a feed is not itself an LLM call. The phase-one
+  worker supplies title, provenance and deterministic assessment only; abstract bodies
+  and retrieved instructions do not enter the model context or gain tool authority.
+- The AGT-009A source gate is deterministic. It applies SkillOpt-inspired trace,
+  held-out, independence, authority and regression checks; no optimizer-model call is
+  currently implemented or claimed.
 
 ## 10.8 Required maintenance
 
