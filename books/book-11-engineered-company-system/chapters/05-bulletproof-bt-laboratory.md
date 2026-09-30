@@ -1594,6 +1594,13 @@ rejects instruction-like or non-predictive output, checks DATA-002/003 admission
 deduplicates questions, replenishes DISC-009 and opens the next no-capital campaign
 when the prior queue is exhausted.
 
+The active operating contract keeps one canonical weekly mandate. Explicit thematic
+children must bind its digest; older overlapping general mandates are superseded, not
+deleted. The controller replenishes before exhaustion: when accepted or awaiting-data
+questions fall below the approved low watermark and parallel capacity remains, it
+starts another bounded cycle immediately. The cadence is an idle fallback, and the
+cycle, hypothesis and trial ceilings always dominate replenishment.
+
 The loop is delegated by a founder-approved mandate lasting no more than seven
 days. The mandate freezes venue, dataset, instrument, point-in-time, liquidity,
 cycle, candidate and campaign limits. Within that exact envelope, risk-zero card
@@ -1608,6 +1615,14 @@ market-data-derived calculations, causal and leakage gates, walk-forward executi
 cost stress and terminal BT-009 evidence. Point-in-time Binance and Bybit universe
 eligibility is the intersection of the mandate with current admitted DATA-002/003
 bindings; unavailable, stale or insufficient-liquidity instruments cause abstention.
+
+Primary work uses 365 UTC days ending after the newest gap-free DATA-002 cataloged
+minute. A separate survivor contract may extend to 1,095 days after independent
+review. A representation proposal may contain 1-100 instruments by default, including
+cross-label baskets, when breadth is causal to the question; deterministic overlap,
+liquidity, admission and compute checks decide whether it can run. The reasoning
+context also carries native mechanism primitives, including declared CSI components,
+indexes and proxies. They remain falsifiable prior designs, not proven signal gates.
 
 Mission Control exposes mandate expiry, both worker heartbeats, cycle phase, stalls
 and counts for generated, rejected, duplicated, accepted, compiled, tested,
