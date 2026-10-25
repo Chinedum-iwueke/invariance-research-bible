@@ -1,8 +1,8 @@
 # Invariance Research Architectural Reconnaissance
 
-**Audit date:** 2026-10-25 UTC  
-**Phase:** Phase 1 only: discovery and reconstruction  
-**Mode:** Read-only inspection plus publication of this report  
+**Audit date:** 2026-10-25 UTC<br>
+**Phase:** Phase 1 only: discovery and reconstruction<br>
+**Mode:** Read-only inspection plus publication of this report<br>
 **Safety boundary:** No order placement, credential inspection, risk-limit change, database mutation, service restart, dependency installation, or production workflow execution occurred.
 
 ## 1. Executive summary
@@ -126,6 +126,8 @@ Status terms:
 
 ## 4. High-level architecture
 
+**Diagram ARC-001 — Distributed system topology**
+
 ```mermaid
 flowchart LR
     Founder[Founder]
@@ -210,6 +212,8 @@ The registry uses “agent” as an identity and authority abstraction. That doe
 - **Deterministic autonomous workers:** repeatedly lease typed tasks and execute code under a role package. Their autonomy is scheduling/recovery autonomy, not open-ended reasoning.
 - **Service identities:** publish observations, synchronize memory, or execute infrastructure tickets. Calling them agents is useful for custody and permissions, but an ordinary service could implement the same computation.
 - **Legacy registrations:** retained identity history without a current healthy runtime.
+
+**Diagram ARC-002 — Agent and tool topology**
 
 ```mermaid
 flowchart TB
@@ -334,6 +338,8 @@ There is no single LLM “brain.” Coordination is produced by five layers:
 4. **Model-driven stages** answer bounded questions inside a schema; they do not select their own financial authority or rewrite the workflow.
 5. **Bulletproof capacity scheduling** decides when native compute fits current CPU/RAM and drain policy.
 
+**Diagram ARC-003 — Alpha orchestration control flow**
+
 ```mermaid
 flowchart TD
     Mandate[Founder-approved mandate]
@@ -391,6 +397,8 @@ flowchart TD
 
 ### 7.4 Failure recovery
 
+**Diagram ARC-004 — Durable task recovery state**
+
 ```mermaid
 stateDiagram-v2
     [*] --> queued
@@ -414,6 +422,8 @@ Recovery mechanisms include lease expiry/reaping, attempt budgets, heartbeat ext
 ## 8. Data, memory, and persistent-state architecture
 
 ### 8.1 Scientific data flow
+
+**Diagram ARC-005 — Scientific evidence flow**
 
 ```mermaid
 flowchart LR
@@ -448,6 +458,8 @@ flowchart LR
 ```
 
 ### 8.2 Persistent state and memory topology
+
+**Diagram ARC-006 — Persistent state and memory topology**
 
 ```mermaid
 flowchart TB
@@ -507,6 +519,8 @@ The market-data lake is outside model context. Models see catalog/admission meta
 
 ## 9. Task lifecycle
 
+**Diagram ARC-007 — Task execution sequence**
+
 ```mermaid
 sequenceDiagram
     participant D as Director / founder
@@ -542,43 +556,43 @@ This is a **static trace corroborated by retained production receipts**, not a n
 
 ### 10.2 Trace
 
-1. **Mandate and question scope were frozen.**  
+1. **Mandate and question scope were frozen.**<br>
    The mandate bound an admitted Bybit BTCUSDT panel, one-year 2023 window, exact native commit, Tier2B, and finite eight-variant budget. `services/alpha_discovery.py` represents the mandate/cycle; it cannot silently widen instruments or commit.
 
-2. **Discovery produced an exact predictive question.**  
+2. **Discovery produced an exact predictive question.**<br>
    The intelligence and hypothesis workers received bounded canonical context. `AlphaDiscoveryExecutor` invoked Codex read-only with a strict output schema. Deterministic validation rejected vague, duplicate, unavailable, or non-predictive material before campaign creation.
 
-3. **Representation and data authority were resolved.**  
+3. **Representation and data authority were resolved.**<br>
    The representation stage proposed clocks/transforms without outcome data. Native DATA-002/003 evidence established the content-bound panel. A catalog record alone would not have been sufficient.
 
-4. **A campaign was created.**  
+4. **A campaign was created.**<br>
    `services/alpha_campaign.py::reconcile_campaign` advanced the candidate. The campaign digest, question digest, dataset binding, source commit, window, grid, costs, and authority boundary became immutable inputs.
 
-5. **Strategy engineering or exact reuse occurred.**  
+5. **Strategy engineering or exact reuse occurred.**<br>
    `_create_strategy_engineering_task` created a bounded `engineering_mission` when the exact strategy did not already exist. The contract allowed only named Bulletproof paths, at most 12 files and 2,400 diff lines, with no network, push, merge, order, capital, or self-approval authority.
 
-6. **Independent review completed.**  
+6. **Independent review completed.**<br>
    Spec and causality/leakage assignments were routed to separate evaluator profiles. `services/evaluator_routing.py` enforced producer/evaluator separation. Rejection would create a corrected successor or terminate honestly; it could not be converted into approval by the producer.
 
-7. **Execution authority was checked.**  
+7. **Execution authority was checked.**<br>
    The execution task bound the reviewed bundle. Approval/delegation authorized only the bounded no-capital experiment. Authority did not certify the science.
 
-8. **The native run executed in Bulletproof.**  
+8. **The native run executed in Bulletproof.**<br>
    `AlphaResearchExecutor` invoked `bulletproof_bt/scripts/run_alpha_research_assignment.py::execute_registered`. The classic engine consumed 525,600 one-minute rows and eight preregistered variants. Capacity ownership and heartbeat evidence bounded the run.
 
-9. **Truth gates produced a valid negative.**  
+9. **Truth gates produced a valid negative.**<br>
    Reproducibility, point-in-time validity, held-out evaluation, cost stress, selection-bias audit, independent review, and logging passed. The preregistered alpha-performance gates failed: mean held-out net R was approximately `-0.6131`, and doubled-cost mean was approximately `-0.9045`. The correct scientific result was therefore negative, not “task failed” and not “candidate.”
 
-10. **Atomic evidence was retained.**  
+10. **Atomic evidence was retained.**<br>
     Assignment digest `a647d005...` and native execution receipt `601573ae...` bound the run. Full artifacts stayed in the untracked/native evidence store; bounded digest-linked projections crossed the worker API.
 
-11. **Hermes published the result.**  
+11. **Hermes published the result.**<br>
     `services/alpha_publication.py::publish_execution` validated the envelope, current derived state, independent reviews, and complete bridge. Campaign attempt digest `7dfdf62c...` and bridge `f801d5eb-8b58-51b1-aa6d-bae405ddf928` record the approved-to-published chain.
 
-12. **Memory was confirmed and authority stayed closed.**  
+12. **Memory was confirmed and authority stayed closed.**<br>
     The negative result entered Hermes publication and Bulletproof memory. It acquired no shadow, order, production, or capital authority.
 
-13. **The next action was deterministic.**  
+13. **The next action was deterministic.**<br>
     Mandate counters were later reconstructed after an idempotency defect had applied 29,706 duplicate terminal events. The immutable events were preserved, the projection was repaired, and successor cycle `43672446-c939-4a70-b7ee-155322a85e1b` was created exactly once. This demonstrates why event immutability and projection correctness are separate concerns.
 
 ### 10.3 Success proof and failure behavior
@@ -593,6 +607,8 @@ This is a **static trace corroborated by retained production receipts**, not a n
 A later one-year SOLUSDT-to-ETHUSDT evaluation produced a terminal negative with two variants, complete point-in-time/OOS/cost/bias/reproducibility/review gates, BT-009 bridge `56341390-6d9c-5f9b-8ab3-71e2ccf93a9f`, publication `fb139449-...`, and memory receipt `327c0aaf...`. That proves one bounded multi-asset path. It does not prove that arbitrary baskets or transformations are correct.
 
 ## 11. Research-to-execution boundary
+
+**Diagram ARC-008 — Research-to-capital authority boundary**
 
 ```mermaid
 flowchart LR
