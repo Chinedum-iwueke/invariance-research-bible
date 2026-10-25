@@ -48,4 +48,13 @@ The implemented institution is not complete. Current evidence and claim boundari
 - [Series dependency diagram](architecture/diagrams/series-dependency.md)
 - [Institutional boundary diagram](architecture/diagrams/institutional-boundaries.md)
 
+## Architecture and mastery program
+
+The [Architecture and Mastery Index](architecture/README.md) contains the dated
+distributed-system reconnaissance, architectural evaluation, navigable system maps,
+personal knowledge diagnostics, a two-year apprenticeship, the living-systems
+laboratory protocol, and the comparative agentic-systems benchmark. These materials
+teach and evaluate the implemented institution; they do not grant execution authority
+or imply profitable alpha.
+
 The Founder’s Editions in `canon/source-pdfs/` are immutable source editions. Repository-native Version 2 books live under `books/`; substantive migrations are recorded under `migrations/`.
