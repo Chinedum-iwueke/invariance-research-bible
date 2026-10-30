@@ -67,7 +67,7 @@ The many sibling directories named after milestones or fixes were treated as Git
 ### 2.3 External systems discovered
 
 - **GitHub:** source remotes and CI workflows under `swarm-control-plane/.github/workflows`.
-- **OpenAI Codex CLI:** bounded discovery, authoring, review, recovery advice, and Mission Control copilot calls. Exact invocation sites are documented in `swarm-control-plane/docs/book-xi-llm-runtime-register.md` and implemented in worker executors.
+- **OpenAI Codex CLI:** bounded discovery, authoring, review, recovery advice, and Mission Control copilot calls. Exact Hermes invocation sites are documented in [Book XI's runtime register](../books/book-11-engineered-company-system/appendices/B-hermes-codex-and-llm-runtime-register.md) and implemented in worker executors.
 - **Telegram:** founder notifications and approvals through the VM2 gateway.
 - **Tailscale:** private host connectivity and machine naming.
 - **Bybit and Binance:** admitted market-data/venue identities; live venue access was not exercised.

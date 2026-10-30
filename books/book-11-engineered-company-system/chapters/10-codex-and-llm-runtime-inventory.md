@@ -9,6 +9,11 @@ model is intelligent, correct, continuously active or scientifically qualified.
 Configuration that names a model, a stored `model_family` field, a prompt fixture and a
 test double are not model invocations.
 
+The living [Hermes runtime register](../appendices/B-hermes-codex-and-llm-runtime-register.md)
+records later operational detail for control-plane invocations. The chapter remains
+the cross-repository inventory, including Bulletproof and the public Invariance
+application.
+
 The inventory is source-observed at these revisions:
 
 | Repository | Audited revision | Scope |
