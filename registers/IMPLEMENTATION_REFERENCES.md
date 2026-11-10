@@ -455,11 +455,11 @@ No candidate, allocation or capital decision was created by deployment.
 
 ## ALPHA-013 hybrid cognitive-authoring addendum
 
-On 2026-11-09 the strategy-engineering runtime was observed using GitHub Copilot CLI
-as the primary bounded patch author, with Codex reserved for a correction pass,
-independent code review and infrastructure-unavailability fallback. The author ran in
-a disposable worktree with shell and network tools denied. The successful
-production-systemd rehearsal attested only `apply_patch`, `glob`, `rg` and `view`,
+On 2026-11-09 a production-systemd rehearsal exercised GitHub Copilot CLI as the
+primary bounded patch author, with Codex reserved for a correction pass, independent
+code review and infrastructure-unavailability fallback. The author ran in a disposable
+worktree with shell and network tools denied. The successful rehearsal attested only
+`apply_patch`, `glob`, `rg` and `view`,
 selected model `gpt-6-luna`, did not invoke fallback and retained report digest
 `c972634b810edfeb3019706256fab25fee98336d51bc9f0fbed04becfa5d5879`.
 
@@ -467,3 +467,4 @@ The implementation was merged to `swarm-control-plane` `main` by PR `#426` at co
 `37e6c14335cb28057b9b20a9d0c9f7423a2e135b`. The runtime boundary and validation are
 documented in `swarm-control-plane/docs/alpha-013-copilot-hybrid-authoring.md`. No
 authoring provider receives merge, scientific-promotion, order or capital authority.
+This receipt does not establish installation on a named production machine.
