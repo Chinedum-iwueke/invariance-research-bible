@@ -296,9 +296,13 @@ flowchart TD
     P -->|no| X
     P -->|yes| D[Deterministic feasibility and compilation]
     D -->|fail| X
-    D -->|pass| T[Focused tests and full Bulletproof validation]
+    D -->|pass| T[Focused deterministic tests]
     T -->|fail| X
-    T -->|pass| I[Independent strategy and causality review]
+    T -->|pass| C[Independent Codex code review]
+    C -->|reject| X
+    C -->|accept| F[Full Bulletproof validation]
+    F -->|fail| X
+    F -->|pass| I[Independent strategy and causality review]
     I -->|reject| X
     I -->|accept| B[Bounded BT-009 execution]
     B --> O[OOS, costs, stress, bias and reproducibility gates]
@@ -397,8 +401,8 @@ For an autonomous research question, the implemented intended path is:
 7. DATA-002/003 admits the exact selected panels; missing coverage terminates or
    replenishes the candidate without inventing data.
 8. A typed `StrategyIntent` and deterministic scaffold constrain implementation.
-9. Copilot authors unresolved logic; focused tests and full Bulletproof validation run;
-   Codex may correct, then separately reviews the patch.
+9. Copilot authors unresolved logic; focused tests run; Codex may correct a focused-test
+   failure, then separately reviews the patch before full Bulletproof validation runs.
 10. Independent strategy and causality evaluators compare the pinned code with the
     frozen hypothesis and representation.
 11. BT-009 runs bounded variants with walk-forward evaluation, realistic costs, cost
