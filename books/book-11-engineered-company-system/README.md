@@ -44,6 +44,15 @@ evidence proves only the observed deployment window.
 10. [Codex and LLM runtime inventory](chapters/10-codex-and-llm-runtime-inventory.md)
 11. [Cognitive machinery of Invariance Research](chapters/11-cognitive-machinery-of-invariance-research.md)
 
+## Operational appendices
+
+- A. [Agent workflow and feedback-loop atlas](appendices/A-agent-workflow-and-feedback-loop-atlas.md)
+- B. [Hermes Codex and LLM runtime register](appendices/B-hermes-codex-and-llm-runtime-register.md)
+
+The appendices retain their own inventory dates and claim boundaries. They are living
+operational maps, not evidence that every depicted loop or model invocation is
+currently healthy.
+
 ## Source hierarchy
 
 1. Database migrations, strict schemas and executable policy are authoritative for

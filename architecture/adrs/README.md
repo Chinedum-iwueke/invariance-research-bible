@@ -6,3 +6,5 @@ ADRs record material, durable decisions. Status is one of `proposed`, `accepted`
 - [ADR-0002 — Authority boundaries](0002-authority-boundaries.md)
 - [ADR-0003 — Concept ownership and cross-reference policy](0003-concept-ownership.md)
 - [ADR-0004 — Orthogonal state models](0004-orthogonal-state-models.md)
+- [ADR-0005 — Canonical identity and compatibility](0005-canonical-identity-and-compatibility.md)
+- [ADR-0006 — Agentic systems apprenticeship and evaluation program](0006-agentic-systems-apprenticeship-and-evaluation.md)

@@ -222,6 +222,13 @@ digest through the existing package lifecycle. Agents may propose these skills b
 cannot approve, deploy or use them to expand their grants. Hidden reasoning, secrets,
 one-off task state and unreviewed model text are never reusable institutional skills.
 
+The 2026-09-29 source foundation adopts the bounded optimization pattern demonstrated
+by Microsoft SkillOpt without installing a self-modifying runtime. A candidate must
+bind source traces and held-out replays, use a distinct evaluator, preserve tool
+authority, beat or match the baseline and introduce no regression or secret-like text.
+Success stages the candidate for human-governed package adoption; it never rewrites a
+live role package. Registry, independent routing and production replay remain open.
+
 ## 3.13 Independent evaluator routing and anti-collusion
 
 AGT-006 replaces reviewer labels with an enforceable routing record. An evaluator

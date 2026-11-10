@@ -9,6 +9,11 @@ model is intelligent, correct, continuously active or scientifically qualified.
 Configuration that names a model, a stored `model_family` field, a prompt fixture and a
 test double are not model invocations.
 
+The living [Hermes runtime register](../appendices/B-hermes-codex-and-llm-runtime-register.md)
+records later operational detail for control-plane invocations. The chapter remains
+the cross-repository inventory, including Bulletproof and the public Invariance
+application.
+
 The inventory is source-observed at these revisions:
 
 | Repository | Audited revision | Scope |
@@ -43,8 +48,8 @@ evidence are recorded in
 | Invocation boundary | Real work performed | Access and output | Authority | Observed state |
 |---|---|---|---|---|
 | Founder conversational planner | Interprets a founder message against supplied grounding, decides whether to answer, clarify or compile, and emits a schema-bound proposal. A grounded request can use one reasoning call plus one proposal-compilation call. | Ephemeral read-only Codex directory; structured reasoning and proposal documents. | Cannot execute the proposal, approve it, deploy code, place orders or allocate capital. | `invariance-swarm-founder-planner.service` active on VM1 at audit time. |
-| ALPHA-004 Research Intelligence director and senior researcher | Produces evidence-bound research briefs and predictive, falsifiable candidate questions from bounded corpus, failure, observation, portfolio and data context. | `codex exec`, read-only, network disabled, plugins/apps disabled; strict stage-specific JSON. | Proposes only. Deterministic validation, data admission, independent review and approval remain separate. | Both supervised ALPHA-004 units active on VM1 at audit time. |
-| ALPHA-009 data representation scientist | Selects a pre-outcome asset or basket, member roles, signal and execution clocks, candidate transformations and rejected alternatives for an exact accepted question. | `codex exec`, read-only, network disabled, plugins/apps disabled; `adaptive-representation-plan-v1.0.0` output only. Raw lake bytes and target outcomes are excluded. | Proposes data shape only. It cannot materialize features, tune against outcomes, admit panels or run a backtest. Native DATA-002/003 and Bulletproof validation remain mandatory. | Supervised representation unit active on VM1 at audit time; milestone qualification remains open. |
+| ALPHA-004 Research Intelligence director and senior researcher | Produces evidence-bound briefs and predictive, falsifiable questions from bounded corpus, failure, observation, portfolio, signal-screen, data and native-mechanism context. CSI, indexes and proxies are supplied as falsifiable priors, never empirical facts. | `codex exec`, read-only, network disabled, plugins/apps disabled; strict stage-specific JSON. | Proposes only. Deterministic validation, data admission, independent review and approval remain separate. | Supervised units were active on VM1 on 2026-09-30 under the single canonical weekly mandate; one previously leased legacy task was allowed to finish as immutable evidence. |
+| ALPHA-009 data representation scientist | Selects a pre-outcome 1-100 asset proposal by default, member roles, clocks, transformations and rejected alternatives for an exact question. It may mix optional stable/volatile labels when causally justified. | `codex exec`, read-only, network disabled, plugins/apps disabled; `adaptive-representation-plan-v1.0.0` output only. Raw lake bytes and target outcomes are excluded. | Proposes data shape only. Deterministic point-in-time, common-window, liquidity, capacity and DATA-002/003 admission decide executability; it cannot tune on outcomes or run a backtest. | Supervised unit was active on VM1 on 2026-09-30; the canonical mandate exposes 120 instruments, permits proposals up to 100 and fixes the latest complete one-year window. |
 | Engineering mission patch author | Writes only the unresolved bounded patch after deterministic feasibility, typed `StrategyIntent` compilation and scaffolding. | GitHub Copilot CLI is the observed primary provider in a disposable worktree. Network and shell tools are denied; allowed paths, tools, file count, diff size and duration are enforced before tests. Codex is used only for a correction pass or an infrastructure-unavailability fallback, never to provider-shop around a semantic failure. | Cannot push, merge, approve, trade, alter the frozen hypothesis or exceed the leased contract. | Hybrid authoring is deployed, production-systemd rehearsal passed on 2026-11-09, and the implementation is versioned on `swarm-control-plane` `main` at `37e6c14335cb28057b9b20a9d0c9f7423a2e135b`. |
 | Engineering mission code reviewer | Reviews the generated patch after focused deterministic tests and full Bulletproof validation and emits a schema-bound approval/findings document. | A separate ephemeral, read-only Codex call in the engineering workspace. | Can reject the patch bundle; cannot approve scientific validity, merge code or authorize execution. | Invoked by engineering missions that reach review. It is not a substitute for AGT-006 scientific independence. |
 | Independent alpha strategy reviewers | Compares the pinned implementation with the exact hypothesis card for either strategy fidelity or causality/leakage semantics. | Separate evaluator identities, read-only Codex, network/plugins/apps disabled; digest-bound verdict. | Review-only. No engineering, backtest, promotion, order or capital authority. | `spec` and `causality` reviewer units active on VM1 at audit time. |
@@ -149,6 +154,21 @@ tests, independent review and governed publication.
 - Research graph, retrieval, curriculum, freshness and operation-ledger services are
   deterministic services unless an explicitly listed caller supplies their bounded
   output to a model.
+- ALPHA-010 resource allocation is deterministic. Worker/RAM allocation, queue
+  priority and idle-state classification do not use an LLM.
+- DISC-010 basket rotation, resampling, transforms, empirical nulls, family correction
+  and question-candidate receipts are native deterministic Bulletproof computations.
+  No model selects assets from outcomes, calculates an effect or opens final OOS.
+- RI-017 external retrieval and quarantine are deterministic connector functions. The
+  senior researcher may reason over sanitized publication metadata through its already
+  listed bounded invocation, but fetching a feed is not itself an LLM call. The worker
+  may fetch allowlisted RSS/Atom, podcast transcript, publisher-abstract, exact-DID
+  social and YouTube-metadata sources, but supplies only sanitized title, provenance
+  and deterministic assessment to the model; bodies and retrieved instructions do not
+  enter model context or gain tool authority.
+- The AGT-009A source gate is deterministic. It applies SkillOpt-inspired trace,
+  held-out, independence, authority and regression checks; no optimizer-model call is
+  currently implemented or claimed.
 
 ## 10.8 Required maintenance
 

@@ -1594,6 +1594,13 @@ rejects instruction-like or non-predictive output, checks DATA-002/003 admission
 deduplicates questions, replenishes DISC-009 and opens the next no-capital campaign
 when the prior queue is exhausted.
 
+The active operating contract keeps one canonical weekly mandate. Explicit thematic
+children must bind its digest; older overlapping general mandates are superseded, not
+deleted. The controller replenishes before exhaustion: when accepted or awaiting-data
+questions fall below the approved low watermark and parallel capacity remains, it
+starts another bounded cycle immediately. The cadence is an idle fallback, and the
+cycle, hypothesis and trial ceilings always dominate replenishment.
+
 The loop is delegated by a founder-approved mandate lasting no more than seven
 days. The mandate freezes venue, dataset, instrument, point-in-time, liquidity,
 cycle, candidate and campaign limits. Within that exact envelope, risk-zero card
@@ -1608,6 +1615,14 @@ market-data-derived calculations, causal and leakage gates, walk-forward executi
 cost stress and terminal BT-009 evidence. Point-in-time Binance and Bybit universe
 eligibility is the intersection of the mandate with current admitted DATA-002/003
 bindings; unavailable, stale or insufficient-liquidity instruments cause abstention.
+
+Primary work uses 365 UTC days ending after the newest gap-free DATA-002 cataloged
+minute. A separate survivor contract may extend to 1,095 days after independent
+review. A representation proposal may contain 1-100 instruments by default, including
+cross-label baskets, when breadth is causal to the question; deterministic overlap,
+liquidity, admission and compute checks decide whether it can run. The reasoning
+context also carries native mechanism primitives, including declared CSI components,
+indexes and proxies. They remain falsifiable prior designs, not proven signal gates.
 
 Mission Control exposes mandate expiry, both worker heartbeats, cycle phase, stalls
 and counts for generated, rejected, duplicated, accepted, compiled, tested,
@@ -1740,3 +1755,92 @@ executions, retained negative evidence, BT-009 publication and exactly-once
 autonomous replenishment. It does not
 demonstrate alpha, shadow eligibility, live profitability, adaptive mixed-basket
 execution, whole-corpus mathematical fidelity or RI-015 reasoning qualification.
+
+#### September 28: Adaptive multi-asset boundary
+
+ALPHA-009 subsequently closed its declared no-capital adaptive-representation boundary
+with a terminal one-year SOLUSDT-to-ETHUSDT native run. The outcome-blind representation
+plan selected a two-asset causal relation and rejected unnecessary transformations;
+Bulletproof materialized and evaluated the exact plan. The result was a retained
+negative with completed point-in-time, OOS, cost-stress, selection-bias, logging,
+reproducibility and independent-review gates. This demonstrates that the loop can choose
+and evaluate a mixed basket. It does not make every catalog asset executable, certify
+arbitrary transforms or establish alpha.
+
+#### September 29: Continuous utilization boundary
+
+The autonomous certificate did not imply permanent research throughput. The latest
+audit found both VM1 capacity consumers online but returning `no_work`; the native queue
+contained no pending or running jobs. The latest two successful capacity jobs ended on
+September 28 at 19:43 and 20:44 UTC. VM2's discovery director remained active, but its
+active mandate summaries exposed no new hypotheses or trials. The system was
+operationally alive and scientifically idle.
+
+ALPHA-010 introduces a deterministic queue-depth and resource policy. Approved
+backtests have first priority. When they are absent, eligible native signal screens,
+representation/data-quality replays, governed evidence acquisition and held-out skill
+evaluation can consume useful capacity. No fallback may invent approval, change a grid,
+open final OOS, broaden data/code authority or trade. With about 66 GiB available RAM,
+the measured 4.5 GiB estimate and an 8 GiB floor permit 12 workers: initially two jobs
+at six workers, not two eight-worker jobs. Bulletproof PR #353 implements the first fallback: a native DISC-010
+receipt producer, content-bound runner, priority-10 capacity adapter, metadata-only
+replenisher and exact per-trial contracts. Control-plane PR #400 validates and publishes
+completed receipts, runs separate hardened replenishment and publication timers,
+supplies recent retained outcomes to ALPHA-004 and exposes a Mission Control
+signal-surveillance ledger. PR #401 adds immutable utilization snapshots, queue and
+allocation visibility plus low-water alerts. PR #402 reloads the resident scheduler
+only across a zero-active-work boundary and shortens replenishment to one minute.
+
+DISC-010 owns the missing universe-wide OHLCV surveillance producer. It begins with
+transparent preregistered statistical families, complete search accounting and strict
+exploration/validation/final-OOS separation. Its output is an observation and
+falsifiable question, not a strategy. Existing native discovery, state, representation,
+correlation and alpha-zoo modules are reused by the new producer. The source contract
+freezes a three-asset basket from coverage metadata, supports safe arbitrary aggregation
+above one minute, evaluates eight cross-asset trials with train-only thresholds,
+empirical circular-shift nulls and family correction, and never opens final OOS. It
+retains invalid and null trials. Thirty-eight focused native tests and a synthetic CLI
+smoke pass; the full native root-4 suite passes 360 tests. Hermes validation, projection,
+publisher and UI suites also pass locally.
+
+The production boundary is now observed at control-plane commit
+`6991b641bf6b14f03d9bad363a64f81d6b4f582b` and Bulletproof commit
+`da9f1d2850b707752f0059857932f97fb32b4bb9`. At 20:07 UTC the canonical utilization
+snapshot reported a 12-worker resource budget, 12 active workers, no idle budget and
+two six-worker fallback allocations with about 65.8 GiB available RAM. Three cycles
+replenished after terminal work. Seven registered families retained 56 evaluated,
+zero invalid trials, zero question candidates and unopened final OOS. These are honest
+native signal screens, not backtests or alpha claims. Approved BT-009 jobs retain higher
+priority, but their concurrency is necessarily bounded by the supply of independently
+qualified hypotheses.
+
+The production audit at 2026-09-29 19:02 UTC found both VM1 capacity executors active
+but repeatedly returning `no_work`, no pending or locked native assignments and no new
+completion after 2026-09-28 20:44 UTC. The two latest one-year outcomes were the retained
+negative SOL-to-ETH result described above and an invalid replacement stopped for
+insufficient chronological rows. Neither reached demo admission. Thus the loop was
+certified for bounded autonomous behavior but was not continuously utilizing available
+compute; ALPHA-010 and DISC-010 exist to close that operational distinction.
+
+ML and RL do not form mandatory steps in every campaign. ML begins after a causal
+signal/state contract when nonlinear or conditional prediction is justified: ML-002
+materializes causal folds, ML-003 compares families with simple baselines and ML-004
+calibrates uncertainty/abstention. RL begins only after sufficient immutable state,
+action, reward, behavior-policy propensity, support, fill and cost evidence exists;
+RL-001 audits the offline dataset and RL-002 evaluates conservatively. No online
+capital exploration exists, and learned actions remain subordinate to deterministic
+risk and kill controls. A typed eligibility router for continuous-loop use remains
+planned.
+
+RI-017 reuses the immutable RI-006 surveillance registry rather than giving reasoning
+agents a browser session. Its initial source worker admits public statistical-finance and
+ML-method arXiv metadata plus Jane Street's public feed through exact HTTPS host,
+rights, digest, injection and replay controls. Only sanitized titles, provenance and
+deterministic assessments can enter ALPHA-004 as question seeds. They cannot support a
+claim or authorize a trial. Its first production pass retained five fetch receipts and
+499 publications: 100 records from each of three q-fin feeds, 99 accepted and one
+rejected from the ML feed, and 100 from Jane Street. The worker runs unprivileged and
+receives the root-owned API credentials through systemd's credential projection.
+Public YouTube transcripts, social observations,
+NeurIPS/ICML proceedings and full text remain unimplemented until each has an exact
+identity, rights, correction and parser contract.

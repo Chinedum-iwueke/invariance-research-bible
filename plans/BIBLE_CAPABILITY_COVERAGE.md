@@ -130,6 +130,7 @@ provable increments. Each must be copied into the executable backlog before work
 | RI-009 | Domain curricula, corpus quality and institutional-brain evaluation | Held-out domain, contradiction, citation, abstention and calibration thresholds pass |
 | RI-010 | Memory consolidation, decay, lawful deletion and supersession | Retention/deletion propagates to all projections without erasing audit lineage |
 | RI-011 | Production-scale retrieval and model-independent reranking evaluation | Declared relevance/latency/SLO thresholds pass at representative corpus scale |
+| RI-017 | Governed public scholarly, transcript, RSS and social-observation acquisition | Isolated no-secret retrieval, rights/provenance receipts, quarantine and source replay pass |
 
 ### Foundation assurance
 
@@ -193,6 +194,8 @@ provable increments. Each must be copied into the executable backlog before work
 | DISC-007 | Multiple-testing, selection-bias and research-overfitting auditor | Family-wise/FDR and deflated evidence reports bind to full search history |
 | DISC-008 | Bounded autonomous research sessions and agenda optimization | Session terminates on budget/stop; negative and invalid outcomes retained |
 | DISC-009 | Discovery portfolio and information-gain scheduler | Allocation is to inquiry only, never capital; diversity and duplication visible |
+| DISC-010 | Native outcome-separated OHLCV signal surveillance | Complete search ledger, null/leakage controls and sealed-OOS replay pass |
+| ALPHA-010 | Capacity-aware continuous research utilization | Eligible work avoids idle capacity without invented authority, variants or OOS reuse |
 
 ### F. Prospective evidence, ML and reinforcement learning
 
