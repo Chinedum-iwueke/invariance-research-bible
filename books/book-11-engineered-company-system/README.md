@@ -3,6 +3,7 @@
 
 **Edition:** Living as-built engineering specification
 **Snapshot date:** 2026-09-27
+**Targeted cognitive-machinery update:** 2026-11-09
 **Scope:** Hermes Swarm, Research Intelligence, Bulletproof BT, Mission Control,
 founder channels, VM2 operations, and the public Invariance application
 
@@ -41,6 +42,7 @@ evidence proves only the observed deployment window.
 8. [Security, reliability and recovery](chapters/08-security-reliability-and-recovery.md)
 9. [Verification, gaps and maintenance](chapters/09-verification-gaps-and-maintenance.md)
 10. [Codex and LLM runtime inventory](chapters/10-codex-and-llm-runtime-inventory.md)
+11. [Cognitive machinery of Invariance Research](chapters/11-cognitive-machinery-of-invariance-research.md)
 
 ## Operational appendices
 

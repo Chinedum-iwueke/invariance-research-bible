@@ -1,6 +1,12 @@
 <a id="research-intelligence-as-built"></a>
 # 4. Research Intelligence
 
+For the unified as-built path from evidence selection through retrieval, graph
+traversal, context assembly, model inference, tool use, validation, memory and
+feedback, see [Chapter 11](11-cognitive-machinery-of-invariance-research.md). This
+chapter remains the subsystem specification; Chapter 11 is the cross-system cognitive
+trace.
+
 ## 4.1 Purpose and non-authority
 
 Research Intelligence is the institutional evidence and memory layer. PostgreSQL and
