@@ -1,6 +1,10 @@
 <a id="verification-gaps-and-maintenance"></a>
 # 9. Verification, Gaps and Maintenance
 
+**Targeted update, 2026-11-16:** R14/R15 completed with zero trials. Deployment and 377 targeted backend tests do not close autonomous recovery certification. Missing gates include feasibility-only correction, observation-capacity preflight, exact dataset indexing and a genuinely successful reviewed successor reaching native execution.
+See [the current recovery evidence](12-requirements-recovery-and-current-certification.md).
+Older observations below retain their original evidence dates.
+
 ## 9.1 Current milestone ledger
 
 | Package | Source state | Latest recorded runtime/evidence state |

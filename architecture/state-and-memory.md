@@ -1,5 +1,7 @@
 # State and Memory Architecture
 
+**Targeted update, 2026-11-16:** Requirements dispositions persist evidence digests, owners and recovery conditions in campaign records and deduplicated mandate events. Candidate/source identities remain distinct; immutable rejection subjects bind method successors. No historical counters, approvals or scientific results are overwritten. See [the current contracts](../books/book-11-engineered-company-system/chapters/12-requirements-recovery-and-current-certification.md).
+
 ## State classes
 
 The word *memory* is too broad unless divided into explicit layers.

@@ -1,6 +1,10 @@
 <a id="security-reliability-and-recovery"></a>
 # 8. Security, Reliability and Recovery
 
+**Targeted update, 2026-11-16:** Correction routing now preserves verified rejection custody, immutable successor lineage, a two-correction cap and ordinary mandate budgets. Typed conditions distinguish repair from waiting and identity/conflict constraints. A budget cap is not scientific falsification; automatic diagnostic escalation remains open.
+See [the current recovery evidence](12-requirements-recovery-and-current-certification.md).
+Older observations below retain their original evidence dates.
+
 ## 8.1 Credential separation
 
 - Founder/operator, worker, founder-channel, package-signing, mission-signing,

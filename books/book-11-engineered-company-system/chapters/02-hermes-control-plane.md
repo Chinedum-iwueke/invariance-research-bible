@@ -1,6 +1,10 @@
 <a id="hermes-control-plane"></a>
 # 2. Hermes Control Plane
 
+**Targeted update, 2026-11-16:** The deployed control plane now retains typed requirements dispositions and schedules bounded method corrections from verified independent rejections. Existing founder seeds take priority; unchanged failed seeds are not blindly retried. Mandate budgets and exact scientific identity remain binding.
+See [the current recovery evidence](12-requirements-recovery-and-current-certification.md).
+Older observations below retain their original evidence dates.
+
 ## 2.1 Canonical service catalog
 
 PLAT-001 adds a declared-intent layer over the runtime truth already supplied by

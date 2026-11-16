@@ -1,6 +1,10 @@
 <a id="vm2-and-invariance-application"></a>
 # 7. VM2 Platform and Invariance Application
 
+**Targeted update, 2026-11-16:** API and both research directors were deployed on the same 2e49cd7 image, with API health verified. The public application was not re-audited by this rollout; do not transfer control-plane health evidence to it.
+See [the current recovery evidence](12-requirements-recovery-and-current-certification.md).
+Older observations below retain their original evidence dates.
+
 ## 7.1 Control-plane deployment
 
 The recorded VM2 Compose stack contains `swarm-api`, PostgreSQL 17 and Redis 7, bound

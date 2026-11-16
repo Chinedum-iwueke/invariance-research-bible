@@ -1,6 +1,10 @@
 <a id="cognitive-machinery-of-invariance-research"></a>
 # 11. Cognitive Machinery of Invariance Research
 
+**Targeted update, 2026-11-16:** [Chapter 12](12-requirements-recovery-and-current-certification.md)
+updates source pins, recovery routing and current commissioning outcomes. The older
+whole-system audit below is not a fresh health check of every cognitive service.
+
 ## 11.1 Purpose and truth boundary
 
 This chapter explains the as-built path by which Invariance selects evidence,
@@ -246,7 +250,7 @@ a different question, context and output contract.
 | Research Intelligence director | Corpus citations, prior outcomes, observations, portfolio gaps and mandate | Synthesize mechanisms, contradictions and promising evidence combinations | Evidence-bound intelligence brief | Invent evidence, browse or self-approve |
 | Senior quantitative researcher | Intelligence brief, exclusions, constraints and catalog | Form predictive, timed, falsifiable questions with nulls and bounded variants | Candidate hypothesis questions | Run outcomes or select by PnL |
 | Data representation scientist | Frozen candidate, lake/catalog metadata and native strategy catalog | Choose a causal basket, clocks and ordered transformation graph before outcomes | One typed representation plan per candidate | Inspect targets, tune `d`, assets or timeframe on results |
-| Copilot patch author | Typed `StrategyIntent`, deterministic scaffold, exact allowed files and implementation instructions | Implement only unresolved native signal logic | Bounded repository patch and tool transcript | Shell, network, push, merge, approve or alter hypothesis |
+| Strategy patch author (Codex default; optional Copilot) | Typed `StrategyIntent`, deterministic scaffold, exact allowed files and implementation instructions | Implement only unresolved native signal logic | Bounded repository patch and tool transcript | Exceed leased tools/scope, push, merge, approve or alter hypothesis |
 | Codex correction pass | Failed focused checks and the bounded author workspace | Repair a semantically incomplete authored patch | Corrective patch | Expand contract or hide failures |
 | Codex code reviewer | Patch, tests and engineering contract | Find implementation and contract defects independently of the author pass | Schema-bound review verdict | Scientific approval, merge or execution |
 | Strategy-spec reviewer | Frozen card, specification and pinned implementation | Check implementation fidelity and required artifacts | Digest-bound verdict | Engineer or run the strategy |
@@ -256,10 +260,11 @@ a different question, context and output contract.
 
 Research discovery and founder planning currently invoke `codex exec` with an
 ephemeral read-only sandbox, network disabled and strict JSON output schemas. Strategy
-authoring uses the targeted 2026-11-09 hybrid boundary described in Chapter 10:
-Copilot primary author, Codex correction/review and Codex only as an
-infrastructure-unavailability fallback. Every provider output remains subordinate to
-the same typed contract and deterministic validators.
+authoring defaults to Codex with a bounded correction pass and separate independent
+review. Copilot hybrid remains an optional configured route, not the current default.
+Every provider output remains subordinate to the typed contract and deterministic
+validators. The new deterministic correction scheduler selects review-rejected
+methods for these existing cognitive roles; it does not reason or grant authority.
 
 ## 11.9 Prompt, tool and authority policy
 
@@ -273,7 +278,7 @@ Tools are capability-scoped rather than implicitly available:
 
 - discovery roles have no browse, shell, code-write, order or capital tools;
 - the Research Copilot receives a prepared context pack and no execution tools;
-- the current Copilot author may inspect and patch only the disposable checkout with
+- the optional Copilot author may inspect and patch only the disposable checkout with
   `view`, `rg`, `glob` and `apply_patch`;
 - deterministic cognitive tools calculate mean, sample standard deviation, Sharpe and
   maximum drawdown and return immutable receipts;
@@ -400,8 +405,10 @@ For an autonomous research question, the implemented intended path is:
    transformations and rejected alternatives before seeing outcomes.
 7. DATA-002/003 admits the exact selected panels; missing coverage terminates or
    replenishes the candidate without inventing data.
-8. A typed `StrategyIntent` and deterministic scaffold constrain implementation.
-9. Copilot authors unresolved logic; focused tests run; Codex may correct a focused-test
+8. Native smoke/scientific feasibility and independent requirements review precede
+   typed `StrategyIntent` and scaffolding. Rejections receive typed dispositions;
+   eligible method corrections re-enter the proposal path within approved budgets.
+9. Codex authors unresolved logic by default; focused tests run; Codex may correct a focused-test
    failure, then separately reviews the patch before full Bulletproof validation runs.
 10. Independent strategy and causality evaluators compare the pinned code with the
     frozen hypothesis and representation.
@@ -451,9 +458,11 @@ Useful health questions are therefore concrete:
    epistemic independence.
 7. Institutional feedback changes context and policy, not model weights. Claims of
    self-improving intelligence must be limited to measurable workflow behavior.
-8. Copilot-primary authoring depends on external provider authentication, availability
-   and quota. Its Codex fallback is limited to classified infrastructure failures and
-   cannot convert a semantic authoring failure into provider shopping.
+8. Codex-default and optional hybrid authoring depend on provider authentication,
+   availability and quota. Capacity deferral is not a scientific retry. Optional
+   fallback cannot turn a semantic failure into provider shopping. Typed recovery
+   routing is deployed, but R15 still failed before engineering; successful general
+   repair and progression are not established.
 9. A successful cognitive path proves operational and scientific process behavior, not
    profitability or readiness for capital.
 

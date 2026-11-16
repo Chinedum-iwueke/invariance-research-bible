@@ -42,6 +42,14 @@ The desired long-term result is a compounding library of modest, diverse, scient
 
 ## 3. Current Canonical Status
 
+**Operational continuity, 2026-11-16:** The ten-book constitutional series is
+accompanied by non-normative Book XI. This bootstrap document's ten-book roadmap
+does not exclude that living implementation companion. Before making current-state
+claims, consult [Book XI's recovery and certification update](books/book-11-engineered-company-system/chapters/12-requirements-recovery-and-current-certification.md).
+R14/R15 ended with zero trials; deployed recovery routing is not proof of successful
+autonomous strategy engineering. Do not revive exhausted mandates or interpret
+historical EXEC1/EXEC2 and provider assignments as current runtime inventory.
+
 Books I–III have already been drafted. They are the **constitutional foundation** of the series and must be read before later books are authored or materially revised.
 
 | Book | Canonical role | Governing question |

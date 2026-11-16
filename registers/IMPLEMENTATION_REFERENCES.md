@@ -1,5 +1,18 @@
 # Implementation Reference Register
 
+## Targeted current pins - 2026-11-16
+
+- Swarm Control Plane: `2e49cd7`, bounded requirements correction and typed dispositions;
+  377 targeted backend tests passed; API and both directors deployed on VM2.
+- Bulletproof BT: `72dbd592662dc1922e9c144ef69bc58ce5f45af1`, the source bound to R14/R15.
+- [Book XI Chapter 12](../books/book-11-engineered-company-system/chapters/12-requirements-recovery-and-current-certification.md)
+  provides exact runtime/mandate evidence, links to pinned source and audit scope.
+- Public application and unrelated services were not re-audited in this pass.
+
+The following pins are historical audits, not an assertion that production remains
+on those revisions. Preserve their results and limitations rather than relabelling
+them as checks run at the newer pins.
+
 | System | Reference | Required pin | Audit status | Claim boundary |
 |---|---|---|---|---|
 | Bulletproof BT | `https://github.com/Chinedum-iwueke/bulletproof_bt` | `ba2a0314817607c5c79d604a0846e008c14379c2`, inspected 2026-08-08 | Audit complete with recorded upstream failures and environment limits | Current behavior is limited to inspected code, schemas, documentation, and recorded checks at this commit; target integration is a separate claim class. |

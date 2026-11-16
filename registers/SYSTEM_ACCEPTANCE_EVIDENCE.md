@@ -3,6 +3,12 @@
 
 **Status:** Controlled acceptance contract
 
+**Observed scope, 2026-11-16:** Deployment and 377 targeted tests establish the
+bounded recovery implementation, not system acceptance. R14/R15 supplied retained
+rejections and deferrals with zero trials. Acceptance still requires changed
+specifications passing independent review and genuine native execution/publication.
+See [the recovery evidence record](../books/book-11-engineered-company-system/chapters/12-requirements-recovery-and-current-certification.md).
+
 | Gate | Acceptance evidence | Failure meaning | Authority |
 |---|---|---|---|
 | Requirement coverage | Stable source-derived requirement ID, exact statement digest, owner, work package, verification, disposition and evidence rule | Capability is unplanned or its implementation claim is unsupported | Architecture owner and domain authority |

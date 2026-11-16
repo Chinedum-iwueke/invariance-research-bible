@@ -1,6 +1,10 @@
 <a id="research-intelligence-as-built"></a>
 # 4. Research Intelligence
 
+**Targeted update, 2026-11-16:** Discovery retrieval rotates using earlier mandates' query receipts, and an empty hypothesis list no longer invokes representation work. This reduces redundant work but does not certify reasoning quality. R15 method corrections still failed native feasibility or independent review.
+See [the current recovery evidence](12-requirements-recovery-and-current-certification.md).
+Older observations below retain their original evidence dates.
+
 For the unified as-built path from evidence selection through retrieval, graph
 traversal, context assembly, model inference, tool use, validation, memory and
 feedback, see [Chapter 11](11-cognitive-machinery-of-invariance-research.md). This

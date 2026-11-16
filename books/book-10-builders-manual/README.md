@@ -1,5 +1,10 @@
 # Book X — The Builder’s Manual
 
+**Implementation cross-reference, 2026-11-16:** Follow
+[Book XI's current recovery and certification record](../book-11-engineered-company-system/chapters/12-requirements-recovery-and-current-certification.md)
+for the deployed source pins and remaining engineering gates. Specification
+completeness does not establish reliable autonomous execution.
+
 **Purpose:** Repositories, services, schemas, databases, tests, milestones, deployment, and operating runbooks for building the institution.  
 **Status:** Repository-native edition complete; volume and final series QA passed  
 **Canonical dependencies:** Books I–IX  

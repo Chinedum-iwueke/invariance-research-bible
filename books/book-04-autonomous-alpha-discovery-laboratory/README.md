@@ -1,5 +1,10 @@
 # Book IV — The Autonomous Alpha Discovery Laboratory
 
+**Implementation cross-reference, 2026-11-16:** This book defines the discovery
+architecture, not a claim of universal unattended operation. The deployed correction
+controller and R14/R15 zero-trial outcomes are documented in
+[Book XI Chapter 12](../book-11-engineered-company-system/chapters/12-requirements-recovery-and-current-certification.md).
+
 **Purpose:** Governed anomaly discovery, question formation, hypothesis languages, search, falsification, and research agendas.  
 **Status:** Repository-native edition complete; volume and final series QA passed  
 **Canonical dependencies:** Books I–III  

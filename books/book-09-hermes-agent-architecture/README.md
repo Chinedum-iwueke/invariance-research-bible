@@ -1,5 +1,10 @@
 # Book IX — Hermes Agent Architecture
 
+**Implementation cross-reference, 2026-11-16:** Requirements correction is a
+deterministic controller reusing existing reasoning roles, not a new LLM agent.
+Current provider policy, authority limits and unclosed recovery gates are in
+[Book XI Chapter 12](../book-11-engineered-company-system/chapters/12-requirements-recovery-and-current-certification.md).
+
 **Purpose:** Agent roles, cognitive services, model runtimes, tools, permissions, communication, evaluation, and governed self-improvement.  
 **Status:** Repository-native edition complete; volume and final series QA passed  
 **Canonical dependencies:** Books I–VIII; organizational authority remains in Book II  

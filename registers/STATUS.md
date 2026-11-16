@@ -2,6 +2,11 @@
 
 **Overall status:** Repository-native specification complete; institutional implementation partial
 
+**Operational update, 2026-11-16:** Requirements correction and typed dispositions
+are deployed, but R14/R15 completed without scientific trials. General unattended
+hypothesis-to-Bulletproof recovery remains unqualified. See the
+[current evidence and remaining gates](../books/book-11-engineered-company-system/chapters/12-requirements-recovery-and-current-certification.md).
+
 | Workstream | Status | Exit condition |
 |---|---|---|
 | Repository inventory | Complete | All initial files, checksums, and source roles recorded |

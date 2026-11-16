@@ -1,6 +1,10 @@
 <a id="bulletproof-bt-as-built"></a>
 # 5. Bulletproof BT Laboratory
 
+**Targeted update, 2026-11-16:** Current commissioning binds native source 72dbd59. Research decision frames, outcome tails, explicit log-level transforms and strict lower-tail support have received targeted fixes. Separate smoke and scientific contracts precede full validation. R14/R15 produced no new native run or BT-009 result; older successful pilots remain scoped historical evidence.
+See [the current recovery evidence](12-requirements-recovery-and-current-certification.md).
+Older observations below retain their original evidence dates.
+
 ## 5.1 Engine purpose
 
 Bulletproof BT is a deterministic, event-driven quantitative research engine. Its

@@ -2,10 +2,28 @@
 # Implementation Status Register
 
 **Status:** Controlled implementation baseline
-**As of:** 2026-08-28
+**Baseline as of:** 2026-08-28; targeted update below dated 2026-11-16
 **Claim vocabulary:** `current`, `partial`, `documented`, `tested`, `observed`, `target`, `extension`, `deferred`, `unknown`, `blocked`
 
 This register separates the completeness of the Bible from the maturity of the institution it specifies. A written chapter is not implementation evidence. A source file is not operational evidence. A passing unit test is not production qualification.
+
+## Current targeted status - 2026-11-16
+
+| Capability | Evidence-backed status | Remaining gap |
+|---|---|---|
+| Requirements-correction scheduler | Implemented, tested and deployed at CP `2e49cd7` | No observed automatic correction-to-successful-native-run chain; only review rejections are selected |
+| Typed recovery dispositions | Implemented and deployed; retained in R15 campaign records | Not a universal prose classifier, remediation worker or dedicated new UI |
+| Native feasibility and scientific review | Real R14/R15 candidates reached guarded paths | R15 remained infeasible/rejected; no new scientific trials |
+| Authoring provider | Codex-only default; Copilot opt-in; local adapter experimental | Older Copilot rehearsal does not prove current authoring reliability |
+| Commissioning | R14 and R15 completed; zero trials | Fresh approved authority and successfully reviewed successors required |
+| Historical fleet references | EXEC1/EXEC2 retired; VPS1 is the configured execution role | No fresh venue/host certification inferred from this documentation pass |
+
+See [Book XI Chapter 12](../books/book-11-engineered-company-system/chapters/12-requirements-recovery-and-current-certification.md)
+for exact evidence and limitations. The table below is a **historical baseline**:
+its counts, hosts, "current" labels and then-pending milestones are not fresh runtime
+assertions. Later dated backlog evidence and Book XI updates supersede them.
+
+## Historical implementation baseline
 
 | Capability | Status | Evidence boundary | Consequential gap | Roadmap destination |
 |---|---|---|---|---|
@@ -50,6 +68,6 @@ This register separates the completeness of the Bible from the maturity of the i
 | Integrated disaster recovery and runtime replacement | source-complete; tested; deterministic rehearsal | OPS-003 dossier composes control-plane and corpus restore, projection/citation replay, stale-lease recovery, notification dedupe, redacted rotation and compatible runtime replacement/fallback; digest `941a484ee954fe25a8c63bd256e7bd48699ca6cbba1c3486f5d7df8f081f7f71` | Rehearsal is deliberately non-production and does not grant production restore; encrypted off-host generations remain PLAT-007 | OPS-003 complete at non-destructive acceptance boundary |
 | Service catalog and dependency inventory | source-complete; tested; deterministic rehearsal | Immutable 12-service catalog, owner/recovery/SLO/interface/dependency contracts, activation history, digest-bound reconciliation and adversarial drift evidence; catalog digest `793b67cf1c447887b374df53efe87bfd58bc7281ba839e9cd63402576ff9ef96` | VM2 migration, catalog activation and first live Docker/systemd/launchd reconciliation remain operational acceptance; the catalog does not control deployments | PLAT-001 source definition complete; production replay pending |
 
-## Current operating conclusion
+## Historical operating conclusion
 
 The current system can run bounded, no-capital research pilots with identity, approval, isolated execution, structured evidence, independent reviews, and attributable decisions. It cannot yet claim the complete Research Intelligence architecture specified by Book III, repository-wide Bulletproof regression closure, point-in-time correctness across the lake, or readiness for autonomous capital mutation.

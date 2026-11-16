@@ -1,6 +1,10 @@
 <a id="founder-interfaces"></a>
 # 6. Founder Interfaces and Operating Channels
 
+**Targeted update, 2026-11-16:** Typed dispositions are persisted in backend campaign/mandate evidence. The latest backend change did not deliver a dedicated new disposition UI. R15 approval was exact-digest and no-capital; it has now exhausted its two cycles. Task delegation is not mandate renewal or capital approval.
+See [the current recovery evidence](12-requirements-recovery-and-current-certification.md).
+Older observations below retain their original evidence dates.
+
 ## 6.1 Mission Control
 
 Mission Control is a loopback-only FastAPI application on the Mac with a static

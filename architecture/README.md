@@ -1,5 +1,7 @@
 # Architecture and Mastery Index
 
+**Targeted update, 2026-11-16:** The [2026-11-16 recovery and certification update](../books/book-11-engineered-company-system/chapters/12-requirements-recovery-and-current-certification.md) supersedes older present-state claims for authoring providers and commissioning. Dated October assessments are preserved as observations, not rewritten as current audits.
+
 ## Dated assessments
 
 - [Architectural reconnaissance, 2026-10-25](ARCHITECTURAL_RECONNAISSANCE_2026-10-25.md)

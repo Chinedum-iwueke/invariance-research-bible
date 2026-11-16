@@ -1,5 +1,7 @@
 # Execution Lifecycle
 
+**Targeted update, 2026-11-16:** Native feasibility and independent scientific-requirements acceptance precede strategy engineering. Correction scheduling is not engineering completion; neither R14 nor R15 reached a scientific trial. Separate smoke, scientific execution and BT-009 publication remain required. See [the observed lifecycle](../books/book-11-engineered-company-system/chapters/12-requirements-recovery-and-current-certification.md).
+
 ## Task lifecycle
 
 **Diagram EXE-001 — Durable task lifecycle**

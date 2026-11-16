@@ -1,6 +1,10 @@
 <a id="worker-runtime-and-agent-catalog"></a>
 # 3. Worker Runtime and Agent Catalog
 
+**Targeted update, 2026-11-16:** Codex is the default strategy author; Copilot is optional. Requirements correction is a deterministic controller, not a new registered LLM agent. Existing research workers produce successors; independent reviewers still decide acceptance. Historical agent counts and retired EXEC1/EXEC2 role registrations are not a current active-agent inventory.
+See [the current recovery evidence](12-requirements-recovery-and-current-certification.md).
+Older observations below retain their original evidence dates.
+
 ## 3.1 Restricted worker architecture
 
 The Python worker is an asynchronous single-task runtime. Its components are:

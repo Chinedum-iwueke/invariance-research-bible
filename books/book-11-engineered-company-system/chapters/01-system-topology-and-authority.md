@@ -1,6 +1,10 @@
 <a id="system-topology-and-authority"></a>
 # 1. System Topology and Authority
 
+**Targeted update, 2026-11-16:** EXEC1 and EXEC2 are retired historical hosts; the configured replacement execution role is VPS1. This documentation pass does not establish current VPS1 venue certification or an independent watchdog. VM2 API/director image alignment was observed; other host health remains separately evidenced.
+See [the current recovery evidence](12-requirements-recovery-and-current-certification.md).
+Older observations below retain their original evidence dates.
+
 ## 1.1 Physical and logical placement
 
 ```mermaid

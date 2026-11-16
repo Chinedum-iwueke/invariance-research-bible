@@ -1,5 +1,15 @@
 # Appendix B: Hermes Codex and LLM Runtime Register
 
+**2026-11-16 overlay:** Codex-only authoring is default; Copilot hybrid is opt-in and
+the local adapter remains experimental. Requirements correction adds no new model
+agent: deterministic scheduling reuses existing synthesis, hypothesis and
+representation calls, followed by native checks and separate independent reviews.
+Cross-mandate retrieval rotation and empty-hypothesis early termination reduce
+repeated context and unnecessary representation calls. See
+[Chapter 12](../chapters/12-requirements-recovery-and-current-certification.md) for
+source pins, quota/billing references and unclosed acceptance gates. Historical
+"active" observations below do not establish present service health.
+
 This operational register names every Hermes production path where a language model
 performs real work. Book XI's
 [Codex and LLM runtime inventory](../chapters/10-codex-and-llm-runtime-inventory.md)

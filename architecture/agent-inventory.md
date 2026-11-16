@@ -1,5 +1,7 @@
 # Agent Inventory
 
+**Targeted update, 2026-11-16:** The requirements-correction controller is ordinary deterministic scheduling, not an additional reasoning agent. It reuses intelligence, hypothesis, representation and independent-review workers. Provider selection defaults to Codex; earlier Copilot-primary evidence is historical. This inventory is not a live active/retired registration query. See [current boundaries](../books/book-11-engineered-company-system/chapters/12-requirements-recovery-and-current-certification.md).
+
 ## Definition
 
 In this system, an *agent* should mean a runtime identity that uses observations,

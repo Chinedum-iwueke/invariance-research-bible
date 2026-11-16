@@ -2,8 +2,8 @@
 # Book XI — The Engineered Company System
 
 **Edition:** Living as-built engineering specification
-**Snapshot date:** 2026-09-27
-**Targeted cognitive-machinery update:** 2026-11-09
+**Base snapshot date:** 2026-09-27; historical observations retain their own dates
+**Targeted recovery, runtime and certification update:** 2026-11-16
 **Scope:** Hermes Swarm, Research Intelligence, Bulletproof BT, Mission Control,
 founder channels, VM2 operations, and the public Invariance application
 
@@ -43,6 +43,12 @@ evidence proves only the observed deployment window.
 9. [Verification, gaps and maintenance](chapters/09-verification-gaps-and-maintenance.md)
 10. [Codex and LLM runtime inventory](chapters/10-codex-and-llm-runtime-inventory.md)
 11. [Cognitive machinery of Invariance Research](chapters/11-cognitive-machinery-of-invariance-research.md)
+12. [Requirements recovery and current certification](chapters/12-requirements-recovery-and-current-certification.md)
+
+Chapter 12 supersedes earlier present-tense provider and commissioning summaries
+where they conflict: Codex-only is default, R14/R15 completed with zero trials, and
+typed correction routing is deployed but not end-to-end recovery-certified. It does
+not silently refresh every service-health observation in this book.
 
 ## Operational appendices
 

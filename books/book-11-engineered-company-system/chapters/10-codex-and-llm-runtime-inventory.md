@@ -26,10 +26,20 @@ These pins establish the audited source, not deployment. Only service evidence c
 prove that a call site is deployed or active. Runtime state
 below is the state observed on VM1 on 2026-09-27 unless another location is named.
 
-### 10.1.1 Targeted authoring-runtime update, 2026-11-09
+### 10.1.1 Current authoring policy, 2026-11-16
+
+Codex-only is the default since 2026-11-12. The protected persistent
+`SWARM_ENGINEERING_AUTHOR_PROVIDER` selector retains optional Copilot and experimental
+Ollama routes. Codex correction and independent review remain separate invocations.
+The requirements-correction controller is deterministic scheduling, not a new LLM
+call site: it reuses the existing intelligence, hypothesis and representation roles.
+Quota circuits and billing lanes are separate from scientific retry limits.
+See [Chapter 12](12-requirements-recovery-and-current-certification.md).
+
+### 10.1.2 Historical authoring-runtime rehearsal, 2026-11-09
 
 The strategy-engineering boundary changed after the pinned whole-system audit.
-Production-systemd rehearsal now uses GitHub Copilot CLI as the primary bounded patch
+The production-systemd rehearsal used GitHub Copilot CLI as the primary bounded patch
 author and Codex as the correction, independent code-review and infrastructure-fallback
 runtime. The primary author runs in a disposable worktree with network and shell tools
 denied; the observed successful rehearsal used only `apply_patch`, `glob`, `rg` and
@@ -51,7 +61,7 @@ evidence are recorded in
 | Founder conversational planner | Interprets a founder message against supplied grounding, decides whether to answer, clarify or compile, and emits a schema-bound proposal. A grounded request can use one reasoning call plus one proposal-compilation call. | Ephemeral read-only Codex directory; structured reasoning and proposal documents. | Cannot execute the proposal, approve it, deploy code, place orders or allocate capital. | `invariance-swarm-founder-planner.service` active on VM1 at audit time. |
 | ALPHA-004 Research Intelligence director and senior researcher | Produces evidence-bound briefs and predictive, falsifiable questions from bounded corpus, failure, observation, portfolio, signal-screen, data and native-mechanism context. CSI, indexes and proxies are supplied as falsifiable priors, never empirical facts. | `codex exec`, read-only, network disabled, plugins/apps disabled; strict stage-specific JSON. | Proposes only. Deterministic validation, data admission, independent review and approval remain separate. | Supervised units were active on VM1 on 2026-09-30 under the single canonical weekly mandate; one previously leased legacy task was allowed to finish as immutable evidence. |
 | ALPHA-009 data representation scientist | Selects a pre-outcome 1-100 asset proposal by default, member roles, clocks, transformations and rejected alternatives for an exact question. It may mix optional stable/volatile labels when causally justified. | `codex exec`, read-only, network disabled, plugins/apps disabled; `adaptive-representation-plan-v1.0.0` output only. Raw lake bytes and target outcomes are excluded. | Proposes data shape only. Deterministic point-in-time, common-window, liquidity, capacity and DATA-002/003 admission decide executability; it cannot tune on outcomes or run a backtest. | Supervised unit was active on VM1 on 2026-09-30; the canonical mandate exposes 120 instruments, permits proposals up to 100 and fixes the latest complete one-year window. |
-| Engineering mission patch author | Writes only the unresolved bounded patch after deterministic feasibility, typed `StrategyIntent` compilation and scaffolding. | GitHub Copilot CLI is the observed primary provider in a disposable worktree. Network and shell tools are denied; allowed paths, tools, file count, diff size and duration are enforced before tests. Codex is used only for a correction pass or an infrastructure-unavailability fallback, never to provider-shop around a semantic failure. | Cannot push, merge, approve, trade, alter the frozen hypothesis or exceed the leased contract. | Hybrid authoring is implemented and versioned on `swarm-control-plane` `main` at `37e6c14335cb28057b9b20a9d0c9f7423a2e135b`; production-systemd rehearsal passed on 2026-11-09. Named-machine deployment is not established by this evidence. |
+| Engineering mission patch author | Writes the unresolved bounded patch after feasibility, typed intent and scaffolding. | Codex is the default author; Copilot hybrid is opt-in. Disposable worktree, leased scope, focused tests, bounded correction and separate review remain required. | Cannot push, merge, approve, trade or change the frozen scientific identity. | The 2026-11-09 Copilot rehearsal is historical; current source policy is pinned in Chapter 12. R14/R15 did not reach successful authoring. |
 | Engineering mission code reviewer | Reviews the generated patch after focused deterministic tests and before full Bulletproof validation, then emits a schema-bound approval/findings document. | A separate ephemeral, read-only Codex call in the engineering workspace. | Can reject the patch bundle; cannot approve scientific validity, merge code or authorize execution. | Invoked by engineering missions that reach review. It is not a substitute for AGT-006 scientific independence. |
 | Independent alpha strategy reviewers | Compares the pinned implementation with the exact hypothesis card for either strategy fidelity or causality/leakage semantics. | Separate evaluator identities, read-only Codex, network/plugins/apps disabled; digest-bound verdict. | Review-only. No engineering, backtest, promotion, order or capital authority. | `spec` and `causality` reviewer units active on VM1 at audit time. |
 | Mission Control Research Copilot | Answers founder research questions from canonical retrieval and optional mathematics context packs, separating cited source claims from uncited agent inference. | Read-only ephemeral Codex call over a bounded context pack; citations outside the pack are rejected. | Cannot approve research, execute strategies, deploy software or allocate capital. Mathematical context is not self-verification. | Mac service reinstalled and observed serving on `127.0.0.1:8790` on 2026-09-27. |

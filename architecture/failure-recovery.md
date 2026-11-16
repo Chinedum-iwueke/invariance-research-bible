@@ -1,5 +1,7 @@
 # Failure and Recovery Architecture
 
+**Targeted update, 2026-11-16:** Six typed dispositions and bounded requirements correction are deployed. The existing general diagram below remains an architectural pattern, not universal recovery certification. Review-rejected methods are eligible for correction; feasibility-only repair and post-cap diagnostic escalation remain incomplete. R15 ended with zero trials. See [current recovery evidence](../books/book-11-engineered-company-system/chapters/12-requirements-recovery-and-current-certification.md).
+
 ## Principle
 
 Autonomy is demonstrated when the system reaches a correct bounded state after

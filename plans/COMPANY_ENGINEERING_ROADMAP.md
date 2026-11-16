@@ -1,6 +1,8 @@
 <a id="company-engineering-roadmap"></a>
 # Invariance Company Engineering Roadmap
 
+**Targeted update, 2026-11-16:** The deployed requirements controller is a partial recovery increment, not closure of the autonomous-laboratory milestone. Prioritize deterministic support/index consistency, feasibility-only recovery, and independently accepted genuine runs. [Current evidence](../books/book-11-engineered-company-system/chapters/12-requirements-recovery-and-current-certification.md) records R14/R15 zero-trial outcomes; historical certificates keep their original scope.
+
 **Status:** Dependency-ordered target plan
 **Planning unit:** Evidence-gated capability, not calendar promise
 

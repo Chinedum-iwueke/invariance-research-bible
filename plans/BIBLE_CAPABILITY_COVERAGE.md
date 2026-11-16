@@ -1,6 +1,8 @@
 <a id="bible-capability-coverage"></a>
 # Bible Capability Coverage and Complete Company Build Plan
 
+**Targeted update, 2026-11-16:** Planning coverage is unchanged by the targeted recovery deployment. Typed dispositions and bounded review-rejection correction exist, but successful general recovery remains unqualified. See [current acceptance gaps](../books/book-11-engineered-company-system/chapters/12-requirements-recovery-and-current-certification.md); do not mark research-to-execution coverage complete from passing backend tests.
+
 **Status:** Coverage authority for implementation planning  
 **Goal:** No capability promised by the ten-volume Bible remains merely aspirational,
 implicitly bundled, or accepted without intended-environment evidence.

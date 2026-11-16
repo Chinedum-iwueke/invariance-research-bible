@@ -1,5 +1,11 @@
 # Book V — Bulletproof BT Laboratory
 
+**Implementation cross-reference, 2026-11-16:** Commissioning now binds native source
+`72dbd59`. Research decision frames, separate outcome tails and requirements-aware
+validation have targeted repairs; R14/R15 did not produce new native trials. See
+[Book XI Chapter 12](../book-11-engineered-company-system/chapters/12-requirements-recovery-and-current-certification.md)
+before interpreting older audits as current source or full-path certification.
+
 **Purpose:** The deterministic experimental laboratory, its present implementation, research contracts, run artifacts, and institutional integration.  
 **Status:** Repository-native specification complete; implementation remains partial and evidence-gated
 **Canonical dependencies:** Books I–IV and a pinned Bulletproof BT implementation  

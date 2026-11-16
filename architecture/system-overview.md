@@ -1,5 +1,7 @@
 # System Overview
 
+**Targeted update, 2026-11-16:** Codex-only authoring is now default. A deterministic requirements-correction controller is deployed, but R14/R15 both ended without native trials. EXEC1/EXEC2 are historical retired roles, not current execution hosts; VPS1 is the configured replacement. See [current scope and evidence](../books/book-11-engineered-company-system/chapters/12-requirements-recovery-and-current-certification.md).
+
 ## Purpose
 
 Invariance Research is intended to continuously turn evidence and market observations

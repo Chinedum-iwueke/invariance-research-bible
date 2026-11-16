@@ -18,6 +18,12 @@ The narrative dependency is **why → operate → think → discover → experim
 
 ## Living engineering companion
 
+**Operational update, 2026-11-16:** [Requirements recovery and current certification](books/book-11-engineered-company-system/chapters/12-requirements-recovery-and-current-certification.md)
+records the deployed correction/disposition controller and the completed R14/R15
+zero-trial outcomes. Earlier pilot certificates remain scoped historical evidence;
+the current general requirements-to-Bulletproof path is not certified end to end.
+Codex-only authoring is now the default; Copilot hybrid is optional.
+
 [Book XI — The Engineered Company System](books/book-11-engineered-company-system/README.md)
 records what has actually been engineered, where it runs, and how it is verified.
 It is the living as-built companion to the ten-volume constitutional series. It

@@ -1,5 +1,7 @@
 # Orchestration Architecture
 
+**Targeted update, 2026-11-16:** Verified requirements rejections can create bounded immutable correction seeds within the same active mandate, after queued founder ideas. Native-feasibility-only defects are not yet automatically selected by that controller. Budgets, pause and separate review remain binding. See [the implemented loop](../books/book-11-engineered-company-system/chapters/12-requirements-recovery-and-current-certification.md).
+
 ## Classification
 
 The current orchestration is **hybrid, durable, and mostly centralized in lifecycle
