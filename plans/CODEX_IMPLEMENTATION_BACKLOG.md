@@ -36,8 +36,14 @@ locally: typed evidence-bound obligations, stage-owned dispositions, unknown-rea
 triage, and locked/idempotent recovery recording with a real PostgreSQL concurrency
 test. It is now deployed through `70aafc4`; API and both directors passed image
 parity and reconciliation checks. Genuine end-to-end behavior remains unclaimed.
-AEP-003 has started locally in Bulletproof with an explicit design-adequacy
-contract and 112 focused native tests; dispatch/calibration integration remains open.
+AEP-003's bounded native diagnostic substrate is implemented: design contracts,
+allowlisted tool dispatch, seeded frozen-residual calibration, clean-source CLI,
+and optional feasibility receipt custody. 137 native and 360 control-plane tests
+passed; identical seeded CLI receipts were verified by the backend. Unsupported
+methods defer explicitly. No production source transition or real-candidate
+scientific certification is claimed. Full case-corpus commissioning, quantitative
+acceptance and model-driven episode integration remain open; see the AEP roadmap
+and swarm-control-plane `docs/aep-003-native-diagnostics.md` for exact limitations.
 
 Current evidence: the latest BTC method correction reached independent requirements
 review; strategy-spec accepted and causality rejected. No engineering or native

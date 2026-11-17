@@ -74,9 +74,18 @@ unknown classifications cannot approve or silently mutate a scientific question.
 
 ## AEP-003 - Native diagnostic tools and design adequacy contracts
 
-**Status:** started: native design-adequacy contract and 112 focused native tests;
-tool dispatch, calibration producers and live integration remain open. **Depends on:** 002.
-Evidence: Bulletproof `docs/aep-003-native-diagnostics.md` (local first increment).
+**Status:** bounded diagnostic tooling implemented and locally verified: fixed
+native tool registry, design contracts, seeded residual calibration, clean-source
+CLI and feasibility receipt custody. 137 native and 360 control-plane tests pass.
+Cross-repository CLI replay is identical and backend-verified. Deployment, full
+case-corpus commissioning and independent quantitative acceptance remain open;
+this does not certify a real candidate. **Depends on:** 002.
+Evidence: Bulletproof `docs/aep-003-native-diagnostics.md` and swarm-control-plane
+`docs/aep-003-native-diagnostics.md` (replay digest and measured limitations).
+The frozen-residual calibration is not a fitted strategy, paired power or joint
+Holm analysis. Unsupported estimators/DGPs/policies explicitly await engineering.
+Model-driven tool selection and missing-tool task creation remain episode/controller
+integration work in AEP-004/AEP-007, not behavior claimed by this substrate.
 - Expose bounded native tools for units, splits, feature history, coverage, support,
   estimator/uncertainty calibration and causal timing. Reuse existing implementations.
 - Model selects an applicable tool and states assumptions; deterministic admission
