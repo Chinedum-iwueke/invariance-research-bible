@@ -1,0 +1,359 @@
+{
+  "schema_version": "aep-failure-corpus-v1",
+  "created_on": "2026-11-17",
+  "native_source_context": "ff945426f572d1a72b84714287fc34549b9290b0",
+  "held_out_policy": "Procedurally reserved; public and already seen, not blind. Replace with unseen cases before claiming generalization.",
+  "cases": [
+    {
+      "id": "cross-sectional-stale-runtime",
+      "split": "development",
+      "evidence_kind": "historical_report",
+      "mechanism": "cross_sectional_residual_reversal",
+      "source": {
+        "repository": "swarm-control-plane",
+        "commit": "8cd7be0459a1bd31bf6b1b70ebc39e8403741f60",
+        "path": "docs/alpha-requirements-producer-commissioning.md",
+        "sha256": "ad2efebbfee2a09a8bf71c41ecc32b41f30b9696aa37a6775906aa5d66f606d1",
+        "anchor": "SSV/SPX/BTC residual-reversal proposals"
+      },
+      "label": {
+        "proposed_disposition": "repair",
+        "rationale": "Shared campaign engineering preflight exposed stale director containers after these proposals entered the campaign. This is campaign-level runtime evidence, not proof that the basket was engineered or executed.",
+        "review_status": "pending_independent_review"
+      },
+      "baseline": {
+        "observed_outcome": "blocked",
+        "human_intervention": true,
+        "autonomous_episode_completed": null,
+        "native_terminal_receipt": null,
+        "model_tokens": null,
+        "billed_cost": null
+      },
+      "scope": "Retrospective campaign-level evidence replay; no new candidate execution"
+    },
+    {
+      "id": "impact-tie",
+      "split": "development",
+      "evidence_kind": "historical_report",
+      "mechanism": "impact_reversal",
+      "source": {
+        "repository": "swarm-control-plane",
+        "commit": "8cd7be0459a1bd31bf6b1b70ebc39e8403741f60",
+        "path": "docs/native-authoring-parity-20261116.md",
+        "sha256": "b0be9401b6df3f74bd54b821dd81f92871c41785c0cad1e7d79c2ec46faf9089",
+        "anchor": "used strict `>` instead of evaluator `>=`"
+      },
+      "label": {
+        "proposed_disposition": "repair",
+        "rationale": "Semantic boundary error reproduced by a deterministic threshold-tie test.",
+        "review_status": "pending_independent_review"
+      },
+      "baseline": {
+        "observed_outcome": "repairable_failure",
+        "human_intervention": true,
+        "autonomous_episode_completed": null,
+        "native_terminal_receipt": null,
+        "model_tokens": null,
+        "billed_cost": null
+      },
+      "scope": "Retrospective evidence replay only; no new candidate execution"
+    },
+    {
+      "id": "impact-atr",
+      "split": "development",
+      "evidence_kind": "historical_report",
+      "mechanism": "impact_reversal",
+      "source": {
+        "repository": "swarm-control-plane",
+        "commit": "8cd7be0459a1bd31bf6b1b70ebc39e8403741f60",
+        "path": "docs/native-authoring-parity-20261116.md",
+        "sha256": "b0be9401b6df3f74bd54b821dd81f92871c41785c0cad1e7d79c2ec46faf9089",
+        "anchor": "previous 20 buckets"
+      },
+      "label": {
+        "proposed_disposition": "repair",
+        "rationale": "Completed-decision-bar inclusion differs from frozen implementation.",
+        "review_status": "pending_independent_review"
+      },
+      "baseline": {
+        "observed_outcome": "repairable_failure",
+        "human_intervention": true,
+        "autonomous_episode_completed": null,
+        "native_terminal_receipt": null,
+        "model_tokens": null,
+        "billed_cost": null
+      },
+      "scope": "Retrospective evidence replay only; no new candidate execution"
+    },
+    {
+      "id": "impact-review",
+      "split": "held_out",
+      "evidence_kind": "historical_report",
+      "mechanism": "impact_reversal",
+      "source": {
+        "repository": "swarm-control-plane",
+        "commit": "8cd7be0459a1bd31bf6b1b70ebc39e8403741f60",
+        "path": "docs/native-authoring-parity-20261116.md",
+        "sha256": "b0be9401b6df3f74bd54b821dd81f92871c41785c0cad1e7d79c2ec46faf9089",
+        "anchor": "claimed closed positions stay"
+      },
+      "label": {
+        "proposed_disposition": "requirements_conflict",
+        "rationale": "Review mechanism conflicts with recorded engine lifecycle; adjudicate scope without erasing verdict.",
+        "review_status": "pending_independent_review"
+      },
+      "baseline": {
+        "observed_outcome": "disputed",
+        "human_intervention": true,
+        "autonomous_episode_completed": null,
+        "native_terminal_receipt": null,
+        "model_tokens": null,
+        "billed_cost": null
+      },
+      "scope": "Retrospective evidence replay only; no new candidate execution"
+    },
+    {
+      "id": "spx-support",
+      "split": "development",
+      "evidence_kind": "historical_report",
+      "mechanism": "spx_partition_support_unspecified_mechanism",
+      "source": {
+        "repository": "swarm-control-plane",
+        "commit": "8cd7be0459a1bd31bf6b1b70ebc39e8403741f60",
+        "path": "docs/durable-engineering-episodes.md",
+        "sha256": "2d4945681b9943f015564a019df6282b94701012c09ec4b60aa03115aba4f435",
+        "anchor": "cannot satisfy 10,000/5,000/5,000"
+      },
+      "label": {
+        "proposed_disposition": "scientifically_infeasible",
+        "rationale": "Frozen minima exceed proposed partitions; do not lower floors to pass.",
+        "review_status": "pending_independent_review"
+      },
+      "baseline": {
+        "observed_outcome": "rejected",
+        "human_intervention": null,
+        "autonomous_episode_completed": null,
+        "native_terminal_receipt": null,
+        "model_tokens": null,
+        "billed_cost": null
+      },
+      "scope": "Retrospective evidence replay only; no new candidate execution"
+    },
+    {
+      "id": "btc-history",
+      "split": "held_out",
+      "evidence_kind": "historical_report",
+      "mechanism": "btc_method_feasibility",
+      "source": {
+        "repository": "swarm-control-plane",
+        "commit": "8cd7be0459a1bd31bf6b1b70ebc39e8403741f60",
+        "path": "docs/durable-engineering-episodes.md",
+        "sha256": "2d4945681b9943f015564a019df6282b94701012c09ec4b60aa03115aba4f435",
+        "anchor": "2,927,645 required hourly bars"
+      },
+      "label": {
+        "proposed_disposition": "requirements_conflict",
+        "rationale": "Warmup/required-history discrepancy needs diagnosis; cannot assume accidental error or authorize lowering it.",
+        "review_status": "pending_independent_review"
+      },
+      "baseline": {
+        "observed_outcome": "deferred",
+        "human_intervention": null,
+        "autonomous_episode_completed": null,
+        "native_terminal_receipt": null,
+        "model_tokens": null,
+        "billed_cost": null
+      },
+      "scope": "Retrospective evidence replay only; no new candidate execution"
+    },
+    {
+      "id": "sonic-fields",
+      "split": "development",
+      "evidence_kind": "historical_report",
+      "mechanism": "basis_open_interest",
+      "source": {
+        "repository": "swarm-control-plane",
+        "commit": "8cd7be0459a1bd31bf6b1b70ebc39e8403741f60",
+        "path": "docs/alpha-requirements-producer-commissioning.md",
+        "sha256": "ad2efebbfee2a09a8bf71c41ecc32b41f30b9696aa37a6775906aa5d66f606d1",
+        "anchor": "SONIC basis/open-interest question"
+      },
+      "label": {
+        "proposed_disposition": "await_data",
+        "rationale": "Candidate-specific and non-OHLCV availability proof absent; no engineering release.",
+        "review_status": "pending_independent_review"
+      },
+      "baseline": {
+        "observed_outcome": "blocked",
+        "human_intervention": null,
+        "autonomous_episode_completed": null,
+        "native_terminal_receipt": null,
+        "model_tokens": null,
+        "billed_cost": null
+      },
+      "scope": "Retrospective evidence replay only; no new candidate execution"
+    },
+    {
+      "id": "stage-context",
+      "split": "development",
+      "evidence_kind": "historical_report",
+      "mechanism": "method_handoff",
+      "source": {
+        "repository": "swarm-control-plane",
+        "commit": "8cd7be0459a1bd31bf6b1b70ebc39e8403741f60",
+        "path": "docs/discovery-correction-stage-handoff.md",
+        "sha256": "43a2aafe886168941c41bf5f5d3730807a9b52a521e7cfaf6867252ac39aad84",
+        "anchor": "061f3a97-2e36-4959-ab9f-320f4a8d8252"
+      },
+      "label": {
+        "proposed_disposition": "repair",
+        "rationale": "Stage instructions and schema ownership disagree; representation context lost correction scope.",
+        "review_status": "pending_independent_review"
+      },
+      "baseline": {
+        "observed_outcome": "abstained",
+        "human_intervention": true,
+        "autonomous_episode_completed": null,
+        "native_terminal_receipt": null,
+        "model_tokens": null,
+        "billed_cost": null
+      },
+      "scope": "Retrospective evidence replay only; no new candidate execution"
+    },
+    {
+      "id": "btc-power",
+      "split": "development",
+      "evidence_kind": "historical_report",
+      "mechanism": "seasonal_volume_volatility",
+      "source": {
+        "repository": "swarm-control-plane",
+        "commit": "8cd7be0459a1bd31bf6b1b70ebc39e8403741f60",
+        "path": "docs/offline-precision-review-scope.md",
+        "sha256": "3ccccf2c7d2cad275ee7d0e2a41b3b489b646c8fc8aaf4b27712d69166c93cc2",
+        "anchor": "Precision/power justification for partition and event floors is missing"
+      },
+      "label": {
+        "proposed_disposition": "repair",
+        "rationale": "Design adequacy remains unproved; diagnostic arithmetic is not approval.",
+        "review_status": "pending_independent_review"
+      },
+      "baseline": {
+        "observed_outcome": "rejected",
+        "human_intervention": true,
+        "autonomous_episode_completed": null,
+        "native_terminal_receipt": null,
+        "model_tokens": null,
+        "billed_cost": null
+      },
+      "scope": "Retrospective evidence replay only; no new candidate execution"
+    },
+    {
+      "id": "btc-stage-scope",
+      "split": "held_out",
+      "evidence_kind": "historical_report",
+      "mechanism": "seasonal_volume_volatility",
+      "source": {
+        "repository": "swarm-control-plane",
+        "commit": "8cd7be0459a1bd31bf6b1b70ebc39e8403741f60",
+        "path": "docs/offline-precision-review-scope.md",
+        "sha256": "3ccccf2c7d2cad275ee7d0e2a41b3b489b646c8fc8aaf4b27712d69166c93cc2",
+        "anchor": "Continuity, liquidity, seasonal variance, finite values, rank and event counts are unobserved"
+      },
+      "label": {
+        "proposed_disposition": "requirements_conflict",
+        "rationale": "Clarify pre-authoring requirements versus later observations, retaining genuine validity obligations.",
+        "review_status": "pending_independent_review"
+      },
+      "baseline": {
+        "observed_outcome": "rejected",
+        "human_intervention": true,
+        "autonomous_episode_completed": null,
+        "native_terminal_receipt": null,
+        "model_tokens": null,
+        "billed_cost": null
+      },
+      "scope": "Retrospective evidence replay only; no new candidate execution"
+    },
+    {
+      "id": "quota-fixture",
+      "split": "development",
+      "evidence_kind": "synthetic_fault",
+      "mechanism": "runtime_recovery",
+      "source": {
+        "repository": "swarm-control-plane",
+        "commit": "8cd7be0459a1bd31bf6b1b70ebc39e8403741f60",
+        "path": "worker/tests/test_engineering_episode.py",
+        "sha256": "d9c3ca28c54ea984a841586940824b0ffb2c4a069d9680a5a153075e0ee7bc2e",
+        "anchor": "test_capacity_defers_without_consuming_repairs_or_retry_loop"
+      },
+      "label": {
+        "proposed_disposition": "await_authority_or_capacity",
+        "rationale": "Quota must defer, preserve work and avoid an immediate model retry.",
+        "review_status": "pending_independent_review"
+      },
+      "baseline": {
+        "observed_outcome": "fixture_only",
+        "human_intervention": null,
+        "autonomous_episode_completed": null,
+        "native_terminal_receipt": null,
+        "model_tokens": null,
+        "billed_cost": null
+      },
+      "scope": "Retrospective evidence replay only; no new candidate execution"
+    },
+    {
+      "id": "crash-fixture",
+      "split": "held_out",
+      "evidence_kind": "synthetic_fault",
+      "mechanism": "runtime_recovery",
+      "source": {
+        "repository": "swarm-control-plane",
+        "commit": "8cd7be0459a1bd31bf6b1b70ebc39e8403741f60",
+        "path": "worker/tests/test_engineering_episode.py",
+        "sha256": "d9c3ca28c54ea984a841586940824b0ffb2c4a069d9680a5a153075e0ee7bc2e",
+        "anchor": "test_crash_charges_call_and_retains_workspace_on_resume"
+      },
+      "label": {
+        "proposed_disposition": "repair",
+        "rationale": "Resume retained state without resetting call budget or workspace.",
+        "review_status": "pending_independent_review"
+      },
+      "baseline": {
+        "observed_outcome": "fixture_only",
+        "human_intervention": null,
+        "autonomous_episode_completed": null,
+        "native_terminal_receipt": null,
+        "model_tokens": null,
+        "billed_cost": null
+      },
+      "scope": "Retrospective evidence replay only; no new candidate execution"
+    },
+    {
+      "id": "mutation-fixture",
+      "split": "held_out",
+      "evidence_kind": "synthetic_fault",
+      "mechanism": "authority_integrity",
+      "source": {
+        "repository": "swarm-control-plane",
+        "commit": "8cd7be0459a1bd31bf6b1b70ebc39e8403741f60",
+        "path": "worker/tests/test_engineering_episode.py",
+        "sha256": "d9c3ca28c54ea984a841586940824b0ffb2c4a069d9680a5a153075e0ee7bc2e",
+        "anchor": "test_completed_receipt_does_not_authorize_changed_code"
+      },
+      "label": {
+        "proposed_disposition": "requirements_conflict",
+        "rationale": "Changed implementation invalidates acceptance; revalidate before release.",
+        "review_status": "pending_independent_review"
+      },
+      "baseline": {
+        "observed_outcome": "fixture_only",
+        "human_intervention": null,
+        "autonomous_episode_completed": null,
+        "native_terminal_receipt": null,
+        "model_tokens": null,
+        "billed_cost": null
+      },
+      "scope": "Retrospective evidence replay only; no new candidate execution"
+    }
+  ]
+}

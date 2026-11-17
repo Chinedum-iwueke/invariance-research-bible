@@ -1,0 +1,44 @@
+{
+  "schema_version": "aep-baseline-report-v1",
+  "manifest_digest": "6dff87906a28faa2221b83aa024368ab18db6edf660973e4bd9365234058d173",
+  "source_verification": "passed",
+  "case_count": 13,
+  "splits": {
+    "development": 8,
+    "held_out": 5
+  },
+  "evidence_kinds": {
+    "historical_report": 10,
+    "synthetic_fault": 3
+  },
+  "research_mechanisms": [
+    "basis_open_interest",
+    "btc_method_feasibility",
+    "cross_sectional_residual_reversal",
+    "impact_reversal",
+    "method_handoff",
+    "seasonal_volume_volatility",
+    "spx_partition_support_unspecified_mechanism"
+  ],
+  "observed_outcomes": {
+    "abstained": 1,
+    "blocked": 2,
+    "deferred": 1,
+    "disputed": 1,
+    "fixture_only": 3,
+    "rejected": 3,
+    "repairable_failure": 2
+  },
+  "labels_pending_independent_review": 13,
+  "known_human_assisted_cases": 7,
+  "new_model_calls": 0,
+  "new_backtests": 0,
+  "new_autonomous_attempts": 0,
+  "autonomous_completion_rate": null,
+  "verified_task_completion_rate": null,
+  "recovery_success_rate": null,
+  "billed_cost": null,
+  "production_certified": false,
+  "claim_boundary": "Pinned historical-report replay, not raw artifact replay, live verification or independent label adjudication.",
+  "report_digest": "356de9901c9e48aa62f6b16afa2b7865c57b3068a3e8f9740319e51278c5a20a"
+}

@@ -15,7 +15,27 @@ registry or API is not sufficient completion evidence. The
 [2026-08-28 ownership audit](QUANTITATIVE_OWNERSHIP_AUDIT.md) reopens every packet
 whose Bulletproof-native producer and cross-repository receipt replay are absent.
 
-## Current execution snapshot - 2026-11-16
+## Active recovery sequence - 2026-11-17
+
+Follow [Autonomous Episode Milestones](AUTONOMOUS_EPISODE_MILESTONES.md) one at a
+time: AEP-001 baseline/acceptance; AEP-002 typed findings; AEP-003 native diagnostics;
+AEP-004 durable method correction; AEP-005 independent adjudication; AEP-006
+engineering continuity; AEP-007 scheduling/visibility; AEP-008 commissioning.
+These packets consolidate the general recovery work below, not a second backlog.
+Existing implementations are explicitly credited but not marked certified.
+
+AEP-001 implementation is complete: [13 pinned evidence cases, baseline replay
+and measurable acceptance contract](evidence/AEP-001/ACCEPTANCE.md). Independent
+case-label review and owner acceptance of the rubric remain open; no autonomous
+completion rate is inferred from historical report counts.
+
+Current evidence: the latest BTC method correction reached independent requirements
+review; strategy-spec accepted and causality rejected. No engineering or native
+trial followed for that candidate. Offline support/power and bootstrap probes are
+diagnostic only. The durable engineering episode remains an opt-in foundation,
+not proof of unattended method-to-BT-009 completion across new hypotheses.
+
+## Historical execution snapshot - 2026-11-16
 
 Control-plane `2e49cd7` and Bulletproof `72dbd59` are on main. The VM2 API and
 discovery/campaign directors run the new recovery image. The targeted backend suite
