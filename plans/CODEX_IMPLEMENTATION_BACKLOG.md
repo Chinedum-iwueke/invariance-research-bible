@@ -70,6 +70,34 @@ Both modes pass paired synthetic repair/pytest/bundle checks, not a live-model
 scientific comparison. Current-registry materialization and genuine native runs
 remain AEP-007/commissioning work; no source or old task is silently migrated.
 
+AEP-007 increment: the dedicated method-design task/workflow/package is now wired
+to explicit commissioning campaign requests, restricted worker dispatch, mandate
+and campaign checks, producer identity, drain pause and provider circuits. Native
+design-adequacy diagnosis produces a retained review packet, published idempotently
+by the campaign controller. Deployment `6631a6d` adds separate exact-packet reviews,
+current registry/package checks, native-plan-backed engineering task materialization
+and an episode inspector. Engineering approval is explicitly retained during
+commissioning. A local follow-on adds budget-conserving rejected-review successors
+and fresh review, with duplicate/revocation/tampered-lineage regression checks.
+Follow-on validation: 175 backend, 113 worker and one executable UI renderer test.
+Three worker checks used the real Bulletproof CLI with synthetic contracts and
+scripted corrections, not paid reasoning or market-data validation.
+Synthetic desktop/mobile inspector rendering and evidence expansion were checked;
+terminal results now supersede stale running heartbeats. Release `2112f09` deployed
+bounded recovery and separate interpretation adjudication, with no approval
+authority. The method designer and adjudicator are registered with distinct
+contexts; their services remain inactive. `85cc7db` fixes heartbeat-before-profile
+provisioning without leasing work. Integrated commissioning remains open.
+Pending mandate `078aecffa81580c3a1c10eeda238d39fca6c90a72b5a64fccf9230aa2dc1df19`
+and method-only campaign `a5eb727506c26ee77882fd2cf345edeefd9a795bb01eb7aae31e0fc977645291`
+require exact founder approval. BTC admission was freshly verified against native
+`4e98fab`; this does not establish feature coverage, power or scientific acceptance.
+The discovery-to-results loop is not
+certified or switched to this path by default; no live model calls were launched.
+Dedicated model-backed producer provisioning and an inactive-by-default bounded
+service are locally tested. Native planning dependency failures now defer before
+paid review, retaining ownership and changed-evidence successor conditions.
+
 Current evidence: the latest BTC method correction reached independent requirements
 review; strategy-spec accepted and causality rejected. No engineering or native
 trial followed for that candidate. Offline support/power and bootstrap probes are

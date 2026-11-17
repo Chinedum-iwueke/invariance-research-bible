@@ -161,7 +161,37 @@ usage, not merely model-call count. No silent old-task migration.
 
 ## AEP-007 - Autonomous scheduling, authority and visible recovery
 
-**Status:** existing components; integrated proof open. **Depends on:** 006.
+**Status:** in progress; integrated proof open. Engineering episodes now have
+stage-boundary lease checks, provider-permit gating before reservations,
+changed-circuit-only capacity recovery and budget/usage telemetry. Production
+method publication was deployed in `200e09f`; `6631a6d` adds exact-packet,
+independently assigned method reviews and source-bound engineering materialization.
+The latter requires ready native smoke/scientific plans with task custody and
+explicit engineering approval during commissioning. Mission Control now serves a
+bounded-episode task inspector with unknown usage kept explicit. This is not the
+production default. A local follow-on adds immutable rejected-review correction
+successors conserving original budgets/deadlines and requiring fresh review;
+duplicate delivery, altered lineage and revoked authority are covered. Synthetic
+desktop/mobile inspector verification is complete, including expandable evidence
+and terminal-result precedence over old heartbeats. Release `2112f09` deployed
+bounded correction and a separate third-party interpretation adjudicator. It cannot
+approve a method; rechecks require new native receipts and two fresh reviews.
+The method designer and adjudicator now have live registrations with distinct
+contexts and remain inactive pending exact commissioning approval. Integrated
+commissioning remains open. Provisioning repair `85cc7db` persists credentials and
+attests the installed worker before creating its profile, without leasing work;
+missing native planning now defers before paid review with explicit ownership and
+successor conditions. Follow-on tests: 175 backend, 113 worker and one executable UI
+renderer check. Three worker
+checks used the real Bulletproof CLI with synthetic contracts/scripted corrections.
+No genuine candidate or backtest is certified by these controlled fixtures.
+Pending mandate `ALPHA004-AEP007-COMMISSIONING-20261117` has digest
+`078aecffa81580c3a1c10eeda238d39fca6c90a72b5a64fccf9230aa2dc1df19`.
+Pending method-only campaign `e17260b6-2d51-4f21-95af-1b96a7d4b8d0` has digest
+`a5eb727506c26ee77882fd2cf345edeefd9a795bb01eb7aae31e0fc977645291`.
+These records are not activated and do not authorize engineering or backtests.
+See swarm-control-plane `docs/aep-007-scheduling-integration.md`.
+**Depends on:** 006.
 - Wire method and engineering episodes to existing campaign/replenishment controllers.
 - Repair within approved scope and budgets without fresh approval per internal step;
   exhausted/expanded authority waits explicitly. Never reset mandate counters.
