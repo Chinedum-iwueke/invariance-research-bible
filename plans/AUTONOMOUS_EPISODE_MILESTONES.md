@@ -122,7 +122,12 @@ infeasible cases defer/reject accurately; interrupted runs retain budgets and wo
 
 ## AEP-005 - Evidence-based independent review and adjudication
 
-**Status:** engineering foundation exists; method-stage extension open. **Depends on:** 004.
+**Status:** method-stage controller and governed model adapters implemented locally;
+exact-packet reviews, concrete findings, custody/relevance-checked counterexamples,
+bounded separate adjudication and fresh review by both fixed evaluators are covered
+by controlled tests. No production routing or genuine scientific certification is
+claimed. Independent fixture-label adjudication remains commissioning work.
+**Depends on:** 004. Implementation: swarm-control-plane `docs/aep-005-method-review.md`.
 - Review exact changed requirements and relevant evidence. Reuse reviews only when
   all reviewed bindings and relevant dependencies remain unchanged and valid.
 - Findings require concrete violated criteria; bounded counterexample tools can

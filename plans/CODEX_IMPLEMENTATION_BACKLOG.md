@@ -52,7 +52,15 @@ bounded native diagnosis and model corrections, immutable identity and budgets,
 quota/restart recovery and independent-review-only completion. Native subprocess
 and existing Codex runner adapters are present. Local tests include real Bulletproof
 CLI handoff with scripted corrections, not paid-model scientific commissioning.
-Production episode routing and independent review remain AEP-005/AEP-007 work.
+Production review registration and episode routing remain commissioning/AEP-007 work.
+
+AEP-005 now has an opt-in method-review controller and model adapters: frozen
+producer/evaluator bindings, explicit criterion/evidence findings, verified
+counterexample custody, adjudication limited to recheck/disputed, and fresh reviews
+by both fixed evaluators after evidence changes. Cache reuse requires exact bindings
+and a current registration/dependency check. Local fixture validation is not an
+independent scientific evaluation; production routing and genuine commissioning
+remain open. See swarm-control-plane `docs/aep-005-method-review.md`.
 
 Current evidence: the latest BTC method correction reached independent requirements
 review; strategy-spec accepted and causality rejected. No engineering or native
