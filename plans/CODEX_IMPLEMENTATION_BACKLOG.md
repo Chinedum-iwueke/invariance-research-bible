@@ -62,6 +62,14 @@ and a current registration/dependency check. Local fixture validation is not an
 independent scientific evaluation; production routing and genuine commissioning
 remain open. See swarm-control-plane `docs/aep-005-method-review.md`.
 
+AEP-005 was installed from `cd99841`; the engineer remains inactive and no new
+candidate was started. AEP-006 now binds accepted method/review packets and native
+plans to existing scoped engineering episodes and completed bundles. An explicit
+task-bound Codex session mode is opt-in; reconstructed context remains default.
+Both modes pass paired synthetic repair/pytest/bundle checks, not a live-model
+scientific comparison. Current-registry materialization and genuine native runs
+remain AEP-007/commissioning work; no source or old task is silently migrated.
+
 Current evidence: the latest BTC method correction reached independent requirements
 review; strategy-spec accepted and causality rejected. No engineering or native
 trial followed for that candidate. Offline support/power and bootstrap probes are

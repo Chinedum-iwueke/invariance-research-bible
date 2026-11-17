@@ -140,7 +140,12 @@ findings resolve without relaxing gates; no review-chasing or unlimited model ca
 
 ## AEP-006 - Session-like engineering continuity and native handoff
 
-**Status:** deployed opt-in foundation; genuine path unproved. **Depends on:** 005.
+**Status:** accepted-method handoff and optional explicit-ID author session mode
+implemented locally on the existing engineering episode. Synthetic paired cases
+exercise reconstructed/session repair, real pytest, independent scripted review
+and code/plan-bound bundles. Live-model mode comparison and genuine native
+commissioning remain unproved. **Depends on:** 005.
+Implementation: swarm-control-plane `docs/aep-006-engineering-handoff.md`.
 - Route accepted methods into existing scaffolder and engineering episodes with
   native dependencies, exact pinned source and complete contracts.
 - Compare reconstructed-context episodes with true author-session continuation on
