@@ -45,6 +45,15 @@ scientific certification is claimed. Full case-corpus commissioning, quantitativ
 acceptance and model-driven episode integration remain open; see the AEP roadmap
 and swarm-control-plane `docs/aep-003-native-diagnostics.md` for exact limitations.
 
+AEP-003 custody verification is now deployed on VM2 at `ab1fe05`, with healthy API
+and matching API/director images; no active mandate or candidate was launched.
+AEP-004's opt-in method episode is implemented with retained proposals/evidence,
+bounded native diagnosis and model corrections, immutable identity and budgets,
+quota/restart recovery and independent-review-only completion. Native subprocess
+and existing Codex runner adapters are present. Local tests include real Bulletproof
+CLI handoff with scripted corrections, not paid-model scientific commissioning.
+Production episode routing and independent review remain AEP-005/AEP-007 work.
+
 Current evidence: the latest BTC method correction reached independent requirements
 review; strategy-spec accepted and causality rejected. No engineering or native
 trial followed for that candidate. Offline support/power and bootstrap probes are

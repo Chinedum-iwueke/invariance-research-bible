@@ -101,7 +101,14 @@ arithmetic, synthetic calibration and observed data evidence cannot be interchan
 
 ## AEP-004 - Durable scientific-method correction episode
 
-**Status:** missing generalized episode integration. **Depends on:** 003.
+**Status:** opt-in method episode and native/Codex adapters implemented and locally
+verified. Reuses the durable engineering store; reservations survive crash/quota;
+identity/scope and explicit deferrals are enforced before handoff for independent
+review. Scripted reasoning fixtures and real native CLI integration are not proof
+of autonomous scientific reasoning. Production scheduling (AEP-007), independent
+design review and genuine commissioning remain open. **Depends on:** 003.
+Implementation: swarm-control-plane `docs/aep-004-method-episodes.md`; 195 focused
+tests passed, including three actual Bulletproof CLI integration cases.
 - Extend durable-episode primitives for inspect -> diagnose -> propose correction ->
   run tools -> compare evidence -> checkpoint. Preserve full evidence by reference.
 - Provide a compact ledger of attempted changes, remaining findings and tool results;
