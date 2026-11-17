@@ -36,8 +36,8 @@ independent validators, but cannot substitute for native estimator receipts.
 
 ## AEP-001 - Freeze the failure corpus and acceptance contract
 
-**Status:** implementation complete; independent label review and owner rubric
-acceptance pending. **Depends on:** none.
+**Status:** implementation complete; label adjudication and overall acceptance
+tracked at end-to-end commissioning, per owner direction. **Depends on:** none.
 Evidence: [frozen corpus and acceptance contract](evidence/AEP-001/ACCEPTANCE.md).
 Thirteen pinned cases and a reproducible report-only baseline exist. This is not
 production certification or independently adjudicated ground truth.
@@ -57,7 +57,10 @@ be counted as successful backtests. No candidate-specific success exceptions.
 
 ## AEP-002 - Typed findings and stage-owned recovery decisions
 
-**Status:** partial existing foundation; integration/proof open. **Depends on:** 001.
+**Status:** deployed via control-plane `70aafc4`, with focused regressions, real
+PostgreSQL ledger concurrency validation and deployed contract smoke; genuine
+candidate commissioning remains pending. **Depends on:** 001.
+Implementation record: swarm-control-plane `docs/aep-002-structured-recovery.md`.
 - Extend existing six dispositions: repair, await_data, scientifically_infeasible,
   requirements_conflict, requires_new_question, await_authority_or_capacity.
 - Each finding binds requirement, evidence, owning stage, allowed change scope,
@@ -71,7 +74,9 @@ unknown classifications cannot approve or silently mutate a scientific question.
 
 ## AEP-003 - Native diagnostic tools and design adequacy contracts
 
-**Status:** offline prototypes exist; native integration open. **Depends on:** 002.
+**Status:** started: native design-adequacy contract and 112 focused native tests;
+tool dispatch, calibration producers and live integration remain open. **Depends on:** 002.
+Evidence: Bulletproof `docs/aep-003-native-diagnostics.md` (local first increment).
 - Expose bounded native tools for units, splits, feature history, coverage, support,
   estimator/uncertainty calibration and causal timing. Reuse existing implementations.
 - Model selects an applicable tool and states assumptions; deterministic admission

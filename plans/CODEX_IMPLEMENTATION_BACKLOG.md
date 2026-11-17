@@ -29,6 +29,16 @@ and measurable acceptance contract](evidence/AEP-001/ACCEPTANCE.md). Independent
 case-label review and owner acceptance of the rubric remain open; no autonomous
 completion rate is inferred from historical report counts.
 
+Owner direction: overall acceptance is assessed against autonomous operation and
+the architecture that supports it, not a new manual gate between each AEP packet.
+Label adjudication remains part of honest final evaluation. AEP-002 is implemented
+locally: typed evidence-bound obligations, stage-owned dispositions, unknown-reason
+triage, and locked/idempotent recovery recording with a real PostgreSQL concurrency
+test. It is now deployed through `70aafc4`; API and both directors passed image
+parity and reconciliation checks. Genuine end-to-end behavior remains unclaimed.
+AEP-003 has started locally in Bulletproof with an explicit design-adequacy
+contract and 112 focused native tests; dispatch/calibration integration remains open.
+
 Current evidence: the latest BTC method correction reached independent requirements
 review; strategy-spec accepted and causality rejected. No engineering or native
 trial followed for that candidate. Offline support/power and bootstrap probes are
