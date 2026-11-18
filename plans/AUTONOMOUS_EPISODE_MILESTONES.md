@@ -161,6 +161,26 @@ usage, not merely model-call count. No silent old-task migration.
 
 ## AEP-007 - Autonomous scheduling, authority and visible recovery
 
+**Latest checkpoint, 2026-11-18:** still in progress, not end-to-end certified.
+Real method task `2eb5b85a-9f1f-4aef-ad21-85d57bc8534c` completed one author
+correction and two native diagnostics on Bulletproof `f81fb7d`; both independent
+method reviews accepted. One verdict required operator-assisted publication after
+interruption, so autonomous recovery is not proven. Fresh native coverage and
+successor planning completed; both smoke/scientific plans are ready. CP `72d58ae`
+deployed bounded artifact-backed engineering evidence after 58 backend and 18
+worker checks. Adding those plans to a fresh method review still exceeds the
+100 KB review context bound; this was caught before paid calls.
+
+The old campaign is `needs_attention`, with zero trials. The separately approved
+handoff mandate was active at November 18 02:56 UTC, expiring 04:03 UTC; it does
+not rebind the old campaign or activate an engineering successor. Next: repair the
+review handoff, separately authorize the successor, then commission genuine
+engineering before separately authorized market-data execution. Source and IDs:
+[Book XI Chapter 12](../books/book-11-engineered-company-system/chapters/12-requirements-recovery-and-current-certification.md).
+
+The following implementation history is retained; earlier inactive/pending labels
+describe those checkpoints, not current registrations or authority.
+
 **Status:** in progress; integrated proof open. Engineering episodes now have
 stage-boundary lease checks, provider-permit gating before reservations,
 changed-circuit-only capacity recovery and budget/usage telemetry. Production
@@ -185,11 +205,12 @@ successor conditions. Follow-on tests: 175 backend, 113 worker and one executabl
 renderer check. Three worker
 checks used the real Bulletproof CLI with synthetic contracts/scripted corrections.
 No genuine candidate or backtest is certified by these controlled fixtures.
-Pending mandate `ALPHA004-AEP007-COMMISSIONING-20261117` has digest
+The initially pending mandate `ALPHA004-AEP007-COMMISSIONING-20261117` had digest
 `078aecffa81580c3a1c10eeda238d39fca6c90a72b5a64fccf9230aa2dc1df19`.
-Pending method-only campaign `e17260b6-2d51-4f21-95af-1b96a7d4b8d0` has digest
+Its initially pending method-only campaign `e17260b6-2d51-4f21-95af-1b96a7d4b8d0` had digest
 `a5eb727506c26ee77882fd2cf345edeefd9a795bb01eb7aae31e0fc977645291`.
-These records are not activated and do not authorize engineering or backtests.
+These were subsequently approved for method-only commissioning and superseded by
+bounded corrections; they do not authorize current engineering or backtests.
 See swarm-control-plane `docs/aep-007-scheduling-integration.md`.
 **Depends on:** 006.
 - Wire method and engineering episodes to existing campaign/replenishment controllers.

@@ -1,11 +1,16 @@
 # Appendix A: Agent Workflow and Feedback-Loop Atlas
 
-**2026-11-16 overlay:** The requirements-review/correction loop and its implemented
+**2026-11-18 overlay:** The requirements-review/correction loop and its implemented
 versus missing branches are mapped in [Chapter 12](../chapters/12-requirements-recovery-and-current-certification.md).
 That loop includes native feasibility before review, typed disposition, immutable
 successors and bounded re-entry. A deferred candidate is not a backtest result.
-R15 ended with zero trials; neither `campaign` nor `schedule_next_discovery_cycle`
-proves running laboratory work. The dated inventory below remains historical.
+The AEP method episode now has one observed bounded repair and both method
+acceptances. Fresh native smoke/scientific plans are ready; a combined review
+context blocker prevents the separately authorized engineering successor. The
+current old campaign still has zero trials. One verdict required operator-assisted
+publication, so the path is not unattended-recovery-certified. Neither `campaign`
+nor `schedule_next_discovery_cycle` proves running laboratory work. The dated
+inventory below remains historical.
 
 This atlas defines the workflows that make up Hermes, Research Intelligence,
 Bulletproof and the execution fleet. Its purpose is to prevent a parent workflow's

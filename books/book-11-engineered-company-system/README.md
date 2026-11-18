@@ -3,7 +3,7 @@
 
 **Edition:** Living as-built engineering specification
 **Base snapshot date:** 2026-09-27; historical observations retain their own dates
-**Targeted recovery, runtime and certification update:** 2026-11-16
+**Targeted recovery, runtime and certification update:** 2026-11-18
 **Scope:** Hermes Swarm, Research Intelligence, Bulletproof BT, Mission Control,
 founder channels, VM2 operations, and the public Invariance application
 
@@ -46,8 +46,9 @@ evidence proves only the observed deployment window.
 12. [Requirements recovery and current certification](chapters/12-requirements-recovery-and-current-certification.md)
 
 Chapter 12 supersedes earlier present-tense provider and commissioning summaries
-where they conflict: Codex-only is default, R14/R15 completed with zero trials, and
-typed correction routing is deployed but not end-to-end recovery-certified. It does
+where they conflict: Codex-only is default, one genuine method correction has both
+independent acceptances, and engineering/execution commissioning remains blocked.
+R14/R15 and subsequent zero-trial outcomes remain historical evidence. It does
 not silently refresh every service-health observation in this book.
 
 ## Operational appendices

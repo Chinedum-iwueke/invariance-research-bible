@@ -1,6 +1,20 @@
 # Implementation Reference Register
 
-## Targeted current pins - 2026-11-16
+## Targeted current pins - 2026-11-18
+
+- Swarm Control Plane implementation deployed: `72d58ae`; main status record
+  `ca48ee3`. Lossless method review and artifact-backed engineering evidence;
+  58 backend plus 18 worker checks passed for the latter increment.
+- Bulletproof BT: `f81fb7d2a7a2e3cab654b3b860dab711d85237f7`, experiment-to-calibration
+  consistency diagnosis. Native planning task `da3c4409-b48c-44d4-b5f8-e3c70f8f645d`
+  succeeded; a ready plan is not an executed scientific result.
+- [Book XI Chapter 12](../books/book-11-engineered-company-system/chapters/12-requirements-recovery-and-current-certification.md)
+  records the November 18 API/worker/authority check and exact receipt identities.
+- The accepted method plus new plans still exceeds the reviewer context bound.
+  No complete autonomous engineering-to-BT-009 claim is made.
+- No fresh audit of the public application, venue execution or all fleet services.
+
+## Historical targeted pins - 2026-11-16
 
 - Swarm Control Plane: `2e49cd7`, bounded requirements correction and typed dispositions;
   377 targeted backend tests passed; API and both directors deployed on VM2.

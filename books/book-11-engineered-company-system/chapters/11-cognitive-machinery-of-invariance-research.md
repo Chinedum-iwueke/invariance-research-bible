@@ -1,9 +1,20 @@
 <a id="cognitive-machinery-of-invariance-research"></a>
 # 11. Cognitive Machinery of Invariance Research
 
-**Targeted update, 2026-11-16:** [Chapter 12](12-requirements-recovery-and-current-certification.md)
+**Targeted update, 2026-11-18:** [Chapter 12](12-requirements-recovery-and-current-certification.md)
 updates source pins, recovery routing and current commissioning outcomes. The older
 whole-system audit below is not a fresh health check of every cognitive service.
+
+The durable method episode now has observed genuine bounded correction followed
+by both independent acceptances. Its loop is deterministic diagnosis -> bounded
+model correction -> native recheck -> separate LLM reviewers. It is not an
+unbounded self-approving conversation. Engineering episodes preserve work and
+diagnostics, with optional task-bound session continuity; reconstructed context
+remains the default. Large accepted-method histories remain complete in checked
+workspace evidence files while active science stays in bounded prompts. This
+does not prove every model read every retained item. New review context remains
+blocked; operator-assisted verdict publication and zero executed trials prevent
+claiming an unattended cognitive loop through scientific results and memory.
 
 ## 11.1 Purpose and truth boundary
 

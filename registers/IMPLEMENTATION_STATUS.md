@@ -2,12 +2,27 @@
 # Implementation Status Register
 
 **Status:** Controlled implementation baseline
-**Baseline as of:** 2026-08-28; targeted update below dated 2026-11-16
+**Baseline as of:** 2026-08-28; targeted update below dated 2026-11-18
 **Claim vocabulary:** `current`, `partial`, `documented`, `tested`, `observed`, `target`, `extension`, `deferred`, `unknown`, `blocked`
 
 This register separates the completeness of the Bible from the maturity of the institution it specifies. A written chapter is not implementation evidence. A source file is not operational evidence. A passing unit test is not production qualification.
 
-## Current targeted status - 2026-11-16
+## Current targeted status - 2026-11-18
+
+| Capability | Evidence-backed status | Remaining gap |
+|---|---|---|
+| Durable method correction | Real candidate: one author call, two diagnostics, one repair | Generalization across hypotheses and unattended completion remain unproved |
+| Independent method review | Both acceptance receipts recorded | One publication needed operator assistance after interruption |
+| Native coverage and plans | Fresh coverage; successor smoke/scientific plans ready | New window/plan still needs reviewed handoff, not an executed backtest |
+| Engineering evidence | Deployed at CP `72d58ae`; bounded artifact-backed transport and tamper checks | Genuine accepted-method engineering commissioning not completed |
+| Fresh review handoff | Deterministic preflight rejects oversized combined context before paid calls | Reviewer context remains over 100 KB after deduplication |
+| Commissioning authority | New mandate active at November 18 02:56 UTC; expires 04:03 UTC | Separate successor activation and engineering authorization; old campaign remains blocked with zero trials |
+| End-to-end autonomy | Not certified | Engineering, native execution, publication/memory and replenishment on materially different genuine candidates |
+
+Exact task IDs and claim boundaries are in
+[Book XI Chapter 12](../books/book-11-engineered-company-system/chapters/12-requirements-recovery-and-current-certification.md).
+
+## Historical targeted status - 2026-11-16
 
 | Capability | Evidence-backed status | Remaining gap |
 |---|---|---|

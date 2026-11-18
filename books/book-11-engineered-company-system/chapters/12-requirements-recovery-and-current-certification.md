@@ -1,10 +1,92 @@
 # 12. Requirements Recovery and Current Certification
 
-**Targeted source and runtime audit:** 2026-11-16.
+**Targeted source and runtime update:** 2026-11-18, 03:56 Stockholm (02:56 UTC).
 **Scope:** research discovery, requirements, authoring boundaries and bounded recovery.
 This is not a new whole-company operational certification.
 
-## Evidence and source pins
+## Current checkpoint: accepted method, execution still unproved
+
+The durable method episode has now corrected one genuine BTC volume-surprise /
+future-volatility design and obtained both independent method acceptances. This
+supersedes earlier statements that no real method correction or accepted method
+exists. It does **not** certify unattended discovery-to-BT-009 execution.
+
+| Boundary | Retained evidence | Exact claim |
+|---|---|---|
+| Native consistency | Bulletproof `f81fb7d2a7a2e3cab654b3b860dab711d85237f7` | Frozen experiment/calibration consistency checks precede paid review; not proof of power or observed support |
+| Genuine method repair | Task `2eb5b85a-9f1f-4aef-ad21-85d57bc8534c` | One actual author call, two native diagnostics and one repair; no structural findings at completion |
+| Independent acceptance | Route `937f1152-01ae-4720-9a68-e961227f6812` | Strategy-spec and causality/leakage both accepted the exact method packet |
+| Publication recovery | Review digest `70731ccc5a7abe4680a3fac9dfb53963859253c21525f92f7d4c4d43daf32076` | One completed reviewer artifact needed operator-assisted publication after interruption; not autonomous recovery proof |
+| Fresh coverage | Admission task `4d13ba48-b777-4eb8-953d-988d2053ea86` | Source-bound predictor coverage produced by the governed worker |
+| Coverage successor | Planning tasks `f4b54c7b-cf91-4ce2-93f3-bce428a83428` and `da3c4409-b48c-44d4-b5f8-e3c70f8f645d` | Original coverage deferral retained; proposed successor has ready smoke and scientific plans, not executed results |
+| Transport rollout | CP `04ef880`, `e0a20a1`, `72d58ae`; status record `ca48ee3` | Lossless method-review deduplication and artifact-backed engineering handoff deployed |
+| Local verification | 58 backend and 18 worker checks for the engineering extension | Bounded transport, integrity, retry and handoff behavior, not successful real strategy engineering |
+
+The accepted packet digest is
+`b3c662c65e88c696bbb0552eb014e04ed5d9e5eee0480d11ea6fa4390f2196ee`.
+The coverage-selected scientific year runs May 18, 2025 to May 18, 2026, with
+separate warmup and outcome-tail partitions. Moving the window does not change
+the accepted question or waive independent review of the new plans.
+
+### Runtime and authority, observed November 18
+
+The VM2 API is healthy on image
+`sha256:dda7b42939bead7ce5d5e399e5de3998ac814c481783f8d5178d646a4315aa5a`.
+VM1's method designer is active; its strategy-engineering unit is inactive.
+These are point-in-time observations, not continuous-uptime claims.
+
+The old campaign `e87a1b1b-d98a-4695-9715-707105637d3b` is `needs_attention`,
+phase `independent_method_review`, next action `renew_weekly_research_mandate`,
+with `research_mandate_unavailable` and **zero trials**. Its approved method-only
+deadline was November 17 at 21:17 Stockholm. The generic next-action label does
+not mean accepted reviews disappeared or that a new mandate rewrites old bindings.
+
+Founder separately approved `ALPHA004-AEP007-ENGINEERING-HANDOFF-20261117`, digest
+`f82b9296db44fd7db3e7d707cea41d1da384cb2513d5231f6635d4c57055e28b`.
+At the observation time it is active, with zero cycles and trials; it expires
+November 18 at 05:03 Stockholm (04:03 UTC). Limits: one cycle, two hypotheses,
+four total trials and one campaign. It permits fresh review and separately
+approved bounded engineering/synthetic tests, not broad discovery, market-data
+backtests, real-data calibration, orders, shadow or live promotion. No successor
+campaign activation is inferred from mandate approval.
+
+### Remaining blockers and next proof
+
+1. Adding the genuine native plans exceeds the separate 100,000-byte deduplicated
+   method-review context bound. Preflight detected this without a paid invocation.
+   The engineering transport repair does not repair that reviewer boundary.
+2. Prepare and separately activate an exact-source successor; old campaign and
+   mandate histories remain immutable. Recheck expiry before any execution.
+3. Prove actual implementation, bounded in-episode repair, focused tests,
+   independent code review and full native validation on this accepted method.
+4. Remove the observed need for operator-assisted result publication after interruption.
+5. Under separate execution authority, observe genuine smoke, one-year BT-009,
+   complete artifacts, publication, memory and automatic replenishment. Repeat on
+   materially different hypotheses under the AEP-001 acceptance rubric.
+
+```mermaid
+flowchart TD
+    Design[Retained scientific identity and method] --> Diagnose[Native deterministic diagnostics]
+    Diagnose --> Repair[Bounded model correction in durable episode]
+    Repair --> Diagnose
+    Diagnose --> Reviews[Two independent method reviews]
+    Reviews --> Accepted[Observed method acceptance]
+    Coverage[Source-bound coverage and exposure lineage] --> Plans[Ready smoke and scientific plans]
+    Accepted --> Preflight[Combined review-context preflight]
+    Plans --> Preflight
+    Preflight --> Blocked[Currently blocked: review context bound]
+    Blocked -. repaired and independently reviewed successor .-> Engineering[Separately approved engineering episode]
+    Engineering -. not yet demonstrated on this candidate .-> Execution[Separately authorized native execution and BT-009]
+```
+
+Primary source: CP `docs/experiment-calibration-consistency.md`,
+`docs/engineering-evidence-transport.md`, `app/services/alpha_method_engineering.py`
+under `backend/`, and `worker/src/swarm_worker/executors/engineering_episode.py`.
+See [the AEP roadmap](../../../plans/AUTONOMOUS_EPISODE_MILESTONES.md) for acceptance
+criteria. Successful stage work, correct deferral and unattended end-to-end success
+are distinct measurements; earlier pilot certificates retain their original scope.
+
+## Historical evidence and source pins: November 16
 
 | Component | Pin or observation | What it establishes |
 |---|---|---|

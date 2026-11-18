@@ -1,6 +1,6 @@
 # Appendix B: Hermes Codex and LLM Runtime Register
 
-**2026-11-16 overlay:** Codex-only authoring is default; Copilot hybrid is opt-in and
+**2026-11-18 overlay:** Codex-only authoring is default; Copilot hybrid is opt-in and
 the local adapter remains experimental. Requirements correction adds no new model
 agent: deterministic scheduling reuses existing synthesis, hypothesis and
 representation calls, followed by native checks and separate independent reviews.
@@ -9,6 +9,14 @@ repeated context and unnecessary representation calls. See
 [Chapter 12](../chapters/12-requirements-recovery-and-current-certification.md) for
 source pins, quota/billing references and unclosed acceptance gates. Historical
 "active" observations below do not establish present service health.
+
+Method-design commissioning now has one observed author correction and two native
+diagnostics, followed by two accepting LLM reviews. One verdict needed manual
+publication recovery. Source: `worker/src/swarm_worker/executors/alpha_method_design.py`,
+`method_episode.py` and `executors/alpha_strategy_review.py` in the control plane.
+The method designer is active at the November 18 check; the strategy engineer is
+inactive. No new method-plus-plan review or engineering invocation has been made
+for the oversized successor context. Full end-to-end autonomy remains unproved.
 
 This operational register names every Hermes production path where a language model
 performs real work. Book XI's
@@ -31,6 +39,8 @@ parent campaign label cannot be mistaken for an active backtest.
 | Senior researcher | `AlphaDiscoveryExecutor`, stage `hypothesis` | Proposes predictive, timed, falsifiable questions and mechanisms | Structured candidate questions only | Falsifiability, novelty, equation and data gates |
 | Governed external research | `ri017_external_acquisition.py` and RI-006 ingestion | No LLM is invoked during fetch, parsing, transcript extraction, quarantine or publication. Sanitized source metadata may later be supplied to the Research Intelligence director and senior researcher as untrusted question-seed context | Immutable retrieval receipts and quarantined publications only | Source allowlist, SSRF/size/content controls, replayable provenance and normal ALPHA-004 gates |
 | Data representation scientist | `AlphaDiscoveryExecutor`, stage `representation` | Selects pre-outcome baskets, member roles, clocks and a typed transformation graph; may use or cross optional stable/volatile labels when justified; records rejected alternatives | `adaptive-representation-plan-v1.0.0` only | Catalog-label validation, exact DATA-002/003 panel admission, native causal replay, exact strategy-consumer binding and terminal BT-009 evidence |
+| Method designer | `AlphaMethodDesignExecutor`, `MethodEpisode` | Corrects explicitly allowed method fields using retained findings and native diagnostics | Frozen question/support minima; bounded calls, repairs and deadline | Separate strategy-spec and causality method reviews; no execution authority |
+| Method interpretation adjudicator | Method-adjudication scope in `AlphaStrategyReviewExecutor` | Assesses a bounded dispute against explicit criteria and evidence | Separate context; recheck/disputed only, never method approval | A recheck requires new evidence and both independent reviews; not automatically invoked for every failure |
 | Strategy logic author | `EngineeringMissionExecutor`, Codex authoring session | Implements only unresolved signal/gate logic, bounded values, native evaluator behavior and focused tests inside a deterministic scaffold | Approved paths and diff budget only; immutable `StrategyIntent`, data, representation, clocks and authority cannot change | Focused tests, separate read-only review, full validation, PR/merge and source-commit rebinding |
 | Engineering reviewer | `EngineeringMissionExecutor`, separate Codex review session | Reviews the uncommitted patch against its immutable intent and acceptance contract | Read-only | High findings fail the task; it cannot edit, merge or approve itself |
 | Dormant local author | `swarm_worker.local_author` | No production work while disabled; retained for future GPU-backed requalification | No active service selects it | Must pass a new production-parity qualification before reactivation |

@@ -15,7 +15,35 @@ registry or API is not sufficient completion evidence. The
 [2026-08-28 ownership audit](QUANTITATIVE_OWNERSHIP_AUDIT.md) reopens every packet
 whose Bulletproof-native producer and cross-repository receipt replay are absent.
 
-## Active recovery sequence - 2026-11-17
+## Active recovery sequence - 2026-11-18
+
+**Current AEP-007/AEP-008 boundary:** a genuine method episode completed bounded
+repair and both independent method reviews accepted. Native coverage-selected
+smoke/scientific plans are ready. Engineering evidence transport and readable,
+integrity-checked workspace copies are deployed at CP `72d58ae` (58 backend and
+18 worker checks). The combined fresh method-review context still exceeds its
+100 KB bound. No paid call was made for that inadmissible proposal.
+
+The old method-only campaign is `needs_attention`, with zero trials. The new
+engineering-handoff mandate is separately approved and was active at November 18
+02:56 UTC; its expiry is 04:03 UTC. It does not activate or rebind the old campaign.
+Next work, in order:
+
+1. Admit the exact new review evidence without dropping scientific obligations or provenance.
+2. Prepare and separately activate a source-bound successor; recheck authority expiry.
+3. Observe bounded genuine engineering, focused/full tests and independent code review.
+4. Prove interruption-safe result publication without operator artifact recovery.
+5. Obtain execution authority and prove smoke, one-year BT-009, artifacts, memory
+   and replenishment on materially different candidates under AEP-001 acceptance.
+
+No new end-to-end certificate or AEP-007/008 closure is claimed. See
+[Book XI Chapter 12](../books/book-11-engineered-company-system/chapters/12-requirements-recovery-and-current-certification.md)
+for exact task/receipt IDs, deployed source and the current autonomy boundary.
+
+### Retained implementation history through November 17
+
+Earlier pending/inactive/rejected checkpoints below are historical; the current
+checkpoint above supersedes those labels without erasing their evidence.
 
 Follow [Autonomous Episode Milestones](AUTONOMOUS_EPISODE_MILESTONES.md) one at a
 time: AEP-001 baseline/acceptance; AEP-002 typed findings; AEP-003 native diagnostics;
@@ -98,7 +126,7 @@ Dedicated model-backed producer provisioning and an inactive-by-default bounded
 service are locally tested. Native planning dependency failures now defer before
 paid review, retaining ownership and changed-evidence successor conditions.
 
-Current evidence: the latest BTC method correction reached independent requirements
+At the earlier pre-AEP commissioning checkpoint, the BTC correction reached requirements
 review; strategy-spec accepted and causality rejected. No engineering or native
 trial followed for that candidate. Offline support/power and bootstrap probes are
 diagnostic only. The durable engineering episode remains an opt-in foundation,

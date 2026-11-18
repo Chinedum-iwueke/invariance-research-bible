@@ -1,6 +1,10 @@
 # Local working and verification artifacts
 tmp/
 work/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
 
 # Operating-system and editor state
 .DS_Store
